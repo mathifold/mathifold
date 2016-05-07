@@ -1,0 +1,1 @@
+La información sobre el árbol de contenidos está en _data/nav.yml

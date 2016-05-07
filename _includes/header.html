@@ -1,3 +1,18 @@
 <header class="site-header">
 
+<a href="/index/{{page.lang}}/">Mathifold</a>
+
+<div style="float: right">
+{% capture actual %}{{page.url}}{% endcapture %}
+{% capture mylang %}/{{page.lang}}/{% endcapture %}
+{% for i in site.data.languages %}
+	{% capture linklang %}/{{i}}/{% endcapture %}
+	{% if page.type != "post" %}
+		<a href="{{ actual | replace: mylang, linklang }}"><img src="/images/{{i}}.svg" height="40" width="40"></a>
+	{% else %}
+		{{"To do"}}
+	{% endif %}
+{% endfor %}
+</div>
+
 </header>
