@@ -1,0 +1,145 @@
+
+
+basics:
+  - 
+    combinatorics:
+      -
+        empty
+  - 
+    number_theory:
+      -
+        empty
+  -
+    trigonometry:
+      -
+        empty
+  -
+    complex_numbers:
+      -
+        empty
+
+geometry:
+  -
+    classical_geometry:
+      -
+        empty
+  -
+    conics:
+      -
+        empty
+  -
+    affine_projective_geometry:
+      -
+        empty
+  -
+    spherical_geometry:
+      -
+        empty
+  -
+    the_4_dimension:
+      -
+        empty
+  -
+    hyperbolic_geometry:
+      -
+        empty
+  -
+    fractal_geometry:
+      -
+        empty
+  -
+    topology:
+      -
+        empty
+
+algebra:
+  -
+    linear_algebra:
+  -
+    group_theory:
+  -
+    ring_theory:
+  -
+    galois_theory:
+  -
+    commutative_algebra:
+
+analysis:
+  -
+    real_analysis:
+  -
+    differential_calculus:
+  -
+    integral_calculus:
+  -
+    complex_analysis:
+
+probability_statistics:
+  -
+    probability:
+
+operational_research:
+  -
+    graph_theory:
+  -
+    numerical_analysis:
+  -
+    simplex_method:
+  
+foundations:
+  -
+    set_theory:
+  -
+    logic:
+  -
+    categories:
+
+mathematical_models:
+  -
+    fisics:
+  -
+    computer_science:
+  -
+    economy:
+
+evolutive_equations:
+  -
+    dynamic_systems:
+  -
+    differential_equations:
+  -
+    partial_differential_equations:
+
+pure_mathematics:
+  -
+    algebraic_geometry:
+  -
+    functional_analysis:
+  -
+    algebraic_topology:
+  -
+    differentiable_manifolds:
+  -
+    riemannian_geometry:
+
+advanced_mathematics:
+  -
+    algebraic_number_theory:
+  -
+    analytic_number_theory:
+  -
+    complex_manifolds:
+  -
+    lie_theory:
+  -
+    bundles:
+  -
+    sheaf_theory:
+  -
+    orbifolds:
+
+problem_resolution:
+  -
+
+history_mathematics:
+  -

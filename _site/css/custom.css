@@ -24,8 +24,8 @@ p.topic {
 .counter{
   font-size: 20px;
   padding: 2px 10px 2px 10px;
-  background-color: lightgreen;
   border-radius: 3px;
+  margin: 0px;
 }
 
 

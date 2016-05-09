@@ -2,7 +2,7 @@
 
 <div>
 	
-	<a href="/index/{{page.lang}}/">Mathifold</a>
+	<a href="/index/{{page.lang}}/"><img src="/images/mathifold.svg" height="40" width="40"></a>
 	{% if page.type == "subject" %}
 		{% assign linktopic=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
 		{{" > "}}

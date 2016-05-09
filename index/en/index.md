@@ -9,29 +9,28 @@ Hello
 
 <div style="position: relative;" align="center">
 
-{% create_subject_link [basics, Basics] %}
-<a style="padding: 20px;" href="/topics/{{page.lang}}/basics.html"><p class="topic basics">Basics <span style="float: right;"><span class="counter">{% subject_counter basics %}</span></span></p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/geometry.html"><p class="topic geometry">Geometry<span style="float: right;"><span class="counter">{% subject_counter geometry %}</span></span></p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/algebra.html"><p class="topic algebra">Algebra</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/analysis.html"><p class="topic analysis">Analysis</p></a>
+{% create_subject_link basics,Basics %}
+{% create_subject_link geometry,Geometry %}
+{% create_subject_link algebra,Algebra %}
+{% create_subject_link analysis,Analysis %}
 
 </div>
 
 <div style="position: relative;" align="center">
 
-<a style="padding: 20px;" href="/topics/{{page.lang}}/probability_statistics.html"><p class="topic probability_statistics">Probability and Statistics</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/operational_research.html"><p class="topic operational_research">Operational Research</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/foundations.html"><p class="topic foundations">Foundations</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/mathematical_models.html"><p class="topic mathematical_models">Mathematical Models</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/evolutive_equations.html"><p class="topic evolutive_equations">Evolutive Equations</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/pure_mathematics.html"><p class="topic pure_mathematics">Pure Mathematics</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/advanced_mathematics.html"><p class="topic advanced_mathematics">Advanced Mathematics</p></a>
+{% create_subject_link probability_statistics,Probability and Statistics %}
+{% create_subject_link operational_research,Operational Research %}
+{% create_subject_link foundations,Foundations %}
+{% create_subject_link mathematical_models,Mathematical Models %}
+{% create_subject_link evolutive_equations,Evolutive Equations %}
+{% create_subject_link pure_mathematics,Pure Mathematics %}
+{% create_subject_link advanced_mathematics,Advanced Mathematics %}
 
 </div>
 
 <div style="position: relative;" align="center">
 
-<a style="padding: 20px;" href="/topics/{{page.lang}}/problem_resolution.html"><p class="topic problem_resolution">Problem Resolution</p></a>
-<a style="padding: 20px;" href="/topics/{{page.lang}}/history_mathematics.html"><p class="topic history_mathematics">History of Mathematics</p></a>
+{% create_subject_link problem_resolution,Problem Resolution %}
+{% create_subject_link history_mathematics,History of Mathematics %}
 
 </div>
