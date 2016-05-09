@@ -117,6 +117,13 @@ pure_mathematics:
     functional_analysis:
   -
     algebraic_topology:
+      -
+        compact_surfaces
+        fundamental_group
+        coverings
+        homology
+        cohomology
+        homotopy_theory
   -
     differentiable_manifolds:
   -

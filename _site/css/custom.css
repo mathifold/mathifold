@@ -6,6 +6,32 @@ body {
   font-weight: 100;
 }
 
+.ori {
+    bottom: 0;
+    position: absolute;
+    right: 0px;
+    white-space: nowrap;
+    background-color: white;
+    font-size: 90%;
+    background-image: url("/images/opensource.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    text-align: left;
+    text-decoration: none;
+    overflow: hidden;
+    padding-left: 25px;
+    width: 0;
+    overflow: visible;
+    padding-left: 0px;
+    width: auto;
+    border: 1px dotted black;
+    display: block;
+    margin-right: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
 p.topic {
 	background-size: 240px 240px;
 	font-size: 134%;
@@ -300,4 +326,14 @@ p.subject {
 
 .orbifolds{
   background-image: url('/images/orbifolds.jpg');
+}
+
+
+
+.chapter{
+  text-decoration: none; 
+  color: black; 
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 7px;
 }
