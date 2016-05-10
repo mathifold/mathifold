@@ -4,6 +4,7 @@ module Jekyll
         def initialize(tag_name, name, tokens)
             super
             @nam = name
+            @filename = name.split(".")[0]
         end
     
     
@@ -11,13 +12,13 @@ module Jekyll
         def render(context)
             site = context.registers[:site]
             page = context.registers[:page]
-            @list = site.static_files.select { |file| file.extname=='.jpg'}
-            @list2 = []
-            for file in site.static_files
-                @list2 << File.basename(file.path)
+
+            @in = '<div class="resource img">
+            <img src="/images/images/' + @nam + '">'
+            if site.static_files.map { |file| File.basename(file.path) }.include?(@filename + '.ipe')
+                @in = @in + '<a class="ori" href="/images/codes/' + @filename + '.ipe"></a>'        
             end
-            @n = @list.size
-            return @list2
+            return @in + '</div>'
         end
     end
 end
