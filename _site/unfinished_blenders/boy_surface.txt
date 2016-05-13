@@ -1,0 +1,10 @@
+Boy Surface Parametrisation
+
+(-6*u*(-1+u**10)*sin(v)+6*u**4*(sqrt(5)*(1+u**4)*sin(2*v)+u*(-1+u**2)*sin(5*v)))/(1+9*u**2+9*u**10+u**12-2*sqrt(5)*u**3*(cos(3*v)-2*sin(3*v))+2*sqrt(5)*u**9*(cos(3*v)-2*sin(3*v))+u**6*(15+6*cos(6*v)+8*sin(6*v)))
+
+(6*u*((-1+u**10)*cos(v)+u**3*(sqrt(5)*(1+u**4)*cos(2*v)+u*(-1+u**2)*cos(5*v))))/(1+9*u**2+9*u**10+u**12-2*sqrt(5)*u**3*(cos(3*v)-2*sin(3*v))+2*sqrt(5)*u**9*(cos(3*v)-2*sin(3*v))+u**6*(15+6*cos(6*v)+8*sin(6*v)))
+
+(-2*(1+5*u**6+u**12) + 4*u**3*(-sqrt(5)*(-1+u**6)*cos(3*v)+u**3*cos(6*v)+sqrt(5)*(-1+u**6)*sin(3*v)-2*u**3*sin(6*v)))/(1+9*u**2+9*u**10+u**12-2*sqrt(5)*u**3*(cos(3*v)-2*sin(3*v))+2*sqrt(5)*u**9*(cos(3*v)-2*sin(3*v))+u**6*(15+6*cos(6*v)+8*sin(6*v)))
+
+u from 0 to 1
+v from 0 to 2pi=6.28

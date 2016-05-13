@@ -5,6 +5,8 @@ parent: compact_surfaces
 layout: post
 type: post
 mathjax: true
+geogebratube:
+  - JpaPYU7J
 lang: en
 category: en
 ---
@@ -57,16 +59,22 @@ By gluing polygons we may also create closed surfaces. The torus for example
 And soon we come to know a more complex surface: the Klein bottle
 
 {% resource square_klein.svg %}
-<!--
+
 We cannot take it into space without crossings! But there are no boundaries nor breaks, so this is a fledged closed surface.
 
 An even stranger surface: the projective plane
 
-{% resource nb1.mp4 %}
+{% resource boy_surface_1.gif %}
+
+{% resource boy_surface_2.gif %}
+
+<div style="height:600px; width:800px; margin: auto;" id="applet_containerJpaPYU7J"></div>
+<div class="resource img"><a class="ori" href="http://www.geogebra.org/m/JpaPYU7J?doneurl=%2Fmaterials" target="_blank"></a></div>
+
 
 We get it by identifying the opposite points in a sphere, or when identifying the points in the boundary of a disc like in the figure
 
-
+<!--
 {% resource img10.svg %}
 
 In fact, all the surfaces we come across may be obtained by gluing the sides of a polygon. For instance, the connected sum of two surfaces made with one polygon each is also made with another polygon
