@@ -113,20 +113,38 @@ evolutive_equations:
 pure_mathematics:
   -
     algebraic_geometry:
-  -
+
     functional_analysis:
-  -
+
     algebraic_topology:
       -
-        compact_surfaces
-        fundamental_group
-        coverings
-        homology
-        cohomology
-        homotopy_theory
-  -
+        ident: compact_surfaces
+        en: Compact Surfaces
+        es: Superficies Compactas
+      -
+        ident: fundamental_group
+        en: Fundamental Group
+        es: Grupo Fundamental
+      -
+        ident: coverings
+        en: Coverings
+        es: Recubridores
+      -
+        ident: homology
+        en: Homology
+        es: Homología
+      -
+        ident: cohomology
+        en: Cohomology
+        es: Cohomología
+      -
+        ident: homotopy_theory
+        en: Homotopy Theory
+        es: Teoría de la Homotopía
+
+
     differentiable_manifolds:
-  -
+
     riemannian_geometry:
 
 advanced_mathematics:

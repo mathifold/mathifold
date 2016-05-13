@@ -9,6 +9,14 @@ lang: en
 
 Compact Surfaces
 
+{{site.categories.key? 'en'}}
+
+{% if site.categories.key? 'en' %}
+{{'true'}}
+{% else %}
+{{'false'}}
+{% endif %}
+
 <div style="position: relative;" align="center">
 
 {% assign list = site.posts | where:"lang", page.lang | where:"parent", "compact_surfaces"%}

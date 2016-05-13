@@ -9,14 +9,14 @@ lang: en
 
 Algebraic Topology
 
+
+
+
 <div style="position: relative;" align="center">
 
-<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/compact_surfaces.html" class="chapter">Compact Surfaces</a></div>
-<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/fundamental_group.html" class="chapter">Fundamental Group</a></div>
-<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/coverings.html" class="chapter">Coverings</a></div>
-<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/homology.html" class="chapter">Homology</a></div>
-<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/cohomology.html" class="chapter">Cohomology</a></div>
-<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/homotopy_theory.html" class="chapter">Homotopy Theory</a></div>
+{% for i in site.data.nav.pure_mathematics[0].algebraic_topology %}
+<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/{{i.ident}}.html" class="chapter">{{i[page.lang]}}</a></div>
+{% endfor %}
 
 </div>
 
