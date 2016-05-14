@@ -1,374 +1,524 @@
 
+map:
+  -
+    ident: basics
+    en: Basics
+    es: Base
+    children:
+      -
+        ident: combinatorics
+        en: Combinatorics
+        es: Combinatoria
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: number_theory
+        en: Number Theory
+        es: Teoría de Números
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: trigonometry
+        en: Trigonometry
+        es: Trigonometría
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: complex_numbers
+        en: Complex Numbers
+        es: Números Complejos
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: geometry
+    en: Geometry
+    es: Geometría
+    children:
+      -
+        ident: classical_geometry
+        en: Classical Geometry
+        es: Geometría Clásica
+        children:
+          -
+            ident: triangles
+            en: Triangles
+            es: Triángulos
+          -
+            ident: circles
+            en: Circles
+            es: Círculos
+      -
+        ident: conics
+        en: Conics
+        es: Cónicas
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: affine_projective_geometry
+        en: Affine and Projective Geometry
+        es: Geometría Afín y Proyectiva
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: spherical_geometry
+        en: Spherical Geometry
+        es: Geometría Esférica
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: the_4_dimension
+        en: The 4<sup>th</sup> Dimension
+        es: La 4<sup>a</sup> Dimensión
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: hyperbolic_geometry
+        en: Hyperbolic Geometry
+        es: Geometría Hiperbólica
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: fractal_geometry
+        en: Fractal Geometry
+        es: Geometría Fractal
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: topology
+        en: Topology
+        es: Topología
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: algebra
+    en: Algebra
+    es: Álgebra
+    children:
+      -
+        ident: linear_algebra
+        en: Linear Algebra
+        es: Álgebra Lineal
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: group_theory
+        en: Group Theory
+        es: Teoría de Grupos
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: ring_theory
+        en: Ring Theory
+        es: Teoría de Anillos
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: galois_theory
+        en: Galois Theory
+        es: Teoría de Galois
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: commutative_algebra
+        en: Commutative Algebra
+        es: Álgebra Conmutativa
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: analysis
+    en: Analysis
+    es: Análisis
+    children:
+      -
+        ident: real_analysis
+        en: Real Analysis
+        es: Análisis Real
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: differential_calculus
+        en: Differential Calculus
+        es: Cálculo Diferencial
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: integral_calculus
+        en: Integral Calculus
+        es: Cálculo Integral
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: complex_analysis
+        en: Complex Analysis
+        es: Análisis Complejo
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: probability_statistics
+    en: Probability and Statistics
+    es: Probabilidad y Estadística
+    children:
+      -
+        ident: probability
+        en: Probability
+        es: Probabilidad
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: operational_research
+    en: Operational Research
+    es: Investigación Operativa
+    children:
+      -
+        ident: graph_theory
+        en: Graph Theory
+        es: Teoría de Grafos
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: numerical_analysis
+        en: Numerical Analysis
+        es: Análisis Numérico
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: simplex_method
+        en: Simplex Method
+        es: Método del Simplex
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: foundations
+    en: Foundations
+    es: Fundamentos
+    children:
+      -
+        ident: set_theory
+        en: Set Theory
+        es: Teoría de Conjuntos
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: logic
+        en: Logic
+        es: Lógica
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: categories
+        en: Categories
+        es: Categorías
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: mathematical_models
+    en: Mathematical Models
+    es: Modelos Matemáticos
+    children:
+      -
+        ident: fisics
+        en: Fisics
+        es: Física
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: computer_science
+        en: Computer Science
+        es: Informática
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: economy
+        en: Economy
+        es: Economía
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: evolutive_equations
+    en: Evolutive Equations
+    es: Ecuaciones Evolutivas
+    children:
+      -
+        ident: dynamical_systems
+        en: Dynamical Systems
+        es: Sistemas Dinámicos
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: differential_equations
+        en: Differential Equations
+        es: Ecuaciones Diferenciales
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: partial_differential_equations
+        en: Partial Differential Equations
+        es: Ecuaciones en Derivadas Parciales
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: pure_mathematics
+    en: Pure Mathematics
+    es: Matemáticas Puras
+    children:
+      -
+        ident: algebraic_geometry
+        en: Algebraic Geometry
+        es: Geometría Algebraica
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: functional_analysis
+        en: Functional Analysis
+        es: Análisis Funcional
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: algebraic_topology
+        en: Algebraic Topology
+        es: Topología Algebraica
+        children:
+          -
+            ident: compact_surfaces
+            en: Compact Surfaces
+            es: Superficies Compactas
+          -
+            ident: fundamental_group
+            en: Fundamental Group
+            es: Grupo Fundamental
+          -
+            ident: coverings
+            en: Coverings
+            es: Recubridores
+          -
+            ident: homology
+            en: Homology
+            es: Homología
+          -
+            ident: cohomology
+            en: Cohomology
+            es: Cohomología
+          -
+            ident: homotopy_theory
+            en: Homotopy Theory
+            es: Teoría de la Homotopía
 
-basics:
+      -
+        ident: differentiable_manifolds
+        en: Differentiable Manifolds
+        es: Variedades Diferenciables
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: riemannian_geometry
+        en: Riemannian Geometry
+        es: Geometría Riemanniana
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
   -
-    ident: combinatorics
-    en: Combinatorics
-    es: Combinatoria
+    ident: advanced_mathematics
+    en: Advanced Mathematics
+    es: Matemáticas Avanzadas
     children:
       -
-        empty1
+        ident: algebraic_number_theory
+        en: Algebraic Number Theory
+        es: Teoría Algebraica de Números
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: analytic_number_theory
+        en: Analytic Number Theory
+        es: Teoría Analítica de Números
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: complex_manifolds
+        en: Complex Manifolds
+        es: Variedades Complejas
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: lie_theory
+        en: Lie Theory
+        es: Teoría de Lie
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: bundles
+        en: Bundles
+        es: Fibrados
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: sheaf_theory
+        en: Sheaf Theory
+        es: Teoría de Haces
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: orbifolds
+        en: Orbifolds
+        es: Orbifolds
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
   -
-    ident: number_theory
-    en: Number Theory
-    es: Teoría de Números
+    ident: problem_resolution
+    en: Problem Resolution
+    es: Resolución de Problemas
     children:
       -
-        empty1
+        ident: subject1
+        en: Subject1
+        es: Asignatura1
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
   -
-    ident: trigonometry
-    en: Trigonometry
-    es: Trigonometría
+    ident: history_mathematics
+    en: History of Mathematics
+    es: Historia de las Matemáticas
     children:
       -
-        empty1
-  -
-    ident: complex_numbers
-    en: Complex Numbers
-    es: Números Complejos
-    children:
-      -
-        empty1
-
-geometry:
-  -
-    ident: classical_geometry
-    en: Classical Geometry
-    es: Geometría Clásica
-    children:
-      -
-        empty1
-  -
-    ident: conics
-    en: Conics
-    es: Cónicas
-    children:
-      -
-        empty1
-  -
-    ident: affine_projective_geometry
-    en: Affine and Projective Geometry
-    es: Geometría Afín y Proyectiva
-    children:
-      -
-        empty1
-  -
-    ident: spherical_geometry
-    en: Spherical Geometry
-    es: Geometría Esférica
-    children:
-      -
-        empty1
-  -
-    ident: the_4_dimension
-    en: The 4<sup>th</sup> Dimension
-    es: La 4<sup>a</sup> Dimensión
-    children:
-      -
-        empty1
-  -
-    ident: hyperbolic_geometry
-    en: Hyperbolic Geometry
-    es: Geometría Hiperbólica
-    children:
-      -
-        empty1
-  -
-    ident: fractal_geometry
-    en: Fractal Geometry
-    es: Geometría Fractal
-    children:
-      -
-        empty1
-  -
-    ident: topology
-    en: Topology
-    es: Topología
-    children:
-      -
-        empty1
-
-algebra:
-  -
-    ident: linear_algebra
-    en: Linear Algebra
-    es: Álgebra Lineal
-    children:
-      -
-        empty1
-  -
-    ident: group_theory
-    en: Group Theory
-    es: Teoría de Grupos
-    children:
-      -
-        empty1
-  -
-    ident: ring_theory
-    en: Ring Theory
-    es: Teoría de Anillos
-    children:
-      -
-        empty1
-  -
-    ident: galois_theory
-    en: Galois Theory
-    es: Teoría de Galois
-    children:
-      -
-        empty1
-  -
-    ident: commutative_algebra
-    en: Commutative Algebra
-    es: Álgebra Conmutativa
-    children:
-      -
-        empty1
-
-analysis:
-  -
-    ident: real_analysis
-    en: Real Analysis
-    es: Análisis Real
-    children:
-      -
-        empty1
-  -
-    ident: differential_calculus
-    en: Differential Calculus
-    es: Cálculo Diferencial
-    children:
-      -
-        empty1
-  -
-    ident: integral_calculus
-    en: Integral Calculus
-    es: Cálculo Integral
-    children:
-      -
-        empty1
-  -
-    ident: complex_analysis
-    en: Complex Analysis
-    es: Análisis Complejo
-    children:
-      -
-        empty1
-
-probability_statistics:
-  -
-    ident: probability
-    en: Probability
-    es: Probabilidad
-    children:
-      -
-        empty1
-
-operational_research:
-  -
-    ident: graph_theory
-    en: Graph Theory
-    es: Teoría de Grafos
-    children:
-      -
-        empty1
-  -
-    ident: numerical_analysis
-    en: Numerical Analysis
-    es: Análisis Numérico
-    children:
-      -
-        empty1
-  -
-    ident: simplex_method
-    en: Simplex Method
-    es: Método del Simplex
-    children:
-      -
-        empty1
-  
-foundations:
-  -
-    ident: set_theory
-    en: Set Theory
-    es: Teoría de Conjuntos
-    children:
-      -
-        empty1
-  -
-    ident: logic
-    en: Logic
-    es: Lógica
-    children:
-      -
-        empty1
-  -
-    ident: categories
-    en: Categories
-    es: Categorías
-    children:
-      -
-        empty1
-
-mathematical_models:
-  -
-    ident: fisics
-    en: Fisics
-    es: Física
-    children:
-      -
-        empty1
-  -
-    ident: computer_science
-    en: Computer Science
-    es: Informática
-    children:
-      -
-        empty1
-  -
-    ident: economy
-    en: Economy
-    es: Economía
-    children:
-      -
-        empty1
-
-evolutive_equations:
-  -
-    ident: dynamical_systems
-    en: Dynamical Systems
-    es: Sistemas Dinámicos
-    children:
-      -
-        empty1
-  -
-    ident: differential_equations
-    en: Differential Equations
-    es: Ecuaciones Diferenciales
-    children:
-      -
-        empty1
-  -
-    ident: partial_differential_equations
-    en: Partial Differential Equations
-    es: Ecuaciones en Derivadas Parciales
-    children:
-      -
-        empty1
-
-pure_mathematics:
-  -
-    ident: algebraic_geometry
-    en: Algebraic Geometry
-    es: Geometría Algebraica
-    children:
-      -
-        empty1
-  -
-    ident: functional_analysis
-    en: Functional Analysis
-    es: Análisis Funcional
-    children:
-      -
-        empty1
-  -
-    ident: algebraic_topology
-    en: Algebraic Topology
-    es: Topología Algebraica
-    children:
-      -
-        ident: compact_surfaces
-        en: Compact Surfaces
-        es: Superficies Compactas
-      -
-        ident: fundamental_group
-        en: Fundamental Group
-        es: Grupo Fundamental
-      -
-        ident: coverings
-        en: Coverings
-        es: Recubridores
-      -
-        ident: homology
-        en: Homology
-        es: Homología
-      -
-        ident: cohomology
-        en: Cohomology
-        es: Cohomología
-      -
-        ident: homotopy_theory
-        en: Homotopy Theory
-        es: Teoría de la Homotopía
-
-  -
-    ident: differentiable_manifolds
-    en: Differentiable Manifolds
-    es: Variedades Diferenciables
-    children:
-      -
-        empty1
-  -
-    ident: riemannian_geometry
-    en: Riemannian Geometry
-    es: Geometría Riemanniana
-    children:
-      -
-        empty1
-
-advanced_mathematics:
-  -
-    ident: algebraic_number_theory
-    en: Algebraic Number Theory
-    es: Teoría Algebraica de Números
-    children:
-      -
-        empty1
-  -
-    ident: analytic_number_theory
-    en: Analytic Number Theory
-    es: Teoría Analítica de Números
-    children:
-      -
-        empty1
-  -
-    ident: complex_manifolds
-    en: Complex Manifolds
-    es: Variedades Complejas
-    children:
-      -
-        empty1
-  -
-    ident: lie_theory
-    en: Lie Theory
-    es: Teoría de Lie
-    children:
-      -
-        empty1
-  -
-    ident: bundles
-    en: Bundles
-    es: Fibrados
-    children:
-      -
-        empty1
-  -
-    ident: sheaf_theory
-    en: Sheaf Theory
-    es: Teoría de Haces
-    children:
-      -
-        empty1
-  -
-    ident: orbifolds
-    en: Orbifolds
-    es: Orbifolds
-    children:
-      -
-        empty1
-
-problem_resolution:
-  -
-
-history_mathematics:
-  -
+        ident: subject1
+        en: Subject1
+        es: Asignatura1
+        children:
+          -
+            ident: chapter1
+            en: Chapter1
+            es: Capítulo1
