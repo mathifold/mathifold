@@ -11,7 +11,7 @@ map:
         es: Combinatoria
         children:
           -
-            ident: chapter1
+            ident: intro_combinatorics
             en: Chapter1
             es: Capítulo1
       -
@@ -20,7 +20,7 @@ map:
         es: Teoría de Números
         children:
           -
-            ident: chapter1
+            ident: intro_number_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -29,7 +29,7 @@ map:
         es: Trigonometría
         children:
           -
-            ident: chapter1
+            ident: intro_trigonometry
             en: Chapter1
             es: Capítulo1
       -
@@ -38,7 +38,7 @@ map:
         es: Números Complejos
         children:
           -
-            ident: chapter1
+            ident: intro_complex_numbers
             en: Chapter1
             es: Capítulo1
   -
@@ -65,7 +65,7 @@ map:
         es: Cónicas
         children:
           -
-            ident: chapter1
+            ident: intro_conics
             en: Chapter1
             es: Capítulo1
       -
@@ -74,7 +74,7 @@ map:
         es: Geometría Afín y Proyectiva
         children:
           -
-            ident: chapter1
+            ident: intro_affine_projective_geometry
             en: Chapter1
             es: Capítulo1
       -
@@ -83,7 +83,7 @@ map:
         es: Geometría Esférica
         children:
           -
-            ident: chapter1
+            ident: intro_spherical_geometry
             en: Chapter1
             es: Capítulo1
       -
@@ -92,7 +92,7 @@ map:
         es: La 4<sup>a</sup> Dimensión
         children:
           -
-            ident: chapter1
+            ident: intro_the_4_dimension
             en: Chapter1
             es: Capítulo1
       -
@@ -101,7 +101,7 @@ map:
         es: Geometría Hiperbólica
         children:
           -
-            ident: chapter1
+            ident: intro_hyperbolic_geometry
             en: Chapter1
             es: Capítulo1
       -
@@ -110,7 +110,7 @@ map:
         es: Geometría Fractal
         children:
           -
-            ident: chapter1
+            ident: intro_fractal_geometry
             en: Chapter1
             es: Capítulo1
       -
@@ -119,7 +119,7 @@ map:
         es: Topología
         children:
           -
-            ident: chapter1
+            ident: intro_topology
             en: Chapter1
             es: Capítulo1
   -
@@ -133,7 +133,7 @@ map:
         es: Álgebra Lineal
         children:
           -
-            ident: chapter1
+            ident: intro_linear_algebra
             en: Chapter1
             es: Capítulo1
       -
@@ -142,7 +142,7 @@ map:
         es: Teoría de Grupos
         children:
           -
-            ident: chapter1
+            ident: intro_group_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -151,7 +151,7 @@ map:
         es: Teoría de Anillos
         children:
           -
-            ident: chapter1
+            ident: intro_ring_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -160,7 +160,7 @@ map:
         es: Teoría de Galois
         children:
           -
-            ident: chapter1
+            ident: intro_galois_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -169,7 +169,7 @@ map:
         es: Álgebra Conmutativa
         children:
           -
-            ident: chapter1
+            ident: intro_commutative_algebra
             en: Chapter1
             es: Capítulo1
   -
@@ -183,7 +183,7 @@ map:
         es: Análisis Real
         children:
           -
-            ident: chapter1
+            ident: intro_real_analysis
             en: Chapter1
             es: Capítulo1
       -
@@ -192,7 +192,7 @@ map:
         es: Cálculo Diferencial
         children:
           -
-            ident: chapter1
+            ident: intro_differential_calculus
             en: Chapter1
             es: Capítulo1
       -
@@ -201,7 +201,7 @@ map:
         es: Cálculo Integral
         children:
           -
-            ident: chapter1
+            ident: intro_integral_calculus
             en: Chapter1
             es: Capítulo1
       -
@@ -210,7 +210,7 @@ map:
         es: Análisis Complejo
         children:
           -
-            ident: chapter1
+            ident: intro_complex_analysis
             en: Chapter1
             es: Capítulo1
   -
@@ -224,7 +224,7 @@ map:
         es: Probabilidad
         children:
           -
-            ident: chapter1
+            ident: intro_probability
             en: Chapter1
             es: Capítulo1
   -
@@ -238,7 +238,7 @@ map:
         es: Teoría de Grafos
         children:
           -
-            ident: chapter1
+            ident: intro_graph_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -247,7 +247,7 @@ map:
         es: Análisis Numérico
         children:
           -
-            ident: chapter1
+            ident: intro_numerical_analysis
             en: Chapter1
             es: Capítulo1
       -
@@ -256,7 +256,7 @@ map:
         es: Método del Simplex
         children:
           -
-            ident: chapter1
+            ident: intro_simplex_method
             en: Chapter1
             es: Capítulo1
   -
@@ -270,7 +270,7 @@ map:
         es: Teoría de Conjuntos
         children:
           -
-            ident: chapter1
+            ident: intro_set_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -279,7 +279,7 @@ map:
         es: Lógica
         children:
           -
-            ident: chapter1
+            ident: intro_logic
             en: Chapter1
             es: Capítulo1
       -
@@ -288,7 +288,7 @@ map:
         es: Categorías
         children:
           -
-            ident: chapter1
+            ident: intro_categories
             en: Chapter1
             es: Capítulo1
   -
@@ -297,12 +297,12 @@ map:
     es: Modelos Matemáticos
     children:
       -
-        ident: fisics
-        en: Fisics
+        ident: physics
+        en: Physics
         es: Física
         children:
           -
-            ident: chapter1
+            ident: intro_physics
             en: Chapter1
             es: Capítulo1
       -
@@ -311,7 +311,7 @@ map:
         es: Informática
         children:
           -
-            ident: chapter1
+            ident: intro_computer_science
             en: Chapter1
             es: Capítulo1
       -
@@ -320,7 +320,7 @@ map:
         es: Economía
         children:
           -
-            ident: chapter1
+            ident: intro_economy
             en: Chapter1
             es: Capítulo1
   -
@@ -334,7 +334,7 @@ map:
         es: Sistemas Dinámicos
         children:
           -
-            ident: chapter1
+            ident: intro_dynamical_systems
             en: Chapter1
             es: Capítulo1
       -
@@ -343,7 +343,7 @@ map:
         es: Ecuaciones Diferenciales
         children:
           -
-            ident: chapter1
+            ident: intro_differential_equations
             en: Chapter1
             es: Capítulo1
       -
@@ -352,7 +352,7 @@ map:
         es: Ecuaciones en Derivadas Parciales
         children:
           -
-            ident: chapter1
+            ident: intro_partial_differential_equations
             en: Chapter1
             es: Capítulo1
   -
@@ -366,7 +366,7 @@ map:
         es: Geometría Algebraica
         children:
           -
-            ident: chapter1
+            ident: intro_algebraic_geometry
             en: Chapter1
             es: Capítulo1
       -
@@ -375,7 +375,7 @@ map:
         es: Análisis Funcional
         children:
           -
-            ident: chapter1
+            ident: intro_functional_analysis
             en: Chapter1
             es: Capítulo1
       -
@@ -414,7 +414,7 @@ map:
         es: Variedades Diferenciables
         children:
           -
-            ident: chapter1
+            ident: intro_differentiable_manifolds
             en: Chapter1
             es: Capítulo1
       -
@@ -423,7 +423,7 @@ map:
         es: Geometría Riemanniana
         children:
           -
-            ident: chapter1
+            ident: intro_riemannian_geometry
             en: Chapter1
             es: Capítulo1
   -
@@ -437,7 +437,7 @@ map:
         es: Teoría Algebraica de Números
         children:
           -
-            ident: chapter1
+            ident: intro_algebraic_number_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -446,7 +446,7 @@ map:
         es: Teoría Analítica de Números
         children:
           -
-            ident: chapter1
+            ident: intro_analytic_number_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -455,7 +455,7 @@ map:
         es: Variedades Complejas
         children:
           -
-            ident: chapter1
+            ident: intro_complex_manifolds
             en: Chapter1
             es: Capítulo1
       -
@@ -464,7 +464,7 @@ map:
         es: Teoría de Lie
         children:
           -
-            ident: chapter1
+            ident: intro_lie_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -473,7 +473,7 @@ map:
         es: Fibrados
         children:
           -
-            ident: chapter1
+            ident: intro_bundles
             en: Chapter1
             es: Capítulo1
       -
@@ -482,7 +482,7 @@ map:
         es: Teoría de Haces
         children:
           -
-            ident: chapter1
+            ident: intro_sheaf_theory
             en: Chapter1
             es: Capítulo1
       -
@@ -491,7 +491,7 @@ map:
         es: Orbifolds
         children:
           -
-            ident: chapter1
+            ident: intro_orbifolds
             en: Chapter1
             es: Capítulo1
   -
@@ -500,12 +500,12 @@ map:
     es: Resolución de Problemas
     children:
       -
-        ident: subject1
+        ident: subject_problem_resolution
         en: Subject1
         es: Asignatura1
         children:
           -
-            ident: chapter1
+            ident: intro_problem_resolution
             en: Chapter1
             es: Capítulo1
   -
@@ -514,11 +514,11 @@ map:
     es: Historia de las Matemáticas
     children:
       -
-        ident: subject1
+        ident: subject_history_mathematics
         en: Subject1
         es: Asignatura1
         children:
           -
-            ident: chapter1
+            ident: intro_history_mathematics
             en: Chapter1
             es: Capítulo1
