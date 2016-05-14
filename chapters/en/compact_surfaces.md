@@ -9,6 +9,14 @@ lang: en
 
 Compact Surfaces
 
+site.config
+
+{% for category in site.data.nav %}
+    {{ category[0] }}
+{% endfor %}
+
+
+
 {{site.categories.key? 'en'}}
 
 {% if site.categories.key? 'en' %}

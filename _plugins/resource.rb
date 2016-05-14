@@ -18,6 +18,9 @@ module Jekyll
             if site.static_files.map { |file| File.basename(file.path) }.include?(@filename + '.ipe')
                 @in = @in + '<a class="ori" href="/images/codes/' + @filename + '.ipe"></a>'        
             end
+            if site.static_files.map { |file| File.basename(file.path) }.include?(@filename + '.blend')
+                @in = @in + '<a class="ori" href="/images/codes/' + @filename + '.blend"></a>'        
+            end
             return @in + '</div>'
         end
     end

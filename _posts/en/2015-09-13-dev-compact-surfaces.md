@@ -5,8 +5,6 @@ parent: compact_surfaces
 layout: post
 type: post
 mathjax: true
-geogebratube:
-  - JpaPYU7J
 lang: en
 category: en
 ---
@@ -68,8 +66,7 @@ An even stranger surface: the projective plane
 
 {% resource boy_surface_2.gif %}
 
-<div style="height:600px; width:800px; margin: auto;" id="applet_containerJpaPYU7J"></div>
-<div class="resource img"><a class="ori" href="http://www.geogebra.org/m/JpaPYU7J?doneurl=%2Fmaterials" target="_blank"></a></div>
+<div class="resource img"><iframe width="800" height="600" allowfullscreen src="/images/images/boy_surface.html"></iframe><a class="ori" href="/images/images/boy_surface.html" download></a></div>
 
 
 We get it by identifying the opposite points in a sphere, or when identifying the points in the boundary of a disc like in the figure

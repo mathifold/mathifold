@@ -2,4 +2,7 @@
 layout: default
 ---
 
-{{ content }}
+{% for i in site.data.nav[page.ident]%}
+	<a style="padding: 20px;" href="/subjects/{{page.lang}}/{{i.ident}}.html"><p class="subject {{i.ident}}">{{i[page.lang]}}</p></a>
+{% endfor %}
+

@@ -1,30 +1,30 @@
 module Jekyll
 
-  class CategoryPage < Page
-    def initialize(site, base, dir, category)
+  class DataPage < Page
+    def initialize(site, base, dir, name)
       @site = site
       @base = base
       @dir = dir
-      @name = 'index.html'
-
+      @name = name
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
-      self.data['category'] = category
-
-      category_title_prefix = site.config['category_title_prefix'] || 'Category: '
-      self.data['title'] = "#{category_title_prefix}#{category}"
+      self.data ||= {}
+      self.data['layout'] = 'default'
+      self.data['title'] = data
     end
   end
 
   class CategoryPageGenerator < Generator
-    safe true
-
     def generate(site)
-        dir = site.config['category_dir'] || 'categories'
-        site.categories.each_key do |category|
-          site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
-        end
-      
+      topics = site.data['nav']
+      topics.each do |topic|
+        name = "#{topic[0]}.md"
+        page = Jekyll::DataPage.new(site, site.source, @dir, name)
+        page.data['title'] = topic[0]
+        page.data['ident'] = topic[0]
+        page.data['layout'] = 'topic'
+        page.data['lang'] = 'en'
+        site.pages << page
+      end
     end
   end
 
