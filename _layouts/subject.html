@@ -2,21 +2,18 @@
 layout: default
 ---
 
-{% assign iden = site.data.nav.map | where: 'ident', page.ident %}
 
 <div style="position: relative;" align="center">
-<p style="font-size: 40px;">{{page.title}}</p>
+<p style="font-size: 32px;">{{page.title}}</p>
 </div>
 
 <div style="position: relative;" align="center">
 
-{% assign list = site.data.nav.map | where: 'ident', page.ident %}
+{% assign iden = site.data.nav.map | where: 'ident', page.parent %}
+{% assign list = iden[0].children | where: 'ident', page.ident %}
 
 {% for i in list[0].children %}
-	<a style="padding: 20px;position: relative;" href="/subjects/{{page.lang}}/{{i.ident}}.html"><p class="subject {{i.ident}}">{{i[page.lang]}}<span style="position: absolute;bottom: -200px;right: 35px;">
-      <span class="counter" style="background-color: #00DD66;">{{i.children | size}}</span>
-      <span class="counter" style="background-color: #00BB33;">*</span>
-      </span></p></a>
+	<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/{{i.ident}}.html" class="chapter">{{i[page.lang]}}</a></div>
 {% endfor %}
 
 </div>

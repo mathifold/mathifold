@@ -20,9 +20,21 @@ map:
         es: Teoría de Números
         children:
           -
-            ident: intro_number_theory
-            en: Chapter1
-            es: Capítulo1
+            ident: divisibility_factorisation
+            en: Divisibility and Factorisation
+            es: Divisibilidad y Factorización
+          -
+            ident: congruences
+            en: Congruences
+            es: Congruencias
+          -
+            ident: arithmetic_functions
+            en: Arithmetic Functions
+            es: Funciones Aritméticas
+          -
+            ident: orders_primitive_roots_indexes
+            en: Orders, Primitive Roots and Indexes
+            es: Órdenes, Raíces Primitivas e Índices
       -
         ident: trigonometry
         en: Trigonometry

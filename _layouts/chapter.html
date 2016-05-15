@@ -2,4 +2,15 @@
 layout: default
 ---
 
-{{ content }}
+<div style="position: relative;" align="center">
+<p style="font-size: 32px;">{{page.title}}</p>
+</div>
+
+<div style="position: relative;" align="center">
+
+{% assign list = site.posts | where: 'lang', page.lang | where:"parent", page.ident %}
+{% for post in list %}
+	<div style="margin: 30px;"><a href="{{ post.url }}"  class="post {{post.type}}">{{ post.title }}</a></div>
+{% endfor %}
+
+</div>

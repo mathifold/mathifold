@@ -26,7 +26,7 @@ module Jekyll
             page.data['ident'] = subject['ident']
             page.data['layout'] = 'subject'
             page.data['lang'] = lang
-            page.data['parent'] = topic
+            page.data['parent'] = topic['ident']
             site.pages << page
           end
         end

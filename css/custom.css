@@ -330,12 +330,32 @@ p.subject {
   background-image: url('/images/orbifolds.jpg');
 }
 
-
-
 .chapter{
   text-decoration: none; 
   color: black; 
   border: 3px solid black;
   padding: 5px;
   border-radius: 7px;
+}
+
+.post {
+  background-size: 90px 90px;
+  font-size: 55%;
+  color: black;
+  padding: 5px;
+  width: 80px; 
+  height: 80px;
+  word-wrap: break-word;
+  display: inline-block;
+  text-align: left;
+  vertical-align: text-top;
+  text-decoration: none;
+}
+
+.development{
+  background-color: #00FF00;
+}
+
+.definition{
+  background-color: #DE0154;
 }
