@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64.4pt" height="64.4pt" viewBox="0 0 64.4 64.4" version="1.1">
+<defs>
+<clipPath id="clip1">
+  <path d="M 0 0 L 64.398438 0 L 64.398438 64.398438 L 0 64.398438 Z M 0 0 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 0.199219 0.199219 L 0.199219 64.199219 L 64.199219 64.199219 L 64.199219 0.199219 Z M 0.199219 0.199219 "/>
+</g>
+<path style="fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(100%,50.19989%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 223.999219 688.000781 C 235.999219 692.000781 241.999219 690.000781 242.999219 686.332813 C 243.999219 682.66875 239.999219 677.332813 238.999219 672.66875 C 237.999219 668.000781 239.999219 664.000781 239.999219 664.000781 " transform="matrix(1,0,0,-1,-191.8,704.2)"/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,50.19989%,0%);fill-opacity:1;" d="M 54.601562 48.199219 C 54.601562 46.875 53.523438 45.800781 52.199219 45.800781 C 50.875 45.800781 49.800781 46.875 49.800781 48.199219 C 49.800781 49.523438 50.875 50.601562 52.199219 50.601562 C 53.523438 50.601562 54.601562 49.523438 54.601562 48.199219 "/>
+<path style="fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke:rgb(100%,50.19989%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 223.999219 656.000781 C 211.999219 652.000781 205.999219 654.000781 205.999219 659.000781 C 205.999219 664.000781 211.999219 672.000781 207.999219 680.000781 " transform="matrix(1,0,0,-1,-191.8,704.2)"/>
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(100%,50.19989%,0%);fill-opacity:1;" d="M 14.601562 16.199219 C 14.601562 14.875 13.523438 13.800781 12.199219 13.800781 C 10.875 13.800781 9.800781 14.875 9.800781 16.199219 C 9.800781 17.523438 10.875 18.601562 12.199219 18.601562 C 13.523438 18.601562 14.601562 17.523438 14.601562 16.199219 "/>
+</g>
+</svg>

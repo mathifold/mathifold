@@ -252,8 +252,8 @@ p.subject {
 
 
 
-.fisics{
-  background-image: url('/images/fisics.jpg');
+.physics{
+  background-image: url('/images/physics.jpg');
 }
 
 .computer_science{
@@ -350,12 +350,13 @@ p.subject {
   text-align: left;
   vertical-align: text-top;
   text-decoration: none;
+  box-shadow: 0px 0px 10px #888888;
 }
 
-.development{
-  background-color: #00FF00;
+.exposition{
+  background-image: url('/images/exposition.svg');
 }
 
 .definition{
-  background-color: #DE0154;
+  background-image: url('/images/definition.svg');
 }

@@ -1,10 +1,10 @@
 ---
 title: "Classification of Compact Surfaces"
-ident: development_classification_compact_surfaces
-permalink: development_classification_compact_surfaces
+ident: exposition_classification_compact_surfaces
+permalink: exposition_classification_compact_surfaces
 parent: compact_surfaces
 layout: post
-type: development
+type: exposition
 mathjax: true
 lang: en
 category: en
