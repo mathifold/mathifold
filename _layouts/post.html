@@ -2,7 +2,25 @@
 layout: default
 ---
 
-<div style="position: relative;" align="center">
+{% assign list = site.posts | where: 'lang', page.lang | where:"parent", page.parent | reverse %}
+{% assign n = list | size %}
+{% assign m = n | plus: -1 %}
+{{n}}
+{{m}}
+{% for i in (0..m) %}
+	{% assign post = list[i] %}
+	{{post.ident}}
+	{{i}}
+	{% if post.ident == page.ident %}
+		{% assign index = i %}
+		{{'ok'}}
+	{% endif %}
+{% endfor %}
+
+{{index}}
+
+
+<div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/{{page.kind}}.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
 		{{page.title}}</span>

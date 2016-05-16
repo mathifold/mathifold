@@ -1,6 +1,7 @@
 ---
 title: "Divisibilidad"
 lang: es
+category: es
 
 ident: def_divisibility
 parent: divisibility_factorisation
