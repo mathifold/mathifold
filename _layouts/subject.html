@@ -13,7 +13,15 @@ layout: default
 {% assign list = iden[0].children | where: 'ident', page.ident %}
 
 {% for i in list[0].children %}
-	<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/{{i.ident}}.html" class="chapter">{{i[page.lang]}}</a></div>
+	{% assign c = 0 %}
+	{% assign listposts = site.posts | where: 'lang', page.lang %}
+	{% for l in listposts %}
+		{% if l.parent == i.ident %}
+			{% assign c = c | plus: 1 %}
+		{% endif %}
+	{% endfor %}
+	<div style="margin: 30px;"><a href="/chapters/{{page.lang}}/{{i.ident}}.html" class="chapter">{{i[page.lang]}}
+	<span class="counter" style="background-color: #00BB33;">{{c}}</span></a></div>
 {% endfor %}
 
 </div>

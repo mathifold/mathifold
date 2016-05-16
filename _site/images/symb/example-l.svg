@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64.4pt"
+   height="64.4pt"
+   viewBox="0 0 64.4 64.4"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="example.svg">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="2.9316769"
+     inkscape:cx="40.250001"
+     inkscape:cy="40.250001"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <clipPath
+       id="clip1">
+      <path
+         d="M 0 0 L 64.398438 0 L 64.398438 64.398438 L 0 64.398438 Z M 0 0 "
+         id="path7" />
+    </clipPath>
+  </defs>
+  <g
+     id="surface1"
+     style="opacity:0.5">
+    <g
+       clip-path="url(#clip1)"
+       clip-rule="nonzero"
+       id="g10"
+       style="">
+      <path
+         style="stroke:none;fill-rule:evenodd;fill:rgb(100%, 100%, 100%);fill-opacity:1"
+         d="M 0.199219 0.199219 L 0.199219 64.199219 L 64.199219 64.199219 L 64.199219 0.199219 Z M 0.199219 0.199219 "
+         id="path12" />
+    </g>
+    <path
+       style="fill-rule:evenodd;fill:rgb(100%, 100%, 0%);fill-opacity:1;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(100%, 100%, 0%);stroke-opacity:1;stroke-miterlimit:10"
+       d="M 223.999219 693.707813 L 209.89375 650.29375 L 246.823438 677.125781 L 201.175 677.125781 L 238.108594 650.29375 Z M 223.999219 693.707813 "
+       transform="matrix(1,0,0,-1,-191.8,704.2)"
+       id="path14" />
+    <path
+       style="fill-rule:evenodd;fill:rgb(100%, 100%, 0%);fill-opacity:1;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(100%, 100%, 0%);stroke-opacity:1;stroke-miterlimit:10"
+       d="M 218.6125 677.125781 L 229.389844 677.125781 L 232.717969 666.875781 L 223.999219 660.539844 L 215.280469 666.875781 Z M 218.6125 677.125781 "
+       transform="matrix(1,0,0,-1,-191.8,704.2)"
+       id="path16" />
+  </g>
+</svg>

@@ -2,8 +2,12 @@
 layout: default
 ---
 
-<div style="margin: auto;
-    width: 90%;
-    padding: 10px;">
+<div style="position: relative;" align="center">
+<img src="/images/symb/{{page.kind}}.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		{{page.title}}</span>
+</div>
+
+<div class="postbox pb_{{page.kind}}">
 	{{ content }}
 </div>

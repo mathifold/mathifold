@@ -11,9 +11,18 @@ layout: default
 <div style="position: relative;" align="center">
 
 {% for i in iden[0].children %}
+	{% assign c = 0 %}
+	{% assign listposts = site.posts | where: 'lang', page.lang %}
+	{% for l in listposts %}
+		{% for j in i.children %}
+			{% if l.parent == j.ident %}
+				{% assign c = c | plus: 1 %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
 	<a style="padding: 20px;position: relative;" href="/subjects/{{page.lang}}/{{i.ident}}.html"><p class="subject {{i.ident}}">{{i[page.lang]}}<span style="position: absolute;bottom: -200px;right: 35px;">
       <span class="counter" style="background-color: #00DD66;">{{i.children | size}}</span>
-      <span class="counter" style="background-color: #00BB33;">*</span>
+      <span class="counter" style="background-color: #00BB33;">{{c}}</span>
       </span></p></a>
 {% endfor %}
 

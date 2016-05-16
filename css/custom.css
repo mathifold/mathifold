@@ -6,7 +6,7 @@ body {
   font-weight: 100;
 }
 
-.resource { /* img */
+.resource { 
   margin-bottom: 15px;
   position: relative;
   text-align: center;
@@ -338,7 +338,7 @@ p.subject {
   border-radius: 7px;
 }
 
-.post {
+.post{
   background-size: 90px 90px;
   font-size: 55%;
   color: black;
@@ -350,13 +350,118 @@ p.subject {
   text-align: left;
   vertical-align: text-top;
   text-decoration: none;
-  box-shadow: 0px 0px 10px #888888;
+  border-style: solid;
 }
 
 .exposition{
-  background-image: url('/images/exposition.svg');
+  background-image: url('/images/symb/exposition-l.svg');
 }
 
 .definition{
-  background-image: url('/images/definition.svg');
+  background-image: url('/images/symb/definition-l.svg');
+}
+
+.corollary{
+  background-image: url('/images/symb/corollary-l.svg');
+}
+
+.visualisation{
+  background-image: url('/images/symb/visualisation-l.svg');
+}
+
+.problem{
+  background-image: url('/images/symb/problem-l.svg');
+}
+
+.example{
+  background-image: url('/images/symb/example-l.svg');
+}
+
+.biography{
+  background-image: url('/images/symb/biography-l.svg');
+}
+
+.lemma{
+  background-image: url('/images/symb/lemma-l.svg');
+}
+
+.applet{
+  background-image: url('/images/symb/applet-l.svg');
+}
+
+.quotation{
+  background-image: url('/images/symb/quotation-l.svg');
+}
+
+.counterexample{
+  background-image: url('/images/symb/counterexample-l.svg');
+}
+
+.theorem{
+  background-image: url('/images/symb/theorem-l.svg');
+}
+
+.remark{
+  background-image: url('/images/symb/remark-l.svg');
+}
+
+.postbox{
+  margin: auto;
+  width: 80%;
+  padding: 50px;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 10px;
+}
+
+.pb_exposition{
+  border-color: rgb(0,255,0);
+}
+
+.pb_definition{
+  border-color: rgb(222,1,84);
+}
+
+.pb_corollary{
+  border-color: rgb(0,242,242);
+}
+
+.pb_visualisation{
+  border-color: rgb(128,0,128);
+}
+
+.pb_problem{
+  border-color: rgb(255,128,0);
+}
+
+.pb_example{
+  border-color: rgb(255,255,0);
+}
+
+.pb_biography{
+  border-style: double;
+}
+
+.pb_lemma{
+  border-color: rgb(0, 166, 166);
+}
+
+.pb_applet{
+  border-color: rgb(60,60,60);
+}
+
+.pb_quotation{
+  border-color: rgb(128,0,0);
+}
+
+.pb_counterexample{
+  border-color: rgb(255, 0, 0);
+}
+
+.pb_theorem{
+  border-color: rgb(0,86,128);
+}
+
+.pb_remark{
+  border-color: rgb(0, 0, 0);
 }

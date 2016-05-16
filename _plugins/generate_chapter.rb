@@ -26,6 +26,7 @@ module Jekyll
               page.data['title'] = chapter[lang]
               page.data['ident'] = chapter['ident']
               page.data['layout'] = 'chapter'
+              page.data['type'] = 'chapter'
               page.data['lang'] = lang
               page.data['parent'] = subject['ident']
               site.pages << page

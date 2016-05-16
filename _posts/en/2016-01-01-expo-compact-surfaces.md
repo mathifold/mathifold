@@ -1,13 +1,14 @@
 ---
 title: "Classification of Compact Surfaces"
-ident: exposition_classification_compact_surfaces
-permalink: exposition_classification_compact_surfaces
-parent: compact_surfaces
-layout: post
-type: exposition
-mathjax: true
 lang: en
-category: en
+
+ident: exposition_classification_compact_surfaces
+parent: compact_surfaces
+kind: exposition
+mathjax: true
+
+layout: post
+type: post
 ---
 
 A surface is a manifold of dimension 2. For example:

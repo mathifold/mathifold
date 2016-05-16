@@ -24,6 +24,7 @@ module Jekyll
           page.data['title'] = topic[lang]
           page.data['ident'] = topic['ident']
           page.data['layout'] = 'topic'
+          page.data['type'] = 'topic'
           page.data['lang'] = lang
           site.pages << page
         end
