@@ -119,6 +119,52 @@
 
 </div>
 
+<!--New from Rubén, Feedback Button-->
+
+<!--Bootstrap CSS-->
+  	<!-- Latest compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!--End of Bootstrap CSS-->
+
+<!-- Button trigger FeedBackModal modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#FeedBack" style="position: fixed; right: 1%; bottom: 1%;">
+  Send us feedback
+</button>
+
+<!-- FeedBack Modal -->
+<div class="modal fade" id="FeedBack" tabindex="-1" role="dialog" aria-labelledby="FeedbackModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="FeedbackModalLabel">Feedback</h4>
+      </div>
+      	<form method="POST" action="/php/SendFeedback.php">
+	      <div class="modal-body">
+	        
+	        <div class="form-group">
+	          <label for="FeedBackName" class="control-label">Name:</label>
+	          <input type="text" class="form-control" id="FeedBackName" name="Sender" required="required" placeholder="Steve Jobs">
+	        </div>
+	        <div class="form-group">
+	          <label for="FeedBackMessageText" class="control-label">Message:</label>
+	          <textarea class="form-control" id="FeedBackMessageText" name="Message" required="required" placeholder="I just want to say that..."></textarea>
+	        </div>
+
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="submit" class="btn btn-primary">Send</button>
+	      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--End Of "New from Rubén, Feedback Button"-->
+
 
 
     <footer class="site-footer">
