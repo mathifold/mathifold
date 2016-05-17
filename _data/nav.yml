@@ -44,6 +44,18 @@ map:
             ident: orders_primitive_roots_indexes
             en: Orders, Primitive Roots and Indexes
             es: Órdenes, Raíces Primitivas e Índices
+          -
+            ident: quadratic_congruences
+            en: Quadratic Congruences
+            es: Congruencias Cuadráticas
+          -
+            ident: diophantine_equations
+            en: Diophantine Equations
+            es: Ecuaciones Diofánticas
+          -
+            ident: continuous_fractions
+            en: Continued Fractions
+            es: Fracciones Continuas
       -
         ident: trigonometry
         en: Trigonometry
@@ -156,9 +168,29 @@ map:
         es: Topología
         children:
           -
-            ident: intro_topology
-            en: Chapter1
-            es: Capítulo1
+            ident: topological_spaces
+            en: Topological Spaces
+            es: Espacios Topológicos
+          -
+            ident: connectedness_compactness
+            en: Connectedness and Compactness
+            es: Conexión y Compacidad
+          -
+            ident: countability_separation_axioms
+            en: Countability and Separation Axioms
+            es: Axiomas de Numerabilidad y Separación
+          -
+            ident: metrization_theorems_paracompactness
+            en: Metrization Theorems and Paracompactness
+            es: Teoremas de Metrización y Paracompacidad
+          -
+            ident: complete_metric_spaces_function_spaces
+            en: Complete Metric Spaces and Function Spaces
+            es: Espacios Métricos Completos y Espacios de Funciones
+          -
+            ident: baire_spaces_dimension_theory
+            en: Baire Spaces and Dimension Theory
+            es: Espacios de Baire y Teoría de la Dimensión
   -
     ident: algebra
     en: Algebra
@@ -170,18 +202,94 @@ map:
         es: Álgebra Lineal
         children:
           -
-            ident: intro_linear_algebra
-            en: Chapter1
-            es: Capítulo1
+            ident: systems_linear_equations
+            en: Systems of Linear Equations
+            es: Sistemas Lineales de Ecuaciones
+          -
+            ident: matrices
+            en: Matrices
+            es: Matrices
+          -
+            ident: determinants
+            en: Determinants
+            es: Determinantes
+          -
+            ident: vector_spaces
+            en: Vector Spaces
+            es: Espacios Vectoriales
+          -
+            ident: finite_dimension_vector_spaces
+            en: Finite Dimension Vector Spaces
+            es: Espacios Vectoriales de Dimensión Finita
+          -
+            ident: linear_maps
+            en: Linear Maps
+            es: Aplicaciones Lineales
+          -
+            ident: eigenanalysis
+            en: Eigenanalysis
+            es: Autoanálisis
+          -
+            ident: canonic_forms
+            en: Canonic Forms
+            es: Formas Canónicas
+          -
+            ident: duality
+            en: Duality
+            es: Dualidad
+          -
+            ident: inner_product_spaces
+            en: Inner Product Spaces
+            es: Espacios con Producto Interno
+          -
+            ident: bilinear_quadratic_forms
+            en: Bilinear and Quadratic Forms
+            es: Formas Bilineales y Cuadráticas
+          -
+            ident: moore_penrose_inverse
+            en: Moore-Penrose Inverse
+            es: Inversa de Moore-Penrose
       -
         ident: group_theory
         en: Group Theory
         es: Teoría de Grupos
         children:
           -
-            ident: intro_group_theory
-            en: Chapter1
-            es: Capítulo1
+            ident: group_symmetries
+            en: Symmetries
+            es: Simetrías
+          -
+            ident: group_axioms
+            en: Axioms
+            es: Axiomas
+          -
+            ident: group_gallery
+            en: Group Gallery
+            es: Galería de Grupos
+          -
+            ident: isomorphisms_homomorphisms
+            en: Isomorphisms and Homomorphisms
+            es: Isomorfismos y Homomorfismos
+          -
+            ident: group_theorems
+            en: Group Theorems
+            es: Teoremas de Grupos
+          -
+            ident: conjugacy
+            en: Conjugacy
+            es: Conjugación
+          -
+            ident: actions_orbits_stabilizers
+            en: Actions, Orbits and Stabilizers
+            es: Acciones, Órbitas y Estabilizadores
+          -
+            ident: sylow_theorems
+            en: Sylow Theorems
+            es: Teoremas de Sylow
+          -
+            ident: free_groups_presentations
+            en: Free Groups and Presentations
+            es: Grupos Libres y Presentaciones
       -
         ident: ring_theory
         en: Ring Theory
@@ -339,9 +447,21 @@ map:
         es: Física
         children:
           -
-            ident: intro_physics
-            en: Chapter1
-            es: Capítulo1
+            ident: mechanics
+            en: Mechanics
+            es: Mecánica
+          -
+            ident: electromagnetism
+            en: Electromagnetism
+            es: Electromagnetismo
+          -
+            ident: relativity
+            en: Relativity
+            es: Relatividad
+          -
+            ident: quantum_mechanics
+            en: Quantum Mechanics
+            es: Mecánica Cuántica
       -
         ident: computer_science
         en: Computer Science
@@ -468,8 +588,32 @@ map:
         children:
           -
             ident: intro_differentiable_manifolds
-            en: Chapter1
-            es: Capítulo1
+            en: Differentiable Manifolds
+            es: Variedades Diferenciables
+          -
+            ident: tangent_space
+            en: Tangent Space
+            es: Espacio Tangente
+          -
+            ident: vector_fields
+            en: Vector Fields
+            es: Campos Vectoriales
+          -
+            ident: tensors_forms
+            en: Tensors and Forms
+            es: Tensores y Formas
+          -
+            ident: integration_manifolds
+            en: Integration in Manifolds
+            es: Integración en Variedades
+          -
+            ident: de_rham_cohomology
+            en: De Rham Cohomology
+            es: Cohomología de De Rham
+          -
+            ident: distributions_manifolds
+            en: Distributions in Manifolds
+            es: Distribuciones en Variedades
       -
         ident: riemannian_geometry
         en: Riemannian Geometry
