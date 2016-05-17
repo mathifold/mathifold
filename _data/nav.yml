@@ -6,6 +6,15 @@ map:
     es: Base
     children:
       -
+        ident: basic_shapes
+        en: Basic Shapes
+        es: Formas Básicas
+        children:
+          -
+            ident: polyhedra
+            en: Polyhedra
+            es: Poliedros
+      -
         ident: combinatorics
         en: Combinatorics
         es: Combinatoria
@@ -77,9 +86,25 @@ map:
         es: Cónicas
         children:
           -
-            ident: intro_conics
-            en: Chapter1
-            es: Capítulo1
+            ident: conic_curves
+            en: Conic Curves
+            es: Curvas Cónicas
+          -
+            ident: classical_properties_conics
+            en: Classical Properties of Conics
+            es: Propiedades Clásicas de las Cónicas
+          -
+            ident: projective_properties_conics
+            en: Projective Properties of Conics
+            es: Propiedades Proyectivas de las Cónicas
+          -
+            ident: more_geometrical_properties_conics
+            en: More Geometrical Properties of Conics
+            es: Más Propiedades Geométricas de las Cónicas
+          -
+            ident: conics_orbits_around_sun
+            en: Conics and the Orbits Around the Sun
+            es: Las Cónicas y las Órbitas alrededor del Sol
       -
         ident: affine_projective_geometry
         en: Affine and Projective Geometry
@@ -347,8 +372,24 @@ map:
         children:
           -
             ident: intro_dynamical_systems
-            en: Chapter1
-            es: Capítulo1
+            en: Introduction to DS
+            es: Introducción a los SD
+          -
+            ident: linear_first_order_dynamical_systems
+            en: Linear First-Order DS
+            es: SD de Primer Orden Lineales
+          -
+            ident: non_linear_first_order_dynamical_systems
+            en: Nonlinear First-Order DS
+            es: SD de Primer Orden no Lineales
+          -
+            ident: linear_higher_order_dynamical_systems
+            en: Linear Higher-Order DS
+            es: SD de Orden Superior Lineales
+          -
+            ident: non_linear_higher_order_dynamical_systems
+            en: Nonlinear Higher-Order DS
+            es: SD de Orden Superior no Lineales
       -
         ident: differential_equations
         en: Differential Equations
