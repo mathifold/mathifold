@@ -5,19 +5,24 @@ layout: default
 {% assign list = site.posts | where: 'lang', page.lang | where:"parent", page.parent | reverse %}
 {% assign n = list | size %}
 {% assign m = n | plus: -1 %}
-{{n}}
-{{m}}
 {% for i in (0..m) %}
 	{% assign post = list[i] %}
-	{{post.ident}}
-	{{i}}
 	{% if post.ident == page.ident %}
 		{% assign index = i %}
-		{{'ok'}}
 	{% endif %}
 {% endfor %}
 
-{{index}}
+
+{% if index != 0 %}
+	{% assign b = index | plus: -1 %}
+	{% assign previous = list[b] %}
+	<a href="{{ previous.url }}"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+{% endif %}
+{% if index != m %}
+	{% assign a = index | plus: 1 %}
+	{% assign next = list[a] %}
+	<a href="{{ next.url }}"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+{% endif %}
 
 
 <div style="position: relative; height: 90px;" align="center">
