@@ -16,12 +16,12 @@ layout: default
 {% if index != 0 %}
 	{% assign b = index | plus: -1 %}
 	{% assign previous = list[b] %}
-	<a href="{{ previous.url }}"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="{{ previous.url }}.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 {% endif %}
 {% if index != m %}
 	{% assign a = index | plus: 1 %}
 	{% assign next = list[a] %}
-	<a href="{{ next.url }}"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="{{ next.url }}.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 {% endif %}
 
 
