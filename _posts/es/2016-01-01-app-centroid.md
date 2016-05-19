@@ -2,6 +2,7 @@
 title: "Baricentro"
 lang: es
 category: es
+permalink: es/applet_centroid
 
 ident: applet_centroid
 parent: triangles

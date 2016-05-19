@@ -2,6 +2,7 @@
 title: "Polaridad"
 lang: es
 category: es
+permalink: es/applet_polarity1
 
 ident: applet_polarity1
 parent: circles

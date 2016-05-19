@@ -2,6 +2,7 @@
 title: "Tetraedro"
 lang: es
 category: es
+permalink: es/applet_tetrahedron
 
 ident: applet_tetrahedron
 parent: polyhedra

@@ -2,6 +2,7 @@
 title: "Ortocentro"
 lang: es
 category: es
+permalink: es/applet_orthocenter
 
 ident: applet_orthocenter
 parent: triangles

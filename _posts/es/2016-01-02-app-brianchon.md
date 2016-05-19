@@ -2,6 +2,7 @@
 title: "Teorema de Brianchon"
 lang: es
 category: es
+permalink: es/applet_brianchon
 
 ident: applet_brianchon
 parent: projective_properties_conics

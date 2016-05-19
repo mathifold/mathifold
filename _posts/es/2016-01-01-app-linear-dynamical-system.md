@@ -2,6 +2,7 @@
 title: "SD de Primer Orden Lineal"
 lang: es
 category: es
+permalink: es/applet_linear_first_order_dynamical_system
 
 ident: applet_linear_first_order_dynamical_system
 parent: linear_first_order_dynamical_systems

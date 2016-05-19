@@ -2,6 +2,7 @@
 title: "Superficie"
 lang: es
 category: es
+permalink: es/definition_surface
 
 ident: definition_surface
 parent: compact_surfaces

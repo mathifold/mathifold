@@ -2,6 +2,7 @@
 title: "Círculo"
 lang: es
 category: es
+permalink: es/applet_circle2_conics
 
 ident: applet_circle2_conics
 parent: conic_curves

@@ -2,6 +2,7 @@
 title: "Esfera"
 lang: es
 category: es
+permalink: es/example_sphere
 
 ident: example_sphere
 parent: compact_surfaces

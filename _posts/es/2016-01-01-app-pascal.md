@@ -2,6 +2,7 @@
 title: "Teorema de Pascal"
 lang: es
 category: es
+permalink: es/applet_pascal
 
 ident: applet_pascal
 parent: projective_properties_conics

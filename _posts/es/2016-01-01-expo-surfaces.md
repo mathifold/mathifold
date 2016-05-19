@@ -2,6 +2,7 @@
 title: "Superficies"
 lang: es
 category: es
+permalink: es/exposition_surfaces
 
 ident: exposition_surfaces
 parent: compact_surfaces

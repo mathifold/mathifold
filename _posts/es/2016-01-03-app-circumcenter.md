@@ -2,6 +2,7 @@
 title: "Circuncentro"
 lang: es
 category: es
+permalink: es/applet_circumcenter
 
 ident: applet_circumcenter
 parent: triangles

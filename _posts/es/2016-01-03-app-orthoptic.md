@@ -2,6 +2,7 @@
 title: "Arco Capaz"
 lang: es
 category: es
+permalink: es/applet_orthoptic
 
 ident: applet_orthoptic
 parent: circles

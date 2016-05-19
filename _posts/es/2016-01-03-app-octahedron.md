@@ -2,6 +2,7 @@
 title: "Octaedro"
 lang: es
 category: es
+permalink: es/applet_octahedron
 
 ident: applet_octahedron
 parent: polyhedra

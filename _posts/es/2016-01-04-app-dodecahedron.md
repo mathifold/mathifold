@@ -2,6 +2,7 @@
 title: "Dodecaedro"
 lang: es
 category: es
+permalink: es/applet_dodecahedron
 
 ident: applet_dodecahedron
 parent: polyhedra

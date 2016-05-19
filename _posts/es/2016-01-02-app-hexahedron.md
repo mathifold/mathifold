@@ -2,6 +2,7 @@
 title: "Cubo - Hexaedro"
 lang: es
 category: es
+permalink: es/applet_hexahedron
 
 ident: applet_hexahedron
 parent: polyhedra

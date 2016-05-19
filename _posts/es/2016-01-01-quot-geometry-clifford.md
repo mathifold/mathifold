@@ -2,6 +2,7 @@
 title: "La Geometría según Clifford"
 lang: es
 category: es
+permalink: es/quotation_geometry_clifford
 
 ident: quotation_geometry_clifford
 parent: intro_history_mathematics

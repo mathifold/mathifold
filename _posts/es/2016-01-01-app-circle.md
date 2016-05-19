@@ -2,6 +2,7 @@
 title: "Círculo"
 lang: es
 category: es
+permalink: es/applet_circle
 
 ident: applet_circle
 parent: circles

@@ -2,8 +2,9 @@
 title: "Divisibilidad"
 lang: es
 category: es
+permalink: es/definition_divisibility
 
-ident: def_divisibility
+ident: definition_divisibility
 parent: divisibility_factorisation
 kind: definition
 mathjax: true

@@ -2,6 +2,7 @@
 title: "Icosaedro"
 lang: es
 category: es
+permalink: es/applet_icosahedron
 
 ident: applet_icosahedron
 parent: polyhedra

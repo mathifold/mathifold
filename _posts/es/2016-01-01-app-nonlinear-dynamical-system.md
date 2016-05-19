@@ -2,6 +2,7 @@
 title: "SD de Primer Orden no Lineal"
 lang: es
 category: es
+permalink: es/applet_non_linear_first_order_dynamical_system
 
 ident: applet_non_linear_first_order_dynamical_system
 parent: non_linear_first_order_dynamical_systems

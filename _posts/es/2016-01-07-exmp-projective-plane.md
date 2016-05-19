@@ -2,6 +2,7 @@
 title: "Plano proyectivo"
 lang: es
 category: es
+permalink: es/example_projective_plane
 
 ident: example_projective_plane
 parent: compact_surfaces

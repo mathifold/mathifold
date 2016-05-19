@@ -2,6 +2,7 @@
 title: "Elipse"
 lang: es
 category: es
+permalink: es/applet_ellipse
 
 ident: applet_ellipse
 parent: conic_curves

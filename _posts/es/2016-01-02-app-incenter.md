@@ -2,6 +2,7 @@
 title: "Incentro"
 lang: es
 category: es
+permalink: es/applet_incenter
 
 ident: applet_incenter
 parent: triangles

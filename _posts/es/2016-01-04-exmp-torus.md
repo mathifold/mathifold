@@ -2,6 +2,7 @@
 title: "Toro"
 lang: es
 category: es
+permalink: es/example_torus
 
 ident: example_torus
 parent: compact_surfaces
