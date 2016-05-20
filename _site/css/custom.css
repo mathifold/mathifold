@@ -56,6 +56,22 @@ p.topic {
   margin: 0px;
 }
 
+.bcblue{
+  color: #FFFFFF;
+  background-color:#1F7AFF;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  padding: 3px 20px 3px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dissap {
+  display:none;
+}
+
 
 .basics{
 	background-image: url('/images/basics.png');
@@ -130,6 +146,14 @@ p.subject {
   background-image: url('/images/basic_shapes.jpg');
 }
 
+.numbers{
+  background-image: url('/images/numbers.jpg');
+}
+
+.equations{
+  background-image: url('/images/equations.jpg');
+}
+
 .combinatorics{
   background-image: url('/images/combinatorics.jpg');
 }
@@ -144,6 +168,10 @@ p.subject {
 
 .complex_numbers{
   background-image: url('/images/complex_numbers.jpg');
+}
+
+.derivation_integration{
+  background-image: url('/images/derivation_integration.jpg');
 }
 
 

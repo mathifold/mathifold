@@ -15,6 +15,48 @@ map:
             en: Polyhedra
             es: Poliedros
       -
+        ident: numbers
+        en: Numbers
+        es: Números
+        children:
+          -
+            ident: natural_numbers
+            en: Natural Numbers
+            es: Números Naturales
+          -
+            ident: integers
+            en: Integers
+            es: Números Enteros
+          -
+            ident: fractions
+            en: Fractions
+            es: Fracciones
+          -
+            ident: powers_roots
+            en: Powers and Roots
+            es: Potencias y Raíces
+          -
+            ident: real_numbers
+            en: Real Numbers
+            es: Los Números Reales
+      -
+        ident: equations
+        en: Equations
+        es: Ecuaciones
+        children:
+          -
+            ident: first_order_equations
+            en: First Order Equations
+            es: Ecuaciones de Primer Grado
+          -
+            ident: second_order_equations
+            en: Second Order Equations
+            es: Ecuaciones de Segundo Grado
+          -
+            ident: equations_systems
+            en: Equations Systems
+            es: Sistemas de Ecuaciones
+      -
         ident: combinatorics
         en: Combinatorics
         es: Combinatoria
@@ -23,39 +65,6 @@ map:
             ident: intro_combinatorics
             en: Chapter1
             es: Capítulo1
-      -
-        ident: number_theory
-        en: Number Theory
-        es: Teoría de Números
-        children:
-          -
-            ident: divisibility_factorisation
-            en: Divisibility and Factorisation
-            es: Divisibilidad y Factorización
-          -
-            ident: congruences
-            en: Congruences
-            es: Congruencias
-          -
-            ident: arithmetic_functions
-            en: Arithmetic Functions
-            es: Funciones Aritméticas
-          -
-            ident: orders_primitive_roots_indexes
-            en: Orders, Primitive Roots and Indexes
-            es: Órdenes, Raíces Primitivas e Índices
-          -
-            ident: quadratic_congruences
-            en: Quadratic Congruences
-            es: Congruencias Cuadráticas
-          -
-            ident: diophantine_equations
-            en: Diophantine Equations
-            es: Ecuaciones Diofánticas
-          -
-            ident: continuous_fractions
-            en: Continued Fractions
-            es: Fracciones Continuas
       -
         ident: trigonometry
         en: Trigonometry
@@ -74,6 +83,27 @@ map:
             ident: intro_complex_numbers
             en: Chapter1
             es: Capítulo1
+      -
+        ident: derivation_integration
+        en: Derivation and Integration
+        es: Derivación e Integración
+        children:
+          -
+            ident: derivatives
+            en: Derivatives
+            es: Derivadas
+          -
+            ident: problems_derivatives
+            en: Problems involving Derivatives
+            es: Problemas que usan Derivadas
+          -
+            ident: integrals
+            en: Integrals
+            es: Integrales
+          -
+            ident: problems_integrals
+            en: Problems involving Integrals
+            es: Problemas que usan Integrales
   -
     ident: geometry
     en: Geometry
@@ -249,6 +279,39 @@ map:
             ident: moore_penrose_inverse
             en: Moore-Penrose Inverse
             es: Inversa de Moore-Penrose
+      -
+        ident: number_theory
+        en: Number Theory
+        es: Teoría de Números
+        children:
+          -
+            ident: divisibility_factorisation
+            en: Divisibility and Factorisation
+            es: Divisibilidad y Factorización
+          -
+            ident: congruences
+            en: Congruences
+            es: Congruencias
+          -
+            ident: arithmetic_functions
+            en: Arithmetic Functions
+            es: Funciones Aritméticas
+          -
+            ident: orders_primitive_roots_indexes
+            en: Orders, Primitive Roots and Indexes
+            es: Órdenes, Raíces Primitivas e Índices
+          -
+            ident: quadratic_congruences
+            en: Quadratic Congruences
+            es: Congruencias Cuadráticas
+          -
+            ident: diophantine_equations
+            en: Diophantine Equations
+            es: Ecuaciones Diofánticas
+          -
+            ident: continuous_fractions
+            en: Continued Fractions
+            es: Fracciones Continuas
       -
         ident: group_theory
         en: Group Theory
