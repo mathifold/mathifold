@@ -14,7 +14,7 @@ module Jekyll
             @link = ''
             for post in site.collections['posts'].docs
                 if post['ident'] == @postname and post['lang'] == page['lang']
-                    @link = '<a href="' + post.url + '"><img src="/images/symb/' + post['kind'] + '.svg" height="40" width="40" style="vertical-align:middle"></a>'
+                    @link = '<a href="' + post.url + '.html"><img src="/images/symb/' + post['kind'] + '.svg" height="40" width="40" style="vertical-align:middle"></a>'
                 end
             end
             return @link

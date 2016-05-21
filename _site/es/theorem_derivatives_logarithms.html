@@ -93,7 +93,7 @@
 				
 				
 				
-					<a href="/es/theorem_derivatives_polynomials"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/theorem_derivatives_logarithms"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -120,93 +120,42 @@
 
 	
 	
-	<a href="/es/definition_derivative.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/theorem_derivatives_exponentials.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
-
-	
-	
-	<a href="/es/lemma_derivative_exponential_origin.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/theorem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Derivadas de Polinomios</span>
+		Derivadas de Logaritmos</span>
 </div>
 
 <div class="postbox pb_theorem">
 	<div>
 
-$(c)'=0$<br /><br />
+$(\ln x)'=\dfrac{1}{x}$<br /><br />
 
 <div class="bcblue boxdissap">
 	Demostración
 </div><br /><br />
 
 <div class="dissap">
-	$f(x)=c$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{c-c}{h}=\lim_{h\longrightarrow 0} 0 = 0$
+	$f(x)=\ln x$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{\ln(x+h)-\ln x}{h}$ <br /><br /> 
+
+	Ahora bien, por las propiedades de los logaritmos <!----> <br /><br /> 
+
+	$\dfrac{\ln(x+h)-\ln x}{h}=\dfrac{1}{h}\ln\left(\dfrac{x+h}{x}\right)=\ln\left(1+\dfrac{h}{x}\right)^{\frac{1}{h}}=\dfrac{1}{x}\ln\left(1+\dfrac{h}{x}\right)^{\frac{x}{h}}$ <br /><br /> 
+
+	Al tomar ahora el límite, que no afecta a $\frac{1}{x}$, obtenemos <br /><br />
+
+	$\dfrac{1}{x}\ln e= \dfrac{1}{x}$ <br /><br />
+
+	por la definición del número $e$ <!---->
+	
 </div>
 
 </div>
-<hr />
-
-<div>
-
-$(x)'=1$<br /><br />
-
-<div class="bcblue boxdissap">
-	Demostración
-</div><br /><br />
-
-<div class="dissap">
-	$f(x)=x$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{(x+h)-x}{h}=\lim_{h\longrightarrow 0} 1 = 1$
-</div>
-
-</div>
-<hr />
-
-<div>
-
-$(x^2)'=2x$<br /><br />
-
-<div class="bcblue boxdissap">
-	Demostración
-</div><br /><br />
-
-<div class="dissap">
-	$f(x)=x^2$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{(x+h)^2-x^2}{h}=\\\displaystyle\lim_{h\longrightarrow 0} \dfrac{x^2+2xh+h^2-x^2}{h}=\lim_{h\longrightarrow 0} 2x+h = 2x$
-</div>
-
-</div>
-
-<hr />
-
-<div>
-
-$(x^n)'=nx^{n-1}$<br /><br />
-
-<div class="bcblue boxdissap">
-	Demostración
-</div><br /><br />
-
-<div class="dissap">
-	$f(x)=x^n$;<br /><br /> 
-
-	Según la expansión binomial <a href="/es/theorem_binomial_expansion.html"><img src="/images/symb/theorem.svg" height="40" width="40" style="vertical-align:middle" /></a> <br /><br /> 
-
-	$(x+h)^n=x^n+nx^{n-1}h+\binom{n}{2}x^{n-1}h^2+\cdots+\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n$ <br /><br /> 
-
-	Así pues, <br /><br /> 
-
-	$\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{(x+h)^2-x^2}{h}=\\
-	\displaystyle\lim_{h\longrightarrow 0} \dfrac{x^n+nx^{n-1}h+\binom{n}{2}x^{n-1}h^2+\cdots+\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n-x^n}{h}=\\
-	\displaystyle\lim_{h\longrightarrow 0} nx^{n-1}+\binom{n}{2}x^{n-1}h+\cdots+\binom{n}{n-2}x^2h^{n-3}+nxh^{n-1}+h^{n-1} =\\
-	 nx^{n-1}$
-</div>
-
-</div>
-
 
 </div>
 

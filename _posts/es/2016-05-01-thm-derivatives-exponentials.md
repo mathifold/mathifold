@@ -22,7 +22,9 @@ $(e^x)'=e^x$<br><br>
 </div><br><br>
 
 <div class="dissap">
-	$f(x)=e^x$;<br><br> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{e^{x+h}-e^x}{h}=\\\displaystyle\lim_{h\longrightarrow 0} \dfrac{e^x(e^h-1)}{h} = e^x\lim_{h\longrightarrow 0} \dfrac{(e^h-1)}{h}=e^x$
+	$f(x)=e^x$;<br><br> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{e^{x+h}-e^x}{h}=\\\displaystyle\lim_{h\longrightarrow 0} \dfrac{e^x(e^h-1)}{h} = e^x\lim_{h\longrightarrow 0} \dfrac{(e^h-1)}{h}=e^x$ <br><br> 
+
+	donde en el último límite hemos usado {% cite lemma_derivative_exponential_origin %}
 </div>
 
 </div>
