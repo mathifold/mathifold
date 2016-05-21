@@ -54,17 +54,20 @@
 	
 
 	<div style="float: right">
-		{% capture actual %}{{page.url}}{% endcapture %}
-		{% capture mylang %}/{{page.lang}}/{% endcapture %}
 		{% for i in site.data.languages %}
-			{% capture linklang %}/{{i}}/{% endcapture %}
 			{% if page.type != "post" %}
-				<a href="{{ actual | replace: mylang, linklang }}"><img src="/images/{{i}}.svg" height="40" width="40"></a>
+				{% assign candidates = (site.pages | where: 'ident', {{page.ident}} | where: 'lang', {{i}}) %}
+				{% assign n = (candidates|size) %}
+				{% if n == 1 %}
+					{% assign link = (candidates|first)%}
+					<a href="{{link.url}}"><img src="/images/{{i}}.svg" height="40" width="40"></a>
+				{% endif %}
 			{% else %}
 				{% assign candidates = (site.posts | where: 'ident', {{page.ident}} | where: 'lang', {{i}}) %}
 				{% assign n = (candidates|size) %}
 				{% if n == 1 %}
-					<a href="{{ actual | replace: mylang, linklang }}"><img src="/images/{{i}}.svg" height="40" width="40"></a>
+					{% assign link = (candidates|first)%}
+					<a href="{{link.url}}.html"><img src="/images/{{i}}.svg" height="40" width="40"></a>
 				{% endif %}
 			{% endif %}
 		{% endfor %}
