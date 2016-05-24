@@ -80,9 +80,9 @@ map:
         es: Números Complejos
         children:
           -
-            ident: intro_complex_numbers
-            en: Chapter1
-            es: Capítulo1
+            ident: operations_complex_numbers
+            en: Operations with Complex Numbers
+            es: Operaciones con Números Complejos
       -
         ident: derivation_integration
         en: Derivation and Integration
@@ -189,9 +189,9 @@ map:
         es: Geometría Fractal
         children:
           -
-            ident: intro_fractal_geometry
-            en: Chapter1
-            es: Capítulo1
+            ident: mandelbrot_julia_fractals
+            en: Mandelbrot and Julia Fractals
+            es: Fractales de Mandelbrot y Julia
       -
         ident: topology
         en: Topology
@@ -309,7 +309,7 @@ map:
             en: Diophantine Equations
             es: Ecuaciones Diofánticas
           -
-            ident: continuous_fractions
+            ident: continued_fractions
             en: Continued Fractions
             es: Fracciones Continuas
       -
