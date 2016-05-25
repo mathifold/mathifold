@@ -91,7 +91,7 @@
 				
 				
 					
-					<a href="/es/theorem_derivatives_logarithms.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/theorem_derivatives_trigonometric_functions.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -100,7 +100,7 @@
 				
 				
 					
-					<a href="/en/theorem_derivatives_logarithms.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/theorem_derivatives_trigonometric_functions.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -120,42 +120,69 @@
 
 	
 	
-	<a href="/en/theorem_derivatives_exponentials.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/en/lemma_derivative_trigonometric_origin.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
-
-	
-	
-	<a href="/en/lemma_derivative_trigonometric_origin.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/theorem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Derivatives of Logariths</span>
+		Derivatives of Trigonometric Functions</span>
 </div>
 
 <div class="postbox pb_theorem">
 	<div>
 
-$(\ln x)'=\dfrac{1}{x}$<br /><br />
+$(\sin x)'=\cos x$<br /><br />
 
 <div class="bcblue boxdissap">
 	Proof
 </div><br /><br />
 
 <div class="dissap">
-	$f(x)=\ln x$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{\ln(x+h)-\ln x}{h}$ <br /><br /> 
+	$f(x)=\sin x$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{\sin(x+h)-\sin x}{h}$ <br /><br /> 
 
-	But due to the properties of logarithms <!----> <br /><br /> 
+	We use the formula for the sine of the sum of two angles <br /><br /> <!--cite-->
 
-	$\dfrac{\ln(x+h)-\ln x}{h}=\dfrac{1}{h}\ln\left(\dfrac{x+h}{x}\right)=\ln\left(1+\dfrac{h}{x}\right)^{\frac{1}{h}}=\dfrac{1}{x}\ln\left(1+\dfrac{h}{x}\right)^{\frac{x}{h}}$ <br /><br /> 
+	$\sin(x+h)-\sin x=\sin x\cos h + \cos x\sin h-\sin x=\\\sin x(\cos h -1)+ \cos x\sin h$<br /><br /> 
 
-	When taking the limit, which does not affect $\frac{1}{x}$, we get <br /><br />
+	And now <br /><br /> 
 
-	$\dfrac{1}{x}\ln e= \dfrac{1}{x}$ <br /><br />
+	$\displaystyle\lim_{h\longrightarrow 0}\dfrac{\sin(x+h)-\sin x}{h}=\sin x \lim_{h\longrightarrow 0}\dfrac{\cos h-1}{h}+\cos x \lim_{h\longrightarrow 0}\dfrac{\sin h}{h}=\\\sin x \times 0 + \cos x \times 1=\cos x$<br /><br />
 
-	by the definition of the number $e$ <!---->
+	having used <a href="/en/lemma_derivative_trigonometric_origin.html"><img src="/images/symb/lemma.svg" height="40" width="40" style="vertical-align:middle" /></a>
+
+	
+	
+</div>
+
+</div>
+
+<hr />
+
+<div>
+
+$(\cos x)'=-\sin x$<br /><br />
+
+<div class="bcblue boxdissap">
+	Proof
+</div><br /><br />
+
+<div class="dissap">
+	$f(x)=\cos x$;<br /><br /> $\displaystyle\lim_{h\longrightarrow 0}\dfrac{f(x+h)-f(x)}{h}=\lim_{h\longrightarrow 0}\dfrac{\cos(x+h)-\cos x}{h}$ <br /><br /> 
+
+	We use the formula for the cosine of the sum of two angles <br /><br /> <!--cite-->
+
+	$\cos(x+h)-\cos x=\cos x\cos h - \sin x\sin h-\cos x=\\\cos x(\cos h -1)- \sin x\sin h$<br /><br /> 
+
+	And now <br /><br /> 
+
+	$\displaystyle\lim_{h\longrightarrow 0}\dfrac{\cos(x+h)-\cos x}{h}=\cos x \lim_{h\longrightarrow 0}\dfrac{\cos h-1}{h}-\sin x \lim_{h\longrightarrow 0}\dfrac{\sin h}{h}=\\\cos x \times 0 - \sin x \times 1=-\sin x$<br /><br />
+
+	having used again <a href="/en/lemma_derivative_trigonometric_origin.html"><img src="/images/symb/lemma.svg" height="40" width="40" style="vertical-align:middle" /></a>
+
+	
 	
 </div>
 
