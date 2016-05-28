@@ -432,9 +432,9 @@ map:
         es: Probabilidad
         children:
           -
-            ident: intro_probability
-            en: Chapter1
-            es: Capítulo1
+            ident: probability_distributions
+            en: Distributions
+            es: Distribuciones
   -
     ident: operational_research
     en: Operational Research
