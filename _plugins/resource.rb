@@ -3,8 +3,9 @@ module Jekyll
 
         def initialize(tag_name, name, tokens)
             super
-            @nam = name
-            @filename = name.split(".")[0]
+            @nam = name.strip
+            @filename = name.strip.split(".")[0]
+            @extension = name.strip.split(".")[1]
         end
     
     
@@ -13,8 +14,10 @@ module Jekyll
             site = context.registers[:site]
             page = context.registers[:page]
 
+            
             @in = '<div class="resource img">
             <img src="/images/images/' + @nam + '">'
+            
             if site.static_files.map { |file| File.basename(file.path) }.include?(@filename + '.ipe')
                 @in = @in + '<a class="ori" href="/images/codes/' + @filename + '.ipe"></a>'        
             end
