@@ -687,6 +687,20 @@ map:
             en: Chapter1
             es: Capítulo1
   -
+    ident: tools
+    en: Tools
+    es: Herramientas
+    children:
+      -
+        ident: topological_degree
+        en: Topological Degree
+        es: Grado Topológico
+        children:
+          -
+            ident: intro_topological_degree
+            en: Chapter1
+            es: Capítulo1
+  -
     ident: advanced_mathematics
     en: Advanced Mathematics
     es: Matemáticas Avanzadas

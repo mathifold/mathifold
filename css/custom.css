@@ -113,6 +113,10 @@ p.topic {
   background-image: url('/images/pure_mathematics.png');
 }
 
+.tools{
+  background-image: url('/images/tools.png');
+}
+
 .advanced_mathematics{
   background-image: url('/images/advanced_mathematics.png');
 }
@@ -330,6 +334,12 @@ p.subject {
 
 .riemannian_geometry{
   background-image: url('/images/riemannian_geometry.jpg');
+}
+
+
+
+.topological_degree{
+  background-image: url('/images/topological_degree.jpg');
 }
 
 
