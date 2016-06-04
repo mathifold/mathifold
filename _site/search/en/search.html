@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/css/custom.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
+  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
+
+  
+
+  
+
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60766664-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<div style="height: 90px;">
+
+	<a href="/home/en/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+	
+	
+	
+	
+
+	<div style="float: right">
+		<a href="/search/en/search.html"><img src="/images/search.svg" height="40" width="40"></a>
+		<img src="/images/blank.svg" height="40" width="40">
+		
+			
+				
+				
+				
+					
+					<a href="/search/es/search.html"><img src="/images/es.svg" height="40" width="40"></a>
+				
+			
+		
+			
+				
+				
+				
+					
+					<a href="/search/en/search.html"><img src="/images/en.svg" height="40" width="40"></a>
+				
+			
+		
+	</div>
+</div>
+
+</header>
+
+
+
+    <div style="position: relative;" align="center">
+  <form action="/search/en/search.html" method="get">
+    <input type="text" id="search-box" name="query">
+    <input type="submit" value="search">
+  </form>
+</div>
+
+<div style="margin: auto;
+  width: 80%;
+  padding: 50px;">
+<ul id="search-results"></ul>
+</div>
+
+<script>
+  window.store = {
+    
+    
+      "en-applet-normal-distribution": {
+        "title": "Normal Distribution",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_normal_distribution"
+      }
+      ,
+    
+      "en-applet-monge-theorem": {
+        "title": "Monge&#39;s Theorem",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_monge_theorem"
+      }
+      ,
+    
+      "en-applet-uniform-distribution": {
+        "title": "Uniform Distribution",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_uniform_distribution"
+      }
+      ,
+    
+      "en-applet-poisson-distribution": {
+        "title": "Poisson Distribution",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_poisson_distribution"
+      }
+      ,
+    
+      "en-theorem-derivatives-trigonometric-functions": {
+        "title": "Derivatives of Trigonometric Functions",
+        "kind": "theorem",
+        "author": "",
+        "category": "en",
+        "content": "$(\\sin x)'=\\cos x$\tProof\t$f(x)=\\sin x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{\\sin(x+h)-\\sin x}{h}$  \tWe use the formula for the sine of the sum of two angles  \t$\\sin(x+h)-\\sin x=\\sin x\\cos h + \\cos x\\sin h-\\sin x=\\\\\\sin x(\\cos h -1)+ \\cos x\\sin h$ \tAnd now  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{\\sin(x+h)-\\sin x}{h}=\\sin x \\lim_{h\\longrightarrow 0}\\dfrac{\\cos h-1}{h}+\\cos x \\lim_{h\\longrightarrow 0}\\dfrac{\\sin h}{h}=\\\\\\sin x \\times 0 + \\cos x \\times 1=\\cos x$\thaving used \t\t$(\\cos x)'=-\\sin x$\tProof\t$f(x)=\\cos x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{\\cos(x+h)-\\cos x}{h}$  \tWe use the formula for the cosine of the sum of two angles  \t$\\cos(x+h)-\\cos x=\\cos x\\cos h - \\sin x\\sin h-\\cos x=\\\\\\cos x(\\cos h -1)- \\sin x\\sin h$ \tAnd now  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{\\cos(x+h)-\\cos x}{h}=\\cos x \\lim_{h\\longrightarrow 0}\\dfrac{\\cos h-1}{h}-\\sin x \\lim_{h\\longrightarrow 0}\\dfrac{\\sin h}{h}=\\\\\\cos x \\times 0 - \\sin x \\times 1=-\\sin x$\thaving used again \t\t",
+        "url": "/en/theorem_derivatives_trigonometric_functions"
+      }
+      ,
+    
+      "en-applet-binomial-distribution": {
+        "title": "Binomial Distribution",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_binomial_distribution"
+      }
+      ,
+    
+      "en-lemma-derivative-trigonometric-origin": {
+        "title": "Derivative of the Trig. Func. in the Origin",
+        "kind": "lemma",
+        "author": "",
+        "category": "en",
+        "content": "$\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{\\sin h}{h}=1$ and $\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{\\cos h - 1}{h}=0$\tProof\t\tIf we take an angle $h$, the quantities $\\dfrac{\\sin h}{h}$ and $\\dfrac{1-\\cos h}{h}$ (note we have taken the opposite, $1-\\cos h=-(\\cos h - 1)$) are respectively the green curve divided by the blue curve and the red curve divided by the blue curve\t            \tWhen $h\\longrightarrow 0$, green and blue curves tend to be equal in length, whereas the red one is much smaller than the blue one with a ratio that tends to zero. So we have\t$$\\dfrac{\\sin h}{h}\\longrightarrow 1 \\qquad \\dfrac{\\cos h -1}{h}=-\\dfrac{1-\\cos h}{h}\\longrightarrow 0$$",
+        "url": "/en/lemma_derivative_trigonometric_origin"
+      }
+      ,
+    
+      "en-applet-numerical-flowers": {
+        "title": "Numerical Flowers",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_numerical_flowers"
+      }
+      ,
+    
+      "en-applet-mandelbrot": {
+        "title": "Mandelbrot Fractal",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_mandelbrot"
+      }
+      ,
+    
+      "en-applet-complex-product": {
+        "title": "Product of Complex Numbers",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_complex_product"
+      }
+      ,
+    
+      "en-definition-mandelbrot-fractal": {
+        "title": "Mandelbrot Fractal",
+        "kind": "definition",
+        "author": "",
+        "category": "en",
+        "content": "The Mandelbrot set $M$ is the set of complex numbers $c\\in\\mathbb{C}$ for which the sequenceis bounded            ",
+        "url": "/en/definition_mandelbrot_fractal"
+      }
+      ,
+    
+      "en-applet-complex-sum": {
+        "title": "Sum of Complex Numbers",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_complex_sum"
+      }
+      ,
+    
+      "en-theorem-derivatives-logarithms": {
+        "title": "Derivatives of Logariths",
+        "kind": "theorem",
+        "author": "",
+        "category": "en",
+        "content": "$(\\ln x)'=\\dfrac{1}{x}$\tProof\t$f(x)=\\ln x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{\\ln(x+h)-\\ln x}{h}$  \tBut due to the properties of logarithms   \t$\\dfrac{\\ln(x+h)-\\ln x}{h}=\\dfrac{1}{h}\\ln\\left(\\dfrac{x+h}{x}\\right)=\\ln\\left(1+\\dfrac{h}{x}\\right)^{\\frac{1}{h}}=\\dfrac{1}{x}\\ln\\left(1+\\dfrac{h}{x}\\right)^{\\frac{x}{h}}$  \tWhen taking the limit, which does not affect $\\frac{1}{x}$, we get \t$\\dfrac{1}{x}\\ln e= \\dfrac{1}{x}$ \tby the definition of the number $e$ \t",
+        "url": "/en/theorem_derivatives_logarithms"
+      }
+      ,
+    
+      "en-theorem-derivatives-exponentials": {
+        "title": "Derivatives of exponentials",
+        "kind": "theorem",
+        "author": "",
+        "category": "en",
+        "content": "$(e^x)'=e^x$\tProof\t$f(x)=e^x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{e^{x+h}-e^x}{h}=\\\\\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{e^x(e^h-1)}{h} = e^x\\lim_{h\\longrightarrow 0} \\dfrac{(e^h-1)}{h}=e^x$  \twhere in the last limit we have used ",
+        "url": "/en/theorem_derivatives_exponentials"
+      }
+      ,
+    
+      "en-lemma-derivative-exponential-origin": {
+        "title": "Derivative of the Exponential in the Origin",
+        "kind": "lemma",
+        "author": "",
+        "category": "en",
+        "content": "$\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{e^h-1}{h}=1$\tProof\t$\\displaystyle\\dfrac{(e^h-1)}{h}=\\dfrac{\\left(\\lim_{n\\longrightarrow\\infty}\\left(1+\\dfrac{h}{n}\\right)^n-1\\right)}{h}$\tLet's analyze the power. By the binomial expansion  \t$\\left(1+\\dfrac{h}{n}\\right)^n=1+n\\dfrac{h}{n}+\\binom{n}{2}\\dfrac{h^2}{n^2}+\\cdots=\\\\1+h+h^2\\left(\\binom{n}{2}\\dfrac{1}{n^2}+\\binom{n}{3}\\dfrac{h}{n^3}+\\cdots\\right)=1+h+h^2\\alpha_{nh}$ \twhere $\\alpha_{nh}$ is a quantity depending on $n$ and $h$. \tWhen $n\\longrightarrow\\infty$, the quantity $e^h=\\lim_{n\\longrightarrow\\infty}\\left(1+\\dfrac{h}{n}\\right)^n$ gets stable and so does $\\alpha_{nh}$ to some quantity $\\alpha_h$, satisfying $e^h=1+h+h^2\\alpha_h$. But $\\alpha_h$ is also stable when $h\\longrightarrow 0$, because the $\\alpha_{nh}$ were already stable, having only powers of $h$. The fact that $\\alpha_h$ is stable under $h\\longrightarrow 0$ implies that $h\\alpha_h\\longrightarrow 0$ (something going to zero times something well-behaved is something going to zero) and then \t$\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{e^h-1}{h}=\\lim_{h\\longrightarrow 0} \\dfrac{1+h+h^2\\alpha_h-1}{h}=\\lim_{h\\longrightarrow 0} 1+h\\alpha_h=1$",
+        "url": "/en/lemma_derivative_exponential_origin"
+      }
+      ,
+    
+      "en-theorem-derivatives-polynomials": {
+        "title": "Derivatives of Polynomials",
+        "kind": "theorem",
+        "author": "",
+        "category": "en",
+        "content": "$(c)'=0$\tProof\t$f(x)=c$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{c-c}{h}=\\lim_{h\\longrightarrow 0} 0 = 0$$(x)'=1$\tProof\t$f(x)=x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)-x}{h}=\\lim_{h\\longrightarrow 0} 1 = 1$$(x^2)'=2x$\tProof\t$f(x)=x^2$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)^2-x^2}{h}=\\\\\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{x^2+2xh+h^2-x^2}{h}=\\lim_{h\\longrightarrow 0} 2x+h = 2x$$(x^n)'=nx^{n-1}$\tProof\t$f(x)=x^n$; \tAccording to the binomial expansion   \t$(x+h)^n=x^n+nx^{n-1}h+\\binom{n}{2}x^{n-1}h^2+\\cdots+\\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n$  \tSo  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)^2-x^2}{h}=\\\\\t\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{x^n+nx^{n-1}h+\\binom{n}{2}x^{n-1}h^2+\\cdots+\\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n-x^n}{h}=\\\\\t\\displaystyle\\lim_{h\\longrightarrow 0} nx^{n-1}+\\binom{n}{2}x^{n-1}h+\\cdots+\\binom{n}{n-2}x^2h^{n-3}+nxh^{n-1}+h^{n-1} =\\\\\t nx^{n-1}$",
+        "url": "/en/theorem_derivatives_polynomials"
+      }
+      ,
+    
+      "en-definition-derivative": {
+        "title": "Derivative",
+        "kind": "definition",
+        "author": "",
+        "category": "en",
+        "content": "Given a function $f(x)$, its derivative isFor instance,",
+        "url": "/en/definition_derivative"
+      }
+      ,
+    
+      "en-example-projective-plane": {
+        "title": "Projective Plane",
+        "kind": "example",
+        "author": "",
+        "category": "en",
+        "content": "The projective plane is a very strange surface…                        ",
+        "url": "/en/example_projective_plane"
+      }
+      ,
+    
+      "en-applet-polarity2": {
+        "title": "Polarity",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_polarity2"
+      }
+      ,
+    
+      "en-applet-icosahedron": {
+        "title": "Icosahedron",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_icosahedron"
+      }
+      ,
+    
+      "en-visualisation-euler-line": {
+        "title": "Euler&#39;s Line",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_euler_line"
+      }
+      ,
+    
+      "en-example-torus": {
+        "title": "Torus",
+        "kind": "example",
+        "author": "",
+        "category": "en",
+        "content": "We all know what a torus is: a (hollow) ‘donut’            Topologically, the torus is the product of two circumferences, . To understand it, one must imagine the decomposition in meridians and parallels            ",
+        "url": "/en/example_torus"
+      }
+      ,
+    
+      "en-applet-polarity1": {
+        "title": "Polarity",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_polarity1"
+      }
+      ,
+    
+      "en-applet-orthocenter": {
+        "title": "Orthocenter",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_orthocenter"
+      }
+      ,
+    
+      "en-applet-ellipse2": {
+        "title": "Ellipse",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_ellipse2"
+      }
+      ,
+    
+      "en-applet-dodecahedron": {
+        "title": "Dodecahedron",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_dodecahedron"
+      }
+      ,
+    
+      "en-visualisation-orthocenter": {
+        "title": "Orthocenter",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_orthocenter"
+      }
+      ,
+    
+      "en-example-sphere": {
+        "title": "Sphere",
+        "kind": "example",
+        "author": "",
+        "category": "en",
+        "content": "The sphere is one of the first surfaces: the set of points in the tridimensional space whose distance to the origin is one            ",
+        "url": "/en/example_sphere"
+      }
+      ,
+    
+      "en-applet-orthoptic": {
+        "title": "Orthoptics",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_orthoptic"
+      }
+      ,
+    
+      "en-applet-octahedron": {
+        "title": "Octahedron",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_octahedron"
+      }
+      ,
+    
+      "en-applet-ellipse": {
+        "title": "Ellipse",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_ellipse"
+      }
+      ,
+    
+      "en-applet-circumcenter": {
+        "title": "Circumcenter",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_circumcenter"
+      }
+      ,
+    
+      "en-visualisation-circumcenter": {
+        "title": "Circumcenter",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_circumcenter"
+      }
+      ,
+    
+      "en-definition-surface": {
+        "title": "Surface",
+        "kind": "definition",
+        "author": "",
+        "category": "en",
+        "content": "A surface is a topological space  locally homeomorphic to , that is, for each point  there exists a neighborhood  and a homeomorphism  where  is open            (we may impose , it is enough to restrict to a ball centered in the target point, which is homeomorphic to the whole )",
+        "url": "/en/definition_surface"
+      }
+      ,
+    
+      "en-applet-incenter": {
+        "title": "Incenter",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_incenter"
+      }
+      ,
+    
+      "en-applet-hexahedron": {
+        "title": "Cube - Hexahedron",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_hexahedron"
+      }
+      ,
+    
+      "en-applet-circle2": {
+        "title": "Circle",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_circle2"
+      }
+      ,
+    
+      "en-applet-circle2-conics": {
+        "title": "Circle",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_circle2_conics"
+      }
+      ,
+    
+      "en-applet-brianchon": {
+        "title": "Brianchon&#39;s Theorem",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_brianchon"
+      }
+      ,
+    
+      "en-visualisation-incenter": {
+        "title": "Incenter",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_incenter"
+      }
+      ,
+    
+      "en-quotation-geometry-clifford": {
+        "title": "Geometry according to Clifford",
+        "kind": "quotation",
+        "author": "",
+        "category": "en",
+        "content": "Geometry is the gate of science, and the gate is so low and small that one can only enter it as a child  William Kingdon Clifford",
+        "url": "/en/quotation_geometry_clifford"
+      }
+      ,
+    
+      "en-exposition-surfaces": {
+        "title": "Surfaces",
+        "kind": "exposition",
+        "author": "",
+        "category": "en",
+        "content": "We all know what are surfaces. But have you ever thought how many there are and how are shaped?                                                            ",
+        "url": "/en/exposition_surfaces"
+      }
+      ,
+    
+      "en-definition-divisibility": {
+        "title": "Divisibility",
+        "kind": "definition",
+        "author": "",
+        "category": "en",
+        "content": "We say that an integer  divides another integer , written , if there exists some  such that . If so, we will say that  is a divisor of .",
+        "url": "/en/definition_divisibility"
+      }
+      ,
+    
+      "en-applet-tetrahedron": {
+        "title": "Tetrahedron",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_tetrahedron"
+      }
+      ,
+    
+      "en-applet-pascal": {
+        "title": "Pascal&#39;s Theorem",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_pascal"
+      }
+      ,
+    
+      "en-applet-non-linear-first-order-dynamical-system": {
+        "title": "Non-linear First-Order DS",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_non_linear_first_order_dynamical_system"
+      }
+      ,
+    
+      "en-applet-linear-first-order-dynamical-system": {
+        "title": "Linear First-Order DS",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_linear_first_order_dynamical_system"
+      }
+      ,
+    
+      "en-applet-circle": {
+        "title": "Circle",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_circle"
+      }
+      ,
+    
+      "en-applet-circle-conics": {
+        "title": "Circle",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_circle_conics"
+      }
+      ,
+    
+      "en-applet-centroid": {
+        "title": "Centroid",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_centroid"
+      }
+      ,
+    
+      "en-visualisation-centroid": {
+        "title": "Centroid",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_centroid"
+      }
+      ,
+    
+      "en-visualisation-triangle": {
+        "title": "Triangle",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_triangle"
+      }
+      ,
+    
+      "en-theorem-binomial-expansion": {
+        "title": "Binomial Expansion",
+        "kind": "theorem",
+        "author": "",
+        "category": "en",
+        "content": "$(a+b)^n=\\binom{n}{0}a^n+\\binom{n}{1}a^{n-1}b+\\binom{n}{2}a^{n-1}b^2+\\cdots+\\binom{n}{n-2}a^2b^{n-2}+\\binom{n}{n-1}ab^{n-1}+\\binom{n}{n}b^n$\tProof\tTo do",
+        "url": "/en/theorem_binomial_expansion"
+      }
+      
+    
+  };
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+
+    <footer class="site-footer">
+
+</footer>
+
+
+  </body>
+
+</html>

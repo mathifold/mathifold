@@ -54,6 +54,8 @@
 	
 
 	<div style="float: right">
+		<a href="/search/{{page.lang}}/search.html"><img src="/images/search.svg" height="40" width="40"></a>
+		<img src="/images/blank.svg" height="40" width="40">
 		{% for i in site.data.languages %}
 			{% if page.type != "post" %}
 				{% assign candidates = (site.pages | where: 'ident', {{page.ident}} | where: 'lang', {{i}}) %}

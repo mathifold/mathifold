@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/css/custom.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
+  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
+
+  
+
+  
+
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60766664-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<div style="height: 90px;">
+
+	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+	
+	
+	
+	
+
+	<div style="float: right">
+		<a href="/search/es/search.html"><img src="/images/search.svg" height="40" width="40"></a>
+		<img src="/images/blank.svg" height="40" width="40">
+		
+			
+				
+				
+				
+					
+					<a href="/search/es/search.html"><img src="/images/es.svg" height="40" width="40"></a>
+				
+			
+		
+			
+				
+				
+				
+					
+					<a href="/search/en/search.html"><img src="/images/en.svg" height="40" width="40"></a>
+				
+			
+		
+	</div>
+</div>
+
+</header>
+
+
+
+    <div style="position: relative;" align="center">
+  <form action="/search/es/search.html" method="get">
+    <input type="text" id="search-box" name="query">
+    <input type="submit" value="search">
+  </form>
+</div>
+
+<div style="margin: auto;
+  width: 80%;
+  padding: 50px;">
+<ul id="search-results"></ul>
+</div>
+
+<script>
+  window.store = {
+    
+    
+      "es-applet-normal-distribution": {
+        "title": "Distribución Normal",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_normal_distribution"
+      }
+      ,
+    
+      "es-applet-monge-theorem": {
+        "title": "Teorema de Monge",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_monge_theorem"
+      }
+      ,
+    
+      "es-applet-uniform-distribution": {
+        "title": "Distribución Uniforme",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_uniform_distribution"
+      }
+      ,
+    
+      "es-applet-poisson-distribution": {
+        "title": "Distribución de Poisson",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_poisson_distribution"
+      }
+      ,
+    
+      "es-theorem-derivatives-trigonometric-functions": {
+        "title": "Derivadas de Funciones Trigonométricas",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "$(\\sin x)'=\\cos x$\tDemostración\t$f(x)=\\sin x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{\\sin(x+h)-\\sin x}{h}$  \tUtilizamos la descomposición del seno del ángulo suma \t$\\sin(x+h)-\\sin x=\\sin x\\cos h + \\cos x\\sin h-\\sin x=\\\\\\sin x(\\cos h -1)+ \\cos x\\sin h$ \tY ahora  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{\\sin(x+h)-\\sin x}{h}=\\sin x \\lim_{h\\longrightarrow 0}\\dfrac{\\cos h-1}{h}+\\cos x \\lim_{h\\longrightarrow 0}\\dfrac{\\sin h}{h}=\\\\\\sin x \\times 0 + \\cos x \\times 1=\\cos x$\thabiendo utilizado \t\t$(\\cos x)'=-\\sin x$\tDemostración\t$f(x)=\\cos x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{\\cos(x+h)-\\cos x}{h}$  \tUtilizamos la descomposición del coseno del ángulo suma \t$\\cos(x+h)-\\cos x=\\cos x\\cos h - \\sin x\\sin h-\\cos x=\\\\\\cos x(\\cos h -1)- \\sin x\\sin h$ \tY ahora  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{\\cos(x+h)-\\cos x}{h}=\\cos x \\lim_{h\\longrightarrow 0}\\dfrac{\\cos h-1}{h}-\\sin x \\lim_{h\\longrightarrow 0}\\dfrac{\\sin h}{h}=\\\\\\cos x \\times 0 - \\sin x \\times 1=-\\sin x$\tdonde hemos vuelto a utilizar \t\t",
+        "url": "/es/theorem_derivatives_trigonometric_functions"
+      }
+      ,
+    
+      "es-applet-binomial-distribution": {
+        "title": "Distribución Binomial",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_binomial_distribution"
+      }
+      ,
+    
+      "es-lemma-derivative-trigonometric-origin": {
+        "title": "Derivada de las Func. Trig. en el Origen",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "$\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{\\sin h}{h}=1$ y $\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{\\cos h - 1}{h}=0$\tDemostración\t\tSi tomamos un ángulo $h$, las cantidades $\\dfrac{\\sin h}{h}$ y $\\dfrac{1-\\cos h}{h}$ (hemos tomado el opuesto, $1-\\cos h=-(\\cos h - 1)$) son respectivamente el tramo verde partido por el azul y el tramo rojo partido por el azul\t            \tCuando $h\\longrightarrow 0$, los tramos verde y azul tienden a ser iguales, mientras que el rojo es mucho más pequeño que el azul en una proporción que tiende a anularse. Es por tanto que \t$$\\dfrac{\\sin h}{h}\\longrightarrow 1 \\qquad \\dfrac{\\cos h -1}{h}=-\\dfrac{1-\\cos h}{h}\\longrightarrow 0$$",
+        "url": "/es/lemma_derivative_trigonometric_origin"
+      }
+      ,
+    
+      "es-applet-numerical-flowers": {
+        "title": "Flores Numéricas",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_numerical_flowers"
+      }
+      ,
+    
+      "es-applet-mandelbrot": {
+        "title": "Fractal de Mandelbrot",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_mandelbrot"
+      }
+      ,
+    
+      "es-applet-complex-product": {
+        "title": "Multiplicación de Números Complejos",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_complex_product"
+      }
+      ,
+    
+      "es-definition-mandelbrot-fractal": {
+        "title": "Fractal de Mandelbrot",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El conjunto de Mandelbrot $M$ es el conjunto de números complejos $c\\in\\mathbb{C}$ para los cuales la sucesiónestá acotada            ",
+        "url": "/es/definition_mandelbrot_fractal"
+      }
+      ,
+    
+      "es-applet-complex-sum": {
+        "title": "Suma de Números Complejos",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_complex_sum"
+      }
+      ,
+    
+      "es-theorem-derivatives-logarithms": {
+        "title": "Derivadas de Logaritmos",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "$(\\ln x)'=\\dfrac{1}{x}$\tDemostración\t$f(x)=\\ln x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{\\ln(x+h)-\\ln x}{h}$  \tAhora bien, por las propiedades de los logaritmos   \t$\\dfrac{\\ln(x+h)-\\ln x}{h}=\\dfrac{1}{h}\\ln\\left(\\dfrac{x+h}{x}\\right)=\\ln\\left(1+\\dfrac{h}{x}\\right)^{\\frac{1}{h}}=\\dfrac{1}{x}\\ln\\left(1+\\dfrac{h}{x}\\right)^{\\frac{x}{h}}$  \tAl tomar ahora el límite, que no afecta a $\\frac{1}{x}$, obtenemos \t$\\dfrac{1}{x}\\ln e= \\dfrac{1}{x}$ \tpor la definición del número $e$ \t",
+        "url": "/es/theorem_derivatives_logarithms"
+      }
+      ,
+    
+      "es-theorem-derivatives-exponentials": {
+        "title": "Derivadas de Exponenciales",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "$(e^x)'=e^x$\tDemostración\t$f(x)=e^x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{e^{x+h}-e^x}{h}=\\\\\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{e^x(e^h-1)}{h} = e^x\\lim_{h\\longrightarrow 0} \\dfrac{(e^h-1)}{h}=e^x$  \tdonde en el último límite hemos usado ",
+        "url": "/es/theorem_derivatives_exponentials"
+      }
+      ,
+    
+      "es-lemma-derivative-exponential-origin": {
+        "title": "Derivada de la Exponencial en el Origen",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "$\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{e^h-1}{h}=1$\tDemostración\t$\\displaystyle\\dfrac{(e^h-1)}{h}=\\dfrac{\\left(\\lim_{n\\longrightarrow\\infty}\\left(1+\\dfrac{h}{n}\\right)^n-1\\right)}{h}$\tAnalicemos la potencia. Por la expansión binomial  \t$\\left(1+\\dfrac{h}{n}\\right)^n=1+n\\dfrac{h}{n}+\\binom{n}{2}\\dfrac{h^2}{n^2}+\\cdots=\\\\1+h+h^2\\left(\\binom{n}{2}\\dfrac{1}{n^2}+\\binom{n}{3}\\dfrac{h}{n^3}+\\cdots\\right)=1+h+h^2\\alpha_{nh}$ \tdonde $\\alpha_{nh}$ es una cantidad que depende de $n$ y $h$. \tCuando $n\\longrightarrow\\infty$, la cantidad $e^h=\\lim_{n\\longrightarrow\\infty}\\left(1+\\dfrac{h}{n}\\right)^n$ se hace estable y por tanto $\\alpha_{nh}$ se estabiliza a una cantidad estable $\\alpha_h$, y se cumple $e^h=1+h+h^2\\alpha_h$. Pero $\\alpha_h$ también es estable cuando $h\\longrightarrow 0$, pues ya eran estables los $\\alpha_{nh}$, que tenían potencias de $h$. El hecho de que $\\alpha_h$ sea estable cuando $h\\longrightarrow 0$ implica que $h\\alpha_h\\longrightarrow 0$ (algo que tiende a cero multiplicado por algo que no se mueve mucho es algo que tiende a cero) y por tanto \t$\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{e^h-1}{h}=\\lim_{h\\longrightarrow 0} \\dfrac{1+h+h^2\\alpha_h-1}{h}=\\lim_{h\\longrightarrow 0} 1+h\\alpha_h=1$",
+        "url": "/es/lemma_derivative_exponential_origin"
+      }
+      ,
+    
+      "es-theorem-derivatives-polynomials": {
+        "title": "Derivadas de Polinomios",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "$(c)'=0$\tDemostración\t$f(x)=c$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{c-c}{h}=\\lim_{h\\longrightarrow 0} 0 = 0$$(x)'=1$\tDemostración\t$f(x)=x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)-x}{h}=\\lim_{h\\longrightarrow 0} 1 = 1$$(x^2)'=2x$\tDemostración\t$f(x)=x^2$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)^2-x^2}{h}=\\\\\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{x^2+2xh+h^2-x^2}{h}=\\lim_{h\\longrightarrow 0} 2x+h = 2x$$(x^n)'=nx^{n-1}$\tDemostración\t$f(x)=x^n$; \tSegún la expansión binomial   \t$(x+h)^n=x^n+nx^{n-1}h+\\binom{n}{2}x^{n-1}h^2+\\cdots+\\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n$  \tAsí pues,  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)^2-x^2}{h}=\\\\\t\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{x^n+nx^{n-1}h+\\binom{n}{2}x^{n-1}h^2+\\cdots+\\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n-x^n}{h}=\\\\\t\\displaystyle\\lim_{h\\longrightarrow 0} nx^{n-1}+\\binom{n}{2}x^{n-1}h+\\cdots+\\binom{n}{n-2}x^2h^{n-3}+nxh^{n-1}+h^{n-1} =\\\\\t nx^{n-1}$",
+        "url": "/es/theorem_derivatives_polynomials"
+      }
+      ,
+    
+      "es-definition-derivative": {
+        "title": "Función Derivada",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Dada una función $f(x)$, su función derivada esEs decir, por ejemplo",
+        "url": "/es/definition_derivative"
+      }
+      ,
+    
+      "es-example-projective-plane": {
+        "title": "Plano proyectivo",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "El plano proyectivo es una superficie muy rara…                        ",
+        "url": "/es/example_projective_plane"
+      }
+      ,
+    
+      "es-visualisation-euler-line": {
+        "title": "Recta de Euler",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/visualisation_euler_line"
+      }
+      ,
+    
+      "es-example-ceva": {
+        "title": "Teorema de Ceva",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Veamos algunas comprobaciones / aplicaciones del Teorema de CevaBaricentro…Incentro…Ortocentro…",
+        "url": "/es/example_ceva"
+      }
+      ,
+    
+      "es-applet-polarity2": {
+        "title": "Polaridad",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_polarity2"
+      }
+      ,
+    
+      "es-applet-icosahedron": {
+        "title": "Icosaedro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_icosahedron"
+      }
+      ,
+    
+      "es-theorem-ceva": {
+        "title": "Teorema de Ceva",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Dado un triángulo $ABC$, y puntos $D$, $E$, y $F$ sobre los lados $BC$, $CA$, y $AB$ respectivamente, los segmentos $AD$, $BE$ y $CF$ son concurrentes si y sólo si$$\\dfrac{AF}{FB}\\dfrac{BD}{DC}\\dfrac{CE}{EA}=1$$\tDemostración\t...",
+        "url": "/es/theorem_ceva"
+      }
+      ,
+    
+      "es-example-torus": {
+        "title": "Toro",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Un toro es lo que todos conocemos: una ‘rosquilla’ (hueca)            Topológicamente, el toro es el producto de dos circunferencias, . Para verlo, hay que pensar en la descomposición en paralelos y meridianos            ",
+        "url": "/es/example_torus"
+      }
+      ,
+    
+      "es-applet-polarity1": {
+        "title": "Polaridad",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_polarity1"
+      }
+      ,
+    
+      "es-applet-orthocenter": {
+        "title": "Ortocentro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_orthocenter"
+      }
+      ,
+    
+      "es-applet-ellipse2": {
+        "title": "Elipse",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_ellipse2"
+      }
+      ,
+    
+      "es-applet-dodecahedron": {
+        "title": "Dodecaedro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_dodecahedron"
+      }
+      ,
+    
+      "es-visualisation-orthocenter": {
+        "title": "Ortocentro",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/visualisation_orthocenter"
+      }
+      ,
+    
+      "es-example-sphere": {
+        "title": "Esfera",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "La esfera es una de las primeras superficies: el conjunto de puntos en el espacio tridimensional que distan una unidad del origen            ",
+        "url": "/es/example_sphere"
+      }
+      ,
+    
+      "es-applet-orthoptic": {
+        "title": "Arco Capaz",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_orthoptic"
+      }
+      ,
+    
+      "es-applet-octahedron": {
+        "title": "Octaedro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_octahedron"
+      }
+      ,
+    
+      "es-applet-ellipse": {
+        "title": "Elipse",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_ellipse"
+      }
+      ,
+    
+      "es-applet-circumcenter": {
+        "title": "Circuncentro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_circumcenter"
+      }
+      ,
+    
+      "es-visualisation-circumcenter": {
+        "title": "Circuncentro",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/visualisation_circumcenter"
+      }
+      ,
+    
+      "es-definition-surface": {
+        "title": "Superficie",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una superficie es un espacio topológico  localmente homeomorfo a , es decir, para cada punto  existe un entorno  y un homeomorfismo  donde  es un abierto            (se puede exigir , basta restringir a una bola centrada en el punto imagen, que es homeomorfa a todo )",
+        "url": "/es/definition_surface"
+      }
+      ,
+    
+      "es-applet-incenter": {
+        "title": "Incentro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_incenter"
+      }
+      ,
+    
+      "es-applet-hexahedron": {
+        "title": "Cubo - Hexaedro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_hexahedron"
+      }
+      ,
+    
+      "es-applet-circle2": {
+        "title": "Círculo",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_circle2"
+      }
+      ,
+    
+      "es-applet-circle2-conics": {
+        "title": "Círculo",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_circle2_conics"
+      }
+      ,
+    
+      "es-applet-brianchon": {
+        "title": "Teorema de Brianchon",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_brianchon"
+      }
+      ,
+    
+      "es-visualisation-incenter": {
+        "title": "Incentro",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/visualisation_incenter"
+      }
+      ,
+    
+      "es-quotation-geometry-clifford": {
+        "title": "La Geometría según Clifford",
+        "kind": "quotation",
+        "author": "",
+        "category": "es",
+        "content": "La geometría es la puerta de la ciencia, y es tan baja y pequeña que sólo se puede entrar como un niño  William Kingdon Clifford",
+        "url": "/es/quotation_geometry_clifford"
+      }
+      ,
+    
+      "es-exposition-surfaces": {
+        "title": "Superficies",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Todos sabemos lo que son las superficies. ¿Pero te has parado alguna vez a pensar cuántas hay y qué formas tienen?                                                            ",
+        "url": "/es/exposition_surfaces"
+      }
+      ,
+    
+      "es-definition-divisibility": {
+        "title": "Divisibilidad",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Se dice que un número entero  divide a otro número entero  y se escribe  si existe  tal que . En tal caso, diremos que  es un divisor de .",
+        "url": "/es/definition_divisibility"
+      }
+      ,
+    
+      "es-applet-tetrahedron": {
+        "title": "Tetraedro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_tetrahedron"
+      }
+      ,
+    
+      "es-applet-pascal": {
+        "title": "Teorema de Pascal",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_pascal"
+      }
+      ,
+    
+      "es-applet-non-linear-first-order-dynamical-system": {
+        "title": "SD de Primer Orden no Lineal",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_non_linear_first_order_dynamical_system"
+      }
+      ,
+    
+      "es-applet-linear-first-order-dynamical-system": {
+        "title": "SD de Primer Orden Lineal",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_linear_first_order_dynamical_system"
+      }
+      ,
+    
+      "es-applet-circle": {
+        "title": "Círculo",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_circle"
+      }
+      ,
+    
+      "es-applet-circle-conics": {
+        "title": "Círculo",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_circle_conics"
+      }
+      ,
+    
+      "es-applet-centroid": {
+        "title": "Baricentro",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_centroid"
+      }
+      ,
+    
+      "es-visualisation-centroid": {
+        "title": "Baricentro",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/visualisation_centroid"
+      }
+      ,
+    
+      "es-definition-centroid": {
+        "title": "Baricentro",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una mediana es el segmento que une un vértice de un triángulo con el punto medio del correspondiente lado opuestoEl baricentro de un triángulo es el punto donde concurren las tres medianas de un triángulo            ¿Por qué las tres medianas pasan por el mismo punto? Esto necesita una comprobación, pero volveremos a ello en el Teorema de Ceva",
+        "url": "/es/definition_centroid"
+      }
+      ,
+    
+      "es-visualisation-triangle": {
+        "title": "Triángulo",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/visualisation_triangle"
+      }
+      ,
+    
+      "es-theorem-binomial-expansion": {
+        "title": "Expansión Binomial",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "$(a+b)^n=\\binom{n}{0}a^n+\\binom{n}{1}a^{n-1}b+\\binom{n}{2}a^{n-1}b^2+\\cdots+\\binom{n}{n-2}a^2b^{n-2}+\\binom{n}{n-1}ab^{n-1}+\\binom{n}{n}b^n$\tDemostración\tPor hacer",
+        "url": "/es/theorem_binomial_expansion"
+      }
+      ,
+    
+      "es-definition-triangle": {
+        "title": "Triángulo",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un triángulo es un polígono de tres lados. Está determinado por tres vértices no colineales (que no estén sobre una misma recta). Es usual denotar los vértices por letras mayúsculas y cada uno de los lados opuestos por las respectivas letras minúsculas.            ",
+        "url": "/es/definition_triangle"
+      }
+      
+    
+  };
+</script>
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+
+
+    <footer class="site-footer">
+
+</footer>
+
+
+  </body>
+
+</html>
