@@ -611,9 +611,29 @@ map:
         es: Análisis Funcional
         children:
           -
-            ident: intro_functional_analysis
-            en: Chapter1
-            es: Capítulo1
+            ident: normed_spaces
+            en: Normed Spaces
+            es: Espacios Normados
+          -
+            ident: lp_spaces
+            en: l<sup>p</sup> Spaces
+            es: Espacios l<sup>p</sup>
+          -
+            ident: functional_continuous_maps
+            en: Continuous Maps
+            es: Aplicaciones Continuas
+          -
+            ident: functional_duality
+            en: Duality
+            es: Dualidad
+          -
+            ident: theorems_functional_analysis
+            en: Theorems of Functional Analysis
+            es: Teoremas de Análisis Funcional
+          -
+            ident: hilbert_spaces
+            en: Hilbert Spaces
+            es: Espacios de Hilbert
       -
         ident: algebraic_topology
         en: Algebraic Topology
@@ -698,8 +718,24 @@ map:
         children:
           -
             ident: intro_topological_degree
-            en: Chapter1
-            es: Capítulo1
+            en: Topological Degree
+            es: Grado Topológico
+          -
+            ident: applications_topological_degree
+            en: Applications of Topological Degree
+            es: Aplicaciones del Grado Topológico
+          -
+            ident: fixed_point_index
+            en: Fixed-Point Index
+            es: Índice de Punto Fijo
+          -
+            ident: applications_fixed_point_index
+            en: Applications of Fixed-Point Index
+            es: Aplicaciones del Índice de Punto Fijo
+          -
+            ident: leray_schauder_degree
+            en: Leray-Schauder Degree
+            es: Grado de Leray-Schauder
   -
     ident: advanced_mathematics
     en: Advanced Mathematics
