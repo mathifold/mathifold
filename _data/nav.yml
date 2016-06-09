@@ -15,6 +15,15 @@ map:
             en: Polyhedra
             es: Poliedros
       -
+        ident: combinatorics
+        en: Combinatorics
+        es: Combinatoria
+        children:
+          -
+            ident: intro_combinatorics
+            en: Chapter1
+            es: Capítulo1
+      -
         ident: numbers
         en: Numbers
         es: Números
@@ -57,14 +66,14 @@ map:
             en: Equations Systems
             es: Sistemas de Ecuaciones
       -
-        ident: combinatorics
-        en: Combinatorics
-        es: Combinatoria
+        ident: functions
+        en: Functions
+        es: Funciones
         children:
           -
-            ident: intro_combinatorics
-            en: Chapter1
-            es: Capítulo1
+            ident: limits
+            en: Limits
+            es: Límites
       -
         ident: trigonometry
         en: Trigonometry
@@ -391,9 +400,13 @@ map:
         es: Análisis Real
         children:
           -
-            ident: intro_real_analysis
-            en: Chapter1
-            es: Capítulo1
+            ident: analysis_real_numbers
+            en: Analysis of Real Numbers
+            es: Análisis de Números Reales
+          -
+            ident: convergence
+            en: Convergence
+            es: Convergencia
       -
         ident: differential_calculus
         en: Differential Calculus
