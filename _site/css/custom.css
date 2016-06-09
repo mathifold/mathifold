@@ -513,7 +513,7 @@ p.subject {
   color: black;
 }
 
-li{
+#search-results li{
    list-style: none;
 }
 
