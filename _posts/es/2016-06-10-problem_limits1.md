@@ -1,8 +1,8 @@
 ---
 title: "Límites. Problema 1"
-lang: en
-category: en
-permalink: en/problem_limits1
+lang: es
+category: es
+permalink: es/problem_limits1
 
 ident: problem_limits1
 parent: limits
