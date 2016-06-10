@@ -23,7 +23,7 @@
  </div><br><br>
  
  <div class="dissap">
-   $dfrac{3}{2}$<br><br>
+
    The limit is of indeterminate form 0/0 <br><br>
     There is more than one way to solve the problem:<br><br>
     
