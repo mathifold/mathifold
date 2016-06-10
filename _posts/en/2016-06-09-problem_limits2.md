@@ -24,8 +24,8 @@
  
  <div class="dissap">
    $dfrac{3}{2}$<br><br>
-   Indeterminate form 0/0 <br><br>
-    There are more than one solution to solve the problem:<br><br>
+   The limit is of indeterminate form 0/0 <br><br>
+    There is more than one way to solve the problem:<br><br>
     
     1. Using the conjugate<br><br>
     
