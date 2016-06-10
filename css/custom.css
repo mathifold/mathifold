@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 body, input {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 150%;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .resource { 
