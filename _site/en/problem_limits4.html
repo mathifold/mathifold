@@ -94,7 +94,7 @@
 				
 				
 					
-					<a href="/es/problem_limits1.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_limits4.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -103,7 +103,7 @@
 				
 				
 					
-					<a href="/en/problem_limits1.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_limits4.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -121,31 +121,47 @@
 
 
 
+	
+	
+	<a href="/en/problem_limits3.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
-	
-	
-	<a href="/en/problem_limits3.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Limits. Problem 1</span>
+		Limits. Problem 4</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
 Compute the limit: <br /><br />
 
-$\displaystyle\lim_{x\longrightarrow 3} \dfrac{x^2-x+12}{x+3}$<br /><br />
+$\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}}$<br /><br />
 
 <div class="bcblue boxdissap">
 	Solution
 </div><br />
 
 <div class="dissap">
-  3
+
+The limit is of indeterminate form $\dfrac{0}{0}$<br /><br />
+There is more than one way to solve the problem:<br /><br />
+
+1. Using the conjugate<br /><br />
+
+
+$\displaystyle\lim_{x\longrightarrow 9}\dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x}}{(3-\sqrt{x})·(3+\sqrt{x})}$<br /><br />
+Then, <br /><br />
+$\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x}}{(3-\sqrt{x})·(3+\sqrt{x})} = \lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}$<br /><br />
+Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, <br /><br />
+$\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}= \lim_{x\longrightarrow 9} (3+\sqrt{x})= 6$<br /><br />
+  
+  
+2. Using L'Hôpital's rule<br /><br />
+ $\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9} \dfrac{-1}{\dfrac{-1}{2·\sqrt{x}}}=\lim_{x\longrightarrow 9}2·\sqrt{x} = 2·3 = 6 $<br /><br />
+
 </div>
 </div>
 
