@@ -23,7 +23,7 @@
  </div><br><br>
  
  <div class="dissap">
-   $dfrac{3}{2}$<br><br>
+  
    El límite presenta la indeterminación $\dfrac{0}{0}$ <br><br>
     Hay varias formas de resolver el límite:<br><br>
     
