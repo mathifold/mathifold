@@ -178,6 +178,10 @@ p.subject {
   background-image: url('/images/derivation_integration.jpg');
 }
 
+.functions{
+  background-image: url('/images/functions.jpg');
+}
+
 
 
 .classical_geometry{
@@ -340,6 +344,10 @@ p.subject {
 
 .topological_degree{
   background-image: url('/images/topological_degree.jpg');
+}
+
+.morse_theory{
+  background-image: url('/images/morse_theory.jpg');
 }
 
 
