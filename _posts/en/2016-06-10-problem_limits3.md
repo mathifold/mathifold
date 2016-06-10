@@ -20,7 +20,7 @@
  
  <div class="bcblue boxdissap">
  	Solution
- </div><br><br>
+ </div><br>
  
  <div class="dissap">
   $x$ is positive when it tends to $0^+$. Then, $|x| = x$ <br><br>
