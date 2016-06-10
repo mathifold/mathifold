@@ -1,8 +1,8 @@
 ---
  title: "Límites. Problema 2"
- lang: en
- category: en
- permalink: en/problem_limits2
+ lang: es
+ category: es
+ permalink: es/problem_limits2
  
  ident: problem_limits2
  parent: limits
