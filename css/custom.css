@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 body, input {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 150%;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .resource { 
@@ -35,11 +35,11 @@ body, input {
 }
 
 p.topic {
-	background-size: 240px 240px;
-	font-size: 134%;
-	color: black;
-	text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
-	padding: 20px;
+  background-size: 240px 240px;
+  font-size: 134%;
+  color: black;
+  text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
+  padding: 20px;
   width: 200px; 
   height: 200px;
   word-wrap: break-word;
@@ -74,15 +74,15 @@ p.topic {
 
 
 .basics{
-	background-image: url('/images/basics.png');
+  background-image: url('/images/basics.png');
 }
 
 .geometry{
-	background-image: url('/images/geometry.png');
+  background-image: url('/images/geometry.png');
 }
 
 .algebra{
-	background-image: url('/images/algebra.png');
+  background-image: url('/images/algebra.png');
 }
 
 .analysis{
@@ -176,6 +176,10 @@ p.subject {
 
 .derivation_integration{
   background-image: url('/images/derivation_integration.jpg');
+}
+
+.functions{
+  background-image: url('/images/functions.jpg');
 }
 
 
@@ -340,6 +344,10 @@ p.subject {
 
 .topological_degree{
   background-image: url('/images/topological_degree.jpg');
+}
+
+.morse_theory{
+  background-image: url('/images/morse_theory.jpg');
 }
 
 
