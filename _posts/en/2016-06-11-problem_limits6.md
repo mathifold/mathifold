@@ -29,5 +29,5 @@
   Where the base is $\dfrac{2x + 7}{2x - 6}$ and the exponent is $\sqrt{4x^2+x-3}$<br><br>
   
   Therefore: the limit would be: $\displaystyle\e^(lim_{x\longrightarrow\infty}[(\dfrac{2x + 7}{2x - 6} - 1)·\sqrt{4x^2+x-3}] = $\displaystyle\e^(lim_{x\longrightarrow\infty}[(\dfrac{13}{2x - 6})·\sqrt{4x^2+x-3}] = e^13 $<br><br>
-  Notice that the limit of $\dfrac{\sqrt{4x^2+x-3}}{2x - 6}  = 1$ because $\sqrt{4x^2}  = 2x $ (we can ignore x-3 and -6 because when $x$ tends to infinity, they will be zero.
+  Notice that the limit of $\dfrac{\sqrt{4x^2+x-3}}{2x - 6}  = 1$ because $\sqrt{4x^2}  = 2x $ (we can ignore x-3 and -6 because when $x$ tends to infinity, they will be zero).
  </div>
