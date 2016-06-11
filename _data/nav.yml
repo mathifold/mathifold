@@ -749,15 +749,6 @@ map:
             ident: leray_schauder_degree
             en: Leray-Schauder Degree
             es: Grado de Leray-Schauder
-      -
-        ident: morse_theory
-        en: Morse Theory
-        es: Teoría de Morse
-        children:
-          -
-            ident: intro_morse_theory
-            en: Chapter1
-            es: Capítulo1
   -
     ident: advanced_mathematics
     en: Advanced Mathematics
