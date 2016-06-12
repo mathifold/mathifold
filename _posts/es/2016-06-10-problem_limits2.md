@@ -19,7 +19,7 @@ Resuelve el siguiente límite: <br><br>
 $\displaystyle\lim_{x\longrightarrow 0} \dfrac{x}{\sqrt{1+3x} -1}$<br><br>
 
 <div class="bcblue boxdissap">
-	Solución
+Solución
 </div><br><br>
 
 <div class="dissap">
