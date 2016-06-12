@@ -23,7 +23,7 @@ Solution
 </div><br>
 
 <div class="dissap">
-First, this function is a product of a polynomial (continuous function) and a tangent function (which is not continuous when $3x +2 = \drac{\pi}{2}$).<br><br>
+First, this function is a product of a polynomial (continuous function) and a tangent function (which is not continuous when $3x +2 = \dfrac{\pi}{2}$).<br><br>
 Therefore, we need to know what is the value for $x$ in order to get \dfrac{\pi}{2} inside the tangent. We do a first order equation:<br><br>
 $3x +2 = \dfrac{\pi}{2}$<br><br> 
 $x = \dfrac{\pi - 4}{6}$<br><br>
