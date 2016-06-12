@@ -79,8 +79,8 @@
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/continuity.html" style="text-decoration: none; color: black">
-		Continuidad</a>
+		<a href="/chapters/es/limits.html" style="text-decoration: none; color: black">
+		Límites</a>
 		</span>
 	
 	
@@ -94,7 +94,7 @@
 				
 				
 					
-					<a href="/es/problem_continuity1.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_limits6.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -103,7 +103,7 @@
 				
 				
 					
-					<a href="/en/problem_continuity1.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_limits6.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -121,41 +121,37 @@
 
 
 
+	
+	
+	<a href="/es/problem_limits5.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
-	
-	
-	<a href="/es/problem_continuity2.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Continuidad. Problema 1</span>
+		Límites. Problema 6</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
-Estudia la continuidad de la siguiente función: <br /><br />
-
-$\displaystyle f(x) = \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12}$<br /><br />
-
+Resuelve el siguiente límite: <br /><br />
+ 
+$\displaystyle\lim_{x\longrightarrow\infty}(\dfrac{2x + 7}{2x - 6})^\sqrt{4x^2+x-3}$<br /><br />
+ 
 <div class="bcblue boxdissap">
 Solución
 </div><br />
-
+ 
 <div class="dissap">
-Es una función racional. Entonces, ya que la parte del numerador es continua (las funciones exponencial y coseno son continuas), y la del denominador también (las funciones polinómicas son siempre continuas), sólo nos tenemos que fijar cuando el denominador toma el valor 0 (y qué valor tendría x entonces).<br /><br />
-Entonces, hacemos que el denominador sea igual a cero para conseguir $x$.<br /><br />
-$x^2 -8x + 12 = 0$<br /><br /> 
-$x= 6 x=2$<br /><br />
-Tenemos dos soluciones, entonces necesitamos calcular dos límites.<br /><br />
-
-$\displaystyle\lim_{x\longrightarrow 6} \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12} = \pm\infty$<br /><br />
-$\displaystyle\lim_{x\longrightarrow 2} \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12} = \pm\infty$<br /><br />
-Si lo comprobamos, la función cuando $x$ toma los dos valores, encontramos que el límite no existe. <br /><br />
-Finalmente, la función es continua en $\mathbb{R}$ menos en $x=2 y en x=6$. <br /><br />
-
+El límite presenta la indeterminación $1^\infty$<br /><br />
+Para resolver el límite, es necesario seguir los pasos al tener la indeterminación $1^\infty$. De esta forma, llegaremos a la siguiente expresión: <br /><br />
+$\displaystyle\e^(lim_{x\longrightarrow\infty}[(Base -1)·Exponente]$<br /><br />
+Donde la base es $\dfrac{2x + 7}{2x - 6}$ y el exponente, $\sqrt{4x^2+x-3}$<br /><br />
+  
+Así pues, el límite sería: $\displaystyle\e^(lim_{x\longrightarrow\infty}[(\dfrac{2x + 7}{2x - 6} - 1)·\sqrt{4x^2+x-3}] = $\displaystyle\e^(lim_{x\longrightarrow\infty}[(\dfrac{13}{2x - 6})·\sqrt{4x^2+x-3}] = e^13 $<br /><br />
+Ten en cuenta que $\dfrac{\sqrt{4x^2+x-3}}{2x - 6}  = 1$ porque $\sqrt{4x^2}  = 2x $ (podemos ignorar x-3 y -6 (denominador) porque cuando $x$ tiende a infinito, esos términos serán cero).
 </div>
 </div>
 

@@ -79,8 +79,8 @@
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/continuity.html" style="text-decoration: none; color: black">
-		Continuidad</a>
+		<a href="/chapters/es/limits.html" style="text-decoration: none; color: black">
+		Límites</a>
 		</span>
 	
 	
@@ -94,7 +94,7 @@
 				
 				
 					
-					<a href="/es/problem_continuity1.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_limits5.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -103,7 +103,7 @@
 				
 				
 					
-					<a href="/en/problem_continuity1.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_limits5.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -121,42 +121,44 @@
 
 
 
+	
+	
+	<a href="/es/problem_limits4.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
 
 	
 	
-	<a href="/es/problem_continuity2.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/problem_limits6.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Continuidad. Problema 1</span>
+		Límites. Problema 5</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
-Estudia la continuidad de la siguiente función: <br /><br />
+Resuelve el siguiente límite: <br /><br />
 
-$\displaystyle f(x) = \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12}$<br /><br />
+$\displaystyle\lim_{x\longrightarrow\infty}(\sqrt{x^2 + x} - x)$<br /><br />
 
 <div class="bcblue boxdissap">
 Solución
 </div><br />
-
+ 
 <div class="dissap">
-Es una función racional. Entonces, ya que la parte del numerador es continua (las funciones exponencial y coseno son continuas), y la del denominador también (las funciones polinómicas son siempre continuas), sólo nos tenemos que fijar cuando el denominador toma el valor 0 (y qué valor tendría x entonces).<br /><br />
-Entonces, hacemos que el denominador sea igual a cero para conseguir $x$.<br /><br />
-$x^2 -8x + 12 = 0$<br /><br /> 
-$x= 6 x=2$<br /><br />
-Tenemos dos soluciones, entonces necesitamos calcular dos límites.<br /><br />
-
-$\displaystyle\lim_{x\longrightarrow 6} \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12} = \pm\infty$<br /><br />
-$\displaystyle\lim_{x\longrightarrow 2} \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12} = \pm\infty$<br /><br />
-Si lo comprobamos, la función cuando $x$ toma los dos valores, encontramos que el límite no existe. <br /><br />
-Finalmente, la función es continua en $\mathbb{R}$ menos en $x=2 y en x=6$. <br /><br />
+El límite presenta la indeterminación $\infty - \infty$<br /><br />
+Aquí, es fácil usar el conjugado: $\displaystyle\lim_{x\longrightarrow\infty} \dfrac{(\sqrt{x^2 + x} - x )·(\sqrt{x^2 + x} + x)}{\sqrt{x^2 + x} + x} = \lim_{x\longrightarrow\infty}\dfrac{x^2 + x - x^2}{\sqrt{x^2 + x} + x} =\lim_{x\longrightarrow\infty}\dfrac{x}{\sqrt{x^2 + x} + x}$<br /><br />
+  
+Después, es necesario centrarse en la potencia del numberador y del denominador. En el numerador, la potencia máxima es 1 ($x^1$) y en el denominador, también es 1 ($\sqrt{x^2}= x^1$). Además, en el denominador, $\sqrt{x^2}$ y $x% se suman (conviene ignorar $\sqrt{x}$ porque cuando $x$ tiende a infinito, $x$ es mayor que $\sqrt{x}$). Entonces tenemos $2x$. <br /><br />
+  
+Finalmente:  $\displaystyle\lim_{x\longrightarrow\infty}\dfrac{x}{\sqrt{x^2 + x} + x} podemos decir que es igual a \lim_{x\longrightarrow\infty}(\dfrac{x}{x + x} = \dfrac{1}{2}$<br /><br />
 
 </div>
+
+ 
 </div>
 
 </div>
