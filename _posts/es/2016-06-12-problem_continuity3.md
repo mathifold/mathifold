@@ -16,7 +16,7 @@ type: post
 <div>
 Estudia la continuidad de la siguiente función: <br><br>
 
-$\displaystyle g(x) = (\arsin(x))^3$<br><br>
+$\displaystyle g(x) = (\arcsin(x))^3$<br><br>
 
 <div class="bcblue boxdissap">
 Solución
