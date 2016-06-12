@@ -19,7 +19,7 @@ Compute the limit: <br><br>
 $\displaystyle\lim_{x\longrightarrow 3} \dfrac{x^2-x+12}{x+3}$<br><br>
 
 <div class="bcblue boxdissap">
-	Solution
+Solution
 </div><br>
 
 <div class="dissap">
