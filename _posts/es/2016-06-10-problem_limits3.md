@@ -19,7 +19,7 @@ Resuelve el siguiente límite: <br><br>
 $\displaystyle\lim_{x\longrightarrow 0^+} (\dfrac{1}{x} -\dfrac{1}{|x|})$<br><br>
 
 <div class="bcblue boxdissap">
-	Solución
+Solución
 </div><br>
 
 <div class="dissap">
