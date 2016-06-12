@@ -16,7 +16,7 @@ type: post
 <div>
 Estudia la continuidad de la siguiente función: <br><br>
 
-$\displaystyle\h(x) = (x^3)·tan(3x+2)$<br><br>
+$\displaystyle h(x) = (x^3)·tan(3x+2)$<br><br>
 
 <div class="bcblue boxdissap">
 Solución
@@ -24,11 +24,11 @@ Solución
 
 <div class="dissap">
 Primero, esta función es un producto entre un polinomio (continuo en todo $R$) y una función tangente (el cual no es continuo cuando $3x +2 = \drac{\pi}{2}$).<br><br>
-Entonces, necesitamos saber que valores toma $x$ para conseguir \drac{\pi}{2} dentro de la tangente. Hacemos una ecuación de primer grado:<br><br>
-$3x +2 = \drac{\pi}{2}$<br><br> 
+Entonces, necesitamos saber que valores toma $x$ para conseguir \dfrac{\pi}{2} dentro de la tangente. Hacemos una ecuación de primer grado:<br><br>
+$3x +2 = \dfrac{\pi}{2}$<br><br> 
 $x = \dfrac{\pi - 4}{6}$<br><br>
 Cuando $x$ tiene este valor, la tangente no existe y la función tampoco. <br><br>
-Entonces, la función es continua en $R$ excepto cuando $x$ tiene valor $\dfrac{\pi - 4}{6} + 2·(\pi)·k$, donde  $k$ pertenece a los números enteros (es el número de vueltas). <br><br>
+Entonces, la función es continua en $\mathbb{R}$ excepto cuando $x$ tiene valor $\dfrac{\pi - 4}{6} + 2·\pi·k$, donde  $k$ pertenece a los números enteros (es el número de vueltas). <br><br>
 
 
 </div>
