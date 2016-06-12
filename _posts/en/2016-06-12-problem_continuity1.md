@@ -31,7 +31,7 @@ We have two solutions, so we need to compute the limit for both values.<br><br>
 
 $\displaystyle\lim_{x\longrightarrow 6} \dfrac{e^-5x +cos(x)}{x^2 -8x + 12} = +-\infty$<br><br>
 $\displaystyle\lim_{x\longrightarrow 2} \dfrac{e^-5x +cos(x)}{x^2 -8x + 12} = +-\infty$<br><br>
-And if we check, the function at those two points, we find that the value does not exist.
-Therefore, the function is continuous on $R^2$ except when x=2 and x=6. 
+And if we check, the function at those two points, we find that the value does not exist.<br><br>
+Therefore, the function is continuous on $R^2$ except when x=2 and x=6. <br><br>
 
 </div>
