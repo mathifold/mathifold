@@ -19,7 +19,7 @@ Resuelve el siguiente límite: <br><br>
 $\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}}$<br><br>
 
 <div class="bcblue boxdissap">
-	Solution
+Solución
 </div><br>
 
 <div class="dissap">
@@ -30,14 +30,14 @@ Hay varias formas de resolver el límite:<br><br>
 1. Usando el conjugado<br><br>
 
 
-$\displaystyle\lim_{x\longrightarrow 9}\dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x}}{(3-\sqrt{x})·(3+\sqrt{x})}$<br><br>
+$\displaystyle\lim_{x\longrightarrow 9}\dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(3-\sqrt{x})·(3+\sqrt{x})}$<br><br>
 Entonces, <br><br>
-$\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x}}{(3-\sqrt{x})·(3+\sqrt{x})} = \lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}$<br><br>
+$\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(3-\sqrt{x})·(3+\sqrt{x})} = \lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}$<br><br>
 Finalmente, anulamos $9-x$ que está en común en el numerador y en el denominador. Por lo tanto, tenemos que: <br><br>
 $\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}= \lim_{x\longrightarrow 9} (3+\sqrt{x})= 6$<br><br>
   
   
 2. Usando la regla de L'Hôpital<br><br>
- $\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9} \dfrac{-1}{\dfrac{-1}{2·\sqrt{x}}}=\lim_{x\longrightarrow 9}2·\sqrt{x} = 2·3 = 6 $<br><br>
+$\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9} \dfrac{-1}{\frac{-1}{2·\sqrt{x}}}=\lim_{x\longrightarrow 9}2·\sqrt{x} = 2·3 = 6 $<br><br>
 
 </div>

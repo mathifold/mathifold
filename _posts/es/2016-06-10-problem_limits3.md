@@ -16,13 +16,13 @@ type: post
 <div>
 Resuelve el siguiente límite: <br><br>
 
-$\displaystyle\lim_{x\longrightarrow 0^+} (\dfrac{1}{x} -\dfrac{1}{|x|})$<br><br>
+$\displaystyle\lim_{x\longrightarrow 0^+} \left(\dfrac{1}{x} -\dfrac{1}{|x|}\right)$<br><br>
 
 <div class="bcblue boxdissap">
-	Solución
+Solución
 </div><br>
 
 <div class="dissap">
 $x$ es positivo cuando tiende a $0^+$. Entonces, $|x| = x$ <br><br>
-Por lo tanto, tenemos que: $\displaystyle\lim_{x\longrightarrow 0^+} (\dfrac{1}{x} -\dfrac{1}{|x|}) = \lim_{x\longrightarrow 0^+}(\dfrac{1}{x}-\dfrac{1}{x}) = \lim_{x\longrightarrow 0^+}(0) = 0$<br><br>
+Por lo tanto, tenemos que: $\displaystyle\lim_{x\longrightarrow 0^+} \left(\dfrac{1}{x} -\dfrac{1}{|x|}\right) = \lim_{x\longrightarrow 0^+}\left(\dfrac{1}{x}-\dfrac{1}{x}\right) = \lim_{x\longrightarrow 0^+}(0) = 0$<br><br>
 </div>

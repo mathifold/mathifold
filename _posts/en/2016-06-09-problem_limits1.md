@@ -19,9 +19,10 @@ Compute the limit: <br><br>
 $\displaystyle\lim_{x\longrightarrow 3} \dfrac{x^2-x+12}{x+3}$<br><br>
 
 <div class="bcblue boxdissap">
-	Solution
+Solution
 </div><br>
 
 <div class="dissap">
-  3
+The limit do not have indeterminate form. Therefore, for $x$, we take the value $3$. <br><br>
+$\displaystyle\lim_{x\longrightarrow 3} \dfrac{x^2-x+12}{x+3} = \dfrac{3^2-3+12}{3+3} = \dfrac{18}{6} = 3$<br><br>
 </div>
