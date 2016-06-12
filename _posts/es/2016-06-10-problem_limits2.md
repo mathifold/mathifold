@@ -38,6 +38,6 @@ $\displaystyle\lim_{x\longrightarrow 0} \dfrac{x·(\sqrt{1+3x}+1)}{1+3x-1} = \li
   
   
 2. Usando la regla de L'Hôpital<br><br>
- $\displaystyle\lim_{x\longrightarrow 0} \dfrac{x}{\sqrt{1+3x} -1} =\lim_{x\longrightarrow 0} \dfrac{1}{\frac{3}{2·\sqrt{1+3x}}}=\lim_{x\longrightarrow 0} \dfrac{2·\sqrt{1+3x}}{3} = \dfrac{2}{3} $<br><br>
+$\displaystyle\lim_{x\longrightarrow 0} \dfrac{x}{\sqrt{1+3x} -1} =\lim_{x\longrightarrow 0} \dfrac{1}{\frac{3}{2·\sqrt{1+3x}}}=\lim_{x\longrightarrow 0} \dfrac{2·\sqrt{1+3x}}{3} = \dfrac{2}{3} $<br><br>
 
 </div>
