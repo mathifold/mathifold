@@ -16,7 +16,7 @@ type: post
 <div>
 Estudia la continuidad de la siguiente función: <br><br>
 
-$\displaystyle h(x) = (x^3)·tan(3x+2)$<br><br>
+$\displaystyle h(x) = (x^3)·\tan(3x+2)$<br><br>
 
 <div class="bcblue boxdissap">
 Solución
