@@ -19,7 +19,7 @@ Resuelve el siguiente límite: <br><br>
 $\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}}$<br><br>
 
 <div class="bcblue boxdissap">
-	Solution
+Solution
 </div><br>
 
 <div class="dissap">
@@ -38,6 +38,6 @@ $\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}= \lim_
   
   
 2. Usando la regla de L'Hôpital<br><br>
- $\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9} \dfrac{-1}{\dfrac{-1}{2·\sqrt{x}}}=\lim_{x\longrightarrow 9}2·\sqrt{x} = 2·3 = 6 $<br><br>
+$\displaystyle\lim_{x\longrightarrow 9} \dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9} \dfrac{-1}{\dfrac{-1}{2·\sqrt{x}}}=\lim_{x\longrightarrow 9}2·\sqrt{x} = 2·3 = 6 $<br><br>
 
 </div>
