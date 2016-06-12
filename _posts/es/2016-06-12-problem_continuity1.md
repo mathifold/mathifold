@@ -16,7 +16,7 @@ type: post
 <div>
 Estudia la continuidad de la siguiente función: <br><br>
 
-$\displaystyle\f(x) = \dfrac{e^-5x +cos(x)}{x^2 -8x + 12}$<br><br>
+$\displaystyle f(x) = \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12}$<br><br>
 
 <div class="bcblue boxdissap">
 Solución
@@ -29,9 +29,9 @@ $x^2 -8x + 12 = 0$<br><br>
 $x= 6 x=2$<br><br>
 Tenemos dos soluciones, entonces necesitamos calcular dos límites.<br><br>
 
-$\displaystyle\lim_{x\longrightarrow 6} \dfrac{e^-5x +cos(x)}{x^2 -8x + 12} = +-\infty$<br><br>
-$\displaystyle\lim_{x\longrightarrow 2} \dfrac{e^-5x +cos(x)}{x^2 -8x + 12} = +-\infty$<br><br>
+$\displaystyle\lim_{x\longrightarrow 6} \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12} = \pm\infty$<br><br>
+$\displaystyle\lim_{x\longrightarrow 2} \dfrac{e^{-5x} +\cos(x)}{x^2 -8x + 12} = \pm\infty$<br><br>
 Si lo comprobamos, la función cuando $x$ toma los dos valores, encontramos que el límite no existe. <br><br>
-Finalmente, la función es continua en $R$ menos en x=2 y en x=6. <br><br>
+Finalmente, la función es continua en $\mathbb{R}$ menos en $x=2 y en x=6$. <br><br>
 
 </div>
