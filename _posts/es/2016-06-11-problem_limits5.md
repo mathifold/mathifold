@@ -11,7 +11,7 @@ mathjax: true
  
 layout: post
 type: post
- ---
+---
  
 <div>
 Resuelve el siguiente límite: <br><br>
