@@ -74,6 +74,10 @@ map:
             ident: limits
             en: Limits
             es: Límites
+          -
+            ident: continuity
+            en: Continuity
+            es: Continuidad
       -
         ident: trigonometry
         en: Trigonometry

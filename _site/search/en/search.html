@@ -88,12 +88,52 @@
   window.store = {
     
     
+      "en-problem-continuity2": {
+        "title": "Continuity. Problem 2",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Study the continuity of the following function: $\\displaystyle\\h(x) = (x^3)·tan(3x+2)$SolutionFirst, this function is a product of a polynomial (continuous function) and a tangent function (which is not continuous when $3x +2 = \\drac{\\pi}{2}$).Therefore, we need to know what is the value for $x$ in order to get \\drac{\\pi}{2} inside the tangent. We do a first order equation:$3x +2 = \\drac{\\pi}{2}$ $x = \\dfrac{\\pi - 4}{6}$When $x$ takes this value, then the tangent does not exist and the function neither. Therefore, the function is continuous on $R$ except when $x$ takes the value  $\\dfrac{\\pi - 4}{6} + 2·(\\pi)·k$ where $k$ belongs to the integer numbers (it is the number of periods). ",
+        "url": "/en/problem_continuity2"
+      }
+      ,
+    
+      "en-problem-continuity1": {
+        "title": "Continuity. Problem 1",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Study the continuity of the following function: $\\displaystyle\\f(x) = \\dfrac{e^-5x +cos(x)}{x^2 -8x + 12}$SolutionThis function is a rational one. Therefore, since the numerator is continuous (the exponential function and the cosine are continuous functions), and the denominator too (a polynomial function is always continuous), we only need to focus when the denominator takes the value 0 (what is the value for x?).Then, we put the denominator equal to zero in order to get $x$.$x^2 -8x + 12 = 0$ $x= 6 x=2$We have two solutions, so we need to compute the limit for both values.$\\displaystyle\\lim_{x\\longrightarrow 6} \\dfrac{e^-5x +cos(x)}{x^2 -8x + 12} = +-\\infty$$\\displaystyle\\lim_{x\\longrightarrow 2} \\dfrac{e^-5x +cos(x)}{x^2 -8x + 12} = +-\\infty$And if we check, the function at those two points, we find that the value does not exist.Therefore, the function is continuous on $R$ except when x=2 and x=6. ",
+        "url": "/en/problem_continuity1"
+      }
+      ,
+    
+      "en-problem-limits6": {
+        "title": "Limits. Problem 6",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\dfrac{2x + 7}{2x - 6})^\\sqrt{4x^2+x-3}$ Solution The limit is of indeterminate form $1^\\infty$In order to solve this limit, it is necessary to follow the steps of indeterminate form $1^\\infty$. We will reach the following expression: $\\displaystyle\\e^(lim_{x\\longrightarrow\\infty}[(Base -1)·Exponent]$Where the base is $\\dfrac{2x + 7}{2x - 6}$ and the exponent is $\\sqrt{4x^2+x-3}$  Therefore: the limit would be: $\\displaystyle\\e^(lim_{x\\longrightarrow\\infty}[(\\dfrac{2x + 7}{2x - 6} - 1)·\\sqrt{4x^2+x-3}] = $\\displaystyle\\e^(lim_{x\\longrightarrow\\infty}[(\\dfrac{13}{2x - 6})·\\sqrt{4x^2+x-3}] = e^13 $Notice that the limit of $\\dfrac{\\sqrt{4x^2+x-3}}{2x - 6}  = 1$ because $\\sqrt{4x^2}  = 2x $ (we can ignore x-3 and -6 because when $x$ tends to infinity, they will be zero).",
+        "url": "/en/problem_limits6"
+      }
+      ,
+    
+      "en-problem-limits5": {
+        "title": "Limits. Problem 5",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\sqrt{x^2 + x} - x)$ Solution The limit is of indeterminate form $\\infty - \\infty$Here, it is easy to apply the conjugate: $\\displaystyle\\lim_{x\\longrightarrow\\infty} \\dfrac{(\\sqrt{x^2 + x} - x )·(\\sqrt{x^2 + x} + x)}{\\sqrt{x^2 + x} + x} = \\lim_{x\\longrightarrow\\infty}\\dfrac{x^2 + x - x^2}{\\sqrt{x^2 + x} + x} =\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x}$  Then, we need to focus on the power of the numberator and the denominator. For the first one, the maximum power is 1 ($x^1$) and for the second one, is also 1 ($\\sqrt{x^2}= x^1$). Moreover, since in the denominator, $\\sqrt{x^2}$ and $x% are being sum (ignore $\\sqrt{x}$ because when $x$ tends to infinity, $x$ is much bigger than $\\sqrt{x}$) we have two $x$.   Therefore:  $\\displaystyle\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x} is approximately equal to \\lim_{x\\longrightarrow\\infty}\\dfrac{x}{x + x} = \\dfrac{1}{2}$   ",
+        "url": "/en/problem_limits5"
+      }
+      ,
+    
       "en-problem-limits4": {
         "title": "Limits. Problem 4",
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}}$\tSolutionThe limit is of indeterminate form $\\dfrac{0}{0}$There is more than one way to solve the problem:1. Using the conjugate$\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x}}{(3-\\sqrt{x})·(3+\\sqrt{x})}$Then, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x}}{(3-\\sqrt{x})·(3+\\sqrt{x})} = \\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}$Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}= \\lim_{x\\longrightarrow 9} (3+\\sqrt{x})= 6$    2. Using L'Hôpital's rule $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9} \\dfrac{-1}{\\dfrac{-1}{2·\\sqrt{x}}}=\\lim_{x\\longrightarrow 9}2·\\sqrt{x} = 2·3 = 6 $",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}}$SolutionThe limit is of indeterminate form $\\dfrac{0}{0}$There is more than one way to solve the problem:1. Using the conjugate$\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})}$Then, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x}){(3-\\sqrt{x})·(3+\\sqrt{x})} = \\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}$Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}= \\lim_{x\\longrightarrow 9} (3+\\sqrt{x})= 6$    2. Using L'Hôpital's rule$\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9} \\dfrac{-1}{\\frac{-1}{2·\\sqrt{x}}}=\\lim_{x\\longrightarrow 9}2·\\sqrt{x} = 2·3 = 6 $",
         "url": "/en/problem_limits4"
       }
       ,
@@ -103,7 +143,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 0^+} (\\dfrac{1}{x} -\\dfrac{1}{|x|})$\tSolution$x$ is positive when it tends to $0^+$. Then, $|x| = x$ Therefore, it yields: $\\displaystyle\\lim_{x\\longrightarrow 0^+} (\\dfrac{1}{x} -\\dfrac{1}{|x|}) = \\lim_{x\\longrightarrow 0^+}(\\dfrac{1}{x}-\\dfrac{1}{x}) = \\lim_{x\\longrightarrow 0^+}(0) = 0$",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 0^+} \\left(\\dfrac{1}{x} -\\dfrac{1}{|x|}\\right)$Solution$x$ is positive when it tends to $0^+$. Then, $|x| = x$ Therefore, it yields: $\\displaystyle\\lim_{x\\longrightarrow 0^+} \\left(\\dfrac{1}{x} -\\dfrac{1}{|x|}\\right) = \\lim_{x\\longrightarrow 0^+}\\left(\\dfrac{1}{x}-\\dfrac{1}{x}\\right) = \\lim_{x\\longrightarrow 0^+}(0) = 0$",
         "url": "/en/problem_limits3"
       }
       ,
@@ -113,7 +153,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x}{\\sqrt{1+3x} -1}$\tSolutionThe limit is of indeterminate form $\\dfrac{0}{0}$ There is more than one way to solve the limit:1. Using the conjugate $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x}{\\sqrt{1+3x} -1} =\\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{(\\sqrt{1+3x}+1)·(\\sqrt{1+3x}-1)}$Then, $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{(\\sqrt{1+3x}+1)·(\\sqrt{1+3x}-1)} = \\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{1+3x-1}$Finally, we take the $x$ out of the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{1+3x-1} = \\lim_{x\\longrightarrow 0} \\dfrac{\\sqrt{1+3x}+1}{3}= \\dfrac{2}{3}$    2. Using L'Hôpital's rule $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x}{\\sqrt{1+3x} -1} =\\lim_{x\\longrightarrow 0} \\dfrac{1}{\\frac{3}{2·\\sqrt{1+3x}}}=\\lim_{x\\longrightarrow 0} \\dfrac{2·\\sqrt{1+3x}}{3} = \\dfrac{2}{3} $",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x}{\\sqrt{1+3x} -1}$SolutionThe limit is of indeterminate form $\\dfrac{0}{0}$ There is more than one way to solve the limit:1. Using the conjugate $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x}{\\sqrt{1+3x} -1} =\\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{(\\sqrt{1+3x}+1)·(\\sqrt{1+3x}-1)}$Then, $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{(\\sqrt{1+3x}+1)·(\\sqrt{1+3x}-1)} = \\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{1+3x-1}$Finally, we take the $x$ out of the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x·(\\sqrt{1+3x}+1)}{1+3x-1} = \\lim_{x\\longrightarrow 0} \\dfrac{\\sqrt{1+3x}+1}{3}= \\dfrac{2}{3}$    2. Using L'Hôpital's rule $\\displaystyle\\lim_{x\\longrightarrow 0} \\dfrac{x}{\\sqrt{1+3x} -1} =\\lim_{x\\longrightarrow 0} \\dfrac{1}{\\frac{3}{2·\\sqrt{1+3x}}}=\\lim_{x\\longrightarrow 0} \\dfrac{2·\\sqrt{1+3x}}{3} = \\dfrac{2}{3} $",
         "url": "/en/problem_limits2"
       }
       ,
@@ -123,7 +163,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 3} \\dfrac{x^2-x+12}{x+3}$\tSolution  3",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 3} \\dfrac{x^2-x+12}{x+3}$SolutionThe limit do not have indeterminate form. Therefore, for $x$, we take the value $3$. $\\displaystyle\\lim_{x\\longrightarrow 3} \\dfrac{x^2-x+12}{x+3} = \\dfrac{3^2-3+12}{3+3} = \\dfrac{18}{6} = 3$",
         "url": "/en/problem_limits1"
       }
       ,

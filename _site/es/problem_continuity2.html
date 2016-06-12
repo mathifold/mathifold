@@ -79,8 +79,8 @@
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/limits.html" style="text-decoration: none; color: black">
-		Límites</a>
+		<a href="/chapters/es/continuity.html" style="text-decoration: none; color: black">
+		Continuidad</a>
 		</span>
 	
 	
@@ -94,7 +94,7 @@
 				
 				
 					
-					<a href="/es/problem_limits2.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_continuity2.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -103,7 +103,7 @@
 				
 				
 					
-					<a href="/en/problem_limits2.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_continuity2.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,48 +123,35 @@
 
 	
 	
-	<a href="/es/problem_limits1.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/problem_continuity1.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
-
-	
-	
-	<a href="/es/problem_limits3.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Límites. Problema 2</span>
+		Continuidad. Problema 2</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
-Resuelve el siguiente límite: <br /><br />
+Estudia la continuidad de la siguiente función: <br /><br />
 
-$\displaystyle\lim_{x\longrightarrow 0} \dfrac{x}{\sqrt{1+3x} -1}$<br /><br />
+$\displaystyle\h(x) = (x^3)·tan(3x+2)$<br /><br />
 
 <div class="bcblue boxdissap">
 Solución
-</div><br /><br />
+</div><br />
 
 <div class="dissap">
+Primero, esta función es un producto entre un polinomio (continuo en todo $R$) y una función tangente (el cual no es continuo cuando $3x +2 = \drac{\pi}{2}$).<br /><br />
+Entonces, necesitamos saber que valores toma $x$ para conseguir \drac{\pi}{2} dentro de la tangente. Hacemos una ecuación de primer grado:<br /><br />
+$3x +2 = \drac{\pi}{2}$<br /><br /> 
+$x = \dfrac{\pi - 4}{6}$<br /><br />
+Cuando $x$ tiene este valor, la tangente no existe y la función tampoco. <br /><br />
+Entonces, la función es continua en $R$ excepto cuando $x$ tiene valor $\dfrac{\pi - 4}{6} + 2·(\pi)·k$, donde  $k$ pertenece a los números enteros (es el número de vueltas). <br /><br />
 
-El límite presenta la indeterminación $\dfrac{0}{0}$ <br /><br />
-Hay varias formas de resolver el límite:<br /><br />
-
-1. Usando el conjugado<br /><br />
-
-
-$\displaystyle\lim_{x\longrightarrow 0} \dfrac{x}{\sqrt{1+3x} -1} =\lim_{x\longrightarrow 0} \dfrac{x·(\sqrt{1+3x}+1)}{(\sqrt{1+3x}+1)·(\sqrt{1+3x}-1)}$<br /><br />
-Entonces, <br /><br />
-$\displaystyle\lim_{x\longrightarrow 0} \dfrac{x·(\sqrt{1+3x}+1)}{(\sqrt{1+3x}+1)·(\sqrt{1+3x}-1)} = \lim_{x\longrightarrow 0} \dfrac{x·(\sqrt{1+3x}+1)}{1+3x-1}$<br /><br />
-Finalmente, anulamos la $x$ que está en común en el numerador y en el denominador. Por lo tanto, <br /><br />
-$\displaystyle\lim_{x\longrightarrow 0} \dfrac{x·(\sqrt{1+3x}+1)}{1+3x-1} = \lim_{x\longrightarrow 0} \dfrac{\sqrt{1+3x}+1}{3}= \dfrac{2}{3}$<br /><br />
-  
-  
-2. Usando la regla de L'Hôpital<br /><br />
-$\displaystyle\lim_{x\longrightarrow 0} \dfrac{x}{\sqrt{1+3x} -1} =\lim_{x\longrightarrow 0} \dfrac{1}{\frac{3}{2·\sqrt{1+3x}}}=\lim_{x\longrightarrow 0} \dfrac{2·\sqrt{1+3x}}{3} = \dfrac{2}{3} $<br /><br />
 
 </div>
 </div>
