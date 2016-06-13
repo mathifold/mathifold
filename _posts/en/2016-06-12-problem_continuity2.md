@@ -24,7 +24,7 @@ Solution
 
 <div class="dissap">
 First, this function is a product of a polynomial (continuous function) and a tangent function (which is not continuous when $3x +2 = \dfrac{\pi}{2}$).<br><br>
-Therefore, we need to know what is the value for $x$ in order to get \dfrac{\pi}{2} inside the tangent. We do a first order equation:<br><br>
+Therefore, we need to know what is the value for $x$ in order to get $\dfrac{\pi}{2}$ inside the tangent. We do a first order equation:<br><br>
 $3x +2 = \dfrac{\pi}{2}$<br><br> 
 $x = \dfrac{\pi - 4}{6}$<br><br>
 When $x$ takes this value, then the tangent does not exist and the function neither. <br><br>
