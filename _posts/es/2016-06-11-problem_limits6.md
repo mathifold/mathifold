@@ -16,7 +16,7 @@ type: post
 <div>
 Resuelve el siguiente límite: <br><br>
  
-$\displaystyle\lim_{x\longrightarrow\infty}(\dfrac{2x + 7}{2x - 6})^\sqrt{4x^2+x-3}$<br><br>
+$\displaystyle\lim_{x\longrightarrow\infty}\left(\dfrac{2x + 7}{2x - 6}\right)^\sqrt{4x^2+x-3}$<br><br>
  
 <div class="bcblue boxdissap">
 Solución
@@ -25,7 +25,7 @@ Solución
 <div class="dissap">
 El límite presenta la indeterminación $1^\infty$<br><br>
 Para resolver el límite, es necesario seguir los pasos al tener la indeterminación $1^\infty$. De esta forma, llegaremos a la siguiente expresión: <br><br>
-$\displaystyle\e^(lim_{x\longrightarrow\infty}[(Base -1)·Exponente]$<br><br>
+$\displaystyle e^{\lim_{x\longrightarrow\infty}[(Base -1)·Exponente]}$<br><br>
 Donde la base es $\dfrac{2x + 7}{2x - 6}$ y el exponente, $\sqrt{4x^2+x-3}$<br><br>
   
 Así pues, el límite sería:  $\displaystyle e^{\lim_{x\longrightarrow\infty}\left[\left(\dfrac{2x + 7}{2x - 6} - 1\right)·\sqrt{4x^2+x-3}\right]} = e^{\lim_{x\longrightarrow\infty}\left[\left(\dfrac{13}{2x - 6}\right)·\sqrt{4x^2+x-3}\right]}= e^{13} $<br><br>
