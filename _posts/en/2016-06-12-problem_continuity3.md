@@ -25,7 +25,7 @@ Solution
 <div class="dissap">
 This function is a trigonometric one. We need to take into account that we can not do the arcsin of a number greater than 1 or lower than -1, both included ($x\leqslant|1|$).<br><br>
  
-To determine whether the function is continuous or not, we can ignore the power of the arcsin because it will not affect the result. Therefore, this function is continuous when $x\epsilon[-1,1]$ <br><br>
+To determine whether the function is continuous or not, we can ignore the power of the arcsin because it will not affect the result. Therefore, this function is continuous when $x\in[-1,1]$ <br><br>
 
 
 </div>
