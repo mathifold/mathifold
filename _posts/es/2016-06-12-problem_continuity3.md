@@ -25,7 +25,7 @@ Solución
 <div class="dissap">
 Es una función trigonométrica. Necesitamos tener en cuenta que que no podemos hacer el arcoseno de un número mayor que 1 o menor que -1, ambos incluidos ($x\leqslant|1|$).<br><br>
  
-Para determinar su continuidad, podemos ignorar la potencia que tiene el arcoseno ya que no afectará al resultado final. Por lo tanto, esta función será continua cuando $x\epsilon[-1,1]$ <br><br>
+Para determinar su continuidad, podemos ignorar la potencia que tiene el arcoseno ya que no afectará al resultado final. Por lo tanto, esta función será continua cuando $x\in[-1,1]$ <br><br>
 
 
 </div>
