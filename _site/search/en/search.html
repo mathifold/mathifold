@@ -88,12 +88,22 @@
   window.store = {
     
     
+      "en-problem-continuity3": {
+        "title": "Continuity. Problem 3",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Study the continuity of the following function: $\\displaystyle g(x) = (\\arcsin(x))^3$SolutionThis function is a trigonometric one. We need to take into account that we can not do the arcsin of a number greater than 1 or lower than -1, both included ($x\\leqslant|1|$). To determine whether the function is continuous or not, we can ignore the power of the arcsin because it will not affect the result. Therefore, this function is continuous when $x\\epsilon[-1,1]$ ",
+        "url": "/en/problem_continuity3"
+      }
+      ,
+    
       "en-problem-continuity2": {
         "title": "Continuity. Problem 2",
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Study the continuity of the following function: $\\displaystyle h(x) = (x^3)·\\tan(3x+2)$SolutionFirst, this function is a product of a polynomial (continuous function) and a tangent function (which is not continuous when $3x +2 = \\drac{\\pi}{2}$).Therefore, we need to know what is the value for $x$ in order to get \\dfrac{\\pi}{2} inside the tangent. We do a first order equation:$3x +2 = \\dfrac{\\pi}{2}$ $x = \\dfrac{\\pi - 4}{6}$When $x$ takes this value, then the tangent does not exist and the function neither. Therefore, the function is continuous on $\\mathbb{R}$ except when $x$ takes the value  $\\dfrac{\\pi - 4}{6} + 2·\\pi)·k$ where $k$ belongs to the integer numbers (it is the number of periods). ",
+        "content": "Study the continuity of the following function: $\\displaystyle h(x) = (x^3)·\\tan(3x+2)$SolutionFirst, this function is a product of a polynomial (continuous function) and a tangent function (which is not continuous when $3x +2 = \\dfrac{\\pi}{2}$).Therefore, we need to know what is the value for $x$ in order to get $\\dfrac{\\pi}{2}$ inside the tangent. We do a first order equation:$3x +2 = \\dfrac{\\pi}{2}$ $x = \\dfrac{\\pi - 4}{6}$When $x$ takes this value, then the tangent does not exist and the function neither. Therefore, the function is continuous on $\\mathbb{R}$ except when $x$ takes the value  $\\dfrac{\\pi - 4}{6} + 2·\\pi)·k$ where $k$ belongs to the integer numbers (it is the number of periods). ",
         "url": "/en/problem_continuity2"
       }
       ,
@@ -103,7 +113,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Study the continuity of the following function: $\\displaystyle f(x) = \\dfrac{e^{-5x} +\\cos(x)}{x^2 -8x + 12}$SolutionThis function is a rational one. Therefore, since the numerator is continuous (the exponential function and the cosine are continuous functions), and the denominator too (a polynomial function is always continuous), we only need to focus when the denominator takes the value 0 (what is the value for x?).Then, we put the denominator equal to zero in order to get $x$.$x^2 -8x + 12 = 0$ $x= 6 x=2$We have two solutions, so we need to compute the limit for both values.$\\displaystyle\\lim_{x\\longrightarrow 6} \\dfrac{e^{-5x} +\\cos(x)}{x^2 -8x + 12} = \\pm\\infty$$\\displaystyle\\lim_{x\\longrightarrow 2} \\dfrac{e^{-5x} +\\cos(x)}{x^2 -8x + 12} = \\pm\\infty$And if we check, the function at those two points, we find that the value does not exist.Therefore, the function is continuous on $\\mathbb{R}$ except when $x=2 and x=6$. ",
+        "content": "Study the continuity of the following function: $\\displaystyle f(x) = \\dfrac{e^{-5x} +\\cos(x)}{x^2 -8x + 12}$SolutionThis function is a rational one. Therefore, since the numerator is continuous (the exponential function and the cosine are continuous functions), and the denominator too (a polynomial function is always continuous), we only need to focus when the denominator takes the value 0 (what is the value for x?).Then, we put the denominator equal to zero in order to get $x$.$x^2 -8x + 12 = 0$ $x= 6 x=2$We have two solutions, so we need to compute the limit for both values.$\\displaystyle\\lim_{x\\longrightarrow 6} \\dfrac{e^{-5x} +\\cos(x)}{x^2 -8x + 12} = \\pm\\infty$$\\displaystyle\\lim_{x\\longrightarrow 2} \\dfrac{e^{-5x} +\\cos(x)}{x^2 -8x + 12} = \\pm\\infty$And if we check, the function at those two points, we find that the value does not exist.Therefore, the function is continuous on $\\mathbb{R}$ except when $x=2$ and $x=6$. ",
         "url": "/en/problem_continuity1"
       }
       ,
@@ -113,7 +123,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\dfrac{2x + 7}{2x - 6})^\\sqrt{4x^2+x-3}$ Solution The limit is of indeterminate form $1^\\infty$In order to solve this limit, it is necessary to follow the steps of indeterminate form $1^\\infty$. We will reach the following expression: $\\displaystyle\\e^(lim_{x\\longrightarrow\\infty}[(Base -1)·Exponent]$Where the base is $\\dfrac{2x + 7}{2x - 6}$ and the exponent is $\\sqrt{4x^2+x-3}$  Therefore: the limit would be: $\\displaystyle\\e^(lim_{x\\longrightarrow\\infty}[(\\dfrac{2x + 7}{2x - 6} - 1)·\\sqrt{4x^2+x-3}] = $\\displaystyle\\e^(lim_{x\\longrightarrow\\infty}[(\\dfrac{13}{2x - 6})·\\sqrt{4x^2+x-3}] = e^13 $Notice that the limit of $\\dfrac{\\sqrt{4x^2+x-3}}{2x - 6}  = 1$ because $\\sqrt{4x^2}  = 2x $ (we can ignore x-3 and -6 because when $x$ tends to infinity, they will be zero).",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}\\left(\\dfrac{2x + 7}{2x - 6}\\right)^\\sqrt{4x^2+x-3}$ Solution The limit is of indeterminate form $1^\\infty$In order to solve this limit, it is necessary to follow the steps of indeterminate form $1^\\infty$. We will reach the following expression: $\\displaystyle e^{\\lim_{x\\longrightarrow\\infty}[(Base -1)·Exponent]}$Where the base is $\\dfrac{2x + 7}{2x - 6}$ and the exponent is $\\sqrt{4x^2+x-3}$  Therefore: the limit would be: $\\displaystyle e^{\\lim_{x\\longrightarrow\\infty}\\left[\\left(\\dfrac{2x + 7}{2x - 6} - 1\\right)·\\sqrt{4x^2+x-3}\\right]} = e^{\\lim_{x\\longrightarrow\\infty}\\left[\\left(\\dfrac{13}{2x - 6}\\right)·\\sqrt{4x^2+x-3}\\right]}= e^{13} $Notice that the limit of $\\dfrac{\\sqrt{4x^2+x-3}}{2x - 6}  = 1$ because $\\sqrt{4x^2}  = 2x $ (we can ignore $x-3$ and $-6$ because when $x$ tends to infinity, they will be zero).",
         "url": "/en/problem_limits6"
       }
       ,
@@ -123,7 +133,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\sqrt{x^2 + x} - x)$ Solution The limit is of indeterminate form $\\infty - \\infty$Here, it is easy to apply the conjugate: $\\displaystyle\\lim_{x\\longrightarrow\\infty} \\dfrac{(\\sqrt{x^2 + x} - x )·(\\sqrt{x^2 + x} + x)}{\\sqrt{x^2 + x} + x} = \\lim_{x\\longrightarrow\\infty}\\dfrac{x^2 + x - x^2}{\\sqrt{x^2 + x} + x} =\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x}$  Then, we need to focus on the power of the numberator and the denominator. For the first one, the maximum power is 1 ($x^1$) and for the second one, is also 1 ($\\sqrt{x^2}= x^1$). Moreover, since in the denominator, $\\sqrt{x^2}$ and $x% are being sum (ignore $\\sqrt{x}$ because when $x$ tends to infinity, $x$ is much bigger than $\\sqrt{x}$) we have two $x$.   Therefore:  $\\displaystyle\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x} is approximately equal to \\lim_{x\\longrightarrow\\infty}\\dfrac{x}{x + x} = \\dfrac{1}{2}$   ",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\sqrt{x^2 + x} - x)$ Solution The limit is of indeterminate form $\\infty - \\infty$Here, it is easy to apply the conjugate: $\\displaystyle\\lim_{x\\longrightarrow\\infty} \\dfrac{(\\sqrt{x^2 + x} - x )·(\\sqrt{x^2 + x} + x)}{\\sqrt{x^2 + x} + x} = \\lim_{x\\longrightarrow\\infty}\\dfrac{x^2 + x - x^2}{\\sqrt{x^2 + x} + x} =\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x}$  Then, we need to focus on the power of the numberator and the denominator. For the first one, the maximum power is one ($x^1$) and for the second one, is also one ($\\sqrt{x^2}= x^1$). Moreover, since in the denominator, $\\sqrt{x^2}$ and $x$ are being sum (ignore $\\sqrt{x}$ because when $x$ tends to infinity, $x$ is much bigger than $\\sqrt{x}$) we have two $x$.   Therefore:  $\\displaystyle\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x} \\thickapprox \\lim_{x\\longrightarrow\\infty}\\dfrac{x}{x + x} = \\dfrac{1}{2}$   ",
         "url": "/en/problem_limits5"
       }
       ,
