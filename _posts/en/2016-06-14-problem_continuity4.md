@@ -35,9 +35,9 @@ First of all, we need to find the possible points for which the function does no
 First, remember the definition of continuity: <br><br> 
 $\displaystyle f(0) = \lim_{x\longrightarrow 0^+} f(x)  = \lim_{x\longrightarrow 0^-} f(x) $ 
 Then, we have to check that the definition holds here:<br><br>
-$\displaystyle \lim_{x\longrightarrow 0^+} f(x) = \lim_{x\longrightarrow 0^+} x^2\sin(1/x) = 0 $ It is obvious that the limit is 0 because sin(1/x) is bounded for all x. Therefore, 0 times something bounded is 0.<br><br>
-$\displaystyle \lim_{x\longrightarrow 0^-} f(x) = \lim_{x\longrightarrow 0^-} x^2\sin(1/x) = 0 $ It is obvious that the limit is 0 because sin(1/x) is bounded for all x. Therefore, 0 times something bounded is 0.<br><br>
+$\displaystyle \lim_{x\longrightarrow 0^+} f(x) = \lim_{x\longrightarrow 0^+} x^2\sin(1/x) = 0 $ It is obvious that the limit is 0 because $\sin(1/x)$ is bounded for all x. Therefore, 0 (something that tends to zero) times something bounded is 0.<br><br>
+$\displaystyle \lim_{x\longrightarrow 0^-} f(x) = \lim_{x\longrightarrow 0^-} x^2\sin(1/x) = 0 $ It is obvious that the limit is 0 because $\sin(1/x)$ is bounded for all x. Therefore, 0 (something that tends to zero) times something bounded is 0.<br><br>
 
-Finally, $f(0)= 0$. Therefore, since $f(x)$ is continuous at $x=0$, it is continuous on $\mathbb{R}$.
+Finally, $f(0)= 0$ (the definition holds here). Therefore, since $f(x)$ is continuous at $x=0$, it is continuous on $\mathbb{R}$.
 
 </div>
