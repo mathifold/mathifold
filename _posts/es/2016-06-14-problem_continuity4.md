@@ -1,8 +1,8 @@
 ---
-title: "Continuity. Problem 4"
-lang: en
-category: en
-permalink: en/problem_continuity4
+title: "Continuidad. Problema 4"
+lang: es
+category: es
+permalink: es/problem_continuity4
 
 ident: problem_continuity4
 parent: continuity
@@ -14,7 +14,7 @@ type: post
 ---
 
 <div>
-Study the continuity of the following function: <br><br>
+Estudia la continuidad de la siguiente función: <br><br>
 
 $$f(x)= 
 \left\{ 
@@ -26,18 +26,18 @@ x^2\sin(1/x) &  x\neq 0\\
 
 
 <div class="bcblue boxdissap">
-Solution
+Solución
 </div><br>
 
 <div class="dissap">
-First of all, we need to find the possible points for which the function does not exist. The only point that makes conflict is $x=0$.<br><br>
+Primeramente, es necesario encontrar los posibles puntos en los cuales la función no existiría. El único punto que crea problemas es $x=0$.<br><br>
 
-First, remember the definition of continuity: <br><br> 
+Primero, para determinar la continuidad, necesitamos recordar la definición: <br><br> 
 $\displaystyle f(0) = \lim_{x\longrightarrow 0^+} f(x)  = \lim_{x\longrightarrow 0^-} f(x) $ 
-Then, we have to check that the definition holds here:<br><br>
-$\displaystyle \lim_{x\longrightarrow 0^+} f(x) = \lim_{x\longrightarrow 0^+} x^2\sin(1/x) = 0 $ It is obvious that the limit is 0 because sin(1/x) is bounded for all x. Therefore, 0 times something bounded is 0.<br><br>
-$\displaystyle \lim_{x\longrightarrow 0^-} f(x) = \lim_{x\longrightarrow 0^-} x^2\sin(1/x) = 0 $ It is obvious that the limit is 0 because sin(1/x) is bounded for all x. Therefore, 0 times something bounded is 0.<br><br>
+Entonces, debemos comprobar que se cumple la definición aquí:<br><br>
+$\displaystyle \lim_{x\longrightarrow 0^+} f(x) = \lim_{x\longrightarrow 0^+} x^2\sin(1/x) = 0 $ El límite ha de ser 0 porque $\sin(1/x)$ es una función acotada entre -1 y 1. Por lo tanto, 0 (algo que tiende a cero) multiplicado por algo acotado es 0.<br><br>
+$\displaystyle \lim_{x\longrightarrow 0^-} f(x) = \lim_{x\longrightarrow 0^-} x^2\sin(1/x) = 0 $ El límite ha de ser 0 porque $\sin(1/x)$ es una función acotada entre -1 y 1. Por lo tanto, 0 (algo que tiende a cero) multiplicado por algo acotado es 0.<br><br>
 
-Finally, $f(0)= 0$. Therefore, since $f(x)$ is continuous at $x=0$, it is continuous on $\mathbb{R}$.
+Finalmente, $f(0)= 0$ (coincide con el resultado en los límites). Ya que $f(x)$ es continuo en $x=0$, es continuo para todo $\mathbb{R}$.
 
 </div>
