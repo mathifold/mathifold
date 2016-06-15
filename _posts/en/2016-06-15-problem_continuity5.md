@@ -31,7 +31,7 @@ Solution
 </div><br>
 
 <div class="dissap">
-The function f(x) is a composition of three functions. We need to find in each function what are the possible points for which f(x) does not exist. For the first part, $\dfrac{\tan(x)}{\sqrt{x}}$ is not continuous when $x = \frac{\pi}{2} + 2·\pi·k$ where $k\in  0, 1, 2...$. For the second and third parts, they are continuous on their domains. However, we need to check that the three functions have the same value at $x = 0$, so we have to solve the limits to the left and to the right and follow the definition of continuity. <br><br>
+The function $f(x)$ is a composition of three functions. We need to find in each function the possible points for which $f(x)$ does not exist. For the first part, $\dfrac{\tan(x)}{\sqrt{x}}$ is not continuous when $x = \frac{\pi}{2} + 2·\pi·k$ where $k\in  0, 1, 2...$ (the tangent does not exist for these points). The other functions are continuous on their domains. However, we need to check that the three functions have the same value at $x = 0$, so we have to solve the limits to the left and to the right and follow the definition of continuity. <br><br>
 
 Then:<br><br>
 
