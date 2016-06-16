@@ -94,7 +94,7 @@
 				
 				
 					
-					<a href="/es/problem_continuity3.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_continuity5.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -103,7 +103,7 @@
 				
 				
 					
-					<a href="/en/problem_continuity3.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_continuity5.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,36 +123,49 @@
 
 	
 	
-	<a href="/es/problem_continuity2.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/problem_continuity4.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
-
-	
-	
-	<a href="/es/problem_continuity4.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Continuidad. Problema 3</span>
+		Continuidad. Problema 5</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
 Estudia la continuidad de la siguiente función: <br /><br />
 
-$\displaystyle g(x) = (\arcsin(x))^3$<br /><br />
+$$f(x)= 
+\left\{ 
+\begin{array}{c}
+\dfrac{\tan(x)}{\sqrt{x}} &amp;  x &gt; 0\\
+0 &amp; x=0\\
+e^{1/x} &amp; x&lt;0
+\end{array}
+\right.$$<br /><br />
+
 
 <div class="bcblue boxdissap">
 Solución
 </div><br />
 
 <div class="dissap">
-Es una función trigonométrica. Necesitamos tener en cuenta que que no podemos hacer el arcoseno de un número mayor que 1 o menor que -1, ambos incluidos ($x\leqslant|1|$).<br /><br />
- 
-Para determinar su continuidad, podemos ignorar la potencia que tiene el arcoseno ya que no afectará al resultado final. Por lo tanto, esta función será continua cuando $x\in[-1,1]$ <br /><br />
+La función $f(x)$ está compuesta por tres funciones. Necesitamos encontrar en cada función los posibles puntos por el cual $f(x)$ no existe. En la primera función, $\dfrac{\tan(x)}{\sqrt{x}}$ no es continua cuando $x = \frac{\pi}{2} + 2·\pi·k$ where $k\in  0, 1, 2...$ (no existe la tangente en esos puntos). Las demás funciones son continuas en sus dominios. Sin embargo, es necesario comprobar que las tres funciones tienen el mismo valor cuando $x = 0$, entonces tenemos que resolver los límites por la izquierda y la derecha y seguir la definición de continuidad. <br /><br />
 
+Entonces:<br /><br />
+
+$\displaystyle\lim_{x\longrightarrow 0^+}\dfrac{\tan(x)}{\sqrt{x}}$ Aplicamos la regla de L'Hôpital (el límite presenta indeterminación $\frac{0}{0}$). $\displaystyle\lim_{x\longrightarrow 0^+}\dfrac{\tan(x)}{\sqrt{x}} = \lim_{x\longrightarrow 0^+}\dfrac{1 + (\tan(x))^2}{\frac{1}{2·\sqrt{x}}} = \lim_{x\longrightarrow 0^+}\dfrac{2·\sqrt{x}·(1 + (\tan(x))^2)}{1} = 0$ <br /><br />
+
+$\displaystyle\lim_{x\longrightarrow 0^-} e^{1/x} = e^{-\infty} = \frac{1}{e^{\infty}} = 0$<br /><br />
+
+$f(0) = 0$ <br /><br />
+
+Finalmente, teniendo en cuenta la definción, ya que $\displaystyle f(0) =  \lim_{x\longrightarrow 0^+}f(x) = \lim_{x\longrightarrow 0^-} f(x) = 0 $, la función es continua en $x = 0$. <br /><br />
+
+Por lo tanto, la función es continua en $\mathbb{R}$ menos cuando $x = \frac{\pi}{2} + 2·\pi·k$ where $k\in  0, 1, 2...$.
 
 </div>
 </div>

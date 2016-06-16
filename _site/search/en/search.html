@@ -88,12 +88,32 @@
   window.store = {
     
     
+      "en-problem-continuity5": {
+        "title": "Continuity. Problem 5",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Study the continuity of the following function: $$f(x)= \\left\\{ \\begin{array}{c}\\dfrac{\\tan(x)}{\\sqrt{x}} &amp;  x &gt; 0\\\\0 &amp; x=0\\\\e^{1/x} &amp; x&lt;0\\end{array}\\right.$$SolutionThe function $f(x)$ is a composition of three functions. We need to find in each function the possible points for which $f(x)$ does not exist. For the first part, $\\dfrac{\\tan(x)}{\\sqrt{x}}$ is not continuous when $x = \\frac{\\pi}{2} + 2·\\pi·k$ where $k\\in  0, 1, 2...$ (the tangent does not exist for these points). The other functions are continuous on their domains. However, we need to check that the three functions have the same value at $x = 0$, so we have to solve the limits to the left and to the right and follow the definition of continuity. Then:$\\displaystyle\\lim_{x\\longrightarrow 0^+}\\dfrac{\\tan(x)}{\\sqrt{x}}$ We apply L'Hôpital's Rule (The limit is of indeterminate form $\\frac{0}{0}$). $\\displaystyle\\lim_{x\\longrightarrow 0^+}\\dfrac{\\tan(x)}{\\sqrt{x}} = \\lim_{x\\longrightarrow 0^+}\\dfrac{1 + (\\tan(x))^2}{\\frac{1}{2·\\sqrt{x}}} = \\lim_{x\\longrightarrow 0^+}\\dfrac{2·\\sqrt{x}·(1 + (\\tan(x))^2)}{1} = 0$ $\\displaystyle\\lim_{x\\longrightarrow 0^-} e^{1/x} = e^{-\\infty} = \\frac{1}{e^{\\infty}} = 0$$f(0) = 0$ Finally, according to the definition of continuity, since $\\displaystyle f(0) =  \\lim_{x\\longrightarrow 0^+}f(x) = \\lim_{x\\longrightarrow 0^-} f(x) = 0 $, the function is continuous at $x = 0$. Therefore, the function is continuous on $\\mathbb{R}$ except when $x = \\frac{\\pi}{2} + 2·\\pi·k$ where $k\\in  0, 1, 2...$.",
+        "url": "/en/problem_continuity5"
+      }
+      ,
+    
+      "en-problem-continuity4": {
+        "title": "Continuity. Problem 4",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Study the continuity of the following function: $$f(x)= \\left\\{ \\begin{array}{c}x^2\\sin(1/x) &amp;  x\\neq 0\\\\0 &amp; x=0\\end{array}\\right.$$SolutionFirst of all, we need to find the possible points for which the function does not exist. The only point that makes conflict is $x=0$.First, remember the definition of continuity:  $\\displaystyle f(0) = \\lim_{x\\longrightarrow 0^+} f(x)  = \\lim_{x\\longrightarrow 0^-} f(x) $ Then, we have to check that the definition holds here:$\\displaystyle \\lim_{x\\longrightarrow 0^+} f(x) = \\lim_{x\\longrightarrow 0^+} x^2\\sin(1/x) = 0 $ It is obvious that the limit is 0 because $\\sin(1/x)$ is bounded for all x. Therefore, 0 (something that tends to zero) times something bounded is 0.$\\displaystyle \\lim_{x\\longrightarrow 0^-} f(x) = \\lim_{x\\longrightarrow 0^-} x^2\\sin(1/x) = 0 $ It is obvious that the limit is 0 because $\\sin(1/x)$ is bounded for all x. Therefore, 0 (something that tends to zero) times something bounded is 0.Finally, $f(0)= 0$ (the definition holds here). Therefore, since $f(x)$ is continuous at $x=0$, it is continuous on $\\mathbb{R}$.",
+        "url": "/en/problem_continuity4"
+      }
+      ,
+    
       "en-problem-continuity3": {
         "title": "Continuity. Problem 3",
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Study the continuity of the following function: $\\displaystyle g(x) = (\\arcsin(x))^3$SolutionThis function is a trigonometric one. We need to take into account that we can not do the arcsin of a number greater than 1 or lower than -1, both included ($x\\leqslant|1|$). To determine whether the function is continuous or not, we can ignore the power of the arcsin because it will not affect the result. Therefore, this function is continuous when $x\\epsilon[-1,1]$ ",
+        "content": "Study the continuity of the following function: $\\displaystyle g(x) = (\\arcsin(x))^3$SolutionThis function is a trigonometric one. We need to take into account that we can not do the arcsin of a number greater than 1 or lower than -1, both included ($x\\leqslant|1|$). To determine whether the function is continuous or not, we can ignore the power of the arcsin because it will not affect the result. Therefore, this function is continuous when $x\\in[-1,1]$ ",
         "url": "/en/problem_continuity3"
       }
       ,
@@ -133,7 +153,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\sqrt{x^2 + x} - x)$ Solution The limit is of indeterminate form $\\infty - \\infty$Here, it is easy to apply the conjugate: $\\displaystyle\\lim_{x\\longrightarrow\\infty} \\dfrac{(\\sqrt{x^2 + x} - x )·(\\sqrt{x^2 + x} + x)}{\\sqrt{x^2 + x} + x} = \\lim_{x\\longrightarrow\\infty}\\dfrac{x^2 + x - x^2}{\\sqrt{x^2 + x} + x} =\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x}$  Then, we need to focus on the power of the numberator and the denominator. For the first one, the maximum power is one ($x^1$) and for the second one, is also one ($\\sqrt{x^2}= x^1$). Moreover, since in the denominator, $\\sqrt{x^2}$ and $x$ are being sum (ignore $\\sqrt{x}$ because when $x$ tends to infinity, $x$ is much bigger than $\\sqrt{x}$) we have two $x$.   Therefore:  $\\displaystyle\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x} \\thickapprox \\lim_{x\\longrightarrow\\infty}\\dfrac{x}{x + x} = \\dfrac{1}{2}$   ",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow\\infty}(\\sqrt{x^2 + x} - x)$ Solution The limit is of indeterminate form $\\infty - \\infty$Here, it is easy to apply the conjugate: $\\displaystyle\\lim_{x\\longrightarrow\\infty} \\dfrac{(\\sqrt{x^2 + x} - x )·(\\sqrt{x^2 + x} + x)}{\\sqrt{x^2 + x} + x} = \\lim_{x\\longrightarrow\\infty}\\dfrac{x^2 + x - x^2}{\\sqrt{x^2 + x} + x} =\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x}$  Then, we need to focus on the power of the numerator and the denominator. For the first one, the maximum power is one ($x^1$) and for the second one, is also one ($\\sqrt{x^2}= x^1$). Moreover, since in the denominator, $\\sqrt{x^2}$ and $x$ are being sum (ignore $\\sqrt{x}$ because when $x$ tends to infinity, $x$ is much bigger than $\\sqrt{x}$) we have two $x$.   Therefore:  $\\displaystyle\\lim_{x\\longrightarrow\\infty}\\dfrac{x}{\\sqrt{x^2 + x} + x} \\thickapprox \\lim_{x\\longrightarrow\\infty}\\dfrac{x}{x + x} = \\dfrac{1}{2}$   ",
         "url": "/en/problem_limits5"
       }
       ,
