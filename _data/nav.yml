@@ -449,6 +449,10 @@ map:
         es: Probabilidad
         children:
           -
+            ident: sample_space_structure
+            en: Sample Space Structure
+            es: Estructura del Espacio Muestral
+          -
             ident: probability_distributions
             en: Distributions
             es: Distribuciones
