@@ -535,4 +535,10 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
+.plus{
+  margin: auto;
+  width: 80%;
+  padding: 50px;
+}
+
 
