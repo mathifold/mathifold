@@ -135,6 +135,10 @@ map:
             ident: circles
             en: Circles
             es: Círculos
+          -
+            ident: cycloids
+            en: Cycloids
+            es: Cicloides
       -
         ident: conics
         en: Conics
