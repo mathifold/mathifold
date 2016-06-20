@@ -5,7 +5,7 @@ category: es
 permalink: es/definition_sample_space
 
 ident: definition_sample_space
-parent: sample_space_struture
+parent: sample_space_structure
 kind: definition
 mathjax: true
 
