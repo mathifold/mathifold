@@ -67,20 +67,20 @@
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/probability_statistics.html" style="text-decoration: none; color: black">
-		Probabilidad y Estadística</a>
+		<a href="/topics/es/basics.html" style="text-decoration: none; color: black">
+		Base</a>
 		</span>
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/probability.html" style="text-decoration: none; color: black">
-		Probabilidad</a>
+		<a href="/subjects/es/functions.html" style="text-decoration: none; color: black">
+		Funciones</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/sample_space_structure.html" style="text-decoration: none; color: black">
-		Estructura del Espacio Muestral</a>
+		<a href="/chapters/es/continuity.html" style="text-decoration: none; color: black">
+		Continuidad</a>
 		</span>
 	
 	
@@ -94,13 +94,16 @@
 				
 				
 					
-					<a href="/es/definition_sample_space.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_continuity6.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
 			
 				
 				
+				
+					
+					<a href="/en/problem_continuity6.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -118,17 +121,44 @@
 
 
 
+	
+	
+	<a href="/es/problem_continuity5.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Espacio muestral</span>
+		Continuidad. Problema 6</span>
 </div>
 
-<div class="postbox pb_definition">
-	<p>Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado <strong>espacio muestral</strong> asociado al experimento aleatorio y se denota por $\Omega$.</p>
+<div class="postbox pb_problem">
+	<div>
+Estudia la continuidad de la siguiente función: <br /><br />
+
+$f(x) = \sqrt{x+2}·\arccos(x+2)$<br /><br />
+
+
+<div class="bcblue boxdissap">
+Solución
+</div><br />
+
+<div class="dissap">
+Sabemos que $f(x)$ is un producto de una raíz cuadrada y un arcocoseno. Entonces, para la primera función, el valor dentro de la raíz debe ser mayor o igual que cero y para la segunda, el arcocoseno solo admitirá valores entre -1 y 1 ($[-1,1]$).<br /><br /> 
+Entonces, necesitamos resolver las siguientes equaciones: <br /><br />
+$x+2 \geq 0$<br /><br />
+$x+2 \geq -1 $ and $x+2 \leq 1$<br /><br />
+Luego,<br /><br />
+
+De la primera ecuación, sabemos que $x\geq -2$.<br /><br />
+De la segunda ecuación, llegamos a que $x\leq -1$ y $x\geq -3$. Entonces, $x\in[-3,-1]$.<br /><br />
+
+Finalmente, haciendo la intersección entre los dos intervalos, $f(x)$ es continuo cuando $x\in[-2,-1]$.
+
+</div>
+</div>
 
 </div>
 
