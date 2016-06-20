@@ -13,4 +13,4 @@ layout: post
 type: post
 ---
 
-Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado **espacio muestral** asociado al experimento aleatorio y se denota por $\Omega$
+Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado **espacio muestral** asociado al experimento aleatorio y se denota por $\Omega$.
