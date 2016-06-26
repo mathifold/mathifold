@@ -23,6 +23,10 @@ map:
             ident: intro_combinatorics
             en: Chapter1
             es: Capítulo1
+          -
+            ident: sums
+            en: Sums
+            es: Sumas
       -
         ident: numbers
         en: Numbers
@@ -415,6 +419,10 @@ map:
             ident: convergence
             en: Convergence
             es: Convergencia
+          -
+            ident: derivability
+            en: Derivability
+            es: Derivabilidad
       -
         ident: differential_calculus
         en: Differential Calculus
