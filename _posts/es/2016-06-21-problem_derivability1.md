@@ -5,7 +5,7 @@ category: es
 permalink: es/problem_derivability1
 
 ident: problem_derivability1
-parent: derivability
+parent: derivatives
 kind: problem
 mathjax: true
 

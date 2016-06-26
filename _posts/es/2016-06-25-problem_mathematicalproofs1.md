@@ -5,7 +5,7 @@ category: es
 permalink: es/problem_mathematicalproofs1
 
 ident: problem_mathematicalproofs1
-parent: mathematicalproofs
+parent: sums
 kind: problem
 mathjax: true
 
