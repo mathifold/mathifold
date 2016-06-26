@@ -88,6 +88,96 @@
   window.store = {
     
     
+      "es-problem-mathematicalproofs3": {
+        "title": "Demostraciones matemáticas. Problema 3",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demostrar que $\\displaystyle\\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$ (Suma aritmética) mediante Inducción matemática. SoluciónEsta vez, tenemos que seguir los pasos de la inducción. 1. $n=1$. Entonces: el resultado es 1 (El resultado es válido para $n=1$).2. Paso inductivo. Asumimos que la suma es verdadera para $n=k$.  $\\displaystyle\\sum^{n=k}_{i=1} i = \\frac{k·(k+1)}{2}$Entonces sustituyendo $k$ por $k+1$, la suma sigue siendo verdadera: $\\displaystyle\\sum^{n=k+1}_{i=1} i = \\frac{(k+1)·(k+1+1)}{2} = \\frac{(k+1)·(k+2)}{2}$3. Demostramos que la hipótesis es cierta: $\\dfrac{k·(k+1)}{2} + (k+1) = \\dfrac{k·(k+1) + 2·(k+1)}{2} = \\dfrac{(k+1)·(k+2)}{2}$Está demostrado",
+        "url": "/es/problem_mathematicalproofs3"
+      }
+      ,
+    
+      "es-problem-mathematicalproofs2": {
+        "title": "Demostraciones matemáticas. Problema 2",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demostrar que $\\displaystyle\\sum^n_{r=1} a·r^n = a·\\frac{1 - r^{n+1}}{1-r}$ (Suma Geométrica). Siendo $a$ constante y $r$ la razón. SoluciónComo en la suma aritmética, hagamos que la suma sea igual a $S$. La suma se haría de la siguiente forma:$\\displaystyle S = \\sum^n_{r=1} a·r^n = a + ar + ar^2 + ar^3 + ar^4 + ... + ar^n = a·(1 + r + r^2 + r^3 + ... + r^n)$ Luego, multiplicamos $S$ por la razón: $S·r = a·(r + r^2 + r^3 + r^4 + ... + r^{n+1})$Después, restamos a $S$, $S·r$: $S - S·r = 1 - r^{n+1}$Despejamos $S$: $S = a·\\frac{1 - r^{n+1}}{1-r}$. Entonces, está demostrado.",
+        "url": "/es/problem_mathematicalproofs2"
+      }
+      ,
+    
+      "es-problem-mathematicalproofs1": {
+        "title": "Demostraciones matemáticas. Problema 1",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demuestra que $\\displaystyle\\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$ (Suma aritmética). SoluciónPongamos que la suma $\\displaystyle\\sum^n_{i=1} i$ sea igual a $S$. Entonces, la suma se haría de la siguiente forma:$\\displaystyle S = \\sum^n_{i=1} i = 1 + 2 + 3 ... + (n-2) + (n-1) + n$ Ahora, imagina que invertimos el orden de la suma (Sería la misma suma pero al revés): $S = n + (n-1) + (n-2) + ... + 3 + 2 + 1 $Después, sumamos ambas sumas (el resultado es dos veces la suma) y tendríamos lo siguiente:$2·S = (n+1) + (n+1) + (n+1)...$ (hasta n).Al sumar las sumas, conseguimos de forma consecutiva $n+1$ ($n+1 = n+1$; $n-1 +2 = n+1$; $n-2 +3 = n+1$...). Entonces, $n+1$ está repetido \"$n$\" veces (multiplicado por $n$).$2·S = n·(n+1)$Finalmente, demostramos que la suma es (dividimos entre dos para conseguir $S$): $\\displaystyle S = \\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$.",
+        "url": "/es/problem_mathematicalproofs1"
+      }
+      ,
+    
+      "es-applet-interior-bitangent-circle": {
+        "title": "Círculo Bitangente Interior",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_interior_bitangent_circle"
+      }
+      ,
+    
+      "es-applet-exterior-bitangent-circle": {
+        "title": "Círculo Bitangente Exterior",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_exterior_bitangent_circle"
+      }
+      ,
+    
+      "es-applet-astroid": {
+        "title": "Astroide",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_astroid"
+      }
+      ,
+    
+      "es-applet-simson-line": {
+        "title": "Recta de Simson",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_simson_line"
+      }
+      ,
+    
+      "es-definition-form": {
+        "title": "Definición de forma diferenciable",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una forma $\\omega$ es tal tal tal",
+        "url": "/es/definition_form"
+      }
+      ,
+    
+      "es-problem-derivability1": {
+        "title": "Derivabilidad. Problema 1",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Sean $f$, $g$ dos funciones diferenciables en $\\mathbb{R}$. Determina la derivada de la siguiente función para todos los puntos de su dominio: $h(x) = \\sqrt{f^2(x) + g^2(x)}$SoluciónNecesitamos calcular la derivada de $h(x)$ en función de $x$. Entonces, es necesario tener en cuenta que tenemos una raíz cuadrada y dos funciones dependiendo de $x$ dentro (Recuerda las derivadas de la raíz cuadrada y de las potencias). Entonces, debemos aplicar la regla de la cadena.$h'(x) = \\dfrac{1}{2·\\sqrt{f^2(x) + g^2(x)}}·(2·f(x)·f'(x) + 2·g(x)·g'(x))$Finalmente, el número $2$ es sacado como factor común. Por lo tanto, la derivada queda así:$h'(x) = \\dfrac{f(x)·f'(x) + g(x)·g'(x)}{\\sqrt{f^2(x) + g^2(x)}}$Ten en cuenta que $f(x)$ y $g(x)$ son funciones como $h(x)$ (dependen de $x$). Esa es la razón por el cual ponemos las derivadas de $f(x)$ y de $g(x)$ ($f'(x)$ y $g'(x)$).",
+        "url": "/es/problem_derivability1"
+      }
+      ,
+    
       "es-problem-continuity6": {
         "title": "Continuidad. Problema 6",
         "kind": "problem",
