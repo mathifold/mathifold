@@ -23,7 +23,7 @@ Solución
 </div><br>
 
 <div class="dissap">
-Necesitamos calcular la derivada de $h(x)$ en función de $x$. Entonces, es necesario tener en cuenta que tenemos un arcotangente de una división de dos funciones dependiendo de $x$ dentro. Entonces, debemos aplicar la regla de la cadena.<br><br>
+Necesitamos calcular la derivada de $h(x)$ en función de $x$. Entonces, es necesario tener en cuenta que tenemos una arcotangente de una división de dos funciones dependiendo de $x$ dentro. Entonces, debemos aplicar la regla de la cadena.<br><br>
 
 $h'(x) = \dfrac{1}{1 + \left(\frac{f(x)}{g(x)}\right)^2}·\dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x)}$<br><br> 
 
