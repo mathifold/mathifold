@@ -88,6 +88,46 @@
   window.store = {
     
     
+      "es-definition-index": {
+        "title": "Índice puntos críticos",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Dada una función de Morse $f$ diremos que el índice de un punto crítico $p$ de $f$ es el número de autovalores negativos del hessiano de $f$ asociado al punto $p$. Dicho índice vendrá denotado por $\\lambda_p$.",
+        "url": "/es/definition_index"
+      }
+      ,
+    
+      "es-definition-random-event": {
+        "title": "Sucesos aleatorios",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Los subconjuntos del espacio muestral $Omega$ se denominan sucesos. El azar en el experimento da lugar a estos sucesos y se dividen en dos tipos:- simples si están formados por un único elemento, es decir, representan uno sólo de los resultados posibles del experimento.- compuestos identifican subconjuntos del espacio muestral que tienen más de un elemento y son por tanto uniones de sucesos simples.Hay dos sucesos singulares que siempre se tienen en todo experimento aleatorio. Por un lado el suceso seguro que coincide con el espacio muestral $Omega$. Por otro lado el subconjunto vacío $\\emptyset$ y que representa el *suceso imposible$.",
+        "url": "/es/definition_random_event"
+      }
+      ,
+    
+      "es-definition-event-operations": {
+        "title": "Operaciones con sucesos",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "La identificación de los sucesos relativos a un experimento aleatorio implica disponer de operaciones para formar nuevos sucesos a partir de otros dados. Supongamos $A$ y $B$, dos subconjuntos de $\\Omega$. Las operaciones básicas son:- Unión de sucesos: $A \\cup B$ representa un suceso nuevo que se describe como “ocurre $A$ u ocurre $B$”. Por lo tanto este nuevo evento sucede siempre que el resultado pertenezca a $A$ o a $B$.- Intersección de sucesos: $A \\cap B$ es también un nuevo suceso que se describe como “ocurren $A$ y $B$ simultaneamente” y sucede siempre que el resultado pertenezca a $A$ y a $B$. Si la intersección de dos sucesos es vacía, $A \\cap B = \\emptyset$, ambos sucesos no pueden ocurrir a la vez y se dice que $A$ y $B$ sucesos incompatibles.- Toma de complementarios: definimos el suceso contrario de $A$ como $ A^{c} = \\Omega - A$ y significa que el resultado del experimento no está en $A$.",
+        "url": "/es/definition_event_operations"
+      }
+      ,
+    
+      "es-theorem-morse-functions": {
+        "title": "Abundancia funciones de Morse",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Sea $M$ una variedad diferenciable $n$-dimensional tenemos que $f_p:M\\subset \\mathbb{R}^N \\rightarrow \\mathbb{R}$ es una función de Morse para casi todo $p\\in \\mathbb{R}^N$. Donde $| \\mathord{\\cdot}|$ denotará la norma euclídea y $f_p$ viene definida como:\\begin{equation*}f_p(x)=|x-p|^2\\end{equation*} \tDemostraciónSe entiende que cuando hagamos el producto entre dos vectores estamos hablando del producto escalar usual.Si $\\xi \\in T_xM$, la diferencial vendrá dada por:\\begin{equation*}df_p(x)(\\xi)=2(x-p)\\mathord{\\cdot}\\xi \\end{equation*}Por tanto, tendremos que se anula si $(x-p)$ es ortogonal a $T_xM$. Por otro lado, tomando un entorno coordenado y con cierto abuso en la notación:\\begin{equation*} \\frac{\\partial f_p}{\\partial x_i}=2(x-p).\\frac{\\partial x}{\\partial x_i}\\end{equation*} \\begin{equation} \\frac{\\partial f_p}{\\partial x_i \\partial x_j}=2(\\frac{\\partial x}{\\partial x_j}\\frac{\\partial x}{\\partial x_i}+(x-p)\\frac{\\partial^2 x}{\\partial x_i \\partial x_j}) \\end{equation}De esta manera, diremos que un punto crítico $x \\in M$ es no degenerado si y solo si se cumple que $x-p$ ortogonal a $T_xM$ y el rango de la matriz Hessiana $(1)$ es $n$. La condición de ortogonalidad hará que entre en juego de manera auxiliar el fibrado normal $N=\\{ (x,v) \\in M\\times \\mathbb{R}^N |v \\bot T_xM \\}$. La idea será intentar ver los puntos que no cumplen la condición de rango como conjunto de puntos críticos de otra función diferenciable, de esa forma, bastaría con aplicar el teorema de Sard para terminar. \\\\Definimos $E:N\\rightarrow \\mathbb{R}^N$ función diferenciable dada por:\\begin{equation*} (x,v)\\rightarrow x+v\\end{equation*}  Tomando $p=x+v$ tenemos que $x-p=x-x-v=v$ donde $v$ por propia construcción es ortogonal a $T_xM$ ($\\Rightarrow $ Punto crítico de $f_p$).\\\\Denotamos por $v_1,...,v_{N-n}$ al conjunto de vectores tales que para todo punto de $M$ forman una base de $(T_xM)^\\bot$ (Dichos vectores dependen del punto,es decir, $v_i=v_i(x_1,...,x_n)$). Una parametrización de $N$ vendrá dada por: \\begin{equation*}(x_1,...,x_m,t_1,...,t_{N-m})\\rightarrow (x_1,...,x_n,\\sum_{i=1}^{N-n}t_iv_i(x_1,...,x_m))\\end{equation*}Con $t_i\\in \\mathbb{R}$. Las parciales de E quedan:\\begin{equation*}\\frac{\\partial E}{\\partial x_i}= \\frac{\\partial x}{\\partial x_i}+\\sum_{k=1}^{N-n} t_k\\frac{\\partial v_k}{\\partial x_i}\\end{equation*}\\begin{equation*}\\frac{\\partial E}{\\partial t_i}=v_i\\end{equation*}El Jacobiano o la diferencial de $E$ se puede expresar como:\\begin{equation*}J= \\begin{pmatrix} \\frac{\\partial E}{\\partial x_1} &amp;  \\cdots &amp; \\frac{\\partial E}{\\partial x_n} &amp; \\frac{\\partial E}{\\partial t_1} &amp; \\cdots &amp; \\frac{\\partial E}{\\partial t_{N-n}} \\end{pmatrix}\\end{equation*}Donde cada $\\frac{\\partial E}{\\partial x_i}$ y $\\frac{\\partial E}{\\partial t_j}$ es un vector columna $1\\times N$, es decir, las dimensiones de la matriz cuadran siendo $N\\times N$. \\\\Si hacemos el producto de estos $N$ vectores obtenidos por los $N$ vectores linealmente independientes: $\\frac{\\partial x}{\\partial x_1},...,\\frac{\\partial x}{\\partial x_n},v_1,...,v_{N-n}$. Obtenemos una matriz de rango igual al jacobiano de $E$. Dicha matriz es de la forma:\\begin{equation*} \\begin{pmatrix} \\frac{\\partial x}{\\partial x_i}\\frac{\\partial x}{\\partial x_j} + \\sum_k t_k \\frac{\\partial v_k}{\\partial x_i}\\frac{\\partial x}{\\partial x_j} &amp; \\sum_k \\frac{\\partial v_k}{\\partial x_i}v_l \\\\ 0 &amp; Id \\end{pmatrix}\\end{equation*}Y por tanto tendrá rango menor que $N$ si se anulan los términos:\\begin{equation}\\frac{\\partial x}{\\partial x_i}\\frac{\\partial x}{\\partial x_j} + \\sum_k t_k \\frac{\\partial v_k}{\\partial x_i}\\frac{\\partial x}{\\partial u_j} \\end{equation}Recordemos que tenemos la siguiente identidad gracias a la ortogonalidad de $v_k$:\\begin{equation*}0=\\frac{\\partial}{\\partial x_i}(v_k\\frac{\\partial x}{\\partial x_j})=\\frac{\\partial v_k}{\\partial x_i}\\frac{\\partial x}{\\partial x_j}+v_k \\frac{\\partial^2 x}{\\partial x_i \\partial u_j}\\Rightarrow \\frac{\\partial v_k}{\\partial x_i} \\frac{\\partial x}{\\partial x_j}=-v_k.\\frac{\\partial^2 x}{\\partial x_i \\partial x_j}\\end{equation*}Sustituyendo en $(2)$ llegamos a:\\begin{equation*}\\frac{\\partial x}{\\partial x_i}\\frac{\\partial x}{\\partial x_j}+ \\sum_k t_k (-v_k)\\frac{\\partial^2 x}{\\partial x_i \\partial u_j}=\\frac{\\partial x}{\\partial x_i}\\frac{\\partial x}{\\partial x_j}+ v\\frac{\\partial^2 x}{\\partial x_i \\partial x_j}\\end{equation*}Que era la expresión que teníamos al principio (1) para caracterizar cuándo un punto crítico de $f_p$ era degenerado o no. Hemos sido capaces de expresar las condiciones que tenía que tener $p$ ($=x+v$) para ser punto crítico degenerado de $f_p$ como punto crítico de otra función diferenciable $E$, por el teorema de Sard tenemos que en esa nueva función el conjunto de puntos críticos tiene medida nula y por tanto $f_p$ es de Morse para casi todo $p$.",
+        "url": "/es/theorem_morse_functions"
+      }
+      ,
+    
       "es-problem-mathematicalproofs3": {
         "title": "Demostraciones matemáticas. Problema 3",
         "kind": "problem",
@@ -203,7 +243,7 @@
         "kind": "definition",
         "author": "",
         "category": "es",
-        "content": "Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado espacio muestral asociado al experimento aleatorio y se denota por $\\Omega$.",
+        "content": "Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado espacio muestral asociado al experimento aleatorio y se denota por $\\Omega$.El espacio muestral puede ser de dos tipos:- discreto si sus elementos pueden ponerse en conrrespondencia biunívoca con $\\mathbb{N}$ o con un subconjunto finito de $\\mathbb{N}$ (en este caso se dice que $\\Omega$ es finito).- continuo si su cardinal es el de $[0, 1]$.",
         "url": "/es/definition_sample_space"
       }
       ,
