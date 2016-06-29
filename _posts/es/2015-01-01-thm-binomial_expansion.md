@@ -6,7 +6,7 @@ permalink: es/theorem_binomial_expansion
 
 ident: theorem_binomial_expansion
 parent: intro_combinatorics
-kind: theorem
+kind: unfinished
 mathjax: true
 
 layout: post

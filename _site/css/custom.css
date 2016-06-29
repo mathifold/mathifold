@@ -455,6 +455,10 @@ p.subject {
   background-image: url('/images/symb/remark-l.svg');
 }
 
+.unfinished{
+  background-image: url('/images/symb/unfinished-l.svg');
+}
+
 .postbox{
   margin: auto;
   width: 80%;
@@ -514,6 +518,10 @@ p.subject {
 
 .pb_remark{
   border-color: rgb(0, 0, 0);
+}
+
+.pb_unfinished{
+  border-style: dashed;
 }
 
 #search-results a {
