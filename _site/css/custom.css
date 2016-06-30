@@ -68,6 +68,18 @@ p.topic {
   cursor: pointer;
 }
 
+.bcgreen{
+  color: #FFFFFF;
+  background-color:#00FF00;
+  border-radius: 5px;
+  margin: 6px 5px 6px 5px;
+  text-align: center;
+  display: inline-block;
+  padding: 3px 20px 3px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .dissap {
   display:none;
 }
