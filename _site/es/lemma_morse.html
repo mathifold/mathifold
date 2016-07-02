@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/css/custom.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
+  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
+
+  
+
+  
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({		
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": { 
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: { 
+	         linebreaks: { automatic: true } 
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60766664-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<div style="height: 90px;">
+
+	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+	
+	
+	
+		
+		
+		
+		<span style="font-size:35px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:35px;vertical-align:middle;">
+		<a href="/topics/es/tools.html" style="text-decoration: none; color: black">
+		Herramientas</a>
+		</span>
+		<span style="font-size:30px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:30px;vertical-align:middle;">
+		<a href="/subjects/es/morse_theory.html" style="text-decoration: none; color: black">
+		Teoría de Morse</a>
+		</span>
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/intro_morse_theory.html" style="text-decoration: none; color: black">
+		Capítulo1</a>
+		</span>
+	
+	
+
+	<div style="float: right">
+		<a href="/search/es/search.html"><img src="/images/search.svg" height="40" width="40"></a>
+		<img src="/images/blank.svg" height="20" width="20">
+		
+			
+				
+				
+				
+					
+					<a href="/es/lemma_morse.html"><img src="/images/es.svg" height="40" width="40"></a>
+				
+			
+		
+			
+				
+				
+				
+			
+		
+	</div>
+</div>
+
+</header>
+
+
+
+    
+
+
+
+
+
+
+	
+	
+	<a href="/es/definition_index.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/theorem.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Lema de Morse</span>
+</div>
+
+<div class="postbox pb_theorem">
+	<div>
+
+ Sea $p$ un punto crítico no degenerado de índice $k$ para $f:M\rightarrow \mathbb{R}$ función diferenciable sobre una variedad diferenciable de dimensión $m$. Entonces existe una carta $\phi:U\rightarrow \mathbb{R}^m$ donde $U$ entorno abierto de $p$ cumpliendo: $\phi(p)=0$ y que si $\phi(x)=(x_1,...,x_m)$ entonces:
+\begin{equation*}
+f\circ \phi^{-1}(x_1,...,x_m)=f(p)-x^2_1-...-x^2_k+x^2_{k+1}+...+x^2_m
+\end{equation*}
+\end{equation*} <br /><br />
+
+<div class="bcblue boxdissap">
+	Demostración
+</div><br /><br />
+
+<div class="dissap">
+
+
+
+Con cierto abuso de notación identificaremos las coordenadas del abierto $U$ con $\mathbb{R}^m$ pues realmente es una cuestión local. La demostración se basará en expresar la función $f$ de una manera sencilla apoyándonos en el próximo aserto y por último manipular las coordenadas de manera adecuada teniendo en mente la diagonalización de una matriz.
+
+\underline{\textbf{\textit{Aserto:}}} Sea $f$ una función diferenciable en un entorno convexo $V$ de $0$ en $\mathbb{R}^m$ con $f(0)=0$. Entonces:
+\begin{equation*}
+f(x_1,...,x_m)=\sum_i^m x_ig_i(x_1,...,x_n)
+\end{equation*}
+para algunas funciones diferenciables $g_i$ definidas en $V$ y cumpliendo: $g_i(0)=\frac{\partial f}{\partial x_i}(0)$.
+
+\begin{equation*}
+f(x_1,...,x_m)=\int_0^1 \frac{df(tx_1,...,tx_m)}{dt}dt=\int_0^1\sum_i^m\frac{\partial f}{\partial x_i}(tx_1,...,tx_m)x_i dt
+\end{equation*}
+Por tanto basta con definir $g_i$ como:
+\begin{equation*}
+g_i(x_1,...,x_m)=\int_0^1\frac{\partial f}{\partial x_i}(tx_1,...,tx_m)
+\end{equation*}
+De esta manera queda probado el Aserto.
+
+Sin pérdida de generalidad podemos suponer que $f(p)=f(0)=0$, de esta manera por el aserto obtendremos:
+\begin{equation*}
+f(x_1,...,x_m)=\sum_{j=1}^m x_j g_j(x_1,...,x_m)
+\end{equation*}
+Por hipótesis $p=0$ era un punto crítico luego:
+\begin{equation*}
+g_j(0)=\frac{ \partial f}{\partial x_j}(0)=0
+\end{equation*}
+Por tanto, podemos volver a aplicar el aserto sobre estas funciones:
+\begin{equation*}
+g_j(x_1,...,x_m)=\sum_{i=1}^mx_i h_{ij}(x_1,...,x_m)
+\end{equation*}
+Y así, $f$ queda expresada como:
+\begin{equation}
+f(x_1,...,x_m)=\sum_{i,j=1}x_i x_j h_{ij}(x_1,...,x_m)
+\end{equation}
+Podemos asumir que $h_{ij}=h_{ji}$ en un entorno $U$ de $0$. Además la matriz $(h_{ij}(0))$ es igual a $(\frac{1}{2}\frac{\partial^2f}{\partial x_i \partial x_j}(0))$, es decir, es no singular pues $p=0$ punto crítico no degenerado. Por tanto, sin pérdida de generalidad podemos suponer que $h_{11}\neq 0$ en un entorno $U_1$ del origen. De esta manera podemos considerar la siguiente función diferenciable sobre $U_1$:
+\begin{equation*}
+g(x_1,...,x_m)=\sqrt{|h_{11}(x_1,...,x_m)|}
+\end{equation*}
+Definimos unas nuevas coordenadas dadas por:
+\begin{align*}
+y_i &amp;=x_i \quad (i\neq 1) \\
+y_1 &amp;=g(x_1,...,x_m) (x_1+\sum_{i&gt;1}^m \frac{x_i h_{1_i}}{h_{11}})
+\end{align*}
+La elección de dichas coordenadas viene motivada por intentar hacer a la vez una especie de diagonalización de la matriz $(h_{ij})$. El determinante jacobiano de la transformación de $(x_1,...,x_m)$ a $(y_1,...,y_m)$ es no nulo luego por el Teorema de la Función Inversa   tenemos que $(y_1,...,y_m)$ son un sistema local de coordenadas definidas en un entorno más pequeño $U_2\subset U_1$. Solo queda expresar $f$ en estas nuevas coordenadas, para ello vemos la siguiente potencia:
+\begin{equation}
+y_1^2=\pm h_{11}x_1^2\pm 2 \sum_{i=2}^m x_1 x_i h_{1i} \pm \frac{(\sum_{i=2}^m x_i h_{1i})^2}{h_{11}} 
+\end{equation}
+Donde los signos dependen de si $h_{11}$ es positivo o negativo. Desarrollando $(1)$:
+\begin{equation*}
+f=\sum_{i,j=1}^m x_i x_j h_{ij}=\sum_{i,j&gt;1}^m x_i x_j h_{ij}+x_1^2h_{11} \Rightarrow f-\sum_{i,j&gt;1}^m x_i x_j h_{ij}=x_1^2h_{11}
+\end{equation*}
+Sustituyendo en $(2)$ obtenemos la expresión deseada pues hemos logrado `liberar' una coordenada ($y_1$):
+\begin{equation*}
+f=\pm y_1^2+\sum_{i,j&gt;1}^m x_i x_j h_{ij}-\frac{(\sum_{i=2}^m x_i h_{1i})^2}{h_{11}}
+\end{equation*}
+Los coeficientes de la parte de la derecha no son más que el siguiente menor de la matriz $(h_{ij})$, en el que se ha aplicado el primer paso de la diagonalización. O lo que es lo mismo, recuperamos de nuevo una expresión para $f$ de la forma:
+\begin{equation*}
+f=\pm y_1^2+\sum_{i,j&gt;1}x_i x_j H_{ij}
+\end{equation*}
+Donde $H_{ij}$ es una matriz simétrica y no singular. Luego podemos aplicar exactamente el mismo razonamiento de forma inductiva para obtener las coordenadas adecuadas.
+
+Para terminar solamente quedaría hacer una sencilla comprobación que consiste en ver que si existe una expresión como la propuesta en el lema para $f$, entonces $k$ tiene que ser el índice del punto crítico $p$.
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+    <footer class="site-footer">
+
+<div style="height: 90px;">
+
+	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
+
+</div>
+
+</footer>
+
+
+  </body>
+
+</html>

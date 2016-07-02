@@ -122,7 +122,7 @@
   			<tr>
     			<td><img src="/images/symb/theorem.svg" /></td>
     			<td><b>theorem</b> (teorema)</td>
-    			<td>Expresan y prueba los resultados importantes sobre los que se construye la matemática</td> 
+    			<td>Expresan y prueban los resultados importantes sobre los que se construye la matemática</td> 
   			</tr>
   			<tr>
     			<td><img src="/images/symb/lemma.svg" /></td>
@@ -192,7 +192,7 @@
 		</div>
 
 		<div class="dissap">
-		El material con el que se construye la página web está alojado en el repositorio <b>beta_mathifold</b> en GitHub: <a href="https://github.com/jxm-math/beta_mathifold" target="_blank">https://github.com/jxm-math/beta_mathifold</a>. De este modo, todo el contenido es de libre acceso. GitHub también ofrece una apropiada plataforma gestionar las distintas contribuciones.
+		El material con el que se construye la página web está alojado en el repositorio <b>beta_mathifold</b> en GitHub: <a href="https://github.com/jxm-math/beta_mathifold" target="_blank">https://github.com/jxm-math/beta_mathifold</a>. De este modo, todo el contenido es de libre acceso. GitHub también ofrece una apropiada plataforma para gestionar las distintas contribuciones.
 		</div>
 	</div>
 	<div>
@@ -219,7 +219,7 @@
 		</div>
 
 		<div class="dissap">
-		Los posts están alojados en la carpeta <a href="https://github.com/jxm-math/beta_mathifold/tree/master/_posts" target="_blank">/_posts</a> y están separados por idiomas. Cada post es un archivo <b>.md (markdown)</b> con nombre 'aaaa-mm-dd-nobre-del-archivo.md'. Este archivo tiene una cabecera, que es como la 'ficha técnica' del post, y después tiene el contenido. En la ficha técnica hay que rellenar los siguientes apartados:
+		Los posts están alojados en la carpeta <a href="https://github.com/jxm-math/beta_mathifold/tree/master/_posts" target="_blank">/_posts</a> y están separados por idiomas. Cada post es un archivo <b>.md (markdown)</b> con nombre 'aaaa-mm-dd-nombre-del-archivo.md'. Este archivo tiene una cabecera, que es como la 'ficha técnica' del post, y después tiene el contenido. En la ficha técnica hay que rellenar los siguientes apartados:
 
 		<ul style="list-style-type: none;">
 		<li>-<b>title</b>: Título del post</li>
@@ -240,7 +240,15 @@
 		</div>
 
 		<div class="dissap">
-		Material multimedia
+		Para introducir imágenes o vídeos, se deben situar éstas en la carpeta '/images/images', y si tienen el código fuente, éste se debe situar con el mismo nombre (aunque quizá distinta extensión) en '/images/codes'. A continuación se debe introducir en el post el siguiente comando: <br /><br />
+
+		
+
+		{% resource nombre-del-archivo.xxx %}
+
+		<br /><br />
+
+		y de modo automático la imagen o el vídeo se colocará en la página web.
 		</div>
 	</div>
 	<div>
@@ -249,7 +257,15 @@
 		</div>
 
 		<div class="dissap">
-		Enlaces
+		Para hacer referencia a otro post, basta introducir el comando<br /><br />
+
+		
+
+		{% cite identificador %}
+
+		<br /><br />
+
+		donde 'identificador' es el 'ident' (dentro de la 'ficha técnica') del post al que se quiere enlazar.
 		</div>
 	</div><br />
 
@@ -261,7 +277,15 @@
 		</div>
 
 		<div class="dissap">
-		Geogebra
+		<div style="
+		background-color: lightgreen;
+    	width: 80%;
+    	border: 0px;
+    	padding: 25px;
+    	margin: 0 auto;">
+    	GeoGebra es un software de matemáticas dinámicas para todos los niveles educativos que reúne geometría, álgebra, hoja de cálculo, gráficos, estadística y cálculo en un solo programa fácil de usar. GeoGebra es también una comunidad en rápida expansión, con millones de usuarios en casi todos los países. GeoGebra se ha convertido en el proveedor líder de software de matemática dinámica, apoyando la educación en ciencias, tecnología, ingeniería y matemáticas (STEM: Science Technology Engineering &amp; Mathematics) y la innovación en la enseñanza y el aprendizaje en todo el mundo.</div>
+
+    	<a href="https://www.geogebra.org" target="_blank">Geogebra</a> es el software que estamos utilizando para los applets. Estamos muy agradecidos al equipo de Geogebra por facilitarnos el uso de Geogebra en Mathifold y confiamos que Mathifold le sea útil en la difusión de esta valiosa herramienta.
 		</div>
 	</div>
 	<div>
@@ -270,8 +294,15 @@
 		</div>
 
 		<div class="dissap">
-		IPE Drawing Editor
-		</div>
+		<div style="
+		background-color: lightgreen;
+    	width: 80%;
+    	border: 0px;
+    	padding: 25px;
+    	margin: 0 auto;">
+    	Ipe is a drawing editor for creating figures in PDF or (encapsulated) Postscript format. It supports making small figures for inclusion into LaTeX-documents as well as making multi-page PDF presentations that can be shown on-line with Acrobat Reader.</div>
+    	<a href="http://ipe.otfried.org/" target="_blank">IPE Drawing Editor</a> es el software con el que se hacen la mayoría de los dibujos.
+		</div>	 
 	</div>
 	<div>
 		<div class="bcgreen boxdissap">
@@ -279,7 +310,15 @@
 		</div>
 
 		<div class="dissap">
-		Blender
+		<div style="
+		background-color: lightgreen;
+    	width: 80%;
+    	border: 0px;
+    	padding: 25px;
+    	margin: 0 auto;">
+    	Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation. Advanced users employ Blender’s API for Python scripting to customize the application and write specialized tools; often these are included in Blender’s future releases. Blender is well suited to individuals and small studios who benefit from its unified pipeline and responsive development process. </div>
+
+    	<a href="https://www.blender.org" target="_blank">Blender</a> es una apuesta fuerte de Mathifold: un software potente para la realización de animaciones de gran contenido pedagógico.
 		</div>
 	</div><br />
 
@@ -287,20 +326,40 @@
 
 	<div>
 		<div class="bcgreen boxdissap">
-		Tareas
+		Creación de posts y nuevos materiales
 		</div>
 
 		<div class="dissap">
-		Tareas
+		En estas primeras etapas del proyecto, es recomendable <b>contactar directamente con el equipo de Mathifold antes de crear materiales</b>. <br /><br />
+
+		Para aquellos que tengan claro en qué colaborar, el modo más apropiado es crear una cuenta en GitHub, <b>hacer un fork del repositorio jxm-math/beta_mathifold</b>, añadir aquí archivos nuevos y <b>enviar pull-requests periódicamente</b>. Es importante por ahora <b>no modificar los otros archivos</b> pues el pull-request tendrá archivos en conflicto y no podrá ser aceptado.
 		</div>
 	</div>
 	<div>
 		<div class="bcgreen boxdissap">
-		Construir desde GitHub
+		Traducción
 		</div>
 
 		<div class="dissap">
-		Construir desde GitHub
+		La página web es multilingual y nos gustaría que estuviese traducida a muchos idiomas, con el fin de ayudar al mayor número de personas.
+		</div>
+	</div>
+	<div>
+		<div class="bcgreen boxdissap">
+		Difusión
+		</div>
+
+		<div class="dissap">
+		Difusión en <b>redes sociales y centros educativos</b>, a fin de conseguir una mayor cantidad de usuarios y colaboradores.
+		</div>
+	</div>
+	<div>
+		<div class="bcgreen boxdissap">
+		Programación y diseño
+		</div>
+
+		<div class="dissap">
+		Se está creando un equipo de informáticos al servicio de mejorar progresivamente la página web. Nuestro principal reto ahora mismo es la creación de <b>cuentas de usuario</b> con las que cada estudiante pueda personalizar su aprendizaje.
 		</div>
 	</div><br />
 	

@@ -163,12 +163,12 @@ Por tanto, tendremos que se anula si $(x-p)$ es ortogonal a $T_xM$. Por otro lad
 \begin{equation}
  \frac{\partial f_p}{\partial x_i \partial x_j}=2(\frac{\partial x}{\partial x_j}\frac{\partial x}{\partial x_i}+(x-p)\frac{\partial^2 x}{\partial x_i \partial x_j}) 
 \end{equation}
-De esta manera, diremos que un punto crítico $x \in M$ es no degenerado si y solo si se cumple que $x-p$ ortogonal a $T_xM$ y el rango de la matriz Hessiana $(1)$ es $n$. La condición de ortogonalidad hará que entre en juego de manera auxiliar el fibrado normal $N=\{ (x,v) \in M\times \mathbb{R}^N |v \bot T_xM \}$. La idea será intentar ver los puntos que no cumplen la condición de rango como conjunto de puntos críticos de otra función diferenciable, de esa forma, bastaría con aplicar el teorema de Sard para terminar. \\
+De esta manera, diremos que un punto crítico $x \in M$ es no degenerado si y solo si se cumple que $x-p$ ortogonal a $T_xM$ y el rango de la matriz Hessiana $(1)$ es $n$. La condición de ortogonalidad hará que entre en juego de manera auxiliar el fibrado normal $N=\{ (x,v) \in M\times \mathbb{R}^N |v \bot T_xM \}$. La idea será intentar ver los puntos que no cumplen la condición de rango como conjunto de puntos críticos de otra función diferenciable, de esa forma, bastaría con aplicar el teorema de Sard  <a href="/es/thm_sard.html"><img src="/images/symb/unfinished.svg" height="40" width="40" style="vertical-align:middle" /></a> para terminar. 
 Definimos $E:N\rightarrow \mathbb{R}^N$ función diferenciable dada por:
 \begin{equation*} 
 (x,v)\rightarrow x+v
 \end{equation*}  
-Tomando $p=x+v$ tenemos que $x-p=x-x-v=v$ donde $v$ por propia construcción es ortogonal a $T_xM$ ($\Rightarrow $ Punto crítico de $f_p$).\\
+Tomando $p=x+v$ tenemos que $x-p=x-x-v=v$ donde $v$ por propia construcción es ortogonal a $T_xM$ ($\Rightarrow $ Punto crítico de $f_p$).
 Denotamos por $v_1,...,v_{N-n}$ al conjunto de vectores tales que para todo punto de $M$ forman una base de $(T_xM)^\bot$ (Dichos vectores dependen del punto,es decir, $v_i=v_i(x_1,...,x_n)$). Una parametrización de $N$ vendrá dada por: \begin{equation*}
 (x_1,...,x_m,t_1,...,t_{N-m})\rightarrow (x_1,...,x_n,\sum_{i=1}^{N-n}t_iv_i(x_1,...,x_m))
 \end{equation*}
@@ -185,17 +185,17 @@ J= \begin{pmatrix}
  \frac{\partial E}{\partial x_1} &amp;  \cdots &amp; \frac{\partial E}{\partial x_n} &amp; \frac{\partial E}{\partial t_1} &amp; \cdots &amp; \frac{\partial E}{\partial t_{N-n}}
  \end{pmatrix}
 \end{equation*}
-Donde cada $\frac{\partial E}{\partial x_i}$ y $\frac{\partial E}{\partial t_j}$ es un vector columna $1\times N$, es decir, las dimensiones de la matriz cuadran siendo $N\times N$. \\
+Donde cada $\frac{\partial E}{\partial x_i}$ y $\frac{\partial E}{\partial t_j}$ es un vector columna $1\times N$, es decir, las dimensiones de la matriz cuadran siendo $N\times N$. 
 Si hacemos el producto de estos $N$ vectores obtenidos por los $N$ vectores linealmente independientes: $\frac{\partial x}{\partial x_1},...,\frac{\partial x}{\partial x_n},v_1,...,v_{N-n}$. Obtenemos una matriz de rango igual al jacobiano de $E$. Dicha matriz es de la forma:
 \begin{equation*}
  \begin{pmatrix}
- \frac{\partial x}{\partial x_i}\frac{\partial x}{\partial x_j} + \sum_k t_k \frac{\partial v_k}{\partial x_i}\frac{\partial x}{\partial x_j} &amp; \sum_k \frac{\partial v_k}{\partial x_i}v_l \\
+ \frac{\partial x}{\partial x_i}\frac{\partial x}{\partial x_j} + \sum_k t_k \frac{\partial v_k}{\partial x_i}\frac{\partial x}{\partial x_j} &amp; \sum_k \frac{\partial v_k}{\partial x_i}v_l 
  0 &amp; Id
  \end{pmatrix}
 \end{equation*}
 Y por tanto tendrá rango menor que $N$ si se anulan los términos:
 \begin{equation}
-\frac{\partial x}{\partial x_i}\frac{\partial x}{\partial x_j} + \sum_k t_k \frac{\partial v_k}{\partial x_i}\frac{\partial x}{\partial u_j} 
+\frac{\partial x}{\partial x_i}\frac{\partial x}{\partial x_j} + \sum_k t_k \frac{\partial v_k}{\partial x_i}\frac{\partial x}{\partial u_j}  
 \end{equation}
 Recordemos que tenemos la siguiente identidad gracias a la ortogonalidad de $v_k$:
 \begin{equation*}
