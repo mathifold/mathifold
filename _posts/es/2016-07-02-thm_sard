@@ -2,9 +2,9 @@
 title: "Teorema de Sard"
 lang: es
 category: es
-permalink: es/sard_theorem
+permalink: es/thm_sard
 
-ident: sard_theorem
+ident: thm_sard
 parent: intro_differential_calculus
 kind: unfinished
 mathjax: true
