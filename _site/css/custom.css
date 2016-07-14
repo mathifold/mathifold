@@ -6,7 +6,7 @@ body, input {
   font-weight: 300;
 }
 
-.resource { 
+.resource {
   margin-bottom: 15px;
   position: relative;
   text-align: center;
@@ -21,7 +21,7 @@ body, input {
     bottom: 0;
     position: absolute;
     right: 0px;
-    
+
     background-image: url("/images/opensource.svg");
     background-position: right center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ p.topic {
   color: black;
   text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
   padding: 20px;
-  width: 200px; 
+  width: 200px;
   height: 200px;
   word-wrap: break-word;
   display: inline-block;
@@ -85,61 +85,6 @@ p.topic {
 }
 
 
-.basics{
-  background-image: url('/images/basics.png');
-}
-
-.geometry{
-  background-image: url('/images/geometry.png');
-}
-
-.algebra{
-  background-image: url('/images/algebra.png');
-}
-
-.analysis{
-  background-image: url('/images/analysis.png');
-}
-
-.probability_statistics{
-  background-image: url('/images/probability_statistics.png');
-}
-
-.operational_research{
-  background-image: url('/images/operational_research.png');
-}
-
-.foundations{
-  background-image: url('/images/foundations.png');
-}
-
-.mathematical_models{
-  background-image: url('/images/mathematical_models.png');
-}
-
-.evolutive_equations{
-  background-image: url('/images/evolutive_equations.png');
-}
-
-.pure_mathematics{
-  background-image: url('/images/pure_mathematics.png');
-}
-
-.tools{
-  background-image: url('/images/tools.png');
-}
-
-.advanced_mathematics{
-  background-image: url('/images/advanced_mathematics.png');
-}
-
-.problem_resolution{
-  background-image: url('/images/problem_resolution.png');
-}
-
-.history_mathematics{
-  background-image: url('/images/history_mathematics.png');
-}
 
 
 
@@ -149,7 +94,7 @@ p.subject {
   color: black;
   text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
   padding: 20px;
-  width: 200px; 
+  width: 200px;
   height: 200px;
   word-wrap: break-word;
   display: inline-block;
@@ -158,243 +103,11 @@ p.subject {
   box-shadow: 0px 0px 10px #888888;
 }
 
-.basic_shapes{
-  background-image: url('/images/basic_shapes.jpg');
-}
 
-.numbers{
-  background-image: url('/images/numbers.jpg');
-}
-
-.equations{
-  background-image: url('/images/equations.jpg');
-}
-
-.combinatorics{
-  background-image: url('/images/combinatorics.jpg');
-}
-
-.number_theory{
-  background-image: url('/images/number_theory.jpg');
-}
-
-.trigonometry{
-  background-image: url('/images/trigonometry.jpg');
-}
-
-.complex_numbers{
-  background-image: url('/images/complex_numbers.jpg');
-}
-
-.derivation_integration{
-  background-image: url('/images/derivation_integration.jpg');
-}
-
-.functions{
-  background-image: url('/images/functions.jpg');
-}
-
-
-
-.classical_geometry{
-  background-image: url('/images/classical_geometry.jpg');
-}
-
-.conics{
-  background-image: url('/images/conics.jpg');
-}
-
-.affine_projective_geometry{
-  background-image: url('/images/affine_projective_geometry.jpg');
-}
-
-.spherical_geometry{
-  background-image: url('/images/spherical_geometry.jpg');
-}
-
-.the_4_dimension{
-  background-image: url('/images/the_4_dimension.jpg');
-}
-
-.hyperbolic_geometry{
-  background-image: url('/images/hyperbolic_geometry.jpg');
-}
-
-.fractal_geometry{
-  background-image: url('/images/fractal_geometry.jpg');
-}
-
-.topology{
-  background-image: url('/images/topology.jpg');
-}
-
-
-
-.linear_algebra{
-  background-image: url('/images/linear_algebra.jpg');
-}
-
-.group_theory{
-  background-image: url('/images/group_theory.jpg');
-}
-
-.ring_theory{
-  background-image: url('/images/ring_theory.jpg');
-}
-
-.galois_theory{
-  background-image: url('/images/galois_theory.jpg');
-}
-
-.commutative_algebra{
-  background-image: url('/images/commutative_algebra.jpg');
-}
-
-
-
-.real_analysis{
-  background-image: url('/images/real_analysis.jpg');
-}
-
-.differential_calculus{
-  background-image: url('/images/differential_calculus.jpg');
-}
-
-.integral_calculus{
-  background-image: url('/images/integral_calculus.jpg');
-}
-
-.complex_analysis{
-  background-image: url('/images/complex_analysis.jpg');
-}
-
-
-
-.probability{
-  background-image: url('/images/probability.jpg');
-}
-
-
-
-.graph_theory{
-  background-image: url('/images/graph_theory.jpg');
-}
-
-.numerical_analysis{
-  background-image: url('/images/numerical_analysis.jpg');
-}
-
-.simplex_method{
-  background-image: url('/images/simplex_method.jpg');
-}
-
-
-
-.set_theory{
-  background-image: url('/images/set_theory.jpg');
-}
-
-.logic{
-  background-image: url('/images/logic.jpg');
-}
-
-.categories{
-  background-image: url('/images/categories.jpg');
-}
-
-
-
-.physics{
-  background-image: url('/images/physics.jpg');
-}
-
-.computer_science{
-  background-image: url('/images/computer_science.jpg');
-}
-
-.economy{
-  background-image: url('/images/economy.jpg');
-}
-
-
-
-.dynamical_systems{
-  background-image: url('/images/dynamical_systems.jpg');
-}
-
-.differential_equations{
-  background-image: url('/images/differential_equations.jpg');
-}
-
-.partial_differential_equations{
-  background-image: url('/images/partial_differential_equations.jpg');
-}
-
-
-
-.algebraic_geometry{
-  background-image: url('/images/algebraic_geometry.jpg');
-}
-
-.functional_analysis{
-  background-image: url('/images/functional_analysis.jpg');
-}
-
-.algebraic_topology{
-  background-image: url('/images/algebraic_topology.jpg');
-}
-
-.differentiable_manifolds{
-  background-image: url('/images/differentiable_manifolds.jpg');
-}
-
-.riemannian_geometry{
-  background-image: url('/images/riemannian_geometry.jpg');
-}
-
-
-
-.topological_degree{
-  background-image: url('/images/topological_degree.jpg');
-}
-
-.morse_theory{
-  background-image: url('/images/morse_theory.jpg');
-}
-
-
-
-.algebraic_number_theory{
-  background-image: url('/images/algebraic_number_theory.jpg');
-}
-
-.analytic_number_theory{
-  background-image: url('/images/analytic_number_theory.jpg');
-}
-
-.complex_manifolds{
-  background-image: url('/images/complex_manifolds.jpg');
-}
-
-.lie_theory{
-  background-image: url('/images/lie_theory.jpg');
-}
-
-.bundles{
-  background-image: url('/images/bundles.jpg');
-}
-
-.sheaf_theory{
-  background-image: url('/images/sheaf_theory.jpg');
-}
-
-.orbifolds{
-  background-image: url('/images/orbifolds.jpg');
-}
 
 .chapter{
-  text-decoration: none; 
-  color: black; 
+  text-decoration: none;
+  color: black;
   border: 3px solid black;
   padding: 5px;
   border-radius: 7px;
@@ -405,7 +118,7 @@ p.subject {
   font-size: 55%;
   color: black;
   padding: 5px;
-  width: 80px; 
+  width: 80px;
   height: 80px;
   word-wrap: break-word;
   display: inline-block;
@@ -413,66 +126,6 @@ p.subject {
   vertical-align: text-top;
   text-decoration: none;
   border-style: solid;
-}
-
-.exposition{
-  background-image: url('/images/symb/exposition-l.svg');
-}
-
-.definition{
-  background-image: url('/images/symb/definition-l.svg');
-}
-
-.corollary{
-  background-image: url('/images/symb/corollary-l.svg');
-}
-
-.visualisation{
-  background-image: url('/images/symb/visualisation-l.svg');
-}
-
-.problem{
-  background-image: url('/images/symb/problem-l.svg');
-}
-
-.example{
-  background-image: url('/images/symb/example-l.svg');
-}
-
-.biography{
-  background-image: url('/images/symb/biography-l.svg');
-}
-
-.lemma{
-  background-image: url('/images/symb/lemma-l.svg');
-}
-
-.applet{
-  background-image: url('/images/symb/applet-l.svg');
-}
-
-.quotation{
-  background-image: url('/images/symb/quotation-l.svg');
-}
-
-.counterexample{
-  background-image: url('/images/symb/counterexample-l.svg');
-}
-
-.theorem{
-  background-image: url('/images/symb/theorem-l.svg');
-}
-
-.remark{
-  background-image: url('/images/symb/remark-l.svg');
-}
-
-.unfinished{
-  background-image: url('/images/symb/unfinished-l.svg');
-}
-
-.calculation{
-  background-image: url('/images/symb/calculation-l.svg');
 }
 
 .postbox{
@@ -484,65 +137,6 @@ p.subject {
   border-width: 10px;
 }
 
-.pb_exposition{
-  border-color: rgb(0,255,0);
-}
-
-.pb_definition{
-  border-color: rgb(222,1,84);
-}
-
-.pb_corollary{
-  border-color: rgb(0,242,242);
-}
-
-.pb_visualisation{
-  border-color: rgb(128,0,128);
-}
-
-.pb_problem{
-  border-color: rgb(255,128,0);
-}
-
-.pb_example{
-  border-color: rgb(255,255,0);
-}
-
-.pb_biography{
-  border-style: double;
-}
-
-.pb_lemma{
-  border-color: rgb(0, 166, 166);
-}
-
-.pb_applet{
-  border-color: rgb(60,60,60);
-}
-
-.pb_quotation{
-  border-color: rgb(128,0,0);
-}
-
-.pb_counterexample{
-  border-color: rgb(255, 0, 0);
-}
-
-.pb_theorem{
-  border-color: rgb(0,86,128);
-}
-
-.pb_remark{
-  border-color: rgb(0, 0, 0);
-}
-
-.pb_unfinished{
-  border-style: dashed;
-}
-
-.pb_calculation{
-  border-color: rgb(255, 215, 0);
-}
 
 #search-results a {
   text-decoration: none;

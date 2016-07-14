@@ -1,0 +1,57 @@
+
+.basics{
+  background-image: url('/images/basics.png');
+}
+
+.geometry{
+  background-image: url('/images/geometry.png');
+}
+
+.algebra{
+  background-image: url('/images/algebra.png');
+}
+
+.analysis{
+  background-image: url('/images/analysis.png');
+}
+
+.probability_statistics{
+  background-image: url('/images/probability_statistics.png');
+}
+
+.operational_research{
+  background-image: url('/images/operational_research.png');
+}
+
+.foundations{
+  background-image: url('/images/foundations.png');
+}
+
+.mathematical_models{
+  background-image: url('/images/mathematical_models.png');
+}
+
+.evolutive_equations{
+  background-image: url('/images/evolutive_equations.png');
+}
+
+.pure_mathematics{
+  background-image: url('/images/pure_mathematics.png');
+}
+
+.tools{
+  background-image: url('/images/tools.png');
+}
+
+.advanced_mathematics{
+  background-image: url('/images/advanced_mathematics.png');
+}
+
+.problem_resolution{
+  background-image: url('/images/problem_resolution.png');
+}
+
+.history_mathematics{
+  background-image: url('/images/history_mathematics.png');
+}
+
