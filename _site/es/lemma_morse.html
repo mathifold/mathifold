@@ -123,6 +123,10 @@
 	<a href="/es/definition_index.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
+	
+	
+	<a href="/es/lem_vector_field.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
 
 
 <div style="position: relative; height: 90px;" align="center">
@@ -138,7 +142,7 @@
 \begin{equation*}
 f\circ \phi^{-1}(x_1,...,x_m)=f(p)-x^2_1-...-x^2_k+x^2_{k+1}+...+x^2_m
 \end{equation*}
-\end{equation*} <br /><br />
+<br /><br />
 
 <div class="bcblue boxdissap">
 	Demostración
@@ -165,7 +169,7 @@ g_i(x_1,...,x_m)=\int_0^1\frac{\partial f}{\partial x_i}(tx_1,...,tx_m)
 \end{equation*}
 De esta manera queda probado el Aserto.
 
-Sin pérdida de generalidad podemos suponer que $f(p)=f(0)=0$, de esta manera por el aserto obtendremos:
+Sin pérdida de generalidad podemos suponer que $f(p)=f(0)=0$, por el aserto obtendremos:
 \begin{equation*}
 f(x_1,...,x_m)=\sum_{j=1}^m x_j g_j(x_1,...,x_m)
 \end{equation*}
@@ -190,7 +194,7 @@ Definimos unas nuevas coordenadas dadas por:
 y_i &amp;=x_i \quad (i\neq 1) \\
 y_1 &amp;=g(x_1,...,x_m) (x_1+\sum_{i&gt;1}^m \frac{x_i h_{1_i}}{h_{11}})
 \end{align*}
-La elección de dichas coordenadas viene motivada por intentar hacer a la vez una especie de diagonalización de la matriz $(h_{ij})$. El determinante jacobiano de la transformación de $(x_1,...,x_m)$ a $(y_1,...,y_m)$ es no nulo luego por el Teorema de la Función Inversa   tenemos que $(y_1,...,y_m)$ son un sistema local de coordenadas definidas en un entorno más pequeño $U_2\subset U_1$. Solo queda expresar $f$ en estas nuevas coordenadas, para ello vemos la siguiente potencia:
+La elección de dichas coordenadas viene motivada por intentar hacer a la vez una especie de diagonalización de la matriz $(h_{ij})$. El determinante jacobiano de la transformación de $(x_1,...,x_m)$ a $(y_1,...,y_m)$ es no nulo luego por el Teorema de la Función Inversa  <a href="/es/thm_inverse_function.html"><img src="/images/symb/unfinished.svg" height="40" width="40" style="vertical-align:middle" /></a> tenemos que $(y_1,...,y_m)$ son un sistema local de coordenadas definidas en un entorno más pequeño $U_2\subset U_1$. Solo queda expresar $f$ en estas nuevas coordenadas, para ello vemos la siguiente potencia:
 \begin{equation}
 y_1^2=\pm h_{11}x_1^2\pm 2 \sum_{i=2}^m x_1 x_i h_{1i} \pm \frac{(\sum_{i=2}^m x_i h_{1i})^2}{h_{11}} 
 \end{equation}

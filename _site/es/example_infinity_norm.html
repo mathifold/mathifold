@@ -13,6 +13,27 @@
   
 
   
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({		
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": { 
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: { 
+	         linebreaks: { automatic: true } 
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
 
 
@@ -39,21 +60,28 @@
 	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
 	
 	
-		
-		
-		<span style="font-size:35px;vertical-align:middle;">
-		 &#187; </span>
-		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/tools.html" style="text-decoration: none; color: black">
-		Herramientas</a>
-		</span>
-		<span style="font-size:30px;vertical-align:middle;">
-		 &#187; </span>
-		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/morse_theory.html" style="text-decoration: none; color: black">
-		Teoría de Morse</a>
-		</span>
 	
+		
+		
+		
+		<span style="font-size:35px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:35px;vertical-align:middle;">
+		<a href="/topics/es/pure_mathematics.html" style="text-decoration: none; color: black">
+		Matemáticas Puras</a>
+		</span>
+		<span style="font-size:30px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:30px;vertical-align:middle;">
+		<a href="/subjects/es/functional_analysis.html" style="text-decoration: none; color: black">
+		Análisis Funcional</a>
+		</span>
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/normed_spaces.html" style="text-decoration: none; color: black">
+		Espacios Normados</a>
+		</span>
 	
 	
 
@@ -66,16 +94,13 @@
 				
 				
 					
-					<a href="/chapters/es/intro_morse_theory.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/example_infinity_norm.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
 			
 				
 				
-				
-					
-					<a href="/chapters/en/intro_morse_theory.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -86,30 +111,34 @@
 
 
 
-    <div style="position: relative; height: 70px;" align="center">
-<p style="font-size: 32px;">Capítulo1</p>
+    
+
+
+
+
+
+
+	
+	
+	<a href="/es/definition_normed_space.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/example.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Norma infinito</span>
 </div>
 
-<div style="position: relative;" align="center">
+<div class="postbox pb_example">
+	<p>La mayor parte de los espacios normados de interés en Análisis Funcional son <strong>espacios de funciones</strong>.</p>
 
-
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/definition_morse_function.html"  class="post definition">Función de Morse</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/theorem_morse_functions.html"  class="post theorem">Abundancia funciones de Morse</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/definition_index.html"  class="post definition">Índice puntos críticos</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/lemma_morse.html"  class="post theorem">Lema de Morse</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/lem_vector_field.html"  class="post unfinished">Lema técnico</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/corollary_reeb.html"  class="post theorem">Corolario de Reeb</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/thm_first_morse.html"  class="post theorem">Primer Teorema fundamental teoría de Morse</a></div>
-
+<p>Sea $X$ un conjunto arbitrario. El conjunto de funciones $\mathcal{F}(X)={f:X\longrightarrow \mathbb{K}}$ es un espacio vectorial sobre $\mathbb{K}$ <!--add cite-->. Definimos la norma infinito como</p>
 
 </div>
+
+
 
 
 

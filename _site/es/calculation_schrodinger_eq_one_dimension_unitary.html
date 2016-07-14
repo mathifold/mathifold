@@ -13,6 +13,27 @@
   
 
   
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({		
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": { 
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: { 
+	         linebreaks: { automatic: true } 
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
 
 
@@ -39,6 +60,8 @@
 	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
 	
 	
+	
+		
 		
 		
 		<span style="font-size:35px;vertical-align:middle;">
@@ -53,7 +76,12 @@
 		<a href="/subjects/es/physics.html" style="text-decoration: none; color: black">
 		Física</a>
 		</span>
-	
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/quantum_mechanics.html" style="text-decoration: none; color: black">
+		Mecánica Cuántica</a>
+		</span>
 	
 	
 
@@ -66,16 +94,13 @@
 				
 				
 					
-					<a href="/chapters/es/quantum_mechanics.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/calculation_schrodinger_eq_one_dimension_unitary.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
 			
 				
 				
-				
-					
-					<a href="/chapters/en/quantum_mechanics.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -86,22 +111,48 @@
 
 
 
-    <div style="position: relative; height: 70px;" align="center">
-<p style="font-size: 32px;">Mecánica Cuántica</p>
+    
+
+
+
+
+
+
+	
+	
+	<a href="/es/visualisation_schrodinger_equation_one_dimension.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/calculation.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Ecuación de Schrödinger y Normalización</span>
 </div>
 
-<div style="position: relative;" align="center">
+<div class="postbox pb_calculation">
+	<table>
+  <tbody>
+    <tr>
+      <td>Sea $\psi_0(x)$ una función de densidad normalizada, es decir, $\int_\mathbb{R}\vert\psi_0(x)</td>
+      <td>^2\mathrm{d}x=1$. Entonces la solución a la Ecuación de Evolución de Schrödinger</td>
+    </tr>
+  </tbody>
+</table>
 
+<script type="math/tex; mode=display">\mathrm{i}\hbar\frac{\mathrm{d}}{\mathrm{d}t}\psi(x,t)=-\frac{\mathrm{d}^2}{\mathrm{d}x^2}\psi(x,t)\\
+\psi(x,0)=\psi_0(x)</script>
 
+<p>está normalizada en todo tiempo $t$</p>
 
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/exposition_first_approach_quantum_mechanics.html"  class="post exposition">Un primer asalto a la Mecánica Cuántica</a></div>
+<script type="math/tex; mode=display">\frac{\mathrm{d}}{\mathrm{d}t}\left[\int_\mathbb{R}|\psi(x,t)|^2\right]=\left[\int_\mathbb{R}\frac{\mathrm{d}}{\mathrm{d}t}|\psi(x,t)|^2\right]</script>
 
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/visualisation_schrodinger_equation_one_dimension.html"  class="post visualisation">Ecuación de Schrödinger</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/calculation_schrodinger_eq_one_dimension_unitary.html"  class="post calculation">Ecuación de Schrödinger y Normalización</a></div>
-
+<p>etc</p>
 
 </div>
+
+
 
 
 
