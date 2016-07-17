@@ -14,7 +14,7 @@ type: post
 
 <div>
 
-Se dice que una sucesión de números reales, $(x_n)_{n\in\mathbb{N}}$, es {\bf convergente} si existe un $c\in\mathbb{R}$ que satisface que para cada $\varepsilon>0$ existe un $N\in\mathbb{N}$ (que dependerá de $\varepsilon$) tal que
+Se dice que una sucesión de números reales, $(x_n)_{n\in\mathbb{N}}$, es convergente si existe un $c\in\mathbb{R}$ que satisface que para cada $\varepsilon>0$ existe un $N\in\mathbb{N}$ (que dependerá de $\varepsilon$) tal que
 \begin{equation*}
 |x_n-c|<\varepsilon 
 \end{equation*}
