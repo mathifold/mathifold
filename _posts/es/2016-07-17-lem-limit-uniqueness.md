@@ -16,7 +16,7 @@ Si una sucesión de números reales, $(x_n)_{n\in\mathbb{N}}$ converge a $c_1\in
 
 <div class="bcblue boxdissap">
 Demostración
-</div>
+</div><br>
 
 <div class="dissap">
 Para probar la igualdad bastará con ver que $|c_1-c_2|<2\varepsilon$ para todo $\varepsilon>0$. Así pues, consideremos un $\varepsilon>0$ arbitrario. 
