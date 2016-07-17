@@ -1,5 +1,5 @@
 ---
-title: "Teorema del Sandwich"
+title: "Teorema del Sándwich"
 lang: es
 category: es
 permalink: es/theorem_sandwich_sequences
