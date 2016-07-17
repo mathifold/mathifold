@@ -25,4 +25,4 @@ begin{equation*}
 \displaystyle\lim_{n\to\infty} x_n=c.
 \end{equation*}
 
-<\div>
+</div>
