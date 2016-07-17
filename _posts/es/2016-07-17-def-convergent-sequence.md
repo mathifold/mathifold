@@ -18,7 +18,7 @@ Se dice que una sucesión de números reales, $(x_n)_{n\in\mathbb{N}}$, es **con
 \end{equation*}
 para todo $n\ge N$.<br>
 
-En ese caso diremos que $(x_n)_{n\in\mathbb{N}}$ converge a $c$ o, dado que $c$ es único (véase {% cite lemma_limit_uniqueness %}), que $c$ es el límite de $(x_n)_{n\in\mathbb{N}}$, hecho que denotaremos por
+En ese caso diremos que la sucesión converge a $c$ o, dado que $c$ es único (véase {% cite lemma_limit_uniqueness %}), que $c$ es el límite de la sucesión, hecho que denotaremos por
 begin{equation*}
 \displaystyle\lim_{n\to\infty} x_n=c.
 \end{equation*}
