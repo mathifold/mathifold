@@ -12,11 +12,13 @@ layout: post
 type: post
 ---
 
+<div>
+
 Si una sucesión de números reales es convergente entonces es de Cauchy.
 
 <div class="bcblue boxdissap">
 Demostración
-</div><br>
+</div><br><br>
 
 <div class="dissap">
 Denotemos por $(x_n)_{n\in\mathbb{N}}$ la sucesión. Consideremos un $\varepsilon>0$ arbitrario. Puesto que la sucesión es convergente existe un $c\in \mathbb{R}$ y un $N_{(\varepsilon/2)}\in\mathbb{N}$ tales que
@@ -28,4 +30,6 @@ Por tanto, para todo $n,m\ge N(\varepsilon/2)$ se tiene que
 |x_n-x_m|=|x_n-c+c-x_m|\le|x_n-c|+|c-x_m|<\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon
 \end{equation*}
 a partir de la desigualdad triangular, de lo que se concluye el resultado.
+</div>
+
 </div>
