@@ -12,11 +12,13 @@ layout: post
 type: post
 ---
 
+<div>
+
 Demostrar que la sucesión $\left(\frac{2n^2-3}{3n^3+n^2-2n-1}\right)_{n\in\mathbb{N}}$ converge a $0$ por medio del Teorema del Sándwich {% cite theorem_sandwich_sequences %}.
 
 <div class="bcblue boxdissap">
 Solución
-</div><br>
+</div><br><br>
 
 <div class="dissap">
 Para aplicar el Teorema del Sandwich hemos de encajar la sucesión entre dos sucesiones que converjan a $0$. Comencemos por encima:
@@ -38,4 +40,6 @@ $$x_1=-1\;\;\hbox{y}\;\;x_n=0\;\;\hbox{para todo}\;\;n\ge 2,$$
 que también converge a $0$. Como
 $$x_n\le \frac{2n^2-3}{3n^3+n^2-2n-1} \le z_n\;\;\hbox{para todo}\;\;n\ge 1$$
 y tanto $\left(x_n\right)_{n\in\mathbb{N}}$ como $\left(z_n\right)_{n\in\mathbb{N}}$ convergen a $0$, entonces la sucesión inicial converge a $0$ por el Teorema del Sándwich {% cite theorem_sandwich_sequences %}.
+</div>
+
 </div>
