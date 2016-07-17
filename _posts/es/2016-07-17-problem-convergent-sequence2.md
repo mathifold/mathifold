@@ -16,7 +16,7 @@ Demostrar que la sucesión $\left(\frac{2n^2-3}{3n^3+n^2-2n-1}\right)_{n\in\math
 
 <div class="bcblue boxdissap">
 Solución
-</div>
+</div><br>
 
 <div class="dissap">
 Para aplicar el Teorema del Sandwich hemos de encajar la sucesión entre dos sucesiones que converjan a $0$. Comencemos por encima:

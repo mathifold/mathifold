@@ -16,7 +16,7 @@ Demostrar que la sucesión $\left(\frac{1}{n^2+1}\right)_{n\in\mathbb{N}}$ es co
 
 <div class="bcblue boxdissap">
 Solución
-</div>
+</div><br>
 
 <div class="dissap">
 En primer lugar hemos de encontrar el candidato a límite. En este sencillo caso es fácil intuir que la sucesión va a converger a $c=0$. Probémoslo. Dado un $\varepsilon>0$ bastará encontrar un $N\in\mathbb{N}$ (que dependerá del $\varepsilon$ inicial) para el que se cumpla

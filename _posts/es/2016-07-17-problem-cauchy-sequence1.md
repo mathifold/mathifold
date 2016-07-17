@@ -16,7 +16,7 @@ Demostrar que la sucesión $\left(\frac{1}{n}\right)_{n\in\mathbb{N}}$ es de Cau
 
 <div class="bcblue boxdissap">
 Solución
-</div>
+</div><br>
 
 <div class="dissap">
 Dado un $\varepsilon>0$ hemos de encontrar un $N\in\mathbb{N}$ (que dependerá del $\varepsilon$) de modo que
