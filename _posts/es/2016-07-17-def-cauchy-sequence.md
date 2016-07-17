@@ -14,7 +14,7 @@ type: post
 
 <div>
 
-Se dice que una sucesión de números reales, $(x_n)_{n\in\mathbb{N}}$, es **de Cauchy** si para cada $\varepsilon>0$ existe un $N\in\mathbb{N}$ (que dependerá de $\varepsilon$) tal que
+Se dice que una sucesión de números reales, $(x_n)_{n\in\mathbb{N}}$, es de Cauchy si para cada $\varepsilon>0$ existe un $N\in\mathbb{N}$ (que dependerá de $\varepsilon$) tal que
 \begin{equation*}
 |x_n-x_m|<\varepsilon
 \end{equation*}

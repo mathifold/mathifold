@@ -14,11 +14,7 @@ type: post
 
 <div>
 
-Supongamos tres sucesiones de números reales, 
-\begin{equation*}
-(x_n)_{n\in\mathbb{N}},\;\;(y_n)_{n\in\mathbb{N}}\;\;\hbox{y}\;\;(z_n)_{n\in\mathbb{N}}
-\end{equation*}
-que satisfacen
+Supongamos tres sucesiones de números reales, $(x_n)_{n\in\mathbb{N}}$, $(y_n)_{n\in\mathbb{N}}$ y $(z_n)_{n\in\mathbb{N}}$ que satisfacen
 \begin{equation*}
 x_n\le y_n\le z_n\;\;\hbox{para todo}\;\;n\in\mathbb{N}.
 \end{equation*}
@@ -30,9 +26,11 @@ entonces
 \begin{equation*}\displaystyle\lim_{n\to\infty} y_n=c.
 \end{equation*}
 
+</div><br>
+
 <div class="bcblue boxdissap">
 Demostración
-</div><br><br>
+</div><br>
 
 <div class="dissap">
 De acuerdo con la definición de convergencia hemos de probar que para cada $\varepsilon>0$ existe un $N\in \mathbb{N}$ tal que $|y_n-c|<\varepsilon$ para todo $n\ge N$. Comencemos, pues, considerando un $\varepsilon>0$ arbitrario. Puesto que tanto $(x_n)_{n\in\mathbb{N}}$ como $(z_n)_{n\in\mathbb{N}}$ convergen a $c$, existen $N_x(\varepsilon/3),N_z(\varepsilon/3)\in\mathbb{N}$ de modo que
@@ -47,6 +45,4 @@ Así pues, si denotamos $N_y:=\mathrm{max}\,\{N_x(\varepsilon/3),N_z(\varepsilon
 =|z_n-c+c-x_n|+|x_n-c|\le|z_n-c|+2|x_n-c|<\frac{\varepsilon}{3}+\frac{2\varepsilon}{3}=\varepsilon
 \end{equation*}
 para todo $n\ge N_y$. Notese que se ha utilizado sucesivas veces la desigualdad triangular, y que en la segunda desigualdad el hecho de que $|y_n-x_n|\le |z_n-x_n|$ se obtiene a partir de que $x_n\le y_n\le z_n$.
-</div>
-
 </div>
