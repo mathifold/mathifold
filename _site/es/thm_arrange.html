@@ -70,20 +70,20 @@
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/mathematical_models.html" style="text-decoration: none; color: black">
-		Modelos Matemáticos</a>
+		<a href="/topics/es/tools.html" style="text-decoration: none; color: black">
+		Herramientas</a>
 		</span>
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/physics.html" style="text-decoration: none; color: black">
-		Física</a>
+		<a href="/subjects/es/morse_theory.html" style="text-decoration: none; color: black">
+		Teoría de Morse</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/quantum_mechanics.html" style="text-decoration: none; color: black">
-		Mecánica Cuántica</a>
+		<a href="/chapters/es/intro_morse_theory.html" style="text-decoration: none; color: black">
+		Capítulo1</a>
 		</span>
 	
 	
@@ -97,7 +97,7 @@
 				
 				
 					
-					<a href="/es/visualisation_schrodinger_equation_one_dimension.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/thm_arrange.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,36 +123,49 @@
 
 	
 	
-	<a href="/es/exposition_first_approach_quantum_mechanics.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/thm_first_morse.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/calculation_schrodinger_eq_one_dimension_unitary.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/thm_morse.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/visualisation.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/theorem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Ecuación de Schrödinger</span>
+		Ordenar puntos críticos</span>
 </div>
 
-<div class="postbox pb_visualisation">
-	<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/FQeVeFB-uM8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+<div class="postbox pb_theorem">
+	<div>
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/VN51FxSOBy8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/T5yTERMOYSM?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+Sea $f:W \rightarrow \mathbb{R}$ una función de Morse sobre $W$ variedad diferenciable y con una cantidad finita
+de puntos críticos $p_1,...,p_k$. Entonces, existe una función de Morse $g$ que aproxima a $f$ que tiene 
+exactamente los mismos puntos críticos y cumple $g(p_i)\neq g(p_j)$ para $i\neq j$. 
+
+<br /><br />
+
+<div class="bcblue boxdissap">
+	Demostración
+</div><br /><br />
+
+<div class="dissap">
+
+
+Supongamos que $f(p_1)=f(p_2)$, tomamos un entorno $U$ de $p_1$ suficientemente pequeño de manera que solo contenga al punto crítico $p_1$ (lo podemos hacer pues son aislados). A continuación, tomamos un entorno más grande $N$ que contenga a $U$ y tal que su clausura no contenga más puntos críticos que $p_1$. Definimos $\lambda:W\rightarrow \mathbb{R}$ función meseta cumpliendo $\lambda\equiv 1$ en $U$ y $\lambda\equiv 0$ fuera de $\overline{N}$. Definimos $K$ como la clausura del conjunto $\{x\in W | 0&lt;\lambda(x)&lt;1 \}$ y elegimos una constante $c$ tal que $0\leq c \leq |grad (f)|$ sobre $K$. 
+Elegimos otra constante tal que $grad (\lambda) \geq c'$ sobre $K$. Por último, tomando $\epsilon &lt; c/c'$ y definiendo $f_1=f+\epsilon\lambda$  hemos acabado. $f_1$ es una función de Morse con exactamente los mismos puntos críticos que $f$ y $f_1(p_1)\neq f_1(p_i)$ con $i\neq 1$. En $K$:
+\begin{equation*}
+|grad(f+\epsilon\lambda )|\geq |grad(f)|-|\epsilon grad(\lambda )|&gt;c-\epsilon c'&gt;0
+\end{equation*}
+Mientras que fuera de $K$ se tiene $|grad(\lambda )|=0$ luego $|grad(f+\epsilon\lambda )|= |grad(f)|$. Procediendo de manera inductiva se obtiene la función $g$ buscada.
+
+</div>
+
+</div>
+
 
 </div>
 

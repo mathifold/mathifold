@@ -97,7 +97,7 @@
 				
 				
 					
-					<a href="/es/thm_first_morse.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/thm_morse_inequalities.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,75 +123,67 @@
 
 	
 	
-	<a href="/es/corollary_reeb.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/thm_morse.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/thm_arrange.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/thm_second_morse.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/theorem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Primer Teorema fundamental teoría de Morse</span>
+		Desigualdades de Morse</span>
 </div>
 
 <div class="postbox pb_theorem">
 	<div>
 
-Dada $f:M\rightarrow \mathbb{R}$ función diferenciable sobre una variedad diferenciable finito dimensional con borde. 
-Definimos $M^a= f^{-1}((-\infty,a])$. Supongamos $a&lt;b$ y $f^{-1}([a,b])$ compacto y sin puntos críticos. Entonces $M^a$ 
-difeomorfo a $M^b$, de hecho, $M^a$ retracto de deformación de $M^b$.
-
+Para cualquier función de Morse $f:M\rightarrow \mathbb{R}$ sobre una variedad diferenciable compacta de dimensión $m$ se tiene:
+\begin{itemize}
+\item $\sum_{k=0}^n (-1)^{k+n}\nu_k \geq \sum_{k=0}^n (-1)^{k+n} b_k(F)$ para todo $n=0,...,m$.
+\item $\sum_{k=0}^m (-1)^{k}\nu_k=\sum_{k=0}^m (-1)^{k} b_k(F)=\chi(M)$
+\end{itemize}
+Donde $\nu_k$ denota el número de puntos críticos de índice $k$ y $b_k$ son los coeficientes de Betti.
 <div class="bcblue boxdissap">
 	Demostración
 </div><br /><br />
 
 <div class="dissap">
-La idea de la demostración es clara y sencilla, aprovechar el flujo generado por $f$ para definir tanto el difeomorfismo como el retracto de deformación.
 
-Si $f^{-1}([a,b])$ se encuentra en el interior de $M$ podemos tomar $U$ entorno abierto que lo contenga tal que $\overline{U}$ es compacto. Si $f^{-1}([a,b])$ no se encontrase en el interior, podríamos añadir un collar externo a $M$ y tomar un $U$ entorno abierto de $f^{-1}([a,b])$ en $M$ unión el collar externo tal que $\overline{U}$ es compacto.
-
-Como $f^{-1}([a,b])$ no contiene puntos críticos sabemos que $\nabla f$ no se anula en ese espacio. Por tanto, definimos una función meseta dada por:
+La estructura a nivel homotópico que nos proporciona el Teorema de la descomposición celular <a href="/es/thm_morse.html"><img src="/images/symb/unfinished.svg" height="40" width="40" style="vertical-align:middle" /></a>  permite definir la homología celular usando como como la dimensión del complejo de cadenas el número de puntos críticos de los respectivos índices, esto es, $dim(\underline{C}_k(M;F))=\nu_k$. Consideramos la siguiente secuencia exacta:
 \begin{equation*}
-\rho (x) = \left\{
-        \begin{array}{ll}
-            1/|\nabla f|^2 &amp; \quad x\in f^{-1}([a,b])  \\
-            0 &amp; \quad x\in M\setminus U
-        \end{array}
-    \right.
+0\rightarrow ker( \underline{\partial}_k) \rightarrow  \underline{C}_k(M;F) \xrightarrow{\underline{\partial}_k} im (\underline{\partial}_k)  \rightarrow 0
 \end{equation*}
-De esta manera consideramos un campo de vectores $X=\rho \nabla f$. Claramente tendrá soporte compacto luego generará un grupo de difeomorfismos uniparamétrico $\Psi_t:U\rightarrow U$ por el Lema  <a href="/es/lem_vector_field.html"><img src="/images/symb/unfinished.svg" height="40" width="40" style="vertical-align:middle" /></a>. Para cada $x\in U$ consideramos la curva $c:\mathbb{R}\rightarrow \mathbb{R}$ definida por $c(t)= f(\Psi_t(x))$. Esta curva medirá de alguna forma en que zona de la variedad nos encontramos al movernos por las líneas de flujo:
+Se deduce:
 \begin{equation*}
-\frac{d}{dt}c(t)=df_{\Psi_t(x)}\circ \frac{d}{dt}\Psi_t(x)=df(X)(\Psi_t(x))=g(\nabla f, X)(\Psi_t(x))
+\nu_k=dim(\underline{C}_k(M;F))=dim(im( \underline{\partial}_k))+dim(ker (\underline{\partial}_k))
 \end{equation*}
-Si $\Psi_t(x)\in f^{-1}([a,b])$, resulta que:
+De forma análoga tomamos la siguiente secuencia exacta:
 \begin{equation*}
-\frac{d}{dt}c(t)=g(\nabla f, \frac{\nabla f}{|\nabla f|^2})(\Psi_t(x))=1
+0\rightarrow im( \underline{\partial}_{k+1}) \rightarrow  ker (\underline{\partial}_k) \rightarrow H_k(M;F) \rightarrow 0
 \end{equation*}
 Luego:
 \begin{equation*}
-c(t)-c(0)=\int_0^t \frac{d}{ds}c(s)ds=t
+dim(ker (\underline{\partial}_k))= dim(im( \underline{\partial}_{k+1}))+b_k
 \end{equation*}
-Es decir:
-\begin{equation*}
-f(\Psi_t(x))=c(t)=c(0)+t=f(\Psi_0(x))+t=f(x)+t
-\end{equation*}
-Supongamos que $f(x)=a$. Entonces $c(t)=a+t$ y $c(b-a)=a+(b-a)=b$. En conclusión, si $x\in f^{-1}(a)$ e $y=\Psi_{b-a}(x) \Rightarrow f(y)=b$.
-Para probar la primera parte solamente será necesario considerar el difeomorfismo $\Psi_{b-a}:M\rightarrow M$ que claramente envía $M^a$ a $M^b$ y cuya inversa es $\Psi_{a-b}$. Esto demuestra que $M^a$ y $M^b$ difeomorfos.
+Juntando las igualdades obtenidas y despejando $dim(ker (\underline{\partial}_k))$:
+\begin{align*}
+dim(ker (\underline{\partial}_k))= dim(im( \underline{\partial}_{k+1}))+b_k=\nu_k - dim(im( \underline{\partial}_k))
+\end{align*}
+De donde se deduce el segundo apartado: basta con hacer la suma alternada en la última igualdad.
 
-Para la segunda parte parte definimos una familia uniparamétrica $r_t:M^b \rightarrow M^b$ dada por:
+Para probar la primera parte consideramos la cadena truncada $\underline{C}_k^{(n)}(M,F)=\underline{C}_k$ si $k\leq n$ y $0$ en otro caso. Repitiendo el argumento usado antes para probar el segundo apartado se tiene:
 \begin{equation*}
-r_t (x) = \left\{
-        \begin{array}{ll}
-           x &amp; \quad f(x)\leq a  \\
-            \Psi_{t(a-f(x))}(x) &amp; \quad a\leq f(x)\leq b
-        \end{array}
-    \right.
+(-1)^n \sum_{k=0}^n (-1)^k dim (\underline{C}_k^{(n)}(M;F))=(-1)^n \sum_{k=0}^n (-1)^k dim(H_k(\underline{C}_*^{(n)}(M;F)))
 \end{equation*}
-La familia es continua y cumple que en el nivel cero $r_0$ es la identidad mientras que $r_1$ es un retracto desde $M^b$ hasta $M^a$.
+Pero $\nu_k=dim (\underline{C}_k^{(n)}(M;F))$ con $k=0,...,n$ y $b_k=dim(H_k(\underline{C}_*^{(n)}(M;F)))$ con $k=0,...,n-1$.  $H_k(\underline{C}_*(M;F))$ es un cociente de $H_k(\underline{C}_*^{(n)}(M;F))$ luego:
+\begin{equation*}
+\nu_n -\nu_{n-1}+...+(-1)^n\nu_0 \geq b_n-b_{n-1}+...+(-1)^n b_0
+\end{equation*}
+
 </div>
 
 </div>

@@ -13,20 +13,20 @@ layout: post
 type: post
 ---
 
-<div class="resource img">
-    <video width="900" controls id="title">
-  		<source src="/images/images/sim_quant_wave1.mp4" type="video/mp4">
-	</video>
-</div>
+<div class="resource vid">
+<iframe width="768" height="432"  align="middle"
+src="http://www.youtube.com/embed/FQeVeFB-uM8?rel=0">
+</iframe>
+<a class="ori" href="/images/codes/quantum.nb"></a></div>
 
-<div class="resource img">
-    <video width="900" controls id="title">
-  		<source src="/images/images/sim_quant_wave2.mp4" type="video/mp4">
-	</video>
-</div>
+<div class="resource vid">
+<iframe width="768" height="432"  align="middle"
+src="http://www.youtube.com/embed/VN51FxSOBy8?rel=0">
+</iframe>
+<a class="ori" href="/images/codes/quantum.nb"></a></div>
 
-<div class="resource img">
-    <video width="900" controls id="title">
-  		<source src="/images/images/sim_quant_wave3.mp4" type="video/mp4">
-	</video>
-</div>
+<div class="resource vid">
+<iframe width="768" height="432"  align="middle"
+src="http://www.youtube.com/embed/T5yTERMOYSM?rel=0">
+</iframe>
+<a class="ori" href="/images/codes/quantum.nb"></a></div>

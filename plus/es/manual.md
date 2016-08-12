@@ -21,11 +21,11 @@ title: Manual
 		</div>
 
 		<div class="dissap">
-		La página tiene una estructura arbórea de cuatro niveles: 
+		La página tiene una estructura arbórea de cuatro niveles:
 
 		<ul style="list-style-type: none;">
 		<li>-Temas (ej. Geometría)</li>
-		<li>-Asignaturas (ej. Geometría Clásica)</li> 
+		<li>-Asignaturas (ej. Geometría Clásica)</li>
 		<li>-Capítulos (ej. Triángulos)</li>
 		<li>-Posts (ej. Definición Baricentro)</li>
 		</ul>
@@ -46,72 +46,77 @@ title: Manual
   			<tr>
     			<td><img src="/images/symb/exposition.svg"></td>
     			<td><b>exposition</b> (exposición)</td>
-    			<td>Son los primeros contactos con un tema y recogen la motivación, los conceptos intuitivos, las definiciones informales y el significado de los teoremas</td> 
+    			<td>Son los primeros contactos con un tema y recogen la motivación, los conceptos intuitivos, las definiciones informales y el significado de los teoremas</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/definition.svg"></td>
     			<td><b>definition</b> (definición)</td>
-    			<td>Definen los conceptos de modo formal</td> 
+    			<td>Definen los conceptos de modo formal</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/theorem.svg"></td>
     			<td><b>theorem</b> (teorema)</td>
-    			<td>Expresan y prueban los resultados importantes sobre los que se construye la matemática</td> 
+    			<td>Expresan y prueban los resultados importantes sobre los que se construye la matemática</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/lemma.svg"></td>
     			<td><b>lemma</b> (lema)</td>
-    			<td>Son resultados auxiliares que, sin tener tanto peso como un teorema, anteceden a estos</td> 
+    			<td>Son resultados auxiliares que, sin tener tanto peso como un teorema, anteceden a estos</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/corollary.svg"></td>
     			<td><b>corollary</b> (corolario)</td>
-    			<td>Son consecuencias lógicas de un teorema</td> 
+    			<td>Son consecuencias lógicas de un teorema</td>
   			</tr>
+            <tr>
+                <td><img src="/images/symb/calculation.svg"></td>
+                <td><b>calculation</b> (cálculo)</td>
+                <td>Desarrollos simbólicos que deban ser destacados del resto</td>
+            </tr>
   			<tr>
     			<td><img src="/images/symb/example.svg"></td>
     			<td><b>example</b> (ejemplo)</td>
-    			<td>Llevan a casos concretos toda la teoría, proporcionando bagaje, afianzando el conocimiento y construyendo objetos sobre los que seguir trabajando</td> 
+    			<td>Llevan a casos concretos toda la teoría, proporcionando bagaje, afianzando el conocimiento y construyendo objetos sobre los que seguir trabajando</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/visualisation.svg"></td>
     			<td><b>visualisation</b> (visualización)</td>
-    			<td>Apoyan la teoría con un elemento visual (imagen o vídeo)</td> 
+    			<td>Apoyan la teoría con un elemento visual (imagen o vídeo)</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/applet.svg"></td>
     			<td><b>applet</b> (interactivo)</td>
-    			<td>Apoyan la teoría con un elemento interactivo</td> 
+    			<td>Apoyan la teoría con un elemento interactivo</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/remark.svg"></td>
     			<td><b>remark</b> (comentario)</td>
-    			<td>Matizan la teoría en puntos concretos que pueden dar lugar a confusión</td> 
+    			<td>Matizan la teoría en puntos concretos que pueden dar lugar a confusión</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/counterexample.svg"></td>
     			<td><b>counterexample</b> (contraejemplo)</td>
-    			<td>Prueban que una implicación no es válida al establecer un caso en que ésta no ocurre</td> 
+    			<td>Prueban que una implicación no es válida al establecer un caso en que ésta no ocurre</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/problem.svg"></td>
     			<td><b>problem</b> (problema)</td>
-    			<td>Ponen a prueba el conocimiento adquirido y refuerzan todo el aprendizaje</td> 
+    			<td>Ponen a prueba el conocimiento adquirido y refuerzan todo el aprendizaje</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/biography.svg"></td>
     			<td><b>biography</b> (biografía)</td>
-    			<td>Esquematizan el impacto que una persona ha tenido en la historia y el pensamiento de las matemáticas</td> 
+    			<td>Esquematizan el impacto que una persona ha tenido en la historia y el pensamiento de las matemáticas</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/quotation.svg"></td>
     			<td><b>quotation</b> (cita)</td>
-    			<td>Recogen frases o textos históricos que capten el espíritu de las matemáticas</td> 
+    			<td>Recogen frases o textos históricos que capten el espíritu de las matemáticas</td>
   			</tr>
   			<tr>
     			<td><img src="/images/symb/unfinished.svg"></td>
     			<td><b>unfinished</b> (inacabado)</td>
-    			<td>Son los posts que no se han acabado, pero cuya existencia es necesaria para el entramado de enlaces</td> 
+    			<td>Son los posts que no se han acabado, pero cuya existencia es necesaria para el entramado de enlaces</td>
   			</tr>
 		</table>
 
@@ -157,7 +162,7 @@ title: Manual
 
 		<ul style="list-style-type: none;">
 		<li>-<b>title</b>: Título del post</li>
-		<li>-<b>lang</b> y <b>category</b>: en ambos el código del idioma del post</li> 
+		<li>-<b>lang</b> y <b>category</b>: en ambos el código del idioma del post</li>
 		<li>-<b>permalink</b>: código-de-idioma/ident</li>
 		<li>-<b>ident</b>: un identificador que debe ser distinto para cada post y que intente sintetizar el contenido de éste. Suele comenzar con el tipo de post.</li>
 		<li>-<b>parent</b>: el identificador del capítulo al cual pertenece, según la Hoja de navegación.</li>
@@ -236,7 +241,7 @@ title: Manual
     	margin: 0 auto;">
     	Ipe is a drawing editor for creating figures in PDF or (encapsulated) Postscript format. It supports making small figures for inclusion into LaTeX-documents as well as making multi-page PDF presentations that can be shown on-line with Acrobat Reader.</div>
     	<a href="http://ipe.otfried.org/" target="_blank">IPE Drawing Editor</a> es el software con el que se hacen la mayoría de los dibujos.
-		</div>	 
+		</div>
 	</div>
 	<div>
 		<div class="bcgreen boxdissap">
@@ -296,7 +301,7 @@ title: Manual
 		Se está creando un equipo de informáticos al servicio de mejorar progresivamente la página web. Nuestro principal reto ahora mismo es la creación de <b>cuentas de usuario</b> con las que cada estudiante pueda personalizar su aprendizaje.
 		</div>
 	</div><br>
-	
+
 
 </div>
 

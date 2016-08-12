@@ -70,20 +70,20 @@
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/mathematical_models.html" style="text-decoration: none; color: black">
-		Modelos Matemáticos</a>
+		<a href="/topics/es/analysis.html" style="text-decoration: none; color: black">
+		Análisis</a>
 		</span>
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/physics.html" style="text-decoration: none; color: black">
-		Física</a>
+		<a href="/subjects/es/real_analysis.html" style="text-decoration: none; color: black">
+		Análisis Real</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/quantum_mechanics.html" style="text-decoration: none; color: black">
-		Mecánica Cuántica</a>
+		<a href="/chapters/es/convergence.html" style="text-decoration: none; color: black">
+		Convergencia</a>
 		</span>
 	
 	
@@ -97,7 +97,7 @@
 				
 				
 					
-					<a href="/es/visualisation_schrodinger_equation_one_dimension.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_convergent_sequence1.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,36 +123,44 @@
 
 	
 	
-	<a href="/es/exposition_first_approach_quantum_mechanics.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/lemma_limit_uniqueness.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/calculation_schrodinger_eq_one_dimension_unitary.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/theorem_sandwich_sequences.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/visualisation.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Ecuación de Schrödinger</span>
+		Sucesión Convergente. Problema 1</span>
 </div>
 
-<div class="postbox pb_visualisation">
-	<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/FQeVeFB-uM8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+<div class="postbox pb_problem">
+	<div>
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/VN51FxSOBy8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+Demostrar que la sucesión $\left(\frac{1}{n^2+1}\right)_{n\in\mathbb{N}}$ es convergente y hallar su límite.
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/T5yTERMOYSM?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+</div>
+<p><br /></p>
+
+<div class="bcblue boxdissap">
+Solución
+</div>
+<p><br /></p>
+
+<div class="dissap">
+En primer lugar hemos de encontrar el candidato a límite. En este sencillo caso es fácil intuir que la sucesión va a converger a $c=0$. Probémoslo. Dado un $\varepsilon&gt;0$ bastará encontrar un $N\in\mathbb{N}$ (que dependerá del $\varepsilon$ inicial) para el que se cumpla
+$$\left|\frac{1}{n^2+1}-0\right|=\frac{1}{n^2+1}&lt;\varepsilon\;\;\hbox{para todo}\;\;n\ge N.$$
+Ahora bien, si $n\ge N$, se tiene
+$$\frac{1}{n^2+1}\ge \frac{1}{N^2+1}\ge\frac{1}{2N}$$
+obteniéndose la ultima desigualdad a partir de
+$$0\le (n-1)^2=n^2+1-2n.$$
+Por tanto, basta tomar $N&gt;\frac{1}{2\varepsilon}$ para concluir que
+$$\displaystyle\lim_{n\to\infty} \frac{1}{n^2+1}=0.$$
+</div>
 
 </div>
 

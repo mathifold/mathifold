@@ -91,6 +91,126 @@
   window.store = {
     
     
+      "es-problem-cauchy-sequence1": {
+        "title": "Sucesión de Cauchy. Problema 1",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demostrar que la sucesión $\\left(\\frac{1}{n}\\right)_{n\\in\\mathbb{N}}$ es de Cauchy.SoluciónDado un $\\varepsilon&gt;0$ hemos de encontrar un $N\\in\\mathbb{N}$ (que dependerá del $\\varepsilon$) de modo que$$\\left|\\frac{1}{n}-\\frac{1}{m}\\right|\\;\\;\\hbox{para todo}\\;\\;n,m\\ge N.$$Ahora bien, como el valor absoluto en $\\mathbb{R}$ es una norma, se tiene$$\\left|\\frac{1}{n}-\\frac{1}{m}\\right|\\le \\left|\\frac{1}{n}\\right|+\\left|\\frac{1}{m}\\right|\\le \\frac{2}{N}$$para todo $n,m\\ge N$. Por tanto, basta tomar $N&gt;\\frac{2}{\\varepsilon}$ para concluir que la sucesión es de Cauchy.",
+        "url": "/es/problem_cauchy_sequence1"
+      }
+      ,
+    
+      "es-lemma-convergent-implies-cauchy": {
+        "title": "Toda sucesión convergente es de Cauchy",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Si una sucesión de números reales es convergente entonces es de Cauchy.DemostraciónDenotemos por $(x_n)_{n\\in\\mathbb{N}}$ la sucesión. Consideremos un $\\varepsilon&gt;0$ arbitrario. Puesto que la sucesión es convergente existe un $c\\in \\mathbb{R}$ y un $N_{(\\varepsilon/2)}\\in\\mathbb{N}$ tales que\\begin{equation*}|x_n-c|&lt;\\frac{\\varepsilon}{2}\\;\\;\\hbox{para todo}\\;\\;n\\ge N_{(\\varepsilon/2)}.\\end{equation*}Por tanto, para todo $n,m\\ge N(\\varepsilon/2)$ se tiene que\\begin{equation*}|x_n-x_m|=|x_n-c+c-x_m|\\le|x_n-c|+|c-x_m|&lt;\\frac{\\varepsilon}{2}+\\frac{\\varepsilon}{2}=\\varepsilon\\end{equation*}a partir de la desigualdad triangular, de lo que se concluye el resultado.",
+        "url": "/es/lemma_convergent_implies_cauchy"
+      }
+      ,
+    
+      "es-definition-cauchy-sequence": {
+        "title": "Sucesión de Cauchy",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Se dice que una sucesión de números reales, $(x_n)_{n\\in\\mathbb{N}}$, es de Cauchy si para cada $\\varepsilon&gt;0$ existe un $N\\in\\mathbb{N}$ (que dependerá de $\\varepsilon$) tal que\\begin{equation*}|x_n-x_m|&lt;\\varepsilon\\end{equation*}para todo $n,m\\ge N$.",
+        "url": "/es/definition_cauchy_sequence"
+      }
+      ,
+    
+      "es-problem-convergent-sequence2": {
+        "title": "Sucesión Convergente. Problema 2",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demostrar que la sucesión $\\left(\\frac{2n^2-3}{3n^3+n^2-2n-1}\\right)_{n\\in\\mathbb{N}}$ converge a $0$ por medio del Teorema del Sándwich .SoluciónPara aplicar el Teorema del Sandwich hemos de encajar la sucesión entre dos sucesiones que converjan a $0$. Comencemos por encima:$$\\frac{2n^2-3}{3n^3+n^2-2n-1}\\le \\frac{2n^2}{3n^3+n^2-2n-1}=\\frac{2n^2}{3n^3+n^3-2+n^2+1-2n}=\\frac{2n^2}{2n^3+n^3-2+(n-1)^2}\\le \\frac{2n^2}{2n^3+n^3-2}\\le \\frac{2n^2}{2n^3}=\\frac{1}{n}$$para todo $n\\ge 2$. Observemos que la última desigualdad no es cierta para $n=1$, en cuyo caso se tiene $$\\frac{2n^2-3}{3n^3+n^2-2n-1}\\le\\frac{2n^2}{2n^3+n^3-2}=\\frac{2}{1}=2.$$Por tanto, la sucesión inicial está cercada por encima por la sucesión $\\left(z_n\\right)_{n\\in\\mathbb{N}}$ definida por$$z_1=2\\;\\;\\hbox{y}\\;\\;z_n=\\frac{1}{n}\\;\\;\\hbox{para todo}\\;\\;n\\ge 2,$$que converge a $0$. Por otra parte, para cercar la sucesión por debajo, observemos que tanto el numerador como el denominador son positivos para $n\\ge 2$. En efecto,$$2n^2-3\\ge 0\\;\\;\\hbox{para todo}\\;\\;n\\ge 2$$y, con un análisis similar al anterior,$$3n^3+n^2-2n-1=3n^3-2+(n-1)^2\\ge 3n^3-2\\ge 0\\;\\;\\hbox{para todo}\\;\\;n\\ge 1.$$Luego$$\\frac{2n^2-3}{3n^3+n^2-2n-1}\\ge 0\\;\\;\\hbox{para todo}\\;\\;n\\ge 2.$$Observemos que, para $n=1$, toma el valor$$\\frac{2n^2-3}{3n^3+n^2-2n-1}=-1.$$Por tanto, la sucesión inicial está cercada por debajo por la sucesión $\\left(x_n\\right)_{n\\in\\mathbb{N}}$ dada por$$x_1=-1\\;\\;\\hbox{y}\\;\\;x_n=0\\;\\;\\hbox{para todo}\\;\\;n\\ge 2,$$que también converge a $0$. Como$$x_n\\le \\frac{2n^2-3}{3n^3+n^2-2n-1} \\le z_n\\;\\;\\hbox{para todo}\\;\\;n\\ge 1$$y tanto $\\left(x_n\\right)_{n\\in\\mathbb{N}}$ como $\\left(z_n\\right)_{n\\in\\mathbb{N}}$ convergen a $0$, entonces la sucesión inicial converge a $0$ por el Teorema del Sándwich .",
+        "url": "/es/problem_convergent_sequence2"
+      }
+      ,
+    
+      "es-thm-second-morse": {
+        "title": "Segundo Teorema fundamental teoría de Morse",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Dada $f:M\\rightarrow \\mathbb{R}$ función diferenciable sobre $M$ variedad diferenciable de dimensión $m$. Supongamos que $a&lt;b$, $f^{-1}([a,b])$ es compacto y dentro de $f^{-1}([a,b])$ hay exactamente un punto crítico no degenerado de índice $k$. Entonces $M^b$ tiene el mismo tipo de homotopía que $M^a$ con una $k$-celda adjuntada. De hecho, existe un conjunto $e^k\\subset M^b$ difeomorfo a un disco $D^k$ tal que $M^a\\cup e^k\\subset M^b$ es un retracto de deformación de $M^b$.\tDemostración\tPor hacer",
+        "url": "/es/thm_second_morse"
+      }
+      ,
+    
+      "es-thm-morse-inequalities": {
+        "title": "Desigualdades de Morse",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Para cualquier función de Morse $f:M\\rightarrow \\mathbb{R}$ sobre una variedad diferenciable compacta de dimensión $m$ se tiene:\\begin{itemize}\\item $\\sum_{k=0}^n (-1)^{k+n}\\nu_k \\geq \\sum_{k=0}^n (-1)^{k+n} b_k(F)$ para todo $n=0,...,m$.\\item $\\sum_{k=0}^m (-1)^{k}\\nu_k=\\sum_{k=0}^m (-1)^{k} b_k(F)=\\chi(M)$\\end{itemize}Donde $\\nu_k$ denota el número de puntos críticos de índice $k$ y $b_k$ son los coeficientes de Betti.\tDemostraciónLa estructura a nivel homotópico que nos proporciona el Teorema de la descomposición celular   permite definir la homología celular usando como como la dimensión del complejo de cadenas el número de puntos críticos de los respectivos índices, esto es, $dim(\\underline{C}_k(M;F))=\\nu_k$. Consideramos la siguiente secuencia exacta:\\begin{equation*}0\\rightarrow ker( \\underline{\\partial}_k) \\rightarrow  \\underline{C}_k(M;F) \\xrightarrow{\\underline{\\partial}_k} im (\\underline{\\partial}_k)  \\rightarrow 0\\end{equation*}Se deduce:\\begin{equation*}\\nu_k=dim(\\underline{C}_k(M;F))=dim(im( \\underline{\\partial}_k))+dim(ker (\\underline{\\partial}_k))\\end{equation*}De forma análoga tomamos la siguiente secuencia exacta:\\begin{equation*}0\\rightarrow im( \\underline{\\partial}_{k+1}) \\rightarrow  ker (\\underline{\\partial}_k) \\rightarrow H_k(M;F) \\rightarrow 0\\end{equation*}Luego:\\begin{equation*}dim(ker (\\underline{\\partial}_k))= dim(im( \\underline{\\partial}_{k+1}))+b_k\\end{equation*}Juntando las igualdades obtenidas y despejando $dim(ker (\\underline{\\partial}_k))$:\\begin{align*}dim(ker (\\underline{\\partial}_k))= dim(im( \\underline{\\partial}_{k+1}))+b_k=\\nu_k - dim(im( \\underline{\\partial}_k))\\end{align*}De donde se deduce el segundo apartado: basta con hacer la suma alternada en la última igualdad.Para probar la primera parte consideramos la cadena truncada $\\underline{C}_k^{(n)}(M,F)=\\underline{C}_k$ si $k\\leq n$ y $0$ en otro caso. Repitiendo el argumento usado antes para probar el segundo apartado se tiene:\\begin{equation*}(-1)^n \\sum_{k=0}^n (-1)^k dim (\\underline{C}_k^{(n)}(M;F))=(-1)^n \\sum_{k=0}^n (-1)^k dim(H_k(\\underline{C}_*^{(n)}(M;F)))\\end{equation*}Pero $\\nu_k=dim (\\underline{C}_k^{(n)}(M;F))$ con $k=0,...,n$ y $b_k=dim(H_k(\\underline{C}_*^{(n)}(M;F)))$ con $k=0,...,n-1$.  $H_k(\\underline{C}_*(M;F))$ es un cociente de $H_k(\\underline{C}_*^{(n)}(M;F))$ luego:\\begin{equation*}\\nu_n -\\nu_{n-1}+...+(-1)^n\\nu_0 \\geq b_n-b_{n-1}+...+(-1)^n b_0\\end{equation*}",
+        "url": "/es/thm_morse_inequalities"
+      }
+      ,
+    
+      "es-thm-morse": {
+        "title": "Teorema descomposición celular",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Dada $f:M\\rightarrow \\mathbb{R}$ función de Morse sobre una variedad diferenciable compacta. Supongamos $M^t$ compactopara todo $t$ en $\\mathbb{R}$. Entonces, $M$ tiene el mismo tipo de homotopía de un CW-complejo $X$ con una celda de dimensión $k$ para cada punto crítico de índice $k$.\tDemostración\tPor hacer",
+        "url": "/es/thm_morse"
+      }
+      ,
+    
+      "es-thm-arrange": {
+        "title": "Ordenar puntos críticos",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Sea $f:W \\rightarrow \\mathbb{R}$ una función de Morse sobre $W$ variedad diferenciable y con una cantidad finitade puntos críticos $p_1,...,p_k$. Entonces, existe una función de Morse $g$ que aproxima a $f$ que tiene exactamente los mismos puntos críticos y cumple $g(p_i)\\neq g(p_j)$ para $i\\neq j$. \tDemostraciónSupongamos que $f(p_1)=f(p_2)$, tomamos un entorno $U$ de $p_1$ suficientemente pequeño de manera que solo contenga al punto crítico $p_1$ (lo podemos hacer pues son aislados). A continuación, tomamos un entorno más grande $N$ que contenga a $U$ y tal que su clausura no contenga más puntos críticos que $p_1$. Definimos $\\lambda:W\\rightarrow \\mathbb{R}$ función meseta cumpliendo $\\lambda\\equiv 1$ en $U$ y $\\lambda\\equiv 0$ fuera de $\\overline{N}$. Definimos $K$ como la clausura del conjunto $\\{x\\in W | 0&lt;\\lambda(x)&lt;1 \\}$ y elegimos una constante $c$ tal que $0\\leq c \\leq |grad (f)|$ sobre $K$. Elegimos otra constante tal que $grad (\\lambda) \\geq c'$ sobre $K$. Por último, tomando $\\epsilon &lt; c/c'$ y definiendo $f_1=f+\\epsilon\\lambda$  hemos acabado. $f_1$ es una función de Morse con exactamente los mismos puntos críticos que $f$ y $f_1(p_1)\\neq f_1(p_i)$ con $i\\neq 1$. En $K$:\\begin{equation*}|grad(f+\\epsilon\\lambda )|\\geq |grad(f)|-|\\epsilon grad(\\lambda )|&gt;c-\\epsilon c'&gt;0\\end{equation*}Mientras que fuera de $K$ se tiene $|grad(\\lambda )|=0$ luego $|grad(f+\\epsilon\\lambda )|= |grad(f)|$. Procediendo de manera inductiva se obtiene la función $g$ buscada.",
+        "url": "/es/thm_arrange"
+      }
+      ,
+    
+      "es-theorem-sandwich-sequences": {
+        "title": "Teorema del Sándwich",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Supongamos tres sucesiones de números reales, $(x_n)_{n\\in\\mathbb{N}}$, $(y_n)_{n\\in\\mathbb{N}}$ y $(z_n)_{n\\in\\mathbb{N}}$ que satisfacen\\begin{equation*}x_n\\le y_n\\le z_n\\;\\;\\hbox{para todo}\\;\\;n\\in\\mathbb{N}.\\end{equation*}Si existe un $c\\in\\mathbb{R}$ tal que\\begin{equation*}\\displaystyle\\lim_{n\\to\\infty} x_n=c=\\displaystyle\\lim_{n\\to\\infty} z_n\\end{equation*}entonces\\begin{equation*}\\displaystyle\\lim_{n\\to\\infty} y_n=c.\\end{equation*}DemostraciónDe acuerdo con la definición de convergencia hemos de probar que para cada $\\varepsilon&gt;0$ existe un $N\\in \\mathbb{N}$ tal que $|y_n-c|&lt;\\varepsilon$ para todo $n\\ge N$. Comencemos, pues, considerando un $\\varepsilon&gt;0$ arbitrario. Puesto que tanto $(x_n)_{n\\in\\mathbb{N}}$ como $(z_n)_{n\\in\\mathbb{N}}$ convergen a $c$, existen $N_x(\\varepsilon/3),N_z(\\varepsilon/3)\\in\\mathbb{N}$ de modo que$$|x_n-c|&lt;\\frac{\\varepsilon}{3}\\;\\;\\hbox{para todo}\\;\\;n\\ge N_x(\\varepsilon/3)$$y$$|z_n-c|&lt;\\frac{\\varepsilon}{3}\\;\\;\\hbox{para todo}\\;\\;n\\ge N_z(\\varepsilon/3).$$Así pues, si denotamos $N_y:=\\mathrm{max}\\,\\{N_x(\\varepsilon/3),N_z(\\varepsilon/3)\\}$, llegamos a que\\begin{equation*}|y_n-c|=|y_n-x_n+x_n-c|\\le |y_n-x_n|+|x_n-c|\\le |z_n-x_n|+|x_n-c|\\end{equation*}\\begin{equation*}=|z_n-c+c-x_n|+|x_n-c|\\le|z_n-c|+2|x_n-c|&lt;\\frac{\\varepsilon}{3}+\\frac{2\\varepsilon}{3}=\\varepsilon\\end{equation*}para todo $n\\ge N_y$. Notese que se ha utilizado sucesivas veces la desigualdad triangular, y que en la segunda desigualdad el hecho de que $|y_n-x_n|\\le |z_n-x_n|$ se obtiene a partir de que $x_n\\le y_n\\le z_n$.",
+        "url": "/es/theorem_sandwich_sequences"
+      }
+      ,
+    
+      "es-problem-convergent-sequence1": {
+        "title": "Sucesión Convergente. Problema 1",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demostrar que la sucesión $\\left(\\frac{1}{n^2+1}\\right)_{n\\in\\mathbb{N}}$ es convergente y hallar su límite.SoluciónEn primer lugar hemos de encontrar el candidato a límite. En este sencillo caso es fácil intuir que la sucesión va a converger a $c=0$. Probémoslo. Dado un $\\varepsilon&gt;0$ bastará encontrar un $N\\in\\mathbb{N}$ (que dependerá del $\\varepsilon$ inicial) para el que se cumpla$$\\left|\\frac{1}{n^2+1}-0\\right|=\\frac{1}{n^2+1}&lt;\\varepsilon\\;\\;\\hbox{para todo}\\;\\;n\\ge N.$$Ahora bien, si $n\\ge N$, se tiene$$\\frac{1}{n^2+1}\\ge \\frac{1}{N^2+1}\\ge\\frac{1}{2N}$$obteniéndose la ultima desigualdad a partir de$$0\\le (n-1)^2=n^2+1-2n.$$Por tanto, basta tomar $N&gt;\\frac{1}{2\\varepsilon}$ para concluir que$$\\displaystyle\\lim_{n\\to\\infty} \\frac{1}{n^2+1}=0.$$",
+        "url": "/es/problem_convergent_sequence1"
+      }
+      ,
+    
+      "es-lemma-limit-uniqueness": {
+        "title": "Unicidad de límite",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Si una sucesión de números reales, $(x_n)_{n\\in\\mathbb{N}}$ converge a $c_1\\in\\mathbb{R}$ y $c_2\\in\\mathbb{R}$, entonces $c_1=c_2$.DemostraciónPara probar la igualdad bastará con ver que $|c_1-c_2|&lt;2\\varepsilon$ para todo $\\varepsilon&gt;0$. Así pues, consideremos un $\\varepsilon&gt;0$ arbitrario. Dado que se tiene la convergencia tanto a $c_1$ como a $c_2$, existen $N_1,N_2\\in\\mathbb{N}$ tales que $$|x_n-c_1|&lt;\\varepsilon\\;\\;\\hbox{para todo}\\;\\;n\\ge N_1$$y$$|x_n-c_2|&lt;\\varepsilon\\;\\;\\hbox{para todo}\\;\\;n\\ge N_2.$$En particular, si denotamos $n_0:=\\mathrm{max}\\,\\{N_1,N_2\\}$, tenemos que$$|c_1-c_2|=|c_1-x_{n_0}+x_{n_0}-c_2|\\le |c_1-x_{n_0}|+|x_{n_0}-c_2|&lt;2\\varepsilon,$$valiéndonos de las propiedades de las normas.",
+        "url": "/es/lemma_limit_uniqueness"
+      }
+      ,
+    
+      "es-definition-convergent-sequence": {
+        "title": "Sucesión convergente",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Se dice que una sucesión de números reales, $(x_n)_{n\\in\\mathbb{N}}$, es convergente si existe un $c\\in\\mathbb{R}$ que satisface que para cada $\\varepsilon&gt;0$ existe un $N\\in\\mathbb{N}$ (que dependerá de $\\varepsilon$) tal que\\begin{equation*}|x_n-c|&lt;\\varepsilon \\end{equation*}para todo $n\\ge N$.En ese caso diremos que la sucesión converge a $c$ o, dado que $c$ es único (véase ), que $c$ es el límite de la sucesión, hecho que denotaremos porbegin{equation*}\\displaystyle\\lim_{n\\to\\infty} x_n=c.\\end{equation*}",
+        "url": "/es/definition_convergent_sequence"
+      }
+      ,
+    
       "es-example-infinity-norm": {
         "title": "Norma infinito",
         "kind": "example",
@@ -116,7 +236,7 @@
         "kind": "calculation",
         "author": "",
         "category": "es",
-        "content": "            Sea $\\psi_0(x)$ una función de densidad normalizada, es decir, $\\int_\\mathbb{R}\\vert\\psi_0(x)      ^2\\mathrm{d}x=1$. Entonces la solución a la Ecuación de Evolución de Schrödinger      está normalizada en todo tiempo $t$etc",
+        "content": "Sea $\\psi_0(x)$ una función de densidad normalizada, es decir, $\\int_\\mathbb{R}\\vert\\psi_0(x)\\vert^2\\mathrm{d}x=1$. Entonces la solución a la Ecuación de Evolución de Schrödinger$$\\mathrm{i}\\hbar\\frac{\\mathrm{d}}{\\mathrm{d}t}\\psi(x,t)=-\\frac{\\mathrm{d}^2}{\\mathrm{d}x^2}\\psi(x,t)\\\\\\psi(x,0)=\\psi_0(x)$$está normalizada en todo tiempo $t$DemostraciónPor hacer",
         "url": "/es/calculation_schrodinger_eq_one_dimension_unitary"
       }
       ,
@@ -126,7 +246,7 @@
         "kind": "visualisation",
         "author": "",
         "category": "es",
-        "content": "      \t\t\t      \t\t\t      \t\t\t",
+        "content": "",
         "url": "/es/visualisation_schrodinger_equation_one_dimension"
       }
       ,

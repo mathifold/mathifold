@@ -70,20 +70,20 @@
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/mathematical_models.html" style="text-decoration: none; color: black">
-		Modelos Matemáticos</a>
+		<a href="/topics/es/analysis.html" style="text-decoration: none; color: black">
+		Análisis</a>
 		</span>
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/physics.html" style="text-decoration: none; color: black">
-		Física</a>
+		<a href="/subjects/es/real_analysis.html" style="text-decoration: none; color: black">
+		Análisis Real</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/quantum_mechanics.html" style="text-decoration: none; color: black">
-		Mecánica Cuántica</a>
+		<a href="/chapters/es/convergence.html" style="text-decoration: none; color: black">
+		Convergencia</a>
 		</span>
 	
 	
@@ -97,7 +97,7 @@
 				
 				
 					
-					<a href="/es/visualisation_schrodinger_equation_one_dimension.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_convergent_sequence2.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,36 +123,55 @@
 
 	
 	
-	<a href="/es/exposition_first_approach_quantum_mechanics.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/theorem_sandwich_sequences.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/calculation_schrodinger_eq_one_dimension_unitary.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/definition_cauchy_sequence.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/visualisation.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Ecuación de Schrödinger</span>
+		Sucesión Convergente. Problema 2</span>
 </div>
 
-<div class="postbox pb_visualisation">
-	<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/FQeVeFB-uM8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+<div class="postbox pb_problem">
+	<div>
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/VN51FxSOBy8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+Demostrar que la sucesión $\left(\frac{2n^2-3}{3n^3+n^2-2n-1}\right)_{n\in\mathbb{N}}$ converge a $0$ por medio del Teorema del Sándwich <a href="/es/theorem_sandwich_sequences.html"><img src="/images/symb/theorem.svg" height="40" width="40" style="vertical-align:middle" /></a>.
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/T5yTERMOYSM?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+</div>
+<p><br /></p>
+
+<div class="bcblue boxdissap">
+Solución
+</div>
+<p><br /></p>
+
+<div class="dissap">
+Para aplicar el Teorema del Sandwich hemos de encajar la sucesión entre dos sucesiones que converjan a $0$. Comencemos por encima:
+$$\frac{2n^2-3}{3n^3+n^2-2n-1}\le \frac{2n^2}{3n^3+n^2-2n-1}=\frac{2n^2}{3n^3+n^3-2+n^2+1-2n}=\frac{2n^2}{2n^3+n^3-2+(n-1)^2}\le \frac{2n^2}{2n^3+n^3-2}\le \frac{2n^2}{2n^3}=\frac{1}{n}$$
+para todo $n\ge 2$. Observemos que la última desigualdad no es cierta para $n=1$, en cuyo caso se tiene 
+$$\frac{2n^2-3}{3n^3+n^2-2n-1}\le\frac{2n^2}{2n^3+n^3-2}=\frac{2}{1}=2.$$
+Por tanto, la sucesión inicial está cercada por encima por la sucesión $\left(z_n\right)_{n\in\mathbb{N}}$ definida por
+$$z_1=2\;\;\hbox{y}\;\;z_n=\frac{1}{n}\;\;\hbox{para todo}\;\;n\ge 2,$$
+que converge a $0$. Por otra parte, para cercar la sucesión por debajo, observemos que tanto el numerador como el denominador son positivos para $n\ge 2$. En efecto,
+$$2n^2-3\ge 0\;\;\hbox{para todo}\;\;n\ge 2$$
+y, con un análisis similar al anterior,
+$$3n^3+n^2-2n-1=3n^3-2+(n-1)^2\ge 3n^3-2\ge 0\;\;\hbox{para todo}\;\;n\ge 1.$$
+Luego
+$$\frac{2n^2-3}{3n^3+n^2-2n-1}\ge 0\;\;\hbox{para todo}\;\;n\ge 2.$$
+Observemos que, para $n=1$, toma el valor
+$$\frac{2n^2-3}{3n^3+n^2-2n-1}=-1.$$
+Por tanto, la sucesión inicial está cercada por debajo por la sucesión $\left(x_n\right)_{n\in\mathbb{N}}$ dada por
+$$x_1=-1\;\;\hbox{y}\;\;x_n=0\;\;\hbox{para todo}\;\;n\ge 2,$$
+que también converge a $0$. Como
+$$x_n\le \frac{2n^2-3}{3n^3+n^2-2n-1} \le z_n\;\;\hbox{para todo}\;\;n\ge 1$$
+y tanto $\left(x_n\right)_{n\in\mathbb{N}}$ como $\left(z_n\right)_{n\in\mathbb{N}}$ convergen a $0$, entonces la sucesión inicial converge a $0$ por el Teorema del Sándwich <a href="/es/theorem_sandwich_sequences.html"><img src="/images/symb/theorem.svg" height="40" width="40" style="vertical-align:middle" /></a>.
+</div>
 
 </div>
 

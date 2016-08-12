@@ -70,20 +70,20 @@
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/mathematical_models.html" style="text-decoration: none; color: black">
-		Modelos Matemáticos</a>
+		<a href="/topics/es/analysis.html" style="text-decoration: none; color: black">
+		Análisis</a>
 		</span>
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/physics.html" style="text-decoration: none; color: black">
-		Física</a>
+		<a href="/subjects/es/real_analysis.html" style="text-decoration: none; color: black">
+		Análisis Real</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/quantum_mechanics.html" style="text-decoration: none; color: black">
-		Mecánica Cuántica</a>
+		<a href="/chapters/es/convergence.html" style="text-decoration: none; color: black">
+		Convergencia</a>
 		</span>
 	
 	
@@ -97,7 +97,7 @@
 				
 				
 					
-					<a href="/es/visualisation_schrodinger_equation_one_dimension.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/lemma_convergent_implies_cauchy.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -123,36 +123,45 @@
 
 	
 	
-	<a href="/es/exposition_first_approach_quantum_mechanics.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/definition_cauchy_sequence.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/calculation_schrodinger_eq_one_dimension_unitary.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/problem_cauchy_sequence1.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/visualisation.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/lemma.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Ecuación de Schrödinger</span>
+		Toda sucesión convergente es de Cauchy</span>
 </div>
 
-<div class="postbox pb_visualisation">
-	<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/FQeVeFB-uM8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+<div class="postbox pb_lemma">
+	<div>
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/VN51FxSOBy8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+Si una sucesión de números reales es convergente entonces es de Cauchy.
 
-<div class="resource vid">
-<iframe width="768" height="432" align="middle" src="http://www.youtube.com/embed/T5yTERMOYSM?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+</div>
+<p><br /></p>
+
+<div class="bcblue boxdissap">
+Demostración
+</div>
+<p><br /></p>
+
+<div class="dissap">
+Denotemos por $(x_n)_{n\in\mathbb{N}}$ la sucesión. Consideremos un $\varepsilon&gt;0$ arbitrario. Puesto que la sucesión es convergente existe un $c\in \mathbb{R}$ y un $N_{(\varepsilon/2)}\in\mathbb{N}$ tales que
+\begin{equation*}
+|x_n-c|&lt;\frac{\varepsilon}{2}\;\;\hbox{para todo}\;\;n\ge N_{(\varepsilon/2)}.
+\end{equation*}
+Por tanto, para todo $n,m\ge N(\varepsilon/2)$ se tiene que
+\begin{equation*}
+|x_n-x_m|=|x_n-c+c-x_m|\le|x_n-c|+|c-x_m|&lt;\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon
+\end{equation*}
+a partir de la desigualdad triangular, de lo que se concluye el resultado.
+</div>
 
 </div>
 
