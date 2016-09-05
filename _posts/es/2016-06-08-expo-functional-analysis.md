@@ -17,7 +17,7 @@ type: post
 
 En el Álgebra Lineal básica se suele trabajar con espacios vectoriales de dimensión finita, como por ejemplo $\mathbb{R}^3$. A estos espacios se les puede dar una topología, claro. Pero en realidad no hay demasiadas elecciones que hacer: cualquier topología mínimamente sensata en $\mathbb{R}^3$ (es decir, que sea afín con las propiedades de $\mathbb{R}$, con su distancia y topología) coincidirá con la topología usual, que es la que proviene de la distancia euclídea, o de la topología producto, o de lo que queramos. Las formas lineales, por ejemplo $(x,y,z)\longmapsto x+2y+3z$, son siempre continuas y se comportan de maravilla.
 
-En dimensión infinita no estamos acostumbrados a trabajar, así que tomaremos un ejemplo: el espacio vectorial de las funciones continuas en el intervalo $[0,1]$, que se denota por $C[0,1]$. Nos lo podemos imaginar pintando un barbaridad de funciones
+En dimensión infinita no estamos acostumbrados a trabajar, así que tomaremos un ejemplo: el espacio vectorial de las funciones continuas en el intervalo $[0,1]$, que se denota por $C[0,1]$. Nos lo podemos imaginar pintando una barbaridad de funciones
 
 {% resource continuous_0_1.svg %}
 
@@ -45,7 +45,7 @@ $$p_0=1\\p_1=1+x\\p_2=1+x+\dfrac{x^2}{2!}\\p_3=1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3
 
 convergen uniformemente a $f$ en $[0,1]$. Pero esto es lo mismo que decir que $p_n\longrightarrow f$, y aquí está que $P[0,1]\subset C[0,1]$ no es cerrado, porque $f_n\in P[0,1]\,\forall n$ y $f\in C[0,1]\smallsetminus P[0,1]$. De hecho, esto revela una propiedad topológica intrínseca de $P[0,1]$: **no es un espacio completo**.
 
-Pues bien, todas estas consideraciones, lejos de ser una situación incómoda, dan pie a una rama de las matemáticas riquísima, el Ánalisis Funcional. Sus objetos de estudio son
+Pues bien, todas estas consideraciones, lejos de ser una situación incómoda, dan pie a una rama de las matemáticas riquísima, el Análisis Funcional. Sus objetos de estudio son
 
 1. Espacios vectoriales de dimensión infinita con topologías dadas por distancias compatibles (*espacios normados*)
 

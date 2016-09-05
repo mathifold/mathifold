@@ -97,7 +97,7 @@
 				
 				
 					
-					<a href="/es/problem_derivability1.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_derivability2.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -106,7 +106,7 @@
 				
 				
 					
-					<a href="/en/problem_derivability1.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_derivability2.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -126,41 +126,39 @@
 
 	
 	
-	<a href="/es/theorem_derivatives_trigonometric_functions.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/problem_derivability1.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/problem_derivability2.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/problem_derivability3.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Derivabilidad. Problema 1</span>
+		Derivabilidad. Problema 2</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
 Sean $f$, $g$ dos funciones diferenciables en $\mathbb{R}$. Determina la derivada de la siguiente función para todos los puntos de su dominio: <br /><br />
 
-$h(x) = \sqrt{f^2(x) + g^2(x)}$<br /><br />
+$h(x) = \arctan\left(\frac{f(x)}{g(x)}\right)$<br /><br />
 
 <div class="bcblue boxdissap">
 Solución
 </div><br />
 
 <div class="dissap">
-Necesitamos calcular la derivada de $h(x)$ en función de $x$. Entonces, es necesario tener en cuenta que tenemos una raíz cuadrada y dos funciones dependiendo de $x$ dentro (Recuerda las derivadas de la raíz cuadrada y de las potencias). Entonces, debemos aplicar la regla de la cadena.<br /><br />
+Necesitamos calcular la derivada de $h(x)$ en función de $x$. Entonces, es necesario tener en cuenta que tenemos una arcotangente de una división de dos funciones dependiendo de $x$ dentro. Entonces, debemos aplicar la regla de la cadena.<br /><br />
 
-$h'(x) = \dfrac{1}{2·\sqrt{f^2(x) + g^2(x)}}·(2·f(x)·f'(x) + 2·g(x)·g'(x))$<br /><br />
+$h'(x) = \dfrac{1}{1 + \left(\frac{f(x)}{g(x)}\right)^2}·\dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x)}$<br /><br /> 
 
-Finalmente, el número $2$ es sacado como factor común. Por lo tanto, la derivada queda así:<br /><br />
+Finalmente, podemos simplificar $g^2(x)$ haciendo lo siguiente:<br /><br />
 
-$h'(x) = \dfrac{f(x)·f'(x) + g(x)·g'(x)}{\sqrt{f^2(x) + g^2(x)}}$<br /><br />
-
-Ten en cuenta que $f(x)$ y $g(x)$ son funciones como $h(x)$ (dependen de $x$). Esa es la razón por el cual ponemos las derivadas de $f(x)$ y de $g(x)$ ($f'(x)$ y $g'(x)$).
+$h'(x) = \dfrac{1}{\dfrac{g^2(x) + f^2(x)}{g^2(x)}}·\dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x)} = \dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x) + f^2(x)}$<br /><br />
 
 </div>
 </div>

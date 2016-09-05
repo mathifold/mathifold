@@ -91,6 +91,46 @@
   window.store = {
     
     
+      "en-problem-mathematicalproofs5": {
+        "title": "Mathematical Proofs. Problem 5",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Given the real numbers $0 &lt; a &lt; b$ and $k&gt;0$ $\\dfrac{a}{b} &lt; \\dfrac{a+k}{b+k}$SolutionLet's prove it by using contradiction. Then, we assume the contrary: $\\dfrac{a}{b} \\ge \\dfrac{a+k}{b+k}$ Remember that\"$&lt;$\" is the contrary of \"$\\ge$\"We do the least common multiple. It yields: $a(b+k) \\ge (a+k)b$Therefore: $ab + ak \\ge ab + bk$    $ak \\ge bk$   $a \\ge b$ This relation is false because $a &lt; b$ Finally, it is proved by contradiction.\t",
+        "url": "/en/problem_mathematicalproofs5"
+      }
+      ,
+    
+      "en-problem-mathematicalproofs4": {
+        "title": "Mathematical proofs. Problem 4",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Given the real numbers $0 &lt; a &lt; b$, prove: $a &lt; \\sqrt{ab} &lt; \\dfrac{a + b}{2} &lt; b$SolutionWe know that $a, b &gt;0$ and $a &lt; b$. Here, in order to prove the statement, we should divide it by 3 parts:     ----- First part: $a &lt; \\sqrt{ab}$-----We want to prove it using direct proof: We begin with $a &lt; b$ and we multiply both parts by $a$:$a^2 &lt; ab$Then, we make the square root to both parts. It yields:$\\sqrt{a^2} &lt; \\sqrt{ab}$ ; $a &lt; \\sqrt{ab}$. We have proved the first part.    ----- Second part: $\\sqrt{ab} &lt; \\dfrac{a+b}{2}$-----Let's try to prove it using contradiction. Then, we assume the opposite, $\\sqrt{ab} \\ge \\dfrac{a+b}{2}$. Remember that \"$&lt;$\" is the contrary of\"$\\ge$\".\tAfter that, we square both parts: $\\left(\\dfrac{a+b}{2}\\right)^2 \\le \\left(\\sqrt{ab}\\right)^2$Using the notable products, we compute: $\\dfrac{a^2 + b^2 + 2ab}{4} \\le ab $  ;  $ a^2 + b^2 -4ab \\le 0 $  ; \"$ (a-b)^2 \\le 0 $\" It would be true if $a = b$, but it is false because $a &lt; b$. Furthermore, a non-zero number squared will be a positive number (greater than 0). Therefore, the second part is proved.    ----- Third part: $\\dfrac{a+b}{2} &lt; b $-----We want to prove it using direct proof, we know that $a &lt; b$ and $a,b &gt;0$:we begin with $a &lt; b$, and we sum \"$b$\" to both parts: $a + b &lt; b + b$Then, we divide by two: $\\dfrac{a+b}{2} &lt; \\dfrac{2b}{2} = b$ ; $\\dfrac{a+b}{2} &lt; b$ The third part is proven.Finally, since the three parts are proved, the whole statement is true.\t\t",
+        "url": "/en/problem_mathematicalproofs4"
+      }
+      ,
+    
+      "en-problem-derivability3": {
+        "title": "Derivability. Problem 3",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Let $f$, $g$ be two functions diﬀerentiable on $\\mathbb{R}$. Determine the derivative of the following function at all points in its corresponding domain: $h(x) = \\log\\left[g(x)·\\sin(f(x))\\right]$SolutionWe need to compute the derivative of $h(x)$ as a function of $x$. Then, it is necessary to take into account that we have the logarithm of a product of two functions depending on $x$ inside. Then, we need to apply the chain rule.$h'(x) = \\dfrac{1}{g(x)·\\sin(f(x))}·\\left[g'(x)·sin(f(x)) + cos(f(x))·f'(x)·g(x)\\right]$ Therefore:$h'(x) = \\dfrac{g'(x)·sin(f(x)) + cos(f(x))·f'(x)·g(x)}{g(x)·\\sin(f(x))}$",
+        "url": "/en/problem_derivability3"
+      }
+      ,
+    
+      "en-problem-derivability2": {
+        "title": "Derivability. Problem 2",
+        "kind": "problem",
+        "author": "",
+        "category": "en",
+        "content": "Let $f$, $g$ be two functions diﬀerentiable on $\\mathbb{R}$. Determine the derivative of the following function at all points in its corresponding domain: $h(x) = \\arctan\\left(\\frac{f(x)}{g(x)}\\right)$SolutionWe need to compute the derivative of $h(x)$ as a function of $x$. Then, it is necessary to take into account that we have an arctangent of a ratio of two functions depending on $x$ inside. Then, we need to apply the chain rule.$h'(x) = \\dfrac{1}{1 + \\left(\\frac{f(x)}{g(x)}\\right)^2}·\\dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x)}$ Finally, we can simplify $g^2(x)$ by doing the following:$h'(x) = \\dfrac{1}{\\dfrac{g^2(x) + f^2(x)}{g^2(x)}}·\\dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x)} = \\dfrac{f'(x)·g(x) - g'(x)·f(x)}{g^2(x) + f^2(x)}$",
+        "url": "/en/problem_derivability2"
+      }
+      ,
+    
       "en-problem-mathematicalproofs3": {
         "title": "Mathematical proofs. Problem 3",
         "kind": "problem",
@@ -288,6 +328,16 @@
         "category": "en",
         "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 3} \\dfrac{x^2-x+12}{x+3}$SolutionThe limit does not have indeterminate form. Therefore, for $x$, we take the value $3$. $\\displaystyle\\lim_{x\\longrightarrow 3} \\dfrac{x^2-x+12}{x+3} = \\dfrac{3^2-3+12}{3+3} = \\dfrac{18}{6} = 3$",
         "url": "/en/problem_limits1"
+      }
+      ,
+    
+      "en-exposition-functional-analysis": {
+        "title": "The goal of Functional Analysis",
+        "kind": "exposition",
+        "author": "",
+        "category": "en",
+        "content": "What is Functional Analysis about? It deals with certain strange fenomena having place when mixing infinite dimensional vector spaces with topology. Let’s examine some enlighting examples.In basic Linear Algebra it is customary to work with finite dimensional vector spaces, like $\\mathbb{R}^3$. These spaces may be given a topology, of course. But there aren’t many choices: any sensible topology in $\\mathbb{R}^3$ (that is, compatible with $\\mathbb{R}$, its distance and topology) will match the usual topology, the one coming from euclidean distance, or product topology, or whatever. Linear forms (such as $(x,y,z)\\longmapsto x+2y+3z$) are always continuous and behave perfectly.We’re not used to work in infinite dimension, so we’ll take the vector space of continuous functions in $[0,1]$, which is denoted by $C[0,1]$. We may imagine lots and lots of functions            As a vector space, its structure is standard; to endorse it a topology, supreme distance is usually used: given two functions $f$ and $g$, its distance is defined asand it is easy to check that it is indeed a well-behaved distance giving a topology to $C[0,1]$. No problem so far.To move into a more exotic setting let’s consider a vector subspace, which is also a topological subspace: $P[0,1]\\subset C[0,1]$ the subspace containing the functions that are restrictions of polynomials. So we may have the functions $1$, $x$, $x^2$, $x^7+3x^3-15$, and so on. Well, we could as well think in the space of polynomials; the restriction to $[0,1]$ is purely formal, and that’s exactly the hot point! Let $T$ be the linear map defined asEven when dealing with functions over $[0,1]$ this map is well-defined because polynomials are uniquely extended. Is $T$ linear? Dead linear! But it is not continuous. Indeed, let $p_n(x)=\\dfrac{x^n}{2^n}$ and $p(x)=0$            Look! $p_n\\longrightarrow p$ since $d(p_n,p)=|p(1)-p_n(1)|=|0-\\frac{1}{2^n}|=\\frac{1}{2^n}$. Now $T(p_n)=p_n(2)=1$ for all $n$ and $T(p)=p(2)=0$! That’s certainly a discontinuity. But wait, there are discontinuities at every point! Given any polynomial $q$, we may consider $q+p_n\\longrightarrow q$. And of course one may replace $2$ with another value outside $[0,1]$ and voilà! As many discontinuous linear maps as we want.Perhaps we should have chosen another topology? You may try to change the metric and the topology, but you will always have this sort of problems, at least if we keep them compatible with the vector space structure (this compatibility will be defined later as the metric being a norm)Next shocking result: $P[0,1]\\subset C[0,1]$ is not a closed subspace. In $\\mathbb{R}^3$, every vector subspace (planes, lines and points) are closed. No longer in infinite dimension! Let $f=e^x|_{[0,1]}\\in C[0,1]$. Due to the Taylor theorems, we know that the Taylor polynomialsuniformly converge to $f$ in $[0,1]$. That is: $p_n\\longrightarrow f$, hence $P[0,1]\\subset C[0,1]$ is not closed, since $f_n\\in P[0,1]\\,\\forall n$ and $f\\in C[0,1]\\smallsetminus P[0,1]$. Moreover, that reveals an intrinsic topological property of $P[0,1]$: it is not a complete space.Now surprisingly, all these problems are no real problems, but give rise to an extremely rich branch of Mathematics: Functional Analysis. The objects it deals with are mainly      Infinite dimension vector spaces topologized by compatible metrics (normed spaces)        especially those which become complete (Banach spaces)        and the continuous linear maps between them  ",
+        "url": "/en/exposition_functional_analysis"
       }
       ,
     

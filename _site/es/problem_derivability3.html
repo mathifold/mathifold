@@ -16,6 +16,27 @@
 
 
   
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": {
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: {
+	         linebreaks: { automatic: true }
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
 
 
@@ -42,6 +63,8 @@
 	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
 	
 	
+	
+		
 		
 		
 		<span style="font-size:35px;vertical-align:middle;">
@@ -56,7 +79,12 @@
 		<a href="/subjects/es/derivation_integration.html" style="text-decoration: none; color: black">
 		Derivación e Integración</a>
 		</span>
-	
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/derivatives.html" style="text-decoration: none; color: black">
+		Derivadas</a>
+		</span>
 	
 	
 
@@ -69,7 +97,7 @@
 				
 				
 					
-					<a href="/chapters/es/derivatives.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_derivability3.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -78,7 +106,7 @@
 				
 				
 					
-					<a href="/chapters/en/derivatives.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/en/problem_derivability3.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -89,36 +117,51 @@
 
 
 
-    <div style="position: relative; height: 70px;" align="center">
-<p style="font-size: 32px;">Derivadas</p>
+    
+
+
+
+
+
+
+	
+	
+	<a href="/es/problem_derivability2.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Derivabilidad. Problema 3</span>
 </div>
 
-<div style="position: relative;" align="center">
+<div class="postbox pb_problem">
+	<div>
+Sean $f$, $g$ dos funciones diferenciables en $\mathbb{R}$. Determina la derivada de la siguiente función para todos los puntos de su dominio: <br /><br />
 
+$h(x) = \log\left[g(x)·\sin(f(x))\right]$<br /><br />
 
+<div class="bcblue boxdissap">
+Solución
+</div><br />
 
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/definition_derivative.html"  class="post definition">Función Derivada</a></div>
+<div class="dissap">
+Necesitamos calcular la derivada de $h(x)$ en función de $x$. Entonces, es necesario tener en cuenta que tenemos el logaritmo del producto de dos funciones dependiendo de $x$ dentro. Entonces, debemos aplicar la regla de la cadena.<br /><br />
 
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/theorem_derivatives_polynomials.html"  class="post theorem">Derivadas de Polinomios</a></div>
+$h'(x) = \dfrac{1}{g(x)·\sin(f(x))}·\left[g'(x)·sin(f(x)) + cos(f(x))·f'(x)·g(x)\right]$<br /><br /> 
 
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/lemma_derivative_exponential_origin.html"  class="post lemma">Derivada de la Exponencial en el Origen</a></div>
+Por lo tanto:<br /><br />
 
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/theorem_derivatives_exponentials.html"  class="post theorem">Derivadas de Exponenciales</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/theorem_derivatives_logarithms.html"  class="post theorem">Derivadas de Logaritmos</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/lemma_derivative_trigonometric_origin.html"  class="post lemma">Derivada de las Func. Trig. en el Origen</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/theorem_derivatives_trigonometric_functions.html"  class="post theorem">Derivadas de Funciones Trigonométricas</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/problem_derivability1.html"  class="post problem">Derivabilidad. Problema 1</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/problem_derivability2.html"  class="post problem">Derivabilidad. Problema 2</a></div>
-
-	<div style="margin: 10px; position: relative; display: inline-block;"><a href="/es/problem_derivability3.html"  class="post problem">Derivabilidad. Problema 3</a></div>
-
+$h'(x) = \dfrac{g'(x)·sin(f(x)) + cos(f(x))·f'(x)·g(x)}{g(x)·\sin(f(x))}$<br /><br />
 
 </div>
+</div>
+
+</div>
+
+
 
 
 

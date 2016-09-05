@@ -10,5 +10,5 @@ title: Sobre Mathifold
 </div>
 
 <div class="plus">
-	<b>Mathifold</b> is a project whose goal is to make mathematics accesible to all areas of knowledge, rooted in gratuity, open collaboration and the best pedagogical tools
+	<b>Mathifold</b> is a project whose goal is to make mathematics accesible to all areas of knowledge, completely free, based on open collaboration and the best pedagogical tools
 </div>
