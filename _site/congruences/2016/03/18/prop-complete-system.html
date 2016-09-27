@@ -1,0 +1,23 @@
+<p><b>LEMA:</b> Sea <script type="math/tex">n</script> un número entero positivo y sea <script type="math/tex">R=\{r_1,r_2,\dots,r_m\}</script> un conjunto de números enteros. Sean <script type="math/tex">r'_1,r'_2,\dots,r'_m</script> respectivamente los restos de la división euclídea entre <script type="math/tex">n</script> de <script type="math/tex">r_1,r_2,\dots,r_m</script>. Entonces son equivalentes:</p>
+
+<ol>
+  <li>
+    <p><script type="math/tex">R</script> es un sistema completo de restos módulo <script type="math/tex">n</script>.</p>
+  </li>
+  <li>
+    <p><script type="math/tex">m\ge n</script> y para cada <script type="math/tex">i\ne j</script> se tiene <script type="math/tex">r_i\not\equiv r_j\ (\text{mod } n)</script>.</p>
+  </li>
+  <li>
+    <p>Los números <script type="math/tex">r'_1</script>, <script type="math/tex">r'_2</script>, <script type="math/tex">\dots</script>, <script type="math/tex">r'_m</script> coinciden, en cierto orden, con <script type="math/tex">0</script>, <script type="math/tex">1</script>, <script type="math/tex">\dots</script>, <script type="math/tex">n-1</script>.</p>
+  </li>
+</ol>
+
+<p><b>DEMOSTRACIÓN:</b> Haremos la demostración de forma cíclica.</p>
+
+<p><script type="math/tex">(1)\Rightarrow(2)</script>: Como cada uno de los números <script type="math/tex">0,1,\dots,n-1</script> son congruentes módulo <script type="math/tex">n</script> a algún elemento de <script type="math/tex">R</script> y dos de ellos no son congruentes entre sí, necesariamente <script type="math/tex">R</script> debe contener al menos <script type="math/tex">n</script> elementos, es decir, <script type="math/tex">m\ge n</script>.</p>
+
+<p>Además, si para algún <script type="math/tex">i\ne j</script> fuera <script type="math/tex">r_i\equiv r_j\ (\text{mod } n)</script>, entonces el número <script type="math/tex">r_i</script> sería simultáneamente congruente módulo <script type="math/tex">n</script> con <script type="math/tex">r_i</script> y <script type="math/tex">r_j</script>, contrario a la definición de sistema completo.</p>
+
+<p><script type="math/tex">(2)\Rightarrow(3)</script>: Si <script type="math/tex">i\ne j</script>, tenemos por hipótesis <script type="math/tex">r_i\not\equiv r_j\ (\text{mod } n)</script>, luego se tendrá <script type="math/tex">r'_i\ne r'_j</script>. Por tanto, los números <script type="math/tex">r'_1,r'_2,\dots,r'_m</script> son <script type="math/tex">m</script> números distintos entre los <script type="math/tex">n</script> números <script type="math/tex">0,1,\dots,n-1</script>. Como <script type="math/tex">m\ge n</script>, ambos sistemas de números deben coincidir.</p>
+
+<p><script type="math/tex">(3)\Rightarrow(1)</script>: Cada número entero es congruente con uno y sólo uno de los números <script type="math/tex">0,1,\dots,n-1</script>, que por hipótesis son los números <script type="math/tex">r'_1,r'_2,\dots,r'_m</script>. Como un número es congruente con <script type="math/tex">r'_i</script> si y sólo si es congruente con <script type="math/tex">r_i</script>, se concluye que cada número entero es congruente con uno y sólo uno de los números <script type="math/tex">r_1,r_2,\dots,r_m</script>, es decir, <script type="math/tex">R</script> es un sistema completo de restos módulo <script type="math/tex">n</script>.</p>

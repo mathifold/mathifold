@@ -1,0 +1,11 @@
+<p>Con el lenguaje de congruencias, podemos reinterpretar el Teorema de la ecuación diofántica lineal del siguiente modo:</p>
+
+<p><b>LEMA:</b> Sean <script type="math/tex">a</script>, <script type="math/tex">b</script>, <script type="math/tex">n</script> números enteros con <script type="math/tex">n>0</script> y <script type="math/tex">a\ne0</script>, y sea <script type="math/tex">d=\text{mcd}(a,n)</script>. Entonces la congruencia <script type="math/tex">ax\equiv b\ (\text{mod } n)</script> tiene solución si y sólo si <script type="math/tex">d\vert b</script>. Además, en este caso hay exactamente <script type="math/tex">d</script> soluciones módulo <script type="math/tex">n</script>.</p>
+
+<p><b>DEMOSTRACIÓN:</b> La congruencia tiene solución si y sólo si existe <script type="math/tex">x\in\mathbb{Z}</script> tal que <script type="math/tex">n\vert b-ax</script>, es decir, si y sólo si existen <script type="math/tex">x</script>, <script type="math/tex">y\in\mathbb{Z}</script> tales que <script type="math/tex">b-ax=ny</script>. Como el Teorema de la ecuación diofántica lineal afirma que la ecuación <script type="math/tex">ax+ny=b</script> tiene solución si y sólo si <script type="math/tex">d\vert b</script>, la primera parte queda demostrada. Además, el mismo teorema dice que las soluciones de la ecuación dependen de un parámetro <script type="math/tex">t</script> y son de la forma</p>
+
+<script type="math/tex; mode=display">\eqalign{
+x=x_0+{n\over d}t\cr
+y=y_0-{a\over d}t}</script>
+
+<p>Entonces las soluciones de la congruencia son los enteros <script type="math/tex">x</script> de la forma <script type="math/tex">x\equiv x_0\ (\text{mod } {n\over d})</script> que, por el lema anterior, da <script type="math/tex">d</script> soluciones módulo <script type="math/tex">n</script>.</p>

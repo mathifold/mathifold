@@ -16,8 +16,8 @@ type: post
 <div>
 Estudia la continuidad de la siguiente función: <br><br>
 
-$$f(x)= 
-\left\{ 
+$$f(x)=
+\left\{
 \begin{array}{c}
 \dfrac{\tan(x)}{\sqrt{x}} &  x > 0\\
 0 & x=0\\

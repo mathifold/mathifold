@@ -1,0 +1,24 @@
+<p>Hemos visto que toda congruencia de la forma <script type="math/tex">ax\equiv b\ (\text{mod } n)</script> es equivalente a varias congruencias de la forma <script type="math/tex">x\equiv x_0\ (\text{mod } n)</script> (o en realidad a una congruencia de la forma <script type="math/tex">x\equiv x_0\ (\text{mod }{n\over d})</script>). Por tanto, si queremos resolver varias congruencias lineales al mismo tiempo basta resolver un sistema de congruencias todas del tipo <script type="math/tex">x\equiv x_0\ (\text{mod } n)</script>. El siguiente teorema nos dice cómo resolver tales sistemas. El interés del resultado no será sólo el enunciado teórico (existencia de solución bajo ciertas hipótesis), sino también la demostración, que da un método efectivo de resolución.</p>
+
+<p><b>TEOREMA:</b> (Chino del Resto). Sean <script type="math/tex">n_1</script>, <script type="math/tex">n_2</script>, <script type="math/tex">\dots</script>, <script type="math/tex">n_r</script> números enteros positivos tales que <script type="math/tex">\text{mcd}(n_i,n_j)=1</script> si <script type="math/tex">i\ne j</script>. Entonces cualquier sistema de congruencias</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\eqalign{
+	x\equiv&\ a_1\ (\text{mod } n_1)\cr
+	x\equiv&\ a_2\ (\text{mod } n_2)\cr
+	\vdots&\cr
+	x\equiv&\ a_r\ (\text{mod } n_r)} %]]></script>
+
+<p>tiene solución, que además es única módulo <script type="math/tex">n_1n_2\dots n_r</script>.</p>
+
+<p><b>DEMOSTRACIÓN:</b> Para cada <script type="math/tex">i=1</script>, <script type="math/tex">2</script>, <script type="math/tex">\dots</script>, <script type="math/tex">r</script> definimos</p>
+
+<script type="math/tex; mode=display">N_i={n_1n_2\dots n_r\over n_i}=n_1n_2\dots n_{i-1}n_{i+1}\dots n_r</script>
+
+<p>Entonces se tendrá <script type="math/tex">\text{mcd}(n_i,N_i)=1</script>, ya que <script type="math/tex">\text{mcd}(n_i,n_j)=1</script> para cada factor <script type="math/tex">n_j</script> de <script type="math/tex">N_i</script>. Por tanto, existe <script type="math/tex">x_i\in\mathbb{Z}</script> tal que <script type="math/tex">N_ix_i\equiv a_i\ (\text{mod } n_i)</script>, ya que obviamente <script type="math/tex">\text{mcd}(n_i,N_i)\vert a_i</script>. Veamos que</p>
+
+<script type="math/tex; mode=display">x_0=N_1x_1+N_2x_2+\dots+N_rx_r</script>
+
+<p>es una solución del sistema de congruencias. En efecto, para cada <script type="math/tex">i=1,2,\dots,r</script> se tiene <script type="math/tex">N_j\equiv0\ (\text{mod } n_i)</script> si <script type="math/tex">i\ne j</script>, luego <script type="math/tex">x_0\equiv N_ix_i\equiv a_i\ (\text{mod } n_i)</script>.</p>
+
+<p>Para la unicidad, observemos en primer lugar que, si <script type="math/tex">x\equiv x_0\ (\text{mod } n_1n_2\dots n_r)</script>, es claro que <script type="math/tex">x</script> es también solución del sistema de congruencias. Recíprocamente, sea <script type="math/tex">x</script> una solución del sistema. Entonces <script type="math/tex">x\equiv x_0\ (\text{mod } n_i)</script> para cada <script type="math/tex">i=1</script>, <script type="math/tex">2</script>, <script type="math/tex">\dots</script>, <script type="math/tex">r</script>, luego <script type="math/tex">x\equiv x_0\ (\text{mod } n_1n_2\dots n_r)</script>.</p>

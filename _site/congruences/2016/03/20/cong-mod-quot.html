@@ -1,0 +1,18 @@
+<p>Si en cambio queremos pasar de una congruencia módulo <script type="math/tex">n</script> a congruencias módulo un único divisor de <script type="math/tex">n</script>, entonces el resultado es más complicado:</p>
+
+<p><b>LEMA:</b> Si <script type="math/tex">d\vert n</script> entonces <script type="math/tex">a\equiv b\ (\text{mod } {n\over d})</script> si y sólo si <script type="math/tex">a\equiv b+i{n\over d}\ (\text{mod } n)</script> para algún <script type="math/tex">i\in\{0,1,\dots,d-1\}</script>. Además, los números <script type="math/tex">b</script>, <script type="math/tex">b+{n\over d}</script>, <script type="math/tex">\dots</script>, <script type="math/tex">b+(d-1){n\over d}</script> son dos a dos incongruentes módulo <script type="math/tex">n</script>.</p>
+
+<p><b>DEMOSTRACIÓN:</b> Por una parte, es claro que, si <script type="math/tex">a\equiv b+i{n\over d}\ (\text{mod } n)</script>, entonces existe <script type="math/tex">c\in\mathbb{Z}</script> tal que <script type="math/tex">a-b-i{n\over d}=cn</script>. Por tanto, <script type="math/tex">a=b+{n\over d}(i+cd)</script>, luego <script type="math/tex">a\equiv b\ (\text{mod } {n\over d})</script>.</p>
+
+<p>Recíprocamente, si <script type="math/tex">a\equiv b\ (\text{mod } {n\over d})</script>, existe <script type="math/tex">t\in\mathbb{Z}</script> tal que <script type="math/tex">a=b+{n\over d}t</script>. Consideramos la división euclídea de <script type="math/tex">t</script> entre <script type="math/tex">d</script>:</p>
+
+<script type="math/tex; mode=display">t=qd+r</script>
+
+<p>con <script type="math/tex">0\le r\lt d</script>. Por tanto, podremos escribir</p>
+
+<script type="math/tex; mode=display">a=b+{n\over d}t=b+{n\over d}(qd+r)=b+nq+r{n\over d}</script>
+
+<p>De aquí se deduce <script type="math/tex">a\equiv b+r{n\over d}\ (\text{mod } n)</script> y, como <script type="math/tex">0\le r\lt d</script>, es una de las <script type="math/tex">d</script> congruencias que queríamos.</p>
+
+<p>Finalmente, los números <script type="math/tex">b,b+{n\over d},\dots,b+(d-1){n\over d}</script> son dos a dos incongruentes módulo <script type="math/tex">n</script> porque son un subconjunto de los números <script type="math/tex">b</script>, <script type="math/tex">b+1</script>, <script type="math/tex">\dots</script>, <script type="math/tex">b+(n-1)</script>, que es un sistema completo de
+restos módulo <script type="math/tex">n</script>.</p>

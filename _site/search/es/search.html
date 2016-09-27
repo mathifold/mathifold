@@ -91,6 +91,16 @@
   window.store = {
     
     
+      "es-problem-linear-system-1": {
+        "title": "Sistemas lineales",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Transformar el siguiente sistema de ecuaciones lineales en un sistema escalonado, discutirlo y resolverlo si tiene solución$$\\left\\{\\begin{array}{rrrrr} x_1 &amp; -2x_2 &amp; + x_3 &amp; = &amp; 7\\\\2x_1 &amp; -5x_2 &amp; +2x_3 &amp; = &amp; 6\\\\3x_1 &amp;  2x_2 &amp; - x_3 &amp; = &amp; 1\\\\\\end{array}\\right.$$SoluciónEl sistema tiene matriz ampliada$$(A|b)=\\left(\\begin{array}{ccc|c} 1 &amp; -2 &amp;  1 &amp; 7 \\\\ 2 &amp; -5 &amp;  2 &amp; 6 \\\\ 3 &amp;  2 &amp; -1 &amp; 1 \\\\\\end{array}\\right)$$Hacemos transformaciones elementales por filas:$$\\left(\\begin{array}{ccc|c} 1 &amp; -2 &amp;  1 &amp; 7 \\\\ 2 &amp; -5 &amp;  2 &amp; 6 \\\\ 3 &amp;  2 &amp; -1 &amp; 1 \\\\\\end{array}\\right)\\simeq_f\\left(\\begin{array}{ccc|c} 1 &amp; -2 &amp;  1 &amp; 7 \\\\ 0 &amp; -1 &amp;  0 &amp; -8 \\\\ 0 &amp;  8 &amp; -4 &amp; -20 \\\\\\end{array}\\right)\\simeq_f\\left(\\begin{array}{ccc|c} 1 &amp; -2 &amp;  1 &amp; 7 \\\\ 0 &amp; -1 &amp;  0 &amp; -8 \\\\ 0 &amp;  0 &amp; -4 &amp; -84 \\\\\\end{array}\\right)\\simeq_f\\left(\\begin{array}{ccc|c} 1 &amp; -2 &amp;  1 &amp; 7 \\\\ 0 &amp;  1 &amp;  0 &amp; 8 \\\\ 0 &amp;  0 &amp;  1 &amp; 21 \\\\\\end{array}\\right)\\simeq_f\\left(\\begin{array}{ccc|c} 1 &amp;  0 &amp;  1 &amp; 23 \\\\ 0 &amp;  1 &amp;  0 &amp; 8 \\\\ 0 &amp;  0 &amp;  1 &amp; 21 \\\\\\end{array}\\right)\\simeq_f\\left(\\begin{array}{ccc|c} 1 &amp;  0 &amp;  0 &amp; 2 \\\\ 0 &amp;  1 &amp;  0 &amp; 8 \\\\ 0 &amp;  0 &amp;  1 &amp; 21 \\\\\\end{array}\\right)$$Así pues el sistema de partida es equivalente al sistema$$\\left\\{\\begin{array}{rrrrr} x_1 &amp;       &amp;       &amp; = &amp; 2\\\\     &amp;   x_2 &amp;       &amp; = &amp; 8\\\\     &amp;       &amp;   x_3 &amp; = &amp; 21\\\\\\end{array}\\right.$$que es compatible determinado con solución $x_1=2$, $x_2=8$ y $x_3=21$. Por último, comprobemos que la solución efectivamente resuelve el sistema:$$\\left\\{\\begin{array}{rrrrrrr} 2       &amp; -2\\cdot 8 &amp; + 21       &amp; = &amp; 2-16+21 &amp; = &amp; 7\\\\2\\cdot 2 &amp; -5\\cdot 8 &amp; +2\\cdot 21 &amp; = &amp; 4-40+42 &amp; = &amp; 6\\\\3\\cdot 2 &amp;  2\\cdot 8 &amp; - 21       &amp; = &amp; 6+16-21 &amp; = &amp; 1\\\\\\end{array}\\right.$$",
+        "url": "/es/problem_linear_system_1"
+      }
+      ,
+    
       "es-problem-mathematicalproofs5": {
         "title": "Demostraciones matemáticas. Problema 5",
         "kind": "problem",
@@ -536,7 +546,7 @@
         "kind": "problem",
         "author": "",
         "category": "es",
-        "content": "Estudia la continuidad de la siguiente función: $$f(x)= \\left\\{ \\begin{array}{c}\\dfrac{\\tan(x)}{\\sqrt{x}} &amp;  x &gt; 0\\\\0 &amp; x=0\\\\e^{1/x} &amp; x&lt;0\\end{array}\\right.$$SoluciónLa función $f(x)$ está compuesta por tres funciones. Necesitamos encontrar en cada función los posibles puntos por el cual $f(x)$ no existe. En la primera función, $\\dfrac{\\tan(x)}{\\sqrt{x}}$ no es continua cuando $x = \\frac{\\pi}{2} + 2·\\pi·k$ where $k\\in  0, 1, 2...$ (no existe la tangente en esos puntos). Las demás funciones son continuas en sus dominios. Sin embargo, es necesario comprobar que las tres funciones tienen el mismo valor cuando $x = 0$, entonces tenemos que resolver los límites por la izquierda y la derecha y seguir la definición de continuidad. Entonces:$\\displaystyle\\lim_{x\\longrightarrow 0^+}\\dfrac{\\tan(x)}{\\sqrt{x}}$ Aplicamos la regla de L'Hôpital (el límite presenta indeterminación $\\frac{0}{0}$). $\\displaystyle\\lim_{x\\longrightarrow 0^+}\\dfrac{\\tan(x)}{\\sqrt{x}} = \\lim_{x\\longrightarrow 0^+}\\dfrac{1 + (\\tan(x))^2}{\\frac{1}{2·\\sqrt{x}}} = \\lim_{x\\longrightarrow 0^+}\\dfrac{2·\\sqrt{x}·(1 + (\\tan(x))^2)}{1} = 0$ $\\displaystyle\\lim_{x\\longrightarrow 0^-} e^{1/x} = e^{-\\infty} = \\frac{1}{e^{\\infty}} = 0$$f(0) = 0$ Finalmente, teniendo en cuenta la definción, ya que $\\displaystyle f(0) =  \\lim_{x\\longrightarrow 0^+}f(x) = \\lim_{x\\longrightarrow 0^-} f(x) = 0 $, la función es continua en $x = 0$. Por lo tanto, la función es continua en $\\mathbb{R}$ menos cuando $x = \\frac{\\pi}{2} + 2·\\pi·k$ where $k\\in  0, 1, 2...$.",
+        "content": "Estudia la continuidad de la siguiente función: $$f(x)=\\left\\{\\begin{array}{c}\\dfrac{\\tan(x)}{\\sqrt{x}} &amp;  x &gt; 0\\\\0 &amp; x=0\\\\e^{1/x} &amp; x&lt;0\\end{array}\\right.$$SoluciónLa función $f(x)$ está compuesta por tres funciones. Necesitamos encontrar en cada función los posibles puntos por el cual $f(x)$ no existe. En la primera función, $\\dfrac{\\tan(x)}{\\sqrt{x}}$ no es continua cuando $x = \\frac{\\pi}{2} + 2·\\pi·k$ where $k\\in  0, 1, 2...$ (no existe la tangente en esos puntos). Las demás funciones son continuas en sus dominios. Sin embargo, es necesario comprobar que las tres funciones tienen el mismo valor cuando $x = 0$, entonces tenemos que resolver los límites por la izquierda y la derecha y seguir la definición de continuidad. Entonces:$\\displaystyle\\lim_{x\\longrightarrow 0^+}\\dfrac{\\tan(x)}{\\sqrt{x}}$ Aplicamos la regla de L'Hôpital (el límite presenta indeterminación $\\frac{0}{0}$). $\\displaystyle\\lim_{x\\longrightarrow 0^+}\\dfrac{\\tan(x)}{\\sqrt{x}} = \\lim_{x\\longrightarrow 0^+}\\dfrac{1 + (\\tan(x))^2}{\\frac{1}{2·\\sqrt{x}}} = \\lim_{x\\longrightarrow 0^+}\\dfrac{2·\\sqrt{x}·(1 + (\\tan(x))^2)}{1} = 0$ $\\displaystyle\\lim_{x\\longrightarrow 0^-} e^{1/x} = e^{-\\infty} = \\frac{1}{e^{\\infty}} = 0$$f(0) = 0$ Finalmente, teniendo en cuenta la definción, ya que $\\displaystyle f(0) =  \\lim_{x\\longrightarrow 0^+}f(x) = \\lim_{x\\longrightarrow 0^-} f(x) = 0 $, la función es continua en $x = 0$. Por lo tanto, la función es continua en $\\mathbb{R}$ menos cuando $x = \\frac{\\pi}{2} + 2·\\pi·k$ where $k\\in  0, 1, 2...$.",
         "url": "/es/problem_continuity5"
       }
       ,
@@ -811,6 +821,36 @@
       }
       ,
     
+      "es-example-euclid-diophantine": {
+        "title": "Algoritmo de Euclides para la Ecuación Diofántica Lineal",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Retomemos el ejemplo anterior  para ver cómo resolver de forma práctica una ecuación como la del teorema anterior. Nos planteamos resolver la ecuación $72x+28y=8$. Como $\\text{mcd}(72,28)=4$ y $4\\vert 8$, la ecuación tiene solución. Además, vimos que podemos escribir $4=2\\cdot72-5\\cdot28$, por lo que multiplicando por $2$ obtenemos que $x_0=4,\\ y_0=-10$ es una solución. Las soluciones de la ecuación serán, por tanto, de la formacon $t\\in\\mathbb{Z}$. Obsérvese que este proceso puede interpretarse como encontrar todos los puntos de la recta $72x+28y=8$ del plano afín que tienen sus dos coordenadas enteras. El teorema de la ecuación diofántica lineal  nos da una caracterización de cuándo una recta afín dada por una ecuación implícita con coeficientes enteros tiene puntos con coordenadas enteras. Además, en caso afirmativo, los puntos de coordenadas enteras se pueden obtener dando valores enteros a una ecuación paramétrica (con coeficientes enteros) de la recta.",
+        "url": "/es/example_euclid_diophantine"
+      }
+      ,
+    
+      "es-corollary-linear-diophantine-equation": {
+        "title": "Ecuación diofántica lineal",
+        "kind": "corollary",
+        "author": "",
+        "category": "es",
+        "content": "Dados $a$, $b$, $c\\in\\mathbb{Z}$ y $d=\\text{mcd}(a,b)$, la ecuación $ax+by=c$ tiene solución si y sólo si $d\\vert c$. Además, si $(x_0,y_0)$ es una solución de la ecuación y $a$, $b$ no son simultáneamente nulos, el conjunto de soluciones se puede escribir como$$\\left.\\begin{array}{rrr}x &amp; = &amp; x_0+{b\\over d}t\\\\y &amp; = &amp; y_0-{a\\over d}t\\\\\\end{array}\\right.$$con $t\\in\\mathbb{Z}$.    Demostración    Que la ecuación tenga solución si y sólo si $d\\vert c$ (es decir, $c$ es un múltiplo de $d$) es una mera reformulación del Teorema de Bézout . Por otra parte, supongamos que tenemos una solución fija $(x_0,y_0)$, es decir, $c=ax_0+by_0$. El hecho de que $a$, $b$ no son simultáneamente cero quiere decir que $d\\ne0$, por lo que podemos dividir por $d$. Es claro entonces que los pares de la forma $(x_0+{b\\over d}t,y_0-{a\\over d}t)$ son solución de la ecuación.    Recíprocamente, si $(x,y)$ es una solución de la ecuación, entonces $ax+by=ax_0+by_0$, que es equivalente a $a(x-x_0)=b(y_0-y)$ o también  ${a\\over d}(x-x_0)={b\\over d}(y_0-y)$, por lo que ${a\\over d}\\vert {b\\over d}(y_0-y)$. Por las propiedades del máximo común divisor  se tiene $\\text{mcd}({a\\over d},{b\\over d})=1$, luego por el Lema de Euclides  llegamos a que ${a\\over d}\\vert y_0-y$, y así existe $t\\in\\mathbb{Z}$ tal que $y_0-y={a\\over d}t$, es decir, $y=y_0-{a\\over d}t$. Sustituyendo $y$ por este valor en ${a\\over d}(x-x_0)={b\\over d}(y_0-y)$ se obtiene $x=x_0+{b\\over d}t$, luego todas las soluciones son de la forma del enunciado.",
+        "url": "/es/corollary_linear_diophantine_equation"
+      }
+      ,
+    
+      "es-example-euclid-algorithm-bezout-theorem": {
+        "title": "Algoritmo de Euclides para el Teorema de Bézout",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Veamos cómo el Algoritmo de Euclides  sirve no sólo para calcular el máximo común divisor de dos números, sino también para obtenerlo como combinación lineal de ellos, como indica el Teorema de Bézout . Por ejemplo, supongamos que queremos calcular $\\text{mcd}(28,72)$ y escribirlo en función de $28$ y $72$. Efectuamos para ellos las sucesivas divisiones euclídeas:Hemos llegado por tanto a un resto $0$, luego el máximo común divisor de $72$ y $28$ es el resto anterior, que es $4$ (que es, por supuesto, el máximo común divisor obtenido a partir de la descomposición de $72$, $28$ enfactores primos). Si vamos despejando este $4$ desde la penúltima división hacia arriba obtendremos:lo que nos da la expresión de $4$ como combinación de $72$ y $28$, confirmando por tanto el Teorema de Bézout .",
+        "url": "/es/example_euclid_algorithm_bezout_theorem"
+      }
+      ,
+    
       "es-theorem-derivatives-polynomials": {
         "title": "Derivadas de Polinomios",
         "kind": "theorem",
@@ -818,6 +858,216 @@
         "category": "es",
         "content": "$(c)'=0$\tDemostración\t$f(x)=c$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{c-c}{h}=\\lim_{h\\longrightarrow 0} 0 = 0$$(x)'=1$\tDemostración\t$f(x)=x$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)-x}{h}=\\lim_{h\\longrightarrow 0} 1 = 1$$(x^2)'=2x$\tDemostración\t$f(x)=x^2$; $\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)^2-x^2}{h}=\\\\\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{x^2+2xh+h^2-x^2}{h}=\\lim_{h\\longrightarrow 0} 2x+h = 2x$$(x^n)'=nx^{n-1}$\tDemostración\t$f(x)=x^n$; \tSegún la expansión binomial   \t$(x+h)^n=x^n+nx^{n-1}h+\\binom{n}{2}x^{n-1}h^2+\\cdots+\\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n$  \tAsí pues,  \t$\\displaystyle\\lim_{h\\longrightarrow 0}\\dfrac{f(x+h)-f(x)}{h}=\\lim_{h\\longrightarrow 0}\\dfrac{(x+h)^2-x^2}{h}=\\\\\t\\displaystyle\\lim_{h\\longrightarrow 0} \\dfrac{x^n+nx^{n-1}h+\\binom{n}{2}x^{n-1}h^2+\\cdots+\\binom{n}{n-2}x^2h^{n-2}+nxh^{n-1}+h^n-x^n}{h}=\\\\\t\\displaystyle\\lim_{h\\longrightarrow 0} nx^{n-1}+\\binom{n}{2}x^{n-1}h+\\cdots+\\binom{n}{n-2}x^2h^{n-3}+nxh^{n-1}+h^{n-1} =\\\\\t nx^{n-1}$",
         "url": "/es/theorem_derivatives_polynomials"
+      }
+      ,
+    
+      "es-theorem-euclid-algorithm": {
+        "title": "Algoritmo de Euclides",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Para el cálculo del máximo común divisor no siempre es práctico usar la descomposición en números primos  (que requiere, por ejemplo, saber factorizar los números en cuestión). Usaremos en cambio muchas veces el método más clásico:Sean $a$, $b$ números enteros con $b&gt;0$. Definimos por recurrencia $r_{-1}=a$, $r_0=b$ y, supuestos definidos $r_{k-1},r_k$ con $r_k\\ne0$, definimos  $r_{k+1}$ como el resto de la división euclídea de de $r_{k-1}$ entre $r_k$. Entonces, existe algún $n$ tal que $r_n=0$, y se verifica además que $r_{n-1}=\\text{mcd}(a,b)$.    Demostración    De la definición por recurrencia se sigue que $0\\le r_{k+1}\\lt r_k$ para todo $k\\ge0$. Por tanto $r_0,r_1,\\dots$ forma una sucesión estrictamente decreciente de enteros no negativos, por lo que tiene que ocurrir $r_n=0$ para algún miembro de la sucesión. Por otra parte, si para cada $k=0$, $\\dots$, $n$ escribimos la división $r_{k-1}=q_kr_k+r_{k+1}$, se tendrá  $\\text{mcd}(r_{k-1},r_k)=\\text{mcd}(q_kr_k+r_{k+1},r_k)=\\text{mcd}(r_{k+1},r_k)$. Por tanto:    $$\\text{mcd}(a,b)=\\text{mcd}(r_{-1},r_0)=\\text{mcd}(r_0,r_1)=\\dots=\\text{mcd}(r_{n-1},r_n)=\\text{mcd}(r_{n-1},0)=r_{n-1}$$",
+        "url": "/es/theorem_euclid_algorithm"
+      }
+      ,
+    
+      "es-theorem-irrational-roots": {
+        "title": "Raíces irracionales",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Sean $a$, $b$, $c$ enteros positivos tales que $a^n=b^nc$ para algún entero positivo $n$. Entonces $c=d^n$ para algún $d\\in\\mathbb{Z}$. En particular, si $c$ no es la potencia $n$-ésima de un número entero, entonces $\\root n\\of c$ no es un número racional.    Demostración    Si $a=p_1^{k_1}p_2^{k_2}\\dots p_r^{k_r}$ es la descomposición de $a$ en factores primos, entonces la descomposición de $a^n$ en factores primos será    $$a^n=p_1^{nk_1}p_2^{nk_2}\\dots p_r^{nk_r}$$    Como $b\\vert a^n$, entonces  la descomposición de $b$ en factores primos será de la forma    $$b=p_1^{k'_1}p_2^{k'_2}\\dots p_r^{k'_r}$$    con $0\\le k'_i\\le nk_i$ para $i=1$, $2$, $\\dots$, $r$. De la misma forma, tendremos    $$c=p_1^{k''_1}p_2^{k''_2}\\dots p_r^{k''_r}$$    con $0\\le k''_i\\le nk_i$ para $i=1$, $2$, $\\dots$, $r$. Por tanto,    $$a^n=b^nc=p_1^{nk'_1+k''_1}p_2^{nk'_2+k''_2}\\dots p_r^{nk'_r+k''_r}$$    y, por la unicidad de la descomposición en primos, para cada $i=1$, $2$, $\\dots$, $r$ tendremos $nk_i=nk'_i+k''_i$. Por tanto, $k''_i=n(k_i-k'_i)\\ge0$, es decir, $k_i-k''_i\\ge0$. Luego el número $d=p_1^{k_1-k'_1}p_2^{k_2-k'_2}\\dots p_r^{k_r-k'_r}$ es un entero positivo que verifica $d^n=c$.    Para la última parte, si $\\root n\\of c$ fuera racional, se podía escribir $\\root n\\of c={a\\over b}$, con $a,b$ enteros positivos. Por tanto, $a^n=b^nc$, y por la parte ya demostrada llegaríamos a la contradicción que $c$ debe ser una potencia $n$-ésima de un número entero.",
+        "url": "/es/theorem_irrational_roots"
+      }
+      ,
+    
+      "es-corollary-divisors-product": {
+        "title": "Divisores de un producto",
+        "kind": "corollary",
+        "author": "",
+        "category": "es",
+        "content": "Sean $a,b$ enteros positivos tales que $\\text{mcd}(a,b)=1$. Entonces:1. Los divisores positivos de $ab$ son los productos de la forma $dd'$, con $d\\vert a$ y $d'\\vert b$ y $d$, $d'&gt;0$.2. Si $ab=c^n$ para algún $c\\in\\mathbb{Z}_{\\ge1}$, entonces $a=u^n$ y $b=v^n$ para ciertos $u,v\\in\\mathbb{Z}$.    Demostración    Como $\\text{mcd}(a,b)=1$, en las factorizaciones en factores primos    $$a=p_1^{k_1}p_2^{k_2}\\dots p_r^{k_r}$$    $$b=q_1^{l_1}q_2^{l_2}\\dots q_s^{l_s}$$    se tiene $p_i\\ne q_j$ para todo $i=1$, $2$, $\\dots$, $r$ y $j=1$, $2$, $\\dots$, $s$. Por tanto, la factorización en factores primos de $ab$ es    $$ab=p_1^{k_1}p_2^{k_2}\\dots p_r^{k_r}q_1^{l_1}q_2^{l_2}\\dots q_s^{l_s}$$    luego  los divisores positivos de $ab$ son los números de la forma $p_1^{k'_1}p_2^{k'_2}\\dots p_r^{k'_r}q_1^{l'_1}q_2^{l'_2}\\dots q_s^{l'_s}$, con $0\\le k'_i\\le k_i$ y $0\\le l'_j\\le l_j$, es decir, el producto de un divisor positivo de $a$ y un otro de $b$. Esto demuestra (1).    Para la parte (2), sea $p$ un primo que divide a $c$. En particular, $p\\vert c^n=ab=p_1^{k_1}p_2^{k_2}\\dots p_r^{k_r}q_1^{l_1}q_2^{l_2}\\dots q_s^{l_s}$. Entonces  se sigue que $p$ es un $p_i$ o un $q_j$, luego la factorización en primos de $c$ se escribe de la forma $c=p_1^{k'_1}p_2^{k'_2}\\dots p_r^{k'_r}q_1^{l'_1}q_2^{l'_2}\\dots q_s^{l'_s}$. Por tanto, $p_1^{k_1}p_2^{k_2}\\dots p_r^{k_r}q_1^{l_1}q_2^{l_2}\\dots q_s^{l_s}=ab=c^n= p_1^{nk'_1}p_2^{nk'_2}\\dots p_r^{nk'_r}q_1^{nl'_1}q_2^{nl'_2}\\dots q_s^{nl'_s}$. Por la unicidad del Teorema Fundamental de la Aritmética  se sigue que $k_i=nk'_i$ para $i=1$, $2$, $\\dots$, $r$ y $l_j=nl'_j$ para $j=1$, $2$, $\\dots$, $s$. Por tanto $a=(p_1^{k'_1}p_2^{k'_2}\\dots p_r^{k'_r})^n$ y $b=(q_1^{l'_1}q_2^{l'_2}\\dots q_s^{l'_s})^n$.",
+        "url": "/es/corollary_divisors_product"
+      }
+      ,
+    
+      "es-corollary-divisors-number": {
+        "title": "Divisores de un número",
+        "kind": "corollary",
+        "author": "",
+        "category": "es",
+        "content": "Sea $a=p_1^{a_1}p_2^{a_2}\\dots p_r^{a_r}$ la descomposición de un entero $a\\ge2$ en producto de números primos. Entonces los divisores positivos de $a$ son los números de la forma $p_1^{c_1}p_2^{c_2}\\dots p_r^{c_r}$, con $0\\le c_i\\le a_i$ para cada $i=1$, $2$, $\\dots$, $r$. Por tanto, si $b=p_1^{b_1}p_2^{b_2}\\dots p_r^{b_r}$, se tendrá $\\text{mcd}(a,b)=p_1^{c_1}p_2^{c_2}\\dots p_r^{c_r}$, con $ c_i=\\min\\{a_i,b_i\\}$ para cada $i=1$, $2$, $\\dots$, $r$.    Demostración    Es claro que los números de la forma $p_1^{c_1}p_2^{c_2}\\dots p_r^{c_r}$, con $0\\le c_i\\le a_i$, son divisores positivos de $a$. Recíprocamente, sea $d$ un divisor positivo de $a$. Existirá por tanto otro entero $q$, también positivo, tal que $a=qd$. Si $q=1$ ó $d=1$ el resultado es trivial, así que supondremos $q$, $d\\ge2$. Por el Teorema Fundamental de la Aritmética  podremos escribir $q={p'_1}^{a'_1}{p'_2}^{a'_2}\\dots{p'_s}^{a'_s}$ y $d={p''_1}^{a''_1}{p''_2}^{a''_2}\\dots{p''_t}^{a''_t}$. Por tanto, $a={p'_1}^{a'_1}{p'_2}^{a'_2}\\dots{p'_s}^{a'_s} {p''_1}^{a''_1}{p''_2}^{a''_2}\\dots{p''_t}^{a''_t}$ es una descomposición de $a$ en factores primos (en que puede haber primos repetidos). Por la unicidad demostrada en el Teorema Fundamental de la Aritmética  necesariamente los factores de ${p''_1}^{a''_1}{p''_2}^{a''_2}\\dots{p''_t}^{a''_t}$ son parte de los factores de $p_1^{a_1}p_2^{a_2}\\dots p_r^{a_r}$. Esto quiere decir que ${p''_1}^{a''_1}{p''_2}^{a''_2}\\dots{p''_t}^{a''_t}=p_1^{c_1}p_2^{c_2}\\dots p_r^{c_r}$, con $0\\le c_i\\le a_i$, lo que demuestra el resultado.",
+        "url": "/es/corollary_divisors_number"
+      }
+      ,
+    
+      "es-theorem-fundamental-theorem-arithmetic-unicity": {
+        "title": "Teorema Fundamental de la Aritmética: Unicidad",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Todo número entero $n\\ge2$ se puede escribir de forma única (salvo el orden de los factores) como producto finito de números primos.    Demostración    La existencia ya la habíamos demostrado anteriormente, así que sólo hay que demostrar la unicidad de la descomposición. Supongamos que tenemos dos descomposiciones $n=p_1p_2\\dots p_r=p'_1p'_2\\dots p'_s$ de $n$ en producto de números primos. Como $p'_s\\vert p'_1p'_2\\dots p'_s=p_1p_2\\dots p_r$,  $p_s$ divide a algún $p_i$. Reordenando los primos $p_1,p_2,\\dots,p_r$, podemos suponer $p'_s\\vert p_r$. Como $p_r$ es primo, se sigue $p_r=p'_s$. Por tanto, cancelando este factor en la igualdad anterior, tendremos $p'_s\\vert p'_1p'_2\\dots p'_{s-1}=p_1p_2\\dots p_{r-1}$. Podemos reiterar el proceso demostrando que cada $p'_j$ es un $p_i$ y cancelándolos en la igualdad. Nótese que no puede ocurrir que se acaben primero los $p'_j$ (es decir $r&gt;s$), ya que entonces llegaríamos a una igualdad $p_1p_2\\dots p_{r-s}=1$, lo que es imposible. De la misma forma, no se pueden acabar primero los $p_i$ (es decir $r\\lt s$) ya que en tal caso se llegaría al absurdo $p'_1p'_2\\dots p'_{s-r}=1$. Por tanto, el número de factores es el mismo, y éstos coinciden salvo el orden (además cada factor primo aparece el mismo número de veces).    En adelante escribiremos $n=p_1^{a_1}p_2^{a_2}\\dots p_r^{a_r}$, con $p_1,p_2,\\dots,p_r$ todos distintos entre sí salvo que se indique lo contrario.",
+        "url": "/es/theorem_fundamental_theorem_arithmetic_unicity"
+      }
+      ,
+    
+      "es-lemma-prime-divides-product": {
+        "title": "Primo y producto de números",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Sea $p$ un número primo. Si $a_1$, $a_2$, $\\dots$, $a_r$ son números enteros tales que $p\\vert a_1a_2\\dots a_r$, entonces existe $i=1$, $2$, $\\dots$, $r$ tal que $p\\vert a_i$.    Demostración    Supongamos, por reducción al absurdo, que, para cada $i=1$, $2$, $\\dots$, $r$, ocurriera $p\\nmid a_i$. Por las propiedades del Máximo Común Divisor  se tendría $\\text{mcd}(p,a_i)=1$, y entonces  $\\text{mcd}(p,a_1a_2,\\dots,a_r)=1$. Aplicando el Lema de Euclides  con $a=p$, $b=a_1a_2\\dots a_r$ y $c=1$, se llegaría a $p\\vert 1$, lo que es absurdo.",
+        "url": "/es/lemma_prime_divides_product"
+      }
+      ,
+    
+      "es-theorem-euclid-lemma": {
+        "title": "Lema de Euclides",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Dados $a$, $b$, $c\\in\\mathbb{Z}$ tales que $a\\vert bc$ y $\\text{mcd}(a,b)=1$, se tiene que entonces $a\\vert c$.    Demostración    Como $\\text{mcd}(a,b)=1$, por el Teorema de Bézout  existen $x$, $y\\in\\mathbb{Z}$ tales que $ax+by=1$. Por tanto    $$c=c\\cdot1=c(ax+by)=a(cx)+(bc)y$$    Como $a\\vert bc$, se sigue que $a$ divide a los dos sumandos de la derecha, luego $a\\vert c$.",
+        "url": "/es/theorem_euclid_lemma"
+      }
+      ,
+    
+      "es-corollary-division-coprime-numbers2": {
+        "title": "División de números coprimos (2)",
+        "kind": "corollary",
+        "author": "",
+        "category": "es",
+        "content": "Sean $a_1$, $a_2$, $\\dots$, $a_r$ números enteros tales que $\\text{mcd}(a_i,a_j)=1$ si $i\\ne j$. Entonces, dado un número entero $n$ tal que $a_i\\vert n$ para cada $i=1$, $2$, $\\dots$, $r$, se tiene que $a_1a_2\\dots a_r\\vert n$.    Demostración    Lo demostramos por inducción sobre el número de factores $r$. Si $r=2$, entonces es la proposición anterior . Supongamos entonces, por hipótesis de inducción, que sabemos que, si $r$ números coprimos dos a dos dividen a un entero, entonces el producto también divide a ese número. Veámoslo ahora para $r+1$ números coprimos entre sí.    Suponemos entonces que tenemos $a_1$, $a_2$, $\\dots$, $a_{r+1}$ tales que $\\text{mcd}(a_i,a_j)=1$ si $i\\ne j$ y supongamos $a_i\\vert n$ para cada $i=1$, $2$, $\\dots$, $r+1$. Por hipótesis de inducción, como en particular $a_i\\vert n$ para cada $i=1$, $2$, $\\dots$, $r$, se tiene $a_1a_2\\dots a_r\\vert n$. Además sabemos que $\\text{mcd}(a_1a_2\\dots a_r,a_{r+1})=1$, luego aplicando de nuevo la proposición anterior  con $a=a_1a_2\\dots a_r$ y $b=a_{r+1}$, se tiene $a_1a_2\\dots a_ra_{r+1}\\vert n$, como queríamos. ",
+        "url": "/es/corollary_division_coprime_numbers2"
+      }
+      ,
+    
+      "es-lemma-division-coprime-numbers1": {
+        "title": "División de números coprimos (1)",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Dados $a$, $b$, $n\\in\\mathbb{Z}$ tales que $\\text{mcd}(a,b)=1$ y $a\\vert n$, $b\\vert n$, se tiene que entonces $ab\\vert n$.    Demostración    De la hipótesis $a\\vert n$, $b\\vert n$ podemos escribir $n=ar=bs$, con $r$, $s\\in\\mathbb{Z}$. Por otra parte, como $\\text{mcd}(a,b)=1$, el Teorema de Bézout  implica que existen $x$, $y\\in\\mathbb{Z}$ tales que $ax+by=1$. Tenemos entonces    $$n=n\\cdot1=n(ax+by)=nax+nby=(bs)ax+(ar)by=ab(sx+ry)$$    por lo que $ab\\vert n$. ",
+        "url": "/es/lemma_division_coprime_numbers1"
+      }
+      ,
+    
+      "es-corollary-product-coprime-numbers2": {
+        "title": "Producto de números coprimos (2)",
+        "kind": "corollary",
+        "author": "",
+        "category": "es",
+        "content": "$\\text{mcd}(a_1a_2\\dots a_r,b)=1$ si y sólo si $\\text{mcd}(a_i,b)=1$ para todo $i=1$, $2$, $\\dots$, $r$.    Demostración    Si agrupamos $a_1a_2\\dots a_r=(a_1a_2\\dots a_{r-1})a_r$, por la proposición anterior  tendremos que $\\text{mcd}(a_1a_2\\dots a_r,b)=1$ si y sólo si $\\text{mcd}(a_1a_2\\dots a_{r-1},b)=1$ y $\\text{mcd}(a_r,b)=1$. Repetimos lo mismo para $a_1a_2\\dots a_{r-1}$ y tendremos ahora que $\\text{mcd}(a_1a_2\\dots a_{r-1},b)=1$ si y sólo si $\\text{mcd}(a_1a_2\\dots a_{r-2},b)=1$ y $\\text{mcd}(a_{r-1},b)=1$. Por tanto, $\\text{mcd}(a_1a_2\\dots a_r,b)=1$ si y sólo si $\\text{mcd}(a_1a_2\\dots a_{r-2},b)=1$, $\\text{mcd}(a_{r-1},b)=1$ y $\\text{mcd}(a_r,b)=1$. Está claro que, reiterando el procedimiento, se llega al enunciado.",
+        "url": "/es/corollary_product_coprime_numbers2"
+      }
+      ,
+    
+      "es-lemma-product-coprime-numbers1": {
+        "title": "Producto de números coprimos (1)",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Dados números enteros no nulos $a_1$, $a_2$, $b$, se tiene que $\\text{mcd}(a_1a_2,b)=1$ si y sólo si $\\text{mcd}(a_1,b)=1$ y $\\text{mcd}(a_2,b)=1$.    Demostración    Es claro, usando sólo divisibilidad, que si $\\text{mcd}(a_1a_2,b)=1$, entonces $a_1$ y $b$ no pueden tener un divisor común mayor de uno (porque sería un divisor común de $a_1a_2$ y $b$), ni tampoco $a_2$ y $b$ pueden tenerlo, por lo que $\\text{mcd}(a_1,b)=1$ y $\\text{mcd}(a_2,b)=1$.    Recíprocamente, si $\\text{mcd}(a_1,b)=1$ y $\\text{mcd}(a_2,b)=1$, por el Teorema de Bézout  se sigue que existen $x_1$, $y_1$, $x_2$, $y_2\\in\\mathbb{Z}$ tales que     $$a_1x_1+by_1=1$$    $$a_2x_2+by_2=1$$    Multiplicando ambas expresiones, se obtiene     $$a_1a_2x_1x_2+b(a_1x_1y_2+a_2x_2y_1+by_1y_2)=1$$    lo que implica, de nuevo por el Teorema de Bézout  $\\text{mcd}(a_1a_2,b)=1$.",
+        "url": "/es/lemma_product_coprime_numbers1"
+      }
+      ,
+    
+      "es-theorem-bezout-number-theory": {
+        "title": "Teorema de Bézout",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Dados $a,b\\in\\mathbb{Z}$, entonces el conjunto $\\{ax+by\\in\\mathbb{Z}: x,y\\in\\mathbb{Z}\\}$ es el conjunto de los múltiplos de $d=\\text{mcd}(a,b)$. En particular, $\\text{mcd}(a,b)=1$ si y sólo si existen $x,y\\in\\mathbb{Z}$ tales que $ax+by=1$.    Demostración    Podemos suponer que $a$ y $b$ son distintos de cero, ya que en caso contrario el resultado es inmediato. Obsérvese que, como $d\\vert a$, $b$, entonces  $d\\vert ax+by$ para todo $x$, $y\\in\\mathbb{Z}$. Basta entonces demostrar que cualquier múltiplo de $d$ se escribe de la forma $ax+by$, para lo cual es suficiente verlo para $d$.    Consideramos el conjunto $S=\\{ax+by: x,y\\in\\mathbb{Z},\\ ax+by\\ge1\\}$. Como $a^2+b^2&gt;0$, se tiene que $S$ es no vacío, ya que contiene al menos a $a^2+b^2$. Como $S\\subset\\mathbb{Z}_{\\ge1}$, se sigue que $S$ tiene un elemento mínimo, que será de la forma $d'=ax+by$. Queremos ver que $d'=d$, lo que terminaría la demostración.    Veamos primero que $d'\\vert a$. Para ello efectuamos el algoritmo de división  y tendremos $a=qd'+r$, con $0\\le r\\lt d'$. Escribimos entonces $r=a-qd'=a-q(ax+by)=a(1-qx)+b(-qy).$ Como $r\\lt d'$ y $d'$ es mínimo en $S$, no puede ser que $r$ esté en $S$, por lo que la igualdad anterior implica $r\\le 0$, luego $r=0$ y por tanto $d'\\vert a$. De forma análoga se demuestra $d'\\vert b$.    En segundo lugar, sea $c&gt;0$ tal que $c\\vert a$ y $c\\vert b$. Entonces  $c\\vert ax+by=d'$, y $c\\le d'$. Así, $d'$ es el mayor de los divisores comunes y por tanto $d'=d$.",
+        "url": "/es/theorem_bezout_number_theory"
+      }
+      ,
+    
+      "es-example-infinite-primes-4k3": {
+        "title": "Infinitos números primos de la forma 4k+3",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "El resultado anterior nos permite clasificar los números según el resto que den al dividir por un número dado. Por ejemplo, dividiendo por , es claro que todo entero es de alguna de las siguientes formas: , , , . Claramente, los números de la forma  nunca serán primos, y el único número primo de la forma  es . Por tanto, según el Teorema de Euclides  habrá infinitos primos de la forma  o de la forma  (comprobaremos más adelante que hay infinitos de cualquiera de las dos formas). Veamos de momento que existen infinitos números primos de la forma  (más en general, un teorema de Dirichlet asegura que, dados enteros ,  con , existen infinitos números primos de la forma ; la demostración de este teorema requiere técnicas muy avanzadas).Si suponemos que , , ,  son todos los números primos de la forma , consideramos el número . Como al menos algún  es , se tiene . Por el Teorema Fundamental de la Aritmética   será producto finito de números primos (necesariamente distintos de , porque  es impar). No pueden ser todos de la forma , porque entonces su producto  sería también de la forma , mientras que  es de la forma . Por tanto,  es divisible por algún número primo de la forma , es decir, es divisible por algún . Por las propiedades de divisibilidad  , lo que es absurdo.",
+        "url": "/es/example_infinite_primes_4k3"
+      }
+      ,
+    
+      "es-theorem-division-algorithm": {
+        "title": "Algoritmo de división",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Dados $a$, $b\\in\\mathbb{Z}$ con $b&gt;0$, existen $q$, $r\\in\\mathbb{Z}$ únicos tales que $a=qb+r$ y $0\\le r\\lt b$.    Demostración    Consideremos el conjunto $S=\\{a-xb: x\\in\\mathbb{Z},\\ a-xb\\ge0\\}$. Como para $x=-\\vert a\\vert $ se tiene $a-xb=a+\\vert a\\vert b\\ge a+\\vert a\\vert \\ge0$, el conjunto $S$ es no vacío. Así, $S$ tiene un elemento mínimo $r=a-qb$. Por definición, $r\\ge0$. Veamos que también $r\\lt b$. En efecto, si fuera $r\\ge b$, entonces tendríamos $0\\le r-b=a-(q+1)b$, luego $r-b$ sería un elemento de $S$ menor que $r$, lo que es absurdo. Esto demuestra la existencia de la división.    Para ver la unicidad, supongamos que tenemos dos divisiones distintas $qb+r=a=q'b+r'$ con $0\\le r,r'\\lt b$. Entonces se tendría $(q-q')b=r'-r$, es decir, $b\\vert r'-r$. Ahora bien, $r'-r\\lt b-0=b$ y $r-r'\\lt b-0=b$, por lo que $\\vert r'-r\\vert \\lt b=\\vert b\\vert $. Por las propiedades de la divisibilidad  $r'-r=0$, de donde se deduce $r=r'$ y $q=q'$.",
+        "url": "/es/theorem_division_algorithm"
+      }
+      ,
+    
+      "es-lemma-greatest-common-divisor-properties": {
+        "title": "Máximo común divisor - propiedades",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "El máximocomún divisor verifica las siguientes propiedades:1. $\\text{mcd}(a,an+b)=\\text{mcd}(a,b)$ para cualquier $n\\in\\mathbb{Z}$.2. Si $d=\\text{mcd}(a,b)$, entonces $\\text{mcd}({a\\over d},{b\\over d})=1$.3. Dado un número primo $p$ y un entero cualquiera $a$, entonces o bien $p\\vert a$ o bien $\\text{mcd}(a,p)=1$.    Demostración    Para demostrar la parte (1) bastará ver que los divisores comunes de $a$ y $an+b$ son los mismos que los divisores comunes de $a$ y $b$. Tomemos entonces un divisor $d\\vert a$ y veamos que $d\\vert an+b$ si y sólo si $d\\vert b$. En efecto, como $d\\vert a$, podremos escribir $a=da'$. Ahora sabemos  que $d$ divide a $an+b=d(a'n)+b$ si y sólo si $d$ divide a $b$.    Para la parte (2), si fuera $c=\\text{mcd}({a\\over d},{b\\over d})&gt;1$, entonces, como $c\\vert {a\\over d}$ y $c\\vert {b\\over d}$, se seguiría $cd\\vert a$ y $cd\\vert b$. Como $cd&gt;d$, se llega a contradicción.    La parte (3) es inmediata de la definición de número primo, ya que, por ser $\\text{mcd}(a,p)$ un divisor de $p$, se tiene que o bien $\\text{mcd}(a,p)=1$ o bien $\\text{mcd}(a,p)=p$ (en cuyo caso $p\\vert a$).",
+        "url": "/es/lemma_greatest_common_divisor_properties"
+      }
+      ,
+    
+      "es-definition-greatest-common-divisor": {
+        "title": "Máximo común divisor",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Se llama máximo común divisor de dos números $a$, $b\\in\\mathbb{Z}$ (y lo denotaremos por $\\text{mcd}(a,b)$) al mayor divisor positivo de $a$ y $b$. Dado que esta definición no tiene sentido si $a=b=0$ (ya que cualquier número positivo divide a $0$), se puede convenir en escribir $\\text{mcd}(0,0)=0$, puesto que $\\text{mcd}(a,0)=a$ para cualquier $a&gt;0$. Si $(a,b)\\ne(0,0)$, entonces es claro que $\\text{mcd}(a,b)\\ge1$. Diremos que dos números $a$ y $b$ son primos entre sí o coprimos si $\\text{mcd}(a,b)=1$.",
+        "url": "/es/definition_greatest_common_divisor"
+      }
+      ,
+    
+      "es-theorem-euclid": {
+        "title": "Teorema de Euclides",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Existen infinitos números primos    Demostración    Supongamos, por reducción al absurdo, que el conjunto de números primos es un conjunto finito $\\{p_1,p_2,\\dots,p_r\\}$. Sea el número $n=p_1p_2\\dots p_r+1$. Claramente $n\\ge2$ (ya que algún $p_i$ es $2$), por lo que el Teorema Fundamental de la Aritmética  implica que $n$ se escribe como producto de números primos. En particular, $n$ tiene algún factor primo, que necesariamente será de la forma $p_i$, para algún $i=1,2,\\dots,r$. Es decir, $p_i\\vert n=p_1p_2\\dots p_r+1$. Por las propiedades de divisibilidad  $p_i\\vert 1$, lo que es absurdo.",
+        "url": "/es/theorem_euclid"
+      }
+      ,
+    
+      "es-remark-fundamental-theorem-arithmetic-existence": {
+        "title": "Teorema Fundamental de la Aritmética: Existencia",
+        "kind": "remark",
+        "author": "",
+        "category": "es",
+        "content": "De momento no se puede demostrar que la descomposición en primos sea única. En efecto, si tenemos que , no podemos demostrar con la mera definición de número primo que las dos factorizaciones son iguales (salvo el orden de los factores). La estrategia sería decir que, por ejemplo,  divide a , es decir, al producto . Pero, aunque sepamos que si un número primo  divide a un producto de números  entonces divide a alguno de los factores, no podemos usarlo porque de momento sólo podemos usar la definición de número primo, que no implica nada de esto de forma inmediata.",
+        "url": "/es/remark_fundamental_theorem_arithmetic_existence"
+      }
+      ,
+    
+      "es-theorem-fundamental-theorem-arithmetic-existence": {
+        "title": "Teorema Fundamental de la Aritmética: Existencia",
+        "kind": "theorem",
+        "author": "",
+        "category": "es",
+        "content": "Todo número entero $n\\ge 2$ se puede escribir como producto finito de números primos.    Demostración    Lo demostraremos por inducción sobre $n\\in\\mathbb{Z}_{\\ge2}$. Claramente $2$ es primo, luego el teorema se verifica trivialmente para $n=2$. Supongamos ahora que tenemos demostrado el teorema para todos los números $2$, $3$, $\\dots$, $n$ y veamos que también es cierto para $n+1$.    Si $n+1$ fuera un número primo, de nuevo el resultado sería trivial. Queda entonces demostrarlo en el caso en que $n+1$ no es primo. En tal caso, $n+1$ tendría un divisor positivo $a$ distinto de $1$ y $n+1$. Es decir, existe $b\\in\\mathbb{Z}$ tal que $n+1=ab$. Como $n+1$ y $a$ son positivos, también lo es $b$. Además, como $a\\neq 1$, $n+1$, también se tiene $b\\neq 1$, $n+1$. De aquí se deduce  que $a$ y $b$ están en el conjunto $\\{2,3,\\dots,n\\}$ en que sabemos que es cierto el teorema. Por tanto, $a$ y $b$ se escriben como producto finito de números primos, de lo que se sigue que también $n+1=ab$ es producto finito de números primos, como queríamos demostrar.",
+        "url": "/es/theorem_fundamental_theorem_arithmetic_existence"
+      }
+      ,
+    
+      "es-definition-prime-number": {
+        "title": "Número primo",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un número primo es un entero  cuyos únicos divisores positivos son  y . Por el contrario, un número compuesto es un número entero  con algún divisor positivo , , y por tanto , con , .",
+        "url": "/es/definition_prime_number"
+      }
+      ,
+    
+      "es-lemma-divisibility-properties": {
+        "title": "Propiedades de la divisibilidad",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Dados enteros $a$, $b$, $c$, se tiene:1. Si $a\\vert b$ y $b\\neq 0$, entonces $\\vert a\\vert \\le\\vert b\\vert $.2. Si $c\\vert a$ y $c\\vert b$, entonces $c\\vert ax+by$ para todo $x$, $y\\in\\mathbb{Z}$.3. $a\\vert b$ si y sólo si $a\\vert ac+b$.4. Si $c\\neq 0$, entonces $a\\vert b$ si y sólo si $ac\\vert bc$.    Demostración    Demostremos primero (1). Si $a\\vert b$, entonces existe un entero $c$ tal que $b=ac$. Tomando valores absolutos, setiene $\\vert b\\vert =\\vert a\\vert \\vert c\\vert $. Como $b\\neq 0$, se tiene $c\\neq 0$, luego $\\vert c\\vert \\ge 1$. Por tanto, $\\vert b\\vert \\ge\\vert a\\vert $.    Para demostrar (2), vemos que $c\\vert a$ y $c\\vert b$ implica que existen enteros $a'$, $b'$ tales que $a=a'c$ y $b=b'c$. Por tanto, $ax+by=a'cx+b'cy=(a'x+b'y)c$, por lo que $c\\vert ax+by$.    La parte (3) es consecuencia de (2). En efecto, si $a\\vert b$, como obviamente $a\\vert a$, se tiene $a\\vert ac+b\\cdot1=ac+b$. Recíprocamente, si $a\\vert ac+b$, de nuevo por (2) se tiene $a\\vert (ac+b)\\cdot 1+a(-c)=b$.    Finalmente, para ver (4), por definición tenemos que $a\\vert b$ si y sólo si existe un entero $d$ tal que $b=ad$. Como $c\\neq 0$, esto es equivalente a $bc=acd$, que de nuevo equivale, por definición, a $ac\\vert bc$.",
+        "url": "/es/lemma_divisibility_properties"
       }
       ,
     
@@ -1250,7 +1500,7 @@
 
     <footer class="site-footer">
 
-<div style="height: 90px;">
+<div style="height: 80px; line-height: 110px; margin-left: 5px;">
 
 	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
