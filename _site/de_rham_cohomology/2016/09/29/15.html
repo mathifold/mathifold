@@ -1,0 +1,35 @@
+<p>En esta sección estudiaremos la cohomología de una variedad cociente.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_20.svg" /></div>
+
+<p>El término “variedad cociente” hace referencia a un procedimiento para construir variedades que hasta ahora no se ha mencionado. Se trata de tomar una variedad <script type="math/tex">M</script> sobre la que hacemos actuar un grupo <script type="math/tex">G</script>: a cada elemento <script type="math/tex">g\in G</script> le asignamos un difeomorfismo <script type="math/tex">\varphi_g:M\longrightarrow M</script>, de modo que la estructura de grupo en <script type="math/tex">G</script> sea compatible con la estructura del conjunto de difeomorfismos. Es un homomorfismo <script type="math/tex">\varphi:G\longrightarrow \text{Difeo}(M)</script>; en particular <script type="math/tex">e\longmapsto \text{id}_M</script>, <script type="math/tex">\varphi_{gg'}=\varphi_g\circ\varphi_g'</script> y <script type="math/tex">\varphi_{g^{-1}}=(\varphi_g)^{-1}</script>. Si <script type="math/tex">\varphi</script> es inyectiva (sólo el neutro de <script type="math/tex">G</script> va a <script type="math/tex">\text{id}_M</script>) la acción se dice propia. La acción es discontinua si en cada punto hay un entorno <script type="math/tex">U</script> que no se corta con las imágenes <script type="math/tex">\varphi_g(U)</script>, <script type="math/tex">g\neq e</script>. Para las acciones propias y discontinuas en variedades podemos definir la variedad cociente <script type="math/tex">\tilde{M}=M/G</script> consistente en identificar como uno todos los puntos relacionados por transformaciones <script type="math/tex">\varphi_g</script>. En el ejemplo del dibujo, <script type="math/tex">M=\mathbb{R} ^2</script>, <script type="math/tex">G=\mathbb{Z} \times\mathbb{Z}</script>, la acción viene definida por <script type="math/tex">\varphi_{(m,n)}(x,y)=(x+m,y+n)</script> y la variedad cociente es <script type="math/tex">\tilde{M}=\mathbb{T}</script>. Hay además una proyección natural <script type="math/tex">\pi:M\longrightarrow \tilde{M}</script>, <script type="math/tex">p\longmapsto [p]</script>.</p>
+
+<p>La situación es la siguiente: <script type="math/tex">\tilde{M}</script> variedad cociente de una acción propia y discontinua de un grupo <script type="math/tex">G</script> en una variedad <script type="math/tex">M</script>. Para cada <script type="math/tex">g</script> tenemos <script type="math/tex">\varphi_g:M\longrightarrow M</script> que induce <script type="math/tex">\varphi_g^*:H^k(M)\longrightarrow H^k(M)</script>. Por otro lado, de la proyección <script type="math/tex">\pi:M\longrightarrow \tilde{M}</script> se obtiene <script type="math/tex">\pi^*:H^k(\tilde{M})\longrightarrow H^k(M)</script>. Como <script type="math/tex">\pi\circ\varphi_g=\pi</script> para todo <script type="math/tex">g</script>, también es cierto que <script type="math/tex">\varphi_g^*\circ\pi^*=\pi^*</script>.</p>
+
+<div class="bluebox">
+    Si el grupo $$G$$ es finito, la aplicación $$\pi^*$$ es inyectiva y su imagen es
+
+	$$
+	H^k(M)^G=\{[\alpha]\in H^k(M)\quad\vert \quad\varphi_g^*[\alpha]=[\alpha]\quad\forall g\in G\}
+	$$
+</div>
+
+<p>Obsérvese que si el grupo <script type="math/tex">G</script> no es finito, el resultado anterior no es cierto, como con el plano y el toro: los grupos de cohomología de orden 1 y 2 de <script type="math/tex">\mathbb{R} ^2</script> son triviales y los de <script type="math/tex">\mathbb{T}</script> no. La demostración (que sólo expondrá las ideas básicas) seguirá tres pasos.</p>
+
+<p><b>1</b>  <script type="math/tex">\pi^*</script> es inyectiva. <script type="math/tex">\pi^*[\alpha]=0\Longrightarrow \exists \beta\vert \pi^*\alpha=\mathrm{d}\beta</script>. <script type="math/tex">\pi^*\alpha</script> es una forma compatible con las transformaciones de <script type="math/tex">G</script> (es decir, <script type="math/tex">\varphi_g^*(\pi^*\alpha)= (\pi\circ\varphi_g)^*\alpha=\pi^*\alpha</script>), pero <script type="math/tex">\beta</script> puede no serlo. Para ello hacemos una media: <script type="math/tex">\tilde{\beta}=\frac{1}{l}\sum_{g\in G}\varphi_g^*\beta</script>, donde <script type="math/tex">l</script> es el número de elementos de <script type="math/tex">G</script>. <script type="math/tex">\mathrm{d}\tilde{\beta}=\frac{1}{l}\sum_g\mathrm{d}\varphi_g^*\beta=\frac{1}{l}\sum_g\varphi_g^*\mathrm{d}\beta=\frac{1}{l}\sum_g\varphi_g^*\pi^*\alpha=\frac{1}{l}\sum_g\pi^*\alpha=\pi^*\alpha</script>. Y también <script type="math/tex">\varphi_g^*\tilde{\beta}=\frac{1}{l}\sum_{g'}\varphi_{gg'}^*\beta=\tilde{\beta}</script>, porque el sumatorio es el mismo. <script type="math/tex">\tilde{\beta}</script> compatible con <script type="math/tex">G</script>, eso quiere decir que <script type="math/tex">\tilde{\beta}=\pi^*\hat{\beta}</script> para algún <script type="math/tex">\hat{\beta}\in \Omega^{k-1}(\tilde{M})</script>. <script type="math/tex">\pi^*\alpha=\mathrm{d}\beta=\mathrm{d}\tilde{\beta}= \mathrm{d}\pi^*\hat{\beta}=\pi^*\mathrm{d}\hat{\beta}\Longrightarrow \alpha=\mathrm{d}\hat{\beta}\Longrightarrow[\alpha]=0</script>, por ser <script type="math/tex">\pi</script> difeomorfismo local.</p>
+
+<p><b>2</b> <script type="math/tex">\text{im }\pi^*\subset H^k(M)^G</script>. <script type="math/tex">\varphi_g^*(\pi^*[\alpha])= (\pi\circ\varphi_g)^*[\alpha]=\pi^*[\alpha]</script>.</p>
+
+<p><b>3</b>  <script type="math/tex">\text{im }\pi^*\supset H^k(M)^G</script>. <script type="math/tex">[\beta]\in H^k(M)^G\Longrightarrow \varphi_g^*[\beta]=[\beta]</script>. Para homogeneizar, tomamos <script type="math/tex">\tilde{\beta}=\frac{1}{l}\sum_g\varphi_g^*\beta</script>. <script type="math/tex">\tilde{\beta}</script> es cerrada: <script type="math/tex">\mathrm{d}\tilde{\beta}=\frac{1}{l}\sum_g\mathrm{d}\varphi_g^*\beta= \frac{1}{l}\sum_g\varphi_g^*\mathrm{d}\beta=0</script>. Como antes, es compatible con <script type="math/tex">G</script>, por lo que <script type="math/tex">\tilde{\beta}=\pi^*\hat{\beta}</script>. Y ahora <script type="math/tex">\pi^*[\hat{\beta}]=[\tilde{\beta}]=\frac{1}{l}\sum_g[\beta]=[\beta]</script>.</p>
+
+<p>Si el grupo <script type="math/tex">G</script> es finito, todos estos resultados son aplicables palabra por palabra en la cohomología con soporte compacto, aunque se requiere una comprobación cuidadosa:</p>
+
+<div class="bluebox">
+    $$H^k_c(\tilde{M})\simeq H^k_c(M)^G$$
+</div>
+
+<div class="yellowbox">
+    $$H_k(\tilde{M})\simeq H_k(M)^G$$
+</div>
+

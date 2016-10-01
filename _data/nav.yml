@@ -297,6 +297,10 @@ map:
             en: Bilinear and Quadratic Forms
             es: Formas Bilineales y Cuadráticas
           -
+            ident: multilinear_forms
+            en: Multilinear Forms
+            es: Formas Multilineales
+          -
             ident: moore_penrose_inverse
             en: Moore-Penrose Inverse
             es: Inversa de Moore-Penrose

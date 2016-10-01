@@ -1,0 +1,119 @@
+<p>Para adquirir una mayor destreza en el cálculo y comprensión de los grupos de cohomología, es necesario ahondar en el estudio de las cadenas con las mismas propiedades que el complejo de De Rham.</p>
+
+<p>Un complejo <script type="math/tex">C^\ast=\{\cdots \xrightarrow{} C^{k-1}\xrightarrow{\mathrm{d}^{k-1}}C^k \xrightarrow{\mathrm{d}^k} C^{k+1}\xrightarrow{}\cdots\}</script> es una cadena de grupos abelianos <script type="math/tex">C^k</script> y homomorfismos <script type="math/tex">\mathrm{d}^k</script> tales que <script type="math/tex">\mathrm{d}^k\circ\mathrm{d}^{k-1}=0</script> para todo <script type="math/tex">k</script>, es decir, <script type="math/tex">\text{im }\mathrm{d}^{k-1}\subset \text{ker }\mathrm{d}^k</script>.</p>
+
+<p>Asociado al complejo <script type="math/tex">C^\ast</script> se definen los grupos de cohomología <script type="math/tex">H^k(C^\ast)=\dfrac{\text{ker }\mathrm{d}^k}{\text{im }\mathrm{d}^{k-1}}</script>.</p>
+
+<p>En nuestro caso, si <script type="math/tex">M</script> es una variedad, <script type="math/tex">H^k(M)=H^k(\Omega^\ast(M))</script>, con <script type="math/tex">\Omega^\ast(M)</script> complejo de De Rham asociado a <script type="math/tex">M</script>. También para la homología hay un complejo <script type="math/tex">\Omega_\ast(M)</script> (con el operador frontera <script type="math/tex">\partial</script>) y unos grupos <script type="math/tex">H_k(M)</script> asociados (aunque ahora las flechas van en sentido decreciente; para el sentido ascendente se utiliza el prefijo <i>co-</i>).</p>
+
+<p>Un complejo <script type="math/tex">C^\ast</script> se dice que es una sucesión exacta si <script type="math/tex">\text{im }\mathrm{d}^{k-1}= \text{ker }\mathrm{d}^k</script> para todo <script type="math/tex">k</script>.</p>
+
+<p>Una sucesión exacta del tipo <script type="math/tex">0\xrightarrow{} A\xrightarrow{f}B\xrightarrow{g}C\xrightarrow{} 0</script> se llama sucesión exacta corta.</p>
+
+<p>Consideramos ahora las aplicaciones naturales entre complejos.</p>
+
+<p>Un homomorfismo de complejos <script type="math/tex">f:A^\ast\longrightarrow B^\ast</script> es una familia de aplicaciones <script type="math/tex">f^k:A^k\longrightarrow B^k</script> tales que <script type="math/tex">\mathrm{d}_B^k\circ f^k=f^{k+1}\circ\mathrm{d}_A^k</script>, es decir, el diagrama</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix{
+\cdots \ar[r] & A^{k-1} \ar[d]^{f^{k-1}} \ar[r]^{\mathrm{d}^{k-1}} & A^{k} \ar[d]^{f^{k}} \ar[r]^{\mathrm{d}^{k}} & A^{k+1} \ar[d]^{f^{k+1}} \ar[r] &\cdots\\
+\cdots \ar[r] & B^{k-1} \ar[r]^{\mathrm{d}^{k-1}} & B^{k} \ar[r]^{\mathrm{d}^{k}} & B^{k+1} \ar[r] &\cdots} %]]></script>
+
+<p>\begin{xy}
+\xymatrix {
+U \ar@/_/[ddr]_y \ar@{.&gt;}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x <br />
+ &amp; X \times_Z Y \ar[d]^q \ar[r]_p &amp; X \ar[d]_f <br />
+ &amp; Y \ar[r]^g &amp; Z
+}
+\end{xy}</p>
+
+<p>es conmutativo.</p>
+
+<p>En tal caso, <script type="math/tex">f:A^\ast\longrightarrow B^\ast</script> induce <script type="math/tex">f^k:H^k(A^\ast)\longrightarrow H^k(B^\ast)</script> aplicaciones lineales, definidas por <script type="math/tex">f^k[\alpha]=[f^k(\alpha)]</script>. La condición <script type="math/tex">\mathrm{d}_B^k\circ f^k=f^{k+1}\circ\mathrm{d}_A^k</script> asegura que la operación está bien definida.</p>
+
+<p>Por ejemplo, si <script type="math/tex">M</script> y <script type="math/tex">N</script> son variedades y <script type="math/tex">f:M\longrightarrow N</script> es una aplicación diferenciable, las aplicaciones <script type="math/tex">f^\ast:\Omega^k(N)\longrightarrow\Omega^k(M)</script> inducidas forman un homomorfismo de complejos <script type="math/tex">f^\ast:\Omega^\ast(N)\longrightarrow\Omega^\ast(M)</script>, del que se derivan aplicaciones <script type="math/tex">f^\ast:H^k(N)\longrightarrow H^k(M)</script>.</p>
+
+<p>Para la homología se cuenta con algo similar, pero de nuevo con un cambio de sentido en las flechas. <script type="math/tex">f:M\longrightarrow N</script> induce <script type="math/tex">f_\ast:\Omega_k(M)\longrightarrow\Omega_k(N)</script>, como efecto de reflejar los objetos de <script type="math/tex">M</script> en <script type="math/tex">N</script> mediante <script type="math/tex">f</script>, y asimismo se tiene <script type="math/tex">f_\ast:H_k(M)\longrightarrow H_k(N)</script>.</p>
+
+<p>Sean <script type="math/tex">f</script>, <script type="math/tex">g:A^\ast\longrightarrow B^\ast</script> homomorfismos de complejos. Una homotopía entre <script type="math/tex">f</script> y <script type="math/tex">g</script> es una familia de aplicaciones <script type="math/tex">K:A^k\longrightarrow B^{k-1}</script></p>
+
+<p><script type="math/tex">% <![CDATA[
+\xymatrix{
+\cdots \ar[r] & A^{k-1} \ar@<-1ex>[d]_{f} \ar@<1ex>[d]^{g} \ar[r]^{\mathrm{d}^{k-1}} & A^{k} \ar@<-1ex>[d]_{f} \ar@<1ex>[d]^{g} \ar[r]^{\mathrm{d}^{k}} \ar@{.>}[ld]_K & A^{k+1} \ar@<-1ex>[d]_{f} \ar@<1ex>[d]^{g} \ar[r] \ar@{.>}[ld]_K &\cdots\\
+\cdots \ar[r] & B^{k-1} \ar[r]^{\mathrm{d}^{k-1}} & B^{k} \ar[r]^{\mathrm{d}^{k}} & B^{k+1} \ar[r] &\cdots} %]]></script>
+con <script type="math/tex">\mathrm{d}_B\circ K+K\circ \mathrm{d}_A=f-g:A^k\longrightarrow B^k</script> para todo <script type="math/tex">k</script>.</p>
+
+<p>Si <script type="math/tex">f</script> y <script type="math/tex">g</script> son homótopos, las aplicaciones <script type="math/tex">f^k</script>, <script type="math/tex">g^k:H^k(A^\ast)\longrightarrow H^k(B^\ast)</script> coinciden.</p>
+
+<p>El sentido de esta definición se puede comprender muy bien con la homología. Supongamos que tenemos <script type="math/tex">f</script>, <script type="math/tex">g:M\longrightarrow N</script> homótopas (es decir, interpoladas por una familia continua de aplicaciones <script type="math/tex">h_t:M\longrightarrow N</script>, <script type="math/tex">h_0=f</script>, <script type="math/tex">h_1=g</script>). Para comprobar que <script type="math/tex">f_\ast</script>, <script type="math/tex">g_\ast:H_k(M)\longrightarrow H_k(N)</script> coinciden, se construye el <i>operador prisma</i> <script type="math/tex">P:\Omega_k(M)\longrightarrow \Omega_{k+1}(N)</script>, que se obtiene recorriendo la imagen de la homotopía:</p>
+
+<div class="resource img">
+            <img src="/images/images/3_1.svg" /></div>
+
+<p>Este operador cumple <script type="math/tex">\partial P=g_\ast-f_\ast-P\partial</script>, como se observa en el dibujo. Al aplicarse sobre un ciclo, el término <script type="math/tex">P\partial\sigma</script> desaparece y se obtiene <script type="math/tex">\partial P\sigma=g_\ast\sigma-f_\ast\sigma</script>; como <script type="math/tex">f_\ast\sigma</script> y <script type="math/tex">g_\ast\sigma</script> difieren en una frontera, definen el mismo elemento en <script type="math/tex">H_k(N)</script>.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_2.svg" /></div>
+
+<div class="yellowbox">
+Sean $$M$$ y $$N$$ variedades. Si $$f$$, $$g:M\longrightarrow N$$ son homótopas, las aplicaciones $$f_\ast$$, $$g_\ast:H_k(M)\longrightarrow H_k(N)$$ coinciden.
+</div>
+
+<p>Algo parecido se usará en <i>Homotopía y Lemas de Poincaré</i>.</p>
+
+<p>Una sucesión exacta de homomorfismos de complejos es una cadena de homomorfismos <script type="math/tex">0\xrightarrow{} A^\ast\xrightarrow{f}B^\ast\xrightarrow{g}C^\ast\xrightarrow{} 0</script> tal que <script type="math/tex">0\xrightarrow{} A^k\xrightarrow{f^k}B^k\xrightarrow{g^k}C^k\xrightarrow{} 0</script> es una sucesión exacta para cada <script type="math/tex">k</script>.</p>
+
+<p>Dada una sucesión exacta de homomorfismos de complejos, existe una aplicación (<i>de conexión</i> o <i>connecting</i>) <script type="math/tex">\mathrm{d}^\ast:H^k(C^\ast)\longrightarrow H^{k+1}(A^*)</script>, definida por 
+<script type="math/tex"></script>
+\mathrm{d}^\ast([c])=[(f^{k+1})^{-1}(\mathrm{d}_B^k((g^k)^{-1}(c)))]
+<script type="math/tex"></script>
+tal que el complejo
+<script type="math/tex"></script>
+\cdots\xrightarrow{}H^k(A^<em>)\xrightarrow{f^k}H^k(B^</em>)\xrightarrow{g^k}H^k(C^<em>) \xrightarrow{\mathrm{d}^\ast}H^{k+1}(A^</em>)\xrightarrow{f^{k+1}}\cdots
+<script type="math/tex"></script>
+es sucesión exacta.</p>
+
+<p>Hay en esta definición varias cosas que comprobar.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_3.svg" /></div>
+
+<p>En primer lugar, hay que ver que <script type="math/tex">\mathrm{d}^*</script> está bien definido: no depende del representante <script type="math/tex">c</script> ni de las preimágenes por <script type="math/tex">f^{k+1}</script> y <script type="math/tex">g^k</script> elegidas. Y después se ha de verificar la exactitud del complejo entre grupos de cohomología. No es difícil, pero requiere un cierto trabajo. Una demostración detallada se puede encontrar en [Hatcher, Sec 2.1].</p>
+
+<p>En vez de eso, vamos a intentar comprender el sentido de este resultado, sobre todo del operador <script type="math/tex">\mathrm{d}^*</script>. Cuando se tiene una sucesión exacta corta <script type="math/tex">0\xrightarrow{} A\xrightarrow{f}B\xrightarrow{g}C\xrightarrow{} 0</script>, la relación entre las imágenes y los núcleos nos dice que <script type="math/tex">f</script> es inyectiva, <script type="math/tex">g</script> sobreyectiva e <script type="math/tex">\text{im }f=\text{ker }g</script>, lo cual establece un isomorfismo <script type="math/tex">C\simeq B/A</script> si identificamos <script type="math/tex">A</script> con un subgrupo de <script type="math/tex">B</script> mediante <script type="math/tex">f</script>. Así, podemos ver la sucesión exacta de homomorfismos de complejos como un complejo <script type="math/tex">B^\ast=\{\cdots \xrightarrow{} B^{k-1}\xrightarrow{\mathrm{d}^{k-1}}B^k \xrightarrow{\mathrm{d}^k} B^{k+1}\xrightarrow{}\cdots\}</script> en el que cada <script type="math/tex">B^k</script> se proyecta (sobreyectivamente) sobre otro grupo <script type="math/tex">C^k</script> con núcleo <script type="math/tex">% <![CDATA[
+A^k<B^k %]]></script>. Si <script type="math/tex">\mathrm{d}(A^k)\subset A^{k+1}</script>, entonces las aplicaciones <script type="math/tex">\mathrm{d}</script> pueden definirse de modo natural sobre los grupos <script type="math/tex">C^k</script> formando un complejo <script type="math/tex">C^\ast=\{\cdots \xrightarrow{} C^{k-1}\xrightarrow{\mathrm{d}^{k-1}}C^k \xrightarrow{\mathrm{d}^k} C^{k+1}\xrightarrow{}\cdots\}</script>.</p>
+
+<p>Cuando pasamos a la cohomología, está claro que la cohomología de <script type="math/tex">A^*</script> se aplica sobre la de <script type="math/tex">B^*</script> y la de <script type="math/tex">B^*</script> sobre la de <script type="math/tex">C^*</script>. Sin embargo, aunque las proyecciones <script type="math/tex">B^k\longrightarrow C^k</script> son sobreyectivas, las aplicaciones <script type="math/tex">H^k(B^*)\longrightarrow H^k(C^*)</script> pueden no serlas. El mejor ejemplo está en las Secuencias de Mayer-Vietoris de homología. Dado <script type="math/tex">M</script> variedad unión de <script type="math/tex">U</script>, <script type="math/tex">V</script> abiertos, el producto de los grupos de homología de <script type="math/tex">U</script> y <script type="math/tex">V</script> se proyecta sobreyectivamente sobre la homología de <script type="math/tex">M</script>:</p>
+
+<div class="resource img">
+            <img src="/images/images/3_4.svg" /></div>
+
+<p>Sin embargo, hay ciclos en <script type="math/tex">M</script> que no son imagen de un par de ciclos: cualquier división en los abiertos <script type="math/tex">U</script> y <script type="math/tex">V</script> da cadenas con frontera. Así, el operador <script type="math/tex">\mathrm{d}^*</script> devuelve la frontera de aquellas cadenas que se proyectan sobre el ciclo de <script type="math/tex">M</script>. Esta frontera está en el núcleo de la proyección (lo que llamaríamos <script type="math/tex">A^{k+1}</script>), porque el ciclo de <script type="math/tex">M</script> no tiene frontera; es cerrada aunque quizás no exacta en <script type="math/tex">A^*</script>. De este modo, <i>la homología de <script type="math/tex">C^*=\Omega_*(M)</script> se aplica de modo natural sobre la homología de <script type="math/tex">A^*</script> con un orden de diferencia</i>.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_5.svg" /></div>
+
+<p>Algo parecido ocurrió en la cohomología de la esfera, donde se relacionó las 2-formas en <script type="math/tex">\mathbb{S}  ^2</script> con las 1-formas en <script type="math/tex">W=\mathbb{S}  ^2-\{N,S\}</script>. Estudiaremos con detalle estos procedimientos en <i>Secuencias de Mayer-Vietoris}.</i></p>
+
+<p>Terminamos con un resultado técnico que necesitaremos en las próximas secciones.</p>
+
+<p><b>Lema de los Cinco.</b> Dado el siguiente diagrama conmutativo entre grupos abelianos</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix{
+A \ar[r]^-{i} \ar[d]^-{\alpha} & B \ar[r]^-{j} \ar[d]^-{\beta} & C \ar[r]^-{k} \ar[d]^-{\gamma} & D \ar[r]^-{\l} \ar[d]^-{\delta} & E \ar[d]^-{\varepsilon}\\
+A' \ar[r]^-{i'} & B' \ar[r]^-{j'} &C' \ar[r]^-{k'} &D' \ar[r]^-{l'} &E',
+} %]]></script>
+
+<p>si las filas son exactas y las aplicaciones <script type="math/tex">\alpha</script>, <script type="math/tex">\beta</script>, <script type="math/tex">\delta</script> y <script type="math/tex">\varepsilon</script> son isomorfismos, entonces <script type="math/tex">\gamma</script> también es isomorfismo.</p>
+
+<p>De nuevo omitiremos la demostración. Como indicación, la prueba pasa por los dos puntos siguientes:</p>
+
+<ul>
+  <li>
+    <p><script type="math/tex">\gamma</script> es sobreyectiva si <script type="math/tex">\beta</script> y <script type="math/tex">\delta</script> son sobreyectivas y <script type="math/tex">\varepsilon</script> es inyectiva.</p>
+  </li>
+  <li>
+    <p><script type="math/tex">\gamma</script> es inyectiva si <script type="math/tex">\beta</script> y <script type="math/tex">\delta</script> son inyectivas y <script type="math/tex">\alpha</script> es sobreyectiva.</p>
+  </li>
+</ul>

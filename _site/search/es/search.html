@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="/css/symb.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
-  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
 
 
@@ -90,6 +89,146 @@
 <script>
   window.store = {
     
+    
+      "es-theorem-differentiable-partition-unit": {
+        "title": "Partición diferenciable de la unidad",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Sea $\\{U_i:i\\in I\\}$ una colección de abiertos de $M$ cuya unión es el total. Existe una familia $\\{\\rho_i:i\\in I\\}$ de funciones diferenciables definidas en $M$ que cumple las siguientes propiedades:- $0\\leqslant\\rho_i\\leqslant 1$ para todo $i$.- Cada punto $x\\in M$ tiene un entorno $W$ en el que se anulan todas las funciones $\\rho_i$ salvo una cantidad finita.- La suma $\\sum_i\\rho_i$ está bien definida y vale constantemente 1.- Para cada $i$, el soporte de $\\rho_i$ está contenido en $U_i$: $\\overline{\\{x\\in M\\vert \\rho_i(x)\\neq 0\\}}\\subset U_i$.DemostraciónPor hacer",
+        "url": "/es/theorem_differentiable_partition_unit"
+      }
+      ,
+    
+      "es-definition-exterior-derivative": {
+        "title": "Diferencial exterior",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Existe un único operador lineal $\\mathrm{d}:\\Omega^k(M)\\longrightarrow\\Omega^{k+1}(M)$ para cada $k$ (llamado diferencial exterior) definido por$\\mathrm{d}\\Bigl(\\displaystyle\\sum \\alpha_{i_1 i_2…i_k}\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}\\Bigr) = \\sum\\mathrm{d}\\alpha_{i_1 i_2…i_k}\\wedge\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$$= \\displaystyle\\sum\\sum_{j=1}^n \\dfrac{\\partial\\alpha_{i_1 i_2…i_k}}{\\partial x_j}\\mathrm{d} x_j\\wedge\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$en cada parametrización $\\varphi(U)$.Este operador lineal tiene las siguientes propiedades:  Si $f\\in \\Omega^0(M)$, $\\mathrm{d} f=Df$ diferencial ordinaria de funciones.  $\\mathrm{d}\\circ\\mathrm{d}=0$.  Si $\\alpha\\in\\Omega^k(M)$, $\\beta\\in\\Omega^l(M)$, $\\mathrm{d} (\\alpha\\wedge\\beta)=\\mathrm{d} \\alpha\\wedge \\beta+ (-1)^k\\alpha\\wedge\\mathrm{d} \\beta$Comprobemos estas propiedades (lo hacemos sólo para formas del tipo $f \\mathrm{d} x_I$, $\\mathrm{d} x_I=\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$; para el resto de formas se sigue por linealidad):      $\\mathrm{d}(f)=\\mathrm{d} f=Df$ ($\\mathrm{d} x_I$ es vacío).        $\\mathrm{d}^2(f\\mathrm{d} x_I)=\\mathrm{d}(\\sum_i \\mathrm{d}f{f}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I)=\\sum_j\\sum_i\\frac{\\partial^2 f}{\\partial x_j\\partial x_i}\\mathrm{d} x_j\\wedge\\mathrm{d} x_i\\wedge\\mathrm{d} x_I=0$, porque $\\frac{\\partial^2 f}{\\partial x_j\\partial x_i}=\\frac{\\partial^2 f}{\\partial x_i\\partial x_j}$ y $\\mathrm{d} x_j\\wedge\\mathrm{d} x_i=-\\mathrm{d} x_i\\wedge\\mathrm{d} x_j$.        $\\mathrm{d} ((f\\mathrm{d} x_I)\\wedge(g\\mathrm{d} x_J))=\\mathrm{d}(fg\\mathrm{d} x_I\\wedge\\mathrm{d} x_J)=\\sum_i\\mathrm{d}f{(fg)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J= g\\sum_i\\mathrm{d}f{(f)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J+ f\\sum_i\\mathrm{d}f{(g)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J=(\\sum_i\\mathrm{d}f{(f)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I)\\wedge(g\\mathrm{d} x_J)+(-1)^k (f\\mathrm{d} x_I)\\wedge(\\sum_i\\mathrm{d}f{(g)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_J)=(\\mathrm{d} (f\\mathrm{d} x_I))\\wedge(g\\mathrm{d} x_J)+(-1)^k(f\\mathrm{d} x_I)\\wedge(\\mathrm{d}(g\\mathrm{d} x_J))$, pues para intercambiar $\\mathrm{d} x_i$ y $\\mathrm{d} x_I$ son necesarias $k$ permutaciones.  Por último, si $f:M\\longrightarrow N$ es una aplicación diferenciable, se cumple la identidad $\\mathrm{d} _M\\circ f^*=f^*\\circ \\mathrm{d}_N$. En efecto: $\\mathrm{d} f^*(g\\mathrm{d} x_I)=\\mathrm{d}((g\\circ f)\\mathrm{d} f_I)=\\mathrm{d}(g\\circ f)\\wedge \\mathrm{d} f_I=f^*(\\mathrm{d} g)\\wedge \\mathrm{d} f_I=f^*(\\mathrm{d} g\\wedge \\mathrm{d} x_I)=f^*\\mathrm{d}(g\\mathrm{d} x_I)$, donde $\\mathrm{d} f_I=\\mathrm{d} f_{i_1}\\wedge…\\wedge\\mathrm{d} f_{i_k}$, $f_j=x_j\\circ f$ función definida en un abierto de $M$. Esto es importante; en particular nos asegura que si $f:M\\longleftrightarrow N$ es difeomorfismo, entonces hay un isomorfismo $f^*:\\Omega^k(N)\\longleftrightarrow\\Omega^k(M)$ para cada $k$, compatible con el operador $\\mathrm{d}$, y así, en lo que respecta al cálculo de formas (y más tarde a la cohomología), $M$ y $N$ se pueden considerar la misma variedad.",
+        "url": "/es/definition_exterior_derivative"
+      }
+      ,
+    
+      "es-exposition-exterior-derivative": {
+        "title": "Diferencial exterior",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "En cohomología singular , dada una $k$-forma $\\alpha$, ésta induce una $(k+1)$-forma $\\delta \\alpha$, su diferencial exterior. $\\delta \\alpha$ viene definida así: si $M$ es un objeto de dimensión $k+1$, su borde $\\partial M$ tiene dimensión $k$ y se toma $\\delta \\alpha(M)=\\alpha(\\partial M)$:            El operador $\\partial$ es el propio de la homología. El borde de una variedad ya no tiene borde, por lo que $\\partial^2=0$, y por esa razón, $\\delta ^2=0$.Queremos definir el operador $\\mathrm{d}$ llevando la construcción de $\\delta$ a nuestro contexto de variedades diferenciables. Dada una $k$-forma diferencial $\\alpha$, debemos definir su diferencial exterior, la $(k+1)$-forma $\\mathrm{d} \\alpha$. Vamos a repetir el proceso anterior a nivel infinitesimal:            Sea $f\\in \\Omega^0(M)=C^\\infty(M)$; definimos $\\mathrm{d} f$ como se hizo anteriormente: la 1-forma que a cada vector $v\\in T_p M$ asigna el grado de aumento de $f$ en la dirección de $v$, o más técnicamente, $\\mathrm{d} f(v)=Df_p(v)$. Con esta definición, $\\mathrm{d} f(v)\\approx f(q)-f(p)$, suponiendo que, infinitesimalmente, $q$ es el punto final de $v$.Para $k=1$: sea $\\alpha=f\\mathrm{d} x+g\\mathrm{d} y$ en $\\mathbb{R} ^2$, $f$, $g:\\mathbb{R} ^2\\longrightarrow \\mathbb{R} $.            y esto nos conduce a definir $\\mathrm{d} \\alpha=(\\frac{\\partial g}{\\partial x}-\\frac{\\partial f}{\\partial y})\\mathrm{d} x\\wedge\\mathrm{d} y$.Si tenemos $\\alpha=f\\mathrm{d} y\\wedge\\mathrm{d} z+g\\mathrm{d} z\\wedge\\mathrm{d} x+h\\mathrm{d} x\\wedge\\mathrm{d} y$ en $\\mathbb{R} ^3$, con las mismas ideas anteriores deberíamos definir $\\mathrm{d} \\alpha=(\\frac{\\partial f}{\\partial x}+\\frac{\\partial g}{\\partial y}+\\frac{\\partial h}{\\partial z})\\mathrm{d} x\\wedge\\mathrm{d} y\\wedge\\mathrm{d} z$.",
+        "url": "/es/exposition_exterior_derivative"
+      }
+      ,
+    
+      "es-exposition-differentiable-map": {
+        "title": "Aplicación diferenciable",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Consideramos ahora aplicaciones entre variedades.            Una aplicación $f:M\\longrightarrow N$, con $M$ y $N$ variedades de dimensiones $m$ y $n$, es diferenciable si dado un punto $p$ y parametrizaciones $\\varphi$, $\\psi$ en $p$ y $f(p)$, la aplicación inducida $\\psi^{-1}\\circ f\\circ\\varphi$ entre abiertos de $\\mathbb{R} ^m$ y $\\mathbb{R} ^n$ es diferenciable en el sentido usual. Son las aplicaciones apropiadas entre variedades. Cuando $f$ es diferenciable, ésta induce una aplicación lineal $Df_p:T_p M\\longrightarrow T_{f(p)}N$ (diferencial de $f$) para cada punto $p$, reflejo de la diferencial $D(\\psi^{-1}\\circ f\\circ\\varphi)_{\\varphi^{-1}(p)}:\\mathbb{R} ^m \\longrightarrow \\mathbb{R} ^n$. En coordenadas, $ Df_p(\\frac{\\partial}{\\partial x_i})=\\sum_j \\frac{\\partial f_j}{\\partial x_i} \\frac{\\partial}{\\partial y_j}$, donde $f_j=y_j\\circ f$. Un difeomorfismo es una biyección $f:M\\longleftrightarrow N$ que es diferenciable en los dos sentidos; las diferenciales de $f$ y $f^{-1}$ son isomorfismos entre espacios tangentes de dimensión $n$.",
+        "url": "/es/exposition_differentiable_map"
+      }
+      ,
+    
+      "es-exposition-differentiable-manifolds-boundary": {
+        "title": "Variedades diferenciables con borde",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Es necesario introducir también el concepto de variedad con borde. La idea es la misma que antes, pero ahora permitimos que algunos puntos (del borde) tengan entornos distintos, difeomorfos a abiertos de $\\mathbb{R} ^n_+=\\{(x_1,x_2,…,x_n)\\vert x_1\\geqslant 0\\}$. El borde se denota por $\\partial M$; si $p\\in \\partial M$, tenemos una aplicación diferenciable e inyectiva $\\varphi:U \\longrightarrow M$ que cubre $p$, con $U\\subset\\mathbb{R} ^n_+$ abierto y $\\varphi^{-1}(p)=(0,x_2(p),…,x_n(p))$. Es fácil ver, de estas parametrizaciones del borde, que $\\partial M$ es una variedad diferenciable (sin borde) de dimensión $n-1$.            ",
+        "url": "/es/exposition_differentiable_manifolds_boundary"
+      }
+      ,
+    
+      "es-definition-differentiable-manifolds": {
+        "title": "Variedades diferenciables",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una variedad diferenciable de dimensión $n$ es un par $(M,(\\varphi_\\alpha,U_\\alpha)_{\\alpha \\in A})$ donde $M$ es un conjunto y $\\{(\\varphi_{\\alpha}, U_{\\alpha})\\}_{\\alpha \\in A}$ es una colección de aplicaciones $\\varphi_\\alpha:U_\\alpha \\longrightarrow M$ inyectivas (parametrizaciones), con $U_\\alpha$ abierto de $\\mathbb{R} ^n$, y tal que      $M=\\displaystyle\\bigcup_\\alpha \\varphi_\\alpha(U_\\alpha)$        $\\forall \\alpha, \\beta \\in A$ con $\\varphi_\\alpha(U_\\alpha)\\cap\\varphi_\\beta(U_\\beta)=W\\neq \\varnothing$, $\\varphi_\\alpha^{-1}(W)$, $\\varphi_\\beta^{-1}(W)$ son abiertos de $\\mathbb{R} ^n$ y  $\\varphi_\\beta^{-1}\\circ\\varphi_\\alpha:\\varphi_\\alpha^{-1}(W)\\longrightarrow\\varphi_\\beta^{-1}(W)$ es diferenciable ($C^\\infty$)  ",
+        "url": "/es/definition_differentiable_manifolds"
+      }
+      ,
+    
+      "es-exposition-tangent-space": {
+        "title": "Espacio tangente",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Asociado a cada punto $p \\in M$ de la variedad se tiene el espacio tangente $T_p M$, que es un espacio vectorial de dimensión $n$. Intuitivamente, el espacio tangente recoge las direcciones en las que $p$ se puede mover hacia el resto de la variedad. La definición rigurosa es compleja, pero nosotros podemos pensar en un espacio simbólicamente generado por los vectores $\\left\\{\\frac{\\partial}{\\partial x_1},…,\\frac{\\partial}{\\partial x_n}\\right\\}$, asociados a una parametrización $\\varphi(U)\\ni p$, $\\varphi^{-1}=(x_1,…,x_n)$. El vector $\\partial/\\partial x_i$ denota la imagen por $\\varphi$ del desplazamiento en $\\mathbb{R} ^n$ en la dirección de $e_i$; así, si $\\psi:V\\longrightarrow M$ es otra parametrización que cubre $p$, $\\psi^{-1}=(y_1,…,y_n)$, la relación entre ambas bases de $T_p M$ se rige por la regla de la cadena: $\\frac{\\partial}{\\partial x_i}=\\sum_j \\frac{\\partial y_j}{\\partial x_i} \\frac{\\partial}{\\partial y_j}$.            ",
+        "url": "/es/exposition_tangent_space"
+      }
+      ,
+    
+      "es-exposition-integration-manifolds": {
+        "title": "Integración en variedades",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Sea $M$ una variedad de dimensión $n$ y $\\alpha$ una $n$-forma definida en $M$. Nos planteamos dar un sentido a la expresión $\\int_M \\alpha$. Como se dijo anteriormente, una $n$-forma da una referencia de volumen en cada espacio tangente a la variedad. De este modo, si partimos la variedad en trozos muy pequeños, cada trozo se podría tomar como lineal en el espacio tangente y la forma diferencial $\\alpha$ daría un valor a cada trozo. Y entonces la integral vendría como límite de la suma de todos estos valores cuando la partición se ha hecho infinitamente fina.                        Ahora puede intentar el lector retomar y comprender los tres ejemplos expuestos en , teniendo en cuenta que para $v=(v_1,v_2)\\in T_{(x,y)}\\mathbb{R} ^2$, $\\mathrm{d} x(v)=v_1$, $y\\mathrm{d} x(v)=yv_1$ y $(\\frac{-y}{x^2+y^2}\\mathrm{d} x+\\frac{x}{x^2+y^2}\\mathrm{d} y)(v)=\\frac{-y}{x^2+y^2}v_1+\\frac{x}{x^2+y^2}v_2$.En todos nuestros ejemplos, las curvas han aparecido orientadas, con un principio y un final. En el dibujo, la integral sobre superficies queda un poco difusa porque no sabemos en qué orden se deben tomar los vectores al aplicar la 2-forma $\\beta$. En realidad, para que la definición de integral sea coherente es necesario dotar previamente a la variedad de una orientación, como ocurría en la homología.",
+        "url": "/es/exposition_integration_manifolds"
+      }
+      ,
+    
+      "es-exposition-homology": {
+        "title": "Homología",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "La homología, con el propósito de describir la forma del espacio de estudio, busca objetos sin frontera que no sean la frontera de algo. Detrás de estos objetos se hallan los “agujeros” del espacio.            Para utilizar el concepto de frontera algebraicamente, el objeto y su frontera están orientados.            Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:            donde los $\\lambda_i$, $\\mu_j$, $\\eta_k$ son números enteros o reales. Un signo negativo tiene el mismo efecto que permutar $-$ y $+$, invertir el sentido de una flecha, cambiar los colores azul y amarillo, etc. Para cada $k$, el conjunto de $k$-cadenas forma el espacio vectorial $\\Omega_k(M)$, y el operador frontera induce aplicaciones lineales $\\partial_k:\\Omega_k(M)\\longrightarrow \\Omega_{k-1}(M)$, con $\\partial_{k-1}\\circ\\partial_k=0$, es decir, $\\text{im }\\partial_{k+1} \\subset\\text{ker }\\partial_k$. Se definen así los grupos de homología $H_k(M)=\\dfrac{\\text{ker }\\partial_k}{\\text{im }\\partial_{k+1}}=\\dfrac{Z_k(M)}{B_k(M)}$.Aunque este lenguaje pueda resultar extraño al principio, será aclarado más adelante. Por ahora, nos limitamos a destacar que tiene sentido hacer el cociente de los ciclos $Z_k(M)$ (cadenas sin frontera) entre las fronteras $B_k(M)$ (fronteras de una cadena), porque aquellos ciclos cuya diferencia sea una frontera, es decir, que representan el mismo elemento de homología (ciclos homólogos) detectan el mismo “agujero”:            ",
+        "url": "/es/exposition_homology"
+      }
+      ,
+    
+      "es-exposition-forms-manifolds": {
+        "title": "Formas en variedades",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Teniendo en mente las formas alternadas en espacios vectoriales , pasamos a las formas en variedades. Una forma de orden $k$ $\\alpha$ en una variedad $M$ de dimensión $n$ asigna de modo diferenciable una $k$-forma $\\alpha_p$ en cada espacio tangente $T_p M$, $p \\in M$. Con esta definición conseguimos nuestro objetivo de que las formas den una valoración local diferenciable. El conjunto de las $k$-formas en $M$ es el espacio de dimensión infinita $\\Omega^k(M)$. Por convenio, $\\bigwedge^0 (E)=\\mathbb{R} $ y $\\Omega^0(M)=C^{\\infty}(M)$ conjunto de funciones diferenciables $M\\longrightarrow \\mathbb{R} $.            Cuando tenemos una parametrización, las formas se pueden describir fácilmente. Supongamos que $p \\in \\varphi(U)$, $\\varphi^{-1}=(x_1,…,x_n)$. Entonces tenemos una base canónica de $T_p M$, ${\\frac{\\partial}{\\partial x_1},…,\\frac{\\partial}{\\partial x_n}}$, y su base dual asociada, ${\\mathrm{d} x_1,…,\\mathrm{d} x_n}$. El vector $\\frac{\\partial}{\\partial x_i}$ es la imagen por $\\varphi$ de $e_i$; la forma $\\mathrm{d} x_i$, aplicada a un vector $v$, nos dice si en la dirección $v$ se aumenta la función $x_i$ como función real definida sobre $M$. En el dibujo, la función $x_i$ viene representada por la escala del blanco al negro; así $\\mathrm{d} x_i(v)$ es positivo si $v$ llega a un color más oscuro y negativo cuando apunta a colores más claros. Para ser precisos, la función $x_i:\\varphi(U)\\longrightarrow \\mathbb{R} $ tiene la diferencial $(Dx_i)_p:T_p M\\longrightarrow T_{x_i(p)}\\mathbb{R} =\\mathbb{R} $; ésta diferencial es $\\mathrm{d} x_i$. De hecho para cualquier función $f:M\\longrightarrow \\mathbb{R} $ (o definida sólo en un abierto) se tiene la 1-forma $\\mathrm{d} f=Df$, que da un valor a cada vector en cualquier punto. Las bases ${\\frac{\\partial}{\\partial x_i}}$ y ${\\mathrm{d} x_j}$ son realmente duales; como se ve en el dibujo, $\\mathrm{d} x_j(\\frac{\\partial}{\\partial x_i})$ es 1 si $i=j$ y 0 en otro caso. Por esta dualidad, dada una función diferenciable $f$ en $\\varphi(U)$, $\\mathrm{d} f=\\sum_{1\\leqslant i\\leqslant n}\\mathrm{d} f(\\frac{\\partial}{\\partial x_i})\\mathrm{d} x_i=\\sum_{1\\leqslant i\\leqslant n}\\frac{\\partial f}{\\partial x_i}\\mathrm{d} x_i$, tomando también $f$ como definida sobre $U$.Dada $\\alpha\\in \\Omega^k(M)$, sobre $\\varphi(U)$ escribiremos $\\alpha=\\sum \\alpha_{i_1 i_2… i_k}\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$, con $\\alpha_{i_1 i_2\\cdots i_k}=\\alpha(\\frac{\\partial}{\\partial x_{i_1}},…,\\frac{\\partial}{\\partial x_{i_k}})$ funciones diferenciables en $\\varphi(U)$. Para las formas diferenciales también se tiene el producto exterior $\\wedge$, que consiste en hacer el producto exterior punto a punto: $(\\alpha\\wedge\\beta)_p=\\alpha_p \\wedge\\beta_p$; de nuevo se cumple $\\alpha\\wedge\\beta=(-1)^{kl}\\beta\\wedge\\alpha$. Para las formas de orden 0, $f\\wedge\\alpha=f\\alpha$.Si $f:M\\longrightarrow N$ es una aplicación diferenciable entre variedades, en cada punto $p$ tenemos la diferencial $Df_p:T_p M\\longrightarrow T_{f(p)}N$ aplicación lineal. Esto nos permite definir $f^*:\\Omega^k(N)\\longrightarrow\\Omega^k(M)$ con $(f^*\\alpha)_p=Df_p^*(\\alpha_p)$, es decir, para evaluar $f^*\\alpha$ en $k$ vectores anclados en un punto $p$, se llevan por la diferencial al espacio tangente de $f(p)$ y se evalúan allí con $\\alpha$. Si $g\\in\\Omega^0(N)=C^{\\infty}(N)$, entonces $f^*g=g\\circ f$. Como para el caso lineal, $f^*(\\alpha\\wedge\\beta)=f^*\\alpha\\wedge f^*\\beta$.Para una 1-forma $\\mathrm{d} g\\in\\Omega^1(N)$, $g:N\\longrightarrow \\mathbb{R} $, se tiene $f^*\\mathrm{d} g=\\mathrm{d}(g\\circ f)$, porque la función $g\\circ f$ en la dirección $v$ y la función $g$ en la dirección $Df(v)$ coinciden.",
+        "url": "/es/exposition_forms_manifolds"
+      }
+      ,
+    
+      "es-exposition-differentiable-manifolds": {
+        "title": "Variedades diferenciables",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Las variedades diferenciables son los objetos con los que en matemáticas se modelizan las curvas, las superficies, los volúmenes, y en definitiva todo aquello que localmente se asemeja al espacio euclídeo $\\mathbb{R} ^n$. Si nuestro objeto tiene en cada punto un entorno difeomorfo a un abierto de $\\mathbb{R} ^n$, se trata entonces de una variedad de dimensión $n$. Se asume, por tanto, que para cualquier punto de la variedad $p\\in M$ podemos encontrar una aplicación diferenciable e inyectiva $\\varphi:U \\longrightarrow M$ desde un abierto $U\\subset \\mathbb{R} ^n$ que cubra $p$ y un entorno suyo. Tal aplicación induce $\\varphi^{-1}=(x_1,…,x_n)$, $x_i:\\varphi(U)\\longrightarrow \\mathbb{R} $.            ",
+        "url": "/es/exposition_differentiable_manifolds"
+      }
+      ,
+    
+      "es-exposition-de-rham-cohomology": {
+        "title": "Idea de la Cohomología de De Rham",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "La cohomología nace como respuesta dual a la homología . La homología identifica la forma de un objeto topológico en la búsqueda de “agujeros”. Más concretamente, busca objetos sin frontera que no sean a su vez la frontera de algo (y de ahí la definición $H_k(M)=\\text{ker }\\partial_n/\\text{im }\\partial_{n+1}$, con $\\partial$ operador frontera).            La cohomología funciona de modo completamente nuevo. En vez de buscar subespacios que detecten agujeros, la cohomología asigna un valor real a cada símplice o, en nuestro caso diferenciable, a cada subvariedad del espacio. Por ejemplo, en $\\mathbb{R}^2$ podemos asignar a cada curva (orientada, con principio y final) el valor de la proyección horizontal. Cuando la curva se desplaza hacia la derecha, gana en proyección, mientras que cuando va hacia la izquierda, disminuye; esto nos viene bien si queremos que nuestra asignación sea aditiva y diferenciable: si una curva la dividimos en varios trozos, entonces da igual calcular el valor de la curva total o sumar el valor de las curvas pequeñas.            El ejemplo anterior es en realidad muy simple; no importa la curva entera, sino sólo la coordenada $x$ de los puntos en que comienza y termina la curva, y calcular la diferencia. Así se ve claro que cualquier curva cerrada tendrá valor 0. Aquí va un ejemplo menos obvio. Tenemos en $\\mathbb{R} ^2$ un campo vectorial, $f(x,y)=(y,0)$. Podemos hacer la siguiente asignación: a cada curva $\\gamma$ le corresponde la integral de circulación $\\int_{\\gamma}f$. En nuestro dibujo, vemos que el valor de la curva no depende de los puntos iniciales y finales, pues las curvas que suben y luego bajan obtienen una circulación positiva, mientras que las que primero bajan y después suben obtienen una circulación negativa. Además, en este caso, una curva cerrada no tiene circulación nula (en general); en el dibujo, la pequeña curva cerrada tiene circulación ligeramente negativa, pues en la parte superior va contracorriente y en la parte inferior va a favor de la corriente, pero en la parte superior la corriente es más fuerte.            Un tercer ejemplo: en $\\mathbb{R} ^2-{(0,0)}$ consideramos la asignación ángulo central barrido. Este ejemplo se parece al primero. Lo importante es el ángulo desde el que se empieza y el ángulo en que se termina. Y así, para una pequeña curva cerrada, el ángulo barrido es 0. ¡Pero atención! En el segundo dibujo hay una curva que da la vuelta al origen y que barre un ángulo $2\\pi$, en contra de lo que teníamos pensado para curvas cerradas. Este fenómeno sólo es posible si en el espacio topológico hay agujeros: hemos dado un valor 0 a las pequeñas curvas cerradas, las que son la frontera de algún pequeño disco, pero se admiten otros valores para grandes curvas cerradas, aquellas que quizás no son la frontera de nada. Es como si hubiésemos dado valores a los distintos objetos homológicos: 0 a las curvas que no rodean el origen, $2\\pi$ a las curvas que dan una vuelta alrededor del origen, $4\\pi$ a las que dan dos vueltas, etc.            Como habíamos comentado, queremos que la asignación de valores a las subvariedades sea aditiva. Por eso, sólo necesitamos saber el valor que daríamos a, por ejemplo, pequeños trozos de curvas, pequeños trozos de superficie o pequeños volúmenes. Esto se consigue mediante una forma diferencial sobre la variedad de estudio. Las formas diferenciales dan una valoración local en cada punto y en cada dirección.El lenguaje de las formas diferenciales nos permite manejar la cohomología muy cómodamente. Los ejemplos anteriores vendrían descritos por tres 1-formas diferenciales en $\\mathbb{R} ^2$: $\\alpha_1=\\mathrm{d} x$, $\\alpha_2=y\\mathrm{d} x$ y $\\alpha_3=\\frac{-y}{x^2+y^2}\\mathrm{d} x+\\frac{x}{x^2+y^2}\\mathrm{d} y$ (nótese que ésta última no está definida en el origen). Estudiaremos en general las formas diferenciales y un cierto operador diferencial exterior $\\mathrm{d}$. En el primer y tercer caso, $\\mathrm{d}(\\alpha_1)=\\mathrm{d}(\\alpha_3)=0$, y por eso aquí las pequeñas curvas cerradas tienen valor 0; se dice que $\\alpha_1$ y $\\alpha_3$ son formas cerradas. $\\mathrm{d}(\\alpha_2)=-\\mathrm{d} x\\wedge \\mathrm{d} y\\neq 0$, luego $\\alpha_2$ no es una forma cerrada. Por otro lado, $\\alpha_1$ es una forma exacta: $\\alpha_1=\\mathrm{d}(x)$, así que la función $x$ es la que hay que evaluar en los puntos inicial y final de la curva, y de aquí que las curvas cerradas, arbitrariamente grandes, tengan siempre valor 0, por coincidir los puntos inicial y final. $\\alpha_3$ no es exacta; nos encantaría decir que $\\alpha_3=\\mathrm{d}(\\acute{a}ngulo)$, pero no existe tal función ángulo definida en todo $\\mathbb{R} ^2-{(0,0)}$, siempre incurrimos en saltos de $2\\pi$.Por tanto, en nuestra búsqueda cohomológica de agujeros, debemos encontrar formas cerradas que no sean exactas.",
+        "url": "/es/exposition_de_rham_cohomology"
+      }
+      ,
+    
+      "es-exposition-cohomology": {
+        "title": "Cohomología",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Cohomología",
+        "url": "/es/exposition_cohomology"
+      }
+      ,
+    
+      "es-definition-alternate-form": {
+        "title": "Formas alternadas",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Sea $E$ un espacio vectorial. Una forma alternada de orden $k$ (o $k$-forma) en $E$ es una aplicación multilineal $\\alpha:E\\times E \\times \\dots \\times E \\longrightarrow \\mathbb{R} $ tal que $\\alpha(v_1,…,v_i,…,v_j,…,v_k)=-\\alpha(v_1,…,v_j,…,v_i,…,v_k)$ para cualquier par de vectores intercambiados. Por ejemplo, una 2-forma en $\\mathbb{R} ^3$ podría ser $\\alpha(u,v)=u_1 v_3-u_3 v_1$. Las formas lineales son formas de orden 1.Dadas $k$ formas lineales $\\varphi_1$, $\\varphi_2$, … ,$\\varphi_k$, podemos considerar la $k$-forma producto exterior definida por $\\varphi_1\\wedge\\varphi_2\\wedge … \\wedge\\varphi_k(v_1, v_2,…,v_k)=\\text{Det}(\\varphi_i(v_j))$. Si tomamos en $\\mathbb{R} ^3$ la base dual ${\\varphi_1,\\varphi_2,\\varphi_3}$, entonces la 2-forma anterior se podría escribir simplemente como $\\alpha=\\varphi_1\\wedge\\varphi_3$. Por las propiedades del determinante, el producto exterior de $k$ formas lineales es una forma alternada, y se cumple $\\varphi_1\\wedge … \\wedge\\varphi_i\\wedge … \\wedge\\varphi_j\\wedge … \\wedge\\varphi_k= -\\varphi_1\\wedge … \\wedge\\varphi_j\\wedge … \\wedge\\varphi_i\\wedge … \\wedge\\varphi_k$ para cualquier par de formas intercambiadas.En un espacio de dimensión $n$, con base ${u_1,…,u_n}$ y base dual ${\\varphi_1,…,\\varphi_n}$, una base para las formas de orden $k$ es el conjunto ${\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k}:1\\leqslant i_1&lt;…&lt;i_k \\leqslant n}$, con lo que tenemos un espacio de dimensión $\\binom{n}{k}$, $\\bigwedge^k (E)$. Cualquier $k$-forma $\\alpha\\in\\bigwedge^k (E)$ se escribe de modo único como $\\alpha=\\sum \\alpha_{i_1 i_2… i_k}\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k}$, $1\\leqslant i_1&lt;…&lt;i_k \\leqslant n$, con $\\alpha_{i_1 i_2\\cdots i_k}=\\alpha(u_{i_1},…,u_{i_n})$. De este modo se puede definir el producto exterior entre formas de orden arbitrario $\\alpha\\wedge\\beta$, simplemente teniendo en cuenta que $(\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k})\\wedge(\\varphi_{j_1}\\wedge…\\wedge\\varphi_{j_l})=\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k}\\wedge\\varphi_{j_1}\\wedge…\\wedge\\varphi_{j_l}$: si $\\alpha\\in\\bigwedge^k (E)$ y $\\beta\\in\\bigwedge^l (E)$, $\\alpha\\wedge\\beta\\in\\bigwedge^{k+l} (E)$. Puesto que en un determinante cambiar las $k$ primeras filas por las $l$ segundas exige $kl$ permutaciones, se tiene que $\\alpha\\wedge\\beta=(-1)^{kl}\\beta\\wedge\\alpha$. La acción de $\\alpha\\wedge\\beta$ sobre $k+l$ vectores se puede describir como una cierta media de productos de $\\alpha$ y $\\beta$ aplicados a los vectores en grupos de $k$ y $l$, por lo que el producto exterior está bien definido sin importar la base dual que elijamos.Las $n$-formas en un espacio de dimensión $n$ son todas del tipo $\\lambda \\varphi_1\\wedge…\\wedge\\varphi_n$, $\\lambda \\in \\mathbb{R} $; la $n$-forma $\\varphi_1\\wedge…\\wedge\\varphi_n$ otorga a cada conjunto de $n$ vectores el volumen del paralelepípedo que generan (positivo o negativo según la orientación), tomando como referencia la base dual a ${\\varphi_1,…,\\varphi_n}$, a la que se le otorga volumen 1. Por eso, fijar una $n$-forma en un espacio vectorial de dimensión $n$ $E$ equivale a fijar una referencia de volumen en paralelepípedos de $E$. De igual modo, una $k$-forma en $E$ da una referencia de volumen en cada uno de los subespacios vectoriales de dimensión $k$. Nótese que en un espacio de dimensión $n$ no hay formas alternadas no nulas de orden superior a $n$.Sea ahora $f:E\\longrightarrow F$ una aplicación lineal entre espacios vectoriales. Igual que para los espacios duales, $f$ induce $f^*:\\bigwedge^k (F)\\longrightarrow\\bigwedge^k (E)$, definida por $(f^*\\alpha)(v_1,…,v_k)=\\alpha(f(v_1),…,f(v_k))$. Para el producto de formas lineales, $f^*(\\varphi_1\\wedge … \\wedge\\varphi_k)(v_1,…,v_k)=(\\varphi_1\\wedge … \\wedge\\varphi_k)(f(v_1),…,f(v_k))=\\text{Det}(\\varphi_i(f(v_j)))=\\text{Det}((f^*\\varphi_i)(v_j))= f^*\\varphi_1\\wedge … \\wedge f^*\\varphi_k(v_1,…,v_k)$, es decir, $f^*$ llega a cada factor del producto. Y como cualquier forma alternada se puede expresar como combinación de productos de formas lineales, $f^*(\\alpha\\wedge\\beta)=f^*\\alpha\\wedge f^*\\beta$ también es válido para formas alternadas de cualquier orden.",
+        "url": "/es/definition_alternate_form"
+      }
+      ,
     
       "es-problem-linear-system-1": {
         "title": "Sistemas lineales",
@@ -481,16 +620,6 @@
       }
       ,
     
-      "es-definition-form": {
-        "title": "Definición de forma diferenciable",
-        "kind": "definition",
-        "author": "",
-        "category": "es",
-        "content": "Una forma $\\omega$ es tal tal tal",
-        "url": "/es/definition_form"
-      }
-      ,
-    
       "es-problem-derivability1": {
         "title": "Derivabilidad. Problema 1",
         "kind": "problem",
@@ -821,6 +950,36 @@
       }
       ,
     
+      "es-remark-congreunce-equivalence-relation": {
+        "title": "La congruencia es relación de equivalencia",
+        "kind": "remark",
+        "author": "",
+        "category": "es",
+        "content": "En lenguaje más matemático, obsérvese que las tres primeras propiedades del lema anterior están diciendo que la relación $\\equiv\\ (\\text{mod } n)$ es una relación de equivalencia ((1) es la propiedad reflexiva, (2) es la simétrica y (3) es la transitiva). El cociente por esta relación es lo que se denota por $\\mathbb{Z}_n$, y las propiedades (4) y (5) nos dicen que tal cociente tiene estructura de anillo. Nótese que, por la propiedad (2), el orden de los elementos en la congruencia es indistinto, por lo que se puede hablar de que $a$ y $b$ son congruentes entre sí o no.",
+        "url": "/es/remark_congreunce_equivalence_relation"
+      }
+      ,
+    
+      "es-lemma-congruence-properties": {
+        "title": "Propiedades de la congruencia",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Fijado un entero $n&gt;0$ y dados números enteros $a$, $b$, $c$, $d$, se tiene:1. $a\\equiv a\\ (\\text{mod } n)$.2. $a\\equiv b\\ (\\text{mod } n)$ si y sólo si $b\\equiv a\\ (\\text{mod } n)$.3. Si $a\\equiv b\\ (\\text{mod } n)$ y $b\\equiv c\\ (\\text{mod } n)$, entonces $a\\equiv c\\ (\\text{mod } n)$.4. Si $a\\equiv b\\ (\\text{mod } n)$ y $c\\equiv d\\ (\\text{mod } n)$, entonces y $a+c\\equiv b+d\\ (\\text{mod } n)$. 5. Si $a\\equiv b\\ (\\text{mod } n)$ y $c\\equiv d\\ (\\text{mod } n)$, entonces $ac\\equiv bd\\ (\\text{mod } n)$.6. Si $ac\\equiv bc\\ (\\text{mod } n)$, entonces $a\\equiv b\\ (\\text{mod } {n\\over d})$, donde $d=\\text{mcd}(c,n)$. En particular, si $\\text{mcd}(c,n)=1$, entonces $ac\\equiv bc\\ (\\text{mod } n)$ si y sólo si $a\\equiv b\\ (\\text{mod } n)$.    Demostración    1. $a-a=0$, $n\\vert 0\\Longrightarrow a\\equiv a\\ (\\text{mod } n)$    2. $a\\equiv b\\ (\\text{mod } n)\\Longleftrightarrow n\\vert a-b\\Longleftrightarrow n\\vert -(a-b)=b-a\\Longleftrightarrow n\\vert b\\equiv a\\ (\\text{mod } n)$    3. $a\\equiv b\\ (\\text{mod } n)\\,b\\equiv c\\ (\\text{mod } n)\\Longrightarrow n\\vert a-b\\,b-c\\Longrightarrow n\\vert (a-b)+(b-c)=a-c\\Longrightarrow a\\equiv c\\ (\\text{mod } n)$    4. $a\\equiv b\\ (\\text{mod } n)\\,c\\equiv d\\ (\\text{mod } n)\\Longrightarrow n\\vert a-b\\,c-d\\Longrightarrow n\\vert (a-b)+(c-d)=(a+c)-(b+d)\\Longrightarrow a+c\\equiv b+d\\ (\\text{mod } n)$    5. $a\\equiv b\\ (\\text{mod } n)\\,c\\equiv d\\ (\\text{mod } n)\\Longrightarrow n\\vert a-b\\,c-d\\Longrightarrow n\\vert (a-b)c+b(c-d)=ac-bd\\Longrightarrow ac\\equiv bd\\ (\\text{mod } n)$    6. Por definición, $ac\\equiv bc\\ (\\text{mod } n)$ quiere decir $n\\vert ac-bc=(a-b)c$. Dividiendo por $d$ tendremos ${n\\over d}\\vert (a-b){c\\over d}$. Como $\\text{mcd}({n\\over d},{c\\over d})=1$ , por el Lema de Euclides  se sigue ${n\\over d}\\vert (a-b)$, es decir, $a\\equiv b\\ (\\text{mod } {n\\over d})$.",
+        "url": "/es/lemma_congruence_properties"
+      }
+      ,
+    
+      "es-definition-congruence-relation": {
+        "title": "Relación de congruencia",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Fijado un número entero positivo $n$ y dados números enteros $a$, $b$, diremos que $a$ es congruente con $b$ módulo $n$, y lo denotaremos con $a\\equiv b\\ (\\text{mod } n)$, si $n\\vert a-b$.",
+        "url": "/es/definition_congruence_relation"
+      }
+      ,
+    
       "es-example-euclid-diophantine": {
         "title": "Algoritmo de Euclides para la Ecuación Diofántica Lineal",
         "kind": "example",
@@ -1048,6 +1207,16 @@
         "category": "es",
         "content": "Todo número entero $n\\ge 2$ se puede escribir como producto finito de números primos.    Demostración    Lo demostraremos por inducción sobre $n\\in\\mathbb{Z}_{\\ge2}$. Claramente $2$ es primo, luego el teorema se verifica trivialmente para $n=2$. Supongamos ahora que tenemos demostrado el teorema para todos los números $2$, $3$, $\\dots$, $n$ y veamos que también es cierto para $n+1$.    Si $n+1$ fuera un número primo, de nuevo el resultado sería trivial. Queda entonces demostrarlo en el caso en que $n+1$ no es primo. En tal caso, $n+1$ tendría un divisor positivo $a$ distinto de $1$ y $n+1$. Es decir, existe $b\\in\\mathbb{Z}$ tal que $n+1=ab$. Como $n+1$ y $a$ son positivos, también lo es $b$. Además, como $a\\neq 1$, $n+1$, también se tiene $b\\neq 1$, $n+1$. De aquí se deduce  que $a$ y $b$ están en el conjunto $\\{2,3,\\dots,n\\}$ en que sabemos que es cierto el teorema. Por tanto, $a$ y $b$ se escriben como producto finito de números primos, de lo que se sigue que también $n+1=ab$ es producto finito de números primos, como queríamos demostrar.",
         "url": "/es/theorem_fundamental_theorem_arithmetic_existence"
+      }
+      ,
+    
+      "es-example-first-primes": {
+        "title": "Primeros números primos",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Los primeros números primos son",
+        "url": "/es/example_first_primes"
       }
       ,
     

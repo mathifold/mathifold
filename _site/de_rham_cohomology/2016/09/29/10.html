@@ -1,0 +1,63 @@
+<p>De los ejemplos anteriores podemos vislumbrar unas propiedades inmediatas de los grupos de cohomología:</p>
+
+<div class="bluebox">
+Si $$M$$ es una variedad conexa, $$H^0(M)\simeq\mathbb{R} $$ y $$H^0_c(M)\left\{ 
+\begin{array}{c}
+\simeq\mathbb{R}  &amp; \text{si M es compacta}\\
+=0 &amp; \text{si M es no compacta}
+\end{array}
+\right.
+$$
+
+Si $$ M=\bigsqcup_i M_i$$ unión de componentes conexas, entonces 
+
+$$
+\begin{array}{c}
+\Omega^k(M)=\prod_i \Omega^k(M_i) &amp;\qquad \qquad \qquad \qquad \qquad  \Omega^k_c(M)=\bigoplus_i \Omega^k_c(M_i)\\
+Z^k(M)=\prod_i Z^k(M_i) &amp;\qquad \qquad \qquad \qquad \qquad  Z^k_c(M)=\bigoplus_i Z^k_c(M_i)\\
+B^k(M)=\prod_i B^k(M_i) &amp;\qquad \qquad \qquad \qquad \qquad  B^k_c(M)=\bigoplus_i B^k_c(M_i)\\
+H^k(M)=\prod_i H^k(M_i) &amp;\qquad \qquad \qquad \qquad \qquad  H^k_c(M)=\bigoplus_i H^k_c(M_i)
+\end{array}
+$$
+</div>
+
+<p>La diferencia en éste último punto surge porque una forma con soporte compacto en <script type="math/tex">M</script> se debe anular en todas las componentes conexas salvo en un número finito.</p>
+
+<p>El producto exterior <script type="math/tex">\wedge</script> se puede definir también en cohomología: <script type="math/tex">\wedge:H^k(M)\times H^l(M)\longrightarrow H^{k+l}(M)</script>, <script type="math/tex">[\alpha]\wedge[\beta]=[\alpha\wedge\beta]</script>. Para que <script type="math/tex">\wedge</script> esté bien definido, hay que verificar dos puntos:</p>
+
+<ul>
+  <li>
+    <p>Si <script type="math/tex">\alpha</script> y <script type="math/tex">\beta</script> son cerradas, <script type="math/tex">\alpha\wedge\beta</script> es cerrada: <script type="math/tex">\mathrm{d} \alpha=0</script>, <script type="math/tex">\mathrm{d} \beta=0\Longrightarrow\mathrm{d}(\alpha\wedge\beta)=\mathrm{d} \alpha\wedge\beta+(-1)^k\alpha\wedge\mathrm{d}\beta=0</script>.</p>
+  </li>
+  <li>
+    <p>Si además <script type="math/tex">\alpha</script> o <script type="math/tex">\beta</script> es exacta, <script type="math/tex">\alpha\wedge\beta</script> es exacta: <script type="math/tex">\alpha=\mathrm{d} \gamma\Longrightarrow\alpha\wedge\beta=\mathrm{d}\gamma\wedge\beta=\mathrm{d}(\gamma\wedge\beta)-(-1)^{k-1} \gamma\wedge\mathrm{d}\beta=\mathrm{d}(\gamma\wedge\beta)</script>.</p>
+  </li>
+</ul>
+
+<p>Este mismo razonamiento sirve para extender la functorialidad a la cohomología (una propiedad es functorial cuando, a grandes rasgos, es compatible con las aplicaciones entre objetos): dada <script type="math/tex">f:M\longrightarrow N</script>, se tiene <script type="math/tex">f^*:H^k(N)\longrightarrow H^k(M)</script>, definida por <script type="math/tex">f^*[\alpha]=[f^*\alpha]</script>. La identidad <script type="math/tex">\mathrm{d}\circ f^*=f^*\circ\mathrm{d}</script> asegura que la aplicación está bien definida:</p>
+
+<ul>
+  <li>
+    <p><script type="math/tex">\mathrm{d}\alpha=0\Longrightarrow \mathrm{d} (f^*\alpha)=f^*(\mathrm{d} \alpha)=f^*(0)=0</script>.</p>
+  </li>
+  <li>
+    <p><script type="math/tex">\alpha=\mathrm{d}\gamma\Longrightarrow f^*\alpha=f^*(\mathrm{d}\gamma)=\mathrm{d}(f^*\gamma)</script>.</p>
+  </li>
+</ul>
+
+<div class="yellowbox">
+Si $$M$$ es una variedad conexa, $$H_0(M)\simeq\mathbb{R}$$.
+
+Si $$ M=\bigsqcup_i M_i$$ unión de componentes conexas, entonces 
+
+$$
+\begin{array}{c}
+\Omega_k(M)=\bigoplus_i \Omega_k(M_i)\\
+Z_k(M)=\bigoplus_i Z_k(M_i)\\
+B_k(M)=\bigoplus_i B_k(M_i)\\
+H_k(M)=\bigoplus_i H_k(M_i)
+\end{array}
+$$
+
+Una aplicación diferenciable $$f:M\longrightarrow N$$ induce $$f_*:\Omega_k(M)\longrightarrow \Omega_k(N)$$, fruto de reflejar las subvariedades de dimensión $$k$$ de $$M$$ en las de $$N$$ a través de $$f$$. Se cumple $$\partial\circ f_*=f_* \circ \partial$$, con lo que también se induce $$f_*:H_k(M)\longrightarrow H_k(N)$$.
+</div>
