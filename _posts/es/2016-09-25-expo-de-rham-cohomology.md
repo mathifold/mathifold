@@ -1,5 +1,5 @@
 ---
-title: "Idea de la Cohomología de De Rham"
+title: "Cohomología de De Rham"
 lang: es
 category: es
 permalink: es/exposition_de_rham_cohomology
