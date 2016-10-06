@@ -90,6 +90,46 @@
   window.store = {
     
     
+      "es-definition-complex-homomorphism": {
+        "title": "Homomorfismo de Complejos",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un homomorfismo de complejos $f:A^\\ast\\longrightarrow B^\\ast$ es una familia de aplicaciones $f^k:A^k\\longrightarrow B^k$ tales que $\\mathrm{d}_B^k\\circ f^k=f^{k+1}\\circ\\mathrm{d}_A^k$, es decir, el diagrama$\\xymatrix{\\cdots \\ar[r] &amp; A^{k-1} \\ar[d]^{f^{k-1}} \\ar[r]^{\\mathrm{d}^{k-1}} &amp; A^{k} \\ar[d]^{f^{k}} \\ar[r]^{\\mathrm{d}^{k}} &amp; A^{k+1} \\ar[d]^{f^{k+1}} \\ar[r] &amp;\\cdots\\cdots \\ar[r] &amp; B^{k-1} \\ar[r]^{\\mathrm{d}^{k-1}} &amp; B^{k} \\ar[r]^{\\mathrm{d}^{k}} &amp; B^{k+1} \\ar[r] &amp;\\cdots}$\\begin{xy}\\xymatrix {U \\ar@/_/[ddr]_y \\ar@{.&gt;}[dr]|{\\langle x,y \\rangle} \\ar@/^/[drr]^x  &amp; X \\times_Z Y \\ar[d]^q \\ar[r]_p &amp; X \\ar[d]_f  &amp; Y \\ar[r]^g &amp; Z}\\end{xy}es conmutativo.",
+        "url": "/es/definition_complex_homomorphism"
+      }
+      ,
+    
+      "es-definition-wedge-product-functoriality": {
+        "title": "Producto Wedge y Functorialidad",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El producto exterior $\\wedge$ se puede definir también en cohomología: $\\wedge:H^k(M)\\times H^l(M)\\longrightarrow H^{k+l}(M)$, $[\\alpha]\\wedge[\\beta]=[\\alpha\\wedge\\beta]$. Para que $\\wedge$ esté bien definido, hay que verificar dos puntos:      Si $\\alpha$ y $\\beta$ son cerradas, $\\alpha\\wedge\\beta$ es cerrada: $\\mathrm{d} \\alpha=0$, $\\mathrm{d} \\beta=0\\Longrightarrow\\mathrm{d}(\\alpha\\wedge\\beta)=\\mathrm{d} \\alpha\\wedge\\beta+(-1)^k\\alpha\\wedge\\mathrm{d}\\beta=0$.        Si además $\\alpha$ o $\\beta$ es exacta, $\\alpha\\wedge\\beta$ es exacta: $\\alpha=\\mathrm{d} \\gamma\\Longrightarrow\\alpha\\wedge\\beta=\\mathrm{d}\\gamma\\wedge\\beta=\\mathrm{d}(\\gamma\\wedge\\beta)-(-1)^{k-1} \\gamma\\wedge\\mathrm{d}\\beta=\\mathrm{d}(\\gamma\\wedge\\beta)$.  Este mismo razonamiento sirve para extender la functorialidad a la cohomología (una propiedad es functorial cuando, a grandes rasgos, es compatible con las aplicaciones entre objetos): dada $f:M\\longrightarrow N$, se tiene $f^*:H^k(N)\\longrightarrow H^k(M)$, definida por $f^*[\\alpha]=[f^*\\alpha]$. La identidad $\\mathrm{d}\\circ f^*=f^*\\circ\\mathrm{d}$ asegura que la aplicación está bien definida:      $\\mathrm{d}\\alpha=0\\Longrightarrow \\mathrm{d} (f^*\\alpha)=f^*(\\mathrm{d} \\alpha)=f^*(0)=0$.        $\\alpha=\\mathrm{d}\\gamma\\Longrightarrow f^*\\alpha=f^*(\\mathrm{d}\\gamma)=\\mathrm{d}(f^*\\gamma)$.  Dual de homología: ",
+        "url": "/es/definition_wedge_product_functoriality"
+      }
+      ,
+    
+      "es-definition-complexes-exact-sequences": {
+        "title": "Complejos y Sucesiones Exactas",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un complejo $C^\\ast={\\cdots \\xrightarrow{} C^{k+1}\\xrightarrow{\\partial^{k+1}}C^k \\xrightarrow{\\partial^k} C^{k-1}\\xrightarrow{}\\cdots}$ es una cadena de grupos abelianos $C^k$ y homomorfismos $\\mathrm{d}^k$ tales que $\\partial^k\\circ\\partial^{k+1}=0$ para todo $k$, es decir, $\\text{im }\\partial^{k+1}\\subset \\text{ker }\\partial^k$.Asociado al complejo $C^\\ast$ se definen los grupos de cohomología $H_k(C^\\ast)=\\dfrac{\\text{ker }\\partial^k}{\\text{im }\\partial^{k+1}}$.Un complejo $C^\\ast$ se dice que es una sucesión exacta si $\\text{im }\\partial^{k+1}= \\text{ker }\\partial^k$ para todo $k$.Una sucesión exacta del tipo $0\\xrightarrow{} A\\xrightarrow{f}B\\xrightarrow{g}C\\xrightarrow{} 0$ se llama sucesión exacta corta.",
+        "url": "/es/definition_complexes_exact_sequences"
+      }
+      ,
+    
+      "es-lemma-first-properties-de-rham-cohomology": {
+        "title": "Primeras Propiedades de la Cohomología de De Rham",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Si $M$ es una variedad conexa, $H^0(M)\\simeq\\mathbb{R} $ y $H^0_c(M)\\left\\{\\begin{array}{ll}\\simeq\\mathbb{R}  &amp; \\text{si M es compacta}\\\\=0 &amp; \\text{si M es no compacta}\\end{array}\\right.$Si $ M=\\bigsqcup_i M_i$ unión de componentes conexas, entonces$$\\begin{array}{cc}\\Omega^k(M)=\\prod_i \\Omega^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  \\Omega^k_c(M)=\\bigoplus_i \\Omega^k_c(M_i)\\\\Z^k(M)=\\prod_i Z^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  Z^k_c(M)=\\bigoplus_i Z^k_c(M_i)\\\\B^k(M)=\\prod_i B^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  B^k_c(M)=\\bigoplus_i B^k_c(M_i)\\\\H^k(M)=\\prod_i H^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  H^k_c(M)=\\bigoplus_i H^k_c(M_i)\\end{array}$$La diferencia en éste último punto surge porque una forma con soporte compacto en $M$ se debe anular en todas las componentes conexas salvo en un número finito.Dual de homología: DemostraciónPor hacer",
+        "url": "/es/lemma_first_properties_de_rham_cohomology"
+      }
+      ,
+    
       "es-example-cohomology-compact-support-r2": {
         "title": "Cohomología de R&lt;sup&gt;2&lt;/sup&gt; con soporte compacto",
         "kind": "example",
@@ -137,6 +177,16 @@
         "category": "es",
         "content": "Existe un único operador lineal $\\mathrm{d}:\\Omega^k(M)\\longrightarrow\\Omega^{k+1}(M)$ para cada $k$ (llamado diferencial exterior) definido por$\\mathrm{d}\\Bigl(\\displaystyle\\sum \\alpha_{i_1 i_2…i_k}\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}\\Bigr) = \\sum\\mathrm{d}\\alpha_{i_1 i_2…i_k}\\wedge\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$$= \\displaystyle\\sum\\sum_{j=1}^n \\dfrac{\\partial\\alpha_{i_1 i_2…i_k}}{\\partial x_j}\\mathrm{d} x_j\\wedge\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$en cada parametrización $\\varphi(U)$.Este operador lineal tiene las siguientes propiedades:  Si $f\\in \\Omega^0(M)$, $\\mathrm{d} f=Df$ diferencial ordinaria de funciones.  $\\mathrm{d}\\circ\\mathrm{d}=0$.  Si $\\alpha\\in\\Omega^k(M)$, $\\beta\\in\\Omega^l(M)$, $\\mathrm{d} (\\alpha\\wedge\\beta)=\\mathrm{d} \\alpha\\wedge \\beta+ (-1)^k\\alpha\\wedge\\mathrm{d} \\beta$Comprobemos estas propiedades (lo hacemos sólo para formas del tipo $f \\mathrm{d} x_I$, $\\mathrm{d} x_I=\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$; para el resto de formas se sigue por linealidad):      $\\mathrm{d}(f)=\\mathrm{d} f=Df$ ($\\mathrm{d} x_I$ es vacío).        $\\mathrm{d}^2(f\\mathrm{d} x_I)=\\mathrm{d}(\\sum_i \\mathrm{d}f{f}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I)=\\sum_j\\sum_i\\frac{\\partial^2 f}{\\partial x_j\\partial x_i}\\mathrm{d} x_j\\wedge\\mathrm{d} x_i\\wedge\\mathrm{d} x_I=0$, porque $\\frac{\\partial^2 f}{\\partial x_j\\partial x_i}=\\frac{\\partial^2 f}{\\partial x_i\\partial x_j}$ y $\\mathrm{d} x_j\\wedge\\mathrm{d} x_i=-\\mathrm{d} x_i\\wedge\\mathrm{d} x_j$.        $\\mathrm{d} ((f\\mathrm{d} x_I)\\wedge(g\\mathrm{d} x_J))=\\mathrm{d}(fg\\mathrm{d} x_I\\wedge\\mathrm{d} x_J)=\\sum_i\\mathrm{d}f{(fg)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J= g\\sum_i\\mathrm{d}f{(f)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J+ f\\sum_i\\mathrm{d}f{(g)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J=(\\sum_i\\mathrm{d}f{(f)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I)\\wedge(g\\mathrm{d} x_J)+(-1)^k (f\\mathrm{d} x_I)\\wedge(\\sum_i\\mathrm{d}f{(g)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_J)=(\\mathrm{d} (f\\mathrm{d} x_I))\\wedge(g\\mathrm{d} x_J)+(-1)^k(f\\mathrm{d} x_I)\\wedge(\\mathrm{d}(g\\mathrm{d} x_J))$, pues para intercambiar $\\mathrm{d} x_i$ y $\\mathrm{d} x_I$ son necesarias $k$ permutaciones.  Por último, si $f:M\\longrightarrow N$ es una aplicación diferenciable, se cumple la identidad $\\mathrm{d} _M\\circ f^*=f^*\\circ \\mathrm{d}_N$. En efecto: $\\mathrm{d} f^*(g\\mathrm{d} x_I)=\\mathrm{d}((g\\circ f)\\mathrm{d} f_I)=\\mathrm{d}(g\\circ f)\\wedge \\mathrm{d} f_I=f^*(\\mathrm{d} g)\\wedge \\mathrm{d} f_I=f^*(\\mathrm{d} g\\wedge \\mathrm{d} x_I)=f^*\\mathrm{d}(g\\mathrm{d} x_I)$, donde $\\mathrm{d} f_I=\\mathrm{d} f_{i_1}\\wedge…\\wedge\\mathrm{d} f_{i_k}$, $f_j=x_j\\circ f$ función definida en un abierto de $M$. Esto es importante; en particular nos asegura que si $f:M\\longleftrightarrow N$ es difeomorfismo, entonces hay un isomorfismo $f^*:\\Omega^k(N)\\longleftrightarrow\\Omega^k(M)$ para cada $k$, compatible con el operador $\\mathrm{d}$, y así, en lo que respecta al cálculo de formas (y más tarde a la cohomología), $M$ y $N$ se pueden considerar la misma variedad.",
         "url": "/es/definition_exterior_derivative"
+      }
+      ,
+    
+      "es-lemma-first-properties-homology": {
+        "title": "Primeras Propiedades de la Homología",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Si $M$ es una variedad conexa, $H_0(M)\\simeq\\mathbb{R}$.Si $ M=\\bigsqcup_i M_i$ unión de componentes conexas, entoncesUna aplicación diferenciable $f:M\\longrightarrow N$ induce $f_*:\\Omega_k(M)\\longrightarrow \\Omega_k(N)$, fruto de reflejar las subvariedades de dimensión $k$ de $M$ en las de $N$ a través de $f$. Se cumple $\\partial\\circ f_*=f_* \\circ \\partial$, con lo que también se induce $f_*:H_k(M)\\longrightarrow H_k(N)$.",
+        "url": "/es/lemma_first_properties_homology"
       }
       ,
     

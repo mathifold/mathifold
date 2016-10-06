@@ -782,6 +782,15 @@ map:
             ident: intro_morse_theory
             en: Chapter1
             es: Capítulo1
+      -
+        ident: homological_algebra
+        en: Homological Algebra
+        es: Álgebra Homológica
+        children:
+          -
+            ident: intro_homological_algebra
+            en: Chapter1
+            es: Capítulo1
   -
     ident: advanced_mathematics
     en: Advanced Mathematics
