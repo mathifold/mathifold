@@ -13,7 +13,7 @@ layout: post
 type: post
 ---
 
-Una variedad diferenciable de dimensión $n$ es un par $(M,(\varphi\_\alpha,U\_\alpha)\_{\alpha \in A})$ donde $M$ es un conjunto y $\\{(\varphi_{\alpha}, U_{\alpha})\\}\_{\alpha \in A}$ es una colección de aplicaciones $\varphi\_\alpha:U_\alpha \longrightarrow M$ inyectivas (parametrizaciones), con $U_\alpha$ abierto de $\mathbb{R} ^n$, y tal que
+Una variedad diferenciable de dimensión $n$ es un par $(M,\\{(\varphi\_\alpha,U\_\alpha)\\}\_{\alpha \in A})$ donde $M$ es un conjunto y $\\{(\varphi_{\alpha}, U_{\alpha})\\}\_{\alpha \in A}$ es una colección de aplicaciones $\varphi\_\alpha:U_\alpha \longrightarrow M$ inyectivas (parametrizaciones), con $U_\alpha$ abierto de $\mathbb{R} ^n$, y tal que
 
 1. $M=\displaystyle\bigcup_\alpha \varphi_\alpha(U_\alpha)$
 

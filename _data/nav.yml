@@ -677,6 +677,10 @@ map:
         es: Topología Algebraica
         children:
           -
+            ident: preliminarities_algebraic_topology
+            en: Preliminarities
+            es: Preliminares
+          -
             ident: compact_surfaces
             en: Compact Surfaces
             es: Superficies Compactas

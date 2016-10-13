@@ -125,6 +125,10 @@
 	<a href="/es/definition_complexes_exact_sequences.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
+	
+	
+	<a href="/es/definition_homotopy_complex_homomorphism.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
 
 
 <div style="position: relative; height: 90px;" align="center">
@@ -134,23 +138,16 @@
 </div>
 
 <div class="postbox pb_definition">
-	<p>Un <strong>homomorfismo de complejos</strong> $f:A^\ast\longrightarrow B^\ast$ es una familia de aplicaciones $f^k:A^k\longrightarrow B^k$ tales que $\mathrm{d}_B^k\circ f^k=f^{k+1}\circ\mathrm{d}_A^k$, es decir, el diagrama</p>
+	<p>Un <strong>homomorfismo de complejos</strong> $f:A^\ast\longrightarrow B^\ast$ es una familia de aplicaciones $f^k:A^k\longrightarrow B^k$ tales que $\partial_B^k\circ f^k=f^{k-1}\circ\partial_A^k$, es decir, el diagrama</p>
 
-<p>$
+<script type="math/tex; mode=display">% <![CDATA[
 \xymatrix{
-\cdots \ar[r] &amp; A^{k-1} \ar[d]^{f^{k-1}} \ar[r]^{\mathrm{d}^{k-1}} &amp; A^{k} \ar[d]^{f^{k}} \ar[r]^{\mathrm{d}^{k}} &amp; A^{k+1} \ar[d]^{f^{k+1}} \ar[r] &amp;\cdots<br />
-\cdots \ar[r] &amp; B^{k-1} \ar[r]^{\mathrm{d}^{k-1}} &amp; B^{k} \ar[r]^{\mathrm{d}^{k}} &amp; B^{k+1} \ar[r] &amp;\cdots}
-$</p>
-
-<p>\begin{xy}
-\xymatrix {
-U \ar@/_/[ddr]_y \ar@{.&gt;}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x <br />
- &amp; X \times_Z Y \ar[d]^q \ar[r]_p &amp; X \ar[d]_f <br />
- &amp; Y \ar[r]^g &amp; Z
-}
-\end{xy}</p>
+\cdots \ar[r] & A^{k+1} \ar[d]^{f^{k+1}} \ar[r]^{\partial^{k+1}} & A^{k} \ar[d]^{f^{k}} \ar[r]^{\partial^{k}} & A^{k-1} \ar[d]^{f^{k-1}} \ar[r] &\cdots\\
+\cdots \ar[r] & B^{k+1} \ar[r]^{\partial^{k+1}} & B^{k} \ar[r]^{\partial^{k}} & B^{k-1} \ar[r] &\cdots} %]]></script>
 
 <p>es conmutativo.</p>
+
+<p>En tal caso, $f:A^\ast\longrightarrow B^\ast$ induce $f^k:H^k(A^\ast)\longrightarrow H^k(B^\ast)$ aplicaciones lineales, definidas por $f^k[\alpha]=[f^k(\alpha)]$. La condición $\mathrm{d}_B^k\circ f^k=f^{k+1}\circ\mathrm{d}_A^k$ asegura que la operación está bien definida.</p>
 
 </div>
 

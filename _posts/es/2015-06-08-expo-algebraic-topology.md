@@ -5,7 +5,7 @@ category: es
 permalink: es/exposition_algebraic_topology
 
 ident: exposition_algebraic_topology
-parent: compact_surfaces
+parent: preliminarities_algebraic_topology
 kind: exposition
 mathjax: true
 
