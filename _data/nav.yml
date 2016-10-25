@@ -75,6 +75,10 @@ map:
         es: Funciones
         children:
           -
+            ident: first_functions
+            en: First Functions
+            es: Primeras Funciones
+          -
             ident: limits
             en: Limits
             es: Límites

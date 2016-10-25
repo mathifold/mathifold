@@ -34,6 +34,15 @@
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
+{% if page.sage %}
+  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function () {
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage', hide: ["editor", "evalButton", "permalink"], autoeval: 1});
+    });
+    </script>
+{% endif %}
+
 {% if page.geogebratube.size > 0 %}
 	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type='text/javascript' src='http://www.geogebratube.org/scripts/deployggb.js' ></script>
