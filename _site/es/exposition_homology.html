@@ -316,10 +316,38 @@
 
 <hr />
 
-<p>La homología, con el propósito de describir la forma del espacio de estudio, busca objetos sin frontera que no sean la frontera de algo. Detrás de estos objetos se hallan los “agujeros” del espacio.</p>
+<p>Nuestro objetivo es entender la forma de un espacio. ¿Cómo distinguiremos una esfera de un toro? La homología tiene un lema:</p>
+
+<p style="text-align: center;"><b>BUSCA ALGO SIN FRONTERA QUE NO SEA LA FRONTERA DE ALGO</b></p>
+
+<p>… y curiosamente, ¡funciona! Claro, las cosas que tienen frontera (por ejemplo, curvas sin cerrar) no son muy útiles para encontrar diferencias, se pueden mover demasiado</p>
+
+<div class="resource img">
+            <img src="/images/images/sphere_torus_boundary.svg" /><a class="ori" href="/images/codes/sphere_torus_boundary.ipe"></a></div>
+
+<p>pero las cosas que no tienen frontera, que están cerradas, quizá nos pueden decir algo más</p>
+
+<div class="resource img">
+            <img src="/images/images/sphere_torus_no_boundary.svg" /><a class="ori" href="/images/codes/sphere_torus_no_boundary.ipe"></a></div>
+
+<p>En la esfera, una curva sin frontera es la frontera de algo… y sin embargo en el toro tenemos una curva sin frontera que no es la frontera de nada… ¡ya tenemos una diferencia! ¡Parece que funciona!</p>
+
+<div class="resource img">
+            <img src="/images/images/sphere_torus_is_boundary.svg" /><a class="ori" href="/images/codes/sphere_torus_is_boundary.ipe"></a></div>
+
+<p>En general estos objetos sin frontera que no son la frontera de nada capturan “agujeros” de distintas dimensiones… los agujeros de dimensión 0 son componentes separadas, los agujeros de dimensión 1 son rodeables por un lazo, los de dimensión 2 por una superficie…</p>
 
 <div class="resource img">
             <img src="/images/images/homology.svg" /><a class="ori" href="/images/codes/homology.ipe"></a></div>
+
+<p>Pero muchos podrían rebatir, “¿no es el lazo en el toro la frontera del resto del toro?”</p>
+
+<div class="resource img">
+            <img src="/images/images/torus_loop_boundary.svg" /><a class="ori" href="/images/codes/torus_loop_boundary.ipe"></a></div>
+
+<p>Bueno… estamos utilizando el concepto de frontera sin definirlo demasiado… Por eso hay que definir mejor el <em>operador frontera</em> $\partial$</p>
+
+<hr />
 
 <p>Para utilizar el concepto de frontera algebraicamente, el objeto y su frontera están orientados.</p>
 

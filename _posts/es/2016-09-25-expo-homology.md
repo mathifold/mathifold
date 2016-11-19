@@ -191,9 +191,33 @@ donde $b_i=\text{rk }H_i(X)$ son los *números de Betti*
 
 -----------------
 
-La homología, con el propósito de describir la forma del espacio de estudio, busca objetos sin frontera que no sean la frontera de algo. Detrás de estos objetos se hallan los "agujeros" del espacio.
+Nuestro objetivo es entender la forma de un espacio. ¿Cómo distinguiremos una esfera de un toro? La homología tiene un lema:
+
+<p style="text-align: center;"><b>BUSCA ALGO SIN FRONTERA QUE NO SEA LA FRONTERA DE ALGO</b></p>
+
+... y curiosamente, ¡funciona! Claro, las cosas que tienen frontera (por ejemplo, curvas sin cerrar) no son muy útiles para encontrar diferencias, se pueden mover demasiado
+
+{% resource sphere_torus_boundary.svg %}
+
+pero las cosas que no tienen frontera, que están cerradas, quizá nos pueden decir algo más
+
+{% resource sphere_torus_no_boundary.svg %}
+
+En la esfera, una curva sin frontera es la frontera de algo... y sin embargo en el toro tenemos una curva sin frontera que no es la frontera de nada... ¡ya tenemos una diferencia! ¡Parece que funciona!
+
+{% resource sphere_torus_is_boundary.svg %}
+
+En general estos objetos sin frontera que no son la frontera de nada capturan "agujeros" de distintas dimensiones... los agujeros de dimensión 0 son componentes separadas, los agujeros de dimensión 1 son rodeables por un lazo, los de dimensión 2 por una superficie...
 
 {% resource homology.svg %}
+
+Pero muchos podrían rebatir, "¿no es el lazo en el toro la frontera del resto del toro?"
+
+{% resource torus_loop_boundary.svg %}
+
+Bueno... estamos utilizando el concepto de frontera sin definirlo demasiado... Por eso hay que definir mejor el *operador frontera* $\partial$
+
+---------------
 
 Para utilizar el concepto de frontera algebraicamente, el objeto y su frontera están orientados.
 
