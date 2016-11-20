@@ -349,10 +349,58 @@
 
 <hr />
 
-<p>Para utilizar el concepto de frontera algebraicamente, el objeto y su frontera están orientados.</p>
+<p>Sobre el <strong>operador frontera</strong> $\partial$, vamos por pasos:</p>
 
-<div class="resource img">
-            <img src="/images/images/boundary_operator.svg" /><a class="ori" href="/images/codes/boundary_operator.ipe"></a></div>
+<ol>
+  <li>
+    <p>$\partial$ lleva cosas de dimensión $k$ a dimensión $k-1$, siempre una dimensión menos</p>
+
+    <div class="resource img">
+        <img src="/images/images/boundary_operator_non_oriented.svg" /><a class="ori" href="/images/codes/boundary_operator_non_oriented.ipe"></a></div>
+
+    <p>Los objetos de dimensión 0 son puntos, los de dimensión 1 son curvas, los de dimensión 2 son superficies… Al conjunto de “objetos de dimensión $k$” en el espacio $X$ le llamaremos $C_k(X)$, así que lo que tenemos es</p>
+
+    <script type="math/tex; mode=display">\partial:C_k(X)\longrightarrow C_{k-1}(X)</script>
+
+    <p>para cada $k\geqslant 0$ (la frontera de un punto es 0)</p>
+  </li>
+  <li>
+    <p>La frontera de algo ya no tiene frontera (es 0). Es algo de lo que nos podemos convencer con los ejemplos anteriores. Algebraicamente, esto se expresa como</p>
+
+    <script type="math/tex; mode=display">\partial^2=0</script>
+
+    <p>una propiedad tan importante y que aparece tanto en matemáticas que da pie al <em>Álgebra Homológica</em> <a href="/es/definition_complexes_exact_sequences.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a></p>
+  </li>
+  <li>
+    <p>Para que todo funcione bien, todos los objetos de dimensión $k$ deben estar <em>orientados</em>. El concepto de orientación es delicado; por ahora, para nosotros esto se traducirá que nuestros objetos tienen incorporados una característica que toma dos valores opuestos (“uno el negativo del otro”)</p>
+
+    <ul>
+      <li>Los puntos estarán etiquetados con $+$ ó $-$</li>
+      <li>Las curvas tienen una dirección</li>
+      <li>Las superficies están pintadas de azul por una cara y de amarillo por la otra; el color azul denota sentido de giro <em>antihorario</em> y el color amarillo giro <em>horario</em></li>
+      <li>Los volúmenes tienen una cierta “helicidad”…</li>
+    </ul>
+
+    <p>¡y todo esto se tiene en cuenta para el operador frontera! Una curva comienza en un punto $-$ y acaba en un punto $+$; el giro en las superficies debe coincidir con la dirección de la curva frontera…</p>
+
+    <div class="resource img">
+        <img src="/images/images/boundary_operator.svg" /><a class="ori" href="/images/codes/boundary_operator.ipe"></a></div>
+
+    <p>¿Por qué es importante esto? Para que el operador frontera funcione bien al dividir objetos</p>
+
+    <div class="resource img">
+        <img src="/images/images/boundary_operator_division.svg" /><a class="ori" href="/images/codes/boundary_operator_division.ipe"></a></div>
+
+    <p>¡Magnífico! Los objetos iguales con distinta orientación actúan como opuestos y se cancelan. Esto hace que todo funcione bien. Además nuestro problema anterior del toro se ha solucionado: si cortamos un toro, cada extremo de la superficie da un borde, pero como éstos tienen orientaciones opuestas, ¡se cancelan!</p>
+
+    <div class="resource img">
+        <img src="/images/images/cut_torus_boundary.svg" /><a class="ori" href="/images/codes/cut_torus_boundary.ipe"></a></div>
+
+    <p>Por eso, podemos volver a afirmar: el lazo anterior en el toro no es frontera de nada.</p>
+  </li>
+</ol>
+
+<hr />
 
 <p>Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:</p>
 

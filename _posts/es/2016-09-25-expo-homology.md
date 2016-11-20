@@ -219,9 +219,48 @@ Bueno... estamos utilizando el concepto de frontera sin definirlo demasiado... P
 
 ---------------
 
-Para utilizar el concepto de frontera algebraicamente, el objeto y su frontera están orientados.
+Sobre el **operador frontera** $\partial$, vamos por pasos:
 
-{% resource boundary_operator.svg %}
+ 1. $\partial$ lleva cosas de dimensión $k$ a dimensión $k-1$, siempre una dimensión menos
+
+    {% resource boundary_operator_non_oriented.svg %}
+
+    Los objetos de dimensión 0 son puntos, los de dimensión 1 son curvas, los de dimensión 2 son superficies... Al conjunto de "objetos de dimensión $k$" en el espacio $X$ le llamaremos $C_k(X)$, así que lo que tenemos es
+
+    $$\partial:C_k(X)\longrightarrow C_{k-1}(X)$$
+
+    para cada $k\geqslant 0$ (la frontera de un punto es 0)
+
+ 2. La frontera de algo ya no tiene frontera (es 0). Es algo de lo que nos podemos convencer con los ejemplos anteriores. Algebraicamente, esto se expresa como
+
+    $$\partial^2=0$$
+
+    una propiedad tan importante y que aparece tanto en matemáticas que da pie al *Álgebra Homológica* {% cite definition_complexes_exact_sequences %}
+
+ 3. Para que todo funcione bien, todos los objetos de dimensión $k$ deben estar *orientados*. El concepto de orientación es delicado; por ahora, para nosotros esto se traducirá que nuestros objetos tienen incorporados una característica que toma dos valores opuestos ("uno el negativo del otro")
+
+    * Los puntos estarán etiquetados con $+$ ó $-$
+    * Las curvas tienen una dirección
+    * Las superficies están pintadas de azul por una cara y de amarillo por la otra; el color azul denota sentido de giro *antihorario* y el color amarillo giro *horario*
+    * Los volúmenes tienen una cierta "helicidad"...
+
+    ¡y todo esto se tiene en cuenta para el operador frontera! Una curva comienza en un punto $-$ y acaba en un punto $+$; el giro en las superficies debe coincidir con la dirección de la curva frontera...
+
+    {% resource boundary_operator.svg %}
+
+    ¿Por qué es importante esto? Para que el operador frontera funcione bien al dividir objetos
+
+    {% resource boundary_operator_division.svg %}
+
+    ¡Magnífico! Los objetos iguales con distinta orientación actúan como opuestos y se cancelan. Esto hace que todo funcione bien. Además nuestro problema anterior del toro se ha solucionado: si cortamos un toro, cada extremo de la superficie da un borde, pero como éstos tienen orientaciones opuestas, ¡se cancelan!
+
+    {% resource cut_torus_boundary.svg %}
+
+    Por eso, podemos volver a afirmar: el lazo anterior en el toro no es frontera de nada.
+
+---------------
+
+
 
 Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:
 
