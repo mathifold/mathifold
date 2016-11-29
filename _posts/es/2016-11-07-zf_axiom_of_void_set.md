@@ -1,5 +1,5 @@
 ---
-title: "Axioma de extensionalidad"
+title: "Axioma del conjunto vacío"
 lang: es
 category: es
 permalink: es/axiom_of_void_set
@@ -19,8 +19,8 @@ $$\exists X | \forall U, \forall a \in U, a \in X \longleftrightarrow a\neq a$$
 
 O lo que es lo mismo,
 
-$$\exists \o \equiv X | \forall U, \forall a \in U, a \notin X$$
+$$\exists \emptyset \equiv X | \forall U, \forall a \in U, a \notin X$$
 
-A dicho conjunto lo llamaremos conjunto vacío (y lo denotaremos \o ). Además, el conjunto vacío será único dado que por el axioma de extensionalidad, si existe otro conjunto \o ' que contenga a todos los elementos que no sean iguales a sí mismos, contendría a los mismos elementos, y entonces dicho conjunto \o ' = \o .
+A dicho conjunto lo llamaremos conjunto vacío (y lo denotaremos \o ). Además, el conjunto vacío será único dado que por el axioma de extensionalidad, si existe otro conjunto \o ' que contenga a todos los elementos que no sean iguales a sí mismos, contendría a los mismos elementos, y entonces dicho conjunto \emptyset ' = \emptyset .
 
-Nótese, que, por no tener ningún elemento, $$#\o = 0$$, y el único subconjunto que se podrá obtener de él es él mismo (es decir, \mathcal{P} (\o) = \o ).
+Nótese, que, por no tener ningún elemento, $$#\emptyset = 0$$, y el único subconjunto que se podrá obtener de él es él mismo (es decir, \mathcal{P} (\emptyset) = \emptyset ).
