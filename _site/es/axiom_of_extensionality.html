@@ -77,14 +77,14 @@
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/logic.html" style="text-decoration: none; color: black">
-		Lógica</a>
+		<a href="/subjects/es/set_theory.html" style="text-decoration: none; color: black">
+		Teoría de Conjuntos</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/intro_logic.html" style="text-decoration: none; color: black">
-		Capítulo1</a>
+		<a href="/chapters/es/zermelo_fraenkel_axiomatic.html" style="text-decoration: none; color: black">
+		Axiomática de Zermelo-Fraenkel</a>
 		</span>
 	
 	
@@ -98,7 +98,7 @@
 				
 				
 					
-					<a href="/es/logic_system.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/axiom_of_extensionality.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -122,59 +122,31 @@
 
 
 
+	
+	
+	<a href="/es/introduction.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
 
 	
 	
-	<a href="/es/propositional_logic.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/axiom_of_pairs.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Sistema lógico</span>
+		Axioma de extensionalidad</span>
 </div>
 
 <div class="postbox pb_definition">
-	<p>Un sistema lógico está compuesto por:</p>
+	<p>El axioma de extensionalidad define la igualdad entre dos conjuntos. Afirma que dos conjuntos son iguales si y sólo si tienen los mismos elementos, es decir:</p>
 
-<ul>
-  <li>Un <strong>lenguaje</strong> $L$, formado por combinaciones de símbolos que satisfacen cierta regla. Los lenguajes lógicos estan diseñados para facilitar su interpretación.</li>
-  <li>Unos <strong>axiomas</strong> $Ax\subset L$, que son sentencias del lenguaje cuya interpretación asumimos cierta.</li>
-  <li>Unas <strong>reglas de deducción</strong>, que son procedimientos del lenguaje que cuando se aplican a premisas validas arrojan resultados válidos. Podemos representar las reglas de deducción por $n+1$-uplas de sentencias donde los $n$ primeros miembros son premisas y el último miembro es la conclusión.</li>
-</ul>
+<script type="math/tex; mode=display">\forall XY(\forall a(a \in X \longleftrightarrow a \in Y)\longrightarrow X=Y)</script>
 
-<p>Los tres componentes dan lugar a las <strong>pruebas</strong>:</p>
+<p>Este axioma, además, nos dice algo mucho más revelador: que <strong>para definir un conjunto basta describir los elementos que lo componen</strong>.</p>
 
-<blockquote>
-  <p>Una <strong>prueba</strong> de una sentencia $\phi$ en un sistema lógico es una secuencia finita de sentencias tales que:</p>
-
-  <ol>
-    <li>Todas las sentencias pertenecen al lenguaje del sistema.</li>
-    <li>Todas las sentencias son axiomas o se pueden deducir de sentencias anteriores aplicando una regla de deducción.</li>
-    <li>La última sentencia de la secuencia es $\phi$.</li>
-  </ol>
-</blockquote>
-
-<p>Una sentencia tal que existe una prueba de la misma se denomina <strong>demostrable</strong> o <strong>deducible</strong>.</p>
-
-<p>El conjunto de sentencias demostrables en un sistema lógico se conoce como una <strong>teoría</strong>.</p>
-
-<h2 id="ejemplo">Ejemplo</h2>
-
-<p>Consideremos un sistema lógico $Palabras Encadenadas$. Para especificarlo, tenemos que indicar su lenguaje, sus axiomas y sus reglas de deducción.</p>
-
-<p>En este ejemplo arbitrario, el lenguaje va a consistir en todas las palabras incluidas en una revisión específica del diccionario de la RAE. De esa manera, la sentencia “Hola” pertenece al lenguaje, pero no la sentencia “xjksjkx”.</p>
-
-<p>El único axioma del sistema va a ser la palabra “Pala”. Por tanto, la palabra “Pala” es un teorema de $Palabras Encadenadas$, y tiene una prueba de longitud 1, que consiste en la propia palabra, que deducimos en virtud de ser un axioma.</p>
-
-<p>La única regla de deducción del sistema consiste en de una palabra cualquiera deducir otra palabra cuya primera sílaba coincida con la última de la premisa. Por ejemplo, de “Pala” podemos deducir “Lazo”.</p>
-
-<p>Poniendolo todo junto, podemos ver que la palabra “Paloma” es un teorema de $Palabras Encadenadas$.</p>
-
-<p>Una posible prueba es “Pala, Lazo, Zorro, Ropa, Paloma”.</p>
-
-<p>Esto especifica totalmente el sistema lógico $Palabras Encadenadas$. No es un sistema particularmente interesante, porque no nos ayuda a modelar la realidad, pero a continuación veremos otros sistemas más interesantes.</p>
+<p>La implicación inversa, que va de derecha a izquierda, nos asegura que, dados dos conjuntos iguales, todas las propiedades que se puedan aplicar a los elementos de X, se pueden aplicar a los de Y. Esta implicación inversa es un teorema lógico, que se puede demostrar con lógica de predicados de primer orden, y <strong>no forma parte de la axiomática de ZF</strong>.</p>
 
 </div>
 
