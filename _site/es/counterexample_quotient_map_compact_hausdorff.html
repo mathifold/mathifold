@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+  <meta charset="utf-8">
+
+  <title>Cocientes Topológicos y Aplicaciones de Compacto a Hausdorff</title>
+
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/topic_images.css">
+  <link rel="stylesheet" href="/css/subject_images.css">
+  <link rel="stylesheet" href="/css/symb.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
+
+
+
+  
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": {
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: {
+	         linebreaks: { automatic: true }
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60766664-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<div style="height: 90px;">
+
+	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+	
+	
+	
+		
+		
+		
+		<span style="font-size:35px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:35px;vertical-align:middle;">
+		<a href="/topics/es/pure_mathematics.html" style="text-decoration: none; color: black">
+		Matemáticas Puras</a>
+		</span>
+		<span style="font-size:30px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:30px;vertical-align:middle;">
+		<a href="/subjects/es/algebraic_topology.html" style="text-decoration: none; color: black">
+		Topología Algebraica</a>
+		</span>
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/preliminarities_algebraic_topology.html" style="text-decoration: none; color: black">
+		Preliminares</a>
+		</span>
+	
+	
+
+	<div style="float: right">
+		<a href="/search/es/search.html"><img src="/images/search.svg" height="40" width="40"></a>
+		<img src="/images/blank.svg" height="20" width="20">
+		
+			
+				
+				
+				
+					
+					<a href="/es/counterexample_quotient_map_compact_hausdorff.html"><img src="/images/es.svg" height="40" width="40"></a>
+				
+			
+		
+			
+				
+				
+				
+			
+		
+	</div>
+</div>
+
+</header>
+
+
+
+    
+
+
+
+
+
+
+	
+	
+	<a href="/es/lemma_quotient_map_compact_hausdorff.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/counterexample.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Cocientes Topológicos y Aplicaciones de Compacto a Hausdorff</span>
+</div>
+
+<div class="postbox pb_counterexample">
+	<p>La condición de compacidad es clave en el resultado anterior; si la obviamos, podemos no tener un cociente topológico.</p>
+
+<p>Sea $X=[0,\infty)$ la semirrecta real positiva y los dos espacios siguientes</p>
+
+<p>$Y_1=\bigcup_{n\geq 1} \left\{(x,y) \vert \left(x-\frac{1}{n}\right)^2+y^2=\frac{1}{n^2}\right\}\subset \mathbb{R}^2$ el <em>pendiente hawaiano</em></p>
+
+<div class="resource img">
+            <img src="/images/images/hawaiian_earring.svg" /><a class="ori" href="/images/codes/hawaiian_earring.ipe"></a></div>
+
+<p>$Y_2=\bigcup_{n\geq 1} \left\{(x,y) \vert (x-n)^2+y^2=n^2\right\}\subset \mathbb{R}^2$</p>
+
+<div class="resource img">
+            <img src="/images/images/increasing_wedge_circles.svg" /><a class="ori" href="/images/codes/increasing_wedge_circles.ipe"></a></div>
+
+<p>Consideramos las aplicaciones</p>
+
+<p>$f_1:X\longrightarrow Y_1,\,x\longmapsto\left(\frac{1}{n}(1+\cos(2\pi x)),\frac{1}{n}\sin(2\pi x)\right)\,x\in[n-1,n],\,n\in\mathbb{N}\smallsetminus 0$</p>
+
+<p>$f_2:X\longrightarrow Y_2,\,x\longmapsto(n(1+\cos(2\pi x)),n\sin(2\pi x))\,x\in[n-1,n],\,n\in\mathbb{N}\smallsetminus 0$</p>
+
+<p>Al identificar los puntos con igual imagen, ambas aplicaciones inducen la relación $a\sim b\Longleftrightarrow a,b\in \mathbb{N}\subset X$. Si $f_1$ y $f_2$ fuesen cocientes topológicos, el espacio cociente $X/\sim$ (que también se denota $X/\mathbb{N}$) sería homeomorfo a $Y_1$ e $Y_2$. Como $Y_1$ e $Y_2$ no son homeomorfos (pues $Y_1$ es compacto e $Y_2$ no), al menos una de las aplicaciones no es cociente topológico. De hecho ninguna lo es y tenemos en realidad tres espacios distintos, porque $X/\mathbb{N}$ no es $\text{IAN}$ pero $Y_1$ e $Y_2$ sí lo son, por ser subconjuntos de $\mathbb{R}^2$.</p>
+
+
+</div>
+
+
+
+
+
+    <footer class="site-footer">
+
+<div style="height: 80px; line-height: 110px; margin-left: 5px;">
+
+	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
+
+</div>
+
+</footer>
+
+
+  </body>
+
+</html>

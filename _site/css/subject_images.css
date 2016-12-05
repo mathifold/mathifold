@@ -203,6 +203,10 @@
   background-image: url('/images/morse_theory.jpg');
 }
 
+.homological_algebra{
+  background-image: url('/images/homological_algebra.jpg');
+}
+
 
 
 .algebraic_number_theory{
@@ -231,4 +235,10 @@
 
 .orbifolds{
   background-image: url('/images/orbifolds.jpg');
+}
+
+
+
+.breathtaking_math_breakthroughs{
+  background-image: url('/images/breathtaking_math_breakthroughs.jpg');
 }

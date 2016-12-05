@@ -4,18 +4,21 @@
   <head>
   <meta charset="utf-8">
 
+  <title>Mathifold</title>
+
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
   <link rel="stylesheet" href="/css/subject_images.css">
   <link rel="stylesheet" href="/css/symb.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
-  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
 
 
 
   
+
+
 
 
 
@@ -90,6 +93,606 @@
 <script>
   window.store = {
     
+    
+      "es-applet-vector-field-2d": {
+        "title": "Campo Vectorial en el Plano",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_vector_field_2d"
+      }
+      ,
+    
+      "es-propositional-logic": {
+        "title": "Lógica proposicional",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "La lógica proposicional es un sistema lógico particularmente simple, pero muy versatil.El lenguaje de la lógica proposicional esta formado por variables proposicionales, generalmente letras $P,Q,R,S,T,…$; y los conectores lógicos $\\neg$ y $\\to$. Además se utilizan paréntesis para indicar la prioridad (aunque a veces se omiten por brevedad).Una variable proposicional cualquiera pertenece al lenguaje del sistema lógico. Si dos expresiones $\\phi$ y $\\psi$ pertenecen al lenguaje entonces su yuxtaposición con un conector lógico entre paréntesis también pertenece al lenguaje (con la excepción de $\\neg$, que solo se combina con una expresión). Por ejemplo, $(P\\implies Q)$ pertenece al lenguaje, y $\\neg(P\\implies Q)\\to R$ también.Para simplificar la comprensión e interpretación de las sentencias de la lógica proposicional, se utilizan algunas abreviaciones. Por ejemplo, $P\\wedge Q$ abrevia $\\neg(\\neg P \\to Q)$.La axiomatización de la lógica proposicional parece un poco mística, pero cuando veamos más adelante el concepto de semántica cobrará sentido. Por el momento me limito a presentar una posible axiomatización:Sean $\\phi$ y $\\psi$ sentencias bien formadas del lenguaje. Entonces son axiomas las siguientes sentencias:  $\\phi \\to \\left( \\psi \\to \\phi \\right)$  $\\left ( \\phi \\to ( \\psi \\rightarrow \\xi \\right)) \\to \\left( \\left( \\phi \\to \\psi \\right) \\to  \\left( \\phi \\to \\xi \\right) \\right)$  $\\left ( \\lnot \\phi \\to \\lnot \\psi \\right) \\to \\left( \\psi \\to \\phi \\right)$La lógica proposicional cuenta con una única regla de deducción, conocida como modus ponens, que a partir de dos premisas de las formas $\\phi \\to \\psi$ y $\\phi$ permite deducir $\\phi$.La versatilidad de la lógica proposicional permite modelizar razonamientos clásicos, cómo veremos más adelante. Además, todo sistema lógico puede ser proposicionalizado. Es decir, podemos encontrar una correspondencia entre un sistema lógico cualquiera y la lógica proposicional. Más adelante exploraremos este concepto.Ejercicio propuesto: Prueba que para toda sentencia bien formada $\\psi$ la sentencia $\\psi \\right \\psi$ es un teorema de la lógica proposicional.",
+        "url": "/es/propositional_logic"
+      }
+      ,
+    
+      "es-prob-domino-tiling": {
+        "title": "Embaldosado con fichas de dominó",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "¿Se puede embaldosar con fichas de dominó una cuadrícula de $10\\times 10$ a la que se le han quitado las piezas superior izquierda e inferior derecha? Si no, ¿por qué?            \tSolución\t...",
+        "url": "/es/prob_domino_tiling"
+      }
+      ,
+    
+      "es-axiom-of-void-set": {
+        "title": "Axioma del conjunto vacío",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Otro axioma importantísimo en la teoría de ZF, es el axioma del conjunto vacío, que afirma la existencia de una de las entidades más interesantes e intuitivas de la teoría de conjuntos: un conjunto que no contiene ningún elemento.O lo que es lo mismo,A dicho conjunto lo llamaremos conjunto vacío (y lo denotaremos \\o ). Además, el conjunto vacío será único dado que por el axioma de extensionalidad, si existe otro conjunto \\o ‘ que contenga a todos los elementos que no sean iguales a sí mismos, contendría a los mismos elementos, y entonces dicho conjunto \\emptyset ‘ = \\emptyset .Nótese, que, por no tener ningún elemento, , y el único subconjunto que se podrá obtener de él es él mismo (es decir, \\mathcal{P} (\\emptyset) = \\emptyset ).",
+        "url": "/es/axiom_of_void_set"
+      }
+      ,
+    
+      "es-axiom-of-pairs": {
+        "title": "Axioma del conjunto unión",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Con el axioma del conjunto par hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: el axioma de la unión, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de dos conjuntos ya dados.A este conjunto le llamamos conjunto unión de $X$ e $Y$, y usualmente se denota por $X \\cup Y$.Ahora que hemos definido un conjunto que contiene a otros,",
+        "url": "/es/axiom_of_pairs"
+      }
+      ,
+    
+      "es-axiom-of-pairs": {
+        "title": "Axioma del conjunto par",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El denominado axioma del conjunto par (también axioma de pares, axioma de par, o axioma de par no ordenado), garantiza la existencia de un conjunto cuyos elementos sólo sean dos conjuntos ya dados.A este conjunto lo llamaremos conjunto par formado por $X$ e $Y$, y lo denotaremos ${X,Y}$. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}’$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}’={X,Y}$.Hay ciertos apuntes interesantes acerca de este axioma:\\bullet Si \\forall a \\in Y \\longrightarrow a \\in X (lo cual no implica que X=Y), ó X=\\emptyset ó Y=\\emptyset, entonces el conjunto par ${X,Y}={X,X}=X$.\\bullet Si X=Y=\\emptyset, entonces el conjunto par {X,Y}={\\emptyset,\\emptyset}=\\emptyset.\\bullet Dados dos conjuntos $C={A,B}$ y $E$, existe $F={C,D}$, por lo que existirán conjuntos pares de un número infinito de conjuntos. Así se demuestra que existen infinitos conjuntos.",
+        "url": "/es/axiom_of_pairs"
+      }
+      ,
+    
+      "es-axiom-of-extensionality": {
+        "title": "Axioma de extensionalidad",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El axioma de extensionalidad define la igualdad entre dos conjuntos. Afirma que dos conjuntos son iguales si y sólo si tienen los mismos elementos, es decir:Este axioma, además, nos dice algo mucho más revelador: que para definir un conjunto basta describir los elementos que lo componen.La implicación inversa, que va de derecha a izquierda, nos asegura que, dados dos conjuntos iguales, todas las propiedades que se puedan aplicar a los elementos de X, se pueden aplicar a los de Y. Esta implicación inversa es un teorema lógico, que se puede demostrar con lógica de predicados de primer orden, y no forma parte de la axiomática de ZF.",
+        "url": "/es/axiom_of_extensionality"
+      }
+      ,
+    
+      "es-introduction": {
+        "title": "Introducción",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "La teoría axiomática de Zermelo-Fraenkel es, actualmente, el modelo más utilizado para explicar la teoría de conjuntos. Se suele abreciar ZF, y si se complementa con el axioma de elección (en inglés, axiom of Choice), se abrevia ZFC. Esta sección se dedicará a definir y a dar una visión intuitiva de cada uno de los axiomas. Si se quiere una visión más amplia acerca de por qué surgió esta teoría, y las consecuencias que tuvo en el mundo matemático, se recomienda visitar Zermelo-Fraenkel en el mundo de las matemáticas NOT FINISHED. POST AND CITATION REQUIRED (zf_set_theory). Por ahora bastará saber que esta teoría toma por primitivos los conceptos de subconjunto y pertenencia.",
+        "url": "/es/introduction"
+      }
+      ,
+    
+      "es-logic-system": {
+        "title": "Sistema lógico",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un sistema lógico está compuesto por:  Un lenguaje $L$, formado por combinaciones de símbolos que satisfacen cierta regla. Los lenguajes lógicos estan diseñados para facilitar su interpretación.  Unos axiomas $Ax\\subset L$, que son sentencias del lenguaje cuya interpretación asumimos cierta.  Unas reglas de deducción, que son procedimientos del lenguaje que cuando se aplican a premisas validas arrojan resultados válidos. Podemos representar las reglas de deducción por $n+1$-uplas de sentencias donde los $n$ primeros miembros son premisas y el último miembro es la conclusión.Los tres componentes dan lugar a las pruebas:  Una prueba de una sentencia $\\phi$ en un sistema lógico es una secuencia finita de sentencias tales que:      Todas las sentencias pertenecen al lenguaje del sistema.    Todas las sentencias son axiomas o se pueden deducir de sentencias anteriores aplicando una regla de deducción.    La última sentencia de la secuencia es $\\phi$.  Una sentencia tal que existe una prueba de la misma se denomina demostrable o deducible.El conjunto de sentencias demostrables en un sistema lógico se conoce como una teoría.EjemploConsideremos un sistema lógico $Palabras Encadenadas$. Para especificarlo, tenemos que indicar su lenguaje, sus axiomas y sus reglas de deducción.En este ejemplo arbitrario, el lenguaje va a consistir en todas las palabras incluidas en una revisión específica del diccionario de la RAE. De esa manera, la sentencia “Hola” pertenece al lenguaje, pero no la sentencia “xjksjkx”.El único axioma del sistema va a ser la palabra “Pala”. Por tanto, la palabra “Pala” es un teorema de $Palabras Encadenadas$, y tiene una prueba de longitud 1, que consiste en la propia palabra, que deducimos en virtud de ser un axioma.La única regla de deducción del sistema consiste en de una palabra cualquiera deducir otra palabra cuya primera sílaba coincida con la última de la premisa. Por ejemplo, de “Pala” podemos deducir “Lazo”.Poniendolo todo junto, podemos ver que la palabra “Paloma” es un teorema de $Palabras Encadenadas$.Una posible prueba es “Pala, Lazo, Zorro, Ropa, Paloma”.Esto especifica totalmente el sistema lógico $Palabras Encadenadas$. No es un sistema particularmente interesante, porque no nos ayuda a modelar la realidad, pero a continuación veremos otros sistemas más interesantes.",
+        "url": "/es/logic_system"
+      }
+      ,
+    
+      "es-applet-integration-limit-sums": {
+        "title": "Integración como Límite de Sumas",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_integration_limit_sums"
+      }
+      ,
+    
+      "es-applet-visual-simplex-2": {
+        "title": "Método del Simplex de 2 variables",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_visual_simplex_2"
+      }
+      ,
+    
+      "es-applet-poisson-kernel": {
+        "title": "Núcleo de Poisson",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_poisson_kernel"
+      }
+      ,
+    
+      "es-visualisation-projective-plane-torus-klein-bottle": {
+        "title": "Plano Proyectivo, Toro y Botella de Klein",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_projective_plane_torus_klein_bottle"
+      }
+      ,
+    
+      "es-visualisation-connected-sum-projective-plane-klein-bottle": {
+        "title": "Suma Conexa de Planos Proyectivos y Botella de Klein",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_connected_sum_projective_plane_klein_bottle"
+      }
+      ,
+    
+      "es-visualisation-projective-plane-mobius-band": {
+        "title": "Plano Proyectivo y Banda de Möbius",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_projective_plane_mobius_band"
+      }
+      ,
+    
+      "es-visualisation-projective-plane-boy-surface": {
+        "title": "Plano Proyectivo: Superficie de Boy",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_projective_plane_boy_surface"
+      }
+      ,
+    
+      "es-visualisation-projective-plane-cross-cap": {
+        "title": "Plano Proyectivo: Cross-Cap",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_projective_plane_cross_cap"
+      }
+      ,
+    
+      "es-visualisation-klein-figure-8": {
+        "title": "La botella de Klein - figura 8",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_klein_figure_8"
+      }
+      ,
+    
+      "es-visualisation-klein-mobius": {
+        "title": "La botella de Klein con dos cintas de Möbius",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_klein_mobius"
+      }
+      ,
+    
+      "es-visualisation-klein-bottle": {
+        "title": "La botella de Klein",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_klein_bottle"
+      }
+      ,
+    
+      "es-visualisation-40-gon-genus-10": {
+        "title": "Del 40-gono a la superficie de género 10",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_40_gon_genus_10"
+      }
+      ,
+    
+      "es-visualisation-16-gon-genus-4": {
+        "title": "Del 16-gono a la superficie de género 4",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_16_gon_genus_4"
+      }
+      ,
+    
+      "es-counterexample-quotient-map-compact-hausdorff": {
+        "title": "Cocientes Topológicos y Aplicaciones de Compacto a Hausdorff",
+        "kind": "counterexample",
+        "author": "",
+        "category": "es",
+        "content": "La condición de compacidad es clave en el resultado anterior; si la obviamos, podemos no tener un cociente topológico.Sea $X=[0,\\infty)$ la semirrecta real positiva y los dos espacios siguientes$Y_1=\\bigcup_{n\\geq 1} \\left\\{(x,y) \\vert \\left(x-\\frac{1}{n}\\right)^2+y^2=\\frac{1}{n^2}\\right\\}\\subset \\mathbb{R}^2$ el pendiente hawaiano            $Y_2=\\bigcup_{n\\geq 1} \\left\\{(x,y) \\vert (x-n)^2+y^2=n^2\\right\\}\\subset \\mathbb{R}^2$            Consideramos las aplicaciones$f_1:X\\longrightarrow Y_1,\\,x\\longmapsto\\left(\\frac{1}{n}(1+\\cos(2\\pi x)),\\frac{1}{n}\\sin(2\\pi x)\\right)\\,x\\in[n-1,n],\\,n\\in\\mathbb{N}\\smallsetminus 0$$f_2:X\\longrightarrow Y_2,\\,x\\longmapsto(n(1+\\cos(2\\pi x)),n\\sin(2\\pi x))\\,x\\in[n-1,n],\\,n\\in\\mathbb{N}\\smallsetminus 0$Al identificar los puntos con igual imagen, ambas aplicaciones inducen la relación $a\\sim b\\Longleftrightarrow a,b\\in \\mathbb{N}\\subset X$. Si $f_1$ y $f_2$ fuesen cocientes topológicos, el espacio cociente $X/\\sim$ (que también se denota $X/\\mathbb{N}$) sería homeomorfo a $Y_1$ e $Y_2$. Como $Y_1$ e $Y_2$ no son homeomorfos (pues $Y_1$ es compacto e $Y_2$ no), al menos una de las aplicaciones no es cociente topológico. De hecho ninguna lo es y tenemos en realidad tres espacios distintos, porque $X/\\mathbb{N}$ no es $\\text{IAN}$ pero $Y_1$ e $Y_2$ sí lo son, por ser subconjuntos de $\\mathbb{R}^2$.",
+        "url": "/es/counterexample_quotient_map_compact_hausdorff"
+      }
+      ,
+    
+      "es-visualisation-octogon-genus-2": {
+        "title": "Del octógono a la superficie de género 2",
+        "kind": "visualisation",
+        "author": "",
+        "category": "es",
+        "content": "Made by Jos Leys",
+        "url": "/es/visualisation_octogon_genus_2"
+      }
+      ,
+    
+      "es-lemma-quotient-map-compact-hausdorff": {
+        "title": "Cocientes Topológicos y Aplicaciones de Compacto a Hausdorff",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Sea $q:(X,T)\\longrightarrow (X',T')$ una aplicación continua y sobreyectiva. Si $X$ es compacto y $X'$ es Hausdorff, entonces $q$ es un cociente topológico.Demostración Veamos que $q$ es cerrada . Sea $C\\subset X$ un cerrado. Como $X$ es compacto y $C$ es cerrado en $X$, $C$ es compacto. Luego $q(C)$ es compacto, por ser imagen continua de un compacto. Y como $X'$ es Hausdorff, $q(C)$ es cerrado.",
+        "url": "/es/lemma_quotient_map_compact_hausdorff"
+      }
+      ,
+    
+      "es-problem-quotient-map-not-open-closed": {
+        "title": "Cociente Topológico que no es Abierto ni Cerrado",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Encontrar un cociente topológico $q:(X,T)\\to (X',T')$ que no sea abierto ni cerradoSolución...",
+        "url": "/es/problem_quotient_map_not_open_closed"
+      }
+      ,
+    
+      "es-example-quotient-map-open-closed": {
+        "title": "Cocientes Abiertos y Cerrados",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Sea $q:\\mathbb{R}^2\\longrightarrow \\mathbb{R}$ la proyección sobre la primera coordenada, $(x,y)\\longmapsto x$. Las proyecciones son siempre abiertas, y así $q$ es cociente topológico. Por tanto, demostramos así que si en el plano identificamos los puntos con igual primera coordenada, el espacio topológico cociente que nos resulta es homeomorfo a la recta real. Nótese que $q$ no es cerrada (la hipérbola $\\{xy=1\\}$ se proyecta sobre $\\mathbb{R}\\smallsetminus \\{0\\}$).(Ejemplo aplicación cerrada: por poner)",
+        "url": "/es/example_quotient_map_open_closed"
+      }
+      ,
+    
+      "es-lemma-quotient-map-open-closed": {
+        "title": "Cocientes Topológicos y Aplicaciones Abiertas o Cerradas",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Sea $q:(X,T)\\to (X',T')$ una aplicación continua y sobreyectiva. Si $q$ es abierta o cerrada, entonces es un cociente topológico.Demostración Supongamos que $q$ es abierta y comprobemos que $\\bar q:\\bar X\\longrightarrow X'$ también lo es (y por tanto es homeomorfismo, pues las biyecciones continuas y abiertas identifican los abiertos de cada espacio). Sea $\\bar U\\subset \\bar X$ un abierto:$\\bar U=\\pi(U)$ para algún $U\\subset X$ abierto saturado ($U=\\pi^{-1}(\\bar U)$). Entonces $\\bar q(\\bar U)=\\bar q(\\pi(U))=q(U)$, que es abierto por hipótesis.El caso en el que $q$ es cerrada es análogo.",
+        "url": "/es/lemma_quotient_map_open_closed"
+      }
+      ,
+    
+      "es-remark-quotient-map": {
+        "title": "Cociente Topológico",
+        "kind": "remark",
+        "author": "",
+        "category": "es",
+        "content": "Describir la topología de un espacio cociente $X/\\sim=\\bar X$ puede ser difícil a partir de la definición. Por ello se introduce el cociente topológico, que es un concepto que nos ayudará a tratar mejor la topología cociente.Una aplicación $q:X\\longrightarrow X’$ es cociente topológico cuando $X’$ tiene la misma topología que al identificar los elementos de $X$ que tienen la misma imagen. Por eso, si tenemos un candidato a topología de $X/\\sim=\\bar X$ (por ejemplo queremos ver que $\\bar X\\simeq X’$), lo que necesitamos es      Una aplicación $q:X\\longrightarrow X’$ que respete la relación de equivalencia en $X$, es decir, $q(x)=q(y)\\Longleftrightarrow x\\sim y$        Probar que $q$ es cociente topológico  y automáticamente tendremos que $\\bar X\\simeq X’$. Por tanto, nuestro objetivo ahora es dar caracterizaciones de los cocientes topológicos.",
+        "url": "/es/remark_quotient_map"
+      }
+      ,
+    
+      "es-definition-quotient-map": {
+        "title": "Cociente Topológico",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una aplicación continua $q:(X,T)\\to (X’,T’)$ se llama cociente topológico si  $q$ es sobreyectiva  definiendo la relación de equivalencia en $X$ dada por $x\\sim y \\Longleftrightarrow q(x)=q(y)$, la aplicación inducida $\\bar q: (\\bar X,\\bar T) \\to (X’,T’)$ (que es biyectiva y continua ) es un homeomorfismo.",
+        "url": "/es/definition_quotient_map"
+      }
+      ,
+    
+      "es-lemma-quotient-topology": {
+        "title": "Propiedades de la Topología Cociente",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Sean $(X,T)$, $(Y,T_2)$ dos espacios topológicos, $\\sim$ una relación en $X$ y $g:X\\longrightarrow Y$ una aplicación.1. Existe $\\bar g: \\bar X\\longrightarrow Y$ con $\\bar g\\circ \\pi=g$ si y sólo si $x\\sim x'\\Longrightarrow g(x)=g(x')$.2. $\\bar g:(\\bar X, \\bar T)\\longrightarrow (Y,T_2)$ es continua si y sólo si $g:(X,T)\\longrightarrow (Y,T_2)$ es continua.3. $\\bar g$ es sobreyectiva si y sólo si $g$ es sobreyectiva.4. $\\bar g$ es inyectiva si y sólo si $g(x)=g(x')\\Longrightarrow x\\sim x'$.$$\\xymatrix{(X,T) \\ar[d]^{\\pi} \\ar[r]^{g} &amp; (Y,T_2)\\\\(\\bar X,\\bar T) \\ar[ur]^{\\bar g} &amp; }$$Demostración(1) Basta definir $\\bar g([x])=g(x)$, que no depende del $x\\in X$ tomado.(2) Sea $V\\in T_2$. Entonces $\\bar g^{-1}(V)\\in \\bar T \\Longleftrightarrow \\pi^{-1}(\\bar g^{-1}(V)) \\in T \\Longleftrightarrow g^{-1}(V)\\in T$. Luego $\\bar g$ es continua $\\Longleftrightarrow g$ es continua.(3) $\\bar g(\\bar X)= \\bar g(\\pi(X))=g (X)$.(4) Supongamos que $\\bar g$ es inyectiva. Entonces $g(x)=g(x')\\Longrightarrow \\bar g(\\pi(x))=\\bar g(\\pi(x'))\\Longrightarrow \\pi(x)=\\pi(x')\\Longrightarrow x\\sim x'$. Recíprocamente, supongamos que $g(x)=g(x')\\Longrightarrow x\\sim x'$; entonces $\\bar g([x])=\\bar g([x'])\\Longrightarrow g(x)=g(x')\\Longrightarrow x\\sim x' \\Longrightarrow [x]=[x']$, es decir, $\\bar g$ es inyectiva.",
+        "url": "/es/lemma_quotient_topology"
+      }
+      ,
+    
+      "es-definition-quotient-topology": {
+        "title": "Topología Cociente",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Sea $(X,T)$ un espacio topológico y $\\sim$ una relación de equivalencia en $X$. Llamamos espacio topológico cociente a $\\bar X=X/\\sim$ con la topología cociente $\\bar T=\\{\\bar V\\subset \\bar X\\, \\vert \\, \\pi^{-1}(\\bar V)\\in T\\}$, siendo $\\pi:X\\to X/\\sim$ la aplicación cociente.Comprobemos que $\\bar T$ es una topología:  $\\varnothing, \\bar X \\in \\bar T$ porque $\\pi^{-1}(\\varnothing)=\\varnothing \\in T$ y $\\pi^{-1}(\\bar X)=X\\in T$.  Si $V_1,V_2\\in \\bar T$ entonces $\\pi^{-1}(V_1), \\pi^{-1}(V_2)\\in T$. Luego $\\pi^{-1}(V_1\\cap V_2)=\\pi^{-1}(V_1)\\cap  \\pi^{-1}(V_2)\\in T$ y $V_1\\cap V_2\\in \\bar T$.  Si $V_\\alpha\\in \\bar T$, $\\alpha\\in \\Lambda$, entonces $\\pi^{-1}(V_\\alpha) \\in T$. Luego $\\pi^{-1}(\\bigcup V_\\alpha)=\\bigcup \\pi^{-1}(V_\\alpha) \\in T$ y $\\bigcup V_\\alpha \\in \\bar T$.Un conjunto $A\\subset X$ es saturado si está formado como unión de clases de equivalencia, es decir, si $x\\in A, y\\sim x \\Rightarrowy\\in A$ o equivalentemente si $A=\\pi^{-1}(\\pi(A))$. Pues bien, la topología cociente está formada por las imágenes de los abiertos saturados,",
+        "url": "/es/definition_quotient_topology"
+      }
+      ,
+    
+      "es-definition-complex-exact-sequence": {
+        "title": "Sucesión Exacta de Complejos",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una sucesión exacta de homomorfismos de complejos es una cadena de homomorfismos $0\\xrightarrow{} A^\\ast\\xrightarrow{f}B^\\ast\\xrightarrow{g}C^\\ast\\xrightarrow{} 0$ tal que $0\\xrightarrow{} A^k\\xrightarrow{f^k}B^k\\xrightarrow{g^k}C^k\\xrightarrow{} 0$ es una sucesión exacta para cada $k$.",
+        "url": "/es/definition_complex_exact_sequence"
+      }
+      ,
+    
+      "es-definition-homotopy-complex-homomorphism": {
+        "title": "Homotopía de Homomorfismos de Complejos",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Sean $f$, $g:A^\\ast\\longrightarrow B^\\ast$ homomorfismos de complejos. Una homotopía entre $f$ y $g$ es una familia de aplicaciones $K:A^k\\longrightarrow B^{k-1}$$\\xymatrix{\\cdots \\ar[r] &amp; A^{k-1} \\ar@&lt;-1ex&gt;[d]{f} \\ar@&lt;1ex&gt;[d]^{g} \\ar[r]^{\\mathrm{d}^{k-1}} &amp; A^{k} \\ar@&lt;-1ex&gt;[d]{f} \\ar@&lt;1ex&gt;[d]^{g} \\ar[r]^{\\mathrm{d}^{k}} \\ar@{.&gt;}[ld]K &amp; A^{k+1} \\ar@&lt;-1ex&gt;[d]{f} \\ar@&lt;1ex&gt;[d]^{g} \\ar[r] \\ar@{.&gt;}[ld]_K &amp;\\cdots\\cdots \\ar[r] &amp; B^{k-1} \\ar[r]^{\\mathrm{d}^{k-1}} &amp; B^{k} \\ar[r]^{\\mathrm{d}^{k}} &amp; B^{k+1} \\ar[r] &amp;\\cdots}$con $\\mathrm{d}_B\\circ K+K\\circ \\mathrm{d}_A=f-g:A^k\\longrightarrow B^k$ para todo $k$.Si $f$ y $g$ son homótopos, las aplicaciones $f^k$, $g^k:H^k(A^\\ast)\\longrightarrow H^k(B^\\ast)$ coinciden.",
+        "url": "/es/definition_homotopy_complex_homomorphism"
+      }
+      ,
+    
+      "es-definition-complex-homomorphism": {
+        "title": "Homomorfismo de Complejos",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un homomorfismo de complejos $f:A^\\ast\\longrightarrow B^\\ast$ es una familia de aplicaciones $f^k:A^k\\longrightarrow B^k$ tales que $\\partial_B^k\\circ f^k=f^{k-1}\\circ\\partial_A^k$, es decir, el diagramaes conmutativo.En tal caso, $f:A^\\ast\\longrightarrow B^\\ast$ induce $f^k:H^k(A^\\ast)\\longrightarrow H^k(B^\\ast)$ aplicaciones lineales, definidas por $f^k[\\alpha]=[f^k(\\alpha)]$. La condición $\\mathrm{d}_B^k\\circ f^k=f^{k+1}\\circ\\mathrm{d}_A^k$ asegura que la operación está bien definida.",
+        "url": "/es/definition_complex_homomorphism"
+      }
+      ,
+    
+      "es-definition-wedge-product-functoriality": {
+        "title": "Producto Wedge y Functorialidad",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El producto exterior $\\wedge$ se puede definir también en cohomología: $\\wedge:H^k(M)\\times H^l(M)\\longrightarrow H^{k+l}(M)$, $[\\alpha]\\wedge[\\beta]=[\\alpha\\wedge\\beta]$. Para que $\\wedge$ esté bien definido, hay que verificar dos puntos:      Si $\\alpha$ y $\\beta$ son cerradas, $\\alpha\\wedge\\beta$ es cerrada: $\\mathrm{d} \\alpha=0$, $\\mathrm{d} \\beta=0\\Longrightarrow\\mathrm{d}(\\alpha\\wedge\\beta)=\\mathrm{d} \\alpha\\wedge\\beta+(-1)^k\\alpha\\wedge\\mathrm{d}\\beta=0$.        Si además $\\alpha$ o $\\beta$ es exacta, $\\alpha\\wedge\\beta$ es exacta: $\\alpha=\\mathrm{d} \\gamma\\Longrightarrow\\alpha\\wedge\\beta=\\mathrm{d}\\gamma\\wedge\\beta=\\mathrm{d}(\\gamma\\wedge\\beta)-(-1)^{k-1} \\gamma\\wedge\\mathrm{d}\\beta=\\mathrm{d}(\\gamma\\wedge\\beta)$.  Este mismo razonamiento sirve para extender la functorialidad a la cohomología (una propiedad es functorial cuando, a grandes rasgos, es compatible con las aplicaciones entre objetos): dada $f:M\\longrightarrow N$, se tiene $f^*:H^k(N)\\longrightarrow H^k(M)$, definida por $f^*[\\alpha]=[f^*\\alpha]$. La identidad $\\mathrm{d}\\circ f^*=f^*\\circ\\mathrm{d}$ asegura que la aplicación está bien definida:      $\\mathrm{d}\\alpha=0\\Longrightarrow \\mathrm{d} (f^*\\alpha)=f^*(\\mathrm{d} \\alpha)=f^*(0)=0$.        $\\alpha=\\mathrm{d}\\gamma\\Longrightarrow f^*\\alpha=f^*(\\mathrm{d}\\gamma)=\\mathrm{d}(f^*\\gamma)$.  Dual de homología: ",
+        "url": "/es/definition_wedge_product_functoriality"
+      }
+      ,
+    
+      "es-definition-complexes-exact-sequences": {
+        "title": "Complejos y Sucesiones Exactas",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Un complejo $C^\\ast={\\cdots \\xrightarrow{} C^{k+1}\\xrightarrow{\\partial^{k+1}}C^k \\xrightarrow{\\partial^k} C^{k-1}\\xrightarrow{}\\cdots}$ es una cadena de grupos abelianos $C^k$ y homomorfismos $\\mathrm{d}^k$ tales que $\\partial^k\\circ\\partial^{k+1}=0$ para todo $k$, es decir, $\\text{im }\\partial^{k+1}\\subset \\text{ker }\\partial^k$.Asociado al complejo $C^\\ast$ se definen los grupos de cohomología $H_k(C^\\ast)=\\dfrac{\\text{ker }\\partial^k}{\\text{im }\\partial^{k+1}}$.Un complejo $C^\\ast$ se dice que es una sucesión exacta si $\\text{im }\\partial^{k+1}= \\text{ker }\\partial^k$ para todo $k$.Una sucesión exacta del tipo $0\\xrightarrow{} A\\xrightarrow{f}B\\xrightarrow{g}C\\xrightarrow{} 0$ se llama sucesión exacta corta.",
+        "url": "/es/definition_complexes_exact_sequences"
+      }
+      ,
+    
+      "es-lemma-first-properties-de-rham-cohomology": {
+        "title": "Primeras Propiedades de la Cohomología de De Rham",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Si $M$ es una variedad conexa, $H^0(M)\\simeq\\mathbb{R} $ y $H^0_c(M)\\left\\{\\begin{array}{ll}\\simeq\\mathbb{R}  &amp; \\text{si M es compacta}\\\\=0 &amp; \\text{si M es no compacta}\\end{array}\\right.$Si $ M=\\bigsqcup_i M_i$ unión de componentes conexas, entonces$$\\begin{array}{cc}\\Omega^k(M)=\\prod_i \\Omega^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  \\Omega^k_c(M)=\\bigoplus_i \\Omega^k_c(M_i)\\\\Z^k(M)=\\prod_i Z^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  Z^k_c(M)=\\bigoplus_i Z^k_c(M_i)\\\\B^k(M)=\\prod_i B^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  B^k_c(M)=\\bigoplus_i B^k_c(M_i)\\\\H^k(M)=\\prod_i H^k(M_i) &amp;\\qquad \\qquad \\qquad \\qquad \\qquad  H^k_c(M)=\\bigoplus_i H^k_c(M_i)\\end{array}$$La diferencia en éste último punto surge porque una forma con soporte compacto en $M$ se debe anular en todas las componentes conexas salvo en un número finito.Dual de homología: DemostraciónPor hacer",
+        "url": "/es/lemma_first_properties_de_rham_cohomology"
+      }
+      ,
+    
+      "es-example-cohomology-compact-support-r2": {
+        "title": "Cohomología de R&lt;sup&gt;2&lt;/sup&gt; con soporte compacto",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Las formas diferenciales con soporte compacto en $\\mathbb{R} ^2$ y la actuación de $\\mathrm{d}$ son iguales que en el caso primero, sólo que $f$, $g$, $h$ y $k$ son ahora funciones de soporte compacto.$\\text{ker }\\mathrm{d}_0$ vuelve a estar formado por funciones $f$ constantes, pero como ahora se requiere que $f$ sea de soporte compacto, resulta que $\\text{ker }\\mathrm{d}_0={f\\equiv 0}$ y$H^0_c(\\mathbb{R} ^2)=\\dfrac{\\{f\\equiv 0\\}}{0}=0$Para el siguiente grupo, en un primer momento se propuso la función $ f(x,y)=\\int_0^x f_x(t,0)\\mathrm{d} t+\\int_0^y f_y(x,t)\\mathrm{d} t=\\int_0^x g(t,0)\\mathrm{d} t+\\int_0^y h(x,t)\\mathrm{d} t$, que cumple $\\mathrm{d} f=g\\mathrm{d} x+h\\mathrm{d} y$, y así todas las 1-formas cerradas son exactas. El problema es que ahora $f$ puede no tener soporte compacto aun cuando $g$ y $h$ sí. Pero esto no es gran dificultad: si $g$ y $h$ se anulan fuera de un compacto $K$, entonces $\\dfrac{\\partial f}{\\partial x}=g=0$, $\\dfrac{\\partial f}{\\partial y}=h=0$, por lo que $f$ es constante fuera de $K$. Así, basta redefinir $f$ restándole una constante para que valga 0 fuera de $K$. Luego también en el caso con soporte compacto las 1-formas cerradas son exactas y$H^1_c(\\mathbb{R} ^2)=0$Aquí viene la mayor diferencia: $H^2c(\\mathbb{R} ^2)$ no es trivial. Cuando en el caso no compacto teníamos la 2-forma $k\\mathrm{d} x\\wedge\\mathrm{d} y$ nos había sido muy fácil tomar $g=0$ y $ h(x,y)=\\int_0^x k(t,y)\\mathrm{d} t$ para que $\\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}=k$, pero es casi imposible que $h$ tenga soporte compacto. Es más: es una situación que casi nunca se puede arreglar, concretamente cuando $\\int{\\mathbb{R} ^2} k(x,y)\\neq 0$. Pues si $g$ y $h$ se anulan fuera del cuadrado $[-M,M] \\times[-M,M]$ (y sobre el borde), entonces $\\int_{\\mathbb{R} ^2} k(x,y)=\\int_{[-M,M] \\times[-M,M]} k(x,y)=\\int_{-M}^M \\int_{-M}^M \\dfrac{\\partial h}{\\partial x} \\mathrm{d} x \\mathrm{d} y-\\int_{-M}^M \\int_{-M}^M \\dfrac{\\partial g}{\\partial y} \\mathrm{d} y \\mathrm{d} x=\\int_{-M}^M [h(x,y)]_{x=-M}^{x=M} \\mathrm{d} y-\\int_{-M}^M [g(x,y)]_{y=-M}^{y=M} \\mathrm{d} x=0$. Si $\\int_{\\mathbb{R} ^2} k(x,y)\\neq 0$, entonces la 2-forma $k\\mathrm{d} x\\wedge\\mathrm{d} y$, siendo automáticamente cerrada, no es exacta. Por otro lado, éste es el único impedimento. Supongamos que $\\int_{\\mathbb{R} ^2} k(x,y)=0$. Definimos $ h(x,y)=\\int_{-M}^x k(t,y)\\mathrm{d} t$. Arriba, abajo y a la izquierda del cuadrado $h$ se anula, mientras que a la derecha toma los valores de una cierta función $v(y)$ con soporte en $[-M,M]$. Para corregir esta anomalía, tomamos una función diferenciable $\\rho(x)$ que valga 0 en $(-\\infty,-M]$ y 1 en $[M,\\infty)$, y pasamos a la función $\\tilde{h}(x,y)=h(x,y)-\\rho(x)v(y)$, que ahora tiene soporte compacto. $\\dfrac{\\partial \\tilde{h}}{\\partial x}=\\dfrac{\\partial h}{\\partial x}-\\rho’(x)v(y)=k-\\rho’(x)v(y)$, así que necesitamos que $\\dfrac{\\partial g}{\\partial y}=-\\rho’(x)v(y)$, que se consigue tomando $ g(x,y)=\\int_{-M}^y -\\rho’(x)v(t)\\mathrm{d} t$. $g$ se anula fuera de $K$, también encima, porque $\\int_{-M}^M v(t)\\mathrm{d} t=\\int_{\\mathbb{R} ^2} k(x,y)=0$.            Como $\\int_{\\mathbb{R} ^2} k(x,y)$ decide la exactitud de la 2-forma, hay un grado de libertad y$H^2_c(\\mathbb{R} ^2)\\simeq\\mathbb{R} $",
+        "url": "/es/example_cohomology_compact_support_r2"
+      }
+      ,
+    
+      "es-definition-de-rham-cohomology-compact-support": {
+        "title": "Cohomología de De Rham con Soporte Compacto",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Las formas diferenciales son la herramienta con la que poder hablar de integración en variedades. Pero para definir la integral rigurosamente, debemos evitar, como en la integración estándar, aquellas integrales con valor infinito. La mejor solución es restringirse a formas diferenciales con soporte compacto, que por otro lado nos conducirán a un nuevo tipo de cohomología: cohomología con soporte compacto.Una forma diferencial $\\alpha$ sobre una variedad $M$ se dice de soporte compacto si existe un compacto $K\\subset M$ fuera del cual $\\alpha$ es idénticamente nula ($\\alpha(v)=0 \\text{ }\\forall v\\in T_p M$, $p\\notin K $). El conjunto de las formas diferenciales de orden $k$ con soporte compacto se denota por $\\Omega^k_c(M)$.La restricción del complejo de De Rham a las formas diferenciales con soporte compacto da lugar a un nuevo complejoy a los grupos de cohomología con soporte compacto $H^k_c(M)=\\dfrac{\\text{ker }\\mathrm{d}_k}{\\text{im }\\mathrm{d}_{k-1}}=\\dfrac{Z^k_c(M)}{B^k_c(M)}$.Si $M$ es una variedad compacta, todas las formas diferenciales tienen soporte compacto, $\\Omega^k_c(M)=\\Omega^k(M)$, y ambos grupos de cohomología coinciden. Para una variedad no compacta, en cambio, puede haber muchas diferencias.",
+        "url": "/es/definition_de_rham_cohomology_compact_support"
+      }
+      ,
+    
+      "es-theorem-differentiable-partition-unit": {
+        "title": "Partición diferenciable de la unidad",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Sea $\\{U_i:i\\in I\\}$ una colección de abiertos de $M$ cuya unión es el total. Existe una familia $\\{\\rho_i:i\\in I\\}$ de funciones diferenciables definidas en $M$ que cumple las siguientes propiedades:- $0\\leqslant\\rho_i\\leqslant 1$ para todo $i$.- Cada punto $x\\in M$ tiene un entorno $W$ en el que se anulan todas las funciones $\\rho_i$ salvo una cantidad finita.- La suma $\\sum_i\\rho_i$ está bien definida y vale constantemente 1.- Para cada $i$, el soporte de $\\rho_i$ está contenido en $U_i$: $\\overline{\\{x\\in M\\vert \\rho_i(x)\\neq 0\\}}\\subset U_i$.DemostraciónPor hacer",
+        "url": "/es/theorem_differentiable_partition_unit"
+      }
+      ,
+    
+      "es-example-cohomology-s2": {
+        "title": "Cohomología de S&lt;sup&gt;2&lt;/sup&gt;",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Este caso es notablemente más complejo que los anteriores. Parte de las ideas de este ejemplo se estudiarán extensivamente en los Lemas de Poincaré y en las Secuencias de Mayer-Vietoris. Consideramos la esfera $\\mathbb{S}  ^2\\subset\\mathbb{R} ^3$ junto con las dos parametrizaciones dadas por la proyección estereográfica desde los polos $N=(0,0,1)$ y $S=(0,0,-1)$. Los dominios de estas parametrizaciones son $\\mathbb{R} ^2$, y las imágenes son los abiertos $U=\\mathbb{S}  ^2-{N}$, $V=\\mathbb{S}  ^2-{S}$; $W=U\\cap V=\\mathbb{S}  ^2-{N,S}$.Sea $f\\in C^\\infty(\\mathbb{S}  ^2)$ con $\\mathrm{d} f=0$. $f$ induce las restricciones $f_1=f\\vert _U$, $f_2=f\\vert _V$, que se identifican con funciones de dominio $\\mathbb{R} ^2$. Según se vio en la cohomología de $\\mathbb{R} ^2$, $\\mathrm{d} f_1=0$ y $\\mathrm{d} f_2=0$ implican que $f_1$ y $f_2$ son constantes, y como han de coincidir en el dominio común $W$, $f$ debe ser constante y$H^0(\\mathbb{S}  ^2)=\\dfrac{\\text{ker }\\mathrm{d}_0}{\\text{im }\\mathrm{d}_{-1}}=\\dfrac{\\{f=cte\\in\\mathbb{R} \\}}{0}\\simeq\\mathbb{R} $Sea ahora $\\alpha$ una 1-forma en $\\mathbb{S}  ^2$ con $\\mathrm{d} \\alpha=0$. La restricción de $\\alpha$ a $U$, $V$ nos da las 1-formas $\\alpha_1$ y $\\alpha_2$, cuyas diferenciales exteriores son también nulas. Como $H^1(\\mathbb{R} ^2)=0$, las 1-formas cerradas son exactas y existen funciones $f_1$ y $f_2$ en $U$, $V$ con $\\mathrm{d} f_1=\\alpha_1$, $\\mathrm{d} f_2=\\alpha_2$. ¿Son compatibles $f_1$ y $f_2$ en $W$? Hacemos un truco: en $W$, $\\mathrm{d}(f_1-f_2)=\\mathrm{d} f_1-\\mathrm{d} f_2=\\alpha_1-\\alpha_2=\\alpha-\\alpha=0$. Como la diferencial de la función $f_1-f_2$ es 0 en $W$ y $W$ es conexo, esto implica que $f_1-f_2$ es una cierta constante $c\\in\\mathbb{R} $. Así, podemos redefinir $\\tilde{f}_2=f_2+c$, lo cual no cambia que $\\mathrm{d} \\tilde{f}_2=\\alpha_2$, y ahora $f_1=\\tilde{f}_2$ en $W$, por lo que tomamos la función globalEsta función cumple $\\mathrm{d} f=\\alpha$, pues lo cumple en $U$, $V$. De modo que$H^1(\\mathbb{S}  ^2)=\\dfrac{\\text{ker }\\mathrm{d}_1}{\\text{im }\\mathrm{d}_0}=0$Vamos a la parte delicada. Sea $\\beta$ una 2-forma en $\\mathbb{S}  ^2$. Por estar definida en una variedad de dimensión 2, su diferencial exterior es 0, así como las diferenciales de sus restricciones a $U$ y $V$, $\\beta_1$ y $\\beta_2$. Al ser $H^2(\\mathbb{R} ^2)=0$, existen 1-formas $\\alpha_1$, $\\alpha_2$ definidas en $U$, $V$ con $\\mathrm{d} \\alpha_i=\\beta_i$. De nuevo, ¿cómo interactúan $\\alpha_1$ y $\\alpha_2$ en el dominio común $W$? $\\mathrm{d}(\\alpha_1-\\alpha_2)=\\mathrm{d}\\alpha_1-\\mathrm{d}\\alpha_2=\\beta_1-\\beta_2=\\beta-\\beta=0$. Pero como no conocemos el primer grupo de cohomología de $W$, no podemos decir nada sobre sus 1-formas cerradas.Consideramos la parametrización de $W$ $(\\theta,z)\\longmapsto(\\sqrt{1-z^2}\\cos(\\theta),\\sqrt{1-z^2}\\sin(\\theta),z)$, $(\\theta,z)\\in\\mathbb{R} \\times(-1,1)$. Ésta induce las 1-formas $\\mathrm{d} \\theta$, $\\mathrm{d} z$, y las funciones $C^\\infty(W)$ están en biyección con las funciones $f(\\theta,z)$ diferenciables y $2\\pi$-periódicas en $\\theta$, que a su vez admiten el desarrollo en serie de Fourier $f(\\theta,z)=\\sum_{n}f_{n}(z)\\mathrm{e}^{\\mathrm{i}n\\theta}$.Sea $\\alpha=g\\mathrm{d} \\theta+h\\mathrm{d} z$; $\\mathrm{d} \\alpha=\\left(\\dfrac{\\partial h}{\\partial \\theta}-\\dfrac{\\partial g}{\\partial z}\\right)\\mathrm{d} \\theta\\wedge\\mathrm{d} z=\\sum_{n}(\\mathrm{i}nh_n(z)-g_n’(z))\\mathrm{e}^{\\mathrm{i}n\\theta}\\mathrm{d} \\theta\\wedge\\mathrm{d} z$, y para que $\\alpha$ sea cerrada, se requiere $\\mathrm{i}nh_n(z)=g_n’(z)$ para todo $n$. Ahora buscamos $f=\\sum_{n}f_{n}(z)\\mathrm{e}^{\\mathrm{i}n\\theta}$ con $\\mathrm{d} f=\\alpha$, es decir, $\\dfrac{\\partial f}{\\partial \\theta}=g$, $\\dfrac{\\partial f}{\\partial z}=h$, o lo que es lo mismo, $\\mathrm{i}nf_n(z)=g_n(z)$, $f_n’(z)=h_n(z)$. Si $n\\neq 0$, no hay ningún problema en tomar $f_n(z)=\\frac{g_n(z)}{\\mathrm{i}n}$ y todo funciona bien, pues $f_n’(z)=\\frac{g_n’(z)}{\\mathrm{i}n}=\\frac{\\mathrm{i}nh_n(z)}{\\mathrm{i}n}=h_n(z)$. Para $n=0$, $\\mathrm{i}0h_0(z)=g_0’(z)$ se cumple cuando $g_0=c\\in\\mathbb{R} $ constante. Pero si $c\\neq 0$, la condición $\\mathrm{i}0f_0(z)=g_0(z)=c$ es imposible de cumplir. Por otro lado, es el único impedimento, pues si corregimos $g$ con $c=0$, entonces basta tomar $f_0(z)=\\int_0^{z} h_0(t)\\mathrm{d} t$. Así, $H^1(W)$ es isomorfo a $\\mathbb{R} $, dependiente de la elección de $c$, y un generador del grupo es la clase de la 1-forma $\\mathrm{d} \\theta$, que a partir de ahora se denotará por $\\gamma$.Ya hemos estudiado parte de la cohomología de $W$. Teníamos $\\mathrm{d}(\\alpha_1-\\alpha_2)=0$; por lo que acabamos de ver, $\\alpha_1-\\alpha_2=\\lambda\\gamma+\\mathrm{d} f$ para un cierto $\\lambda\\in\\mathbb{R} $ y una cierta función $f$ en $W$. Supongamos por un momento que $\\lambda=0$ y vamos a comprobar que, en ese caso, somos capaces de encontrar un $\\alpha$ global con $\\mathrm{d} \\alpha=\\beta$. Pero antes necesitamos introducir dos funciones de soporte compacto:            Elegimos $\\rho_1$ y $\\rho_2$ funciones positivas definidas en $[-1,1]$ tal que $\\rho_1$ se anula en $[1/3,1]$, $\\rho_2$ se anula en $[-1,-1/3]$ y $\\rho_1+\\rho_2=1$. Al aplicar estas funciones a la altura de la esfera obtenemos otras dos funciones (que seguiremos llamando $\\rho_1$ y $\\rho_2$) tal que la primera tiene su soporte contenido en $U$ y la segunda en $V$, es decir, ${\\rho_1,\\rho_2}$ es una partición diferenciable de la unidad subordinada a ${U,V}$.            La función $f$ puede no ser extensible a los polos, pero se puede arreglar con nuestras funciones. Si definimos $f_1=f\\rho_2$ y $f_2=f\\rho_1$ (obsérvese el cambio de índices) y extendemos por la función nula, entonces $f_1$ es una función diferenciable en $U$, $f_2$ es una función diferenciable en $V$ y en $W$, $f_1+f_2=f$.Ahora redefinimos $\\tilde{\\alpha}_1=\\alpha_1-\\mathrm{d} f_1$, $\\tilde{\\alpha}_2=\\alpha_2+\\mathrm{d} f_2$. Se sigue teniendo $\\mathrm{d} \\tilde{\\alpha}_1=\\beta_1$ y $\\mathrm{d} \\tilde{\\alpha}_2=\\beta_2$, pero ahora $\\tilde{\\alpha}_1-\\tilde{\\alpha}_2=\\alpha_1-\\mathrm{d} f_1-\\alpha_2-\\mathrm{d} f_2=\\mathrm{d} f-\\mathrm{d}(f_1+f_2)=0$ en $W$. Como hay coincidencia en el dominio común, definimos , y es cierto que $\\mathrm{d} \\alpha=\\beta$ en $\\mathbb{S}  ^2$. Es decir, $\\alpha_1$ y $\\alpha_2$ podían ser no extensibles, pero en nuestra corrección hemos conseguido quitar esta no-extensibilidad.Si $\\lambda\\neq 0$, este proceso es imposible, pues si tenemos $\\alpha$ global, $\\mathrm{d}(\\alpha-\\alpha_1)=\\beta-\\beta_1=0 \\Longrightarrow \\alpha-\\alpha_1=\\mathrm{d} f_1$ en $U$, para algún $f_1$, y $\\mathrm{d}(\\alpha-\\alpha_2)=\\beta-\\beta_2=0 \\Longrightarrow \\alpha-\\alpha_2=\\mathrm{d} f_2$ en $V$, para algún $f_2$; en $W$ $\\alpha_1-\\alpha_2=\\alpha-\\mathrm{d} f_1 -\\alpha+\\mathrm{d} f_2=\\mathrm{d} f$, $f=f_2-f_1$, y sabemos que $\\gamma$ no es la diferencial de ninguna función.Para terminar de establecer que en la esfera hay 2-formas cerradas y no exactas, debemos encontrar un $\\beta$ para el cual, con los $\\alpha_i$ inducidos, se tenga $\\alpha_1-\\alpha_2=\\lambda\\gamma+\\mathrm{d} f$ con $\\lambda\\neq 0$. Tomamos $\\beta_1=\\mathrm{d}(\\rho_2\\gamma)$, $\\beta_2=\\mathrm{d}(\\rho_1\\gamma)$. En $W$, $\\beta_1+\\beta_2=\\mathrm{d}(\\rho_2\\gamma+\\rho_1\\gamma)=\\mathrm{d} \\gamma=0$, y así tenemos . Las 1-formas inducidas son, salvo la diferencial de una función, $\\alpha_1=\\rho_2\\gamma$ y $\\alpha_2=-\\rho_1\\gamma$, y $\\alpha_1-\\alpha_2=(\\rho_2+\\rho_1)\\gamma=\\gamma$. Ahora podemos asegurar que    $H^2(\\mathbb{S}  ^2)=\\dfrac{\\text{ker }\\mathrm{d}_2}{\\text{im }\\mathrm{d}_1}\\simeq\\mathbb{R} $porque la exactitud de la 2-forma cerrada $\\beta$ depende del coeficiente $\\lambda$ inducido.Por último, vamos a intentar encontrar un generador explícito de $H^2(\\mathbb{S}  ^2)$. Si $\\rho_2=\\rho$, $\\rho_1=1-\\rho$, $\\beta_1=\\mathrm{d}(\\rho\\gamma)=\\mathrm{d}(\\rho\\mathrm{d}\\theta)=\\mathrm{d} \\rho\\wedge\\mathrm{d}\\theta$, $\\beta_2=\\mathrm{d}((1-\\rho)\\gamma)=\\mathrm{d}((1-\\rho)\\mathrm{d}\\theta)=-\\mathrm{d} \\rho\\wedge\\mathrm{d}\\theta$. Así, la 2-forma buscada es $\\beta=\\mathrm{d} \\rho\\wedge\\mathrm{d}\\theta$. Si tomáramos $\\rho=(1-z)$ (aunque no cumple en nada los requisitos de las $\\rho_i$) obtenemos $\\beta=-\\mathrm{d} z\\wedge\\mathrm{d}\\theta=\\mathrm{d}\\theta\\wedge\\mathrm{d} z$, que aunque en principio podría no ser extensible a los polos, en realidad da la medida de superficie de la esfera como subconjunto de $\\mathbb{R} ^3$.",
+        "url": "/es/example_cohomology_s2"
+      }
+      ,
+    
+      "es-definition-exterior-derivative": {
+        "title": "Diferencial exterior",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Existe un único operador lineal $\\mathrm{d}:\\Omega^k(M)\\longrightarrow\\Omega^{k+1}(M)$ para cada $k$ (llamado diferencial exterior) definido por$\\mathrm{d}\\Bigl(\\displaystyle\\sum \\alpha_{i_1 i_2…i_k}\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}\\Bigr) = \\sum\\mathrm{d}\\alpha_{i_1 i_2…i_k}\\wedge\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$$= \\displaystyle\\sum\\sum_{j=1}^n \\dfrac{\\partial\\alpha_{i_1 i_2…i_k}}{\\partial x_j}\\mathrm{d} x_j\\wedge\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$en cada parametrización $\\varphi(U)$.Este operador lineal tiene las siguientes propiedades:  Si $f\\in \\Omega^0(M)$, $\\mathrm{d} f=Df$ diferencial ordinaria de funciones.  $\\mathrm{d}\\circ\\mathrm{d}=0$.  Si $\\alpha\\in\\Omega^k(M)$, $\\beta\\in\\Omega^l(M)$, $\\mathrm{d} (\\alpha\\wedge\\beta)=\\mathrm{d} \\alpha\\wedge \\beta+ (-1)^k\\alpha\\wedge\\mathrm{d} \\beta$Comprobemos estas propiedades (lo hacemos sólo para formas del tipo $f \\mathrm{d} x_I$, $\\mathrm{d} x_I=\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$; para el resto de formas se sigue por linealidad):      $\\mathrm{d}(f)=\\mathrm{d} f=Df$ ($\\mathrm{d} x_I$ es vacío).        $\\mathrm{d}^2(f\\mathrm{d} x_I)=\\mathrm{d}(\\sum_i \\mathrm{d}f{f}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I)=\\sum_j\\sum_i\\frac{\\partial^2 f}{\\partial x_j\\partial x_i}\\mathrm{d} x_j\\wedge\\mathrm{d} x_i\\wedge\\mathrm{d} x_I=0$, porque $\\frac{\\partial^2 f}{\\partial x_j\\partial x_i}=\\frac{\\partial^2 f}{\\partial x_i\\partial x_j}$ y $\\mathrm{d} x_j\\wedge\\mathrm{d} x_i=-\\mathrm{d} x_i\\wedge\\mathrm{d} x_j$.        $\\mathrm{d} ((f\\mathrm{d} x_I)\\wedge(g\\mathrm{d} x_J))=\\mathrm{d}(fg\\mathrm{d} x_I\\wedge\\mathrm{d} x_J)=\\sum_i\\mathrm{d}f{(fg)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J= g\\sum_i\\mathrm{d}f{(f)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J+ f\\sum_i\\mathrm{d}f{(g)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I\\wedge\\mathrm{d} x_J=(\\sum_i\\mathrm{d}f{(f)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_I)\\wedge(g\\mathrm{d} x_J)+(-1)^k (f\\mathrm{d} x_I)\\wedge(\\sum_i\\mathrm{d}f{(g)}{x_i}\\mathrm{d} x_i\\wedge\\mathrm{d} x_J)=(\\mathrm{d} (f\\mathrm{d} x_I))\\wedge(g\\mathrm{d} x_J)+(-1)^k(f\\mathrm{d} x_I)\\wedge(\\mathrm{d}(g\\mathrm{d} x_J))$, pues para intercambiar $\\mathrm{d} x_i$ y $\\mathrm{d} x_I$ son necesarias $k$ permutaciones.  Por último, si $f:M\\longrightarrow N$ es una aplicación diferenciable, se cumple la identidad $\\mathrm{d} _M\\circ f^*=f^*\\circ \\mathrm{d}_N$. En efecto: $\\mathrm{d} f^*(g\\mathrm{d} x_I)=\\mathrm{d}((g\\circ f)\\mathrm{d} f_I)=\\mathrm{d}(g\\circ f)\\wedge \\mathrm{d} f_I=f^*(\\mathrm{d} g)\\wedge \\mathrm{d} f_I=f^*(\\mathrm{d} g\\wedge \\mathrm{d} x_I)=f^*\\mathrm{d}(g\\mathrm{d} x_I)$, donde $\\mathrm{d} f_I=\\mathrm{d} f_{i_1}\\wedge…\\wedge\\mathrm{d} f_{i_k}$, $f_j=x_j\\circ f$ función definida en un abierto de $M$. Esto es importante; en particular nos asegura que si $f:M\\longleftrightarrow N$ es difeomorfismo, entonces hay un isomorfismo $f^*:\\Omega^k(N)\\longleftrightarrow\\Omega^k(M)$ para cada $k$, compatible con el operador $\\mathrm{d}$, y así, en lo que respecta al cálculo de formas (y más tarde a la cohomología), $M$ y $N$ se pueden considerar la misma variedad.",
+        "url": "/es/definition_exterior_derivative"
+      }
+      ,
+    
+      "es-lemma-first-properties-homology": {
+        "title": "Primeras Propiedades de la Homología",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Si $M$ es una variedad conexa, $H_0(M)\\simeq\\mathbb{R}$.Si $ M=\\bigsqcup_i M_i$ unión de componentes conexas, entoncesUna aplicación diferenciable $f:M\\longrightarrow N$ induce $f_*:\\Omega_k(M)\\longrightarrow \\Omega_k(N)$, fruto de reflejar las subvariedades de dimensión $k$ de $M$ en las de $N$ a través de $f$. Se cumple $\\partial\\circ f_*=f_* \\circ \\partial$, con lo que también se induce $f_*:H_k(M)\\longrightarrow H_k(N)$.",
+        "url": "/es/lemma_first_properties_homology"
+      }
+      ,
+    
+      "es-exposition-exterior-derivative": {
+        "title": "Diferencial exterior",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "En cohomología singular , dada una $k$-forma $\\alpha$, ésta induce una $(k+1)$-forma $\\delta \\alpha$, su diferencial exterior. $\\delta \\alpha$ viene definida así: si $M$ es un objeto de dimensión $k+1$, su borde $\\partial M$ tiene dimensión $k$ y se toma $\\delta \\alpha(M)=\\alpha(\\partial M)$:            El operador $\\partial$ es el propio de la homología. El borde de una variedad ya no tiene borde, por lo que $\\partial^2=0$, y por esa razón, $\\delta ^2=0$.Queremos definir el operador $\\mathrm{d}$ llevando la construcción de $\\delta$ a nuestro contexto de variedades diferenciables. Dada una $k$-forma diferencial $\\alpha$, debemos definir su diferencial exterior, la $(k+1)$-forma $\\mathrm{d} \\alpha$. Vamos a repetir el proceso anterior a nivel infinitesimal:            Sea $f\\in \\Omega^0(M)=C^\\infty(M)$; definimos $\\mathrm{d} f$ como se hizo anteriormente: la 1-forma que a cada vector $v\\in T_p M$ asigna el grado de aumento de $f$ en la dirección de $v$, o más técnicamente, $\\mathrm{d} f(v)=Df_p(v)$. Con esta definición, $\\mathrm{d} f(v)\\approx f(q)-f(p)$, suponiendo que, infinitesimalmente, $q$ es el punto final de $v$.Para $k=1$: sea $\\alpha=f\\mathrm{d} x+g\\mathrm{d} y$ en $\\mathbb{R} ^2$, $f$, $g:\\mathbb{R} ^2\\longrightarrow \\mathbb{R} $.            y esto nos conduce a definir $\\mathrm{d} \\alpha=(\\frac{\\partial g}{\\partial x}-\\frac{\\partial f}{\\partial y})\\mathrm{d} x\\wedge\\mathrm{d} y$.Si tenemos $\\alpha=f\\mathrm{d} y\\wedge\\mathrm{d} z+g\\mathrm{d} z\\wedge\\mathrm{d} x+h\\mathrm{d} x\\wedge\\mathrm{d} y$ en $\\mathbb{R} ^3$, con las mismas ideas anteriores deberíamos definir $\\mathrm{d} \\alpha=(\\frac{\\partial f}{\\partial x}+\\frac{\\partial g}{\\partial y}+\\frac{\\partial h}{\\partial z})\\mathrm{d} x\\wedge\\mathrm{d} y\\wedge\\mathrm{d} z$.",
+        "url": "/es/exposition_exterior_derivative"
+      }
+      ,
+    
+      "es-exposition-differentiable-map": {
+        "title": "Aplicación diferenciable",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Consideramos ahora aplicaciones entre variedades.            Una aplicación $f:M\\longrightarrow N$, con $M$ y $N$ variedades de dimensiones $m$ y $n$, es diferenciable si dado un punto $p$ y parametrizaciones $\\varphi$, $\\psi$ en $p$ y $f(p)$, la aplicación inducida $\\psi^{-1}\\circ f\\circ\\varphi$ entre abiertos de $\\mathbb{R} ^m$ y $\\mathbb{R} ^n$ es diferenciable en el sentido usual. Son las aplicaciones apropiadas entre variedades. Cuando $f$ es diferenciable, ésta induce una aplicación lineal $Df_p:T_p M\\longrightarrow T_{f(p)}N$ (diferencial de $f$) para cada punto $p$, reflejo de la diferencial $D(\\psi^{-1}\\circ f\\circ\\varphi)_{\\varphi^{-1}(p)}:\\mathbb{R} ^m \\longrightarrow \\mathbb{R} ^n$. En coordenadas, $ Df_p(\\frac{\\partial}{\\partial x_i})=\\sum_j \\frac{\\partial f_j}{\\partial x_i} \\frac{\\partial}{\\partial y_j}$, donde $f_j=y_j\\circ f$. Un difeomorfismo es una biyección $f:M\\longleftrightarrow N$ que es diferenciable en los dos sentidos; las diferenciales de $f$ y $f^{-1}$ son isomorfismos entre espacios tangentes de dimensión $n$.",
+        "url": "/es/exposition_differentiable_map"
+      }
+      ,
+    
+      "es-exposition-differentiable-manifolds-boundary": {
+        "title": "Variedades diferenciables con borde",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Es necesario introducir también el concepto de variedad con borde. La idea es la misma que antes, pero ahora permitimos que algunos puntos (del borde) tengan entornos distintos, difeomorfos a abiertos de $\\mathbb{R} ^n_+=\\{(x_1,x_2,…,x_n)\\vert x_1\\geqslant 0\\}$. El borde se denota por $\\partial M$; si $p\\in \\partial M$, tenemos una aplicación diferenciable e inyectiva $\\varphi:U \\longrightarrow M$ que cubre $p$, con $U\\subset\\mathbb{R} ^n_+$ abierto y $\\varphi^{-1}(p)=(0,x_2(p),…,x_n(p))$. Es fácil ver, de estas parametrizaciones del borde, que $\\partial M$ es una variedad diferenciable (sin borde) de dimensión $n-1$.            ",
+        "url": "/es/exposition_differentiable_manifolds_boundary"
+      }
+      ,
+    
+      "es-example-cohomology-t2": {
+        "title": "Cohomología de T&lt;sup&gt;2&lt;/sup&gt;",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "De nuevo, el recubrimiento $\\mathbb{R} ^2\\longrightarrow\\mathbb{T}$, $(\\alpha,\\beta)\\longmapsto(\\mathrm{e}^{\\mathrm{i}\\alpha},\\mathrm{e}^{\\mathrm{i}\\beta})$ nos proporciona dos 1-formas globales $\\mathrm{d} \\alpha$, $\\mathrm{d} \\beta$.0-formas: $f:\\mathbb{R} ^2\\longrightarrow\\mathbb{R} $ 1-formas: $g\\mathrm{d} \\alpha+h\\mathrm{d} \\beta$2-formas: $k\\mathrm{d} \\alpha\\wedge\\mathrm{d} \\beta$donde todas las funciones que aparecen son diferenciables y $2\\pi$-periódicas en cada variable. La actuación de $\\mathrm{d}$ es la misma que en $\\mathbb{R} ^2$.    $H^0(\\mathbb{T})=\\dfrac{\\text{ker }\\mathrm{d}_0}{\\text{im }\\mathrm{d}_{-1}}=\\dfrac{\\left\\{f\\left\\vert \\dfrac{\\partial f}{\\partial \\alpha}=\\dfrac{\\partial f}{\\partial \\beta}=0\\right.\\right\\}}{0}=\\dfrac{\\{f=cte\\in\\mathbb{R} \\}}{0}\\simeq\\mathbb{R} $Para los siguientes grupos utilizamos el desarrollo en serie de Fourier de estas funciones periódicas: $f(\\alpha,\\beta)=\\sum_{\\substack{m,n=-\\infty}}^\\infty f_{mn}\\mathrm{e}^{\\mathrm{i}m\\alpha}\\mathrm{e}^{\\mathrm{i}n\\beta}$, y lo mismo para $g$, $h$ y $k$. Utilizaremos este desarrollo de modo completamente formal, sin incurrir en cuestiones de convergencia, que no alteran la validez de lo que sigue.$\\mathrm{d} (g\\mathrm{d} \\alpha+h\\mathrm{d}\\beta)=\\left(\\dfrac{\\partial h}{\\partial \\alpha}-\\dfrac{\\partial g}{\\partial \\beta}\\right)\\mathrm{d} \\alpha\\wedge\\mathrm{d}\\beta=\\mathrm{i}\\sum_{mn}(mh_{mn}-ng_{mn})\\mathrm{e}^{\\mathrm{i}m\\alpha}\\mathrm{e}^{\\mathrm{i}n\\beta}\\mathrm{d} \\alpha\\wedge\\mathrm{d}\\beta=0$ si $mh_{mn}=ng_{mn}$ para todo $m$, $n$; $\\mathrm{d}(f)=\\dfrac{\\partial f}{\\partial \\alpha}\\mathrm{d} \\alpha+\\dfrac{\\partial f}{\\partial \\beta}\\mathrm{d} \\beta=\\mathrm{i}\\sum_{mn}mf_{mn}\\mathrm{e}^{\\mathrm{i}m\\alpha} \\mathrm{e}^{\\mathrm{i}n\\beta} \\mathrm{d}\\alpha+ \\mathrm{i}\\sum_{mn}nf_{mn}\\mathrm{e}^{\\mathrm{i}m\\alpha}\\mathrm{e}^{\\mathrm{i}n\\beta}\\mathrm{d}\\beta$. Así pues, dados $g_{mn}$, $h_{mn}$ con $mh_{mn}=ng_{mn}$, buscamos $f_{mn}$ con $g_{mn}=\\mathrm{i}mf_{mn}$, $h_{mn}=\\mathrm{i}nf_{mn}$.Si $m\\neq 0$, podemos tomar $f_{mn}=\\frac{1}{\\mathrm{i}m}g_{mn}$, con lo que $\\mathrm{i}mf_{mn}=g_{mn}$, $\\mathrm{i}nf_{mn}=\\frac{\\mathrm{i}n}{\\mathrm{i}m}g_{mn}=\\frac{1}{m}mh_{mn}=h_{mn}$. Igualmente, si $n\\neq 0$, tomamos $f_{mn}=\\frac{1}{\\mathrm{i}n}h_{mn}$. El problema está en $m=n=0$: $0h_{00}=0g_{00}$ se cumple siempre, mientras que $g_{00}=\\mathrm{i}0f_{00}$ y $h_{00}=\\mathrm{i}0f_{00}$ sólo se cumple para $g_{00}=h_{00}=0$. Así, no todas las funciones $g$, $h$ con $\\dfrac{\\partial h}{\\partial \\alpha}-\\dfrac{\\partial g}{\\partial \\beta}=0$ son del tipo $\\dfrac{\\partial f}{\\partial \\alpha}$, $\\dfrac{\\partial f}{\\partial \\beta}$; hay que hacer antes la corrección $g_{00}=h_{00}=0$. Por eso,    $H^1(\\mathbb{T})=\\dfrac{\\left\\{g\\mathrm{d}\\alpha+h\\mathrm{d}\\beta\\vert \\dfrac{\\partial h}{\\partial \\alpha}-\\dfrac{\\partial g}{\\partial \\beta}=0\\right\\}}{\\left\\{\\dfrac{\\partial f}{\\partial \\alpha}\\mathrm{d} \\alpha+\\dfrac{\\partial f}{\\partial \\beta}\\mathrm{d} \\beta\\right\\}}\\simeq\\mathbb{R} ^2$pues en $g$ y $h$ tenemos dos grados de libertad extra.Dos generadores de $H^1(\\mathbb{T})$ son $\\mathrm{d}\\alpha$ y $\\mathrm{d} \\beta$. Como en el caso de la circunferencia, están estrechamente ligados a ciclos no triviales en $H_1(\\mathbb{T})$.$\\mathrm{d}(k\\mathrm{d} \\alpha\\wedge\\mathrm{d}\\beta)=0$, luego el núcleo de $\\mathrm{d}_2$ es todo $\\Omega^2(\\mathbb{T})$. $\\mathrm{d} (g\\mathrm{d} \\alpha+h\\mathrm{d}\\beta)=\\mathrm{i}\\sum_{mn}(mh_{mn}-ng_{mn})\\mathrm{e}^{\\mathrm{i}m\\alpha}\\mathrm{e}^{\\mathrm{i}n\\beta}\\mathrm{d} \\alpha\\wedge\\mathrm{d}\\beta$. Nos preguntamos si dados los coeficientes $k_{mn}$ se pueden encontrar $g_{mn}$, $h_{mn}$ con $\\mathrm{i}mh_{mn}-\\mathrm{i}ng_{mn}=k_{mn}$ para todo $m$, $n$.Si $m\\neq 0$ o $n\\neq 0$ podemos tomar $g_{mn}=0$, $h_{mn}=\\frac{1}{\\mathrm{i}m}k_{mn}$ o bien $g_{mn}=-\\frac{1}{\\mathrm{i}n}k_{mn}$ y $h_{mn}=0$. Como antes, el problema está en $m=n=0$. $h_{00}$ es libre pero, para que $h\\in \\text{im } \\mathrm{d}_1$, se requiere $h_{00}=0$. Así pues,    $H^2(\\mathbb{T})=\\dfrac{\\{k\\mathrm{d}\\alpha\\wedge\\mathrm{d}\\beta\\}}{\\left\\{\\left(\\dfrac{\\partial h}{\\partial \\alpha}-\\dfrac{\\partial g}{\\partial \\beta}\\right)\\mathrm{d}\\alpha\\wedge\\mathrm{d}\\beta\\right\\}}\\simeq\\mathbb{R} $y un generador de $H^2(\\mathbb{T})$ es $\\mathrm{d}\\alpha\\wedge\\mathrm{d}\\beta$.",
+        "url": "/es/example_cohomology_t2"
+      }
+      ,
+    
+      "es-example-cohomology-s1": {
+        "title": "Cohomología de S&lt;sup&gt;1&lt;/sup&gt;",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Para $\\mathbb{S}  ^1$ tenemos la parametrización $2\\pi$-periódica $\\mathbb{R} \\longrightarrow\\mathbb{S}  ^1$, $\\theta\\longmapsto \\mathrm{e}^{\\mathrm{i}\\theta}$. Con esta parametrización, tenemos una 1-forma global, $\\mathrm{d} \\theta$, y $C^{\\infty}(\\mathbb{S}  ^1)$ se identifica con las funciones $\\mathbb{R} \\longrightarrow\\mathbb{R} $ diferenciables y $2\\pi$-periódicas.0-formas: $ f:\\mathbb{R} \\longrightarrow\\mathbb{R} $ diferenciable y $2\\pi$-periódica.1-formas: $ g\\mathrm{d} \\theta$, $g:\\mathbb{R} \\longrightarrow\\mathbb{R} $ diferenciable y $2\\pi$-periódica.$ \\mathrm{d}(f)=\\mathrm{d} f=\\dfrac{\\partial f}{\\partial \\theta}\\mathrm{d} \\theta$$ \\mathrm{d}(g\\mathrm{d}\\theta)=\\mathrm{d} g\\wedge\\mathrm{d} \\theta=\\dfrac{\\partial g}{\\partial \\theta}\\mathrm{d} \\theta\\wedge\\mathrm{d} \\theta=0$$ \\text{ker }\\mathrm{d}_0=\\left\\{f\\vert \\dfrac{\\partial f}{\\partial \\theta}=0\\right\\}=\\{f\\vert f=cte\\in\\mathbb{R} \\}$$ \\text{im }\\mathrm{d}_{-1}=\\{0\\}$    $H^0(\\mathbb{S}  ^1)=\\dfrac{\\{f=cte\\in\\mathbb{R} \\}}{0}\\simeq\\mathbb{R} $$ \\text{ker }\\mathrm{d}_1=\\{g\\mathrm{d}\\theta\\}$$ \\text{im }\\mathrm{d}_0=\\left\\{\\dfrac{\\partial f}{\\partial \\theta}\\mathrm{d}\\theta\\right\\}$y nos preguntamos si todas las funciones $g$ $2\\pi$-periódicas se pueden expresar como la derivada de alguna función $f$ $2\\pi$-periódica. Sólo queda la posibilidad $f(\\theta)=\\int_0^\\theta g(t)\\mathrm{d} t$ (salvo constantes), pero para que $f$ sea $2\\pi$-periódica se requiere que $\\int_0^{2\\pi} g(t)\\mathrm{d} t=0$. Esto no lo cumplen todas las $g$ $2\\pi$-periódicas, pero dada una que no lo cumpla, se puede conseguir que lo cumpla restando una constante adecuada: $\\tilde{g}=g-\\frac{1}{2\\pi}\\int_0^{2\\pi} g(t)\\mathrm{d} t$. Así, toda función $g$ se escribe de modo único como la suma de una función constante y una función del tipo $\\dfrac{\\partial f}{\\partial \\theta}$. En consecuencia,    $H^1(\\mathbb{S}  ^1)=\\dfrac{\\{g\\mathrm{d}\\theta\\}}{\\left\\{\\dfrac{\\partial f}{\\partial \\theta}\\mathrm{d}\\theta\\right\\}}\\simeq\\mathbb{R} $En este caso, $\\mathrm{d}\\theta$ es uno de los elementos no triviales de $H^1(\\mathbb{S}  ^1)$. Igual que en $\\mathbb{R} ^2-(0,0)$, se trata de una forma cerrada (se relaciona localmente con la función ángulo $\\theta$) pero da valores no nulos a curvas homológicamente no triviales, es decir, que dan varias vueltas a la circunferencia.",
+        "url": "/es/example_cohomology_s1"
+      }
+      ,
+    
+      "es-example-cohomology-r2": {
+        "title": "Cohomología de R&lt;sup&gt;2&lt;/sup&gt;",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "En $\\mathbb{R} ^2$, las formas diferenciales son del siguiente tipo:0-formas: $f:\\mathbb{R} ^2\\longrightarrow\\mathbb{R} $ diferenciable.1-formas: $g\\mathrm{d} x+h\\mathrm{d} y$, $g$, $h:\\mathbb{R} ^2\\longrightarrow\\mathbb{R} $ diferenciables.2-formas: $k\\mathrm{d} x\\wedge\\mathrm{d} y$, $k:\\mathbb{R} ^2\\longrightarrow\\mathbb{R} $ diferenciable.y la diferencial exterior actúa en ellas de este modo:$\\mathrm{d}(f)=\\mathrm{d} f=\\dfrac{\\partial f}{\\partial x}\\mathrm{d} x+\\dfrac{\\partial f}{\\partial y}\\mathrm{d} y$$\\mathrm{d}(g\\mathrm{d} x+h\\mathrm{d} y)=\\mathrm{d} g\\wedge\\mathrm{d} x+\\mathrm{d} h\\wedge\\mathrm{d} y=\\left(\\dfrac{\\partial g}{\\partial x}\\mathrm{d} x+\\dfrac{\\partial g}{\\partial y}\\mathrm{d} y\\right)\\wedge\\mathrm{d} x+\\left(\\dfrac{\\partial h}{\\partial x}\\mathrm{d} x+\\dfrac{\\partial h}{\\partial y}\\mathrm{d} y\\right)\\wedge\\mathrm{d} y=\\dfrac{\\partial g}{\\partial x}\\mathrm{d} x\\wedge\\mathrm{d} x+\\dfrac{\\partial g}{\\partial y}\\mathrm{d} y\\wedge\\mathrm{d} x+\\dfrac{\\partial h}{\\partial x}\\mathrm{d} x\\wedge\\mathrm{d} y+\\dfrac{\\partial h}{\\partial y}\\mathrm{d} y\\wedge\\mathrm{d} y=\\left(\\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}\\right)\\mathrm{d} x\\wedge\\mathrm{d} y$$\\mathrm{d}(k\\mathrm{d} x\\wedge\\mathrm{d} y)=\\mathrm{d} k\\wedge\\mathrm{d} x\\wedge\\mathrm{d} y=\\left(\\dfrac{\\partial k}{\\partial x}\\mathrm{d} x+\\dfrac{\\partial k}{\\partial y}\\mathrm{d} y\\right)\\wedge\\mathrm{d} x\\wedge\\mathrm{d} y=\\dfrac{\\partial k}{\\partial x}\\mathrm{d} x\\wedge\\mathrm{d} x\\wedge\\mathrm{d} y+\\dfrac{\\partial k}{\\partial y}\\mathrm{d} y\\wedge\\mathrm{d} x\\wedge\\mathrm{d} y=0$$\\text{ker }\\mathrm{d}_0=\\left\\{f\\vert \\dfrac{\\partial f}{\\partial x}=\\dfrac{\\partial f}{\\partial y}=0\\right\\}=\\{f\\vert f=cte\\in\\mathbb{R} \\}$$\\text{im }\\mathrm{d}\\_{-1}=\\{0\\}$ (tomamos $\\mathrm{d}\\_{-1}:0\\longrightarrow\\Omega^0(\\mathbb{R} ^2)$ aplicación trivial)    $H^0(\\mathbb{R} ^2)=\\dfrac{\\{f=cte\\in\\mathbb{R} \\}}{0}\\simeq\\mathbb{R} $$\\text{ker }\\mathrm{d}_1=\\left\\{g\\mathrm{d} x+h\\mathrm{d} y\\vert \\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}=0\\right\\}$$\\text{im }\\mathrm{d}_0=\\left\\{\\dfrac{\\partial f}{\\partial x}\\mathrm{d} x+\\dfrac{\\partial f}{\\partial y}\\mathrm{d} y\\right\\}$Evidentemente, $\\text{im }\\mathrm{d}_0\\subset\\text{ker }\\mathrm{d}_1$, pues $\\dfrac{\\partial (\\partial f/\\partial y)}{\\partial x}-\\dfrac{\\partial (\\partial f/\\partial x)}{\\partial y}=0$. Nos preguntamos si se da la igualdad. Sean $g$, $h$ con $\\dfrac{\\partial h}{\\partial x}=\\dfrac{\\partial g}{\\partial y}$; ¿existirá una $f$ con $\\dfrac{\\partial f}{\\partial x}=g$, $\\dfrac{\\partial f}{\\partial y}=h$? En caso afirmativo, esta función se podría hallar por integración, desplazándose por el eje $x$ y luego verticalmente; tomamos $f(0,0)=0$: $ f(x,y)=\\int_0^x f_x(t,0)\\mathrm{d} t+\\int_0^y f_y(x,t)\\mathrm{d} t=\\int_0^x g(t,0)\\mathrm{d} t+\\int_0^y h(x,t)\\mathrm{d} t$. ¿Cumple esta función lo que queremos? $\\dfrac{\\partial f}{\\partial x}=g(x,0)+\\int_0^y \\dfrac{\\partial h}{\\partial x}(x,t)\\mathrm{d} t=g(x,0)+\\int_0^y \\dfrac{\\partial g}{\\partial y}(x,t)\\mathrm{d} t=g(x,0)+ [g(x,t)]_0^y=g(x,0)+g(x,y)-g(x,0)=g(x,y)$, $ \\dfrac{\\partial f}{\\partial y}=h(x,y)$, así que $f$ es la función buscada. Por tanto se tiene una igualdad entre los conjuntos anteriores y    $ H^1(\\mathbb{R} ^2)=\\dfrac{\\left\\{g\\mathrm{d} x+h\\mathrm{d} y\\vert \\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}=0\\right\\}}{\\left\\{\\dfrac{\\partial f}{\\partial x}\\mathrm{d} x+\\dfrac{\\partial f}{\\partial y}\\mathrm{d} y\\right\\}}=0$$\\text{ker }\\mathrm{d}_2=\\Omega^2(\\mathbb{R}^2)=\\{k\\mathrm{d} x\\wedge\\mathrm{d} y\\}$$\\text{im }\\mathrm{d}_1=\\left\\{\\left(\\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}\\right)\\mathrm{d} x\\wedge\\mathrm{d} y\\right\\}$Dada una función $k$ fija, ¿existirán $g$, $h$ con $\\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}=k$? Ahora es muy fácil: podemos tomar $g=0$ y $h(x,y)=\\int_0^x k(t,y)\\mathrm{d} t$, y se cumple el requisito anterior. Así que de nuevo el núcleo y la imagen coinciden y    $H^2(\\mathbb{R} ^2)=\\dfrac{\\{k\\mathrm{d} x\\wedge\\mathrm{d} y\\}}{\\left\\{\\left(\\dfrac{\\partial h}{\\partial x}-\\dfrac{\\partial g}{\\partial y}\\right)\\mathrm{d} x\\wedge\\mathrm{d} y\\right\\}}=0$",
+        "url": "/es/example_cohomology_r2"
+      }
+      ,
+    
+      "es-definition-differentiable-manifolds": {
+        "title": "Variedades diferenciables",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una variedad diferenciable de dimensión $n$ es un par $(M,\\{(\\varphi_\\alpha,U_\\alpha)\\}_{\\alpha \\in A})$ donde $M$ es un conjunto y $\\{(\\varphi_{\\alpha}, U_{\\alpha})\\}_{\\alpha \\in A}$ es una colección de aplicaciones $\\varphi_\\alpha:U_\\alpha \\longrightarrow M$ inyectivas (parametrizaciones), con $U_\\alpha$ abierto de $\\mathbb{R} ^n$, y tal que      $M=\\displaystyle\\bigcup_\\alpha \\varphi_\\alpha(U_\\alpha)$        $\\forall \\alpha, \\beta \\in A$ con $\\varphi_\\alpha(U_\\alpha)\\cap\\varphi_\\beta(U_\\beta)=W\\neq \\varnothing$, $\\varphi_\\alpha^{-1}(W)$, $\\varphi_\\beta^{-1}(W)$ son abiertos de $\\mathbb{R} ^n$ y  $\\varphi_\\beta^{-1}\\circ\\varphi_\\alpha:\\varphi_\\alpha^{-1}(W)\\longrightarrow\\varphi_\\beta^{-1}(W)$ es diferenciable ($C^\\infty$)  ",
+        "url": "/es/definition_differentiable_manifolds"
+      }
+      ,
+    
+      "es-definition-de-rham-cohomology": {
+        "title": "Cohomología de De Rham",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Una vez definida la diferencial exterior, tenemos la siguiente cadena de aplicaciones,llamada complejo de De Rham. Un complejo es una cadena de homomorfismos entre grupos abelianos que cumple $\\mathrm{d}\\circ\\mathrm{d}=0$ (aunque nosotros siempre trabajaremos con espacios vectoriales).En la introducción  se había comentado que debíamos buscar formas cerradas que no fuesen exactas, como posible indicador de la existencia de agujeros en nuestra variedad $M$. Las formas cerradas son aquellas con diferencial exterior $\\mathrm{d} \\alpha=0$, y las formas exactas son las que se pueden expresar como la diferencial exterior de una forma de orden uno menor, $\\alpha=\\mathrm{d} \\beta$. Esto motiva la siguiente definición:Seael complejo de De Rham asociado a la variedad $M$. Se define el $k$-ésimo grupo de cohomología de $M$ como $H^k(M)=\\dfrac{\\text{ker }\\mathrm{d}^k}{\\text{im }\\mathrm{d}^{k-1}}=\\dfrac{Z^k(M)}{B^k(M)}$.",
+        "url": "/es/definition_de_rham_cohomology"
+      }
+      ,
+    
+      "es-exposition-tangent-space": {
+        "title": "Espacio tangente",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Asociado a cada punto $p \\in M$ de la variedad se tiene el espacio tangente $T_p M$, que es un espacio vectorial de dimensión $n$. Intuitivamente, el espacio tangente recoge las direcciones en las que $p$ se puede mover hacia el resto de la variedad. La definición rigurosa es compleja, pero nosotros podemos pensar en un espacio simbólicamente generado por los vectores $\\left\\{\\frac{\\partial}{\\partial x_1},…,\\frac{\\partial}{\\partial x_n}\\right\\}$, asociados a una parametrización $\\varphi(U)\\ni p$, $\\varphi^{-1}=(x_1,…,x_n)$. El vector $\\partial/\\partial x_i$ denota la imagen por $\\varphi$ del desplazamiento en $\\mathbb{R} ^n$ en la dirección de $e_i$; así, si $\\psi:V\\longrightarrow M$ es otra parametrización que cubre $p$, $\\psi^{-1}=(y_1,…,y_n)$, la relación entre ambas bases de $T_p M$ se rige por la regla de la cadena: $\\frac{\\partial}{\\partial x_i}=\\sum_j \\frac{\\partial y_j}{\\partial x_i} \\frac{\\partial}{\\partial y_j}$.            ",
+        "url": "/es/exposition_tangent_space"
+      }
+      ,
+    
+      "es-exposition-integration-manifolds": {
+        "title": "Integración en variedades",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Sea $M$ una variedad de dimensión $n$ y $\\alpha$ una $n$-forma definida en $M$. Nos planteamos dar un sentido a la expresión $\\int_M \\alpha$. Como se dijo anteriormente, una $n$-forma da una referencia de volumen en cada espacio tangente a la variedad. De este modo, si partimos la variedad en trozos muy pequeños, cada trozo se podría tomar como lineal en el espacio tangente y la forma diferencial $\\alpha$ daría un valor a cada trozo. Y entonces la integral vendría como límite de la suma de todos estos valores cuando la partición se ha hecho infinitamente fina.                        Ahora puede intentar el lector retomar y comprender los tres ejemplos expuestos en , teniendo en cuenta que para $v=(v_1,v_2)\\in T_{(x,y)}\\mathbb{R} ^2$, $\\mathrm{d} x(v)=v_1$, $y\\mathrm{d} x(v)=yv_1$ y $(\\frac{-y}{x^2+y^2}\\mathrm{d} x+\\frac{x}{x^2+y^2}\\mathrm{d} y)(v)=\\frac{-y}{x^2+y^2}v_1+\\frac{x}{x^2+y^2}v_2$.En todos nuestros ejemplos, las curvas han aparecido orientadas, con un principio y un final. En el dibujo, la integral sobre superficies queda un poco difusa porque no sabemos en qué orden se deben tomar los vectores al aplicar la 2-forma $\\beta$. En realidad, para que la definición de integral sea coherente es necesario dotar previamente a la variedad de una orientación, como ocurría en la homología.",
+        "url": "/es/exposition_integration_manifolds"
+      }
+      ,
+    
+      "es-exposition-homology": {
+        "title": "Homología",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "La homología describe la forma de un espacio de modo verdaderamente asombroso. Aunque al principio parece raro y confuso, luego aparece de modo natural en muchos fenómenos matemáticos. Por ejemplo, en la Característica de Euler-Poincaré: tomamos un espacio, lo triangulamos (lo dividimos en “trocitos”) y hacemos la suma alternada del número de trozos utilizados de cada tipo:donde $c_i(X)$ es el número de caras $i$-dimensionales de $X$. Sorprendentemente, no depende de la triangulación      $X$    $c_0$ vértices    $c_1$ aristas    $c_2$ caras    $\\chi=c_0-c_1+c_2$                1    -    -    1                4    3    -    1            7    6    -                5    5    -    0            9    9    -                5    5    1    1            9    9    1            6    10    5                8    12    6    2            6    12    8            12    30    20                32    64    32    0            36    72    36  Sin embargo, esta misma característica se expresa en términos homológicos (sin necesidad de triangulación), y de hecho, éste es el modo más apropiado. Así que la homología acierta efectivamente al describir la forma de un espacio topológicodonde $b_i=\\text{rk }H_i(X)$ son los números de Betti      $X$    $b_0$    $b_1$    $b_2$    $\\chi=b_0-b_1+b_2$            1    -    -    1            1    0    -    1            1    1    -    0            1    0    0    1            1    0    1    2            1    2    1    0  Nuestro objetivo es entender la forma de un espacio. ¿Cómo distinguiremos una esfera de un toro? La homología tiene un lema:BUSCA ALGO SIN FRONTERA QUE NO SEA LA FRONTERA DE ALGO… y curiosamente, ¡funciona! Claro, las cosas que tienen frontera (por ejemplo, curvas sin cerrar) no son muy útiles para encontrar diferencias, se pueden mover demasiado            pero las cosas que no tienen frontera, que están cerradas, quizá nos pueden decir algo más            En la esfera, una curva sin frontera es la frontera de algo… y sin embargo en el toro tenemos una curva sin frontera que no es la frontera de nada… ¡ya tenemos una diferencia! ¡Parece que funciona!            En general estos objetos sin frontera que no son la frontera de nada capturan “agujeros” de distintas dimensiones… los agujeros de dimensión 0 son componentes separadas, los agujeros de dimensión 1 son rodeables por un lazo, los de dimensión 2 por una superficie…            Pero muchos podrían rebatir, “¿no es el lazo en el toro la frontera del resto del toro?”            Bueno… estamos utilizando el concepto de frontera sin definirlo demasiado… Por eso hay que definir mejor el operador frontera $\\partial$Sobre el operador frontera $\\partial$, vamos por pasos:      $\\partial$ lleva cosas de dimensión $k$ a dimensión $k-1$, siempre una dimensión menos                Los objetos de dimensión 0 son puntos, los de dimensión 1 son curvas, los de dimensión 2 son superficies… Al conjunto de “objetos de dimensión $k$” en el espacio $X$ le llamaremos $C_k(X)$, así que lo que tenemos es        para cada $k\\geqslant 0$ (la frontera de un punto es 0)        La frontera de algo ya no tiene frontera (es 0). Es algo de lo que nos podemos convencer con los ejemplos anteriores. Algebraicamente, esto se expresa como        una propiedad tan importante y que aparece tanto en matemáticas que da pie al Álgebra Homológica         Para que todo funcione bien, todos los objetos de dimensión $k$ deben estar orientados. El concepto de orientación es delicado; por ahora, para nosotros esto se traducirá que nuestros objetos tienen incorporados una característica que toma dos valores opuestos (“uno el negativo del otro”)          Los puntos estarán etiquetados con $+$ ó $-$      Las curvas tienen una dirección      Las superficies están pintadas de azul por una cara y de amarillo por la otra; el color azul denota sentido de giro antihorario y el color amarillo giro horario      Los volúmenes tienen una cierta “helicidad”…        ¡y todo esto se tiene en cuenta para el operador frontera! Una curva comienza en un punto $-$ y acaba en un punto $+$; el giro en las superficies debe coincidir con la dirección de la curva frontera…                ¿Por qué es importante esto? Para que el operador frontera funcione bien al dividir objetos                ¡Magnífico! Los objetos iguales con distinta orientación actúan como opuestos y se cancelan. Esto hace que todo funcione bien. Además nuestro problema anterior del toro se ha solucionado: si cortamos un toro, cada extremo de la superficie da un borde, pero como éstos tienen orientaciones opuestas, ¡se cancelan!                Por eso, podemos volver a afirmar: el lazo anterior en el toro no es frontera de nada.  Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:            donde los $\\lambda_i$, $\\mu_j$, $\\eta_k$ son números enteros o reales. Un signo negativo tiene el mismo efecto que permutar $-$ y $+$, invertir el sentido de una flecha, cambiar los colores azul y amarillo, etc. Para cada $k$, el conjunto de $k$-cadenas forma el espacio vectorial $\\Omega_k(M)$, y el operador frontera induce aplicaciones lineales $\\partial_k:\\Omega_k(M)\\longrightarrow \\Omega_{k-1}(M)$, con $\\partial_{k-1}\\circ\\partial_k=0$, es decir, $\\text{im }\\partial_{k+1} \\subset\\text{ker }\\partial_k$. Se definen así los grupos de homología $H_k(M)=\\dfrac{\\text{ker }\\partial_k}{\\text{im }\\partial_{k+1}}=\\dfrac{Z_k(M)}{B_k(M)}$.Aunque este lenguaje pueda resultar extraño al principio, será aclarado más adelante. Por ahora, nos limitamos a destacar que tiene sentido hacer el cociente de los ciclos $Z_k(M)$ (cadenas sin frontera) entre las fronteras $B_k(M)$ (fronteras de una cadena), porque aquellos ciclos cuya diferencia sea una frontera, es decir, que representan el mismo elemento de homología (ciclos homólogos) detectan el mismo “agujero”:            ",
+        "url": "/es/exposition_homology"
+      }
+      ,
+    
+      "es-exposition-forms-manifolds": {
+        "title": "Formas en variedades",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Teniendo en mente las formas alternadas en espacios vectoriales , pasamos a las formas en variedades. Una forma de orden $k$ $\\alpha$ en una variedad $M$ de dimensión $n$ asigna de modo diferenciable una $k$-forma $\\alpha_p$ en cada espacio tangente $T_p M$, $p \\in M$. Con esta definición conseguimos nuestro objetivo de que las formas den una valoración local diferenciable. El conjunto de las $k$-formas en $M$ es el espacio de dimensión infinita $\\Omega^k(M)$. Por convenio, $\\bigwedge^0 (E)=\\mathbb{R} $ y $\\Omega^0(M)=C^{\\infty}(M)$ conjunto de funciones diferenciables $M\\longrightarrow \\mathbb{R} $.            Cuando tenemos una parametrización, las formas se pueden describir fácilmente. Supongamos que $p \\in \\varphi(U)$, $\\varphi^{-1}=(x_1,…,x_n)$. Entonces tenemos una base canónica de $T_p M$, ${\\frac{\\partial}{\\partial x_1},…,\\frac{\\partial}{\\partial x_n}}$, y su base dual asociada, ${\\mathrm{d} x_1,…,\\mathrm{d} x_n}$. El vector $\\frac{\\partial}{\\partial x_i}$ es la imagen por $\\varphi$ de $e_i$; la forma $\\mathrm{d} x_i$, aplicada a un vector $v$, nos dice si en la dirección $v$ se aumenta la función $x_i$ como función real definida sobre $M$. En el dibujo, la función $x_i$ viene representada por la escala del blanco al negro; así $\\mathrm{d} x_i(v)$ es positivo si $v$ llega a un color más oscuro y negativo cuando apunta a colores más claros. Para ser precisos, la función $x_i:\\varphi(U)\\longrightarrow \\mathbb{R} $ tiene la diferencial $(Dx_i)_p:T_p M\\longrightarrow T_{x_i(p)}\\mathbb{R} =\\mathbb{R} $; ésta diferencial es $\\mathrm{d} x_i$. De hecho para cualquier función $f:M\\longrightarrow \\mathbb{R} $ (o definida sólo en un abierto) se tiene la 1-forma $\\mathrm{d} f=Df$, que da un valor a cada vector en cualquier punto. Las bases ${\\frac{\\partial}{\\partial x_i}}$ y ${\\mathrm{d} x_j}$ son realmente duales; como se ve en el dibujo, $\\mathrm{d} x_j(\\frac{\\partial}{\\partial x_i})$ es 1 si $i=j$ y 0 en otro caso. Por esta dualidad, dada una función diferenciable $f$ en $\\varphi(U)$, $\\mathrm{d} f=\\sum_{1\\leqslant i\\leqslant n}\\mathrm{d} f(\\frac{\\partial}{\\partial x_i})\\mathrm{d} x_i=\\sum_{1\\leqslant i\\leqslant n}\\frac{\\partial f}{\\partial x_i}\\mathrm{d} x_i$, tomando también $f$ como definida sobre $U$.Dada $\\alpha\\in \\Omega^k(M)$, sobre $\\varphi(U)$ escribiremos $\\alpha=\\sum \\alpha_{i_1 i_2… i_k}\\mathrm{d} x_{i_1}\\wedge…\\wedge\\mathrm{d} x_{i_k}$, con $\\alpha_{i_1 i_2\\cdots i_k}=\\alpha(\\frac{\\partial}{\\partial x_{i_1}},…,\\frac{\\partial}{\\partial x_{i_k}})$ funciones diferenciables en $\\varphi(U)$. Para las formas diferenciales también se tiene el producto exterior $\\wedge$, que consiste en hacer el producto exterior punto a punto: $(\\alpha\\wedge\\beta)_p=\\alpha_p \\wedge\\beta_p$; de nuevo se cumple $\\alpha\\wedge\\beta=(-1)^{kl}\\beta\\wedge\\alpha$. Para las formas de orden 0, $f\\wedge\\alpha=f\\alpha$.Si $f:M\\longrightarrow N$ es una aplicación diferenciable entre variedades, en cada punto $p$ tenemos la diferencial $Df_p:T_p M\\longrightarrow T_{f(p)}N$ aplicación lineal. Esto nos permite definir $f^*:\\Omega^k(N)\\longrightarrow\\Omega^k(M)$ con $(f^*\\alpha)_p=Df_p^*(\\alpha_p)$, es decir, para evaluar $f^*\\alpha$ en $k$ vectores anclados en un punto $p$, se llevan por la diferencial al espacio tangente de $f(p)$ y se evalúan allí con $\\alpha$. Si $g\\in\\Omega^0(N)=C^{\\infty}(N)$, entonces $f^*g=g\\circ f$. Como para el caso lineal, $f^*(\\alpha\\wedge\\beta)=f^*\\alpha\\wedge f^*\\beta$.Para una 1-forma $\\mathrm{d} g\\in\\Omega^1(N)$, $g:N\\longrightarrow \\mathbb{R} $, se tiene $f^*\\mathrm{d} g=\\mathrm{d}(g\\circ f)$, porque la función $g\\circ f$ en la dirección $v$ y la función $g$ en la dirección $Df(v)$ coinciden.",
+        "url": "/es/exposition_forms_manifolds"
+      }
+      ,
+    
+      "es-exposition-differentiable-manifolds": {
+        "title": "Variedades diferenciables",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "Las variedades diferenciables son los objetos con los que en matemáticas se modelizan las curvas, las superficies, los volúmenes, y en definitiva todo aquello que localmente se asemeja al espacio euclídeo $\\mathbb{R} ^n$. Si nuestro objeto tiene en cada punto un entorno difeomorfo a un abierto de $\\mathbb{R} ^n$, se trata entonces de una variedad de dimensión $n$. Se asume, por tanto, que para cualquier punto de la variedad $p\\in M$ podemos encontrar una aplicación diferenciable e inyectiva $\\varphi:U \\longrightarrow M$ desde un abierto $U\\subset \\mathbb{R} ^n$ que cubra $p$ y un entorno suyo. Tal aplicación induce $\\varphi^{-1}=(x_1,…,x_n)$, $x_i:\\varphi(U)\\longrightarrow \\mathbb{R} $.            ",
+        "url": "/es/exposition_differentiable_manifolds"
+      }
+      ,
+    
+      "es-exposition-de-rham-cohomology": {
+        "title": "Cohomología de De Rham",
+        "kind": "exposition",
+        "author": "",
+        "category": "es",
+        "content": "La cohomología nace como respuesta dual a la homología . La homología identifica la forma de un objeto topológico en la búsqueda de “agujeros”. Más concretamente, busca objetos sin frontera que no sean a su vez la frontera de algo (y de ahí la definición $H_k(M)=\\text{ker }\\partial_n/\\text{im }\\partial_{n+1}$, con $\\partial$ operador frontera).            La cohomología funciona de modo completamente nuevo. En vez de buscar subespacios que detecten agujeros, la cohomología asigna un valor real a cada símplice o, en nuestro caso diferenciable, a cada subvariedad del espacio. Por ejemplo, en $\\mathbb{R}^2$ podemos asignar a cada curva (orientada, con principio y final) el valor de la proyección horizontal. Cuando la curva se desplaza hacia la derecha, gana en proyección, mientras que cuando va hacia la izquierda, disminuye; esto nos viene bien si queremos que nuestra asignación sea aditiva y diferenciable: si una curva la dividimos en varios trozos, entonces da igual calcular el valor de la curva total o sumar el valor de las curvas pequeñas.            El ejemplo anterior es en realidad muy simple; no importa la curva entera, sino sólo la coordenada $x$ de los puntos en que comienza y termina la curva, y calcular la diferencia. Así se ve claro que cualquier curva cerrada tendrá valor 0. Aquí va un ejemplo menos obvio. Tenemos en $\\mathbb{R} ^2$ un campo vectorial, $f(x,y)=(y,0)$. Podemos hacer la siguiente asignación: a cada curva $\\gamma$ le corresponde la integral de circulación $\\int_{\\gamma}f$. En nuestro dibujo, vemos que el valor de la curva no depende de los puntos iniciales y finales, pues las curvas que suben y luego bajan obtienen una circulación positiva, mientras que las que primero bajan y después suben obtienen una circulación negativa. Además, en este caso, una curva cerrada no tiene circulación nula (en general); en el dibujo, la pequeña curva cerrada tiene circulación ligeramente negativa, pues en la parte superior va contracorriente y en la parte inferior va a favor de la corriente, pero en la parte superior la corriente es más fuerte.            Un tercer ejemplo: en $\\mathbb{R} ^2-{(0,0)}$ consideramos la asignación ángulo central barrido. Este ejemplo se parece al primero. Lo importante es el ángulo desde el que se empieza y el ángulo en que se termina. Y así, para una pequeña curva cerrada, el ángulo barrido es 0. ¡Pero atención! En el segundo dibujo hay una curva que da la vuelta al origen y que barre un ángulo $2\\pi$, en contra de lo que teníamos pensado para curvas cerradas. Este fenómeno sólo es posible si en el espacio topológico hay agujeros: hemos dado un valor 0 a las pequeñas curvas cerradas, las que son la frontera de algún pequeño disco, pero se admiten otros valores para grandes curvas cerradas, aquellas que quizás no son la frontera de nada. Es como si hubiésemos dado valores a los distintos objetos homológicos: 0 a las curvas que no rodean el origen, $2\\pi$ a las curvas que dan una vuelta alrededor del origen, $4\\pi$ a las que dan dos vueltas, etc.            Como habíamos comentado, queremos que la asignación de valores a las subvariedades sea aditiva. Por eso, sólo necesitamos saber el valor que daríamos a, por ejemplo, pequeños trozos de curvas, pequeños trozos de superficie o pequeños volúmenes. Esto se consigue mediante una forma diferencial sobre la variedad de estudio. Las formas diferenciales dan una valoración local en cada punto y en cada dirección.El lenguaje de las formas diferenciales nos permite manejar la cohomología muy cómodamente. Los ejemplos anteriores vendrían descritos por tres 1-formas diferenciales en $\\mathbb{R} ^2$: $\\alpha_1=\\mathrm{d} x$, $\\alpha_2=y\\mathrm{d} x$ y $\\alpha_3=\\frac{-y}{x^2+y^2}\\mathrm{d} x+\\frac{x}{x^2+y^2}\\mathrm{d} y$ (nótese que ésta última no está definida en el origen). Estudiaremos en general las formas diferenciales y un cierto operador diferencial exterior $\\mathrm{d}$. En el primer y tercer caso, $\\mathrm{d}(\\alpha_1)=\\mathrm{d}(\\alpha_3)=0$, y por eso aquí las pequeñas curvas cerradas tienen valor 0; se dice que $\\alpha_1$ y $\\alpha_3$ son formas cerradas. $\\mathrm{d}(\\alpha_2)=-\\mathrm{d} x\\wedge \\mathrm{d} y\\neq 0$, luego $\\alpha_2$ no es una forma cerrada. Por otro lado, $\\alpha_1$ es una forma exacta: $\\alpha_1=\\mathrm{d}(x)$, así que la función $x$ es la que hay que evaluar en los puntos inicial y final de la curva, y de aquí que las curvas cerradas, arbitrariamente grandes, tengan siempre valor 0, por coincidir los puntos inicial y final. $\\alpha_3$ no es exacta; nos encantaría decir que $\\alpha_3=\\mathrm{d}(\\acute{a}ngulo)$, pero no existe tal función ángulo definida en todo $\\mathbb{R} ^2-{(0,0)}$, siempre incurrimos en saltos de $2\\pi$.Por tanto, en nuestra búsqueda cohomológica de agujeros, debemos encontrar formas cerradas que no sean exactas.",
+        "url": "/es/exposition_de_rham_cohomology"
+      }
+      ,
+    
+      "es-exposition-cohomology": {
+        "title": "Cohomología",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Cohomología",
+        "url": "/es/exposition_cohomology"
+      }
+      ,
+    
+      "es-definition-alternate-form": {
+        "title": "Formas alternadas",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "Sea $E$ un espacio vectorial. Una forma alternada de orden $k$ (o $k$-forma) en $E$ es una aplicación multilineal $\\alpha:E\\times E \\times \\dots \\times E \\longrightarrow \\mathbb{R} $ tal que $\\alpha(v_1,…,v_i,…,v_j,…,v_k)=-\\alpha(v_1,…,v_j,…,v_i,…,v_k)$ para cualquier par de vectores intercambiados. Por ejemplo, una 2-forma en $\\mathbb{R} ^3$ podría ser $\\alpha(u,v)=u_1 v_3-u_3 v_1$. Las formas lineales son formas de orden 1.Dadas $k$ formas lineales $\\varphi_1$, $\\varphi_2$, … ,$\\varphi_k$, podemos considerar la $k$-forma producto exterior definida por $\\varphi_1\\wedge\\varphi_2\\wedge … \\wedge\\varphi_k(v_1, v_2,…,v_k)=\\text{Det}(\\varphi_i(v_j))$. Si tomamos en $\\mathbb{R} ^3$ la base dual ${\\varphi_1,\\varphi_2,\\varphi_3}$, entonces la 2-forma anterior se podría escribir simplemente como $\\alpha=\\varphi_1\\wedge\\varphi_3$. Por las propiedades del determinante, el producto exterior de $k$ formas lineales es una forma alternada, y se cumple $\\varphi_1\\wedge … \\wedge\\varphi_i\\wedge … \\wedge\\varphi_j\\wedge … \\wedge\\varphi_k= -\\varphi_1\\wedge … \\wedge\\varphi_j\\wedge … \\wedge\\varphi_i\\wedge … \\wedge\\varphi_k$ para cualquier par de formas intercambiadas.En un espacio de dimensión $n$, con base ${u_1,…,u_n}$ y base dual ${\\varphi_1,…,\\varphi_n}$, una base para las formas de orden $k$ es el conjunto ${\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k}:1\\leqslant i_1&lt;…&lt;i_k \\leqslant n}$, con lo que tenemos un espacio de dimensión $\\binom{n}{k}$, $\\bigwedge^k (E)$. Cualquier $k$-forma $\\alpha\\in\\bigwedge^k (E)$ se escribe de modo único como $\\alpha=\\sum \\alpha_{i_1 i_2… i_k}\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k}$, $1\\leqslant i_1&lt;…&lt;i_k \\leqslant n$, con $\\alpha_{i_1 i_2\\cdots i_k}=\\alpha(u_{i_1},…,u_{i_n})$. De este modo se puede definir el producto exterior entre formas de orden arbitrario $\\alpha\\wedge\\beta$, simplemente teniendo en cuenta que $(\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k})\\wedge(\\varphi_{j_1}\\wedge…\\wedge\\varphi_{j_l})=\\varphi_{i_1}\\wedge…\\wedge\\varphi_{i_k}\\wedge\\varphi_{j_1}\\wedge…\\wedge\\varphi_{j_l}$: si $\\alpha\\in\\bigwedge^k (E)$ y $\\beta\\in\\bigwedge^l (E)$, $\\alpha\\wedge\\beta\\in\\bigwedge^{k+l} (E)$. Puesto que en un determinante cambiar las $k$ primeras filas por las $l$ segundas exige $kl$ permutaciones, se tiene que $\\alpha\\wedge\\beta=(-1)^{kl}\\beta\\wedge\\alpha$. La acción de $\\alpha\\wedge\\beta$ sobre $k+l$ vectores se puede describir como una cierta media de productos de $\\alpha$ y $\\beta$ aplicados a los vectores en grupos de $k$ y $l$, por lo que el producto exterior está bien definido sin importar la base dual que elijamos.Las $n$-formas en un espacio de dimensión $n$ son todas del tipo $\\lambda \\varphi_1\\wedge…\\wedge\\varphi_n$, $\\lambda \\in \\mathbb{R} $; la $n$-forma $\\varphi_1\\wedge…\\wedge\\varphi_n$ otorga a cada conjunto de $n$ vectores el volumen del paralelepípedo que generan (positivo o negativo según la orientación), tomando como referencia la base dual a ${\\varphi_1,…,\\varphi_n}$, a la que se le otorga volumen 1. Por eso, fijar una $n$-forma en un espacio vectorial de dimensión $n$ $E$ equivale a fijar una referencia de volumen en paralelepípedos de $E$. De igual modo, una $k$-forma en $E$ da una referencia de volumen en cada uno de los subespacios vectoriales de dimensión $k$. Nótese que en un espacio de dimensión $n$ no hay formas alternadas no nulas de orden superior a $n$.Sea ahora $f:E\\longrightarrow F$ una aplicación lineal entre espacios vectoriales. Igual que para los espacios duales, $f$ induce $f^*:\\bigwedge^k (F)\\longrightarrow\\bigwedge^k (E)$, definida por $(f^*\\alpha)(v_1,…,v_k)=\\alpha(f(v_1),…,f(v_k))$. Para el producto de formas lineales, $f^*(\\varphi_1\\wedge … \\wedge\\varphi_k)(v_1,…,v_k)=(\\varphi_1\\wedge … \\wedge\\varphi_k)(f(v_1),…,f(v_k))=\\text{Det}(\\varphi_i(f(v_j)))=\\text{Det}((f^*\\varphi_i)(v_j))= f^*\\varphi_1\\wedge … \\wedge f^*\\varphi_k(v_1,…,v_k)$, es decir, $f^*$ llega a cada factor del producto. Y como cualquier forma alternada se puede expresar como combinación de productos de formas lineales, $f^*(\\alpha\\wedge\\beta)=f^*\\alpha\\wedge f^*\\beta$ también es válido para formas alternadas de cualquier orden.",
+        "url": "/es/definition_alternate_form"
+      }
+      ,
     
       "es-problem-linear-system-1": {
         "title": "Sistemas lineales",
@@ -366,7 +969,7 @@
         "kind": "definition",
         "author": "",
         "category": "es",
-        "content": "Los subconjuntos del espacio muestral $Omega$ se denominan sucesos. El azar en el experimento da lugar a estos sucesos y se dividen en dos tipos:- simples si están formados por un único elemento, es decir, representan uno sólo de los resultados posibles del experimento.- compuestos identifican subconjuntos del espacio muestral que tienen más de un elemento y son por tanto uniones de sucesos simples.Hay dos sucesos singulares que siempre se tienen en todo experimento aleatorio. Por un lado el suceso seguro que coincide con el espacio muestral $Omega$. Por otro lado el subconjunto vacío $\\emptyset$ y que representa el *suceso imposible$.",
+        "content": "Los subconjuntos del espacio muestral $Omega$ se denominan sucesos. El azar en el experimento da lugar a estos sucesos y se dividen en dos tipos:  simples si están formados por un único elemento, es decir, representan uno sólo de los resultados posibles del experimento.  compuestos identifican subconjuntos del espacio muestral que tienen más de un elemento y son por tanto uniones de sucesos simples.Hay dos sucesos singulares que siempre se tienen en todo experimento aleatorio. Por un lado el suceso seguro que coincide con el espacio muestral $Omega$. Por otro lado el subconjunto vacío $\\emptyset$ y que representa el *suceso imposible$.",
         "url": "/es/definition_random_event"
       }
       ,
@@ -376,7 +979,7 @@
         "kind": "definition",
         "author": "",
         "category": "es",
-        "content": "La identificación de los sucesos relativos a un experimento aleatorio implica disponer de operaciones para formar nuevos sucesos a partir de otros dados. Supongamos $A$ y $B$, dos subconjuntos de $\\Omega$. Las operaciones básicas son:- Unión de sucesos: $A \\cup B$ representa un suceso nuevo que se describe como “ocurre $A$ u ocurre $B$”. Por lo tanto este nuevo evento sucede siempre que el resultado pertenezca a $A$ o a $B$.- Intersección de sucesos: $A \\cap B$ es también un nuevo suceso que se describe como “ocurren $A$ y $B$ simultaneamente” y sucede siempre que el resultado pertenezca a $A$ y a $B$. Si la intersección de dos sucesos es vacía, $A \\cap B = \\emptyset$, ambos sucesos no pueden ocurrir a la vez y se dice que $A$ y $B$ sucesos incompatibles.- Toma de complementarios: definimos el suceso contrario de $A$ como $ A^{c} = \\Omega - A$ y significa que el resultado del experimento no está en $A$.",
+        "content": "La identificación de los sucesos relativos a un experimento aleatorio implica disponer de operaciones para formar nuevos sucesos a partir de otros dados. Supongamos $A$ y $B$, dos subconjuntos de $\\Omega$. Las operaciones básicas son:  Unión de sucesos: $A \\cup B$ representa un suceso nuevo que se describe como “ocurre $A$ u ocurre $B$”. Por lo tanto este nuevo evento sucede siempre que el resultado pertenezca a $A$ o a $B$.  Intersección de sucesos: $A \\cap B$ es también un nuevo suceso que se describe como “ocurren $A$ y $B$ simultaneamente” y sucede siempre que el resultado pertenezca a $A$ y a $B$. Si la intersección de dos sucesos es vacía, $A \\cap B = \\emptyset$, ambos sucesos no pueden ocurrir a la vez y se dice que $A$ y $B$ sucesos incompatibles.  Toma de complementarios: definimos el suceso contrario de $A$ como $ A^{c} = \\Omega - A$ y significa que el resultado del experimento no está en $A$.",
         "url": "/es/definition_event_operations"
       }
       ,
@@ -481,16 +1084,6 @@
       }
       ,
     
-      "es-definition-form": {
-        "title": "Definición de forma diferenciable",
-        "kind": "definition",
-        "author": "",
-        "category": "es",
-        "content": "Una forma $\\omega$ es tal tal tal",
-        "url": "/es/definition_form"
-      }
-      ,
-    
       "es-problem-derivability1": {
         "title": "Derivabilidad. Problema 1",
         "kind": "problem",
@@ -516,7 +1109,7 @@
         "kind": "exposition",
         "author": "",
         "category": "es",
-        "content": "Existen situaciones donde la concurrencia de unas circunstancias fijas no permite anticipar cuál será el resultado producido.  A estos fenómenos los llamaremos experimentos aleatorios puesto que el resultado es consecuencia del azar.En estas situaciones, el carácter impredecible del azar hace inútil cualquier intento de hallar reglas deterministas que determinen unívocamente el resultado individual de cada experimento. Sin embargo, el azar está sometido a leyes que atañen a la frecuencia de los resultados cuándo repetimos el experimento un gran número de veces.El Cálculo de Probabilidades se ocupa de estudiar fenómenos aleatorios lo cual se resume en analizar:- Los posibles resultados que pueden producirse.- La probabilidad que tiene cada uno de estos posibles acontecimientos.",
+        "content": "Existen situaciones donde la concurrencia de unas circunstancias fijas no permite anticipar cuál será el resultado producido.  A estos fenómenos los llamaremos experimentos aleatorios puesto que el resultado es consecuencia del azar.En estas situaciones, el carácter impredecible del azar hace inútil cualquier intento de hallar reglas deterministas que determinen unívocamente el resultado individual de cada experimento. Sin embargo, el azar está sometido a leyes que atañen a la frecuencia de los resultados cuándo repetimos el experimento un gran número de veces.El Cálculo de Probabilidades se ocupa de estudiar fenómenos aleatorios lo cual se resume en analizar:  Los posibles resultados que pueden producirse.  La probabilidad que tiene cada uno de estos posibles acontecimientos.",
         "url": "/es/exposition_probability"
       }
       ,
@@ -526,7 +1119,7 @@
         "kind": "definition",
         "author": "",
         "category": "es",
-        "content": "Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado espacio muestral asociado al experimento aleatorio y se denota por $\\Omega$.El espacio muestral puede ser de dos tipos:- discreto si sus elementos pueden ponerse en conrrespondencia biunívoca con $\\mathbb{N}$ o con un subconjunto finito de $\\mathbb{N}$ (en este caso se dice que $\\Omega$ es finito).- continuo si su cardinal es el de $[0, 1]$.",
+        "content": "Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado espacio muestral asociado al experimento aleatorio y se denota por $\\Omega$.El espacio muestral puede ser de dos tipos:      discreto si sus elementos pueden ponerse en correspondencia biunívoca con $\\mathbb{N}$ o con un subconjunto finito de $\\mathbb{N}$ (en este caso se dice que $\\Omega$ es finito).        continuo si su cardinal es el de $[0, 1]$.  ",
         "url": "/es/definition_sample_space"
       }
       ,
@@ -821,6 +1414,36 @@
       }
       ,
     
+      "es-remark-congreunce-equivalence-relation": {
+        "title": "La congruencia es relación de equivalencia",
+        "kind": "remark",
+        "author": "",
+        "category": "es",
+        "content": "En lenguaje más matemático, obsérvese que las tres primeras propiedades del lema anterior están diciendo que la relación $\\equiv\\ (\\text{mod } n)$ es una relación de equivalencia ((1) es la propiedad reflexiva, (2) es la simétrica y (3) es la transitiva). El cociente por esta relación es lo que se denota por $\\mathbb{Z}_n$, y las propiedades (4) y (5) nos dicen que tal cociente tiene estructura de anillo. Nótese que, por la propiedad (2), el orden de los elementos en la congruencia es indistinto, por lo que se puede hablar de que $a$ y $b$ son congruentes entre sí o no.",
+        "url": "/es/remark_congreunce_equivalence_relation"
+      }
+      ,
+    
+      "es-lemma-congruence-properties": {
+        "title": "Propiedades de la congruencia",
+        "kind": "lemma",
+        "author": "",
+        "category": "es",
+        "content": "Fijado un entero $n&gt;0$ y dados números enteros $a$, $b$, $c$, $d$, se tiene:1. $a\\equiv a\\ (\\text{mod } n)$.2. $a\\equiv b\\ (\\text{mod } n)$ si y sólo si $b\\equiv a\\ (\\text{mod } n)$.3. Si $a\\equiv b\\ (\\text{mod } n)$ y $b\\equiv c\\ (\\text{mod } n)$, entonces $a\\equiv c\\ (\\text{mod } n)$.4. Si $a\\equiv b\\ (\\text{mod } n)$ y $c\\equiv d\\ (\\text{mod } n)$, entonces y $a+c\\equiv b+d\\ (\\text{mod } n)$. 5. Si $a\\equiv b\\ (\\text{mod } n)$ y $c\\equiv d\\ (\\text{mod } n)$, entonces $ac\\equiv bd\\ (\\text{mod } n)$.6. Si $ac\\equiv bc\\ (\\text{mod } n)$, entonces $a\\equiv b\\ (\\text{mod } {n\\over d})$, donde $d=\\text{mcd}(c,n)$. En particular, si $\\text{mcd}(c,n)=1$, entonces $ac\\equiv bc\\ (\\text{mod } n)$ si y sólo si $a\\equiv b\\ (\\text{mod } n)$.    Demostración    1. $a-a=0$, $n\\vert 0\\Longrightarrow a\\equiv a\\ (\\text{mod } n)$    2. $a\\equiv b\\ (\\text{mod } n)\\Longleftrightarrow n\\vert a-b\\Longleftrightarrow n\\vert -(a-b)=b-a\\Longleftrightarrow n\\vert b\\equiv a\\ (\\text{mod } n)$    3. $a\\equiv b\\ (\\text{mod } n)\\,b\\equiv c\\ (\\text{mod } n)\\Longrightarrow n\\vert a-b\\,b-c\\Longrightarrow n\\vert (a-b)+(b-c)=a-c\\Longrightarrow a\\equiv c\\ (\\text{mod } n)$    4. $a\\equiv b\\ (\\text{mod } n)\\,c\\equiv d\\ (\\text{mod } n)\\Longrightarrow n\\vert a-b\\,c-d\\Longrightarrow n\\vert (a-b)+(c-d)=(a+c)-(b+d)\\Longrightarrow a+c\\equiv b+d\\ (\\text{mod } n)$    5. $a\\equiv b\\ (\\text{mod } n)\\,c\\equiv d\\ (\\text{mod } n)\\Longrightarrow n\\vert a-b\\,c-d\\Longrightarrow n\\vert (a-b)c+b(c-d)=ac-bd\\Longrightarrow ac\\equiv bd\\ (\\text{mod } n)$    6. Por definición, $ac\\equiv bc\\ (\\text{mod } n)$ quiere decir $n\\vert ac-bc=(a-b)c$. Dividiendo por $d$ tendremos ${n\\over d}\\vert (a-b){c\\over d}$. Como $\\text{mcd}({n\\over d},{c\\over d})=1$ , por el Lema de Euclides  se sigue ${n\\over d}\\vert (a-b)$, es decir, $a\\equiv b\\ (\\text{mod } {n\\over d})$.",
+        "url": "/es/lemma_congruence_properties"
+      }
+      ,
+    
+      "es-definition-congruence-relation": {
+        "title": "Relación de congruencia",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Fijado un número entero positivo $n$ y dados números enteros $a$, $b$, diremos que $a$ es congruente con $b$ módulo $n$, y lo denotaremos con $a\\equiv b\\ (\\text{mod } n)$, si $n\\vert a-b$.",
+        "url": "/es/definition_congruence_relation"
+      }
+      ,
+    
       "es-example-euclid-diophantine": {
         "title": "Algoritmo de Euclides para la Ecuación Diofántica Lineal",
         "kind": "example",
@@ -1048,6 +1671,16 @@
         "category": "es",
         "content": "Todo número entero $n\\ge 2$ se puede escribir como producto finito de números primos.    Demostración    Lo demostraremos por inducción sobre $n\\in\\mathbb{Z}_{\\ge2}$. Claramente $2$ es primo, luego el teorema se verifica trivialmente para $n=2$. Supongamos ahora que tenemos demostrado el teorema para todos los números $2$, $3$, $\\dots$, $n$ y veamos que también es cierto para $n+1$.    Si $n+1$ fuera un número primo, de nuevo el resultado sería trivial. Queda entonces demostrarlo en el caso en que $n+1$ no es primo. En tal caso, $n+1$ tendría un divisor positivo $a$ distinto de $1$ y $n+1$. Es decir, existe $b\\in\\mathbb{Z}$ tal que $n+1=ab$. Como $n+1$ y $a$ son positivos, también lo es $b$. Además, como $a\\neq 1$, $n+1$, también se tiene $b\\neq 1$, $n+1$. De aquí se deduce  que $a$ y $b$ están en el conjunto $\\{2,3,\\dots,n\\}$ en que sabemos que es cierto el teorema. Por tanto, $a$ y $b$ se escriben como producto finito de números primos, de lo que se sigue que también $n+1=ab$ es producto finito de números primos, como queríamos demostrar.",
         "url": "/es/theorem_fundamental_theorem_arithmetic_existence"
+      }
+      ,
+    
+      "es-example-first-primes": {
+        "title": "Primeros números primos",
+        "kind": "example",
+        "author": "",
+        "category": "es",
+        "content": "Los primeros números primos son",
+        "url": "/es/example_first_primes"
       }
       ,
     
@@ -1401,6 +2034,16 @@
       }
       ,
     
+      "es-applet-derivative-intuitive-concept": {
+        "title": "Concepto de Derivada",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_derivative_intuitive_concept"
+      }
+      ,
+    
       "es-applet-circle": {
         "title": "Círculo",
         "kind": "applet",
@@ -1504,6 +2147,7 @@
 
 	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
 

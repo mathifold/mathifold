@@ -60,7 +60,7 @@ p.topic {
   color: #FFFFFF;
   background-color:#1F7AFF;
   border-radius: 5px;
-  margin: auto;
+  margin: 6px 5px 6px 5px;
   text-align: center;
   display: inline-block;
   padding: 3px 20px 3px 20px;
@@ -163,4 +163,15 @@ input[type=text], select {
   padding: 50px;
 }
 
+.simplebox {
+    padding: 25px;
+    border: 5px solid black;
+    margin: 20px 0px 20px 0px ;
+}
 
+.bluebox {
+  background-color: lightblue;
+    padding: 25px;
+    border: 5px solid blue;
+    margin: 20px 0px 20px 0px ;
+}

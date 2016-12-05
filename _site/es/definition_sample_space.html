@@ -4,13 +4,14 @@
   <head>
   <meta charset="utf-8">
 
+  <title>Espacio muestral</title>
+
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
   <link rel="stylesheet" href="/css/subject_images.css">
   <link rel="stylesheet" href="/css/symb.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
-  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
 
 
@@ -31,11 +32,13 @@
 		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
 		extensions: ["mml2jax.js", "tex2jax.js"],
 		TeX: {
-			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
 		}
 	});
 	</script>
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 
 
 
@@ -136,9 +139,16 @@
 
 <div class="postbox pb_definition">
 	<p>Los resultados posibles al realizar un experimento aleatorio constituyen un conjunto denominado <strong>espacio muestral</strong> asociado al experimento aleatorio y se denota por $\Omega$.
-El espacio muestral puede ser de dos tipos:<br />
-- <em>discreto</em> si sus elementos pueden ponerse en conrrespondencia biunívoca con $\mathbb{N}$ o con un subconjunto finito de $\mathbb{N}$ (en este caso se dice que $\Omega$ es finito).
-- continuo si su cardinal es el de $[0, 1]$.</p>
+El espacio muestral puede ser de dos tipos:</p>
+
+<ul>
+  <li>
+    <p><strong>discreto</strong> si sus elementos pueden ponerse en correspondencia biunívoca con $\mathbb{N}$ o con un subconjunto finito de $\mathbb{N}$ (en este caso se dice que $\Omega$ es finito).</p>
+  </li>
+  <li>
+    <p><strong>continuo</strong> si su cardinal es el de $[0, 1]$.</p>
+  </li>
+</ul>
 
 </div>
 
@@ -152,6 +162,7 @@ El espacio muestral puede ser de dos tipos:<br />
 
 	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
 

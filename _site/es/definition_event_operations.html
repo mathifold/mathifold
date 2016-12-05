@@ -4,13 +4,14 @@
   <head>
   <meta charset="utf-8">
 
+  <title>Operaciones con sucesos</title>
+
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
   <link rel="stylesheet" href="/css/subject_images.css">
   <link rel="stylesheet" href="/css/symb.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
-  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
 
 
@@ -31,11 +32,13 @@
 		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
 		extensions: ["mml2jax.js", "tex2jax.js"],
 		TeX: {
-			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
 		}
 	});
 	</script>
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 
 
 
@@ -140,11 +143,13 @@
 
 <div class="postbox pb_definition">
 	<p>La identificación de los sucesos relativos a un experimento aleatorio implica disponer de operaciones para formar nuevos sucesos a partir de otros dados. 
-Supongamos $A$ y $B$, dos subconjuntos de $\Omega$. Las operaciones básicas son:<br />
-- <em>Unión de sucesos</em>: $A \cup B$ representa un suceso nuevo que se describe como “ocurre $A$ u ocurre $B$”. Por lo tanto este nuevo evento sucede siempre que el resultado pertenezca a $A$ o a $B$.
-- <em>Intersección de sucesos</em>: $A \cap B$ es también un nuevo suceso que se describe como “ocurren $A$ y $B$ simultaneamente” y sucede siempre que el resultado pertenezca a $A$ y a $B$. 
-Si la intersección de dos sucesos es vacía, $A \cap B = \emptyset$, ambos sucesos no pueden ocurrir a la vez y se dice que $A$ y $B$ <em>sucesos incompatibles</em>.
-- <em>Toma de complementarios</em>: definimos el suceso contrario de $A$ como $ A^{c} = \Omega - A$ y significa que el resultado del experimento no está en $A$.</p>
+Supongamos $A$ y $B$, dos subconjuntos de $\Omega$. Las operaciones básicas son:</p>
+<ul>
+  <li><em>Unión de sucesos</em>: $A \cup B$ representa un suceso nuevo que se describe como “ocurre $A$ u ocurre $B$”. Por lo tanto este nuevo evento sucede siempre que el resultado pertenezca a $A$ o a $B$.</li>
+  <li><em>Intersección de sucesos</em>: $A \cap B$ es también un nuevo suceso que se describe como “ocurren $A$ y $B$ simultaneamente” y sucede siempre que el resultado pertenezca a $A$ y a $B$. 
+Si la intersección de dos sucesos es vacía, $A \cap B = \emptyset$, ambos sucesos no pueden ocurrir a la vez y se dice que $A$ y $B$ <em>sucesos incompatibles</em>.</li>
+  <li><em>Toma de complementarios</em>: definimos el suceso contrario de $A$ como $ A^{c} = \Omega - A$ y significa que el resultado del experimento no está en $A$.</li>
+</ul>
 
 </div>
 
@@ -158,6 +163,7 @@ Si la intersección de dos sucesos es vacía, $A \cap B = \emptyset$, ambos suce
 
 	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
 

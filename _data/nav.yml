@@ -75,6 +75,10 @@ map:
         es: Funciones
         children:
           -
+            ident: first_functions
+            en: First Functions
+            es: Primeras Funciones
+          -
             ident: limits
             en: Limits
             es: Límites
@@ -297,6 +301,10 @@ map:
             en: Bilinear and Quadratic Forms
             es: Formas Bilineales y Cuadráticas
           -
+            ident: multilinear_forms
+            en: Multilinear Forms
+            es: Formas Multilineales
+          -
             ident: moore_penrose_inverse
             en: Moore-Penrose Inverse
             es: Inversa de Moore-Penrose
@@ -432,6 +440,10 @@ map:
             ident: intro_differential_calculus
             en: Chapter1
             es: Capítulo1
+          -
+            ident: vector_fields
+            en: Vector Fields
+            es: Campos Vectoriales
       -
         ident: integral_calculus
         en: Integral Calculus
@@ -511,9 +523,9 @@ map:
         es: Teoría de Conjuntos
         children:
           -
-            ident: intro_set_theory
-            en: Chapter1
-            es: Capítulo1
+            ident: zermelo_fraenkel_axiomatic
+            en: Zermelo-Fraenkel Axiomatic
+            es: Axiomática de Zermelo-Fraenkel
       -
         ident: logic
         en: Logic
@@ -673,6 +685,10 @@ map:
         es: Topología Algebraica
         children:
           -
+            ident: preliminarities_algebraic_topology
+            en: Preliminarities
+            es: Preliminares
+          -
             ident: compact_surfaces
             en: Compact Surfaces
             es: Superficies Compactas
@@ -711,7 +727,7 @@ map:
             en: Tangent Space
             es: Espacio Tangente
           -
-            ident: vector_fields
+            ident: vector_fields_manifolds
             en: Vector Fields
             es: Campos Vectoriales
           -
@@ -776,6 +792,15 @@ map:
         children:
           -
             ident: intro_morse_theory
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: homological_algebra
+        en: Homological Algebra
+        es: Álgebra Homológica
+        children:
+          -
+            ident: intro_homological_algebra
             en: Chapter1
             es: Capítulo1
   -
@@ -874,3 +899,20 @@ map:
             ident: intro_history_mathematics
             en: Chapter1
             es: Capítulo1
+      -
+        ident: breathtaking_math_breakthroughs
+        en: Breathtaking Math Breakthroughs
+        es: Resultados Insólitos
+        children:
+          -
+            ident: discovery_non_euclidean_geometry
+            en: The Discovery of Non-Euclidean Geometry
+            es: El Descubrimiento de la Geometría No Euclídea
+          -
+            ident: banach_tarski_paradox
+            en: The Banach-Tarski Paradox
+            es: La Paradoja de Banach-Tarski
+          -
+            ident: godel_incompleteness_theorems
+            en: Gödel Incompleteness Theorems
+            es: Los Teoremas de Incompletitud de Gödel

@@ -1,0 +1,129 @@
+<p>Del mismo modo que con la esfera <script type="math/tex">\mathbb{S}  ^2</script>, queremos hallar la cohomología de una variedad <script type="math/tex">M</script> que se expresa como unión de otras más pequeñas, por ejemplo de dos abiertos <script type="math/tex">U</script>, <script type="math/tex">V</script>. Las inclusiones entre los distintos espacios inducen aplicaciones con sentido inverso que consisten en restringir las formas.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix@R=0pc{
+& U \ar^-{i_1} [rd]& & & & \Omega^*(U)\ar [ld]_-{j_1^*}&\\
+U\cap V  \ar [ru]^-{j_1} \ar [rd]^-{j_2}& & M & & \Omega^*(U\cap V )  & & \Omega^*(M) \ar_-{i_1^*} [lu]  \ar [ld]_-{i_2^*}\\
+& V  \ar [ru]^-{i_2}& & & &\Omega^*(V)  \ar [lu]_-{j_2^*}&} %]]></script>
+
+<p>Juntamos todo en la siguiente cadena:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix@R=0.3pc{
+\Omega^*(M)\ar[r]^-{i^*}&\Omega^*(U)\times\Omega^*(V)\ar[r]^-{j^*}&\Omega^*( U\cap V)\\
+\alpha\ar@{\vert -{>}}[r]&(\alpha\vert _U,\alpha\vert _V)&\\
+&(\beta,\gamma)\ar@{\vert -{>}}[r]&\beta\vert _{ U\cap V}-\gamma\vert _{ U\cap V}} %]]></script>
+
+<p>He aquí el resultado clave:</p>
+
+<div class="bluebox">
+La sucesión 
+
+$$
+\xymatrix{
+0\ar[r]&amp;\Omega^*(M)\ar[r]^-{i^*}&amp;\Omega^*(U)\times\Omega^*(V)\ar[r]^-{j^*}&amp;\Omega^*( U\cap V)\ar[r]&amp;0}
+$$
+
+es sucesión exacta corta de homomorfismos de complejos.
+</div>
+
+<p>Hay tres puntos que verificar:</p>
+
+<p><b>1</b> <script type="math/tex">\Omega^*(M)\xrightarrow{i^*}\Omega^*(U)\times\Omega^*(V)</script> es inyectiva. Para una forma <script type="math/tex">\alpha</script>, si <script type="math/tex">\alpha\vert _U</script> y <script type="math/tex">\alpha\vert _V</script> son nulas (dan la aplicación nula en cada espacio tangente) entonces <script type="math/tex">\alpha</script> debe ser nula en todo <script type="math/tex">M</script>.</p>
+
+<p><b>2</b>   <script type="math/tex">\text{ im }i^*=\text{ker }j^*</script>. Por supuesto, <script type="math/tex">\text{im }i^*\subset\text{ker }j^*</script>, pues <script type="math/tex">\alpha\longmapsto(\alpha\vert _U,\alpha\vert _V)\longmapsto\alpha\vert _{ U\cap V}-\alpha\vert _{ U\cap V}=0</script>. Pero si <script type="math/tex">(\beta,\gamma)\longmapsto\beta\vert _{ U\cap V}-\gamma\vert _{ U\cap V}=0</script>, entonces <script type="math/tex">\beta</script> y <script type="math/tex">\gamma</script> coinciden en el dominio común y se puede definir <script type="math/tex">% <![CDATA[
+\alpha=
+\left\{ 
+\begin{array}{c}
+\beta & \text{en U}\\
+\gamma & \text{en V}
+\end{array}
+\right. %]]></script>, con lo que <script type="math/tex">(\beta,\gamma)=i^*(\alpha)\in\text{ im }i^*</script>.</p>
+
+<p><b>3</b>  <script type="math/tex">\Omega^*(U)\times\Omega^*(V)\xrightarrow{j^*}\Omega^*(U\cup V)</script> es sobreyectiva. Este punto es más delicado. Como vimos en el caso de la esfera, no es trivial extender formas a abiertos mayores; la mejor estrategia es utilizar funciones con soporte compacto, o más concretamente, una partición diferenciable de la unidad.</p>
+
+<p><script type="math/tex">\{U,V\}</script> es un recubrimiento abierto de <script type="math/tex">M</script>; asociado a él tenemos una partición diferenciable de la unidad <script type="math/tex">\{\rho_U,\rho_V\}</script>. Estas funciones cumplen lo siguiente: son diferenciables, <script type="math/tex">\rho_U+\rho_V=1</script>, el soporte de <script type="math/tex">\rho_U</script> está contenido en <script type="math/tex">U</script> y el de <script type="math/tex">\rho_V</script> en <script type="math/tex">V</script>. Sea <script type="math/tex">\delta\in\Omega^k(U\cap V)</script>. Al multiplicar <script type="math/tex">\delta</script> por las funciones de la partición, obtenemos un par de formas que son fácilmente extensibles: como <script type="math/tex">\rho_V</script> se anula fuera de <script type="math/tex">V</script>, podemos tomar <script type="math/tex">% <![CDATA[
+\beta=
+\left\{ 
+\begin{array}{c}
+\rho_V \delta & \text{en } U\cap V\\
+0 & \text{en } U-\text{sop}(\rho_V)
+\end{array}
+\right. %]]></script>, y como <script type="math/tex">\rho_U</script> se anula fuera de <script type="math/tex">U</script>, tomamos <script type="math/tex">% <![CDATA[
+\gamma=
+\left\{ 
+\begin{array}{c}
+-\rho_U \delta & \text{en } U\cap V\\
+0 & \text{en } V-\text{sop}(\rho_U)
+\end{array}
+\right. %]]></script>. Ahora <script type="math/tex">(\beta,\gamma)\longmapsto\beta\vert _{ U\cap V}-\gamma\vert _{ U\cap V}=\rho_V \delta-(-\rho_U \delta)=(\rho_V+\rho_U)\delta=\delta</script>, con lo que <script type="math/tex">j^*</script> es sobreyectiva.</p>
+
+<p>Asociada a la secuencia exacta de homomorfismos de complejos, tenemos la sucesión exacta larga en homología.</p>
+
+<div class="bluebox">
+<b>Secuencia de Mayer-Vietoris.</b> El complejo
+
+$$
+\cdots\xrightarrow{}H^k(M)\xrightarrow{i^*}H^k(U)\times H^k(V)\xrightarrow{j^*}H^k(U\cap V) \xrightarrow{\mathrm{d}^\ast}H^{k+1}(M)\xrightarrow{i^*}\cdots
+$$
+
+es sucesión exacta.
+</div>
+
+<p>Con esta potente herramienta podremos calcular los grupos de homología de los espacios más comunes, como las esferas, en la última sección del capítulo.</p>
+
+<p>En la cohomología con soporte compacto, todo lo anterior no tiene sentido, porque no hay functorialidad. Sin embargo, todavía queda algo para las inclusiones. Sea <script type="math/tex">M</script> una variedad y <script type="math/tex">U</script> un abierto de <script type="math/tex">M</script>. La inclusión induce la aplicación <script type="math/tex">i_*:\Omega^k_c(U)\longrightarrow\Omega^k_c(M)</script> (nótese el sentido de la flecha), definida por <script type="math/tex">% <![CDATA[
+i_*(\alpha)=\left\{ 
+\begin{array}{c}
+\alpha & \text{en } U\\
+0 & \text{en } M-\text{sop}(\alpha)
+\end{array}
+\right. %]]></script>. Es decir, por ser <script type="math/tex">\alpha</script> de soporte compacto, el soporte no llega hasta el borde de <script type="math/tex">U</script> y se puede extender por 0 diferenciablemente; para las formas normales no se da esta inclusión en abiertos mayores.</p>
+
+<div class="bluebox">
+La sucesión
+
+$$
+\xymatrix@R=0.3pc{
+0\ar[r]&amp;\Omega^*_c(U\cap V)\ar[r]^-{j_*}&amp;\Omega^*_c(U)\times\Omega^*_c(V)\ar[r]^-{i_*}&amp;\Omega^*_c(M)\ar[r]&amp;0\\
+&amp;\delta\ar@{\vert -{&gt;}}[r]&amp;(j_{1*}\delta,-j_{2*}\delta)&amp;&amp;\\
+&amp;&amp;(\beta,\gamma)\ar@{\vert -{&gt;}}[r]&amp;i_{1*}\beta+i_{2*}\gamma&amp;}
+$$
+
+es sucesión exacta corta de homomorfismos de complejos.
+</div>
+
+<p><b>1</b>  <script type="math/tex">j_*</script> es inyectiva. Si una forma se anula en <script type="math/tex">U</script> o en <script type="math/tex">V</script>, automáticamente se anula en <script type="math/tex">U\cap V</script>.</p>
+
+<p><b>2</b>   <script type="math/tex">\text{ im }j_*=\text{ker }i_*</script>. <script type="math/tex">\text{ im }j_*\subset\text{ker }i_*</script> es obvio, pues <script type="math/tex">\delta\longmapsto(j_{1*}\delta,-j_{2*}\delta)\longmapsto(i_1\circ j_1)_*\delta-(i_2\circ j_2)_*\delta=0</script>. Si <script type="math/tex">(\beta,\gamma)\longmapsto i_{1*}\beta+i_{2*}\gamma=0</script>, entonces <script type="math/tex">\beta</script> se anula en <script type="math/tex">U-V</script>, <script type="math/tex">\gamma</script> se anula en <script type="math/tex">V-U</script> y <script type="math/tex">\beta=-\gamma</script> en <script type="math/tex">U\cap V</script>, por lo que se induce una preimagen para <script type="math/tex">j_*</script>.</p>
+
+<p><b>3</b>  <script type="math/tex">i_*</script> es sobreyectiva. De nuevo hace falta usar una partición diferenciable de la unidad: dada <script type="math/tex">\alpha\in\Omega^*_c(M)</script>, <script type="math/tex">\rho_U\alpha\in\Omega^*_c(U)</script>, <script type="math/tex">\rho_V\alpha\in\Omega^*_c(V)</script> y <script type="math/tex">(\rho_U\alpha,\rho_V\alpha)\longmapsto\rho_U\alpha+\rho_V\alpha=\alpha</script>.</p>
+
+<div class="bluebox">
+<b>Secuencia de Mayer-Vietoris con soporte compacto.</b> El complejo
+
+$$
+\cdots\xrightarrow{}H^k_c(U\cap V)\xrightarrow{j_*}H^k_c(U)\times H^k_c(V)\xrightarrow{i_*}H^k_c(M) \xrightarrow{\mathrm{d}^\ast}H^{k+1}_c(U\cap V)\xrightarrow{j_*}\cdots
+$$
+
+es sucesión exacta.
+</div>
+
+<div class="yellowbox">
+<b>Secuencia de Mayer-Vietoris.</b> La sucesión 
+
+$$
+\xymatrix@R=0.3pc{
+\Omega_*(U\cap V)\ar[r]^-{j_*}&amp;\Omega_*(U)\times\Omega_*(V)\ar[r]^-{i_*}&amp;\Omega_*(M)\\
+\sigma\ar@{\vert -{&gt;}}[r]&amp;(\sigma,-\sigma)&amp;\\
+&amp;(\tau,\omega)\ar@{\vert -{&gt;}}[r]&amp;\tau+\omega}
+$$
+
+es sucesión exacta corta de homomorfismos de complejos, y el complejo
+
+$$
+\cdots\xrightarrow{}H_k(U\cap V)\xrightarrow{j_*}H_k(U)\times H_k(V)\xrightarrow{i_*}H_k(M) \xrightarrow{\partial^\ast}H_{k-1}(U\cap V)\xrightarrow{j_*}\cdots
+$$
+
+es sucesión exacta.
+</div>

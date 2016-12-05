@@ -1,0 +1,110 @@
+<p>Nos centramos ahora en la cohomología de una variedad producto.</p>
+
+<p>Dadas dos variedades <script type="math/tex">M</script> y <script type="math/tex">N</script> de dimensiones <script type="math/tex">m</script> y <script type="math/tex">n</script>, el producto <script type="math/tex">M\times N</script> tiene estructura de variedad de dimensión <script type="math/tex">m+n</script>. El producto se proyecta sobre cada uno de los factores y, como en los Lemas de Poincaré, las formas en los factores se elevan a formas en el producto.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix{
+M&M\times N \ar[l]_-{\pi_1} \ar[r]^-{\pi_2}&N&&\Omega^*(M) \ar[r]^-{\pi_1^*}&\Omega^*(M\times N)&\Omega^*(N) \ar[l]_-{\pi_2^*}} %]]></script>
+
+<p>El producto exterior entre formas nos permite definir</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix{
+\Omega^a(M)\otimes\Omega^b(N)\ar[r] &\Omega^{a+b}(M\times N )&&\alpha\otimes\beta \ar@{\vert -{>}}[r]&\pi_1^*(\alpha)\wedge\pi_2^*(\beta)} %]]></script>
+
+<p>y como el producto exterior funciona bien en cohomología, tenemos también</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\xymatrix{
+H^a(M)\otimes H^b(N)\ar[r] &H^{a+b}(M\times N )&&
+[\alpha]\otimes[\beta] \ar@{\vert -{>}}[r]&[\pi_1^*(\alpha)\wedge\pi_2^*(\beta)]} %]]></script>
+
+<p>De hecho, para obtener la máxima información sobre la cohomología de <script type="math/tex">M\times N</script> de orden <script type="math/tex">k</script>, tomamos la siguiente aplicación:</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\entrymodifiers={+!!<0pt,\fontdimen22\textfont2>}\xymatrix{
+\displaystyle\bigoplus_{a+b=k} H^a(M)\otimes H^b(N)\ar[r] &H^k(M\times N )&&
+\sum[\alpha]\otimes[\beta] \ar@{\vert -{>}}[r]&\sum[\pi_1^*(\alpha)\wedge\pi_2^*(\beta)]} %]]></script>
+
+<p>con la esperanza de que sea al menos sobreyectiva.</p>
+
+<div class="bluebox">
+<b>Teorema de Künneth.</b> La aplicación
+
+$$
+\entrymodifiers={+!!&lt;0pt,\fontdimen22\textfont2&gt;}\xymatrix{
+\displaystyle\bigoplus_{a+b=k} H^a(M)\otimes H^b(N)\ar[r] &amp;H^k(M\times N )}
+$$
+
+es un isomorfismo para cada $$k$$, y se establece
+
+$$
+H^*(M\times N)\simeq H^*(M)\otimes H^*(N),
+$$
+
+isomorfismo de álgebras exteriores.
+</div>
+
+<p>El término <i>álgebra exterior</i> hace referencia a que, además de la suma usual, se tiene un producto <script type="math/tex">\wedge</script> que lleva un par de formas en otra forma (aunque los órdenes sean distintos).</p>
+
+<p>Este teorema es muy útil porque describe explícitamente la cohomología del espacio producto si sabemos la cohomología de los factores. Por ejemplo, es inmediato ahora que <script type="math/tex">H^0(\mathbb{T})=\langle[1]\rangle</script>, <script type="math/tex">H^1(\mathbb{T})=\langle[\mathrm{d} \alpha],[\mathrm{d} \beta]\rangle</script> y <script type="math/tex">H^2(\mathbb{T})=\langle[\mathrm{d} \alpha\wedge\mathrm{d} \beta]\rangle</script>.</p>
+
+<p>Una parametrización de <script type="math/tex">(p,q)\in M\times N</script> se puede tomar de la forma <script type="math/tex">U\times V \xrightarrow{\varphi\times\psi} M\times N</script> con <script type="math/tex">\varphi</script> parametrización de <script type="math/tex">p</script> en <script type="math/tex">M</script> y <script type="math/tex">\psi</script> parametrización de <script type="math/tex">q</script> en <script type="math/tex">N</script>. Para esta parametrización se tiene la base <script type="math/tex">\{\mathrm{d} x_1,...,\mathrm{d} x_m,\mathrm{d} y_1,...,\mathrm{d} y_n\}</script> con la que construir el resto de formas. Así, cuando tenemos una <script type="math/tex">k</script>-forma en <script type="math/tex">(\varphi\times\psi)(U\times V)\subset M\times N</script> expresada en esta base, cada sumando tiene <script type="math/tex">a</script> componentes del tipo <script type="math/tex">\mathrm{d} x_i</script> y <script type="math/tex">b</script> componentes del tipo <script type="math/tex">\mathrm{d} y_j</script>, con <script type="math/tex">a+b=k</script>; se pueden separar en grupos según los valores <script type="math/tex">0\leqslant a,b\leqslant k</script> elegidos. En cada grupo hay sumandos del tipo <script type="math/tex">f(x_1,...,x_m,y_1,...,y_n)\mathrm{d} x_{i_1}\wedge...\wedge\mathrm{d} x_{i_a}\wedge\mathrm{d} x_{j_1}\wedge...\wedge\mathrm{d} x_{j_b}</script>; esto nos induce a pensar que <script type="math/tex">\Omega^k(M\times N)</script> tiene algo que ver con <script type="math/tex">\bigoplus_{a+b=k} \Omega^a(M)\otimes \Omega^b(N)</script> (aunque no son iguales, porque <script type="math/tex">f(x_1,...,x_m,y_1,...,y_n)</script> no tiene por qué ser el producto de funciones que dependan de <script type="math/tex">x_i</script> e <script type="math/tex">y_j</script> separadamente). Podríamos seguir con estos razonamientos como se hizo en los Lemas de Poincaré, pero ahora disponemos de herramientas con las que construir una solución más sencilla y elegante. Ésta consta de tres pasos.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_9.svg" /></div>
+
+<p><b>1</b>  Sea un <script type="math/tex">U\subset M</script> un abierto difeomorfo a <script type="math/tex">\mathbb{R} ^n</script> (y por tanto con el mismo tipo de homotopía). Por el Lema de Poincaré, <script type="math/tex">% <![CDATA[
+\xymatrix{
+H^k(U\times N) \ar@<0.5ex>[r]^-{s^\ast} & H^k(N) \ar@<0.5ex>[l]^-{p^\ast}} %]]></script> son isomorfismos inversos. Pero eso es lo mismo que decir que para las variedades <script type="math/tex">U</script> y <script type="math/tex">N</script> se cumple el Teorema de Künneth</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\entrymodifiers={+!!<0pt,\fontdimen22\textfont2>}\xymatrix{
+\displaystyle\bigoplus_{a+b=k} H^a(U)\otimes H^b(N)\ar[r]^-{\simeq} &H^k(U\times N ),} %]]></script>
+
+<p>pues <script type="math/tex">H^0(U)\simeq\mathbb{R}</script>, <script type="math/tex">H^a(U)=0</script> para <script type="math/tex">a>0</script>.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_10.svg" /></div>
+
+<p><b>2</b>  Dados dos abiertos cualesquiera <script type="math/tex">U</script> y <script type="math/tex">V</script> de <script type="math/tex">M</script>, si para <script type="math/tex">U</script>, <script type="math/tex">V</script> y <script type="math/tex">U\cap V</script> se cumple el Teorema de Künneth (al hacer el producto con <script type="math/tex">N</script>), entonces también se cumple para <script type="math/tex">U\cup V</script>. El punto importante es la secuencia de Mayer-Vietoris. Por un lado, tomamos la secuencia de Mayer-Vietoris asociada a <script type="math/tex">U</script> y <script type="math/tex">V</script>, tensorizamos por <script type="math/tex">H^b(N)</script> y hacemos suma directa sobre <script type="math/tex">a+b=k</script>. Por otro lado, tenemos la secuencia de Mayer-Vietoris asociada a los abiertos <script type="math/tex">U\times N</script> y <script type="math/tex">V\times N</script>. En total llegamos al siguiente diagrama:</p>
+
+<div class="resource img">
+            <img src="/images/images/3_12.svg" /></div>
+
+<p>Las aplicaciones <script type="math/tex">i^*</script>, <script type="math/tex">j^*</script> y <script type="math/tex">\mathrm{d} ^*</script> se extienden de modo natural, y <script type="math/tex">\Psi</script> es la aplicación de Künneth. Aunque no es difícil y parece lo más apropiado, hay que comprobar que se preserva la exactitud de las filas y la conmutatividad del diagrama (y algún paso no es tan obvio, sobre todo en la conmutatividad de <script type="math/tex">\mathrm{d}</script> y <script type="math/tex">\Psi</script>); se pueden consultar los detalles en [Bott-Tu, Sec 1.5]. Una vez establecido que el diagrama funciona bien, tenemos que, por hipótesis, <script type="math/tex">\Psi</script> es isomorfismo en la primera, segunda, cuarta y quinta columna. Aplicando el Lema de los cinco, resulta que la aplicación <script type="math/tex">\Psi</script> en la tercera columna también es isomorfismo. Es decir, el Teorema de Künneth es válido también para el par <script type="math/tex">U\cup V</script> y <script type="math/tex">N</script>.</p>
+
+<div class="resource img">
+            <img src="/images/images/3_11.svg" /></div>
+
+<p><b>3</b>  En este último paso se construye algo parecido a una inducción sobre conjuntos abiertos. Para ello es necesario construir en nuestra variedad <script type="math/tex">M</script> un <i>buen cubrimiento</i>. Un buen cubrimiento es un cubrimiento de la variedad por abiertos que sean difeomorfos a <script type="math/tex">\mathbb{R} ^m</script> y tal que las intersecciones finitas entre abiertos lo sean también. A primera vista no parece difícil que haya tal buen cubrimiento (basta elegir abiertos “pequeños y redondos”); es cierto que toda variedad dispone de un buen cubrimiento, pero demostrarlo rigurosamente es bastante complejo. Si la variedad es compacta, se puede elegir un buen cubrimiento finito; las variedades más usuales también tienen un buen cubrimiento finito, y sólo algunas más extrañas necesitan un buen cubrimiento numerable (por ejemplo, una suma conexa de infinitos toros). Aun para estas últimas hay solución: admiten un cubrimiento finito si permitimos que los abiertos sean difeomorfos a la unión (posiblemente numerable) de bolas en <script type="math/tex">\mathbb{R} ^m</script>, es decir, los infinitos abiertos que cubren <script type="math/tex">M</script> se pueden distribuir en <script type="math/tex">l</script> grupos tal que abiertos del mismo grupo no se solapan; bajo estas hipótesis el argumento que sigue (con algún pequeño apunte) también funciona.</p>
+
+<p>Nuestra inducción será sobre el número de abiertos del cubrimiento de <script type="math/tex">M</script>. Si <script type="math/tex">M</script> es el único abierto del cubrimiento, entonces <script type="math/tex">M</script> es difeomorfo a <script type="math/tex">\mathbb{R} ^m</script> y por el Paso 1 sabemos que es válido el Teorema de Künneth. Supongamos ahora que hemos demostrado la validez para variedades con un buen cubrimiento de <script type="math/tex">l-1</script> abiertos y que <script type="math/tex">\{U_1, U_2, ... , U_l\}</script> es un buen cubrimiento de <script type="math/tex">M</script>. Para <script type="math/tex">U=U_1\cup U_2\cup ... \cup U_{l-1}</script> y para <script type="math/tex">U_{l}</script> se cumple el Teorema de Künneth por hipótesis, pues <script type="math/tex">\{U_1, U_2, ... , U_{l-1}\}</script> es un buen cubrimiento para <script type="math/tex">U</script>. Y también se cumple para <script type="math/tex">U\cap U_l</script>, pues <script type="math/tex">\{U_1\cup U_l, U_2\cup U_l, ... , U_{l-1}\cup U_l\}</script> es un buen cubrimiento suyo con <script type="math/tex">l-1</script> elementos (de aquí la importancia de que las intersecciones finitas también sean difeomorfas a <script type="math/tex">\mathbb{R} ^m</script>). Se sigue por el Paso 2 que para <script type="math/tex">M=U\cup U_l</script> también es válido el Teorema de Künneth.</p>
+
+<p>Este tipo de razonamiento es muy útil en el estudio de variedades. Siguiendo la misma línea de demostración, es casi inmediato probar que en una variedad con un buen cubrimiento finito (con abiertos difeomorfos a <script type="math/tex">\mathbb{R} ^m</script>) los grupos de cohomología (espacios vectoriales sobre <script type="math/tex">\mathbb{R}</script>) son siempre de dimensión finita. También se hará algo similar cuando tratemos la Dualidad de Poincaré y el Teorema de De Rham.</p>
+
+<div class="yellowbox">
+<b>Teorema de Künneth.</b> Existe un producto
+
+$$
+\xymatrix{
+\Omega_a(M)\otimes\Omega_b(N)\ar[r] &amp;\Omega_{a+b}(M\times N )&amp;&amp;\sigma\otimes\tau \ar@{\vert -{&gt;}}[r]&amp; \sigma\times\tau}
+$$
+
+(el producto cartesiano con cierta orientación) compatible con la homología, $$\xymatrix{\times: H_a(M)\otimes H_b(N)\ar[r] &amp; H_{a+b}(M\times N )}$$.
+
+La aplicación
+
+$$
+\entrymodifiers={+!!&lt;0pt,\fontdimen22\textfont2&gt;}\xymatrix{
+\displaystyle\bigoplus_{a+b=k} H_a(M)\otimes H_b(N)\ar[r] &amp;H_k(M\times N )}
+$$
+
+es un isomorfismo para cada $$k$$, y se establece
+
+$$
+H_*(M\times N)\simeq H_*(M)\otimes H_*(N),
+$$
+
+isomorfismo de álgebras exteriores.
+</div>

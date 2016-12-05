@@ -4,13 +4,14 @@
   <head>
   <meta charset="utf-8">
 
+  <title>Sucesos aleatorios</title>
+
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
   <link rel="stylesheet" href="/css/subject_images.css">
   <link rel="stylesheet" href="/css/symb.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
-  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
 
 
@@ -31,11 +32,13 @@
 		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
 		extensions: ["mml2jax.js", "tex2jax.js"],
 		TeX: {
-			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
 		}
 	});
 	</script>
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
 
 
 
@@ -135,9 +138,11 @@
 </div>
 
 <div class="postbox pb_definition">
-	<p>Los subconjuntos del espacio muestral $Omega$ se denominan <strong>sucesos</strong>. El azar en el experimento da lugar a estos sucesos y se dividen en dos tipos:<br />
-- <em>simples</em> si están formados por un único elemento, es decir, representan uno sólo de los resultados posibles del experimento.
-- <em>compuestos</em> identifican subconjuntos del espacio muestral que tienen más de un elemento y son por tanto uniones de sucesos simples.</p>
+	<p>Los subconjuntos del espacio muestral $Omega$ se denominan <strong>sucesos</strong>. El azar en el experimento da lugar a estos sucesos y se dividen en dos tipos:</p>
+<ul>
+  <li><em>simples</em> si están formados por un único elemento, es decir, representan uno sólo de los resultados posibles del experimento.</li>
+  <li><em>compuestos</em> identifican subconjuntos del espacio muestral que tienen más de un elemento y son por tanto uniones de sucesos simples.</li>
+</ul>
 
 <p>Hay dos sucesos singulares que siempre se tienen en todo experimento aleatorio. Por un lado el <em>suceso seguro</em> que coincide con el espacio muestral $Omega$. Por otro lado el subconjunto vacío $\emptyset$ y que representa el *suceso imposible$.</p>
 
@@ -153,6 +158,7 @@
 
 	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
 

@@ -1,13 +1,14 @@
 <head>
   <meta charset="utf-8">
 
+  <title>{{ page.title }}</title>
+
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
   <link rel="stylesheet" href="/css/subject_images.css">
   <link rel="stylesheet" href="/css/symb.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/script.js"></script>
-  <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
   <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
 
 
@@ -28,11 +29,20 @@
 		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
 		extensions: ["mml2jax.js", "tex2jax.js"],
 		TeX: {
-			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
 		}
 	});
 	</script>
 	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
+
+{% if page.sage %}
+  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function () {
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage', hide: ["editor", "evalButton", "permalink"], autoeval: 1});
+    });
+    </script>
 {% endif %}
 
 {% if page.geogebratube.size > 0 %}
