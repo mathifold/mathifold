@@ -440,6 +440,10 @@ map:
             ident: intro_differential_calculus
             en: Chapter1
             es: Capítulo1
+          -
+            ident: vector_fields
+            en: Vector Fields
+            es: Campos Vectoriales
       -
         ident: integral_calculus
         en: Integral Calculus
@@ -723,7 +727,7 @@ map:
             en: Tangent Space
             es: Espacio Tangente
           -
-            ident: vector_fields
+            ident: vector_fields_manifolds
             en: Vector Fields
             es: Campos Vectoriales
           -
