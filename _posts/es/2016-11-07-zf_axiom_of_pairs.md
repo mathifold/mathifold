@@ -22,4 +22,6 @@ A este conjunto lo llamaremos **conjunto par formado por $X$ e $Y$**, y lo denot
 Hay ciertos apuntes interesantes acerca de este axioma:
 \bullet Si \forall a \in Y \longrightarrow a \in X (lo cual no implica que X=Y), ó X=\emptyset ó Y=\emptyset, entonces el conjunto par ${X,Y}={X,X}=X$.
 \bullet Si X=Y=\emptyset, entonces el conjunto par {X,Y}={\emptyset,\emptyset}=\emptyset.
-\bullet Dados dos conjuntos $C={A,B}$ y $E$, existe $F={C,D}$, por lo que existirán conjuntos pares de un número infinito de conjuntos. Así se demuestra que existen infinitos conjuntos.
+\bullet card({X,Y}) = 2 \forall X,Y.
+
+Hasta ahora solamente
