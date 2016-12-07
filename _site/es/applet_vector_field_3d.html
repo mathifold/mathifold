@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
 
-  <title>Cálculo Diferencial</title>
+  <title>Campo Vectorial en el Espacio</title>
 
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
@@ -18,6 +18,13 @@
 
   
 
+
+  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function () {
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage', hide: ["editor", "evalButton", "permalink"], autoeval: 1});
+    });
+    </script>
 
 
 
@@ -44,6 +51,10 @@
 
 	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
 	
+	
+	
+		
+		
 		
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
@@ -51,8 +62,18 @@
 		<a href="/topics/es/analysis.html" style="text-decoration: none; color: black">
 		Análisis</a>
 		</span>
-	
-	
+		<span style="font-size:30px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:30px;vertical-align:middle;">
+		<a href="/subjects/es/differential_calculus.html" style="text-decoration: none; color: black">
+		Cálculo Diferencial</a>
+		</span>
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/vector_fields.html" style="text-decoration: none; color: black">
+		Campos Vectoriales</a>
+		</span>
 	
 	
 
@@ -65,16 +86,13 @@
 				
 				
 					
-					<a href="/subjects/es/differential_calculus.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/es/applet_vector_field_3d.html"><img src="/images/es.svg" height="40" width="40"></a>
 				
 			
 		
 			
 				
 				
-				
-					
-					<a href="/subjects/en/differential_calculus.html"><img src="/images/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -85,30 +103,40 @@
 
 
 
-    <div style="position: relative; height: 70px;" align="center">
-<p style="font-size: 32px;">Cálculo Diferencial</p>
+    
+
+
+
+
+
+
+	
+	
+	<a href="/es/applet_vector_field_2d.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/applet.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Campo Vectorial en el Espacio</span>
 </div>
 
-<div style="position: relative;" align="center">
+<div class="postbox pb_applet">
+	<div class="sage"><script type="text/x-sage">
 
+var('x y z')
+@interact
+def _(f = input_box(default=(x,y,z)), xrange = slider(1, 10, 1, 3), yrange = slider(1, 10, 1, 3), zrange = slider(1, 10, 1, 3)):
+    show(plot_vector_field3d(f, (x,-xrange,xrange), (y,-yrange,yrange), (z,-zrange,zrange), aspect_ratio=1))
 
-
-
-
-	
-	
-	
-	<div style="margin: 30px;"><a href="/chapters/es/intro_differential_calculus.html" class="chapter">Capítulo1
-	<span class="counter" style="background-color: #00BB33;">2</span></a></div>
-
-	
-	
-	
-	<div style="margin: 30px;"><a href="/chapters/es/vector_fields.html" class="chapter">Campos Vectoriales
-	<span class="counter" style="background-color: #00BB33;">2</span></a></div>
-
+</script></div>
 
 </div>
+
+
+
 
 
     <footer class="site-footer">

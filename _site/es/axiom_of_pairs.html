@@ -4,7 +4,7 @@
   <head>
   <meta charset="utf-8">
 
-  <title>Axioma del conjunto unión</title>
+  <title>Axioma del conjunto par</title>
 
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
@@ -99,6 +99,9 @@
 				
 				
 				
+					
+					<a href="/es/axiom_of_pairs.html"><img src="/images/es.svg" height="40" width="40"></a>
+				
 			
 		
 			
@@ -123,28 +126,34 @@
 
 	
 	
-	<a href="/es/axiom_of_pairs.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/axiom_of_extensionality.html"><img src="/images/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 	
 	
-	<a href="/es/axiom_of_void_set.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
+	<a href="/es/axiom_of_union.html"><img src="/images/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>	
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Axioma del conjunto unión</span>
+		Axioma del conjunto par</span>
 </div>
 
 <div class="postbox pb_definition">
-	<p>Con el axioma del conjunto par hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: <strong>el axioma de la unión</strong>, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de dos conjuntos ya dados.</p>
+	<p>El denominado <strong>axioma del conjunto par</strong> (también <strong>axioma de pares</strong>, <strong>axioma de par</strong>, o <strong>axioma de par no ordenado</strong>), garantiza la existencia de un conjunto cuyos elementos sólo sean dos conjuntos ya dados.</p>
 
-<script type="math/tex; mode=display">\quad Z | \forall a \in X, \forall b in Y, a,b \in Z</script>
+<script type="math/tex; mode=display">\exists Z \forall X,Y, \forall a \in U(a \in Z \longleftrightarrow U = X \vee U = Y)</script>
 
-<p>A este conjunto le llamamos <strong>conjunto unión de $X$ e $Y$</strong>, y usualmente se denota por $X \cup Y$.
-Ahora que hemos definido un conjunto que contiene a otros,</p>
+<p>A este conjunto lo llamaremos <strong>conjunto par formado por $X$ e $Y$</strong>, y lo denotaremos <strong>${X,Y}$</strong>. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}’$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}’={X,Y}$.</p>
+
+<p>Hay ciertos apuntes interesantes acerca de este axioma:
+\bullet Si \forall a \in Y \longrightarrow a \in X (lo cual no implica que X=Y), ó X=\emptyset ó Y=\emptyset, entonces el conjunto par ${X,Y}={X,X}=X$.
+\bullet Si X=Y=\emptyset, entonces el conjunto par {X,Y}={\emptyset,\emptyset}=\emptyset.
+\bullet card({X,Y}) = 2 \forall X,Y.</p>
+
+<p>Hasta ahora solamente</p>
 
 </div>
 
