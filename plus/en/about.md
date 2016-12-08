@@ -2,7 +2,7 @@
 layout: default
 ident: about
 lang: en
-title: Sobre Mathifold
+title: About Mathifold
 ---
 
 <div style="position: relative;" align="center">
