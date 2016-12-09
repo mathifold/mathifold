@@ -37,7 +37,7 @@ title: Colabora
                 <div class="dissap" style="margin-left: 50px">
                 Si conoces GitHub, el modo en que más directamente puedes ayudarnos es haciendo una copia personal (<code>fork</code>) del repositorio <a href="https://github.com/mathifold/mathifold" target="_blank">https://github.com/mathifold/mathifold</a> desde el cual construir y enviar contribuciones.<br><br>
 
-                Si no stás familiarizado con GitHub, te aconsejamos hacer el curso de <a href="..." target="_blank">Git/GitHub en Udacity</a>. ¡Te encantará!
+                Si no stás familiarizado con GitHub, te aconsejamos hacer el curso de <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank">Git/GitHub en Udacity</a>. ¡Te encantará!
                 </div>
             </div>
             <div>

@@ -37,7 +37,7 @@ title: How to Contribute
                 <div class="dissap" style="margin-left: 50px">
                 If you know GitHub, the easiest way to work with us is making your own copy (<code>fork</code>) of the resitory <a href="https://github.com/mathifold/mathifold" target="_blank">https://github.com/mathifold/mathifold</a> where you can build and send your contributions<br><br>
 
-                If you're not used to GitHub, we encourage you to take the course on <a href="..." target="_blank">Git/GitHub at Udacity</a>. You'll love it!
+                If you're not used to GitHub, we encourage you to take the course on <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank">Git/GitHub at Udacity</a>. You'll love it!
                 </div>
             </div>
             <div>
