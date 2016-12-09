@@ -283,50 +283,171 @@ title: Colabora
 
 	<div>
         <div class="bcblue boxdissap">
-        Cómo colaborar
+        Los archivos del repositorio
         </div>
 
         <div class="dissap" style="margin-left: 50px">
 
+        Todas las carpetas del repositorio <code>mathifold/mathifold</code> contribuyen a la construcción de la página web:
+
         	<div>
         		<div class="bcgreen boxdissap">
-        		Creación de posts y nuevos materiales
+        		<code>_data</code>
         		</div>
 
         		<div class="dissap" style="margin-left: 50px">
-        		En estas primeras etapas del proyecto, es recomendable <b>contactar directamente con el equipo de Mathifold antes de crear materiales</b>. <br><br>
+        		Esta carpeta contiene archivos con información relevante, generalmente en forma de listas o diccionarios
 
-        		Para aquellos que tengan claro en qué colaborar, el modo más apropiado es crear una cuenta en GitHub, <b>hacer un fork del repositorio jxm-math/beta_mathifold</b>, añadir aquí archivos nuevos y <b>enviar pull-requests periódicamente</b>. Es importante por ahora <b>no modificar los otros archivos</b> pues el pull-request tendrá archivos en conflicto y no podrá ser aceptado.
+                <ul>
+                    <li>
+                        <code>languages.yml</code>: Describe la lista de idiomas que soporta la página
+                    </li>
+                    <li>
+                        <code>nav.yml</code>: Describe, por medio de diccionarios anidados, la estructura arbórea de la página en sus tres primeros órdenes: <em>Temas</em>, <em>Asignaturas</em> y <em>Capítulos</em>. Cada item debe tener un identificador <code>ident</code>, una traducción en cada uno de los idiomas listados en <code>languages.yml</code> y, para los dos primeros, un subdiccionario <code>children</code>.
+                    </li>
+                </ul>
+
         		</div>
         	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Traducción
-        		</div>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		La página web es multilingual y nos gustaría que estuviese traducida a muchos idiomas, con el fin de ayudar al mayor número de personas.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Difusión
-        		</div>
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_includes</code>
+                </div>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		Difusión en <b>redes sociales y centros educativos</b>, a fin de conseguir una mayor cantidad de usuarios y colaboradores.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Programación y diseño
-        		</div>
+                <div class="dissap" style="margin-left: 50px">
+                Cada archivo de esta carpeta contiene un fragmento de código que se repite en todas las páginas creadas
 
-        		<div class="dissap" style="margin-left: 50px">
-        		Se está creando un equipo de informáticos al servicio de mejorar progresivamente la página web. Nuestro principal reto ahora mismo es la creación de <b>cuentas de usuario</b> con las que cada estudiante pueda personalizar su aprendizaje.
+                <ul>
+                    <li>
+                        <code>footer.html</code> contiene el pie de página, que incluye los botones informativos
+                    </li>
+                    <li>
+                        <code>head.html</code> contiene parte del <code>head</code> previo a <code>body</code>, donde se cargan las hojas de estilo y los distintos scripts, que pueden variar de página a página (<code>mathjax</code>, <code>sage</code>, <code>geogebra</code>)
+                    </li>
+                    <li>
+                        <code>header.html</code> contiene el encabezado: los enlaces a niveles superiores a la izquierda, el buscador y los idiomas a la derecha
+                    </li>
+                </ul>
+
                 </div>
             </div>
-		</div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_layouts</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Cada layout describe el contenido y diseño de cada página. <code>default</code> es el contenido estándar del cual están después las especificaciones <code>home</code>, <code>topic</code>, <code>subject</code>, <code>chapter</code>, <code>post</code> y <code>search</code>.
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_plugins</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Hay dos tipos de plugins implementados, que podemos llamar <em>generadores</em> y <em>funcionales</em>
+
+                <ul>
+                    <li>
+                        Los plugins generadores son <code>generate_home.rb</code>, <code>generate_topic.rb</code>, <code>generate_subject.rb</code> <code>generate_chapter.rb</code> y <code>generate_search.rb</code>, que generan las páginas descritas por <code>_data/nav.yml</code> (junto con la página de búsqueda), una vez por cada idioma
+                    </li>
+                    <li>
+                        Los plugins funcionales son <code>cite.rb</code> y <code>resource.rb</code>, e implementan distintas funciones que pueden ser ejecutadas al redactar un post. Las funciones implementadas son<br><br>
+
+                        {% raw %}
+
+                        <code>{% cite ident %}</code>
+
+                        {% endraw %}<br><br>
+
+                        que enlaza al post del <code>ident</code> correspondiente (del mismo idioma, si lo hay) y <br><br>
+
+                        {% raw %}
+
+                        <code>{% resource name.ext %}</code>
+
+                        {% endraw %}<br><br>
+
+                        que busca la imagen <code>name.ext</code> dentro de la carpeta <code>/images/images</code>, la coloca e inserta un enlace de descarga de la fuente si se encuentra un archivo <code>name</code> (con distinta extensión) en la carpeta <code>/images/codes</code>
+
+                    </li>
+                </ul>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_posts</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Contiene los posts, cuya estructura se ha descrito anteriormente. Están divididos en carpetas según el idioma, pero esta separación es sólo para la logística de traducción, pues esta ordenación es indistinta para <code>jekyll</code>, que ordena todos los posts en <code>_posts</code> de acuerdo con la información de sus encabezados.
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_site</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Este es el directorio en el que <code>jekyll</code> guarda la página web estática generada que después se sube al servidor. En principio, en esta carpeta no se hacen modificaciones directamente
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>css</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Contiene las hojas de estilo. <code>custom.css</code> es la hoja que genuinamente se encarga de la apariencia de la página, mientras que <code>subject_images.css</code>, <code>topic_images.css</code> y <code>symb.css</code> tratan la asignación de imágenes representativas y deberían poderse implementar con cierto código.
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>images</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Contiene las imágenes de toda la página web. Las carpetas <code>topics</code>, <code>subjects</code>, <code>symb</code> y <code>others</code> contienen las imágenes exteriores al contenido de los posts. Las carpetas <code>images</code> y <code>codes</code> contienen las imágenes que se utilizarán en los posts (preferiblemente en formato SVG) junto con sus códigos fuente, que se incluyen en la página mediante el plugin <code>resource</code>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>js</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Contiene los archivos de script. <code>lunr.min.js</code> y <code>search.js</code> implementan la búsqueda de posts en páginas generadas con <code>jekyll</code> usando <a href="http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/" target="_blank"><code>lunr.js</code></a>. <code>script.js</code> almacena el resto de script.
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>plus</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Contiene los archivos de la información contenida en los botones de la parte inferior izquierda: <em>Sobre Mathifold</em>, <em>Manual</em> y <em>Colabora</em> en distintos idiomas
+
+                </div>
+            </div>
+
+        </div>
 	</div>
 
 

@@ -22,7 +22,7 @@ body, input {
     position: absolute;
     right: 0px;
 
-    background-image: url("/images/opensource.svg");
+    background-image: url("/images/others/opensource.svg");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 25px auto;

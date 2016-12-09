@@ -129,206 +129,29 @@ title: Manual
 		</div>
 	</div>
 
-    <div>
-        <div class="bcblue boxdissap">
-        Construcción
-        </div>
-
-        <div class="dissap" style="margin-left: 50px">
-
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		GitHub
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		El material con el que se construye la página web está alojado en el repositorio <b>beta_mathifold</b> en GitHub: <a href="https://github.com/jxm-math/beta_mathifold" target="_blank">https://github.com/jxm-math/beta_mathifold</a>. De este modo, todo el contenido es de libre acceso. GitHub también ofrece una apropiada plataforma para gestionar las distintas contribuciones.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Jekyll
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Mathifold se construye con el generador de páginas web estáticas <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Las personas que quieran colaborar en la parte informática deberían tener cierto conocimiento de esta herramienta.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Hoja de navegación
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		La Hoja de navegación describe todo el árbol de contenidos en los tres primeros niveles de la jerarquía: temas, asignaturas y capítulos. Se encuentra en el archivo <a href="https://github.com/jxm-math/beta_mathifold/blob/master/_data/nav.yml" target="_blank">/data/nav.yml</a>. Cada capítulo tiene un identificador 'ident' que servirá para añadir posteriormente los posts.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Posts
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Los posts están alojados en la carpeta <a href="https://github.com/jxm-math/beta_mathifold/tree/master/_posts" target="_blank">/_posts</a> y están separados por idiomas. Cada post es un archivo <b>.md (markdown)</b> con nombre 'aaaa-mm-dd-nombre-del-archivo.md'. Este archivo tiene una cabecera, que es como la 'ficha técnica' del post, y después tiene el contenido. En la ficha técnica hay que rellenar los siguientes apartados:
-
-        		<ul style="list-style-type: none;">
-        		<li>-<b>title</b>: Título del post</li>
-        		<li>-<b>lang</b> y <b>category</b>: en ambos el código del idioma del post</li>
-        		<li>-<b>permalink</b>: código-de-idioma/ident</li>
-        		<li>-<b>ident</b>: un identificador que debe ser distinto para cada post y que intente sintetizar el contenido de éste. Suele comenzar con el tipo de post.</li>
-        		<li>-<b>parent</b>: el identificador del capítulo al cual pertenece, según la Hoja de navegación.</li>
-        		<li>-<b>kind</b>: el código de tipo de post.</li>
-        		<li>-<b>mathjax</b>: 'true' o 'false' según si la página necesita utilizar mathjax (LaTeX para HTML).</li>
-        		<li>-<b>layout</b> y <b>type</b>: se dejan con 'post'.</li>
-        		</ul>
-
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Material multimedia
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Para introducir imágenes o vídeos, se deben situar éstas en la carpeta '/images/images', y si tienen el código fuente, éste se debe situar con el mismo nombre (aunque quizá distinta extensión) en '/images/codes'. A continuación se debe introducir en el post el siguiente comando: <br><br>
-
-        		{% raw %}
-
-        		{% resource nombre-del-archivo.xxx %}
-
-        		{% endraw %}<br><br>
-
-        		y de modo automático la imagen o el vídeo se colocará en la página web.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Enlaces
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Para hacer referencia a otro post, basta introducir el comando<br><br>
-
-        		{% raw %}
-
-        		{% cite identificador %}
-
-        		{% endraw %}<br><br>
-
-        		donde 'identificador' es el 'ident' (dentro de la 'ficha técnica') del post al que se quiere enlazar.
-                </div>
-            </div>
-		</div>
-	</div>
-
 	<div>
         <div class="bcblue boxdissap">
-        Programas utilizados
+        Redes sociales
         </div>
 
         <div class="dissap" style="margin-left: 50px">
 
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Geogebra
-        		</div>
+            Podéis seguir la actividad de Mathifold en las siguientes redes sociales:<br><br>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		<div style="
-        		background-color: lightgreen;
-            	width: 80%;
-            	border: 0px;
-            	padding: 25px;
-            	margin: 0 auto;">
-            	GeoGebra es un software de matemáticas dinámicas para todos los niveles educativos que reúne geometría, álgebra, hoja de cálculo, gráficos, estadística y cálculo en un solo programa fácil de usar. GeoGebra es también una comunidad en rápida expansión, con millones de usuarios en casi todos los países. GeoGebra se ha convertido en el proveedor líder de software de matemática dinámica, apoyando la educación en ciencias, tecnología, ingeniería y matemáticas (STEM: Science Technology Engineering & Mathematics) y la innovación en la enseñanza y el aprendizaje en todo el mundo.</div>
+            <div style="margin-left: 50px">
 
-            	<a href="https://www.geogebra.org" target="_blank">Geogebra</a> es el software que estamos utilizando para los applets. Estamos muy agradecidos al equipo de Geogebra por facilitarnos el uso de Geogebra en Mathifold y confiamos que Mathifold le sea útil en la difusión de esta valiosa herramienta.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		IPE Drawing Editor
-        		</div>
+            <a href="https://www.linkedin.com/groups/8499064" target="_blank"><div class="bcgreen">LinkedIn</div></a>
+            <a href="https://www.facebook.com/mathifold/" target="_blank"><div class="bcgreen">Facebook</div></a>
+            <a href="https://plus.google.com/+MathifoldProjectMaths" target="_blank"><div class="bcgreen">Google+</div></a>
+            <a href="https://www.youtube.com/channel/UCXX6SDV-XYDRfUI4_0gd6Lw" target="_blank"><div class="bcgreen">Youtube</div></a>
+            <a href="https://github.com/mathifold/mathifold" target="_blank"><div class="bcgreen">GitHub</div></a>
+            <a href="https://www.geogebra.org/mathifold" target="_blank"><div class="bcgreen">Geogebra</div></a>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		<div style="
-        		background-color: lightgreen;
-            	width: 80%;
-            	border: 0px;
-            	padding: 25px;
-            	margin: 0 auto;">
-            	Ipe is a drawing editor for creating figures in PDF or (encapsulated) Postscript format. It supports making small figures for inclusion into LaTeX-documents as well as making multi-page PDF presentations that can be shown on-line with Acrobat Reader.</div>
-            	<a href="http://ipe.otfried.org/" target="_blank">IPE Drawing Editor</a> es el software con el que se hacen la mayoría de los dibujos.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Blender
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		<div style="
-        		background-color: lightgreen;
-            	width: 80%;
-            	border: 0px;
-            	padding: 25px;
-            	margin: 0 auto;">
-            	Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation. Advanced users employ Blender’s API for Python scripting to customize the application and write specialized tools; often these are included in Blender’s future releases. Blender is well suited to individuals and small studios who benefit from its unified pipeline and responsive development process. </div>
-
-            	<a href="https://www.blender.org" target="_blank">Blender</a> es una apuesta fuerte de Mathifold: un software potente para la realización de animaciones de gran contenido pedagógico.
-                </div>
             </div>
-		</div>
-	</div>
 
-	<div>
-        <div class="bcblue boxdissap">
-        Cómo colaborar
         </div>
 
-        <div class="dissap" style="margin-left: 50px">
-
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Creación de posts y nuevos materiales
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		En estas primeras etapas del proyecto, es recomendable <b>contactar directamente con el equipo de Mathifold antes de crear materiales</b>. <br><br>
-
-        		Para aquellos que tengan claro en qué colaborar, el modo más apropiado es crear una cuenta en GitHub, <b>hacer un fork del repositorio jxm-math/beta_mathifold</b>, añadir aquí archivos nuevos y <b>enviar pull-requests periódicamente</b>. Es importante por ahora <b>no modificar los otros archivos</b> pues el pull-request tendrá archivos en conflicto y no podrá ser aceptado.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Traducción
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		La página web es multilingual y nos gustaría que estuviese traducida a muchos idiomas, con el fin de ayudar al mayor número de personas.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Difusión
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Difusión en <b>redes sociales y centros educativos</b>, a fin de conseguir una mayor cantidad de usuarios y colaboradores.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Programación y diseño
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Se está creando un equipo de informáticos al servicio de mejorar progresivamente la página web. Nuestro principal reto ahora mismo es la creación de <b>cuentas de usuario</b> con las que cada estudiante pueda personalizar su aprendizaje.
-                </div>
-            </div>
-		</div>
 	</div>
-
 
 </div>
 
