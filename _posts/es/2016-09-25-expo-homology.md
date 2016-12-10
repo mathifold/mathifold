@@ -260,7 +260,33 @@ Sobre el **operador frontera** $\partial$, vamos por pasos:
 
 ---------------
 
+Así que debemos buscar objetos sin frontera que no sean la frontera de algo. En general lo denotaremos con tres letras:
 
+* $C$: objetos (con o sin frontera)
+* $Z$: objetos sin frontera
+* $B$: objetos sin frontera que además son la frontera de algo
+
+Y se tiene la inclusión $B\subset Z\subset C$. Aparentemente, nos debemos fijar en el conjunto $Z\smallsetminus B$. ¿Pero es éste el tratamiento más adecuado?
+
+Por ejemplo, fijémonos en los enteros $\mathbb{Z}$. Dentro de los enteros hay un fenómeno que es _ser múltiplo de $5$_. Este fenómeno tiene interés precisamente porque hay enteros que no tienen esta propiedad. Es como si $Z=\mathbb{Z}$ y $B=5\mathbb{Z}$ los múltiplos de $5$. Uno puede describir el hecho de que hay números que no son múltiplos de $5$ fijándose en el conjunto
+
+$$Z\smallsetminus B=\{\cdots,-6,-4,-3,-2,-1,1,2,3,4,6,7,8,9,11,12,13,14,\cdots\}$$
+
+Pero para un matemático, trabajar con este conjunto es un poco incómodo. No es cerrado para la suma ($2$ y $3$ están en $Z\smallsetminus B$ pero $2+3=5\not\in Z\smallsetminus B$), no se puede dotar de alguna estructura interesante... En oposición a esto, tomamos otro acercamiento.
+
+$1$ y $6$ son ambos no múltiplos de $5$, y son distintos, pero se puede decir que ambos recogen la misma _no-multiplicidad-de-$5$_, porque en realidad los dos son del tipo $5k+1$. Podemos abstraer el objeto y quedarnos con su _clase_, y diremos que
+
+$$[1]=[6]\qquad\text{ porque }\qquad 1-6\in B=5\mathbb{Z}$$
+
+En ese mismo espíritu, definimos
+
+$$[a]=[b]\qquad\text{ si }\qquad a-b\in B=5\mathbb{Z}$$
+
+Esto nos lleva a distinguir cinco clases, que forman $\mathbb{Z}\_5=\\{[0],[1],[2],[3],[4]\\}$, y que resulta ser un objeto estructuralmente riquísimo, pues con la suma y el producto módulo $5$ no sólo es grupo y anillo sino además _cuerpo finito_. Y esta construcción es estándar en matemáticas: es el cociente $Z/B$.
+
+De tal modo que, también para la homología, el modo correcto de pensar no es con la sustracción $Z\smallsetminus B$, sino con el cociente $Z/B$. Y unos cuantos ejemplos avalarán el acierto de esta construcción.
+
+---------------
 
 Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:
 
