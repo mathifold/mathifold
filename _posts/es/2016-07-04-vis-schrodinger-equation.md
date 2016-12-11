@@ -16,17 +16,14 @@ type: post
 <div class="resource vid">
 <iframe width="768" height="432"  align="middle"
 src="http://www.youtube.com/embed/FQeVeFB-uM8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+</iframe></div>
 
 <div class="resource vid">
 <iframe width="768" height="432"  align="middle"
 src="http://www.youtube.com/embed/VN51FxSOBy8?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+</iframe></div>
 
 <div class="resource vid">
 <iframe width="768" height="432"  align="middle"
 src="http://www.youtube.com/embed/T5yTERMOYSM?rel=0">
-</iframe>
-<a class="ori" href="/images/codes/quantum.nb"></a></div>
+</iframe></div>
