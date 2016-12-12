@@ -22,7 +22,7 @@ body, input {
     position: absolute;
     right: 0px;
 
-    background-image: url("/images/opensource.svg");
+    background-image: url("/images/others/opensource.svg");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 25px auto;
@@ -60,7 +60,7 @@ p.topic {
   color: #FFFFFF;
   background-color:#1F7AFF;
   border-radius: 5px;
-  margin: auto;
+  margin: 6px 5px 6px 5px;
   text-align: center;
   display: inline-block;
   padding: 3px 20px 3px 20px;
@@ -70,7 +70,7 @@ p.topic {
 
 .bcgreen{
   color: #FFFFFF;
-  background-color:#00FF00;
+  background-color:#31B304;
   border-radius: 5px;
   margin: 6px 5px 6px 5px;
   text-align: center;

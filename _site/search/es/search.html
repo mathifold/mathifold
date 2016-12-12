@@ -4,6 +4,8 @@
   <head>
   <meta charset="utf-8">
 
+  <title>Mathifold</title>
+
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">
   <link rel="stylesheet" href="/css/subject_images.css">
@@ -40,22 +42,22 @@
 
 <div style="height: 90px;">
 
-	<a href="/home/es/home.html"><img src="/images/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
-	
+	<a href="/home/es/home.html"><img src="/images/others/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
 	
 	
 	
 
+
 	<div style="float: right">
-		<a href="/search/es/search.html"><img src="/images/search.svg" height="40" width="40"></a>
-		<img src="/images/blank.svg" height="20" width="20">
+		<a href="/search/es/search.html"><img src="/images/others/search.svg" height="40" width="40"></a>
+		<img src="/images/subjects/blank.svg" height="20" width="20">
 		
 			
 				
 				
 				
 					
-					<a href="/search/es/search.html"><img src="/images/es.svg" height="40" width="40"></a>
+					<a href="/search/es/search.html"><img src="/images/others/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -64,7 +66,7 @@
 				
 				
 					
-					<a href="/search/en/search.html"><img src="/images/en.svg" height="40" width="40"></a>
+					<a href="/search/en/search.html"><img src="/images/others/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -78,7 +80,7 @@
     <div style="position: relative;" align="center">
   <form action="/search/es/search.html" method="get">
     <input type="text" id="search-box" name="query" style="vertical-align: middle;">
-    <input type="image" src="/images/search2.svg" alt="Submit" width="60" height="60" style="vertical-align: middle;">
+    <input type="image" src="/images/others/search2.svg" alt="Submit" width="60" height="60" style="vertical-align: middle;">
   </form>
 </div>
 
@@ -92,6 +94,36 @@
   window.store = {
     
     
+      "es-applet-vector-field-3d": {
+        "title": "Campo Vectorial en el Espacio",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_vector_field_3d"
+      }
+      ,
+    
+      "es-applet-vector-field-2d": {
+        "title": "Campo Vectorial en el Plano",
+        "kind": "applet",
+        "author": "",
+        "category": "es",
+        "content": "",
+        "url": "/es/applet_vector_field_2d"
+      }
+      ,
+    
+      "es-propositional-logic": {
+        "title": "Lógica proposicional",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "La lógica proposicional es un sistema lógico particularmente simple, pero muy versatil.El lenguaje de la lógica proposicional esta formado por variables proposicionales, generalmente letras $P,Q,R,S,T,…$; y los conectores lógicos $\\neg$ y $\\to$. Además se utilizan paréntesis para indicar la prioridad (aunque a veces se omiten por brevedad).Una variable proposicional cualquiera pertenece al lenguaje del sistema lógico. Si dos expresiones $\\phi$ y $\\psi$ pertenecen al lenguaje entonces su yuxtaposición con un conector lógico entre paréntesis también pertenece al lenguaje (con la excepción de $\\neg$, que solo se combina con una expresión). Por ejemplo, $(P\\implies Q)$ pertenece al lenguaje, y $\\neg(P\\implies Q)\\to R$ también.Para simplificar la comprensión e interpretación de las sentencias de la lógica proposicional, se utilizan algunas abreviaciones. Por ejemplo, $P\\wedge Q$ abrevia $\\neg(\\neg P \\to Q)$.La axiomatización de la lógica proposicional parece un poco mística, pero cuando veamos más adelante el concepto de semántica cobrará sentido. Por el momento me limito a presentar una posible axiomatización:Sean $\\phi$ y $\\psi$ sentencias bien formadas del lenguaje. Entonces son axiomas las siguientes sentencias:  $\\phi \\to \\left( \\psi \\to \\phi \\right)$  $\\left ( \\phi \\to ( \\psi \\rightarrow \\xi \\right)) \\to \\left( \\left( \\phi \\to \\psi \\right) \\to  \\left( \\phi \\to \\xi \\right) \\right)$  $\\left ( \\lnot \\phi \\to \\lnot \\psi \\right) \\to \\left( \\psi \\to \\phi \\right)$La lógica proposicional cuenta con una única regla de deducción, conocida como modus ponens, que a partir de dos premisas de las formas $\\phi \\to \\psi$ y $\\phi$ permite deducir $\\phi$.La versatilidad de la lógica proposicional permite modelizar razonamientos clásicos, cómo veremos más adelante. Además, todo sistema lógico puede ser proposicionalizado. Es decir, podemos encontrar una correspondencia entre un sistema lógico cualquiera y la lógica proposicional. Más adelante exploraremos este concepto.Ejercicio propuesto: Prueba que para toda sentencia bien formada $\\psi$ la sentencia $\\psi \\right \\psi$ es un teorema de la lógica proposicional.",
+        "url": "/es/propositional_logic"
+      }
+      ,
+    
       "es-prob-domino-tiling": {
         "title": "Embaldosado con fichas de dominó",
         "kind": "problem",
@@ -102,12 +134,62 @@
       }
       ,
     
+      "es-axiom-of-void-set": {
+        "title": "Axioma del conjunto vacío",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Otro axioma importantísimo en la teoría de ZF, es el axioma del conjunto vacío, que afirma la existencia de una de las entidades más interesantes e intuitivas de la teoría de conjuntos: un conjunto que no contiene ningún elemento.O lo que es lo mismo,A dicho conjunto lo llamaremos conjunto vacío (y lo denotaremos \\emptyset ). Además, el conjunto vacío será único dado que por el axioma de extensionalidad, si existe otro conjunto \\emptyset ‘ que contenga a todos los elementos que no sean iguales a sí mismos, contendría a los mismos elementos, y entonces dicho conjunto \\emptyset ‘ = \\emptyset .Nótese, que, por no tener ningún elemento, , y el único subconjunto que se podrá obtener de él es él mismo (es decir, $\\mathcal{P} (\\emptyset) = \\emptyset$ ).",
+        "url": "/es/axiom_of_void_set"
+      }
+      ,
+    
+      "es-axiom-of-union": {
+        "title": "Axioma del conjunto unión",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "Con el axioma del conjunto par hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: el axioma de la unión, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de dos conjuntos ya dados.A este conjunto le llamamos conjunto unión de $X$ e $Y$, y usualmente se denota por $X \\cup Y$.Ahora que hemos definido un conjunto que contiene a otros,",
+        "url": "/es/axiom_of_union"
+      }
+      ,
+    
+      "es-axiom-of-pairs": {
+        "title": "Axioma del conjunto par",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El denominado axioma del conjunto par (también axioma de pares, axioma de par, o axioma de par no ordenado), garantiza la existencia de un conjunto cuyos elementos sólo sean dos conjuntos ya dados.A este conjunto lo llamaremos conjunto par formado por $X$ e $Y$, y lo denotaremos ${X,Y}$. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}’$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}’={X,Y}$.Hay ciertos apuntes interesantes acerca de este axioma:\\bullet Si \\forall a \\in Y \\longrightarrow a \\in X (lo cual no implica que X=Y), ó X=\\emptyset ó Y=\\emptyset, entonces el conjunto par ${X,Y}={X,X}=X$.\\bullet Si X=Y=\\emptyset, entonces el conjunto par {X,Y}={\\emptyset,\\emptyset}=\\emptyset.\\bullet card({X,Y}) = 2 \\forall X,Y.Hasta ahora solamente",
+        "url": "/es/axiom_of_pairs"
+      }
+      ,
+    
+      "es-axiom-of-extensionality": {
+        "title": "Axioma de extensionalidad",
+        "kind": "definition",
+        "author": "",
+        "category": "es",
+        "content": "El axioma de extensionalidad define la igualdad entre dos conjuntos. Afirma que dos conjuntos son iguales si y sólo si tienen los mismos elementos, es decir:Este axioma, además, nos dice algo mucho más revelador: que para definir un conjunto basta describir los elementos que lo componen.La implicación inversa, que va de derecha a izquierda, nos asegura que, dados dos conjuntos iguales, todas las propiedades que se puedan aplicar a los elementos de X, se pueden aplicar a los de Y. Esta implicación inversa es un teorema lógico, que se puede demostrar con lógica de predicados de primer orden, y no forma parte de la axiomática de ZF.",
+        "url": "/es/axiom_of_extensionality"
+      }
+      ,
+    
+      "es-introduction": {
+        "title": "Introducción",
+        "kind": "unfinished",
+        "author": "",
+        "category": "es",
+        "content": "La teoría axiomática de Zermelo-Fraenkel es, actualmente, el modelo más utilizado para explicar la teoría de conjuntos. Se suele abreciar ZF, y si se complementa con el axioma de elección (en inglés, axiom of Choice), se abrevia ZFC. Esta sección se dedicará a definir y a dar una visión intuitiva de cada uno de los axiomas. Si se quiere una visión más amplia acerca de por qué surgió esta teoría, y las consecuencias que tuvo en el mundo matemático, se recomienda visitar Zermelo-Fraenkel en el mundo de las matemáticas NOT FINISHED. POST AND CITATION REQUIRED (zf_set_theory). Por ahora bastará saber que esta teoría toma por primitivos los conceptos de subconjunto y pertenencia.",
+        "url": "/es/introduction"
+      }
+      ,
+    
       "es-logic-system": {
         "title": "Sistema lógico",
         "kind": "definition",
         "author": "",
         "category": "es",
-        "content": "Un sistema lógico está compuesto por:  Un lenguaje $L$, formado por combinaciones de símbolos que satisfacen cierta regla. Los lenguajes lógicos estan diseñados para facilitar su interpretación.  Unos axiomas $Ax\\subset L$, que son sentencias del lenguaje cuya interpretación asumimos cierta.  Unas reglas de deducción, que son procedimientos del lenguaje que cuando se aplican a premisas validas arrojan resultados válidos. Podemos representar las reglas de deducción por $n+1$-uplas de sentencias donde los $n$ primeros miembros son premisas y el último miembro es la conclusión.Los tres componentes dan lugar a las pruebas:  Una prueba de una sentencia $\\phi$ en un sistema lógico es una secuencia finita de sentencias tales que:      Todas las sentencias pertenecen al lenguaje del sistema.    Todas las sentencias son axiomas o se pueden deducir de sentencias anteriores aplicando una regla de deducción.    La última sentencia de la secuencia es $\\phi$.  ",
+        "content": "Un sistema lógico está compuesto por:  Un lenguaje $L$, formado por combinaciones de símbolos que satisfacen cierta regla. Los lenguajes lógicos estan diseñados para facilitar su interpretación.  Unos axiomas $Ax\\subset L$, que son sentencias del lenguaje cuya interpretación asumimos cierta.  Unas reglas de deducción, que son procedimientos del lenguaje que cuando se aplican a premisas validas arrojan resultados válidos. Podemos representar las reglas de deducción por $n+1$-uplas de sentencias donde los $n$ primeros miembros son premisas y el último miembro es la conclusión.Los tres componentes dan lugar a las pruebas:  Una prueba de una sentencia $\\phi$ en un sistema lógico es una secuencia finita de sentencias tales que:      Todas las sentencias pertenecen al lenguaje del sistema.    Todas las sentencias son axiomas o se pueden deducir de sentencias anteriores aplicando una regla de deducción.    La última sentencia de la secuencia es $\\phi$.  Una sentencia tal que existe una prueba de la misma se denomina demostrable o deducible.El conjunto de sentencias demostrables en un sistema lógico se conoce como una teoría.EjemploConsideremos un sistema lógico $Palabras Encadenadas$. Para especificarlo, tenemos que indicar su lenguaje, sus axiomas y sus reglas de deducción.En este ejemplo arbitrario, el lenguaje va a consistir en todas las palabras incluidas en una revisión específica del diccionario de la RAE. De esa manera, la sentencia “Hola” pertenece al lenguaje, pero no la sentencia “xjksjkx”.El único axioma del sistema va a ser la palabra “Pala”. Por tanto, la palabra “Pala” es un teorema de $Palabras Encadenadas$, y tiene una prueba de longitud 1, que consiste en la propia palabra, que deducimos en virtud de ser un axioma.La única regla de deducción del sistema consiste en de una palabra cualquiera deducir otra palabra cuya primera sílaba coincida con la última de la premisa. Por ejemplo, de “Pala” podemos deducir “Lazo”.Poniendolo todo junto, podemos ver que la palabra “Paloma” es un teorema de $Palabras Encadenadas$.Una posible prueba es “Pala, Lazo, Zorro, Ropa, Paloma”.Esto especifica totalmente el sistema lógico $Palabras Encadenadas$. No es un sistema particularmente interesante, porque no nos ayuda a modelar la realidad, pero a continuación veremos otros sistemas más interesantes.",
         "url": "/es/logic_system"
       }
       ,
@@ -129,16 +211,6 @@
         "category": "es",
         "content": "",
         "url": "/es/applet_visual_simplex_2"
-      }
-      ,
-    
-      "es-applet-trial-sagecell": {
-        "title": "Prueba SageCell",
-        "kind": "applet",
-        "author": "",
-        "category": "es",
-        "content": "",
-        "url": "/es/applet_trial_sagecell"
       }
       ,
     
@@ -577,7 +649,7 @@
         "kind": "exposition",
         "author": "",
         "category": "es",
-        "content": "La homología describe la forma de un espacio de modo verdaderamente asombroso. Aunque al principio parece raro y confuso, luego aparece de modo natural en muchos fenómenos matemáticos. Por ejemplo, en la Característica de Euler-Poincaré: tomamos un espacio, lo triangulamos (lo dividimos en “trocitos”) y hacemos la suma alternada del número de trozos utilizados de cada tipo:donde $c_i(X)$ es el número de caras $i$-dimensionales de $X$. Sorprendentemente, no depende de la triangulación      $X$    $c_0$ vértices    $c_1$ aristas    $c_2$ caras    $\\chi=c_0-c_1+c_2$                1    -    -    1                4    3    -    1            7    6    -                5    5    -    0            9    9    -                5    5    1    1            9    9    1            6    10    5                8    12    6    2            6    12    8            12    30    20                32    64    32    0            36    72    36  Sin embargo, esta misma característica se expresa en términos homológicos (sin necesidad de triangulación), y de hecho, éste es el modo más apropiado. Así que la homología acierta efectivamente al describir la forma de un espacio topológicodonde $b_i=\\text{rk }H_i(X)$ son los números de Betti      $X$    $b_0$    $b_1$    $b_2$    $\\chi=b_0-b_1+b_2$            1    -    -    1            1    0    -    1            1    1    -    0            1    0    0    1            1    0    1    2            1    2    1    0  Nuestro objetivo es entender la forma de un espacio. ¿Cómo distinguiremos una esfera de un toro? La homología tiene un lema:BUSCA ALGO SIN FRONTERA QUE NO SEA LA FRONTERA DE ALGO… y curiosamente, ¡funciona! Claro, las cosas que tienen frontera (por ejemplo, curvas sin cerrar) no son muy útiles para encontrar diferencias, se pueden mover demasiado            pero las cosas que no tienen frontera, que están cerradas, quizá nos pueden decir algo más            En la esfera, una curva sin frontera es la frontera de algo… y sin embargo en el toro tenemos una curva sin frontera que no es la frontera de nada… ¡ya tenemos una diferencia! ¡Parece que funciona!            En general estos objetos sin frontera que no son la frontera de nada capturan “agujeros” de distintas dimensiones… los agujeros de dimensión 0 son componentes separadas, los agujeros de dimensión 1 son rodeables por un lazo, los de dimensión 2 por una superficie…            Pero muchos podrían rebatir, “¿no es el lazo en el toro la frontera del resto del toro?”            Bueno… estamos utilizando el concepto de frontera sin definirlo demasiado… Por eso hay que definir mejor el operador frontera $\\partial$Sobre el operador frontera $\\partial$, vamos por pasos:      $\\partial$ lleva cosas de dimensión $k$ a dimensión $k-1$, siempre una dimensión menos                Los objetos de dimensión 0 son puntos, los de dimensión 1 son curvas, los de dimensión 2 son superficies… Al conjunto de “objetos de dimensión $k$” en el espacio $X$ le llamaremos $C_k(X)$, así que lo que tenemos es        para cada $k\\geqslant 0$ (la frontera de un punto es 0)        La frontera de algo ya no tiene frontera (es 0). Es algo de lo que nos podemos convencer con los ejemplos anteriores. Algebraicamente, esto se expresa como        una propiedad tan importante y que aparece tanto en matemáticas que da pie al Álgebra Homológica         Para que todo funcione bien, todos los objetos de dimensión $k$ deben estar orientados. El concepto de orientación es delicado; por ahora, para nosotros esto se traducirá que nuestros objetos tienen incorporados una característica que toma dos valores opuestos (“uno el negativo del otro”)          Los puntos estarán etiquetados con $+$ ó $-$      Las curvas tienen una dirección      Las superficies están pintadas de azul por una cara y de amarillo por la otra; el color azul denota sentido de giro antihorario y el color amarillo giro horario      Los volúmenes tienen una cierta “helicidad”…        ¡y todo esto se tiene en cuenta para el operador frontera! Una curva comienza en un punto $-$ y acaba en un punto $+$; el giro en las superficies debe coincidir con la dirección de la curva frontera…                ¿Por qué es importante esto? Para que el operador frontera funcione bien al dividir objetos                ¡Magnífico! Los objetos iguales con distinta orientación actúan como opuestos y se cancelan. Esto hace que todo funcione bien. Además nuestro problema anterior del toro se ha solucionado: si cortamos un toro, cada extremo de la superficie da un borde, pero como éstos tienen orientaciones opuestas, ¡se cancelan!                Por eso, podemos volver a afirmar: el lazo anterior en el toro no es frontera de nada.  Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:            donde los $\\lambda_i$, $\\mu_j$, $\\eta_k$ son números enteros o reales. Un signo negativo tiene el mismo efecto que permutar $-$ y $+$, invertir el sentido de una flecha, cambiar los colores azul y amarillo, etc. Para cada $k$, el conjunto de $k$-cadenas forma el espacio vectorial $\\Omega_k(M)$, y el operador frontera induce aplicaciones lineales $\\partial_k:\\Omega_k(M)\\longrightarrow \\Omega_{k-1}(M)$, con $\\partial_{k-1}\\circ\\partial_k=0$, es decir, $\\text{im }\\partial_{k+1} \\subset\\text{ker }\\partial_k$. Se definen así los grupos de homología $H_k(M)=\\dfrac{\\text{ker }\\partial_k}{\\text{im }\\partial_{k+1}}=\\dfrac{Z_k(M)}{B_k(M)}$.Aunque este lenguaje pueda resultar extraño al principio, será aclarado más adelante. Por ahora, nos limitamos a destacar que tiene sentido hacer el cociente de los ciclos $Z_k(M)$ (cadenas sin frontera) entre las fronteras $B_k(M)$ (fronteras de una cadena), porque aquellos ciclos cuya diferencia sea una frontera, es decir, que representan el mismo elemento de homología (ciclos homólogos) detectan el mismo “agujero”:            ",
+        "content": "La homología describe la forma de un espacio de modo verdaderamente asombroso. Aunque al principio parece raro y confuso, luego aparece de modo natural en muchos fenómenos matemáticos. Por ejemplo, en la Característica de Euler-Poincaré: tomamos un espacio, lo triangulamos (lo dividimos en “trocitos”) y hacemos la suma alternada del número de trozos utilizados de cada tipo:donde $c_i(X)$ es el número de caras $i$-dimensionales de $X$. Sorprendentemente, no depende de la triangulación      $X$    $c_0$ vértices    $c_1$ aristas    $c_2$ caras    $\\chi=c_0-c_1+c_2$                1    -    -    1                4    3    -    1            7    6    -                5    5    -    0            9    9    -                5    5    1    1            9    9    1            6    10    5                8    12    6    2            6    12    8            12    30    20                32    64    32    0            36    72    36  Sin embargo, esta misma característica se expresa en términos homológicos (sin necesidad de triangulación), y de hecho, éste es el modo más apropiado. Así que la homología acierta efectivamente al describir la forma de un espacio topológicodonde $b_i=\\text{rk }H_i(X)$ son los números de Betti      $X$    $b_0$    $b_1$    $b_2$    $\\chi=b_0-b_1+b_2$            1    -    -    1            1    0    -    1            1    1    -    0            1    0    0    1            1    0    1    2            1    2    1    0  Nuestro objetivo es entender la forma de un espacio. ¿Cómo distinguiremos una esfera de un toro? La homología tiene un lema:BUSCA ALGO SIN FRONTERA QUE NO SEA LA FRONTERA DE ALGO… y curiosamente, ¡funciona! Claro, las cosas que tienen frontera (por ejemplo, curvas sin cerrar) no son muy útiles para encontrar diferencias, se pueden mover demasiado            pero las cosas que no tienen frontera, que están cerradas, quizá nos pueden decir algo más            En la esfera, una curva sin frontera es la frontera de algo… y sin embargo en el toro tenemos una curva sin frontera que no es la frontera de nada… ¡ya tenemos una diferencia! ¡Parece que funciona!            En general estos objetos sin frontera que no son la frontera de nada capturan “agujeros” de distintas dimensiones… los agujeros de dimensión 0 son componentes separadas, los agujeros de dimensión 1 son rodeables por un lazo, los de dimensión 2 por una superficie…            Pero muchos podrían rebatir, “¿no es el lazo en el toro la frontera del resto del toro?”            Bueno… estamos utilizando el concepto de frontera sin definirlo demasiado… Por eso hay que definir mejor el operador frontera $\\partial$Sobre el operador frontera $\\partial$, vamos por pasos:      $\\partial$ lleva cosas de dimensión $k$ a dimensión $k-1$, siempre una dimensión menos                Los objetos de dimensión 0 son puntos, los de dimensión 1 son curvas, los de dimensión 2 son superficies… Al conjunto de “objetos de dimensión $k$” en el espacio $X$ le llamaremos $C_k(X)$, así que lo que tenemos es        para cada $k\\geqslant 0$ (la frontera de un punto es 0)        La frontera de algo ya no tiene frontera (es 0). Es algo de lo que nos podemos convencer con los ejemplos anteriores. Algebraicamente, esto se expresa como        una propiedad tan importante y que aparece tanto en matemáticas que da pie al Álgebra Homológica         Para que todo funcione bien, todos los objetos de dimensión $k$ deben estar orientados. El concepto de orientación es delicado; por ahora, para nosotros esto se traducirá que nuestros objetos tienen incorporados una característica que toma dos valores opuestos (“uno el negativo del otro”)          Los puntos estarán etiquetados con $+$ ó $-$      Las curvas tienen una dirección      Las superficies están pintadas de azul por una cara y de amarillo por la otra; el color azul denota sentido de giro antihorario y el color amarillo giro horario      Los volúmenes tienen una cierta “helicidad”…        ¡y todo esto se tiene en cuenta para el operador frontera! Una curva comienza en un punto $-$ y acaba en un punto $+$; el giro en las superficies debe coincidir con la dirección de la curva frontera…                ¿Por qué es importante esto? Para que el operador frontera funcione bien al dividir objetos                ¡Magnífico! Los objetos iguales con distinta orientación actúan como opuestos y se cancelan. Esto hace que todo funcione bien. Además nuestro problema anterior del toro se ha solucionado: si cortamos un toro, cada extremo de la superficie da un borde, pero como éstos tienen orientaciones opuestas, ¡se cancelan!                Por eso, podemos volver a afirmar: el lazo anterior en el toro no es frontera de nada.  Así que debemos buscar objetos sin frontera que no sean la frontera de algo. En general lo denotaremos con tres letras:  $C$: objetos (con o sin frontera)  $Z$: objetos sin frontera  $B$: objetos sin frontera que además son la frontera de algoY se tiene la inclusión $B\\subset Z\\subset C$. Aparentemente, nos debemos fijar en el conjunto $Z\\smallsetminus B$. ¿Pero es éste el tratamiento más adecuado?Por ejemplo, fijémonos en los enteros $\\mathbb{Z}$. Dentro de los enteros hay un fenómeno que es ser múltiplo de $5$. Este fenómeno tiene interés precisamente porque hay enteros que no tienen esta propiedad. Es como si $Z=\\mathbb{Z}$ y $B=5\\mathbb{Z}$ los múltiplos de $5$. Uno puede describir el hecho de que hay números que no son múltiplos de $5$ fijándose en el conjuntoPero para un matemático, trabajar con este conjunto es un poco incómodo. No es cerrado para la suma ($2$ y $3$ están en $Z\\smallsetminus B$ pero $2+3=5\\not\\in Z\\smallsetminus B$), no se puede dotar de alguna estructura interesante… En oposición a esto, tomamos otro acercamiento.$1$ y $6$ son ambos no múltiplos de $5$, y son distintos, pero se puede decir que ambos recogen la misma no-multiplicidad-de-$5$, porque en realidad los dos son del tipo $5k+1$. Podemos abstraer el objeto y quedarnos con su clase, y diremos queEn ese mismo espíritu, definimosEsto nos lleva a distinguir cinco clases, que forman $\\mathbb{Z}_5=\\{[0],[1],[2],[3],[4]\\}$, y que resulta ser un objeto estructuralmente riquísimo, pues con la suma y el producto módulo $5$ no sólo es grupo y anillo sino además cuerpo finito. Y esta construcción es estándar en matemáticas: es el cociente $Z/B$.De tal modo que, también para la homología, el modo correcto de pensar no es con la sustracción $Z\\smallsetminus B$, sino con el cociente $Z/B$. Y unos cuantos ejemplos avalarán el acierto de esta construcción.Consideramos $k$-cadenas en una variedad $M$, combinaciones lineales como las siguientes:            donde los $\\lambda_i$, $\\mu_j$, $\\eta_k$ son números enteros o reales. Un signo negativo tiene el mismo efecto que permutar $-$ y $+$, invertir el sentido de una flecha, cambiar los colores azul y amarillo, etc. Para cada $k$, el conjunto de $k$-cadenas forma el espacio vectorial $\\Omega_k(M)$, y el operador frontera induce aplicaciones lineales $\\partial_k:\\Omega_k(M)\\longrightarrow \\Omega_{k-1}(M)$, con $\\partial_{k-1}\\circ\\partial_k=0$, es decir, $\\text{im }\\partial_{k+1} \\subset\\text{ker }\\partial_k$. Se definen así los grupos de homología $H_k(M)=\\dfrac{\\text{ker }\\partial_k}{\\text{im }\\partial_{k+1}}=\\dfrac{Z_k(M)}{B_k(M)}$.Aunque este lenguaje pueda resultar extraño al principio, será aclarado más adelante. Por ahora, nos limitamos a destacar que tiene sentido hacer el cociente de los ciclos $Z_k(M)$ (cadenas sin frontera) entre las fronteras $B_k(M)$ (fronteras de una cadena), porque aquellos ciclos cuya diferencia sea una frontera, es decir, que representan el mismo elemento de homología (ciclos homólogos) detectan el mismo “agujero”:            ",
         "url": "/es/exposition_homology"
       }
       ,
@@ -2083,9 +2155,10 @@
 
 <div style="height: 80px; line-height: 110px; margin-left: 5px;">
 
-	<a href="/plus/es/about.html"><img src="/images/about.svg" height="40" width="40" style="vertical-align:middle"></a>
-	<a href="/plus/es/manual.html"><img src="/images/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
-	<a href="mailto:mathifold@gmail.com"><img src="/images/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="/plus/es/about.html"><img src="/images/others/about.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="/plus/es/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
 
 </div>

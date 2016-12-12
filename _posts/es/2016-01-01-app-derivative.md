@@ -16,10 +16,10 @@ type: post
 
 <div class="sage"><script type="text/x-sage">
 
+var('x')
 @interact
 def tangent_line(f = input_box(default=sin(x)), xrange = slider(5, 50, 1/10, 5), yrange = slider(2, 20, 1/10, 2), x0 = slider(-5, 5, 1/10, 0)):
     prange = [-xrange,xrange]
-    var('x')
     df = diff(f)
     hl = line( [ (x0+0.05, f(x0)), (x0+1, f(x0)) ], color="darkgray", thickness=2, linestyle="dashed")
     vl = line( [ (x0+1, f(x0)), (x0+1, f(x0) + df(x0)) ], color="red", thickness=2)
