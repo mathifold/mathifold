@@ -5,7 +5,7 @@ category: es
 permalink: es/definition_equidecomposability
 
 ident: definition_equidecomposability
-parent: historical_milestones
+parent: banach_tarski_paradox
 kind: definition
 mathjax: true
 
