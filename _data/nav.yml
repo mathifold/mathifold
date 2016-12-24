@@ -916,3 +916,7 @@ map:
             ident: godel_incompleteness_theorems
             en: Gödel Incompleteness Theorems
             es: Los Teoremas de Incompletitud de Gödel
+          -
+            ident: miscelaneous
+            en: Miscelaneous
+            es: Miscelánea
