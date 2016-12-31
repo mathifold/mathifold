@@ -10,7 +10,7 @@ title: About Mathifold
 </div>
 
 <div class="plus">
-    <div style="padding: 20px; background-color: rgb(102,164,255); border-radius: 5px"><b>Mathifold</b> is a project whose goal is to make mathematics accesible to everybody, completely free, based on open collaboration and the best pedagogical tools</div><br><br>
+    <div style="padding: 20px; background-color: rgb(102,164,255); border-radius: 5px"><b>Mathifold</b> is a project whose goal is to make mathematics accessible to everybody, completely free, based on open collaboration and the best pedagogical tools</div><br><br>
 
     <b>To everybody:</b> not only mathematics students, but students in any other field, children, teachers, workers, or just keen on mathematics, adapted to the particular needs, aptitudes and likes of each one<br><br>
 
