@@ -153,7 +153,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Proof that $\\displaystyle\\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$ (Suma aritmética) using mathematical induction. SolutionWe need to follow the steps in order to apply mathematical induction.1. $n=1$. Then: the result is 1 (It is a valid result for $n=1$).2. Inductive step. We assume that the sum is true for $n=k$.  $\\displaystyle\\sum^{n=k}_{i=1} i = \\frac{k·(k+1)}{2}$(Hypotesis) Therefore, $k$ is replaced by $k+1$, and the sum is still true: $\\displaystyle\\sum^{n=k+1}_{i=1} i = \\frac{(k+1)·(k+1+1)}{2} = \\frac{(k+1)·(k+2)}{2}$3. We have to prove that the hypotesis is true: $\\dfrac{k·(k+1)}{2} + (k+1) = \\dfrac{k·(k+1) + 2·(k+1)}{2} = \\dfrac{(k+1)·(k+2)}{2}$It is proved.",
+        "content": "Proof that $\\displaystyle\\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$ (Arithmetic sum) using mathematical induction. SolutionWe need to follow the steps in order to apply mathematical induction.1. $n=1$. Then: the result is 1 (It is a valid result for $n=1$).2. Inductive hypothesis: we assume that the sum is true for $n=k$.  $\\displaystyle\\sum^{n=k}_{i=1} i = \\frac{k·(k+1)}{2}$(Inductive step) Then, when $k$ is replaced by $k+1$, the summing formula must still be true: $\\displaystyle\\sum^{n=k+1}_{i=1} i = \\frac{(k+1)·[(k+1)+1]}{2} = \\frac{(k+1)·(k+2)}{2}$3. We have to prove that the inductive step is true: $\\dfrac{k·(k+1)}{2} + (k+1) = \\dfrac{k·(k+1) + 2·(k+1)}{2} = \\dfrac{(k+1)·(k+2)}{2}$It is proved.",
         "url": "/en/problem_mathematicalproofs3"
       }
       ,
@@ -163,7 +163,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Proof that $\\displaystyle\\sum^n_{r=1} a·r^n = a·\\frac{1 - r^{n+1}}{1-r}$ (Geometric sum). $a$ is constant and $r$ the ratio. SolutionLike in the arithmetic sum, let the sum be equal to $S$. The sum would be done in the following way:$\\displaystyle S = \\sum^n_{r=1} a·r^n = a + ar + ar^2 + ar^3 + ar^4 + ... + ar^n = a·(1 + r + r^2 + r^3 + ... + r^n)$ Then, we multiply $S$ times the ratio $r$: $S·r = a·(r + r^2 + r^3 + r^4 + ... + r^{n+1})$After that, we subtract $S·r$ to $S$: $S - S·r = 1 - r^{n+1}$We get $S$: $S = a·\\frac{1 - r^{n+1}}{1-r}$. Therefore, it is proved.",
+        "content": "Proof that $\\displaystyle\\sum^n_{r=1} a·r^n = a·\\frac{1 - r^{n+1}}{1-r}$ (Geometric sum). $a$ is constant and $r$ the ratio. SolutionLike in the arithmetic sum, let the sum be equal to $S$. The sum would be done in the following way:$\\displaystyle S = \\sum^n_{r=1} a·r^n = a + ar + ar^2 + ar^3 + ar^4 + ... + ar^n = a·(1 + r + r^2 + r^3 + ... + r^n)$ Then, we multiply $S$ times the ratio $r$: $S·r = a·(r + r^2 + r^3 + r^4 + ... + r^{n+1})$After that, we subtract $S·r$ to $S$: $S - S·r = a·(1 - r^{n+1})$We get $S$: $S = a·\\frac{1 - r^{n+1}}{1-r}$. Therefore, it is proved.",
         "url": "/en/problem_mathematicalproofs2"
       }
       ,
@@ -313,7 +313,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}}$SolutionThe limit is of indeterminate form $\\dfrac{0}{0}$There is more than one way to solve the problem:1. Using the conjugate$\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})}$Then, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x}){(3-\\sqrt{x})·(3+\\sqrt{x})} = \\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}$Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}= \\lim_{x\\longrightarrow 9} (3+\\sqrt{x})= 6$    2. Using L'Hôpital's rule$\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9} \\dfrac{-1}{\\frac{-1}{2·\\sqrt{x}}}=\\lim_{x\\longrightarrow 9}2·\\sqrt{x} = 2·3 = 6 $",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}}$SolutionThe limit is of indeterminate form $\\dfrac{0}{0}$There is more than one way to solve the problem:1. Using the conjugate$\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})}$Then, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})} = \\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}$Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}= \\lim_{x\\longrightarrow 9} (3+\\sqrt{x})= 6$    2. Using L'Hôpital's rule$\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9} \\dfrac{-1}{\\frac{-1}{2·\\sqrt{x}}}=\\lim_{x\\longrightarrow 9}2·\\sqrt{x} = 2·3 = 6 $",
         "url": "/en/problem_limits4"
       }
       ,
