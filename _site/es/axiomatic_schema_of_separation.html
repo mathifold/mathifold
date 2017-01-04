@@ -6,7 +6,7 @@
 
   <title>
     
-        Mathifold - Axioma del conjunto unión
+        Mathifold - Sistema axiomático de especificación
     
   </title>
 
@@ -104,7 +104,7 @@
 				
 				
 					
-					<a href="/es/axiom_of_union.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+					<a href="/es/axiomatic_schema_of_separation.html"><img src="/images/others/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -130,46 +130,67 @@
 
 	
 	
-	<a href="/es/axiom_of_parts.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/axiom_of_void_set.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 	
 	
-	<a href="/es/axiom_of_void_set.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/axiom_of_infinity.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Axioma del conjunto unión</span>
+		Sistema axiomático de especificación</span>
 </div>
 
 <div class="postbox pb_definition">
-	<p>Con el axioma del conjunto par <a href="/es/axiom_of_pairs.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: <strong>el axioma de la unión</strong>, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de los elementos de un conjunto $X$ ya dado.</p>
+	<p>En su afán de corregir los errores de las anteriores teorías axiomáticas, Zermelo diseñó un mecanismo muy similar al de su predecesor analítico Gottlob Frege , que permite construir infinitas fórmulas que se aceptan como axiomas. Este mecanismo se conoce como “esquema axiomático” y este en concreto nos dice lo siguiente:</p>
 
-<script type="math/tex; mode=display">\quad Y | \forall a,A, A \in X \wedge a in A \longleftrightarrow a \in Y</script>
+<blockquote>
+  <p>$Dados un conjunto cualquiera X y una fórmula cualquiera \phi (X,U) (de aquí en adelante, los términos “fórmula” y “propiedad”, si se refieren a un objeto, son indistinguibles), existe otro conjunto Y que tiene por elementos los elementos de X y que cumplen la propiedad \phi (X,U). Es decir, que la fórmula siguiente es un axioma:$</p>
+</blockquote>
 
-<p>A este conjunto $Y$ le llamamos <strong>conjunto unión de los elementos de $X$</strong>, y usualmente se denota por $\cup (x \in X)$. Este conjunto es único, y se demuestra por el axioma de extensionalidad (análogamente al axioma del conjunto vacío <a href="/es/axiom_of_void_set.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> o al axioma de pares)</p>
+<script type="math/tex; mode=display">\quad Y \equiv \forall X,U (U \in Y \longleftrightarrow U \in X \wedge \phi(U))</script>
 
-<p>Enunciado este axioma, se puede demostrar con él algo que resulta quizá mas intuitivo (y probablemente algo con lo que el lector estará más familiarizado), y es que dados dos conjuntos, existe un conjunto que contiene todos los elementos de esos dos conjuntos dados.</p>
+<p>Es decir, que todo conjunto $Y$ queda caracterizado por ciertos elementos (pertenecientes a cierto conjunto) y una propiedad (una fórmula referida a un objeto).</p>
 
-<p>Por ejemplo, dados los conjuntos X e Y, bastará tomar el conjunto par {X,Y}, y por el axioma de la unión tendremos que</p>
+<p>Ahora podemos proceder a definir ciertos conjuntos que de otra forma sería imposible definir:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>$\quad Z</td>
-      <td>\forall A \in {X,Y}, \forall a \in A, a \in Z$</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  <li>El <em>conjunto intersección de $X$ e $Y$ (denotado $X \cap Y$)</em>, se define como aquel conjunto que, dados dos conjuntos $X$ e $Y$, contiene a los elementos de $X$ que también están en $Y$.</li>
+</ul>
 
-<p>A $Z$ se le denomina <strong>conjunto unión de los elementos de $X$ e $Y$</strong>, y se denota por $X \cup Y$.</p>
+<script type="math/tex; mode=display">X \cap Y \equiv {U \in X | U \in Y}</script>
 
-<p>Ahora que hemos definido un conjunto que contiene más de dos elementos, conviene hacer ciertas anotaciones sobre él:
-* Lo primero que hay que anotar es que, al igual que el conjunto par, el conjunto unión no está ordenado. $X \cup Y = Y \cup X$
-* Lo siguiente de lo que uno se da cuenta es que la unión es asociativa (se demuestra por el axioma de extensionalidad). $(X \cup Y) \cup Z = X \cup (Y \cup Z)$</p>
+<ul>
+  <li>El <em>conjunto diferencia de $X$ menos $Y$ (denotado $X \setminus Y$)</em>, se define como aquel conjunto que, dados dos conjuntos $X$ e $Y$, contiene a los elementos de $X$ que no están en $Y$.</li>
+</ul>
+
+<script type="math/tex; mode=display">X \setminus Y \equiv {U \in X | U \notin Y}</script>
+
+<ul>
+  <li>El <em>conjunto par ordenado de $a$ y $b$, denotado $(a,b)$</em>, se define como aquel conjunto que, dados dos conjuntos $A$ y $B$, tiene como primera componente un elemento $a \in A$ y como segunda componente un elemento $b \in B$. Es un conjunto par (porque tiene dos elementos), pero a diferencia del conjunto par no ordenado, se necesita un orden porque la segunda componente “necesita saber cuál es la primera componente”.</li>
+</ul>
+
+<script type="math/tex; mode=display">(a,b) \equiv  | a \in A, b \in B}</script>
+
+<blockquote>
+  <p>Un apunte interesante, cuya demostración se deja como ejercicio, es que $(a,b) \in \mathcal{P} (\mathcal{P} (A \cup B))$</p>
+</blockquote>
+
+<ul>
+  <li>El <em>conjunto producto cartesiano $A$ x $B$</em>, se define como aquel conjunto que, dados dos conjuntos $A$ y $B$, contiene a todos los pares ordenados de elemenos de $A$ y de $B$ (en ese orden).</li>
+</ul>
+
+<script type="math/tex; mode=display">A x B \equiv {(a,b) | a \in A \wedge b \in B}</script>
+
+<blockquote>
+  <blockquote>
+    <p>Todos los conjuntos mencionados son únicos, según del axioma de extensionalidad.</p>
+  </blockquote>
+</blockquote>
 
 </div>
 

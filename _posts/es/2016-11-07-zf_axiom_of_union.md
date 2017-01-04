@@ -13,11 +13,11 @@ layout: post
 type: post
 ---
 
-Con el axioma del conjunto par {%axiom_of_pairs%} hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: **el axioma de la unión**, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de los elementos de un conjunto $X$ ya dado.
+Con el axioma del conjunto par {% cite axiom_of_pairs %} hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: **el axioma de la unión**, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de los elementos de un conjunto $X$ ya dado.
 
 $$\quad Y | \forall a,A, A \in X \wedge a in A \longleftrightarrow a \in Y$$
 
-A este conjunto $Y$ le llamamos **conjunto unión de los elementos de $X$**, y usualmente se denota por $\cup (x \in X)$. Este conjunto es único, y se demuestra por el axioma de extensionalidad (análogamente al axioma del conjunto vacío {%axiom_of_void_set%} o al axioma de pares)
+A este conjunto $Y$ le llamamos **conjunto unión de los elementos de $X$**, y usualmente se denota por $\cup (x \in X)$. Este conjunto es único, y se demuestra por el axioma de extensionalidad (análogamente al axioma del conjunto vacío {% cite axiom_of_void_set %} o al axioma de pares)
 
 Enunciado este axioma, se puede demostrar con él algo que resulta quizá mas intuitivo (y probablemente algo con lo que el lector estará más familiarizado), y es que dados dos conjuntos, existe un conjunto que contiene todos los elementos de esos dos conjuntos dados.
 
