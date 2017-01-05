@@ -84,7 +84,7 @@ header, footer {
 
 .topic_thumbnail:hover {
   transition: box-shadow 0.5s ease;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7) !important
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .topic-title {
