@@ -6,6 +6,19 @@ body, input {
   font-weight: 300;
 }
 
+body {
+  max-width: 1920px
+}
+
+header, footer {
+  min-height: 100px
+}
+
+.page-content {
+  box-sizing: border-box;
+  min-height: calc(100vh - 280px)
+}
+
 .resource {
   margin-bottom: 15px;
   position: relative;
@@ -71,7 +84,7 @@ body, input {
 
 .topic_thumbnail:hover {
   transition: box-shadow 0.5s ease;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7) !important
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .topic-title {
@@ -116,23 +129,6 @@ body, input {
 .dissap {
   display:none;
 }
-
-p.subject {
-  background-size: 240px 240px;
-  font-size: 128%;
-  color: black;
-  text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
-  word-wrap: break-word;
-  display: inline-block;
-  text-align: left;
-  vertical-align: text-top;
-  box-shadow: 0px 0px 10px #888888;
-}
-
-
 
 .chapter{
   text-decoration: none;
