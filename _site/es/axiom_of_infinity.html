@@ -6,7 +6,7 @@
 
   <title>
     
-        Mathifold - Axioma del conjunto unión
+        Mathifold - Axioma de infinitud
     
   </title>
 
@@ -104,7 +104,7 @@
 				
 				
 					
-					<a href="/es/axiom_of_union.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+					<a href="/es/axiom_of_infinity.html"><img src="/images/others/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -130,46 +130,28 @@
 
 	
 	
-	<a href="/es/axiom_of_parts.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/axiomatic_schema_of_separation.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
-
-	
-	
-	<a href="/es/axiom_of_void_set.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Axioma del conjunto unión</span>
+		Axioma de infinitud</span>
 </div>
 
 <div class="postbox pb_definition">
-	<p>Con el axioma del conjunto par <a href="/es/axiom_of_pairs.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: <strong>el axioma de la unión</strong>, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de los elementos de un conjunto $X$ ya dado.</p>
+	<p>En esta sección se trata un punto crucial de la teoría de conjuntos, sin el cual una gran parte de nuestra matemática analítica estaría incompleta. Si se han leído otros axiomas de ZF (por ejemplo, el axioma del conjunto unión <a href="/es/axiom_of_union.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a>), seguro que os habrá asaltado la tentación de extender el conjunto unión “lo más que se pueda”, para probar futilmente que existe un conjunto de infinitos elementos (porque la intuición matemática, que no va mal desencaminada, a uno le dice que no puede haber un límite para la extensión de un conjunto). El problema está en que, de momento y hasta que se pruebe lo contrario, “lo más que se pueda” no es una definición formal rigurosa.</p>
 
-<script type="math/tex; mode=display">\quad Y | \forall a,A, A \in X \wedge a in A \longleftrightarrow a \in Y</script>
+<p>Para solucionar este problema de rigor, podemos decir que, dado un conjunto de inicio (escalón inicial) y un paso inductivo (ser capaz de subir un escalón cualquiera de la escalera), podrá construirse un conjunto $X$ de manera inductiva (y poder subir por la escalera inductiva hasta que uno se canse).</p>
 
-<p>A este conjunto $Y$ le llamamos <strong>conjunto unión de los elementos de $X$</strong>, y usualmente se denota por $\cup (x \in X)$. Este conjunto es único, y se demuestra por el axioma de extensionalidad (análogamente al axioma del conjunto vacío <a href="/es/axiom_of_void_set.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> o al axioma de pares)</p>
+<p>Conjunto de inicio: $\emptyset \in X$
+Paso inductivo: $x \in X \longrightarrow x \cup {x} \in X$</p>
 
-<p>Enunciado este axioma, se puede demostrar con él algo que resulta quizá mas intuitivo (y probablemente algo con lo que el lector estará más familiarizado), y es que dados dos conjuntos, existe un conjunto que contiene todos los elementos de esos dos conjuntos dados.</p>
+<p>De este hecho, la teoría de ZF hizo el <strong>axioma de inifinitud</strong>, que afirma que un conjunto se puede “extender” tanto como se quiera. Alternativamente y por razones evidentes, se le denomina <strong>axioma del conjunto inductivo</strong>.</p>
 
-<p>Por ejemplo, dados los conjuntos X e Y, bastará tomar el conjunto par {X,Y}, y por el axioma de la unión tendremos que</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>$\quad Z</td>
-      <td>\forall A \in {X,Y}, \forall a \in A, a \in Z$</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>A $Z$ se le denomina <strong>conjunto unión de los elementos de $X$ e $Y$</strong>, y se denota por $X \cup Y$.</p>
-
-<p>Ahora que hemos definido un conjunto que contiene más de dos elementos, conviene hacer ciertas anotaciones sobre él:
-* Lo primero que hay que anotar es que, al igual que el conjunto par, el conjunto unión no está ordenado. $X \cup Y = Y \cup X$
-* Lo siguiente de lo que uno se da cuenta es que la unión es asociativa (se demuestra por el axioma de extensionalidad). $(X \cup Y) \cup Z = X \cup (Y \cup Z)$</p>
+<script type="math/tex; mode=display">\quad Y | {\emptyset \in Y \wedge \forall X, X \in Y \longrightarrow X' \in Y | X' = X \cup {X}}</script>
 
 </div>
 
