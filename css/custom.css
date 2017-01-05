@@ -6,6 +6,19 @@ body, input {
   font-weight: 300;
 }
 
+body {
+  max-width: 1920px
+}
+
+header, footer {
+  min-height: 100px
+}
+
+.page-content {
+  box-sizing: border-box;
+  min-height: calc(100vh - 280px)
+}
+
 .resource {
   margin-bottom: 15px;
   position: relative;
