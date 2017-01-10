@@ -33,7 +33,7 @@ $$X \setminus Y \equiv {U \in X | U \notin Y}$$
 
 * El *conjunto par ordenado de $a$ y $b$, denotado $(a,b)$*, se define como aquel conjunto que, dados dos conjuntos $A$ y $B$, tiene como primera componente un elemento $a \in A$ y como segunda componente un elemento $b \in B$. Es un conjunto par (porque tiene dos elementos), pero a diferencia del conjunto par no ordenado, se necesita un orden porque la segunda componente "necesita saber cuál es la primera componente".
 
-$$(a,b) \equiv {{a,{a,b}} | a \in A, b \in B}$$
+$$(a,b) \equiv \{a,\{a,b\}\},\quad a \in A,\, b \in B$$
 
 > Un apunte interesante, cuya demostración se deja como ejercicio, es que $(a,b) \in \mathcal{P} (\mathcal{P} (A \cup B))$
 
