@@ -441,6 +441,10 @@ map:
             en: Chapter1
             es: Capítulo1
           -
+            ident: functions_several_variables
+            en: Functions of Several Variables
+            es: Funciones de Varias Variables
+          -
             ident: vector_fields
             en: Vector Fields
             es: Campos Vectoriales
