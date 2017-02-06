@@ -147,6 +147,10 @@ map:
             ident: cycloids
             en: Cycloids
             es: Cicloides
+          -
+            ident: other_plane_curves
+            en: Other Plane Curves
+            es: Otras Curvas Planas
       -
         ident: conics
         en: Conics

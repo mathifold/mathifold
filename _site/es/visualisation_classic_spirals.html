@@ -6,7 +6,7 @@
 
   <title>
     
-        Mathifold - Sucesos aleatorios
+        Mathifold - Espirales Clásicas
     
   </title>
 
@@ -44,6 +44,13 @@
 
 
 
+  <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+    <script>$(function () {
+    // Make *any* div with class 'compute' a Sage cell
+    sagecell.makeSagecell({inputLocation: 'div.sage', hide: ["editor", "evalButton", "permalink"], autoeval: 1});
+    });
+    </script>
+
 
 
 
@@ -77,20 +84,20 @@
 		<span style="font-size:35px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/es/probability_statistics.html" style="text-decoration: none; color: black">
-		Probabilidad y Estadística</a>
+		<a href="/topics/es/geometry.html" style="text-decoration: none; color: black">
+		Geometría</a>
 		</span>
 		<span style="font-size:30px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/es/probability.html" style="text-decoration: none; color: black">
-		Probabilidad</a>
+		<a href="/subjects/es/classical_geometry.html" style="text-decoration: none; color: black">
+		Geometría Clásica</a>
 		</span>
 		<span style="font-size:25px;vertical-align:middle;">
 		 &#187; </span>
 		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/es/sample_space_structure.html" style="text-decoration: none; color: black">
-		Estructura del Espacio Muestral</a>
+		<a href="/chapters/es/other_plane_curves.html" style="text-decoration: none; color: black">
+		Otras Curvas Planas</a>
 		</span>
 	
 
@@ -104,13 +111,16 @@
 				
 				
 					
-					<a href="/es/definition_random_event.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+					<a href="/es/visualisation_classic_spirals.html"><img src="/images/others/es.svg" height="40" width="40"></a>
 				
 			
 		
 			
 				
 				
+				
+					
+					<a href="/en/visualisation_classic_spirals.html"><img src="/images/others/en.svg" height="40" width="40"></a>
 				
 			
 		
@@ -128,27 +138,65 @@
 
 
 
-	
-	
-	<a href="/es/definition_event_operations.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
-
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/visualisation.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Sucesos aleatorios</span>
+		Espirales Clásicas</span>
 </div>
 
-<div class="postbox pb_definition">
-	<p>Los subconjuntos del espacio muestral $Omega$ se denominan <strong>sucesos</strong>. El azar en el experimento da lugar a estos sucesos y se dividen en dos tipos:</p>
-<ul>
-  <li><em>simples</em> si están formados por un único elemento, es decir, representan uno sólo de los resultados posibles del experimento.</li>
-  <li><em>compuestos</em> identifican subconjuntos del espacio muestral que tienen más de un elemento y son por tanto uniones de sucesos simples.</li>
-</ul>
+<div class="postbox pb_visualisation">
+	<center><b>Espiral Arquimediana</b> $\,\,\,r=a\theta$</center>
 
-<p>Hay dos sucesos singulares que siempre se tienen en todo experimento aleatorio. Por un lado el <em>suceso seguro</em> que coincide con el espacio muestral $Omega$. Por otro lado el subconjunto vacío $\emptyset$ y que representa el *suceso imposible$.</p>
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot(theta, (theta, 0, 6*pi), thickness=3, rgbcolor=(0.1,0.4,0.9), adaptive_recursion = 10, adaptive_tolerance = 0.001)
+</script></div>
+
+<center><b>Espiral Logarítmica</b> $\,\,\,r=e^{a\theta}$</center>
+
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot(exp(0.1*theta), (theta, -6*pi, 6*pi), thickness=3, rgbcolor=(0.9,0,0.4), adaptive_recursion = 10, adaptive_tolerance = 0.0001)
+</script></div>
+
+<center><b>Espiral Hiperbólica</b> $\,\,\,r=\frac{a}{\theta}$</center>
+
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot(1/theta, (theta, 0.1*pi, 12*pi), thickness=3, rgbcolor=(0.1,0.9,0.4))
+</script></div>
+
+<center><b>Espiral de Galileo</b> $\,\,\,r=a-b\theta^2$</center>
+
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot(1-theta**2, (theta, -1.75*pi, 1.75*pi), thickness=3, rgbcolor=(0.1,0.1,0.1))
+</script></div>
+
+<center><b>Espiral de Poinsot</b> $\,\,\,r=\frac{a}{\cosh(\theta)}$</center>
+
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot(1/cosh(theta/3), (theta, -18*pi, 18*pi), thickness=3, rgbcolor=(0.9,0.9,0.1), adaptive_recursion = 10, adaptive_tolerance = 0.0001)
+</script></div>
+
+<center><b>Espiral de Fermat</b> $\,\,\,r=a\sqrt{\theta}$</center>
+
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot([sqrt(theta), -sqrt(theta)], (theta, 0, 6*pi), thickness=3, rgbcolor=(0.7,0.2,0.2))
+</script></div>
+
+<center><b>Espiral cocleoide</b> $\,\,\,r=a\frac{\sin(\theta)}{\theta}$</center>
+
+<div class="sage" align="center"><script type="text/x-sage">
+var('theta')
+polar_plot(sin(theta)/theta, (theta, -6*pi, 6*pi), thickness=3, rgbcolor=(0.1,0.2,0.3), adaptive_recursion = 10, adaptive_tolerance = 0.0001)
+</script></div>
+
 
 </div>
 
