@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+  <meta charset="utf-8">
+
+  <title>
+    
+        Mathifold - Axioma del conjunto potencia
+    
+  </title>
+
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/topic_images.css">
+  <link rel="stylesheet" href="/css/subject_images.css">
+  <link rel="stylesheet" href="/css/symb.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
+
+
+
+  
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": {
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: {
+	         linebreaks: { automatic: true }
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60766664-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<div style="height: 90px;">
+
+	<a href="/home/es/home.html"><img src="/images/others/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+	
+	
+	
+		
+		
+		
+		<span style="font-size:35px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:35px;vertical-align:middle;">
+		<a href="/topics/es/foundations.html" style="text-decoration: none; color: black">
+		Fundamentos</a>
+		</span>
+		<span style="font-size:30px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:30px;vertical-align:middle;">
+		<a href="/subjects/es/set_theory.html" style="text-decoration: none; color: black">
+		Teoría de Conjuntos</a>
+		</span>
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/zermelo_fraenkel_axiomatic.html" style="text-decoration: none; color: black">
+		Axiomática de Zermelo-Fraenkel</a>
+		</span>
+	
+
+
+	<div style="float: right">
+		<a href="/search/es/search.html"><img src="/images/others/search.svg" height="40" width="40"></a>
+		<img src="/images/subjects/blank.svg" height="20" width="20">
+		
+			
+				
+				
+				
+					
+					<a href="/es/axiom_of_parts.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+				
+			
+		
+			
+				
+				
+				
+			
+		
+	</div>
+</div>
+
+</header>
+
+
+    <main class="page-content">
+      
+
+
+
+
+
+
+	
+	
+	<a href="/es/axiom_of_pairs.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+
+
+	
+	
+	<a href="/es/axiom_of_union.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Axioma del conjunto potencia</span>
+</div>
+
+<div class="postbox pb_definition">
+	<p>En el axioma de extensionalidad <a href="/es/axiom_of_extensionality.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> veíamos que cualquier conjunto quedaba definido por sus elementos. Ahora, vamos a ver una caracterización de un conjunto dado (que no es más que una proposición equivalente que podríamos escribir cada vez que quisiéramos poner “conjunto”), por medio del denominado <strong>axioma de partes</strong>, el cual nos afirma que para cualquier conjunto $X$ existe el conjunto $Z$ de todos sus subconjuntos $Y$.</p>
+
+<script type="math/tex; mode=display">\forall X,Y \quad Z | \forall y(y \in Y \longrightarrow y \in X) \longrightleftarrow Y \in Z</script>
+
+<p>A este conjunto $Z$ se le llama “conjunto potencia de $X$” (también “conjunto de las partes de $X$”, porque es el conjunto de todas las “partes” o subconjuntos que se pueden sacar de $X$), y se denota $\mathcal{P} (X)$. Otra vez, este conjunto es único, ya que si existiera otro conjunto $Z’$ de subconjuntos de una colección (conjunto) $X$, entonces, según el axioma de extensionalidad, $Z’ = Z$.</p>
+
+<p>El conjunto potencia tiene ciertas curiosidades:</p>
+
+<ul>
+  <li>Dado un conjunto X, por convenio $\emptyset$ siempre será subconjunto de X. Es el único conjunto que no cumple la definición formal de subconjunto impropio, que nos dice:</li>
+</ul>
+
+<script type="math/tex; mode=display">A \subseteq B \equiv \forall A,B (\forall a(a \in A \longrightarrow a \in B))</script>
+
+<ul>
+  <li>$\mathcal{P} (\emptyset) = \emptyset$).</li>
+  <li>Se le denomina conjunto potencia porque $card(\mathcal{P} (X)) = 2^{card(X)}$. Intenta demostrarlo con lo que sabes, no es díficil.</li>
+</ul>
+
+<div class="bcblue boxdissap">
+Pista
+</div>
+<p><br /></p>
+
+<div class="dissap">
+Piensa en el número de formas (funciones, aplicaciones) que tienes de, dado un elemento del conjunto $X$, decidir si está en un subconjunto del potencia; piensa en 0 si el elemento de $X$ no pertenece a su conjunto potencia, y piensa en 1 si sí pertenece. Es decir, busca el número de funciones que tengan su dominio en $X$ y su imagen en {0,1}.
+</div>
+
+<div class="bcblue boxdissap">
+Demostración
+</div>
+<p><br /></p>
+
+<div class="dissap">
+Esquemáticamente y para ayudarnos a visualizar el problema vamos a pensar en un diagrama de árbol, cuyas ramas iniciales son 0 ó 1 para el primer elemento de $X$, y a partir de ahí podrán ir tomando el valor 0 o 1 para cada elemento sucesivo $x_i$ de $X$.
+Quedaría una cosa así:
+
+
+&gt;              ---0...
+&gt;      ---0---|
+&gt;     |        ---1...
+&gt; 0---|
+&gt;     |        ---0...
+&gt;      ---1---|
+&gt;              ---1...
+&gt;              ---0...
+&gt;      ---0---|
+&gt;     |        ---1...
+&gt; 1---|
+&gt;     |        ---0...
+&gt;      ---1---|
+&gt;              ---1...
+
+$\uparrow       \uparrow       \uparrow$
+ $x_1$       $x_2$       $x_3$ ...
+
+Con este esquema gráfico a la vista, el problema resulta ser mucho más fácil. Ahora nos enfrentamos a una variación de $2$ elementos (0 ó 1) tomados de $n$ en $n$(suponiendo que $X$ tenga $n$ elementos).
+
+$$VR_{2,n} = 2^{n}$$
+
+**Y habremos terminado.**
+
+Alternativamente, también se puede pensar para resolver este problema en la suma del número total de formas que tenemos de combinar elementos de $X$ entre sí.
+Es decir, pensar en:
+
+$$\sum_{k=0}^n C_k^n = {n \choose 0} + {n \choose 1} + ... + {n \choose n} = \sum_{k=0}^n \frac{n!}{(n-k)! k!}$$
+
+Por inducción, habría que probar que $\sum_{k=0}^n \frac{n!}{(n-k)! k!} = 2^n$.
+*Etapa 1:* Para $n = 0$ se cumple que 1 = 1
+*Etapa 2:* Suponemos la proposición verdadera para cierto $n=a$. Entonces para $n=a+1$ se tiene que:
+$$\sum_{k=0}^{a+1} \frac{(a+1)!}{(a+1-k)! k!} = 2^{a+1}$$
+
+**Y habremos terminado**
+</div>
+
+<ul>
+  <li>Hemos visto que el conjunto potencia de un conjunto es único, pero, dados dos conjuntos distintos, ¿serán sus respectivos conjuntos potencia distintos?</li>
+</ul>
+
+<div class="bcblue boxdissap">
+Demostración
+</div>
+<p><br /></p>
+
+<div class="dissap">
+Sabemos que dos conjuntos son distintos, por el axioma de extensionalidad, si y sólo si
+
+</div>
+
+</div>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+
+<div style="height: 80px; line-height: 110px; margin-left: 5px;">
+
+	<a href="/plus/es/about.html"><img src="/images/others/about.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="/plus/es/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<font color="gray" style="vertical-align:middle">&copy 2017 Mathifold</font>
+
+</div>
+
+</footer>
+
+
+  </body>
+
+</html>

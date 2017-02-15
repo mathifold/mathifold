@@ -120,8 +120,8 @@
 </header>
 
 
-
-    
+    <main class="page-content">
+      
 
 
 
@@ -166,7 +166,7 @@ $H^1_c(\mathbb{R} ^2)=0$
 
 <hr />
 
-<p>Aquí viene la mayor diferencia: $H^2_c(\mathbb{R} ^2)$ no es trivial. Cuando en el caso no compacto teníamos la 2-forma $k\mathrm{d} x\wedge\mathrm{d} y$ nos había sido muy fácil tomar $g=0$ y $ h(x,y)=\int_0^x k(t,y)\mathrm{d} t$ para que $\dfrac{\partial h}{\partial x}-\dfrac{\partial g}{\partial y}=k$, pero es casi imposible que $h$ tenga soporte compacto. Es más: es una situación que casi nunca se puede arreglar, concretamente cuando $\int_{\mathbb{R} ^2} k(x,y)\neq 0$. Pues si $g$ y $h$ se anulan fuera del cuadrado $[-M,M] \times[-M,M]$ (y sobre el borde), entonces $\int_{\mathbb{R} ^2} k(x,y)=\int_{[-M,M] \times[-M,M]} k(x,y)=\int_{-M}^M \int_{-M}^M \dfrac{\partial h}{\partial x} \mathrm{d} x \mathrm{d} y-\int_{-M}^M \int_{-M}^M \dfrac{\partial g}{\partial y} \mathrm{d} y \mathrm{d} x=\int_{-M}^M [h(x,y)]_{x=-M}^{x=M} \mathrm{d} y-\int_{-M}^M [g(x,y)]_{y=-M}^{y=M} \mathrm{d} x=0$. Si $\int_{\mathbb{R} ^2} k(x,y)\neq 0$, entonces la 2-forma $k\mathrm{d} x\wedge\mathrm{d} y$, siendo automáticamente cerrada, no es exacta. Por otro lado, éste es el único impedimento. Supongamos que $\int_{\mathbb{R} ^2} k(x,y)=0$. Definimos $ h(x,y)=\int_{-M}^x k(t,y)\mathrm{d} t$. Arriba, abajo y a la izquierda del cuadrado $h$ se anula, mientras que a la derecha toma los valores de una cierta función $v(y)$ con soporte en $[-M,M]$. Para corregir esta anomalía, tomamos una función diferenciable $\rho(x)$ que valga 0 en $(-\infty,-M]$ y 1 en $[M,\infty)$, y pasamos a la función $\tilde{h}(x,y)=h(x,y)-\rho(x)v(y)$, que ahora tiene soporte compacto. $\dfrac{\partial \tilde{h}}{\partial x}=\dfrac{\partial h}{\partial x}-\rho’(x)v(y)=k-\rho’(x)v(y)$, así que necesitamos que $\dfrac{\partial g}{\partial y}=-\rho’(x)v(y)$, que se consigue tomando $ g(x,y)=\int_{-M}^y -\rho’(x)v(t)\mathrm{d} t$. $g$ se anula fuera de $K$, también encima, porque $\int_{-M}^M v(t)\mathrm{d} t=\int_{\mathbb{R} ^2} k(x,y)=0$.</p>
+<p>Aquí viene la mayor diferencia: $H^2<em>c(\mathbb{R} ^2)$ no es trivial. Cuando en el caso no compacto teníamos la 2-forma $k\mathrm{d} x\wedge\mathrm{d} y$ nos había sido muy fácil tomar $g=0$ y $ h(x,y)=\int_0^x k(t,y)\mathrm{d} t$ para que $\dfrac{\partial h}{\partial x}-\dfrac{\partial g}{\partial y}=k$, pero es casi imposible que $h$ tenga soporte compacto. Es más: es una situación que casi nunca se puede arreglar, concretamente cuando $\int</em>{\mathbb{R} ^2} k(x,y)\neq 0$. Pues si $g$ y $h$ se anulan fuera del cuadrado $[-M,M] \times[-M,M]$ (y sobre el borde), entonces $\int_{\mathbb{R} ^2} k(x,y)=\int_{[-M,M] \times[-M,M]} k(x,y)=\int_{-M}^M \int_{-M}^M \dfrac{\partial h}{\partial x} \mathrm{d} x \mathrm{d} y-\int_{-M}^M \int_{-M}^M \dfrac{\partial g}{\partial y} \mathrm{d} y \mathrm{d} x=\int_{-M}^M [h(x,y)]_{x=-M}^{x=M} \mathrm{d} y-\int_{-M}^M [g(x,y)]_{y=-M}^{y=M} \mathrm{d} x=0$. Si $\int_{\mathbb{R} ^2} k(x,y)\neq 0$, entonces la 2-forma $k\mathrm{d} x\wedge\mathrm{d} y$, siendo automáticamente cerrada, no es exacta. Por otro lado, éste es el único impedimento. Supongamos que $\int_{\mathbb{R} ^2} k(x,y)=0$. Definimos $ h(x,y)=\int_{-M}^x k(t,y)\mathrm{d} t$. Arriba, abajo y a la izquierda del cuadrado $h$ se anula, mientras que a la derecha toma los valores de una cierta función $v(y)$ con soporte en $[-M,M]$. Para corregir esta anomalía, tomamos una función diferenciable $\rho(x)$ que valga 0 en $(-\infty,-M]$ y 1 en $[M,\infty)$, y pasamos a la función $\tilde{h}(x,y)=h(x,y)-\rho(x)v(y)$, que ahora tiene soporte compacto. $\dfrac{\partial \tilde{h}}{\partial x}=\dfrac{\partial h}{\partial x}-\rho’(x)v(y)=k-\rho’(x)v(y)$, así que necesitamos que $\dfrac{\partial g}{\partial y}=-\rho’(x)v(y)$, que se consigue tomando $ g(x,y)=\int_{-M}^y -\rho’(x)v(t)\mathrm{d} t$. $g$ se anula fuera de $K$, también encima, porque $\int_{-M}^M v(t)\mathrm{d} t=\int_{\mathbb{R} ^2} k(x,y)=0$.</p>
 
 <div class="resource img">
             <img src="/images/images/cohomology_compact_support_r2.svg" /><a class="ori" href="/images/codes/cohomology_compact_support_r2.ipe"></a></div>
@@ -181,7 +181,7 @@ $H^2_c(\mathbb{R} ^2)\simeq\mathbb{R} $
 
 
 
-
+    </main>
 
     <footer class="site-footer">
 
@@ -191,7 +191,7 @@ $H^2_c(\mathbb{R} ^2)\simeq\mathbb{R} $
 	<a href="/plus/es/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
     <a href="/plus/es/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
-	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
+	<font color="gray" style="vertical-align:middle">&copy 2017 Mathifold</font>
 
 </div>
 

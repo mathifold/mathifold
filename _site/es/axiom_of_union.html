@@ -120,8 +120,8 @@
 </header>
 
 
-
-    
+    <main class="page-content">
+      
 
 
 
@@ -130,7 +130,7 @@
 
 	
 	
-	<a href="/es/axiom_of_pairs.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/axiom_of_parts.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 	
@@ -146,18 +146,38 @@
 </div>
 
 <div class="postbox pb_definition">
-	<p>Con el axioma del conjunto par hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: <strong>el axioma de la unión</strong>, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de dos conjuntos ya dados.</p>
+	<p>Con el axioma del conjunto par <a href="/es/axiom_of_pairs.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> hemos probado la existencia de un conjunto con dos elementos (dos conjuntos). Si queremos afirmar la existencia de un conjunto con más de dos elementos, necesitamos introducir otro axioma: <strong>el axioma de la unión</strong>, el cual nos dice que existe un conjunto que tenga por elementos todos los elementos de los elementos de un conjunto $X$ ya dado.</p>
 
-<script type="math/tex; mode=display">\quad Z | \forall a \in X, \forall b \in Y, a,b \in Z</script>
+<script type="math/tex; mode=display">\quad Y | \forall a,A, A \in X \wedge a in A \longleftrightarrow a \in Y</script>
 
-<p>A este conjunto le llamamos <strong>conjunto unión de $X$ e $Y$</strong>, y usualmente se denota por $X \cup Y$.
-Ahora que hemos definido un conjunto que contiene a otros,</p>
+<p>A este conjunto $Y$ le llamamos <strong>conjunto unión de los elementos de $X$</strong>, y usualmente se denota por $\cup (x \in X)$. Este conjunto es único, y se demuestra por el axioma de extensionalidad (análogamente al axioma del conjunto vacío <a href="/es/axiom_of_void_set.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a> o al axioma de pares)</p>
+
+<p>Enunciado este axioma, se puede demostrar con él algo que resulta quizá mas intuitivo (y probablemente algo con lo que el lector estará más familiarizado), y es que dados dos conjuntos, existe un conjunto que contiene todos los elementos de esos dos conjuntos dados.</p>
+
+<p>Por ejemplo, dados los conjuntos X e Y, bastará tomar el conjunto par {X,Y}, y por el axioma de la unión tendremos que</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>$\quad Z</td>
+      <td>\forall A \in {X,Y}, \forall a \in A, a \in Z$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A $Z$ se le denomina <strong>conjunto unión de los elementos de $X$ e $Y$</strong>, y se denota por $X \cup Y$.</p>
+
+<p>Ahora que hemos definido un conjunto que contiene más de dos elementos, conviene hacer ciertas anotaciones sobre él:</p>
+<ul>
+  <li>Lo primero que hay que anotar es que, al igual que el conjunto par, el conjunto unión no está ordenado. $X \cup Y = Y \cup X$</li>
+  <li>Lo siguiente de lo que uno se da cuenta es que la unión es asociativa (se demuestra por el axioma de extensionalidad). $(X \cup Y) \cup Z = X \cup (Y \cup Z)$</li>
+</ul>
 
 </div>
 
 
 
-
+    </main>
 
     <footer class="site-footer">
 
@@ -167,7 +187,7 @@ Ahora que hemos definido un conjunto que contiene a otros,</p>
 	<a href="/plus/es/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
     <a href="/plus/es/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
-	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
+	<font color="gray" style="vertical-align:middle">&copy 2017 Mathifold</font>
 
 </div>
 

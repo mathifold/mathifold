@@ -120,8 +120,8 @@
 </header>
 
 
-
-    
+    <main class="page-content">
+      
 
 
 
@@ -135,7 +135,7 @@
 
 	
 	
-	<a href="/es/axiom_of_union.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/axiom_of_parts.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 
@@ -148,22 +148,32 @@
 <div class="postbox pb_definition">
 	<p>El denominado <strong>axioma del conjunto par</strong> (también <strong>axioma de pares</strong>, <strong>axioma de par</strong>, o <strong>axioma de par no ordenado</strong>), garantiza la existencia de un conjunto cuyos elementos sólo sean dos conjuntos ya dados.</p>
 
-<script type="math/tex; mode=display">\exists Z \forall X,Y, \forall a \in U(a \in Z \longleftrightarrow U = X \vee U = Y)</script>
+<script type="math/tex; mode=display">\exists Z  \forall X,Y, \forall a \in U(a \in Z \longleftrightarrow U = X \vee U = Y)</script>
 
-<p>A este conjunto lo llamaremos <strong>conjunto par formado por $X$ e $Y$</strong>, y lo denotaremos <strong>${X,Y}$</strong>. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}’$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}’={X,Y}$.</p>
+<p>A este conjunto lo llamaremos <strong>conjunto par formado por $X$ e $Y$</strong>, y lo denotaremos <strong>${X,Y}$</strong>. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}’$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}’={X,Y}$. Así, queda probado que ${X,Y} = {Y,X}$, razón por la cual al conjunto par se le denomina “no ordenado”.</p>
 
-<p>Hay ciertos apuntes interesantes acerca de este axioma:
-\bullet Si \forall a \in Y \longrightarrow a \in X (lo cual no implica que X=Y), ó X=\emptyset ó Y=\emptyset, entonces el conjunto par ${X,Y}={X,X}=X$.
-\bullet Si X=Y=\emptyset, entonces el conjunto par {X,Y}={\emptyset,\emptyset}=\emptyset.
-\bullet card({X,Y}) = 2 \forall X,Y.</p>
+<p>Hay ciertos apuntes interesantes acerca de este axioma:</p>
 
-<p>Hasta ahora solamente</p>
+<ul>
+  <li>Si $\forall a \in Y \longrightarrow a \in X$ (lo cual no implica que X=Y), ó $X=\emptyset$ ó $Y=\emptyset$, entonces el conjunto par ${X,Y}={X,X}=X$.</li>
+  <li>Si $X=Y=\emptyset$, entonces el conjunto par {X,Y}={$\emptyset$,$\emptyset$}=$\emptyset$.</li>
+  <li>$card({X,Y}) = 2 \forall X,Y$.</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Hasta ahora solamente se ha conseguido definir dos clases de conjuntos: un conjunto sin elementos (ver axioma del conjunto vacío <a href="/es/axiom_of_void_set.html"><img src="/images/symb/definition.svg" height="40" width="40" style="vertical-align:middle" /></a>), y un conjunto formado por dos elementos (que son conjuntos). Es decir, que ahora mismo no podemos asegurar la existencia de un conjunto formado por tres elementos (por ejemplo, no podríamos decir que $\quad A</td>
+      <td>A = {X,Y,Z}$, porque el conjunto ${X,Y,Z}$ no es un par).</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
 
 
-
+    </main>
 
     <footer class="site-footer">
 
@@ -173,7 +183,7 @@
 	<a href="/plus/es/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
     <a href="/plus/es/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
-	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
+	<font color="gray" style="vertical-align:middle">&copy 2017 Mathifold</font>
 
 </div>
 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+  <meta charset="utf-8">
+
+  <title>
+    
+        Mathifold - Sistema axiomático de especificación
+    
+  </title>
+
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/topic_images.css">
+  <link rel="stylesheet" href="/css/subject_images.css">
+  <link rel="stylesheet" href="/css/symb.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <!--<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">-->
+
+
+
+  
+  <!--script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML"></script-->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+	    tex2jax: {
+	         inlineMath: [['$','$'], ['\\(','\\)']]
+	    },
+	    "HTML-CSS": {
+	         linebreaks: { automatic: true }
+	    },
+	    SVG: {
+	         linebreaks: { automatic: true }
+	    },
+		jax: ["input/TeX", "output/NativeMML", "output/HTML-CSS"],
+		extensions: ["mml2jax.js", "tex2jax.js"],
+		TeX: {
+			extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js","http://mathifold.org/js/xypic.js"]
+		}
+	});
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-60766664-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<div style="height: 90px;">
+
+	<a href="/home/es/home.html"><img src="/images/others/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+	
+	
+	
+		
+		
+		
+		<span style="font-size:35px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:35px;vertical-align:middle;">
+		<a href="/topics/es/foundations.html" style="text-decoration: none; color: black">
+		Fundamentos</a>
+		</span>
+		<span style="font-size:30px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:30px;vertical-align:middle;">
+		<a href="/subjects/es/set_theory.html" style="text-decoration: none; color: black">
+		Teoría de Conjuntos</a>
+		</span>
+		<span style="font-size:25px;vertical-align:middle;">
+		 &#187; </span>
+		<span style="font-size:25px;vertical-align:middle;">
+		<a href="/chapters/es/zermelo_fraenkel_axiomatic.html" style="text-decoration: none; color: black">
+		Axiomática de Zermelo-Fraenkel</a>
+		</span>
+	
+
+
+	<div style="float: right">
+		<a href="/search/es/search.html"><img src="/images/others/search.svg" height="40" width="40"></a>
+		<img src="/images/subjects/blank.svg" height="20" width="20">
+		
+			
+				
+				
+				
+					
+					<a href="/es/axiomatic_schema_of_separation.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+				
+			
+		
+			
+				
+				
+				
+			
+		
+	</div>
+</div>
+
+</header>
+
+
+    <main class="page-content">
+      
+
+
+
+
+
+
+	
+	
+	<a href="/es/axiom_of_void_set.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+
+
+	
+	
+	<a href="/es/axiom_of_infinity.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
+
+
+
+<div style="position: relative; height: 90px;" align="center">
+<img src="/images/symb/definition.svg" height="60" width="60" style="vertical-align:middle">
+<span style="font-size:32px;vertical-align:middle;">
+		Sistema axiomático de especificación</span>
+</div>
+
+<div class="postbox pb_definition">
+	<p>En su afán de corregir los errores de las anteriores teorías axiomáticas, Zermelo diseñó un mecanismo muy similar al de su predecesor analítico Gottlob Frege , que permite construir infinitas fórmulas que se aceptan como axiomas. Este mecanismo se conoce como “esquema axiomático” y este en concreto nos dice lo siguiente:</p>
+
+<blockquote>
+  <p>$Dados un conjunto cualquiera X y una fórmula cualquiera \phi (X,U) (de aquí en adelante, los términos “fórmula” y “propiedad”, si se refieren a un objeto, son indistinguibles), existe otro conjunto Y que tiene por elementos los elementos de X y que cumplen la propiedad \phi (X,U). Es decir, que la fórmula siguiente es un axioma:$</p>
+</blockquote>
+
+<script type="math/tex; mode=display">\quad Y \equiv \forall X,U (U \in Y \longleftrightarrow U \in X \wedge \phi(U))</script>
+
+<p>Es decir, que todo conjunto $Y$ queda caracterizado por ciertos elementos (pertenecientes a cierto conjunto) y una propiedad (una fórmula referida a un objeto).</p>
+
+<p>Ahora podemos proceder a definir ciertos conjuntos que de otra forma sería imposible definir:</p>
+
+<ul>
+  <li>El <em>conjunto intersección de $X$ e $Y$ (denotado $X \cap Y$)</em>, se define como aquel conjunto que, dados dos conjuntos $X$ e $Y$, contiene a los elementos de $X$ que también están en $Y$.</li>
+</ul>
+
+<script type="math/tex; mode=display">X \cap Y \equiv {U \in X | U \in Y}</script>
+
+<ul>
+  <li>El <em>conjunto diferencia de $X$ menos $Y$ (denotado $X \setminus Y$)</em>, se define como aquel conjunto que, dados dos conjuntos $X$ e $Y$, contiene a los elementos de $X$ que no están en $Y$.</li>
+</ul>
+
+<script type="math/tex; mode=display">X \setminus Y \equiv {U \in X | U \notin Y}</script>
+
+<ul>
+  <li>El <em>conjunto par ordenado de $a$ y $b$, denotado $(a,b)$</em>, se define como aquel conjunto que, dados dos conjuntos $A$ y $B$, tiene como primera componente un elemento $a \in A$ y como segunda componente un elemento $b \in B$. Es un conjunto par (porque tiene dos elementos), pero a diferencia del conjunto par no ordenado, se necesita un orden porque la segunda componente “necesita saber cuál es la primera componente”.</li>
+</ul>
+
+<script type="math/tex; mode=display">(a,b) \equiv \{a,\{a,b\}\},\quad a \in A,\, b \in B</script>
+
+<blockquote>
+  <p>Un apunte interesante, cuya demostración se deja como ejercicio, es que $(a,b) \in \mathcal{P} (\mathcal{P} (A \cup B))$</p>
+</blockquote>
+
+<ul>
+  <li>El <em>conjunto producto cartesiano $A$ x $B$</em>, se define como aquel conjunto que, dados dos conjuntos $A$ y $B$, contiene a todos los pares ordenados de elemenos de $A$ y de $B$ (en ese orden).</li>
+</ul>
+
+<script type="math/tex; mode=display">A x B \equiv {(a,b) | a \in A \wedge b \in B}</script>
+
+<blockquote>
+  <blockquote>
+    <p>Todos los conjuntos mencionados son únicos, según del axioma de extensionalidad.</p>
+  </blockquote>
+</blockquote>
+
+</div>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+
+<div style="height: 80px; line-height: 110px; margin-left: 5px;">
+
+	<a href="/plus/es/about.html"><img src="/images/others/about.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="/plus/es/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
+    <a href="/plus/es/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
+	<font color="gray" style="vertical-align:middle">&copy 2017 Mathifold</font>
+
+</div>
+
+</footer>
+
+
+  </body>
+
+</html>

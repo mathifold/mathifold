@@ -80,8 +80,8 @@
 </header>
 
 
-
-    <div style="position: relative;" align="center">
+    <main class="page-content">
+      <div style="position: relative;" align="center">
   <form action="/search/en/search.html" method="get">
     <input type="text" id="search-box" name="query" style="vertical-align: middle;">
     <input type="image" src="/images/others/search2.svg" alt="Submit" width="60" height="60" style="vertical-align: middle;">
@@ -98,6 +98,56 @@
   window.store = {
     
     
+      "en-visualisation-classic-spirals": {
+        "title": "Classic Spirals",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "Archimedean Spiral $\\,\\,\\,r=a\\theta$Logarithmic Spiral $\\,\\,\\,r=e^{a\\theta}$Hyperbolic Spiral $\\,\\,\\,r=\\frac{a}{\\theta}$Galileo's Spiral $\\,\\,\\,r=a-b\\theta^2$Poinsot's Spiral $\\,\\,\\,r=\\frac{a}{\\cosh(\\theta)}$Fermat's Spiral $\\,\\,\\,r=a\\sqrt{\\theta}$Cochleoid Spiral $\\,\\,\\,r=a\\frac{\\sin(\\theta)}{\\theta}$",
+        "url": "/en/visualisation_classic_spirals"
+      }
+      ,
+    
+      "en-applet-function-2d": {
+        "title": "Real Function of Two Variables",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_function_2d"
+      }
+      ,
+    
+      "en-example-sum-natural-numbers": {
+        "title": "The Sum of Natural Numbers",
+        "kind": "example",
+        "author": "",
+        "category": "en",
+        "content": "Any curious mathematician has come accross the formulaand I would bet it caused him/her both a deep shock and a terrible curiosity. As a matter of fact, such expression doesn’t fit in any way into the usual notion of convergent sum. For instance, we use to say thatsince the partial sumsget closer and closer to 2 in a way explained in detail in any Calculus course.(OK, so far it wasn’t too difficult, was it?)However, the partical sums of the natural numbers behave in quite a different wayThey grow and grow without an end in sight, so that the sum diverges. And now one comes and tells us we’re too naive and this sum is actually $-\\dfrac{1}{12}$. Amazing what a dimwit, right?Well, not so much.It’s true of course that the sum of the natural numbers diverges in the standard sense of convergence, but maybe it’s useful to look at this sum from a different angle. Let me explain this with an example.The previous sum $1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\dfrac{1}{8}+\\dfrac{1}{16}+\\cdots=2$ is actually just a particular case of a geometric sum: if $|x|&lt; 1$, how much is $1+x+x^2+x^3+x^4+\\cdots$?thus arriving to the beautiful formulaPerfect! For $x=\\dfrac{1}{2}$, we get $S=\\dfrac{1}{1-\\frac{1}{2}}=2$.But what if $|x|$ isn’t less than 1? For instance, taking $x=2$, it turns out that $1+2+4+8+16+\\cdots=-1$. That’s awful! However, it still keeps appealing to us. A boring mathematician would say    The formula $1+x+x^2+x^3+x^4+\\cdots=\\frac{1}{1-x}$ only makes sense when $|x|&lt; 1$ and it shouldn't be considered outside its validity range.While a kamikaze mathematican (I sincerely hope you all are in this class!) would say:    Taking such a cool function as $\\frac{1}{1-x}$ only within $(-1,1)$ doesn't go. It's really mind-blowing saying that $1+x+x^2+x^3+x^4+\\cdots=\\frac{1}{1-x}$ for any $x$, no matter how shocking the conclusions are!What the kamikaze mathematician has just done is what we call an analytical continuation (the concepts kamikaze and rigorous are not opposed, but rather complement each other!).Something like this is what happens with $1+2+3+4+5+\\cdots=-\\dfrac{1}{12}$.In 1859, the German mathematician Bernhard Riemann introduced the ever-ubiquitous zeta function:which, despite converging in a suitable way only for $s&gt;1$ (more precisely, for $\\text{Re}(s)&gt;1$ in the complex plane), can also be analytically continued.(Did anyone imagine it would be kindergarten stuff?)Unfortunately, in this case the process of analytical continuation is tremendously complicated… but nevertheless contains the precious gold nugget:In fact, this makes plausible our initial statement. But… may we do some trick to avoid having to do the analytical continuation of the $\\zeta$-function? Let’s see what can be done. We should proceed as in the beginning:On the other handand, evaluating at $x=-1$So we can summarize everything we have seen so far in the following accurate terms.    We don't know what the hell can mean that $1+2+3+4+5+\\cdots=-\\frac{1}{12}$, but all people willing to associate a finite sum to this series end up saying it adds up to $-\\frac{1}{12}$.And we don’t feel uncomfortable at all about this.Anyway, some boring mathematician (yes, it’s sad, they exist and are far from unique…) can tell us: ‘What’s the point in all this, if it deals with things that do not make sense’. Well, as extraordinary as it may seem, we can answer back conclusively: the expression $1+2+3+4+5+\\cdots=-\\frac{1}{12}$ has visible physical implications, for instance in areas like quantum mechanics or string theory. Specifically, we can refer to the Casimir effect and the renormalization of zero-point energy, or to the computation of the critical dimension in bosonic string theory. Of course, these phenomena are difficult to explain… but not impossible to understand. Cheer up! All the beauty in the cosmos is open to the good mathematician.",
+        "url": "/en/example_sum_natural_numbers"
+      }
+      ,
+    
+      "en-applet-vector-field-3d": {
+        "title": "Vector Field in Space",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_vector_field_3d"
+      }
+      ,
+    
+      "en-applet-vector-field-2d": {
+        "title": "Vector Field in the Plane",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_vector_field_2d"
+      }
+      ,
+    
       "en-prob-domino-tiling": {
         "title": "Tiling with dominoes",
         "kind": "problem",
@@ -105,6 +155,36 @@
         "category": "en",
         "content": "Can we tile a $10\\times 10$ board with the top left and right bottom squares removed with $2\\times 1$ dominoes? If not, why?            \tAnswer\t...",
         "url": "/en/prob_domino_tiling"
+      }
+      ,
+    
+      "en-applet-integration-limit-sums": {
+        "title": "Integration as Limit of Sums",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_integration_limit_sums"
+      }
+      ,
+    
+      "en-applet-visual-simplex-2": {
+        "title": "Simplex Method with 2 variables",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_visual_simplex_2"
+      }
+      ,
+    
+      "en-applet-poisson-kernel": {
+        "title": "Poisson Kernel",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_poisson_kernel"
       }
       ,
     
@@ -153,7 +233,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Proof that $\\displaystyle\\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$ (Suma aritmética) using mathematical induction. SolutionWe need to follow the steps in order to apply mathematical induction.1. $n=1$. Then: the result is 1 (It is a valid result for $n=1$).2. Inductive step. We assume that the sum is true for $n=k$.  $\\displaystyle\\sum^{n=k}_{i=1} i = \\frac{k·(k+1)}{2}$(Hypotesis) Therefore, $k$ is replaced by $k+1$, and the sum is still true: $\\displaystyle\\sum^{n=k+1}_{i=1} i = \\frac{(k+1)·(k+1+1)}{2} = \\frac{(k+1)·(k+2)}{2}$3. We have to prove that the hypotesis is true: $\\dfrac{k·(k+1)}{2} + (k+1) = \\dfrac{k·(k+1) + 2·(k+1)}{2} = \\dfrac{(k+1)·(k+2)}{2}$It is proved.",
+        "content": "Proof that $\\displaystyle\\sum^n_{i=1} i = \\frac{n·(n+1)}{2}$ (Arithmetic sum) using mathematical induction. SolutionWe need to follow the steps in order to apply mathematical induction.1. $n=1$. Then: the result is 1 (It is a valid result for $n=1$).2. Inductive hypothesis: we assume that the sum is true for $n=k$.  $\\displaystyle\\sum^{n=k}_{i=1} i = \\frac{k·(k+1)}{2}$(Inductive step) Then, when $k$ is replaced by $k+1$, the summing formula must still be true: $\\displaystyle\\sum^{n=k+1}_{i=1} i = \\frac{(k+1)·[(k+1)+1]}{2} = \\frac{(k+1)·(k+2)}{2}$3. We have to prove that the inductive step is true: $\\dfrac{k·(k+1)}{2} + (k+1) = \\dfrac{k·(k+1) + 2·(k+1)}{2} = \\dfrac{(k+1)·(k+2)}{2}$It is proved.",
         "url": "/en/problem_mathematicalproofs3"
       }
       ,
@@ -163,7 +243,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Proof that $\\displaystyle\\sum^n_{r=1} a·r^n = a·\\frac{1 - r^{n+1}}{1-r}$ (Geometric sum). $a$ is constant and $r$ the ratio. SolutionLike in the arithmetic sum, let the sum be equal to $S$. The sum would be done in the following way:$\\displaystyle S = \\sum^n_{r=1} a·r^n = a + ar + ar^2 + ar^3 + ar^4 + ... + ar^n = a·(1 + r + r^2 + r^3 + ... + r^n)$ Then, we multiply $S$ times the ratio $r$: $S·r = a·(r + r^2 + r^3 + r^4 + ... + r^{n+1})$After that, we subtract $S·r$ to $S$: $S - S·r = 1 - r^{n+1}$We get $S$: $S = a·\\frac{1 - r^{n+1}}{1-r}$. Therefore, it is proved.",
+        "content": "Proof that $\\displaystyle\\sum^n_{r=1} a·r^n = a·\\frac{1 - r^{n+1}}{1-r}$ (Geometric sum). $a$ is constant and $r$ the ratio. SolutionLike in the arithmetic sum, let the sum be equal to $S$. The sum would be done in the following way:$\\displaystyle S = \\sum^n_{r=1} a·r^n = a + ar + ar^2 + ar^3 + ar^4 + ... + ar^n = a·(1 + r + r^2 + r^3 + ... + r^n)$ Then, we multiply $S$ times the ratio $r$: $S·r = a·(r + r^2 + r^3 + r^4 + ... + r^{n+1})$After that, we subtract $S·r$ to $S$: $S - S·r = a·(1 - r^{n+1})$We get $S$: $S = a·\\frac{1 - r^{n+1}}{1-r}$. Therefore, it is proved.",
         "url": "/en/problem_mathematicalproofs2"
       }
       ,
@@ -313,7 +393,7 @@
         "kind": "problem",
         "author": "",
         "category": "en",
-        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}}$SolutionThe limit is of indeterminate form $\\dfrac{0}{0}$There is more than one way to solve the problem:1. Using the conjugate$\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})}$Then, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x}){(3-\\sqrt{x})·(3+\\sqrt{x})} = \\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}$Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}= \\lim_{x\\longrightarrow 9} (3+\\sqrt{x})= 6$    2. Using L'Hôpital's rule$\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9} \\dfrac{-1}{\\frac{-1}{2·\\sqrt{x}}}=\\lim_{x\\longrightarrow 9}2·\\sqrt{x} = 2·3 = 6 $",
+        "content": "Compute the limit: $\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}}$SolutionThe limit is of indeterminate form $\\dfrac{0}{0}$There is more than one way to solve the problem:1. Using the conjugate$\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})}$Then, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(3-\\sqrt{x})·(3+\\sqrt{x})} = \\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}$Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, $\\displaystyle\\lim_{x\\longrightarrow 9}\\dfrac{(9-x)·(3+\\sqrt{x})}{(9-x)}= \\lim_{x\\longrightarrow 9} (3+\\sqrt{x})= 6$    2. Using L'Hôpital's rule$\\displaystyle\\lim_{x\\longrightarrow 9} \\dfrac{9-x}{3-\\sqrt{x}} =\\lim_{x\\longrightarrow 9} \\dfrac{-1}{\\frac{-1}{2·\\sqrt{x}}}=\\lim_{x\\longrightarrow 9}2·\\sqrt{x} = 2·3 = 6 $",
         "url": "/en/problem_limits4"
       }
       ,
@@ -379,7 +459,7 @@
       ,
     
       "en-applet-monge-theorem": {
-        "title": "Monge&#39;s Theorem",
+        "title": "Monge's Theorem",
         "kind": "applet",
         "author": "",
         "category": "en",
@@ -548,6 +628,26 @@
       }
       ,
     
+      "en-visualisation-euler-line": {
+        "title": "Euler's Line",
+        "kind": "visualisation",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/visualisation_euler_line"
+      }
+      ,
+    
+      "en-example-ceva": {
+        "title": "Ceva's Theorem",
+        "kind": "example",
+        "author": "",
+        "category": "en",
+        "content": "Let’s see some checks / applications of Ceva’s TheoremCentroid…Incenter…Orthocenter…",
+        "url": "/en/example_ceva"
+      }
+      ,
+    
       "en-applet-polarity2": {
         "title": "Polarity",
         "kind": "applet",
@@ -568,13 +668,13 @@
       }
       ,
     
-      "en-visualisation-euler-line": {
-        "title": "Euler&#39;s Line",
-        "kind": "visualisation",
+      "en-theorem-ceva": {
+        "title": "Ceva's Theorem",
+        "kind": "theorem",
         "author": "",
         "category": "en",
-        "content": "",
-        "url": "/en/visualisation_euler_line"
+        "content": "Given a triangle $ABC$, and points $D$, $E$, and $F$ on the sides $BC$, $CA$, and $AB$ respectively, then the segments $AD$, $BE$ and $CF$ are concurrent if and only if$$\\dfrac{AF}{FB}\\dfrac{BD}{DC}\\dfrac{CE}{EA}=1$$\tProof\t...",
+        "url": "/en/theorem_ceva"
       }
       ,
     
@@ -749,7 +849,7 @@
       ,
     
       "en-applet-brianchon": {
-        "title": "Brianchon&#39;s Theorem",
+        "title": "Brianchon's Theorem",
         "kind": "applet",
         "author": "",
         "category": "en",
@@ -809,7 +909,7 @@
       ,
     
       "en-applet-pascal": {
-        "title": "Pascal&#39;s Theorem",
+        "title": "Pascal's Theorem",
         "kind": "applet",
         "author": "",
         "category": "en",
@@ -835,6 +935,16 @@
         "category": "en",
         "content": "",
         "url": "/en/applet_linear_first_order_dynamical_system"
+      }
+      ,
+    
+      "en-applet-derivative-intuitive-concept": {
+        "title": "Concept of Derivative",
+        "kind": "applet",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/applet_derivative_intuitive_concept"
       }
       ,
     
@@ -868,6 +978,16 @@
       }
       ,
     
+      "en-exposition-algebraic-topology": {
+        "title": "The goal of Algebraic Topology",
+        "kind": "exposition",
+        "author": "",
+        "category": "en",
+        "content": "",
+        "url": "/en/exposition_algebraic_topology"
+      }
+      ,
+    
       "en-visualisation-centroid": {
         "title": "Centroid",
         "kind": "visualisation",
@@ -875,6 +995,16 @@
         "category": "en",
         "content": "",
         "url": "/en/visualisation_centroid"
+      }
+      ,
+    
+      "en-definition-centroid": {
+        "title": "Centroid",
+        "kind": "definition",
+        "author": "",
+        "category": "en",
+        "content": "A median is the segment joining a vertex of a triangle to the midpoint of the opposing sideThe centroid of a triangle is the intersection of the three medians of the triangle            Why do the three medians intersect at a single point? This needs some proof; we’ll come back with Ceva’s Theorem",
+        "url": "/en/definition_centroid"
       }
       ,
     
@@ -896,6 +1026,16 @@
         "content": "$(a+b)^n=\\binom{n}{0}a^n+\\binom{n}{1}a^{n-1}b+\\binom{n}{2}a^{n-1}b^2+\\cdots+\\binom{n}{n-2}a^2b^{n-2}+\\binom{n}{n-1}ab^{n-1}+\\binom{n}{n}b^n$\tProof\tTo do",
         "url": "/en/theorem_binomial_expansion"
       }
+      ,
+    
+      "en-definition-triangle": {
+        "title": "Triangle",
+        "kind": "definition",
+        "author": "",
+        "category": "en",
+        "content": "A triangle is a polygon with three sides. It is determined by three vertices that are non-collinear (not lying on the same line). It is customary to denote the vertices with capital letters and each opposite side with the respective lowercase letters.            ",
+        "url": "/en/definition_triangle"
+      }
       
     
   };
@@ -903,7 +1043,7 @@
 <script src="/js/lunr.min.js"></script>
 <script src="/js/search.js"></script>
 
-
+    </main>
 
     <footer class="site-footer">
 
@@ -913,7 +1053,7 @@
 	<a href="/plus/en/manual.html"><img src="/images/others/manual.svg" height="40" width="40" style="vertical-align:middle"></a>
     <a href="/plus/en/contribution.html"><img src="/images/others/contribution.svg" height="40" width="40" style="vertical-align:middle"></a>
 	<a href="mailto:mathifold@gmail.com"><img src="/images/others/mail.svg" height="40" width="40" style="vertical-align:middle"></a>
-	<font color="gray" style="vertical-align:middle">&copy 2016 Mathifold</font>
+	<font color="gray" style="vertical-align:middle">&copy 2017 Mathifold</font>
 
 </div>
 
