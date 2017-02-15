@@ -6,7 +6,7 @@
 
   <title>
     
-        Mathifold - Cocientes Topológicos y Aplicaciones de Compacto a Hausdorff
+        Mathifold - La suspensión de una esfera
     
   </title>
 
@@ -104,7 +104,7 @@
 				
 				
 					
-					<a href="/es/counterexample_quotient_map_compact_hausdorff.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_suspension_sphere.html"><img src="/images/others/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -130,43 +130,53 @@
 
 	
 	
-	<a href="/es/lemma_quotient_map_compact_hausdorff.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/counterexample_quotient_map_compact_hausdorff.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
-
-	
-	
-	<a href="/es/problem_suspension_sphere.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 
 <div style="position: relative; height: 90px;" align="center">
-<img src="/images/symb/counterexample.svg" height="60" width="60" style="vertical-align:middle">
+<img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		Cocientes Topológicos y Aplicaciones de Compacto a Hausdorff</span>
+		La suspensión de una esfera</span>
 </div>
 
-<div class="postbox pb_counterexample">
-	<p>La condición de compacidad es clave en el resultado anterior; si la obviamos, podemos no tener un cociente topológico.</p>
+<div class="postbox pb_problem">
+	<div>
 
-<p>Sea $X=[0,\infty)$ la semirrecta real positiva y los dos espacios siguientes</p>
+Demostrar que la <i>suspensión</i> de $ \mathbb{S} ^n $ es $ \mathbb{S}^{n+1} $ para $ n \geqslant 0 $
 
-<p>$Y_1=\bigcup_{n\geq 1} \left\{(x,y) \vert \left(x-\frac{1}{n}\right)^2+y^2=\frac{1}{n^2}\right\}\subset \mathbb{R}^2$ el <em>pendiente hawaiano</em></p>
+</div>
+<p><br /></p>
 
-<div class="resource img">
-            <img src="/images/images/hawaiian_earring.svg" /><a class="ori" href="/images/codes/hawaiian_earring.ipe"></a></div>
+<div class="bcblue boxdissap">
+Solución
+</div>
 
-<p>$Y_2=\bigcup_{n\geq 1} \left\{(x,y) \vert (x-n)^2+y^2=n^2\right\}\subset \mathbb{R}^2$</p>
+<div class="dissap">
 
-<div class="resource img">
-            <img src="/images/images/increasing_wedge_circles.svg" /><a class="ori" href="/images/codes/increasing_wedge_circles.ipe"></a></div>
+Se define la suspensión de un espacio topológico como $ S(X) = \dfrac{X\times I}{\sim} $ donde:
 
-<p>Consideramos las aplicaciones</p>
 
-<p>$f_1:X\longrightarrow Y_1,\,x\longmapsto\left(\frac{1}{n}(1+\cos(2\pi x)),\frac{1}{n}\sin(2\pi x)\right)\,x\in[n-1,n],\,n\in\mathbb{N}\smallsetminus 0$</p>
+		$$ (x,t) \sim (x',t') \Longleftrightarrow 
+		\left\{
+		\begin{array}{cl}
+		(x,t) = (x',t') &amp; , \mathrm{\acute{o}} \\ 
+		t=t'=0 &amp; x,x' \in X, \mathrm{\acute{o}} \\ 
+		t=t'=1 &amp; x,x' \in X
+		\end{array}  \right.  $$
 
-<p>$f_2:X\longrightarrow Y_2,\,x\longmapsto(n(1+\cos(2\pi x)),n\sin(2\pi x))\,x\in[n-1,n],\,n\in\mathbb{N}\smallsetminus 0$</p>
 
-<p>Al identificar los puntos con igual imagen, ambas aplicaciones inducen la relación $a\sim b\Longleftrightarrow a,b\in \mathbb{N}\subset X$. Si $f_1$ y $f_2$ fuesen cocientes topológicos, el espacio cociente $X/\sim$ (que también se denota $X/\mathbb{N}$) sería homeomorfo a $Y_1$ e $Y_2$. Como $Y_1$ e $Y_2$ no son homeomorfos (pues $Y_1$ es compacto e $Y_2$ no), al menos una de las aplicaciones no es cociente topológico. De hecho ninguna lo es y tenemos en realidad tres espacios distintos, porque $X/\mathbb{N}$ no es $\text{IAN}$ pero $Y_1$ e $Y_2$ sí lo son, por ser subconjuntos de $\mathbb{R}^2$.</p>
+	Para $ n \geqslant 1 $ vamos a considerar $ \mathbb{S}^{n+1} = \{ (x_1 , \ldots , x_{n+1} , t) \in\mathbb{R}^{n+2}\mid x_1 ^2 + \cdots + x_{n+1} ^2 + \left( t-\frac{1}{2}\right) ^2 = \left(\frac{1}{2} \right)^2  \} $ y definimos la siguiente aplicación:
+	
+		$$ \begin{array}{cccc}
+		q: &amp; \mathbb{S}^n \times I &amp; \longrightarrow &amp; \mathbb{S} ^{n+1} \\ 
+		&amp; (x,t) &amp; \longmapsto &amp; (\lambda _t x, t)
+		\end{array} \text{ donde } \lambda_t = \sqrt{t(1-t)} $$
+	
+	Esta aplicación además de ser continua y sobreyectiva, es también abierta por ir de un compacto a un Hausdorff. Al igual que en el ejecicio anterior, $ q $ es compatible con la relación de equivalencia y por lo tanto induce un homeomorfismo entre $ S(\mathbb{S}^n) $ y $ \mathbb{S}^{n+1} $. En el caso de $ n = 0 $ considerando $ \mathbb{S}^0 = \{-1,1\}$ la fórmula se mantiene igual.
+
+</div>
 
 
 </div>
