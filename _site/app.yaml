@@ -1,5 +1,3 @@
-application: high-acre-87013
-version: 2
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -14,4 +12,3 @@ handlers:
 - url: /([^\.]*)$
   static_files: _site/\1/index.html
   upload: _site/.*$
-
