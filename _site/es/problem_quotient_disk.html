@@ -6,7 +6,7 @@
 
   <title>
     
-        Mathifold - La suspensión de una esfera
+        Mathifold - Cociente de un disco con su borde
     
   </title>
 
@@ -104,7 +104,7 @@
 				
 				
 					
-					<a href="/es/problem_suspension_sphere.html"><img src="/images/others/es.svg" height="40" width="40"></a>
+					<a href="/es/problem_quotient_disk.html"><img src="/images/others/es.svg" height="40" width="40"></a>
 				
 			
 		
@@ -130,25 +130,21 @@
 
 	
 	
-	<a href="/es/counterexample_quotient_map_compact_hausdorff.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
+	<a href="/es/problem_suspension_sphere.html"><img src="/images/others/previous.svg" style="position: fixed; left: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
-
-	
-	
-	<a href="/es/problem_quotient_disk.html"><img src="/images/others/next.svg" style="position: fixed; right: 30px; top: 50%; width: 40px; height: 40px;"></a>
 
 
 
 <div style="position: relative; height: 90px;" align="center">
 <img src="/images/symb/problem.svg" height="60" width="60" style="vertical-align:middle">
 <span style="font-size:32px;vertical-align:middle;">
-		La suspensión de una esfera</span>
+		Cociente de un disco con su borde</span>
 </div>
 
 <div class="postbox pb_problem">
 	<div>
 
-Demostrar que la <i>suspensión</i> de $ \mathbb{S} ^n $ es $ \mathbb{S}^{n+1} $ para $ n \geqslant 0 $
+Demostrar que $  \dfrac{D^n}{\partial D^n} \text{ es homemomorfo a }  \mathbb{S}^n $
 
 </div>
 <p><br /></p>
@@ -159,29 +155,77 @@ Solución
 
 <div class="dissap">
 
-Se define la suspensión de un espacio topológico como $ S(X) = \dfrac{X\times I}{\sim} $ donde:
+Sea $ D^n = \{x\in\mathbb{R}^n :\,\parallel x\parallel \leqslant 1 \} $, vamos a considerar las siguientes aplicaciones continuas:
 
-
-		$$ (x,t) \sim (x',t') \Longleftrightarrow 
-		\left\{
-		\begin{array}{cl}
-		(x,t) = (x',t') &amp; , \mathrm{\acute{o}} \\ 
-		t=t'=0 &amp; x,x' \in X, \mathrm{\acute{o}} \\ 
-		t=t'=1 &amp; x,x' \in X
-		\end{array}  \right.  $$
-
-
-	Para $ n \geqslant 1 $ vamos a considerar $ \mathbb{S}^{n+1} = \{ (x_1 , \ldots , x_{n+1} , t) \in\mathbb{R}^{n+2}\mid x_1 ^2 + \cdots + x_{n+1} ^2 + \left( t-\frac{1}{2}\right) ^2 = \left(\frac{1}{2} \right)^2  \} $ y definimos la siguiente aplicación:
+	$$ 
+		D^n \smallsetminus \partial D^n \stackrel{h}{\longrightarrow}\mathbb{R}^n \stackrel{p}{\longrightarrow} \mathbb{S}^n \smallsetminus \{a_N \} 
+	$$
 	
-		$$ \begin{array}{cccc}
-		q: &amp; \mathbb{S}^n \times I &amp; \longrightarrow &amp; \mathbb{S} ^{n+1} \\ 
-		&amp; (x,t) &amp; \longmapsto &amp; (\lambda _t x, t)
-		\end{array} \text{ donde } \lambda_t = \sqrt{t(1-t)} $$
+	Definidas por:
 	
-	Esta aplicación además de ser continua y sobreyectiva, es también abierta por ir de un compacto a un Hausdorff. Al igual que en el ejecicio anterior, $ q $ es compatible con la relación de equivalencia y por lo tanto induce un homeomorfismo entre $ S(\mathbb{S}^n) $ y $ \mathbb{S}^{n+1} $. En el caso de $ n = 0 $ considerando $ \mathbb{S}^0 = \{-1,1\}$ la fórmula se mantiene igual.
+	$$ 
+		h(x) = \dfrac{x}{1-\parallel x\parallel}   
+	$$
+	
+	<div class="resource img">
+            <img src="/images/images/disk_exploit.svg" /><a class="ori" href="/images/codes/disk_exploit.ipe"></a></div>
+	
+	$$
+		 p(u) = \left( \dfrac{2u_1}{\parallel u\parallel ^2 + 1},\ldots ,\dfrac{2u_n}{\parallel u\parallel ^2 + 1}, \dfrac{\parallel u\parallel ^2}{\parallel u\parallel ^2 + 1}\right)  
+	$$
+	
+	<div class="resource img">
+            <img src="/images/images/Inverse-Stereographic.svg" /><a class="ori" href="/images/codes/Inverse-Stereographic.ipe"></a></div>
+			
+			
+	<p>
+		Donde $ a_N = (0,\ldots ,0,1) $ es el polo norte y $ p $ la inversa de la proyección estereográfica.
+	<p />
+	
+	Ahora consideramos la aplicación:
+	
+	$$ 
+		f:\, D^n \longrightarrow \mathbb{S}^n \text{ donde } f(x) = \left\lbrace\begin{array}{cl}
+		p\circ h(x) &amp; , x\in D^n \smallsetminus \partial D^n \\ 
+		a_N &amp; , x\in\partial D^n
+		\end{array}  \right.  
+	$$
+	
+	<p>
+		La cual es claramente continua en $  D^n \smallsetminus \partial D^n $, así que vamos a comprobar que también es continua en $ x_0 \in \partial D^n $.
+	<p />
+	
+	Sea $ (x_k)_{k\in\mathbb{N}} $ una sucesión en $  D^n \smallsetminus \partial D^n $ tal que $ x_k \stackrel{k\rightarrow \infty}{\longrightarrow} x_0$, entonces la sucesión $ (a_k)_{k\in\mathbb{N}} = (h(x_k))_{k\in\mathbb{N}}$ cumple que:
+	
+	$$
+		\parallel a_k\parallel = \dfrac{\parallel x \parallel}{1-\parallel x\parallel} \stackrel{k\rightarrow \infty}{\longrightarrow} - \infty 
+	$$
+	
+	Y realizando los pertinentes cambios de variable obtenemos:
+	
+	$$
+		\lim_{k\rightarrow\infty} f(x_k) = \lim_{\parallel u\parallel\rightarrow\infty} p(u) = a_N 
+	$$
+	
+	En resumidas cuentas, $ f $ es continua y suprayectiva, además por tener dominio compacto e imagen Hausdorff, la aplicación es cerrada, es decir, $ f $ es un cociente.
+	
+	$$ 
+		\begin{array}{ccc}
+		D^n &amp; \stackrel{f}{\longrightarrow} &amp; \mathbb{S} ^n \\ 
+		q\downarrow &amp; \nearrow &amp;  \\ 
+		\dfrac{D^n}{\partial D^n}&amp;  &amp; 
+		\end{array}  
+	$$
+	
+	Por ser $ f $ compatible con $ q $ e inyectiva en clases, induce un homeomorfismo $ \tilde{f} $ entre los espacios que queriamos.
+	
+&lt;/div&gt;
 
-</div>
 
+
+
+
+</p></p></div>
 
 </div>
 

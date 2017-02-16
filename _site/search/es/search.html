@@ -98,6 +98,16 @@
   window.store = {
     
     
+      "es-problem-quotient-disk": {
+        "title": "Cociente de un disco con su borde",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Demostrar que $  \\dfrac{D^n}{\\partial D^n} \\text{ es homemomorfo a }  \\mathbb{S}^n $SoluciónSea $ D^n = \\{x\\in\\mathbb{R}^n :\\,\\parallel x\\parallel \\leqslant 1 \\} $, vamos a considerar las siguientes aplicaciones continuas:\t$$ \t\tD^n \\smallsetminus \\partial D^n \\stackrel{h}{\\longrightarrow}\\mathbb{R}^n \\stackrel{p}{\\longrightarrow} \\mathbb{S}^n \\smallsetminus \\{a_N \\} \t$$\t\tDefinidas por:\t\t$$ \t\th(x) = \\dfrac{x}{1-\\parallel x\\parallel}   \t$$\t\t            \t\t$$\t\t p(u) = \\left( \\dfrac{2u_1}{\\parallel u\\parallel ^2 + 1},\\ldots ,\\dfrac{2u_n}{\\parallel u\\parallel ^2 + 1}, \\dfrac{\\parallel u\\parallel ^2}{\\parallel u\\parallel ^2 + 1}\\right)  \t$$\t\t            \t\t\t\t\t\t\t\t\tDonde $ a_N = (0,\\ldots ,0,1) $ es el polo norte y $ p $ la inversa de la proyección estereográfica.\t\t\tAhora consideramos la aplicación:\t\t$$ \t\tf:\\, D^n \\longrightarrow \\mathbb{S}^n \\text{ donde } f(x) = \\left\\lbrace\\begin{array}{cl}\t\tp\\circ h(x) &amp; , x\\in D^n \\smallsetminus \\partial D^n \\\\ \t\ta_N &amp; , x\\in\\partial D^n\t\t\\end{array}  \\right.  \t$$\t\t\t\tLa cual es claramente continua en $  D^n \\smallsetminus \\partial D^n $, así que vamos a comprobar que también es continua en $ x_0 \\in \\partial D^n $.\t\t\tSea $ (x_k)_{k\\in\\mathbb{N}} $ una sucesión en $  D^n \\smallsetminus \\partial D^n $ tal que $ x_k \\stackrel{k\\rightarrow \\infty}{\\longrightarrow} x_0$, entonces la sucesión $ (a_k)_{k\\in\\mathbb{N}} = (h(x_k))_{k\\in\\mathbb{N}}$ cumple que:\t\t$$\t\t\\parallel a_k\\parallel = \\dfrac{\\parallel x \\parallel}{1-\\parallel x\\parallel} \\stackrel{k\\rightarrow \\infty}{\\longrightarrow} - \\infty \t$$\t\tY realizando los pertinentes cambios de variable obtenemos:\t\t$$\t\t\\lim_{k\\rightarrow\\infty} f(x_k) = \\lim_{\\parallel u\\parallel\\rightarrow\\infty} p(u) = a_N \t$$\t\tEn resumidas cuentas, $ f $ es continua y suprayectiva, además por tener dominio compacto e imagen Hausdorff, la aplicación es cerrada, es decir, $ f $ es un cociente.\t\t$$ \t\t\\begin{array}{ccc}\t\tD^n &amp; \\stackrel{f}{\\longrightarrow} &amp; \\mathbb{S} ^n \\\\ \t\tq\\downarrow &amp; \\nearrow &amp;  \\\\ \t\t\\dfrac{D^n}{\\partial D^n}&amp;  &amp; \t\t\\end{array}  \t$$\t\tPor ser $ f $ compatible con $ q $ e inyectiva en clases, induce un homeomorfismo $ \\tilde{f} $ entre los espacios que queriamos.\t&lt;/div&gt;",
+        "url": "/es/problem_quotient_disk"
+      }
+      ,
+    
       "es-problem-suspension-sphere": {
         "title": "La suspensión de una esfera",
         "kind": "problem",
@@ -453,7 +463,7 @@
         "kind": "problem",
         "author": "",
         "category": "es",
-        "content": "Encontrar un cociente topológico $q:(X,T)\\to (X',T')$ que no sea abierto ni cerradoSolución...",
+        "content": "Encontrar un cociente topológico $q:(X,T)\\to (X',T')$ que no sea abierto ni cerradoSolución\tConsideramos en $ \\mathbb{R} $ la relación definida por:\t$$ \t\tx \\sim y \\Longleftrightarrow \\left\\lbrace \\begin{array}{c}\t\tx=y \\\\ \t\t\\acute{o} \\\\ \t\tx,y \\in (0,2]\t\t\\end{array} \\right.\t$$\t\t            \t\t\t\t\tVeamos que $ \\pi : \\mathbb{R} \\longrightarrow \\dfrac{\\mathbb{R}}{\\sim} $ no es ni abierta ni cerrada:\t\t\t$ \\bullet $ Consideramos el abierto $ U = (0,1) $ y observamos que $ \\pi (U) $ no es abierto, ya que $ \\pi ^{-1} \\circ\\pi (U) = (0,2]$ no es abierto.\t\t            \t\t$ \\bullet $ Del mismo modo consideramos el cerrado $ C = [1,2] $ y observamos que $ \\pi (C) $ no es cerrado, ya que $ \\pi ^{-1} \\circ\\pi (C) = (0,2]$ no es cerrado.\t\t            ",
         "url": "/es/problem_quotient_map_not_open_closed"
       }
       ,
