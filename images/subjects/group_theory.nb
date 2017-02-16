@@ -1,0 +1,343 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     14787,        334]
+NotebookOptionsPosition[     14356,        314]
+NotebookOutlinePosition[     14699,        329]
+CellTagsIndexPosition[     14656,        326]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"EdgeForm", "[", 
+      RowBox[{"{", 
+       RowBox[{"Black", ",", 
+        RowBox[{"Thickness", "[", "0.01", "]"}]}], "}"}], "]"}], ",", 
+     RowBox[{"Specularity", "[", 
+      RowBox[{"White", ",", "5"}], "]"}], ",", 
+     RowBox[{"RGBColor", "[", 
+      RowBox[{"0.3", ",", "0.3", ",", "0.1", ",", "0.9"}], "]"}], ",", 
+     RowBox[{"PolyhedronData", "[", 
+      RowBox[{"\"\<Icosahedron\>\"", ",", "\"\<Faces\>\""}], "]"}]}], "}"}], 
+   ",", 
+   RowBox[{"Lighting", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<Spot\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "10"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Pi", "/", "2"}], ",", "300"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Spot\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"10", ",", "0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Pi", "/", "2"}], ",", "300"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Spot\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "10"}], ",", "0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Pi", "/", "2"}], ",", "300"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Spot\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "10", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Pi", "/", "2"}], ",", "300"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Spot\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", 
+            RowBox[{"-", "10"}], ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Pi", "/", "2"}], ",", "300"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Spot\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", 
+            RowBox[{"-", "10"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Pi", "/", "2"}], ",", "300"}], "}"}]}], "}"}]}], "}"}]}], 
+   ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.616154835253643*^9, 3.6161548413319907`*^9}, {
+  3.6161548834013968`*^9, 3.616154924348739*^9}, {3.6161549659371176`*^9, 
+  3.6161549708633995`*^9}, {3.616155010112644*^9, 3.616155040837402*^9}, {
+  3.616156355372965*^9, 3.616156366770617*^9}, {3.6161564172975073`*^9, 
+  3.6161564722006474`*^9}, {3.6161565056555605`*^9, 3.6161565371843643`*^9}, {
+  3.616156604332205*^9, 3.6161566116386228`*^9}, {3.6161566587563176`*^9, 
+  3.616156660691428*^9}, {3.6161567193007803`*^9, 3.6161568081688633`*^9}, {
+  3.6161568924486837`*^9, 3.616156987801138*^9}, {3.6161571473282623`*^9, 
+  3.6161573598154163`*^9}, {3.616157405785045*^9, 3.616157470667756*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {RGBColor[0.3, 0.3, 0.1], Opacity[0.9], EdgeForm[{GrayLevel[0], Thickness[
+   0.01]}], Specularity[
+    GrayLevel[1], 5], 
+   GraphicsComplex3DBox[
+    NCache[{{0, 0, (-5) (50 - 10 5^Rational[1, 2])^Rational[-1, 2]}, {
+      0, 0, 5 (50 - 10 5^Rational[1, 2])^
+        Rational[-1, 2]}, {-(2/(5 - 5^Rational[1, 2]))^Rational[1, 2], 
+       0, -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {(2/(5 - 5^
+        Rational[1, 2]))^Rational[1, 2], 0, (10 - 2 5^Rational[1, 2])^
+       Rational[-1, 2]}, {
+      Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+        5^Rational[1, 2]), 
+       Rational[-1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+      Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+        5^Rational[1, 2]), Rational[
+       1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+      Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+        5^Rational[1, 2]), Rational[-1, 2], (10 - 2 5^Rational[1, 2])^
+       Rational[-1, 2]}, {
+      Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+        5^Rational[1, 2]), Rational[1, 2], (10 - 2 5^Rational[1, 2])^
+       Rational[-1, 2]}, {
+      Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+        5^Rational[1, 2]), 
+       Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+        Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+      Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+        5^Rational[1, 2]), 
+       Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+        Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+      Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+        5^Rational[1, 2]), 
+       Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+        Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+      Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+        5^Rational[1, 2]), 
+       Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+        Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}}, {{
+      0, 0, -0.9510565162951536}, {
+      0, 0, 0.9510565162951536}, {-0.85065080835204, 
+       0, -0.42532540417601994`}, {
+      0.85065080835204, 0, 0.42532540417601994`}, {
+      0.6881909602355868, -0.5, -0.42532540417601994`}, {0.6881909602355868, 
+      0.5, -0.42532540417601994`}, {-0.6881909602355868, -0.5, 
+      0.42532540417601994`}, {-0.6881909602355868, 0.5, 
+      0.42532540417601994`}, {-0.2628655560595668, -0.8090169943749475, \
+-0.42532540417601994`}, {-0.2628655560595668, 
+      0.8090169943749475, -0.42532540417601994`}, {
+      0.2628655560595668, -0.8090169943749475, 0.42532540417601994`}, {
+      0.2628655560595668, 0.8090169943749475, 0.42532540417601994`}}], 
+    Polygon3DBox[{{2, 12, 8}, {2, 8, 7}, {2, 7, 11}, {2, 11, 4}, {2, 4, 12}, {
+     5, 9, 1}, {6, 5, 1}, {10, 6, 1}, {3, 10, 1}, {9, 3, 1}, {12, 10, 8}, {8, 
+     3, 7}, {7, 9, 11}, {11, 5, 4}, {4, 6, 12}, {5, 11, 9}, {6, 4, 5}, {10, 
+     12, 6}, {3, 8, 10}, {9, 7, 3}}]]},
+  AutomaticImageSize->True,
+  Boxed->False,
+  ImageSize->{386.8684649060219, 386.81462471646813`},
+  Lighting->NCache[{{"Spot", 
+      GrayLevel[1], {{0, 0, 10}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{10, 0, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{-10, 0, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{0, 10, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{0, -10, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{0, 0, -10}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}}, {{
+     "Spot", 
+      GrayLevel[1], {{0, 0, 10}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{10, 0, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{-10, 0, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{0, 10, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{0, -10, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+     "Spot", 
+      GrayLevel[1], {{0, 0, -10}, {0, 0, 0}}, {1.5707963267948966`, 300}}}],
+  ViewPoint->{1.6673827714715204`, -2.757488145510848, 1.032518193915775},
+  ViewVertical->{-0.13392206637006362`, -0.9917562473213479, 
+   0.5233797869519793}]], "Output",
+ CellChangeTimes->{
+  3.6161566127046833`*^9, 3.6161566616714845`*^9, {3.6161567243750706`*^9, 
+   3.6161568090939164`*^9}, {3.616156900032118*^9, 3.6161569530611506`*^9}, 
+   3.6161569885811825`*^9, {3.6161571482523155`*^9, 3.616157251991249*^9}, {
+   3.6161573009100466`*^9, 3.616157360777471*^9}, {3.616157413879508*^9, 
+   3.616157471638812*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<icos.jpg\>\"", ",", 
+   Graphics3DBox[
+    {RGBColor[0.3, 0.3, 0.1], Opacity[0.9], EdgeForm[{GrayLevel[0], Thickness[
+     0.01]}], Specularity[
+      GrayLevel[1], 5], 
+     GraphicsComplex3DBox[
+      NCache[{{0, 0, (-5) (50 - 10 5^Rational[1, 2])^Rational[-1, 2]}, {
+        0, 0, 5 (50 - 10 5^Rational[1, 2])^
+          Rational[-1, 2]}, {-(2/(5 - 5^Rational[1, 2]))^Rational[1, 2], 
+         0, -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {(2/(5 - 5^
+          Rational[1, 2]))^Rational[1, 2], 0, (10 - 2 5^Rational[1, 2])^
+         Rational[-1, 2]}, {
+        Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+          5^Rational[1, 2]), 
+         Rational[-1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+        Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+          5^Rational[1, 2]), Rational[
+         1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+        Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+          5^Rational[1, 2]), Rational[-1, 2], (10 - 2 5^Rational[1, 2])^
+         Rational[-1, 2]}, {
+        Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+          5^Rational[1, 2]), Rational[1, 2], (10 - 2 5^Rational[1, 2])^
+         Rational[-1, 2]}, {
+        Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+          5^Rational[1, 2]), 
+         Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+          Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+        Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+          5^Rational[1, 2]), 
+         Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+          Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+        Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+          5^Rational[1, 2]), 
+         Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+          Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+        Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+          5^Rational[1, 2]), 
+         Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+          Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}}, {{
+        0, 0, -0.9510565162951536}, {
+        0, 0, 0.9510565162951536}, {-0.85065080835204, 
+         0, -0.42532540417601994`}, {
+        0.85065080835204, 0, 0.42532540417601994`}, {
+        0.6881909602355868, -0.5, -0.42532540417601994`}, {0.6881909602355868,
+         0.5, -0.42532540417601994`}, {-0.6881909602355868, -0.5, 
+        0.42532540417601994`}, {-0.6881909602355868, 0.5, 
+        0.42532540417601994`}, {-0.2628655560595668, -0.8090169943749475, \
+-0.42532540417601994`}, {-0.2628655560595668, 
+        0.8090169943749475, -0.42532540417601994`}, {
+        0.2628655560595668, -0.8090169943749475, 0.42532540417601994`}, {
+        0.2628655560595668, 0.8090169943749475, 0.42532540417601994`}}], 
+      Polygon3DBox[{{2, 12, 8}, {2, 8, 7}, {2, 7, 11}, {2, 11, 4}, {2, 4, 
+       12}, {5, 9, 1}, {6, 5, 1}, {10, 6, 1}, {3, 10, 1}, {9, 3, 1}, {12, 10, 
+       8}, {8, 3, 7}, {7, 9, 11}, {11, 5, 4}, {4, 6, 12}, {5, 11, 9}, {6, 4, 
+       5}, {10, 12, 6}, {3, 8, 10}, {9, 7, 3}}]]},
+    AutomaticImageSize->True,
+    Boxed->False,
+    ImageSize->{386.8684649060219, 386.81462471646813`},
+    Lighting->NCache[{{"Spot", 
+        GrayLevel[1], {{0, 0, 10}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{10, 0, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{-10, 0, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{0, 10, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{0, -10, 0}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{0, 0, -10}, {0, 0, 0}}, {Rational[1, 2] Pi, 300}}}, {{
+       "Spot", 
+        GrayLevel[1], {{0, 0, 10}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{10, 0, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{-10, 0, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{0, 10, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{0, -10, 0}, {0, 0, 0}}, {1.5707963267948966`, 300}}, {
+       "Spot", 
+        GrayLevel[1], {{0, 0, -10}, {0, 0, 0}}, {1.5707963267948966`, 300}}}],
+    ViewPoint->{1.6673827714715204`, -2.757488145510848, 1.032518193915775},
+    ViewVertical->{-0.13392206637006362`, -0.9917562473213479, 
+     0.5233797869519793}], ",", 
+   RowBox[{"ImageResolution", "\[Rule]", "600"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6161574823304234`*^9, 3.6161575091149554`*^9}, 
+   3.616157560843914*^9}],
+
+Cell[BoxData["\<\"icos.jpg\"\>"], "Output",
+ CellChangeTimes->{3.6161575155463233`*^9, 3.616157568922376*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 537},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 3837, 98, 192, "Input"],
+Cell[4419, 122, 4867, 91, 402, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9323, 218, 4905, 90, 445, "Input"],
+Cell[14231, 310, 109, 1, 87, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
