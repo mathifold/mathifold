@@ -1,0 +1,390 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     13841,        380]
+NotebookOptionsPosition[     13179,        352]
+NotebookOutlinePosition[     13522,        367]
+CellTagsIndexPosition[     13479,        364]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"e", "=", "0.03"}], ";", 
+  RowBox[{"a", "=", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"GrayLevel", "[", ".25", "]"}], ",", 
+       RowBox[{"Specularity", "[", 
+        RowBox[{"White", ",", "70"}], "]"}], ",", 
+       RowBox[{"Arrowheads", "[", "0.05", "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "1", ",", "1"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", "1", ",", 
+              RowBox[{"-", "1"}]}], "}"}]}], "}"}], ",", "e"}], "]"}], "]"}], 
+       ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", 
+              RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"1", ",", 
+              RowBox[{"-", "1"}], ",", 
+              RowBox[{"-", "1"}]}], "}"}]}], "}"}], ",", "e"}], "]"}], "]"}], 
+       ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", "1", ",", "1"}], "}"}]}], "}"}], ",", 
+          "e"}], "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", "1", ",", 
+              RowBox[{"-", "1"}]}], "}"}]}], "}"}], ",", "e"}], "]"}], "]"}], 
+       ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", 
+              RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "1"}], ",", 
+              RowBox[{"-", "1"}], ",", 
+              RowBox[{"-", "1"}]}], "}"}]}], "}"}], ",", "e"}], "]"}], 
+        "]"}]}], "}"}], ",", 
+     RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.616134528201456*^9, 3.6161346744673133`*^9}, {
+   3.6161347376162243`*^9, 3.616135005059894*^9}, {3.6161350452455645`*^9, 
+   3.616135051001975*^9}, {3.6161350870380383`*^9, 3.616135089222042*^9}, {
+   3.6161352163466654`*^9, 3.6161352666411533`*^9}, {3.6161353019908156`*^9, 
+   3.6161353852481623`*^9}, {3.6161354362134514`*^9, 3.6161356092333555`*^9}, 
+   3.616135772409642*^9, {3.6161358219865294`*^9, 3.616135830753744*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {GrayLevel[0.25], Arrowheads[0.05], Specularity[
+    GrayLevel[1], 70], Arrow3DBox[TubeBox[{{0, 0, 0}, {1, 1, 1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {1, 1, -1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {1, -1, 1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {1, -1, -1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, 1, 1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, 1, -1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, -1, 1}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, -1, -1}}, 0.03]]},
+  AutomaticImageSize->True,
+  Boxed->False,
+  ImageSize->{365.1304917099832, 422.5886041124753},
+  ViewPoint->{0.09661306572692303, -3.0495510397908405`, 1.463182958908916},
+  ViewVertical->{-0.0651704552394597, -0.18765868057500804`, 
+   0.9800699114699567}]], "Output",
+ CellChangeTimes->{
+  3.616135216767866*^9, {3.616135250651126*^9, 3.6161352681231565`*^9}, {
+   3.616135303316818*^9, 3.6161353859189634`*^9}, {3.616135523667205*^9, 
+   3.616135555304061*^9}, {3.616135585770914*^9, 3.6161356099041567`*^9}, 
+   3.6161358322357473`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "=", "1.7"}], ";", 
+  RowBox[{"b", "=", 
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"GrayLevel", "[", ".5", "]"}], ",", 
+       RowBox[{"Specularity", "[", 
+        RowBox[{"White", ",", "70"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"f", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "f"}], ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+          "e"}], "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "f", ",", "0"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", 
+              RowBox[{"-", "f"}], ",", "0"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "f"}], "}"}]}], "}"}], ",", "e"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"Arrow", "[", 
+        RowBox[{"Tube", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0", ",", 
+              RowBox[{"-", "f"}]}], "}"}]}], "}"}], ",", "e"}], "]"}], 
+        "]"}]}], "}"}], ",", 
+     RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{
+  3.616135819100524*^9, {3.6161358548089867`*^9, 3.6161358873818436`*^9}, 
+   3.616135918769099*^9, {3.616136137590683*^9, 3.616136137918284*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {GrayLevel[0.5], Specularity[
+    GrayLevel[1], 70], Arrow3DBox[TubeBox[{{0, 0, 0}, {1.7, 0, 0}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {-1.7, 0, 0}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 1.7, 0}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {0, -1.7, 0}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 0, 1.7}}, 0.03]], 
+   Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 0, -1.7}}, 0.03]]},
+  Boxed->False]], "Output",
+ CellChangeTimes->{{3.616135882202635*^9, 3.6161358881774454`*^9}, 
+   3.6161359193463*^9, 3.616136138698285*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Show", "[", 
+  RowBox[{"a", ",", "b", ",", 
+   RowBox[{"Lighting", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<Point\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{"2", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Point\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", 
+          RowBox[{"-", "2"}], ",", "0"}], "}"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<Point\>\"", ",", "White", ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "2"}], "}"}]}], "}"}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.616135893590655*^9, 3.6161358976310616`*^9}, {
+  3.6161359862236176`*^9, 3.616135998344839*^9}, {3.616136037079707*^9, 
+  3.6161360539745364`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[{
+   {GrayLevel[0.25], Arrowheads[0.05], Specularity[
+     GrayLevel[1], 70], Arrow3DBox[TubeBox[{{0, 0, 0}, {1, 1, 1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {1, 1, -1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {1, -1, 1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {1, -1, -1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, 1, 1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, 1, -1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, -1, 1}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, -1, -1}}, 0.03]]}, 
+   {GrayLevel[0.5], Specularity[
+     GrayLevel[1], 70], Arrow3DBox[TubeBox[{{0, 0, 0}, {1.7, 0, 0}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {-1.7, 0, 0}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 1.7, 0}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {0, -1.7, 0}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 0, 1.7}}, 0.03]], 
+    Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 0, -1.7}}, 0.03]]}},
+  AutomaticImageSize->True,
+  Boxed->False,
+  ImageSize->{445.8254067388679, 412.6415117551126},
+  Lighting->{{"Point", 
+     GrayLevel[1], {2, 0, 0}}, {"Point", 
+     GrayLevel[1], {0, -2, 0}}, {"Point", 
+     GrayLevel[1], {0, 0, 2}}},
+  ViewPoint->{1.3186041212068091`, 0.21893247319075823`, 3.108593209752443},
+  ViewVertical->{0.5106547842876372, 0.775056117490869, 
+   0.3721823558742769}]], "Output",
+ CellChangeTimes->{{3.616135898473463*^9, 3.6161359226691055`*^9}, {
+   3.616135990622825*^9, 3.61613599914044*^9}, 3.6161360382185087`*^9, 
+   3.6161360766725764`*^9, 3.616136143315893*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<vect.jpg\>\"", ",", 
+   Graphics3DBox[{
+     {GrayLevel[0.25], Arrowheads[0.05], Specularity[
+       GrayLevel[1], 70], Arrow3DBox[TubeBox[{{0, 0, 0}, {1, 1, 1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {1, 1, -1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {1, -1, 1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {1, -1, -1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, 1, 1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, 1, -1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, -1, 1}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {-1, -1, -1}}, 0.03]]}, 
+     {GrayLevel[0.5], Specularity[
+       GrayLevel[1], 70], Arrow3DBox[TubeBox[{{0, 0, 0}, {1.7, 0, 0}}, 0.03]],
+       Arrow3DBox[TubeBox[{{0, 0, 0}, {-1.7, 0, 0}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 1.7, 0}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {0, -1.7, 0}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 0, 1.7}}, 0.03]], 
+      Arrow3DBox[TubeBox[{{0, 0, 0}, {0, 0, -1.7}}, 0.03]]}},
+    AutomaticImageSize->True,
+    Boxed->False,
+    ImageSize->{445.8254067388679, 412.6415117551126},
+    Lighting->{{"Point", 
+       GrayLevel[1], {2, 0, 0}}, {"Point", 
+       GrayLevel[1], {0, -2, 0}}, {"Point", 
+       GrayLevel[1], {0, 0, 2}}},
+    ViewPoint->{1.3186041212068091`, 0.21893247319075823`, 3.108593209752443},
+    ViewVertical->{0.5106547842876372, 0.775056117490869, 
+     0.3721823558742769}], ",", 
+   RowBox[{"ImageResolution", "\[Rule]", "600"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6161361455934973`*^9, 3.616136178603155*^9}, 
+   3.616136233109651*^9}],
+
+Cell[BoxData["\<\"vect.jpg\"\>"], "Output",
+ CellChangeTimes->{3.616136182315962*^9, 3.616136240238864*^9}]
+}, Open  ]]
+},
+WindowSize->{707, 537},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 3963, 110, 212, "Input"],
+Cell[4545, 134, 1095, 21, 438, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5677, 160, 2675, 77, 172, "Input"],
+Cell[8355, 239, 568, 11, 406, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8960, 255, 837, 22, 72, "Input"],
+Cell[9800, 279, 1567, 30, 428, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11404, 314, 1649, 32, 512, "Input"],
+Cell[13056, 348, 107, 1, 87, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
