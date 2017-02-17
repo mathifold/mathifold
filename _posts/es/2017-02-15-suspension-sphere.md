@@ -43,9 +43,14 @@ Se define la suspensión de un espacio topológico como $ S(X) = \dfrac{X\times 
 		q: & \mathbb{S}^n \times I & \longrightarrow & \mathbb{S} ^{n+1} \\ 
 		& (x,t) & \longmapsto & (\lambda _t x, t)
 		\end{array} \text{ donde } \lambda_t = \sqrt{t(1-t)} $$
+		
+		<div class="resource img">
+            <img src="/images/images/app-suspension-sphere.svg" /><a class="ori" href="/images/codes/app-suspension-sphere.ipe"></a></div>
 	
 	Esta aplicación además de ser continua y sobreyectiva, es también abierta por ir de un compacto a un Hausdorff. Al igual que en el ejecicio anterior, $ q $ es compatible con la relación de equivalencia y por lo tanto induce un homeomorfismo entre $ S(\mathbb{S}^n) $ y $ \mathbb{S}^{n+1} $. En el caso de $ n = 0 $ considerando $ \mathbb{S}^0 = \{-1,1\}$ la fórmula se mantiene igual.
-
+	<div class="resource img">
+            <img src="/images/images/app-suspension-sphere-0.svg" /><a class="ori" href="/images/codes/app-suspension-sphere-0.ipe"></a></div>
+			
 </div>
 
 
