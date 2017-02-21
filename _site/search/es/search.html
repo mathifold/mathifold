@@ -98,6 +98,16 @@
   window.store = {
     
     
+      "es-problem-mapping-torus": {
+        "title": "El mapping torus",
+        "kind": "problem",
+        "author": "",
+        "category": "es",
+        "content": "Sea $ f:\\, X \\longrightarrow X $ un homeomorfismo. Demostrar que si $ X $ es una variedad, entonces el mapping torus $ M_f $ es una variedad.Solución\tSe define el mapping torus como $ M_f = \\dfrac{X\\times I}{\\sim} $ pero en este caso la relación:\t\t\t\t$$ (x,t) \\sim (x',t') \\Longleftrightarrow \\left\\lbrace\\begin{array}{ccc}\t\t\t&amp; (x,t) = (x',t') &amp; \\\\ \t\t\t &amp; \\mathrm{\\acute{o}}&amp; \\\\ \t\t\tx= f(x) &amp; t=1 &amp; t' = 0\t\t\t\\end{array}  \\right.  \t\t$$\t\t\tSuponiendo que $ X $ sea una variedad, veamos que $ M_f $ también lo es: \t\t\t\tSea $ \\alpha \\in M_f $ si denotamos por $ \\pi :\\, X \\times I \\longrightarrow M_f $ la proyección canónica, entonces existe un $ a\\in X $ tal que $ \\pi (a) = \\alpha $ y distinguimos casos: \t\t\tSi $ a \\in X\\times (0,1) $, por ser este útimo una variedad, existirá un entorno abierto $ U^a \\subseteq X \\times (0,1) $ y un homeomorfismo $ \\varphi :\\, U \\longrightarrow \\mathbb{R}^n \\times (0,1) $. \t\t\tAdemás, es claro que $ \\pi \\mid _{X \\times (0,1)} :\\, X \\times (0,1) \\longrightarrow M_f  $ es inyectiva y por lo tanto homeomorfismo, por lo que podemos afirmar que:\t\t\t$$\t\t\\varphi\\circ (\\pi \\mid _U) ^{-1} :\\, \\pi(U) \\longrightarrow \\mathbb{R}^n \\times (0,1) \\text{ es homeomorfismo } \t$$\tDonde $ \\pi(U) $ es un entorno abierto de $ \\alpha $.\t\t\t\tSi $ a \\in X\\times \\{0,1\\} $, suponemos sin p\\'erdida de generalidad que $ a \\in X\\times \\{1\\} $, en este caso $ a =(x_0 , 1) $ para cierto $ x_0 \\in X $ y por lo tanto tenemos que $ \\alpha = \\pi (a) = \\{(x_0 , 1) , (f(x_0),0)\\} $.\t\t\tTomamos un homeomorfismo $ \\psi :\\, W \\longrightarrow \\mathbb{R}^m $ donde $ W $ es un entorno abierto de $ x_0 $ en $ X $. Ahora podemos afirmar que:\t$$\t\t\\phi = \\psi \\circ (f\\mid _W)^{-1} :\\, f(W) \\longrightarrow \\mathbb{R}^m \\text{ es homeomorfismo }\t$$ \t\t\tcon $ f(x_0) \\in f(W) $ abierto de $ X $.\t\t\tDefinimos $ V_1 = W\\times (\\frac{1}{2} , 1] $ y $ V_2 = f(W) \\times [0,\\frac{1}{2})$ y $ V = V_1 \\cup V_2 $\t\t\t$$\t\t\\begin{array}{cccc}\t\t\\xi : &amp; V &amp; \\longrightarrow &amp; \\xi (V) \\\\ \t\t&amp; (x,t) &amp; \\longmapsto &amp; \\xi (x,t) \t\t\\end{array} \\text{ donde } \\xi (x,t) = \\left\\lbrace \\begin{array}{clc}\t\t(\\psi (x), 1-t) &amp; , (x,t)\\in V_1\\\\ \t\t(\\phi (x), t) &amp; , (x,t)\\in V_2\t\t\\end{array} \\right.  \t$$\t\tPor como se ha definido $ \\xi $, es continua y abierta, y además es compatible con la relación $ \\sim $, por lo que se puede extender a un homeomorfismo entre un entorno abierto de $ \\alpha $ y un abierto de $ \\mathbb{R}^{m+1} $, $ \\tilde{\\xi} :\\, \\pi(V) \\longrightarrow A = \\xi (V) $.\t\t\t\tAdemás es fácil de comprobar que al ser $X$ $I$ numerable y Hausdorff, entonces el mapping torus también lo es. \t\t",
+        "url": "/es/problem_mapping_torus"
+      }
+      ,
+    
       "es-problem-quotient-disk": {
         "title": "Cociente de un disco con su borde",
         "kind": "problem",
