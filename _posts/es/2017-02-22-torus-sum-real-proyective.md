@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Suma conexa de un toro con un plano proyectivo"
 lang: es
 category: es
@@ -13,9 +13,10 @@ layout: post
 type: post
 ---
 
+
 <div>
 
-Demostrar que $\mathbb{R}P^2 \# \mathbb{T}^2 $ es homeomorfo a $ \# _3 \mathbb{R}P^2  $.
+Demostrar que $\mathbb{R}P^2 \# \mathbb{T}^2 $ es homeomorfo a $ \#_3 \mathbb{R}P^2  $.
 
 </div><br>
 
