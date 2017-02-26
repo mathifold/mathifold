@@ -33,6 +33,7 @@ header, footer {
 .resource img {
   max-width: 90%;
   max-height: 300px;
+  min-height: 200px;
 }
 
 .ori {
