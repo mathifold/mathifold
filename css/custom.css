@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/css/OpenSans-Light.ttf);
+}
+
 body, input {
   font-family: 'Open Sans', sans-serif;
   font-size: 150%;
