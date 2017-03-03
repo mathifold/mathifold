@@ -15,7 +15,7 @@ type: post
 
 En el axioma de extensionalidad {% cite axiom_of_extensionality %} veíamos que cualquier conjunto quedaba definido por sus elementos. Ahora, vamos a ver una caracterización de un conjunto dado (que no es más que una proposición equivalente que podríamos escribir cada vez que quisiéramos poner "conjunto"), por medio del denominado **axioma de partes**, el cual nos afirma que para cualquier conjunto $X$ existe el conjunto $Z$ de todos sus subconjuntos $Y$.
 
-$$\forall X,Y \quad Z | \forall y(y \in Y \longrightarrow y \in X) \longrightleftarrow Y \in Z$$
+$$\forall X,Y \quad Z | \forall y(y \in Y \longrightarrow y \in X) \longleftrightarrow Y \in Z$$
 
 A este conjunto $Z$ se le llama "conjunto potencia de $X$" (también "conjunto de las partes de $X$", porque es el conjunto de todas las "partes" o subconjuntos que se pueden sacar de $X$), y se denota $\mathcal{P} (X)$. Otra vez, este conjunto es único, ya que si existiera otro conjunto $Z'$ de subconjuntos de una colección (conjunto) $X$, entonces, según el axioma de extensionalidad, $Z' = Z$.
 
