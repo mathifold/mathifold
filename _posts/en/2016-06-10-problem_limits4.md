@@ -32,7 +32,7 @@ There is more than one way to solve the problem:<br><br>
 
 $\displaystyle\lim_{x\longrightarrow 9}\dfrac{9-x}{3-\sqrt{x}} =\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(3-\sqrt{x})·(3+\sqrt{x})}$<br><br>
 Then, <br><br>
-$\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x}){(3-\sqrt{x})·(3+\sqrt{x})} = \lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}$<br><br>
+$\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(3-\sqrt{x})·(3+\sqrt{x})} = \lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}$<br><br>
 Finally, we can take the $9-x$ out from the numerator and the denominator. Therefore, <br><br>
 $\displaystyle\lim_{x\longrightarrow 9}\dfrac{(9-x)·(3+\sqrt{x})}{(9-x)}= \lim_{x\longrightarrow 9} (3+\sqrt{x})= 6$<br><br>
   

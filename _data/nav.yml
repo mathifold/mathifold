@@ -147,6 +147,10 @@ map:
             ident: cycloids
             en: Cycloids
             es: Cicloides
+          -
+            ident: other_plane_curves
+            en: Other Plane Curves
+            es: Otras Curvas Planas
       -
         ident: conics
         en: Conics
@@ -441,6 +445,10 @@ map:
             en: Chapter1
             es: Capítulo1
           -
+            ident: functions_several_variables
+            en: Functions of Several Variables
+            es: Funciones de Varias Variables
+          -
             ident: vector_fields
             en: Vector Fields
             es: Campos Vectoriales
@@ -480,6 +488,27 @@ map:
             ident: probability_distributions
             en: Distributions
             es: Distribuciones
+      -
+        ident: statistics
+        en: Statistics
+        es: Estadística
+        children:
+          -
+            ident: regression
+            en: Regression
+            es: Regresión
+          -
+            ident: multivariate_analysis
+            en: Multivariate Analysis
+            es: Análisis Multivariante
+          -
+            ident: categorical_data_analysis
+            en: Categorical Data Analysis
+            es: Análisis de Datos Categóricos
+          -
+            ident: time_series
+            en: Time Series
+            es: Series Temporales
   -
     ident: operational_research
     en: Operational Research
