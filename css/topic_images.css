@@ -1,57 +1,56 @@
 
 .basics{
-  background-image: url('/images/basics.png');
+  background-image: url('/images/topics/basics.png');
 }
 
 .geometry{
-  background-image: url('/images/geometry.png');
+  background-image: url('/images/topics/geometry.png');
 }
 
 .algebra{
-  background-image: url('/images/algebra.png');
+  background-image: url('/images/topics/algebra.png');
 }
 
 .analysis{
-  background-image: url('/images/analysis.png');
+  background-image: url('/images/topics/analysis.png');
 }
 
 .probability_statistics{
-  background-image: url('/images/probability_statistics.png');
+  background-image: url('/images/topics/probability_statistics.png');
 }
 
 .operational_research{
-  background-image: url('/images/operational_research.png');
+  background-image: url('/images/topics/operational_research.png');
 }
 
 .foundations{
-  background-image: url('/images/foundations.png');
+  background-image: url('/images/topics/foundations.png');
 }
 
 .mathematical_models{
-  background-image: url('/images/mathematical_models.png');
+  background-image: url('/images/topics/mathematical_models.png');
 }
 
 .evolutive_equations{
-  background-image: url('/images/evolutive_equations.png');
+  background-image: url('/images/topics/evolutive_equations.png');
 }
 
 .pure_mathematics{
-  background-image: url('/images/pure_mathematics.png');
+  background-image: url('/images/topics/pure_mathematics.png');
 }
 
 .tools{
-  background-image: url('/images/tools.png');
+  background-image: url('/images/topics/tools.png');
 }
 
 .advanced_mathematics{
-  background-image: url('/images/advanced_mathematics.png');
+  background-image: url('/images/topics/advanced_mathematics.png');
 }
 
 .problem_resolution{
-  background-image: url('/images/problem_resolution.png');
+  background-image: url('/images/topics/problem_resolution.png');
 }
 
 .history_mathematics{
-  background-image: url('/images/history_mathematics.png');
+  background-image: url('/images/topics/history_mathematics.png');
 }
-

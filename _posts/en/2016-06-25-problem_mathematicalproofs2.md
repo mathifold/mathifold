@@ -27,7 +27,7 @@ $\displaystyle S = \sum^n_{r=1} a·r^n = a + ar + ar^2 + ar^3 + ar^4 + ... + ar^
 
 Then, we multiply $S$ times the ratio $r$: $S·r = a·(r + r^2 + r^3 + r^4 + ... + r^{n+1})$<br><br>
 
-After that, we subtract $S·r$ to $S$: $S - S·r = 1 - r^{n+1}$<br><br>
+After that, we subtract $S·r$ to $S$: $S - S·r = a·(1 - r^{n+1})$<br><br>
 
 We get $S$: $S = a·\frac{1 - r^{n+1}}{1-r}$. Therefore, it is proved.
 

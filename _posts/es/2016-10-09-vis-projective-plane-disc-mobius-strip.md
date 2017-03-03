@@ -2,9 +2,9 @@
 title: "Plano Proyectivo y Banda de Möbius"
 lang: es
 category: es
-permalink: es/visualisation_projective_plane_mobius_band
+permalink: es/visualisation_projective_plane_mobius_strip
 
-ident: visualisation_projective_plane_mobius_band
+ident: visualisation_projective_plane_mobius_strip
 parent: compact_surfaces
 kind: visualisation
 mathjax: false

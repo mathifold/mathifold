@@ -1,5 +1,5 @@
 ---
-title: "Axioma del conjunto unión"
+title: "Axioma del conjunto potencia"
 lang: es
 category: es
 permalink: es/axiom_of_parts
@@ -13,7 +13,7 @@ layout: post
 type: post
 ---
 
-En el axioma de extensionalidad {%axiom_of_extensionality%} veíamos que cualquier conjunto quedaba definido por sus elementos. Ahora, vamos a ver una caracterización de un conjunto dado (que no es más que una proposición equivalente que podríamos escribir cada vez que quisiéramos poner "conjunto"), por medio del denominado **axioma de partes**, el cual nos afirma que para cualquier conjunto $X$ existe el conjunto $Z$ de todos sus subconjuntos $Y$.
+En el axioma de extensionalidad {% cite axiom_of_extensionality %} veíamos que cualquier conjunto quedaba definido por sus elementos. Ahora, vamos a ver una caracterización de un conjunto dado (que no es más que una proposición equivalente que podríamos escribir cada vez que quisiéramos poner "conjunto"), por medio del denominado **axioma de partes**, el cual nos afirma que para cualquier conjunto $X$ existe el conjunto $Z$ de todos sus subconjuntos $Y$.
 
 $$\forall X,Y \quad Z | \forall y(y \in Y \longrightarrow y \in X) \longrightleftarrow Y \in Z$$
 
@@ -89,6 +89,6 @@ Demostración
 </div><br>
 
 <div class="dissap">
-Sabemos que dos conjuntos son distintos, por el axioma de extensionalidad, si y sólo si 
+Sabemos que dos conjuntos son distintos, por el axioma de extensionalidad, si y sólo si
 
 </div>

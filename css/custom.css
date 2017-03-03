@@ -1,9 +1,27 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/css/OpenSans-Light.ttf);
+}
+
 body, input {
   font-family: 'Open Sans', sans-serif;
   font-size: 150%;
   font-weight: 300;
+}
+
+body {
+  max-width: 1920px
+}
+
+header, footer {
+  min-height: 100px
+}
+
+.page-content {
+  box-sizing: border-box;
+  min-height: calc(100vh - 280px)
 }
 
 .resource {
@@ -15,14 +33,14 @@ body, input {
 .resource img {
   max-width: 90%;
   max-height: 300px;
+  min-height: 200px;
 }
 
 .ori {
     bottom: 0;
     position: absolute;
     right: 0px;
-
-    background-image: url("/images/opensource.svg");
+    background-image: url("/images/others/opensource.svg");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 25px auto;
@@ -34,19 +52,53 @@ body, input {
     padding: 5px;
 }
 
-p.topic {
-  background-size: 240px 240px;
-  font-size: 134%;
+.topics--list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.topic_thumbnail > a {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  height: 100%;
   color: black;
-  text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
+  padding-top: 12px;
+}
+
+.counter-container {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+.topic_thumbnail {
+  background-size: 240px 240px;
+  width: 240px;
+  height: 240px;
+  vertical-align: text-top;
   word-wrap: break-word;
   display: inline-block;
   text-align: left;
-  vertical-align: text-top;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px #888888;
+  margin: 20px;
+  transition: box-shadow 0.5s ease;
+}
+
+.topic_thumbnail:hover {
+  transition: box-shadow 0.5s ease;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.topic-title {
+  margin-top: 0 !important;
+  padding: 10px 20px;
+  color: black;
+  text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
+  font-weight: normal !important;
 }
 
 .counter{
@@ -70,7 +122,7 @@ p.topic {
 
 .bcgreen{
   color: #FFFFFF;
-  background-color:#00FF00;
+  background-color:#31B304;
   border-radius: 5px;
   margin: 6px 5px 6px 5px;
   text-align: center;
@@ -83,27 +135,6 @@ p.topic {
 .dissap {
   display:none;
 }
-
-
-
-
-
-p.subject {
-  background-size: 240px 240px;
-  font-size: 128%;
-  color: black;
-  text-shadow: 0px 0px 5px #FFFFFF, 0px 0px 5px #FFFFFF, 0px 0px 10px #FFFFFF;
-  padding: 20px;
-  width: 200px;
-  height: 200px;
-  word-wrap: break-word;
-  display: inline-block;
-  text-align: left;
-  vertical-align: text-top;
-  box-shadow: 0px 0px 10px #888888;
-}
-
-
 
 .chapter{
   text-decoration: none;

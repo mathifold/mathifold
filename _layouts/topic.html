@@ -8,7 +8,7 @@ layout: default
 <p style="font-size: 40px;">{{page.title}}</p>
 </div>
 
-<div style="position: relative;" align="center">
+<ul style="position: relative;" align="center" class="topics--list">
 
 {% for i in iden[0].children %}
 	{% assign c = 0 %}
@@ -20,10 +20,17 @@ layout: default
 			{% endif %}
 		{% endfor %}
 	{% endfor %}
-	<a style="padding: 20px;position: relative;" href="/subjects/{{page.lang}}/{{i.ident}}.html"><p class="subject {{i.ident}}">{{i[page.lang]}}<span style="position: absolute;bottom: -200px;right: 35px;">
-      <span class="counter" style="background-color: #00DD66;">{{i.children | size}}</span>
-      <span class="counter" style="background-color: #00BB33;">{{c}}</span>
-      </span></p></a>
+
+	<!-- Subjects -->
+	<li class="topic_thumbnail {{i.ident}}">
+		<a href="/subjects/{{page.lang}}/{{i.ident}}.html">
+			<h4 class="topic-title">{{i[page.lang]}}</h4>
+			<div class="counter-container">
+	      <span class="counter" style="background-color: #00DD66;">{{i.children | size}}</span>
+	      <span class="counter" style="background-color: #00BB33;">{{c}}</span>
+	    </div>
+		</a>
+	</li>
 {% endfor %}
 
-</div>
+</ul>

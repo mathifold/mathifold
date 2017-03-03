@@ -1,7 +1,13 @@
 <head>
   <meta charset="utf-8">
 
-  <title>{{ page.title }}</title>
+  <title>
+    {% if page.title == 'Mathifold' %}
+        Mathifold
+    {% else %}
+        Mathifold - {{ page.title }}
+    {% endif %}
+  </title>
 
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/topic_images.css">

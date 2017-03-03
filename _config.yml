@@ -1,6 +1,8 @@
 
 title: Mathifold
 
+exclude:      ["sources/subjects", "blender_projects", "templates", "xtras"]
+
 
 
 

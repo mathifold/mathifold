@@ -15,319 +15,441 @@ title: How to Contribute
 
 	<div>
         <div class="bcblue boxdissap">
-        Using Mathifold
+        First steps
         </div>
 
         <div class="dissap" style="margin-left: 50px">
 
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Structure of the webpage
-        		</div>
+            <div>
+                <div class="bcgreen boxdissap">
+                Contact
+                </div>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		The webpage has a tree-like structure with four levels:
-
-        		<ul style="list-style-type: none;">
-        		<li>-Topics (e.g. Geometry)</li>
-        		<li>-Subjects (e.g. Classical Geometry)</li>
-        		<li>-Chapters (e.g. Triangles)</li>
-        		<li>-Posts (e.g. Definition Centroid)</li>
-        		</ul>
-
-        		<b>Posts</b> contain small amounts of theoretical content.
-        		</div>
-        	</div>
-
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Types of posts
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		The <b>posts</b> may be of the following types
-
-        		<table style="width:90%">
-          			<tr>
-            			<td><img src="/images/symb/exposition.svg"></td>
-            			<td><b>exposition</b></td>
-            			<td>These are the first introductory approaches to a subject and consist of some motivation and intuitive concepts, informal definitions and the meaning of theorems</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/definition.svg"></td>
-            			<td><b>definition</b></td>
-            			<td>Define concepts in a formal fashion</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/theorem.svg"></td>
-            			<td><b>theorem</b></td>
-            			<td>State and proof the most important results on which mathematical developments are built</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/lemma.svg"></td>
-            			<td><b>lemma</b></td>
-            			<td>These are auxiliary results which, not having the specific weight of a theorem, are important for their subsequent proof</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/corollary.svg"></td>
-            			<td><b>corollary</b></td>
-            			<td>These are logical consequences following from a theorem</td>
-          			</tr>
-                    <tr>
-                        <td><img src="/images/symb/calculation.svg"></td>
-                        <td><b>calculation</b></td>
-                        <td>Symbolic developments which should be stressed among the other ones</td>
-                    </tr>
-          			<tr>
-            			<td><img src="/images/symb/example.svg"></td>
-            			<td><b>example</b></td>
-            			<td>Make concrete the theory shown before, thus providing experience, making learning stronger and giving rise to concepts on which next developments are based</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/visualisation.svg"></td>
-            			<td><b>visualisation</b></td>
-            			<td>Provide visual support for the theory (as pictures or videos)</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/applet.svg"></td>
-            			<td><b>applet</b></td>
-            			<td>Complement theoretical developments with interactive elements</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/remark.svg"></td>
-            			<td><b>remark</b></td>
-            			<td>Deal with subtle concepts which may give rise to confusion along the main train of thought</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/counterexample.svg"></td>
-            			<td><b>counterexample</b></td>
-            			<td>Show that some implication is not correct by establishing an example where it does not apply</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/problem.svg"></td>
-            			<td><b>problem</b></td>
-            			<td>Put the acquired knowledge to the test thus building the learning process upon a solid basis</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/biography.svg"></td>
-            			<td><b>biography</b></td>
-            			<td>Sketch the impact that a particular person had in the history and development of Mathematics</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/quotation.svg"></td>
-            			<td><b>quotation</b></td>
-            			<td>Collect quotations or historical texts reflecting the spirit of Mathematics</td>
-          			</tr>
-          			<tr>
-            			<td><img src="/images/symb/unfinished.svg"></td>
-            			<td><b>unfinished</b></td>
-            			<td>These are unfinished posts, whose existence is however needed for the network of concept interconnections</td>
-          			</tr>
-        		</table>
+                <div class="dissap" style="margin-left: 50px">
+                We'll be very happy to know that you like Mathifold! You may contact us at <code>mathifold@gmail.com</code>. We'll find the role in Mathifold that best suits you and you will know our team
                 </div>
             </div>
-		</div>
-	</div>
+            <div>
+                <div class="bcgreen boxdissap">
+                Fork in GitHub
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                If you know GitHub, the easiest way to work with us is making your own copy (<code>fork</code>) of the resitory <a href="https://github.com/mathifold/mathifold" target="_blank">https://github.com/mathifold/mathifold</a> where you can build and send your contributions<br><br>
+
+                If you're not used to GitHub, we encourage you to take the course on <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank">Git/GitHub at Udacity</a>. You'll love it!
+                </div>
+            </div>
+            <div>
+                <div class="bcgreen boxdissap">
+                Other ways to contribute
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                There are many other ways to contribute that do not involve directly code or programming: pedagogical advice, design, difussion... Any idea is welcome!
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div>
         <div class="bcblue boxdissap">
-        Construction
+        Keywords
         </div>
 
         <div class="dissap" style="margin-left: 50px">
 
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		GitHub
-        		</div>
+            <div>
+                <div class="bcgreen boxdissap">
+                GitHub
+                </div>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		The files that build the webpage are located in the repository <b>beta_mathifold</b> in GitHub: <a href="https://github.com/jxm-math/beta_mathifold" target="_blank">https://github.com/jxm-math/beta_mathifold</a>. In this way, all the content is open-source. GitHub also provides a suitable platform to manage the different contributions.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Jekyll
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		Mathifold is built by the static site generator <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. People interested in collaborating in the development of the webpage should have some knowledge of it.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Navigation file
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		The Navigation file shows the tree of contents up to the first three levels: topics, subjects and chapters. It is located in <a href="https://github.com/jxm-math/beta_mathifold/blob/master/_data/nav.yml" target="_blank">/data/nav.yml</a>. Each chapter has an identifier 'ident' which is used to match the posts correctly.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Posts
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		The posts are located in the folder <a href="https://github.com/jxm-math/beta_mathifold/tree/master/_posts" target="_blank">/_posts</a> and are  separated by language. Each post is a <b>.md (markdown)</b> file named 'yyyy-mm-dd-name-of-the-file.md'. This file has a head, like a 'data sheet', and after that the content itself. In the data sheet the following items must be filled:
-
-        		<ul style="list-style-type: none;">
-        		<li>-<b>title</b>: Title of the post</li>
-        		<li>-<b>lang</b> and <b>category</b>: both the code of the language of the post</li>
-        		<li>-<b>permalink</b>: code-of-the-language/ident</li>
-        		<li>-<b>ident</b>: an identifier that must be different for each post and that should synthesize its content. It usually starts with the type of the post.</li>
-        		<li>-<b>parent</b>: the identifier of the chapter to which the post belongs, according to the Navigation file.</li>
-        		<li>-<b>kind</b>: the code of the kind of post.</li>
-        		<li>-<b>mathjax</b>: 'true' or 'false' according to whether the page needs mathjax (LaTeX for HTML).</li>
-        		<li>-<b>layout</b> and <b>type</b>: both filled with 'post'.</li>
-        		</ul>
-
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Multimedia
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		To introduce pictures or videos, they must be located in the folder '/images/images', and if having the source code, this must be located with the same name (though different extension) in '/images/codes'. Then complete the post with the following command: <br><br>
-
-        		{% raw %}
-
-        		{% resource name-of-the-file.xxx %}
-
-        		{% endraw %}<br><br>
-
-        		and automatically the picture or video will appear in the webpage.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Links
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		To cite another post, introduce the command<br><br>
-
-        		{% raw %}
-
-        		{% cite identifier %}
-
-        		{% endraw %}<br><br>
-
-        		where 'identifier' is the 'ident' (inside the 'data sheet') of the post we want to cite.
+                <div class="dissap" style="margin-left: 50px">
+                All the code that builds the webpage is located in the repository <b>mathifold/mathifold</b> at <code>GitHub</code>: <a href="https://github.com/mathifold/mathifold" target="_blank">https://github.com/mathifold/mathifold</a>. This way, everything is open-source. <code>GitHub</code> also provides a suitable platform to manage all the contributions
                 </div>
             </div>
-		</div>
-	</div>
+            <div>
+                <div class="bcgreen boxdissap">
+                jekyll
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Mathifold is built by the static site generator <a href="https://jekyllrb.com/" target="_blank"><code>jekyll</code></a>
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                MathJax
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                <a href="http://cdn.mathjax.org/" target="_blank"><code>MathJax</code></a> allows typesetting <code>LaTeX</code> formulas in the webpage
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                SageMath
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                <a href="https://www.sagemath.org/" target="_blank"><code>SageMath</code></a> provides a powerful lenguage for multiple mathematics applets
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                Geogebra
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+
+                <a href="https://www.geogebra.org" target="_blank"><code>Geogebra</code></a> is being used for some applets, especially those involving plane and space geometry
+                </div>
+            </div>
+            <div>
+                <div class="bcgreen boxdissap">
+                IPE Drawing Editor
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                <a href="http://ipe.otfried.org/" target="_blank"><code>IPE Drawing Editor</code></a> is the software used for almost all the pictures
+                </div>
+            </div>
+            <div>
+                <div class="bcgreen boxdissap">
+                Blender
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                <a href="https://www.blender.org" target="_blank"><code>Blender</code></a> may be used for the rendering of mathematical animations
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div>
         <div class="bcblue boxdissap">
-        Softwares used in Mathifold
+        The creation of new posts
         </div>
 
         <div class="dissap" style="margin-left: 50px">
 
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Geogebra
-        		</div>
+        The main task in building the webpage is the creation of new posts, the "little amounts of knowledge"
 
-        		<div class="dissap" style="margin-left: 50px">
-        		<div style="
-        		background-color: lightgreen;
-            	width: 80%;
-            	border: 0px;
-            	padding: 25px;
-            	margin: 0 auto;">
-            	GeoGebra is dynamic Mathematics software for all levels of education that brings together geometry, algebra, spreadsheets, graphing, statistics and calculus in one easy-to-use package. GeoGebra is a rapidly expanding community of millions of users located in just about every country. GeoGebra has become the leading provider of dynamic mathematics software, supporting science, technology, engineering and mathematics (STEM) education and innovations in teaching and learning worldwide.</div>
+            <div>
+                <div class="bcgreen boxdissap">
+                Where are they located?
+                </div>
 
-            	<a href="https://www.geogebra.org" target="_blank">Geogebra</a> is the software we are using for applets. We are very grateful to Geogebra Team for allowing us to use their product in Mathifold and we hope our webpage will also be an efficient broadcasting medium for this valuable tool.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		IPE Drawing Editor
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		<div style="
-        		background-color: lightgreen;
-            	width: 80%;
-            	border: 0px;
-            	padding: 25px;
-            	margin: 0 auto;">
-            	Ipe is a drawing editor for creating figures in PDF or (encapsulated) Postscript format. It supports making small figures for inclusion into LaTeX-documents as well as making multi-page PDF presentations that can be shown on-line with Acrobat Reader.</div>
-            	<a href="http://ipe.otfried.org/" target="_blank">IPE Drawing Editor</a> is the software used for most of the pictures.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Blender
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		<div style="
-        		background-color: lightgreen;
-            	width: 80%;
-            	border: 0px;
-            	padding: 25px;
-            	margin: 0 auto;">
-            	Blender is the free and open source 3D creation suite. It supports the entirety of the 3D pipeline—modeling, rigging, animation, simulation, rendering, compositing and motion tracking, even video editing and game creation. Advanced users employ Blender’s API for Python scripting to customize the application and write specialized tools; often these are included in Blender’s future releases. Blender is well suited to individuals and small studios who benefit from its unified pipeline and responsive development process. </div>
-
-            	<a href="https://www.blender.org" target="_blank">Blender</a> is a strong bet we make in Mathifold: a powerful software for animated films and applets with high pedagogical value.
+                <div class="dissap" style="margin-left: 50px">
+                Posts are <code>.md</code> files (<code>markdown</code>), and they must be located in the folder <code>_posts</code> inside its language subfolder, and its name must be formatted this way: <code>yyyy-mm-dd- ....... .md</code>. Inside each chapter, <code>jekyll</code> sorts the posts lexicographically, so ficticious dates may be needed
                 </div>
             </div>
-		</div>
-	</div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                Headers
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                    Each post has a header, the post "data sheet", which has the following items
+
+                    <ul>
+                        <li><code>title</code>:  Title of the post</li>
+                        <li><code>lang</code> and <code>category</code>: both the code of the language of the post</li>
+                        <li><code>permalink</code>: <code>code-of-the-language/ident</code></li>
+                        <li><code>ident</code>: an identifier that must be different for each post and that should synthesize its content. It usually starts with the type of the post</li>
+                        <li><code>parent</code>: the identifier of the chapter to which the post belongs, according to <code>_data/nav.yml</code></li>
+                        <li><code>kind</code>: the code of the kind of post</li>
+                        <li><code>mathjax</code> and <code>sage</code>: <code>true</code> or <code>false</code> according to whether the page needs mathjax <code>mathjax</code> or <code>sage</code></li>
+                        <li><code>geogebratube</code>: when embedding a Geogebratube applet, write down its identifying number</li>
+                        <li><code>layout</code> and <code>type</code>: both should be left as <code>post</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                Content
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                The content is written in <code>markdown</code>, and may include <code>mathjax</code> or other extensions<br>
+
+                One may include links to other posts with the command<br>
+
+                {% raw %}
+
+                <code>{% cite ident %}</code>
+
+                {% endraw %}<br>
+
+                and include pictures with the command <br>
+
+                {% raw %}
+
+                <code>{% resource name.ext %}</code>
+
+                {% endraw %}<br>
+
+                (see the section <code>_plugins</code> below for further information)
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div>
         <div class="bcblue boxdissap">
-        How to collaborate
+        The files in the repository
         </div>
 
         <div class="dissap" style="margin-left: 50px">
 
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Creation of posts and new materials
-        		</div>
+        Each folder in the repository <code>mathifold/mathifold</code> has its own role in the construction of the webpage:
 
-        		<div class="dissap" style="margin-left: 50px">
-        		In these first stages of the project it is recommendable to <b>directly contact Mathifold's Team before creating materials</b>. <br><br>
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_data</code>
+                </div>
 
-        		For those having a clear idea of where and how to collaborate, the most appropriate way is by creating a GitHub account, <b>make a fork in repository jxm-math/beta_mathifold</b>, add here the new files and <b>send pull-requests on a periodic basis</b>. It is important for the time being <b>not to modify other files</b> since otherwise pull-requests will have a conflict with files and will not be accepted.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Translation
-        		</div>
+                <div class="dissap" style="margin-left: 50px">
+                This folder contains files with relevant data, usually as lists or dictionaries
 
-        		<div class="dissap" style="margin-left: 50px">
-        		The webpage is multilingual and we would like to have it translated to several languages, in such a way that it can help a larger amount of people.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Difussion
-        		</div>
+                <ul>
+                    <li>
+                        <code>languages.yml</code>: Describes the list of languages currently supported in the webpage
+                    </li>
+                    <li>
+                        <code>nav.yml</code>: Describes, by means of nested dictionaries, the first three levels in the tree structure of the webpage: <em>Topics</em>, <em>Subjects</em> and <em>Chapters</em>. Each item has an identifyer <code>ident</code>, one translation for each language in <code>languages.yml</code> and, for the two first levels, the subdictionary <code>children</code>
+                    </li>
+                </ul>
 
-        		<div class="dissap" style="margin-left: 50px">
-        		Difussion in <b>social networks and educational centers</b>, in order to get more users and collaborators.
-        		</div>
-        	</div>
-        	<div>
-        		<div class="bcgreen boxdissap">
-        		Programming and Design
-        		</div>
-
-        		<div class="dissap" style="margin-left: 50px">
-        		We are on the way to set a team of computer specialists which will improve the webpage over the time. As of now, the main challenge is to provide <b>user accounts</b> allowing each student to customize his/her own learning process.
                 </div>
             </div>
-		</div>
-	</div>
 
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_includes</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Each file in this folder has some fragment of code to be repeated in every page
+
+                <ul>
+                    <li>
+                        <code>footer.html</code> contains the footer, which includes the informative buttons
+                    </li>
+                    <li>
+                        <code>head.html</code> contains part of the <code>head</code> previous to <code>body</code>, where stylesheets and different scripts (<code>mathjax</code>, <code>sage</code>, <code>geogebra</code>, among others) are loaded
+                    </li>
+                    <li>
+                        <code>header.html</code> has the header: links to upper levels to the left, searcher and language links to the right
+                    </li>
+                </ul>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_layouts</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Each layout describes the content and design of each page. <code>default</code> is the standard content, which may be later specified to <code>home</code>, <code>topic</code>, <code>subject</code>, <code>chapter</code>, <code>post</code> and <code>search</code>.
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_plugins</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                There are two kinds of implemented plugins, which may be called <em>generating</em> and <em>functional</em>
+
+                <ul>
+                    <li>
+                        The generating plugins are <code>generate_home.rb</code>, <code>generate_topic.rb</code>, <code>generate_subject.rb</code> <code>generate_chapter.rb</code> and <code>generate_search.rb</code>, which generate pages according to <code>_data/nav.yml</code> (together with the search page), one for each language
+                    </li>
+                    <li>
+                        The functional plugins are <code>cite.rb</code> and <code>resource.rb</code>, which implement different functions to be executed when writing a post. The implemented functions are<br><br>
+
+                        {% raw %}
+
+                        <code>{% cite ident %}</code>
+
+                        {% endraw %}<br><br>
+
+                        that links to the post having the matching <code>ident</code> (in the same language, if any) and <br><br>
+
+                        {% raw %}
+
+                        <code>{% resource name.ext %}</code>
+
+                        {% endraw %}<br><br>
+
+                        that looks for the picture <code>name.ext</code> inside the folder <code>/images/images</code>, places it and inserts a link to download the source if some file <code>name</code> (with different extension) is founded in the folder <code>/images/codes</code>
+
+                    </li>
+                </ul>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_posts</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                It contains the posts, whose structure was described earlier. They're divided in folders according to the language, but this divission is just towards translation logistics, since this ordering is meaningless for <code>jekyll</code>, that sorts all the posts in <code>_posts</code> by the information of their headers
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>_site</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                This is the directory where <code>jekyll</code> places the generated static webpage which is later uploaded to the server. This folder should not be modified directly
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>css</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                It contains the stylesheets. <code>custom.css</code> deals with the appearance of the webpage, while <code>subject_images.css</code>, <code>topic_images.css</code> and <code>symb.css</code> deal with the matching of pictures and should be implemented somehow to get a shorter code
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>images</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                We find inside the pictures of the entire webpage. The folders <code>topics</code>, <code>subjects</code>, <code>symb</code> and <code>others</code> contain the pictures outside the posts. The folders <code>images</code> and <code>codes</code> cointain the pictures to be used in the posts (preferrably in SVG format) together with their source codes, which are placed with the plugin <code>resource</code>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>js</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                These are the script files. <code>lunr.min.js</code> and <code>search.js</code> implement the search of posts in <code>jekyll</code>-generated webpages according to <a href="http://jekyll.tips/jekyll-casts/jekyll-search-using-lunr-js/" target="_blank"><code>lunr.js</code></a>. <code>script.js</code> deals with the rest of script
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>plus</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                It has the files with the information of the bottom left buttons: <em>About</em>, <em>Reference Guide</em> and <em>How to Contribute</em> in several languages
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>templates</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Several templates that include some scripts (<code>mathjax</code> and <code>sage</code>) to perform code trials without actually running <code>jekyll</code>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                <code>xtras</code>
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Any other material somehow related to Mathifold which is wanted to be kept for future uses
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                other files
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Outside the previous folders one may find <code>_config.yml</code>, <code>404.md</code>, <code>app.yaml</code>, <code>favicon.ico</code>, <code>index.html</code>, <code>LICENSE.txt</code> and <code>README.md</code>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="bcblue boxdissap">
+        Tasks and Challenges
+        </div>
+
+        <div class="dissap" style="margin-left: 50px">
+
+        Here you have a list of ideas devised in Mathifold for which enthusiast and experienced contributors are needed
+
+            <div>
+                <div class="bcgreen boxdissap">
+                Accounts
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                To create personal accounts, in which each user may customize its own mathematics study in Mathifold
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                App
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+                Related to the webpage, to create an application (in <code>Android</code> and <code>iOS</code>) that allows and adapts the use of Mathifold in tablets and mobile devices, so that in the future any user may have in their device something like
+
+                {% resource mathifold_app.png %}
+
+                </div>
+            </div>
+
+            <div>
+                <div class="bcgreen boxdissap">
+                Translation
+                </div>
+
+                <div class="dissap" style="margin-left: 50px">
+
+                To translate to every possible language, especially those more spoken, and starting with the more stable contents inside the webpage
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </div>

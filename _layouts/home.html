@@ -6,10 +6,10 @@ layout: default
 <p style="font-size: 48px;">MATHIFOLD</p>
 </div>
 
-<div style="position: relative;" align="center">
+<ul style="position: relative;" align="center" class="topics--list">
 
 {% for i in site.data.nav.map %}
-	
+
 	{% assign c = 0 %}
 	{% assign d = 0 %}
 	{% for j in i.children %}
@@ -22,19 +22,20 @@ layout: default
 					{% assign d = d | plus: 1 %}
 				{% endif %}
 			{% endfor %}
-		{% endfor %}		
+		{% endfor %}
 	{% endfor %}
 
-	<a style="padding: 20px;position: relative;" 
-      href="/topics/{{page.lang}}/{{i.ident}}.html">
-      <p class="topic {{i.ident}}">{{i[page.lang]}}
-      <span style="position: absolute;bottom: -200px;right: 35px;">
-      <span class="counter" style="background-color: #00FF99;">{{i.children | size}}</span>
-      <span class="counter" style="background-color: #00DD66;">{{c}}</span>
-      <span class="counter" style="background-color: #00BB33;">{{d}}</span>
-      </span></p></a>
-	
+	<!-- Topics -->
+	<li class="topic_thumbnail {{i.ident}}">
+		<a href="/topics/{{page.lang}}/{{i.ident}}.html">
+	    <h4 class="topic-title">{{i[page.lang]}}</h4>
+			<div class="counter-container">
+				<span class="counter" style="background-color: #00FF99;">{{i.children | size}}</span>
+				<span class="counter" style="background-color: #00DD66;">{{c}}</span>
+				<span class="counter" style="background-color: #00BB33;">{{d}}</span>
+			</div>
+		</a>
+	</li>
 {% endfor %}
 
-</div>
-
+</ul>

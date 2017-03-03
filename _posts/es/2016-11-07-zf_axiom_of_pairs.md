@@ -17,7 +17,7 @@ El denominado **axioma del conjunto par** (también **axioma de pares**, **axiom
 
 $$\exists Z  \forall X,Y, \forall a \in U(a \in Z \longleftrightarrow U = X \vee U = Y)$$
 
-A este conjunto lo llamaremos **conjunto par formado por $X$ e $Y$**, y lo denotaremos **${X,Y}$**. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}'$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}'={X,Y}$. Así, queda probado que ${X,Y} = {Y,X}$, razón por la cual al conjunto par se le denomina "no ordenado". 
+A este conjunto lo llamaremos **conjunto par formado por $X$ e $Y$**, y lo denotaremos **${X,Y}$**. Al igual que el conjunto vacío, el conjunto par es único, ya que si existiera un segundo conjunto ${X,Y}'$ que contuviera sólo a los conjuntos $X$ e $Y$, entonces el axioma de extensionalidad nos aseguraría que ${X,Y}'={X,Y}$. Así, queda probado que ${X,Y} = {Y,X}$, razón por la cual al conjunto par se le denomina "no ordenado".
 
 Hay ciertos apuntes interesantes acerca de este axioma:
 
@@ -25,4 +25,4 @@ Hay ciertos apuntes interesantes acerca de este axioma:
 * Si $X=Y=\emptyset$, entonces el conjunto par {X,Y}={$\emptyset$,$\emptyset$}=$\emptyset$.
 * $card({X,Y}) = 2 \forall X,Y$.
 
-Hasta ahora solamente se ha conseguido definir dos clases de conjuntos: un conjunto sin elementos (ver axioma del conjunto vacío {%axiom_of_void_set%}), y un conjunto formado por dos elementos (que son conjuntos). Es decir, que ahora mismo no podemos asegurar la existencia de un conjunto formado por tres elementos (por ejemplo, no podríamos decir que $\quad A | A = {X,Y,Z}$, porque el conjunto ${X,Y,Z}$ no es un par).
+Hasta ahora solamente se ha conseguido definir dos clases de conjuntos: un conjunto sin elementos (ver axioma del conjunto vacío {% cite axiom_of_void_set %}), y un conjunto formado por dos elementos (que son conjuntos). Es decir, que ahora mismo no podemos asegurar la existencia de un conjunto formado por tres elementos (por ejemplo, no podríamos decir que $\quad A | A = {X,Y,Z}$, porque el conjunto ${X,Y,Z}$ no es un par).
