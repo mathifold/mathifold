@@ -13,7 +13,7 @@ layout: post
 type: post
 ---
 
-En ocasione podemos encontrarnos la situación en que un espacio $X$ se aplica sobre otro espacio $Y$ por dos aplicaciones distintas, pero que en cierto modo son compatibles, en el sentido de que "se puede deformar una aplicación en la otra".
+En ocasiones podemos encontrarnos la situación en que un espacio $X$ se aplica sobre otro espacio $Y$ por dos aplicaciones distintas, pero que en cierto modo son compatibles, en el sentido de que "se puede deformar una aplicación en la otra".
 
 {% resource homotopic_maps.svg %}
 
