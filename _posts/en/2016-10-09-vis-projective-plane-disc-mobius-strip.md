@@ -1,8 +1,8 @@
 ---
-title: "Plano Proyectivo y Banda de Möbius"
-lang: es
-category: es
-permalink: es/visualisation_projective_plane_mobius_strip
+title: "Projective Plane and Möbius Strip"
+lang: en
+category: en
+permalink: en/visualisation_projective_plane_mobius_strip
 
 ident: visualisation_projective_plane_mobius_strip
 parent: compact_surfaces

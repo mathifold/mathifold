@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/css/OpenSans-Light.ttf);
+}
+
 body, input {
   font-family: 'Open Sans', sans-serif;
   font-size: 150%;
@@ -28,6 +33,7 @@ header, footer {
 .resource img {
   max-width: 90%;
   max-height: 300px;
+  min-height: 200px;
 }
 
 .ori {
