@@ -209,9 +209,13 @@ map:
         es: Geometría Hiperbólica
         children:
           -
-            ident: intro_hyperbolic_geometry
-            en: Chapter1
-            es: Capítulo1
+            ident: hyperbolic_plane
+            en: The Hyperbolic Plane
+            es: El Plano Hiperbólico
+          -
+            ident: hyperbolic_trigonometry
+            en: Hyperbolic Trigonometry
+            es: Trigonometría Hiperbólica
       -
         ident: fractal_geometry
         en: Fractal Geometry
