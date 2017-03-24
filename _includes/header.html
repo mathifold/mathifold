@@ -2,55 +2,30 @@
 
 <div style="height: 90px;">
 
-	<a href="/home/{{page.lang}}/home.html"><img src="/images/others/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
-	{% if page.type == "subject" %}
-		{% assign linktopic=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
-		<span style="font-size:35px;vertical-align:middle;">
-		{{" &#187; "}}</span>
-		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/{{page.lang}}/{{page.parent}}.html" style="text-decoration: none; color: black">
-		{{linktopic[0].title}}</a>
-		</span>
-	{% endif %}
-	{% if page.type == "chapter" %}
-		{% assign linktopic1=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
-		{% assign linktopic2=(site.pages | where: 'ident', {{linktopic1[0].parent}} | where: 'lang', {{page.lang}})%}
-		<span style="font-size:35px;vertical-align:middle;">
-		{{" &#187; "}}</span>
-		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/{{page.lang}}/{{linktopic2[0].ident}}.html" style="text-decoration: none; color: black">
-		{{linktopic2[0].title}}</a>
-		</span>
-		<span style="font-size:30px;vertical-align:middle;">
-		{{" &#187; "}}</span>
-		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/{{page.lang}}/{{page.parent}}.html" style="text-decoration: none; color: black">
-		{{linktopic1[0].title}}</a>
-		</span>
-	{% endif %}
-	{% if page.type == "post" %}
-		{% assign linktopic1=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
-		{% assign linktopic2=(site.pages | where: 'ident', {{linktopic1[0].parent}} | where: 'lang', {{page.lang}})%}
-		{% assign linktopic3=(site.pages | where: 'ident', {{linktopic2[0].parent}} | where: 'lang', {{page.lang}})%}
-		<span style="font-size:35px;vertical-align:middle;">
-		{{" &#187; "}}</span>
-		<span style="font-size:35px;vertical-align:middle;">
-		<a href="/topics/{{page.lang}}/{{linktopic3[0].ident}}.html" style="text-decoration: none; color: black">
-		{{linktopic3[0].title}}</a>
-		</span>
-		<span style="font-size:30px;vertical-align:middle;">
-		{{" &#187; "}}</span>
-		<span style="font-size:30px;vertical-align:middle;">
-		<a href="/subjects/{{page.lang}}/{{linktopic2[0].ident}}.html" style="text-decoration: none; color: black">
-		{{linktopic2[0].title}}</a>
-		</span>
-		<span style="font-size:25px;vertical-align:middle;">
-		{{" &#187; "}}</span>
-		<span style="font-size:25px;vertical-align:middle;">
-		<a href="/chapters/{{page.lang}}/{{page.parent}}.html" style="text-decoration: none; color: black">
-		{{linktopic1[0].title}}</a>
-		</span>
-	{% endif %}
+	<div style="float: left">
+		<a href="/home/{{page.lang}}/home.html"><img src="/images/others/mathifold.svg" height="40" width="40" style="vertical-align:middle"></a>
+
+		{% if page.type == "subject" %}
+			{% assign linktopic=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
+	    	<a href="/topics/{{page.lang}}/{{page.parent}}.html"><img src="/images/topics/{{linktopic[0].ident}}.png" class="breadcrumbs"></a>
+		{% endif %}
+
+		{% if page.type == "chapter" %}
+			{% assign linktopic1=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
+			{% assign linktopic2=(site.pages | where: 'ident', {{linktopic1[0].parent}} | where: 'lang', {{page.lang}})%}
+	    	<a href="/topics/{{page.lang}}/{{linktopic2[0].ident}}.html"><img src="/images/topics/{{linktopic2[0].ident}}.png" class="breadcrumbs"></a>
+	    	<a href="/subjects/{{page.lang}}/{{page.parent}}.html"><img src="/images/subjects/{{linktopic1[0].ident}}.jpg" class="breadcrumbs"></a>
+		{% endif %}
+
+		{% if page.type == "post" %}
+			{% assign linktopic1=(site.pages | where: 'ident', {{page.parent}} | where: 'lang', {{page.lang}})%}
+			{% assign linktopic2=(site.pages | where: 'ident', {{linktopic1[0].parent}} | where: 'lang', {{page.lang}})%}
+			{% assign linktopic3=(site.pages | where: 'ident', {{linktopic2[0].parent}} | where: 'lang', {{page.lang}})%}
+			<a href="/topics/{{page.lang}}/{{linktopic3[0].ident}}.html"><img src="/images/topics/{{linktopic3[0].ident}}.png" class="breadcrumbs"></a>
+	    	<a href="/subjects/{{page.lang}}/{{linktopic2[0].ident}}.html"><img src="/images/subjects/{{linktopic2[0].ident}}.jpg" class="breadcrumbs"></a>
+	    	<a href="/chapters/{{page.lang}}/{{page.parent}}.html"><div class="breadcrumbs_chapter">{{linktopic1[0].title}}</div></a>
+		{% endif %}
+	</div>
 
 
 	<div style="float: right">
