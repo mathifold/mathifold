@@ -15,4 +15,4 @@ type: post
 
 Un espacio topológico $X$ se dice **simplemente conexo** si su Grupo Fundamental es trivial, es decir,
 
-$$\pi_1(X)=\{ e\} $$
+$$\pi_1(X)=\\{e\\}$$
