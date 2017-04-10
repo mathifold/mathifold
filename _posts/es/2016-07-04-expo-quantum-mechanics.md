@@ -5,7 +5,7 @@ category: es
 permalink: es/exposition_first_approach_quantum_mechanics
 
 ident: exposition_first_approach_quantum_mechanics
-parent: quantum_mechanics
+parent: intro_quantum_mechanics
 kind: exposition
 mathjax: true
 

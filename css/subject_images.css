@@ -149,10 +149,6 @@
 
 
 
-.physics{
-  background-image: url('/images/subjects/physics.jpg');
-}
-
 .computer_science{
   background-image: url('/images/subjects/computer_science.jpg');
 }
@@ -173,6 +169,20 @@
 
 .partial_differential_equations{
   background-image: url('/images/subjects/partial_differential_equations.jpg');
+}
+
+
+
+.classical_mechanics{
+  background-image: url('/images/subjects/classical_mechanics.jpg');
+}
+
+.relativity{
+  background-image: url('/images/subjects/relativity.jpg');
+}
+
+.quantum_mechanics{
+  background-image: url('/images/subjects/quantum_mechanics.jpg');
 }
 
 

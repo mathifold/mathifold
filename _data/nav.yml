@@ -583,27 +583,6 @@ map:
     es: Modelos Matemáticos
     children:
       -
-        ident: physics
-        en: Physics
-        es: Física
-        children:
-          -
-            ident: mechanics
-            en: Mechanics
-            es: Mecánica
-          -
-            ident: electromagnetism
-            en: Electromagnetism
-            es: Electromagnetismo
-          -
-            ident: relativity
-            en: Relativity
-            es: Relatividad
-          -
-            ident: quantum_mechanics
-            en: Quantum Mechanics
-            es: Mecánica Cuántica
-      -
         ident: computer_science
         en: Computer Science
         es: Informática
@@ -667,6 +646,38 @@ map:
         children:
           -
             ident: intro_partial_differential_equations
+            en: Chapter1
+            es: Capítulo1
+  -
+    ident: physics
+    en: Physics
+    es: Física
+    children:
+      -
+        ident: classical_mechanics
+        en: Classical Mechanics
+        es: Mecánica Clásica
+        children:
+          -
+            ident: intro_classical_mechanics
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: relativity
+        en: Relativity
+        es: Relatividad
+        children:
+          -
+            ident: intro_relativity
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: quantum_mechanics
+        en: Quantum Mechanics
+        es: Mecánica Cuántica
+        children:
+          -
+            ident: intro_quantum_mechanics
             en: Chapter1
             es: Capítulo1
   -

@@ -5,7 +5,7 @@ category: es
 permalink: es/calculation_schrodinger_eq_one_dimension_unitary
 
 ident: calculation_schrodinger_eq_one_dimension_unitary
-parent: quantum_mechanics
+parent: intro_quantum_mechanics
 kind: calculation
 mathjax: true
 

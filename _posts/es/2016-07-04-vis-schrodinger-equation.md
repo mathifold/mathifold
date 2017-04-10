@@ -5,7 +5,7 @@ category: es
 permalink: es/visualisation_schrodinger_equation_one_dimension
 
 ident: visualisation_schrodinger_equation_one_dimension
-parent: quantum_mechanics
+parent: intro_quantum_mechanics
 kind: visualisation
 mathjax: true
 

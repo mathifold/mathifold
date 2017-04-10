@@ -35,6 +35,10 @@
   background-image: url('/images/topics/evolutive_equations.png');
 }
 
+.physics{
+  background-image: url('/images/topics/physics.png');
+}
+
 .pure_mathematics{
   background-image: url('/images/topics/pure_mathematics.png');
 }
