@@ -583,15 +583,6 @@ map:
     es: Modelos Matemáticos
     children:
       -
-        ident: computer_science
-        en: Computer Science
-        es: Informática
-        children:
-          -
-            ident: intro_computer_science
-            en: Chapter1
-            es: Capítulo1
-      -
         ident: economy
         en: Economy
         es: Economía
@@ -680,6 +671,41 @@ map:
             ident: intro_quantum_mechanics
             en: Chapter1
             es: Capítulo1
+  -
+    ident: computer_science
+    en: Computer Science
+    es: Ciencias de la Computación
+    children:
+      -
+        ident: algorithmics
+        en: Algorithmics
+        es: Algoritmia
+        children:
+          -
+            ident: intro_algorithmics
+            en: Chapter1
+            es: Capítulo1
+      -
+        ident: machine_learning
+        en: Machine Learning
+        es: Machine Learning
+        children:
+          -
+            ident: supervised_learning
+            en: Supervised Learning
+            es: Supervised Learning
+          -
+            ident: unsupervised_learning
+            en: Unsupervised Learning
+            es: Unsupervised Learning
+          -
+            ident: reinforcement_learning
+            en: Reinforcement Learning
+            es: Reinforcement Learning
+          -
+            ident: deep_learning
+            en: Deep Learning
+            es: Deep Learning
   -
     ident: pure_mathematics
     en: Pure Mathematics

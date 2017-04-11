@@ -39,6 +39,10 @@
   background-image: url('/images/topics/physics.png');
 }
 
+.computer_science{
+  background-image: url('/images/topics/computer_science.png');
+}
+
 .pure_mathematics{
   background-image: url('/images/topics/pure_mathematics.png');
 }

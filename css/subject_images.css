@@ -149,10 +149,6 @@
 
 
 
-.computer_science{
-  background-image: url('/images/subjects/computer_science.jpg');
-}
-
 .economy{
   background-image: url('/images/subjects/economy.jpg');
 }
@@ -183,6 +179,16 @@
 
 .quantum_mechanics{
   background-image: url('/images/subjects/quantum_mechanics.jpg');
+}
+
+
+
+.algorithmics{
+  background-image: url('/images/subjects/algorithmics.jpg');
+}
+
+.machine_learning{
+  background-image: url('/images/subjects/machine_learning.jpg');
 }
 
 
