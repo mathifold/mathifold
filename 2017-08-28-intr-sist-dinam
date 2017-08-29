@@ -1,12 +1,12 @@
 ---
-title: "Introducci\'on a los Sistemas Din\'amicos"
+title: "Introducción a los SD'"
 lang:es 
 category:es
-permalink:es/intr_sist_dinamic
+permalink:es/Introducción a los SD'
 
-ident:intr_sist_dinam
+ident:intro_dynamical_systems
 parent:introduction
-kind: introduction
+kind: exposition
 mathjax: false
 
 layout: post
