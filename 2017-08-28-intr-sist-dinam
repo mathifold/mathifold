@@ -1,0 +1,23 @@
+---
+title: "Introducci\'on a los Sistemas Din\'amicos"
+lang:es 
+category:es
+permalink:es/intr_sist_dinamic
+
+ident:intr_sist_dinam
+parent:introduction
+kind: introduction
+mathjax: false
+
+layout: post
+type: post
+---
+
+En t\'erminos generales llamaremos "Sistema Din\'amico" a ciertos modelos matem\'aticos que han demostrado ser, por largo tiempo, adecuados para el estudio de fen\'omenos en los cuales las variables o par\'ametros que describen los estados posibles del mismo var\'ian con el transcurso del tiempo. El objetivo fundamental de la teor\'ia es describir cualitativamente la evoluci\'on en el tiempo (futuro o pasado) de los estados del sistema con la finalidad de predecir, dentro de ciertos m\'argenes, la evoluci\'on del fen\'omeno. Tales fen\'omenos din\'amicos pueden ser de muy variada naturaleza, como el movimiento de sistemas de part\'iculas y cuerpos celeste (Mec\'anica Estad\'istica y Mec\'anica Cl\'asica), fluctuaciones en los valores de acciones o precios de productos en un mercado (Econom\'ia), n\'umero de individuos de una poblaci\'on (Biolog\'ia) en un intervalo de tiempo determinado, etc. \\
+
+En un lenguaje abstracto, los posibles estados del sistema son representados por una estructura matem\'atica sobre un conjunto no vac\'io $X$, y la evoluci\'on de un estado inicial $x \in X$, despues de transcurrido un tiempo $t$, en un estado $x_t \in X$ determinado por una regla o acci\'on din\'amica, de modo que $x_t$ solo depende de $x$ y de $t$, y particularmente puede ser expresada como $x_t=F(x,t)$, para $t$ en un conjunto de par\'ametros de tiempo, digamos $t \in T \subset \R $. En estos t\'erminos la din\'amica del sistemas es una funci\'on $F: X \times \mathbb{T} \rightarrow X$ o equivalentemente, una familia param\'etrica $\{ F_t : t \in \mathbb{T} \} $ de transformaciones de $X$,donde $F_t(x)=F(x,t)$ para $t$ en el conjunto de par\'ametros temporales $\mathbb{T}$. Aqu\'i s\'olo se mencionar\'an, sistemas din\'amicos determin\'isticos, caracterizados \'estos por la propiedad que los estados futuros de un estado cualquiera, est\'an un\'ivocamente determinados por \'este, independientemente de los estados previos al estado inicial. Mas precisamente, dados un estado $y= F(x,t)$ y un tiempo futuro $s\geq 0$ tal que $s+t \in \mathbb{T}$ se tiene $$ F(y,s)= F(F(x,t),s)=F(x,s+t)$$
+Esta propiedad se adapta al principio de Causalidad Determin\'istica de la F\'isica Cl\'asica el cual establece que el conocimiento del estado de un sistema en un instante dado, determina cualquier otro estado futuro del mismo. Para sistemas determin\'isticos es natural suponer que todo estado permanece inalterado cuando no ha transcurrido tiempo alguno, esto es $F(x,0)=x$ para todo $x \in X$ \\
+
+Por otro lado, para garantizar que se cumpla, lo anteriormente comentado, supondremos que el conjunto de \'indices de tiempo $s$ y $t$ en $\mathbb{T}$ es un semigrupo de $(\R,+)$. Las condiciones que acabamos de describir se resumen estableciendo que la ley din\'amica $F$ es una acci\'on sobre el conjunto $X$ de un subsemigrupo del grupo aditivo $(\R,+)$. Podemos abstraer la situaci\'on anterior y definir un sistema din\'amico como cualquier acci\'on de un semigrupo sobre un conjunto; pero, para obtener una teor\'ia matem\'atica con mayor riqueza a los fines de estudiar la evoluci\'on futura de los estados del modelo, debemos requerir que $X$ y $\mathbb{T}$ posean estructuras matem\'aticas adicionales, compatibles entre s\'i y con la acci\'on (y en el caso $\mathbb{T}$, compatible con la estructura de grupo). \\
+
+Destacamos que no todo fen\'omeno de naturaleza din\'amica puede ser modelado adecuadamente por sistemas determin\'isticos y en tales situaciones se hace necesario la introducci\'on de modelos aleatorios, tales como procesos estoc\'asticos y ecuaciones diferenciales estoc\'asticas, estudiadas en teoria de la probabilidad. Tambi\'en en muchas situaciones un sistemas determin\'istico puede ser tan complicado en lo que a su din\'amica se refiere, que para su estudio puede ser \'util el empleo de m\'etodos probabil\'isticos e interpretaciones estad\'isticas de la din\'amica, tanto para su estudio y comprensi\'on te\'orico como en situaciones pr\'acticas en general. El estudio de los enfoques probabil\'isticos de los sistemas determin\'isticos corresponde a la Teor\'ia Erg\'odica de los Sistemas Din\'amicos. 
